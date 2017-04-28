@@ -1,0 +1,68 @@
+﻿void main()
+{
+	EnableJumpingOfReturnIcon();
+	FadeOutBGM( 0, 0, FALSE );
+	FadeOutBGM( 1, 0, FALSE );
+	FadeOutBGM( 2, 0, FALSE );
+	FadeOutBGM( 3, 0, FALSE );
+	ClearMessage();
+
+	PlayBGM( 0, "Nazo", 120, 0 );
+	DrawScene( "Nort", 1000 );
+
+	OutputLine(NULL, "　大石の言う、沙都子の面倒を見るからと園崎家が言い含め、悟史くんを雛見沢から放逐した……というのは、",
+		   NULL, "At first I thought Ooishi's theory that the Sonozaki family banished Satoshi-kun from Hinamizawa and looked after Satoko in return...", Line_WaitForInput);
+	OutputLine(NULL, "最初、こじつけた話だなと思って聞いていた。",
+		   NULL, " was bogus.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　だが、後になって考え直して見ると、それは私が馬鹿にするほどズレた話でもない。",
+		   NULL, "But thinking about it now, it doesn't seem too far-fetched.", Line_Normal);
+	ClearMessage();
+	DrawScene( "black", 400 );
+
+	OutputLine(NULL, "　だって、北条沙都子は、ひとりになったあと、古手梨花と生活を共にしているのだ。",
+		   NULL, "After all, Satoko Houjou started living with Rika Furude after Satoshi-kun's disappearance.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　古手梨花はただの小娘じゃない。",
+		   NULL, "Rika Furude isn't just a regular girl.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　御三家の一角、古手家の頭首でもあるのだ。",
+		   NULL, "She was the head of the Furude family, one of the Three Families.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　その古手梨花は、公由家頭首が保護者になっている。",
+		   NULL, "The head of the Kimiyoshi family is Rika Furude's guardian.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　さすがに北条家と対立してきた園崎家は表に出ることはできなかったんだろうが、",
+		   NULL, "The Sonozaki family probably couldn't step in, due to having been officially opposed to the Houjou family,", Line_WaitForInput);
+	OutputLine(NULL, "事実上、北条沙都子は御三家の保護下に入っていた。",
+		   NULL, " but Satoko Houjou is in the custody of the Three Families now.", Line_Normal);
+	ClearMessage();
+	DrawScene( "Nort", 400 );
+
+	OutputLine(NULL, "　ダム戦争中、鬼ヶ淵死守同盟からあれほどまでに攻撃をされた北条家の生き残りが、御三家に保護されているなんて。",
+		   NULL, "Even though the Houjou family was severely ostracized during the dam conflict, Satoko Houjou was now under protection.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　それはまるで北条家の罪から、沙都子だけが許されたような、そんな感じ。",
+		   NULL, "It seems as though only Satoko was exempted from blame.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　どうして悟史くんは許してもらえなかったのに、沙都子だけ？",
+		   NULL, "Why was she spared, even though Satoshi-kun wasn't?", Line_Normal);
+	ClearMessage();
+	Wait( 1000 );
+	DrawScene( "black", 1000 );
+}

@@ -1,0 +1,157 @@
+﻿void main()
+{
+	EnableJumpingOfReturnIcon();
+	FadeOutBGM( 0, 0, FALSE );
+	FadeOutBGM( 1, 0, FALSE );
+	FadeOutBGM( 2, 0, FALSE );
+	FadeOutBGM( 3, 0, FALSE );
+	ClearMessage();
+
+	PlayBGM( 0, "T2", 120, 0 );
+	DrawScene( "Ke_Ky1", 1000 );
+
+	OutputLine(NULL, "「えぇ、葛西氏が踏み込んだ時には室内は無人でベランダへの窓が開きっぱなし。",
+		   NULL, "\"Yes. When Mr. Kasai broke in, the room was empty, and the window leading to the balcony was open.", Line_WaitForInput);
+	OutputLine(NULL, "その時が飛び降り時刻です。",
+		   NULL, " That was when she fell.", Line_WaitForInput);
+	OutputLine(NULL, "それでその真下の５階エレベーターフロアの屋根に一度落ちて脳震盪。",
+		   NULL, " She hit the elevator housing right beneath, which gave her a concussion.", Line_WaitForInput);
+	OutputLine(NULL, "そのしばらく後に横に転がって再落下、死亡。",
+		   NULL, " Then she rolled off the roof and hit the ground, killing her.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　葛西氏が飛び降りを疑って、地上を調べたときに遺体が見つからなかったのは、この時点ではエレベーターフロアの屋根の上で昏倒中だったからです。」",
+		   NULL, "The reason Mr. Kasai didn't find her even though he suspected her suicide is that she was on the elevator housing at that time, unconscious.\"", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "「前原圭一が刺されたのは、ほぼ同じ頃。",
+		   NULL, "\"Keiichi Maebara was stabbed at about the same time.", Line_WaitForInput);
+	OutputLine(NULL, "その頃には園崎詩音はすでに飛び降りていて、屋根の上で脳震盪中…？",
+		   NULL, " Was Shion Sonozaki unconscoius on the roof then...?", Line_WaitForInput);
+	OutputLine(NULL, "　…違いますねぇ。",
+		   NULL, " I doubt it.", Line_WaitForInput);
+	OutputLine(NULL, "ベランダから抜け出して圭一を刺して。",
+		   NULL, " She must've snuck out of the building, stabbed Keiichi,", Line_WaitForInput);
+	OutputLine(NULL, "ベランダへまた戻る時に誤って落下…、じゃないかなぁ？",
+		   NULL, " then accidentally fell when she came back...... Doesn't that sound right?", Line_WaitForInput);
+	OutputLine(NULL, "　悪いけど、周辺の部屋のベランダとかも調べ直してください。」",
+		   NULL, " Ah, would you look at the neighboring balcony again?\"", Line_Normal);
+	ClearMessage();
+	DrawSceneWithMask( "Ke_Ky2", "maskleft", 1, 0, 300 );
+
+	OutputLine(NULL, "「大石さーーん、３番にお電話です。」",
+		   NULL, "\"Ooishi-san, you've got a call on line three.\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "「ハイハイ、どちら様から？」",
+		   NULL, "\"Oh, who is it from?\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "「佐藤と伝えれば分かるとか。",
+		   NULL, "\"Satou, apparently.", Line_WaitForInput);
+	OutputLine(NULL, "合言葉はロンと言えと。」",
+		   NULL, " He says the password is 'ron'.\"", Line_Normal);
+	ClearMessage();
+	DrawSceneWithMask( "black", "maskleft", 1, 0, 300 );
+	DrawScene( "Denwa", 400 );
+
+	OutputLine(NULL, "「なっはっは！",
+		   NULL, "\"Na ha ha!", Line_WaitForInput);
+	OutputLine(NULL, "　もしもし！",
+		   NULL, " Hello!", Line_WaitForInput);
+	OutputLine(NULL, "　あーサトさんですか。",
+		   NULL, " Ah, Satou-san.", Line_WaitForInput);
+	OutputLine(NULL, "こっちへ電話ということは、いい知らせでしょうね？」",
+		   NULL, " You must have some good news.\"", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "『もしもし…。例の件は旦那の読み通り。』",
+		   NULL, "\"Hello... You were right after all.\"", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "「ありがとうございます！",
+		   NULL, "\"Thank you!", Line_WaitForInput);
+	OutputLine(NULL, "　今度フラワーロードで一杯おごりますよ。」",
+		   NULL, " I'll buy you a drink on Flower Road!\"", Line_Normal);
+	ClearMessage();
+	DrawSceneWithMask( "Ke_S2", "maskright", 1, 0, 300 );
+
+	OutputLine(NULL, "「何です、今の電話。",
+		   NULL, "\"What was that call about?", Line_WaitForInput);
+	OutputLine(NULL, "麻雀の誘いですか？」",
+		   NULL, " A mahjong invitation?\"", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "「ビンゴ。",
+		   NULL, "\"Bingo.", Line_WaitForInput);
+	OutputLine(NULL, "園崎姉妹は逆なんです。",
+		   NULL, " The Sonozaki sisters switched places.", Line_WaitForInput);
+	OutputLine(NULL, "魅音が詩音で、詩音が魅音。",
+		   NULL, " Mion is Shion, and Shion is Mion.", Line_WaitForInput);
+	OutputLine(NULL, "刺青入れる時に間違って逆にやっちゃって、取り返しがつかなくなったらしい。",
+		   NULL, " They made a mistake when they were supposed to tattoo the successor.", Line_WaitForInput);
+	OutputLine(NULL, "だからこのノートの魅音と詩音は逆に読むんです。",
+		   NULL, " So, Mion and Shion are swapped around in this notebook.", Line_WaitForInput);
+	OutputLine(NULL, "それでなら、悟史くんと詩音さん、…いや魅音さん？",
+		   NULL, " So then Satoshi-kun and Shion-san... No, Mion-san?", Line_WaitForInput);
+	OutputLine(NULL, "　ややこしいなぁ！",
+		   NULL, " This is confusing!", Line_WaitForInput);
+	OutputLine(NULL, "　…の関係が理解できる。」",
+		   NULL, " Anyway, with that, you gain a clearer understanding of their relationship.\"", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "「ノートって、先日のあの、大石さん宛てと書かれて郵便ポストに投函されてたって言う怪ノートのことですか？",
+		   NULL, "\"Are you talking about the mysterious notebook you received the other day?", Line_WaitForInput);
+	OutputLine(NULL, "　中身はめちゃくちゃで捜査撹乱の恐れありって言いませんでしたっけ？」",
+		   NULL, " Didn't you say it was all mumbo jumbo that could possibly confuse the case?\"", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "「もちろん、名前の入れ替えがわかったところで、撹乱の域を出ませんがねぇ。",
+		   NULL, "\"Even after switching the names, it's still confusing......", Line_WaitForInput);
+	OutputLine(NULL, "……このノート、どこまで信じていいのやら。",
+		   NULL, " I don't know how much of the content I can trust...", Line_WaitForInput);
+	OutputLine(NULL, "…もし本当なら、古手梨花の死の辺りが怪し過ぎるからなぁ…。」",
+		   NULL, " Even if this is true, Rika Furude's death seems very suspicious...\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "「…狂人の日記ですよ。",
+		   NULL, "\"...It's the diary of a lunatic.", Line_WaitForInput);
+	OutputLine(NULL, "読んでるとこっちまで狂いそうになります。",
+		   NULL, " It drove me nuts when I read it.", Line_WaitForInput);
+	OutputLine(NULL, "最後のページの、生まれてきてごめんなさいなんて、…読んでるとこっちまで飛び降りたくなりますよ…。」",
+		   NULL, " You know this line on the last page, about how she's sorry for being born...? That makes me want to jump out the window!\"", Line_Normal);
+	ClearMessage();
+	DrawScene( "Sora", 1000 );
+
+	OutputLine(NULL, "「…………でも。",
+		   NULL, "\"...Even so...", Line_WaitForInput);
+	OutputLine(NULL, "幸せな日記じゃあないですか。」",
+		   NULL, " this is a happy diary.\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "「しあわせ、",
+		   NULL, "\"A happy diary", Line_ContinueAfterTyping);
+	SetValidityOfInput( FALSE );
+	Wait( 800 );
+	SetValidityOfInput( TRUE );
+	OutputLine(NULL, "……ですか？」",
+		   NULL, "......?\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "「この日記だけで、悟史くんって名前、何回くらい出てくると思います？",
+		   NULL, "\"Do you know how many times Satoshi-kun's name appears in this notebook......?", Line_WaitForInput);
+	OutputLine(NULL, "　………詩音さんは本当に悟史くんのことが好きだったんだなぁって。",
+		   NULL, " Shion-san really loved him.", Line_WaitForInput);
+	OutputLine(NULL, "その好きというのがね、若さゆえの勘違いで、ずれちゃって。」",
+		   NULL, " But because she was so young, a few mistakes caused that love to be misdirected.\"", Line_Normal);
+	ClearMessage();
+
+	SetValidityOfInput( FALSE );
+	Wait( 3000 );
+	SetValidityOfInput( TRUE );
+	DrawScene( "black", 6000 );
+	SetValidityOfInput( FALSE );
+	Wait( 1000 );
+	SetValidityOfInput( TRUE );
+	SetSpeedOfMessage( FALSE, 0 );
+}

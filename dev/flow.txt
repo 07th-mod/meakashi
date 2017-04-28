@@ -1,0 +1,485 @@
+﻿
+void main()
+{
+	SetValidityOfSaving( FALSE );
+	CallSection("BrandLogo");
+	JumpSection("Title");
+}
+
+void BrandLogo()
+{
+	DrawScene("black", 0);
+
+	if(GetGlobalFlag(GFlag_FirstPlay) == 0)
+	{
+		LanguagePrompt();
+		Wait(500);
+	}
+
+	SetGlobalFlag(GFlag_FirstPlay, 1);
+
+	DrawBG( "07thlogo", 1000, TRUE );
+	Wait( 2000 );
+	DrawSceneWithMask( "mangagamer", "logomask", 0, 0, 1000 );
+
+	Wait( 2000 );
+
+	DrawSceneWithMask( "black", "logomask", 0, 0, 1000 );
+}
+
+void Title()
+{
+	SetValidityOfSaving( FALSE );
+
+	//DrawScene("black", 1000);
+
+	DrawScene("white", 1000);
+
+	Wait(100);
+
+	//DrawSprite( 10, "Logo", NULL, 0, 0, 0, 0, 0, 0, 0, TRUE, TRUE, 0, 0, 10, 1500, FALSE );
+
+	DrawSprite( 10, "Logo", NULL, 0, 0, 0, 0, 0, 0, FALSE, FALSE, 0, 0, 10, 0, FALSE );
+
+	DrawSceneWithMask("black", "maskc", 0, 0, 1000);
+
+	Wait(1500);
+	//MoveSprite( 10, 0, -100, 0, 0, 0, 5, 0, 1500, TRUE );
+
+	DrawScene("white", 1000);	
+
+	PlayBGM( 2, "higurashi", 128, 0 );
+
+	DrawScene("SGTitle990000", 1500);
+
+	Wait(1000);
+
+	DrawSpriteWithFiltering( 10, "SGTitle900200", "maskleft", 0, 0, 0, TRUE, TRUE, 0, 0, 10, 1500, TRUE );
+
+	DrawSprite( 12, "titlelogo", NULL, 0, 0, 0, 0, 0, 0, FALSE, FALSE, 0, 0, 12, 1000, TRUE );
+
+	Wait(1000);
+
+	//
+
+	//DrawBG( "bg_216", 0, TRUE );
+
+	//FadeSprite( 2, 2000, TRUE );
+
+	StoreValueToLocalWork( LOCALWORK_NO_RESULT, 0 );
+	StoreValueToLocalWork(s_jump, 0);
+
+	TitleScreen();
+
+	CallSection("ChapterPreview");
+
+	JumpSection("Title");
+}
+
+void ChapterPreview()
+{
+	PlayBGM( 2, "lsys13", 128, 0 );
+
+	DrawSceneWithMask( "black", "mask2", 0, 0, 1000 );
+
+	Wait(1000);
+
+	DrawScene("scenario_a", 1000);
+
+	DrawSceneWithMask( "scenario_b", "mask6", 0, 0, 1000 );
+
+	DrawSceneWithMask( "scenario_c", "mask5", 0, 0, 1000 );
+
+	//DrawScene("scenario_c", 500);
+
+	ShowChapterPreview();
+
+	if(LoadValueFromLocalWork( LOCALWORK_NO_RESULT ) == 1)
+	{
+		StopBGM( 2 );
+		PlaySE( 1, "wa_037", 128, 64 );
+
+		DrawScene( "black", 1000 );
+
+		JumpSection("Game");
+	}
+
+	FadeOutBGM( 2, 1000, FALSE );
+
+	DrawScene("black", 1000);
+	
+	CallSection("Title");
+}
+
+void ViewTipsDisplay()
+{
+	//uses local flag TipsMode to determine what happens
+	//0 - Leave, 1 - Show Extras Menu, 2 - Show Mid Chapter Screen, 3 - Show New Tips, 4 - Show All Tips (Local), 5 - Show All Tips (Global)
+
+	SetValidityOfSaving( TRUE );
+
+	DisableWindow();
+
+	if(LoadValueFromLocalWork( TipsMode ) < 3)
+		DrawScene("black", 0);
+
+	if(LoadValueFromLocalWork( TipsMode ) == 1)
+		ShowExtras();
+
+	if(LoadValueFromLocalWork( TipsMode ) == 2)
+		ShowChapterScreen();
+
+	if(LoadValueFromLocalWork( TipsMode ) > 2)
+	{
+		ShowTips(LoadValueFromLocalWork( TipsMode ) - 3);
+		CheckTipsAchievements();
+	}
+
+	if(LoadValueFromLocalWork( LOCALWORK_NO_RESULT ) > 0)
+		CallSection("ViewTipsDisplay");
+}
+
+void ViewTips()
+{
+	int starttips;
+	int tipcount;
+	int totaltips;
+	int chapter;
+
+	starttips = LoadValueFromLocalWork(NewTipsStart);
+	tipcount = LoadValueFromLocalWork(NewTipsCount);
+	totaltips = starttips + tipcount;
+
+	StoreValueToLocalWork(TipsCount, totaltips);
+
+	if(GetGlobalFlag(GTotalTips) < totaltips)
+		SetGlobalFlag(GTotalTips, totaltips);
+
+	StoreValueToLocalWork( TipsMode , 2 );
+
+	chapter = LoadValueFromLocalWork(ChapterNumber);
+
+	if(GetGlobalFlag(GHighestChapter) < chapter)
+		SetGlobalFlag(GHighestChapter, chapter);
+
+	CallSection("ViewTipsDisplay");
+}
+
+void Game()
+{
+	FadeOutBGM( 0, 1000, FALSE );
+	FadeOutBGM( 1, 1000, FALSE );
+	FadeOutBGM( 2, 1000, FALSE );
+	FadeOutBGM( 3, 1000, TRUE );
+
+	StoreValueToLocalWork(NewTipsStart , 0);
+	StoreValueToLocalWork(NewTipsCount , 0);
+	StoreValueToLocalWork(TipsCount , 0);
+
+	SetValidityOfSaving( TRUE );
+	SetValidityOfInput( TRUE );
+
+
+	DrawScene( "black", 1000 );
+
+	if(LoadValueFromLocalWork(s_jump) <= 1)
+	{
+		CallScript( "_meak_001");
+
+		GetAchievement("HIGURASHI_STORY_EP05_01");
+
+		StoreValueToLocalWork(NewTipsStart, 0);
+		StoreValueToLocalWork(NewTipsCount, 1);
+
+		StoreValueToLocalWork( ChapterNumber, 1 );
+		SavePoint("Ch.1 終わり", "End of Chapter 1");
+
+		CallSection("ViewTips");
+
+		Wait( 3000 );
+	}
+	if(LoadValueFromLocalWork(s_jump) <= 2)
+	{
+		CallScript( "_meak_002");
+	}
+	if(LoadValueFromLocalWork(s_jump) <= 3)
+	{
+		CallScript( "_meak_003");
+
+		GetAchievement("HIGURASHI_STORY_EP05_02");
+
+		StoreValueToLocalWork(NewTipsStart, 1);
+		StoreValueToLocalWork(NewTipsCount, 1);
+
+		StoreValueToLocalWork( ChapterNumber, 2 );
+		SavePoint("Ch.2 終わり", "End of Chapter 2");
+
+		CallSection("ViewTips");
+
+		Wait( 3000 );
+
+	}
+	if(LoadValueFromLocalWork(s_jump) <= 4)
+	{
+		CallScript( "_meak_004");
+	}
+	if(LoadValueFromLocalWork(s_jump) <= 5)
+	{
+		CallScript( "_meak_005");
+
+		GetAchievement("HIGURASHI_STORY_EP05_03");
+
+		StoreValueToLocalWork(NewTipsStart, 2);
+		StoreValueToLocalWork(NewTipsCount, 1);
+
+		StoreValueToLocalWork( ChapterNumber, 3 );
+		SavePoint("Ch.3 終わり", "End of Chapter 3");
+
+		CallSection("ViewTips");
+
+		Wait( 3000 );
+
+	}
+	if(LoadValueFromLocalWork(s_jump) <= 6)
+	{
+		CallScript( "_meak_006");
+	}
+	if(LoadValueFromLocalWork(s_jump) <= 7)
+	{
+		CallScript( "_meak_007");
+
+		GetAchievement("HIGURASHI_STORY_EP05_04");
+
+		StoreValueToLocalWork(NewTipsStart, 3);
+		StoreValueToLocalWork(NewTipsCount, 2);
+
+		StoreValueToLocalWork( ChapterNumber, 4 );
+		SavePoint("Ch.4 終わり", "End of Chapter 4");
+
+		CallSection("ViewTips");
+
+		Wait( 3000 );
+
+	}
+	if(LoadValueFromLocalWork(s_jump) <= 8)
+	{
+		CallScript( "_meak_008");
+	}
+	if(LoadValueFromLocalWork(s_jump) <= 9)
+	{
+		CallScript( "_meak_009");
+
+		GetAchievement("HIGURASHI_STORY_EP05_05");
+
+		StoreValueToLocalWork(NewTipsStart, 5);
+		StoreValueToLocalWork(NewTipsCount, 1);
+
+		StoreValueToLocalWork( ChapterNumber, 5 );
+		SavePoint("Ch.5 終わり", "End of Chapter 5");
+
+		CallSection("ViewTips");
+
+		Wait( 3000 );
+
+	}
+	if(LoadValueFromLocalWork(s_jump) <= 10)
+	{
+		CallScript( "_meak_010");
+	}
+	if(LoadValueFromLocalWork(s_jump) <= 11)
+	{
+		CallScript( "_meak_011");
+
+		GetAchievement("HIGURASHI_STORY_EP05_06");
+
+		StoreValueToLocalWork(NewTipsStart, 6);
+		StoreValueToLocalWork(NewTipsCount, 1);
+
+		StoreValueToLocalWork( ChapterNumber, 6 );
+		SavePoint("Ch.6 終わり", "End of Chapter 6");
+
+		CallSection("ViewTips");
+
+		Wait( 3000 );
+
+	}
+	if(LoadValueFromLocalWork(s_jump) <= 12)
+	{
+		CallScript( "_meak_012");
+	}
+	if(LoadValueFromLocalWork(s_jump) <= 13)
+	{
+		CallScript( "_meak_013");
+
+		GetAchievement("HIGURASHI_STORY_EP05_07");
+
+		StoreValueToLocalWork(NewTipsStart, 7);
+		StoreValueToLocalWork(NewTipsCount, 2);
+		
+		StoreValueToLocalWork( ChapterNumber, 7 );
+		SavePoint("Ch.7 終わり", "End of Chapter 7");
+
+		CallSection("ViewTips");
+
+		Wait( 3000 );
+
+	}
+	if(LoadValueFromLocalWork(s_jump) <= 14)
+	{
+		CallScript( "_meak_014_1");
+		CallScript( "_meak_014_2");
+
+		GetAchievement("HIGURASHI_STORY_EP05_08");
+
+		StoreValueToLocalWork(NewTipsStart, 9);
+		StoreValueToLocalWork(NewTipsCount, 3);
+
+		StoreValueToLocalWork( ChapterNumber, 8 );
+		SavePoint("Ch.8 終わり", "End of Chapter 8");
+
+		CallSection("ViewTips");
+
+		Wait( 3000 );
+
+	}
+	if(LoadValueFromLocalWork(s_jump) <= 15)
+	{
+		CallScript( "_meak_015_1");
+		CallScript( "_meak_015_2");
+	}
+	if(LoadValueFromLocalWork(s_jump) <= 16)
+	{
+		CallScript( "_meak_016_1");
+		CallScript( "_meak_016_2");
+
+		GetAchievement("HIGURASHI_STORY_EP05_09");
+
+		StoreValueToLocalWork(NewTipsStart, 12);
+		StoreValueToLocalWork(NewTipsCount, 3);
+
+		StoreValueToLocalWork( ChapterNumber, 9 );
+		SavePoint("Ch.9 終わり", "End of Chapter 9");
+
+		CallSection("ViewTips");
+
+		Wait( 3000 );
+
+	}
+	if(LoadValueFromLocalWork(s_jump) <= 17)
+	{
+		CallScript( "_meak_017");
+	}
+	if(LoadValueFromLocalWork(s_jump) <= 18)
+	{
+		CallScript( "_meak_018");
+
+		GetAchievement("HIGURASHI_STORY_EP05_10");
+
+		StoreValueToLocalWork(NewTipsStart, 15);
+		StoreValueToLocalWork(NewTipsCount, 2);
+
+		StoreValueToLocalWork( ChapterNumber, 10 );
+		SavePoint("Ch.10 終わり", "End of Chapter 10");
+
+		CallSection("ViewTips");
+
+		Wait( 3000 );
+
+	}
+	if(LoadValueFromLocalWork(s_jump) <= 19)
+	{
+		CallScript( "_meak_019_1");
+		CallScript( "_meak_019_2");
+	}
+	if(LoadValueFromLocalWork(s_jump) <= 20)
+	{
+		CallScript( "_meak_020");
+
+		GetAchievement("HIGURASHI_STORY_EP05_11");
+
+		StoreValueToLocalWork(NewTipsStart, 17);
+		StoreValueToLocalWork(NewTipsCount, 1);
+
+		StoreValueToLocalWork( ChapterNumber, 11 );
+		SavePoint("Ch.11 終わり", "End of Chapter 11");
+
+		CallSection("ViewTips");
+
+		Wait( 3000 );
+
+	}
+	if(LoadValueFromLocalWork(s_jump) <= 21)
+	{
+		CallScript( "_meak_021_1");
+		CallScript( "_meak_021_2");
+	}
+	if(LoadValueFromLocalWork(s_jump) <= 22)
+	{
+		CallScript( "_meak_022_1");
+		CallScript( "_meak_022_2");
+
+		GetAchievement("HIGURASHI_STORY_EP05_12");
+
+		StoreValueToLocalWork(NewTipsStart, 18);
+		StoreValueToLocalWork(NewTipsCount, 2);
+
+		StoreValueToLocalWork( ChapterNumber, 12 );
+		SavePoint("Ch.12 終わり", "End of Chapter 12");
+
+		CallSection("ViewTips");
+
+		Wait( 3000 );
+
+	}
+	if(LoadValueFromLocalWork(s_jump) <= 23)
+	{
+		CallScript( "_meak_023");
+	}
+	if(LoadValueFromLocalWork(s_jump) <= 24)
+	{
+		CallScript( "_meak_024");
+
+		GetAchievement("HIGURASHI_STORY_EP05_13");
+
+		StoreValueToLocalWork(NewTipsStart, 20);
+		StoreValueToLocalWork(NewTipsCount, 1);
+
+		StoreValueToLocalWork( ChapterNumber, 13 );
+		SavePoint("Ch.13 終わり", "End of Chapter 13");
+
+		CallSection("ViewTips");
+
+		Wait( 3000 );
+
+	}
+	if(LoadValueFromLocalWork(s_jump) <= 25)
+	{
+		CallScript( "_meak_ep_01");
+	}
+	if(LoadValueFromLocalWork(s_jump) <= 26)
+	{
+		CallScript( "_meak_ep_02");
+	}
+	if(LoadValueFromLocalWork(s_jump) <= 27)
+	{
+		CallScript( "_meak_ep_03");
+	}
+
+	SetGlobalFlag( GFlag_GameClear, TRUE );
+	SetGlobalFlag( GHighestChapter, 14 );
+	GetAchievement("HIGURASHI_STORY_EP05_ENDING");
+
+	SetGlobalFlag(GTotalTips, 23);
+
+	StoreValueToLocalWork(NewTipsStart , 0);
+	StoreValueToLocalWork(NewTipsCount , 0);
+	StoreValueToLocalWork(TipsCount , 0);
+
+	FadeOutBGM( 0, 1000, TRUE );
+	FadeOutBGM( 1, 1000, TRUE );
+	FadeOutBGM( 2, 1000, TRUE );
+	FadeOutBGM( 3, 1000, TRUE );
+
+	JumpSection("Title");
+}
+
