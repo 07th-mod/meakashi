@@ -15,10 +15,9 @@
 	Wait( 2000 );
 	SetValidityOfInput( TRUE );
 
-	PlaySE(4, "", 128, 64);
+	PlaySE(4, "S06/03/150300056", 128, 64);
 	OutputLine(NULL, "「うん。",
 		   NULL, "\"Mm.", Line_WaitForInput);
-	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "奇病ってのは尾ひれだと思うけどね。",
 		   NULL, " I don't think the bit about the illness is true,", Line_WaitForInput);
 	PlaySE(4, "S06/03/150300058", 128, 64);
@@ -45,7 +44,7 @@
 		   NULL, " It's unbelievable that so many people have died on the exact same day.\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
-	PlaySE(4, "", 128, 64);
+	PlaySE(4, "S06/03/150300061", 128, 64);
 	OutputLine(NULL, "「警察も検死したみたいだけど、その後、特に騒がなかったってことは、死因に不審な点はなかったってことじゃないの？",
 		   NULL, "\"The coroner didn't find anything unusual about the cause of death, so nobody suspected that anything was wrong...", Line_WaitForInput);
 	PlaySE(4, "S06/03/150300062", 128, 64);
@@ -218,7 +217,7 @@
 	DrawBustshotWithFiltering( 2, "Me_DefA1#", "maskright", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 10, 0, FALSE );
 	DrawSceneWithMask( "Tosyo3", "maskright", 1, 0, 300 );
 
-	PlaySE(4, "", 128, 64);
+	PlaySE(4, "S06/06/150600212", 128, 64);
 	OutputLine(NULL, "「神主は確か……嫌われてませんでした？",
 		   NULL, "\"Wasn't the priest... hated by a few?", Line_WaitForInput);
 	PlaySE(4, "S06/06/150600213", 128, 64);
@@ -229,7 +228,7 @@
 	ChangeBustshot( 2, "Me_DefA2#", 200, TRUE );
 	DisplayWindow();
 
-	PlaySE(4, "", 128, 64);
+	PlaySE(4, "S06/03/150300063", 128, 64);
 	OutputLine(NULL, "「うん。",
 		   NULL, "\"Yeah.", Line_WaitForInput);
 	PlaySE(4, "S06/03/150300064", 128, 64);
@@ -359,31 +358,26 @@
 		   NULL, " and everyone believed it was Oyashiro-sama's curse without question...", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
-	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "「村の仇敵・裏切り者」の烙印を押されることになるのだ…。",
 		   NULL, "So they were branded \"traitors\" and \"enemies of the village\"...", Line_Normal);
 	ClearMessage();
 	DrawFilm( 2, 0x88, 0x88, 0x88, 256, 0, 1000, TRUE );
 
-	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "　北条夫妻は村の裏切り者として、村八分以上の責め苦を受けることになる。",
 		   NULL, "The Houjou couple faced worse than just being ostracized as traitors.", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
-	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "　誰もが冷たい目で後ろ指をさしていた。",
 		   NULL, "Everyone gave them the cold shoulder and talked behind their backs.", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
 
-	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "　そんな北条夫妻を村で唯一、敵視しなかったのが……",
 		   NULL, "The only person who didn't treat them badly was...", Line_ContinueAfterTyping);
 	SetValidityOfInput( FALSE );
 	Wait( 1000 );
 	SetValidityOfInput( TRUE );
-	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "神主だった。",
 		   NULL, " the priest.", Line_Normal);
 	ClearMessage();
@@ -392,38 +386,30 @@
 
 	DrawSceneWithMask( "Hi1", "maskright", 1, 0, 300 );
 
-	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "　神主は、反ダムに異論は唱えなかったものの、",
 		   NULL, "While the priest never objected to the anti-dam movement,", Line_WaitForInput);
-	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "北条夫妻の「立ち退きに応じて国から賠償金をもらい、生活を再建する」という主張にも、異論を唱えなかったのである。",
 		   NULL, " he also never objected to the Houjou couple's advocacy for accepting the government's eviction and restitution to rebuild new lives.", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
 
-	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "　北条許すまじをスローガンにし、スケープゴートにすることで村の団結を図ろうとしていた御三家（特に園崎家だが）にとって、",
 		   NULL, "\"Those unforgiveable Houjous!\" became a slogan as the Three Families (especially the Sonozakis) united the village by turning them into scapegoats...", Line_WaitForInput);
-	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "同じ御三家の人間であり、しかも反ダムのシンボルのオヤシロさまを祀る神社の神主が、それを容認したというのは…とても苦々しいことだったのだ。",
 		   NULL, " So they must have found it very shameful to have a fellow member of the Three Families approve of that, especially when it was the priest of the shrine that had become a symbol for the dam protests.", Line_Normal);
 	ClearMessage();
 
-	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "　鬼ヶ淵死守同盟の屋台骨であり、雛見沢村の大黒柱である御三家で足並みが揃わないことは好ましくない、",
 		   NULL, "As central figures in Hinamizawa, the Three Families were the backbones of the Onigafuchi Guardians, so a difference of opinion was undesirable,", Line_WaitForInput);
-	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "御三家間でトラブルを起こしたくないということから、神主への糾弾は一切行なわれなかった。",
 		   NULL, " and the priest was never accused of anything.", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
 
-	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "　……だが、人々は異端な神主を陰でヒソヒソと、オヤシロさまの神社の神主として相応しくない、",
 		   NULL, "...But secretly, people whispered that he was a heretic, that he was unfit to serve as Oyashiro-sama's priest,", Line_WaitForInput);
-	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "今にきっとオヤシロさまのバチが当たる…、と噂し合っていた……。",
 		   NULL, " that Oyashiro-sama's curse would soon strike him down... along with other rumors...", Line_Normal);
 	ClearMessage();
@@ -484,7 +470,6 @@
 	PlaySE(4, "S06/03/150300071", 128, 64);
 	OutputLine(NULL, "それがオトナと呼べるかどうかは、",
 		   NULL, " I don't know if that should be called mature.", Line_WaitForInput);
-	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "…私には難しいなぁ。」",
 		   NULL, " ...It's hard for me to tell.\"", Line_Normal);
 	ClearMessage();
@@ -497,10 +482,10 @@
 		   NULL, "I barely managed to say the the following.", Line_Normal);
 	ClearMessage();
 
-	PlaySE(4, "", 128, 64);
+	PlaySE(4, "S06/06/150600215", 128, 64);
 	OutputLine(NULL, "「……………………。",
 		   NULL, "\"...............", Line_WaitForInput);
-	PlaySE(4, "S03/09/140900030", 128, 64);
+	PlaySE(4, "S06/06/150600216", 128, 64);
 	OutputLine(NULL, "………………ふぅん。」",
 		   NULL, "Uh-huh.\"", Line_Normal);
 	ClearMessage();
@@ -630,10 +615,10 @@
 	ClearMessage();
 	DrawSceneWithMask( "Tosyo3", "maskup", 1, 0, 300 );
 
-	PlaySE(4, "", 128, 64);
+	PlaySE(4, "S06/06/150600221", 128, 64);
 	OutputLine(NULL, "「……ふぅん。",
 		   NULL, "\"...Uh-huh.", Line_WaitForInput);
-	PlaySE(4, "", 128, 64);
+	PlaySE(4, "S06/06/150600222", 128, 64);
 	OutputLine(NULL, "お姉もいつの間に大人になっちゃいましたね。」",
 		   NULL, " You sound like a grownup now.\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -707,7 +692,7 @@
 	DrawScene( "black", 1000 );
 	PlayBGM( 0, "demo_48khz", 120, 0 );
 
-	PlaySE(4, "", 128, 64);
+	PlaySE(4, "S06/06/150600230", 128, 64);
 	OutputLine(NULL, "「お姉。",
 		   NULL, "\"Sis......", Line_WaitForInput);
 	PlaySE(4, "S06/06/150600231", 128, 64);
@@ -715,7 +700,7 @@
 		   NULL, " I mean, Mion.\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
-	PlaySE(4, "", 128, 64);
+	PlaySE(4, "S06/03/150300078", 128, 64);
 	OutputLine(NULL, "「…な、………何？」",
 		   NULL, "\"...What? ...What is it?\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -736,7 +721,7 @@
 		   NULL, " but then looked right back up.", Line_Normal);
 	ClearMessage();
 
-	PlaySE(4, "", 128, 64);
+	PlaySE(4, "S06/06/150600233_1", 128, 64);
 	OutputLine(NULL, "「…あんたは私が、その辺りで逆恨みしてるんじゃないかって思ってるかもしれない。",
 		   NULL, "\"...Maybe you think I'm jealous of that,", Line_WaitForInput);
 	PlaySE(4, "S06/06/150600233_2", 128, 64);
@@ -893,35 +878,35 @@
 	ChangeBustshot( 0, "Me_SinmyouA1#", 200, TRUE );
 	DisplayWindow();
 
-	PlaySE(4, "S06/06/150602529", 128, 64);
+	PlaySE(4, "S06/03/150300084", 128, 64);
 	OutputLine(NULL, "「…………うん。",
 		   NULL, "\"...Okay...", Line_WaitForInput);
-	PlaySE(4, "S10/43/410400787", 128, 64);
+	PlaySE(4, "S06/03/150300085", 128, 64);
 	OutputLine(NULL, "………ありがと。",
 		   NULL, " Thanks,", Line_WaitForInput);
-	PlaySE(4, "S10/43/410400788", 128, 64);
+	PlaySE(4, "S06/03/150300086", 128, 64);
 	OutputLine(NULL, "詩音。」",
 		   NULL, " Shion.\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
-	PlaySE(4, "S10/44/410500091", 128, 64);
+	PlaySE(4, "S06/06/150600236", 128, 64);
 	OutputLine(NULL, "「がんばろ、魅音。",
 		   NULL, "\"No worries, Mion.", Line_WaitForInput);
-	PlaySE(4, "S10/44/410500092", 128, 64);
+	PlaySE(4, "S06/06/150600237", 128, 64);
 	OutputLine(NULL, "困ったことがあったらいつでも相談して。",
 		   NULL, " Let's talk to each other whenever we want to,", Line_WaitForInput);
-	PlaySE(4, "S10/44/410500093", 128, 64);
+	PlaySE(4, "S06/06/150600238", 128, 64);
 	OutputLine(NULL, "私たちはいつだってそうやって来た。",
 		   NULL, " like we've always been.", Line_WaitForInput);
-	PlaySE(4, "S10/44/410500094", 128, 64);
+	PlaySE(4, "S06/06/150600239", 128, 64);
 	OutputLine(NULL, "それはこれからも何も変わらないよ。」",
 		   NULL, " That'll never change, okay?\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
-	PlaySE(4, "S10/43/410400789", 128, 64);
+	PlaySE(4, "S06/03/150300087", 128, 64);
 	OutputLine(NULL, "「……うん。",
 		   NULL, "\"......Okay.", Line_WaitForInput);
-	PlaySE(4, "S10/43/410400790", 128, 64);
+	PlaySE(4, "S06/03/150300088", 128, 64);
 	OutputLine(NULL, "……うん。」",
 		   NULL, " ......Okay.\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -967,7 +952,7 @@
 	DrawScene( "white", 400 );
 	DrawSceneWithMask( "Sora", "maskm1", 1, 0, 300 );
 
-	PlaySE(4, "", 128, 64);
+	PlaySE(4, "S06/06/150600240", 128, 64);
 	OutputLine(NULL, "「…………ふー。」",
 		   NULL, "\"......Whew.\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -992,7 +977,6 @@
 		   NULL, " I'll never be able to touch that sky.", Line_Normal);
 	ClearMessage();
 
-	PlaySE(4, "S06/06/150601206", 128, 64);
 	OutputLine(NULL, "　私は園崎詩音。",
 		   NULL, "I'm Shion Sonozaki.", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -1046,7 +1030,6 @@
 		   NULL, "Why not go to the shopping district in Kami-isshiki?", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
-	PlaySE(4, "S04/36/310100713", 128, 64);
 	OutputLine(NULL, "　…あれ？",
 		   NULL, "...Hm?", Line_WaitForInput);
 	OutputLine(NULL, "　だったらこの道、こっちじゃない。",
@@ -1162,7 +1145,7 @@
 	DrawBustshotWithFiltering( 0, "Kasa1", "maskleft", 1, 0, 0, FALSE, 0, 0, 0, 0, 0, 9, 0, FALSE );
 	DrawSceneWithMask( "Si_H4", "maskleft", 1, 0, 300 );
 
-	PlaySE(4, "", 128, 64);
+	PlaySE(4, "S06/15/151500096", 128, 64);
 	OutputLine(NULL, "「……詩音さん。",
 		   NULL, "\"...Shion-san,", Line_WaitForInput);
 	PlaySE(4, "S06/15/151500097", 128, 64);
@@ -1304,7 +1287,6 @@
 
 	OutputLine(NULL, "　私みたいなパーフェクトな人間にも、その程度の好き嫌いがあった方が面白いかもしれないしね。",
 		   NULL, "Still, a flaw like this is actually a good thing, otherwise I'd be too perfect!", Line_WaitForInput);
-	PlaySE(4, "S11/02/420700035", 128, 64);
 	OutputLine(NULL, "あはははははははは。",
 		   NULL, " Ahahahahaha.", Line_Normal);
 	ClearMessage();
@@ -1326,7 +1308,7 @@
 		   NULL, " Thank you for doing this.\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
-	PlaySE(4, "", 128, 64);
+	PlaySE(4, "S06/06/150600260", 128, 64);
 	OutputLine(NULL, "「量が足りないと思ったら、あとは勝手に牛丼屋にでも行くことー。",
 		   NULL, "\"If this isn't enough food, you can go to a beef bowl place later or something.", Line_WaitForInput);
 	PlaySE(4, "S06/06/150600261", 128, 64);
@@ -1347,7 +1329,7 @@
 	FadeOutBGM( 2, 0, FALSE );
 	DrawBustshot( 19, "no_data", 0, 100, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, TRUE );
 
-	PlaySE(4, "", 128, 64);
+	PlaySE(4, "S06/06/150600263", 128, 64);
 	OutputLine(NULL, "「で？",
 		   NULL, "\"So,", Line_WaitForInput);
 	PlaySE(4, "S06/06/150600264", 128, 64);
@@ -1372,7 +1354,6 @@
 	SetValidityOfInput( FALSE );
 	Wait( 1000 );
 	SetValidityOfInput( TRUE );
-	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "…食べながらにしますか？」",
 		   NULL, " would you mind if I talked while eating?\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -1424,7 +1405,7 @@
 		   NULL, " That's what Kasai calls her, as he's known her since before her marriage.", Line_Normal);
 	ClearMessage();
 
-	PlaySE(4, "", 128, 64);
+	PlaySE(4, "S06/06/150600273", 128, 64);
 	OutputLine(NULL, "「で？",
 		   NULL, "\"So?", Line_WaitForInput);
 	PlaySE(4, "S06/06/150600274", 128, 64);
@@ -1450,7 +1431,7 @@
 		   NULL, " She didn't seem surprised by this outcome.\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
-	PlaySE(4, "", 128, 64);
+	PlaySE(4, "S06/06/150600275", 128, 64);
 	OutputLine(NULL, "「……ふーん。",
 		   NULL, "\"...I see.", Line_WaitForInput);
 	PlaySE(4, "S06/06/150600276", 128, 64);
@@ -1466,13 +1447,13 @@
 		   NULL, " I think she's going to in a couple of days.\"", Line_Normal);
 	ClearMessage();
 
-	PlaySE(4, "", 128, 64);
+	PlaySE(4, "S06/06/150600277", 128, 64);
 	OutputLine(NULL, "「……親父は鬼婆寄りだからなぁ。",
 		   NULL, "\"......Humm, dad is on the hag's side,", Line_WaitForInput);
-	PlaySE(4, "", 128, 64);
+	PlaySE(4, "S06/06/150600278", 128, 64);
 	OutputLine(NULL, "耳に入れば自動的に鬼婆にも伝えるだろうな。",
 		   NULL, " so he'll definitely talk to her if he hears about it.", Line_WaitForInput);
-	PlaySE(4, "", 128, 64);
+	PlaySE(4, "S06/06/150600279", 128, 64);
 	OutputLine(NULL, "で、鬼婆の耳に入れば、見つけ次第、即刻ここへ連れて来い。",
 		   NULL, " Then she'll have her men bring me to her", Line_WaitForInput);
 	PlaySE(4, "S06/06/150600280", 128, 64);
@@ -1481,7 +1462,7 @@
 	PlaySE(4, "S06/06/150600281", 128, 64);
 	OutputLine(NULL, "…おっかないこって。",
 		   NULL, " Scary!", Line_WaitForInput);
-	PlaySE(4, "", 128, 64);
+	PlaySE(4, "S06/06/150600282", 128, 64);
 	OutputLine(NULL, "あははは！」",
 		   NULL, " Aha ha ha!\"", Line_Normal);
 	ClearMessage();
@@ -1523,7 +1504,7 @@
 	PlayBGM( 0, "higurashi", 120, 0 );
 	DrawScene( "Sora", 1000 );
 
-	PlaySE(4, "", 128, 64);
+	PlaySE(4, "S06/06/150600287", 128, 64);
 	OutputLine(NULL, "「で？",
 		   NULL, "\"So?", Line_WaitForInput);
 	PlaySE(4, "S06/06/150600288", 128, 64);
@@ -1542,7 +1523,7 @@
 	PlaySE(4, "S06/06/150600289", 128, 64);
 	OutputLine(NULL, "「おーコワ。",
 		   NULL, "\"Scary.", Line_WaitForInput);
-	PlaySE(4, "", 128, 64);
+	PlaySE(4, "S06/06/150600290", 128, 64);
 	OutputLine(NULL, "で？",
 		   NULL, " And?", Line_WaitForInput);
 	PlaySE(4, "S06/06/150600291", 128, 64);
@@ -1632,7 +1613,7 @@
 		   NULL, " I can't let Kasai, Uncle Yoshiroh... or Mom lose face.\"", Line_Normal);
 	ClearMessage();
 
-	PlaySE(4, "", 128, 64);
+	PlaySE(4, "S06/03/150300096", 128, 64);
 	OutputLine(NULL, "「…………………………………。」",
 		   NULL, "\".....................\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -1657,7 +1638,7 @@
 		   NULL, " It's absolutely not.\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
-	PlaySE(4, "", 128, 64);
+	PlaySE(4, "S06/06/150600299", 128, 64);
 	OutputLine(NULL, "「…ありがと。",
 		   NULL, "\"...Thanks.", Line_WaitForInput);
 	PlaySE(4, "S06/06/150600300", 128, 64);
@@ -1693,7 +1674,7 @@
 		   NULL, "So, I just told her simply.", Line_Normal);
 	ClearMessage();
 
-	PlaySE(4, "", 128, 64);
+	PlaySE(4, "S06/06/150600301", 128, 64);
 	OutputLine(NULL, "「ありがと。",
 		   NULL, "\"Thanks...", Line_WaitForInput);
 	PlaySE(4, "S06/06/150600302", 128, 64);

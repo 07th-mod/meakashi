@@ -10,15 +10,15 @@ Old collaborators welcome to join the repository, however it's still preferred t
 
 >Bold lines mean "in progress"
 
-- [ ] _meak_001.txt
-- [ ] _meak_002.txt
-- [ ] _meak_003.txt
-- [ ] _meak_004.txt
-- [ ] _meak_005.txt
-- [ ] _meak_006.txt
-- [ ] _meak_007.txt
-- [ ] _meak_008.txt
-- [ ] _meak_009.txt
+- [x] _meak_001.txt
+- [x] _meak_002.txt
+- [x] _meak_003.txt
+- [x] _meak_004.txt
+- [x] _meak_005.txt
+- [x] _meak_006.txt
+- [x] _meak_007.txt
+- [x] _meak_008.txt
+- [ ] **_meak_009.txt**
 - [ ] _meak_010.txt
 - [ ] _meak_011.txt
 - [ ] _meak_012.txt
@@ -66,3 +66,7 @@ Old collaborators welcome to join the repository, however it's still preferred t
 - [ ] _meak_tips_21.txt
 - [ ] _meak_tips_22.txt
 - [ ] _meak_tips_23.txt
+
+# Known issues (for fixing)
+
+> in _meak_002.txt, line 1308, a voice line is missing. Worth to look inside the PS2 voices.

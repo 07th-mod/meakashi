@@ -75,13 +75,13 @@
 	DrawBustshot( 19, "no_data", 0, 100, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, TRUE );
 	PlayBGM( 1, "semi", 120, 0 );
 
-	PlaySE(4, "", 128, 64);
+	PlaySE(4, "S06/06/150600309", 128, 64);
 	OutputLine(NULL, "「…痛って！！",
 		   NULL, "\"...Ow!!", Line_WaitForInput);
-	PlaySE(4, "", 128, 64);
+	PlaySE(4, "S06/06/150600310", 128, 64);
 	OutputLine(NULL, "　な、……もぅ！！",
 		   NULL, " What the...?", Line_WaitForInput);
-	PlaySE(4, "", 128, 64);
+	PlaySE(4, "S06/06/150600311", 128, 64);
 	OutputLine(NULL, "　何、こんなとこに停めてるの誰ー？！」",
 		   NULL, " Who parked this motorcycle here?\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -141,7 +141,7 @@
 	PlaySE( 0, "s_daidageki", 128, 64 );
 
 	SetSpeedOfMessage( TRUE, 128 );
-	PlaySE(4, "S19/00/huryoA66001", 128, 64);
+	PlaySE(4, "S06/00/huryoA15001", 128, 64);
 	OutputLine(NULL, "「んだてめンなろぉおおぉおおおッ！！",
 		   NULL, "\"Dafuq're ye, bitch?!!", Line_ContinueAfterTyping);
 	SetSpeedOfMessage( FALSE, 0 );
@@ -150,20 +150,19 @@
 
 	OutputLineAll(NULL, "", Line_WaitForInput);
 
-	PlaySE(4, "S19/00/huryoA66002", 128, 64);
 	OutputLine(NULL, "　すったるぁ、おるぁあッ！！」",
 		   NULL, " Whatcha think yer doin'?! Huhh?!\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
-	PlaySE(4, "S19/00/huryoB66001", 128, 64);
+	PlaySE(4, "S06/00/huryoB15001", 128, 64);
 	OutputLine(NULL, "「をるぉんったら、ぅッってん場合じゃえぇんあぞぉぉお！！」",
 		   NULL, "\"Fookin' bash yer head in, bitch!!\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
-	PlaySE(4, "S19/00/huryoC66001", 128, 64);
+	PlaySE(4, "S06/00/huryoC15001", 128, 64);
 	OutputLine(NULL, "「ごらあッ！！",
 		   NULL, "\"Grrraaaah!!", Line_WaitForInput);
-	PlaySE(4, "S19/00/huryoC66002", 128, 64);
+	PlaySE(4, "S06/00/huryoC15002", 128, 64);
 	OutputLine(NULL, "　んまってンら、なしツくとぉッんじゃねえぞおおぉおおッ！！」",
 		   NULL, " Gonna pay fer whatcha did!\"", Line_Normal);
 	ClearMessage();
@@ -325,7 +324,6 @@
 
 	OutputLineAll(NULL, "", Line_WaitForInput);
 
-	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "　聞いてんのかンにゃろおおぉおぉお！！」",
 		   NULL, " Ye list'nin or not?!\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -476,7 +474,6 @@
 
 	OutputLine(NULL, "　気付けばうっすらと目に涙。",
 		   NULL, "Am I getting tears yet...?", Line_WaitForInput);
-	PlaySE(4, "S14/00/VT4Bb_maeno1052", 128, 64);
 	OutputLine(NULL, "…こんなところかな？",
 		   NULL, " Yes!", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -501,25 +498,23 @@
 		   NULL, "That way they'd blatantly look like they're picking on a helpless girl...", Line_Normal);
 	ClearMessage();
 
-	PlaySE(4, "", 128, 64);
+	PlaySE(4, "S06/06/150600316", 128, 64);
 	OutputLine(NULL, "「……もぅ…許して、",
 		   NULL, "\"...Please...", Line_ContinueAfterTyping);
 	SetValidityOfInput( FALSE );
 	Wait( 800 );
 	SetValidityOfInput( TRUE );
-	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "…ください。",
 		   NULL, " ...forgive me...", Line_WaitForInput);
-	PlaySE(4, "S02/06/130600545", 128, 64);
+	PlaySE(4, "S06/06/150600317", 128, 64);
 	OutputLine(NULL, "……っく、",
 		   NULL, " hic...", Line_ContinueAfterTyping);
 	SetValidityOfInput( FALSE );
 	Wait( 1000 );
 	SetValidityOfInput( TRUE );
-	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "……えっく。",
 		   NULL, " ...hic...", Line_WaitForInput);
-	PlaySE(4, "", 128, 64);
+	PlaySE(4, "S06/06/150600318", 128, 64);
 	OutputLine(NULL, "…ぅう……！」",
 		   NULL, " ooh...!\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -532,7 +527,7 @@
 		   NULL, " Wh-What's wid dis girl, huuh?!\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
-	PlaySE(4, "", 128, 64);
+	PlaySE(4, "S06/06/150600319", 128, 64);
 	OutputLine(NULL, "「…そんなの………ったって、……ぅっく、……えっく、…あぅううぅうぅ…。」",
 		   NULL, "\"...I... don't... hic... huff... ooohh...\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -646,7 +641,7 @@
 		   NULL, " Why don'tcha answer us?!!\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
-	PlaySE(4, "S06/03/150300457", 128, 64);
+	PlaySE(4, "S06/07/151200003", 128, 64);
 	OutputLine(NULL, "「………………………。」",
 		   NULL, "\".....................\"", Line_Normal);
 	ClearMessage();
@@ -782,7 +777,7 @@
 	PlaySE(4, "S06/07/151200004", 128, 64);
 	OutputLine(NULL, "「…最初は迷ったよ。",
 		   NULL, "\"...I hesitated at first.", Line_WaitForInput);
-	PlaySE(4, "", 128, 64);
+	PlaySE(4, "S06/07/151200005", 128, 64);
 	OutputLine(NULL, "あはははは…。」",
 		   NULL, " Ahahahaha...\"", Line_Normal);
 	ClearMessage();
@@ -820,7 +815,7 @@
 	ChangeBustshot( 2, "Sato_Komaru2", 200, TRUE );
 	DisplayWindow();
 
-	PlaySE(4, "", 128, 64);
+	PlaySE(4, "S06/07/151200006", 128, 64);
 	OutputLine(NULL, "「……むぅ。",
 		   NULL, "\"...Mmph.", Line_WaitForInput);
 	PlaySE(4, "S06/07/151200007", 128, 64);
@@ -851,7 +846,7 @@
 	PlaySE(4, "S06/07/151200011", 128, 64);
 	OutputLine(NULL, "いいよ、演技でも。",
 		   NULL, " Okay, okay.", Line_WaitForInput);
-	PlaySE(4, "", 128, 64);
+	PlaySE(4, "S06/07/151200012", 128, 64);
 	OutputLine(NULL, "あははははは。」",
 		   NULL, " Ahahahahaha.\"", Line_Normal);
 	ClearMessage();
@@ -995,7 +990,6 @@
 	SetValidityOfInput( FALSE );
 	Wait( 1000 );
 	SetValidityOfInput( TRUE );
-	PlaySE(4, "S19/02/500200663", 128, 64);
 	OutputLine(NULL, "…………………。」",
 		   NULL, ".....................\"", Line_Normal);
 	ClearMessage();
@@ -1027,10 +1021,10 @@
 		   NULL, "......My face reddened all at once. I couldn't say anything...", Line_Normal);
 	ClearMessage();
 
-	PlaySE(4, "", 128, 64);
+	PlaySE(4, "S06/06/150600336", 128, 64);
 	OutputLine(NULL, "「ちょ、………………………ば、馬鹿にしてます？",
 		   NULL, "\"He...Hey...", Line_WaitForInput);
-	PlaySE(4, "S10/42/410600272", 128, 64);
+	PlaySE(4, "S06/06/150600337", 128, 64);
 	OutputLine(NULL, "　ひょっとして……？」",
 		   NULL, " Are you making fun of me...?\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -1043,7 +1037,7 @@
 		   NULL, "He looked calm, as if he was used to doing this.", Line_Normal);
 	ClearMessage();
 
-	PlaySE(4, "", 128, 64);
+	PlaySE(4, "S06/07/151200020", 128, 64);
 	OutputLine(NULL, "「あはははは。",
 		   NULL, "\"Ahahahaha...", Line_WaitForInput);
 	PlaySE(4, "S06/07/151200021", 128, 64);
@@ -1089,7 +1083,7 @@
 		   NULL, " So I should head off now.\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
-	PlaySE(4, "", 128, 64);
+	PlaySE(4, "S06/06/150600339", 128, 64);
 	OutputLine(NULL, "「あ、……………うん。」",
 		   NULL, "\"Uh... okay.\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -1139,7 +1133,7 @@
 	PlaySE(4, "S06/07/151200029", 128, 64);
 	OutputLine(NULL, "天下無双の委員長が泣いてたなんて、絶対誰も信じない。",
 		   NULL, " Nobody would ever believe that our invincible class president cried.", Line_WaitForInput);
-	PlaySE(4, "", 128, 64);
+	PlaySE(4, "S06/07/151200030", 128, 64);
 	OutputLine(NULL, "あはははは。」",
 		   NULL, " Ahahahaha.\"", Line_Normal);
 	ClearMessage();
@@ -1170,7 +1164,7 @@
 		   NULL, " In school tomorrow, I mean.\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
-	PlaySE(4, "", 128, 64);
+	PlaySE(4, "S06/06/150600340", 128, 64);
 	OutputLine(NULL, "「……………うん。",
 		   NULL, "\"......Yeah...", Line_WaitForInput);
 	PlaySE(4, "S06/06/150600341", 128, 64);
@@ -1228,7 +1222,7 @@
 		   NULL, " He looks like what you described, and he has a habit of stroking people's heads.\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
-	PlaySE(4, "", 128, 64);
+	PlaySE(4, "S06/06/150600342", 128, 64);
 	OutputLine(NULL, "「…ふーん。",
 		   NULL, "\"...Uh-huh...", Line_WaitForInput);
 	PlaySE(4, "S06/06/150600343", 128, 64);
@@ -1265,7 +1259,7 @@
 		   NULL, " he has a little sister?\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
-	PlaySE(4, "", 128, 64);
+	PlaySE(4, "S06/03/150300104", 128, 64);
 	OutputLine(NULL, "「うん。",
 		   NULL, "\"Yeah,", Line_WaitForInput);
 	PlaySE(4, "S06/03/150300105", 128, 64);
@@ -1320,7 +1314,7 @@
 	ClearMessage();
 	PlayBGM( 0, "yoru", 120, 0 );
 
-	PlaySE(4, "", 128, 64);
+	PlaySE(4, "S06/03/150300112", 128, 64);
 	OutputLine(NULL, "「もしもし？",
 		   NULL, "\"Hello?", Line_WaitForInput);
 	PlaySE(4, "S06/03/150300113", 128, 64);
@@ -1441,7 +1435,7 @@
 		   NULL, "\"So... He must be exhausted too, right?\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
-	PlaySE(4, "", 128, 64);
+	PlaySE(4, "S06/03/150300116", 128, 64);
 	OutputLine(NULL, "「…え？」",
 		   NULL, "\"...Huh?\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -1454,13 +1448,12 @@
 		   NULL, " So wouldn't you normally assume that he's also feeling worn out?\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
-	PlaySE(4, "", 128, 64);
+	PlaySE(4, "S06/03/150300117", 128, 64);
 	OutputLine(NULL, "「……ん、",
 		   NULL, "\"...Hmm", Line_ContinueAfterTyping);
 	SetValidityOfInput( FALSE );
 	Wait( 1000 );
 	SetValidityOfInput( TRUE );
-	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "………えっと…。",
 		   NULL, "... well...", Line_WaitForInput);
 	PlaySE(4, "S06/03/150300118", 128, 64);
@@ -1509,7 +1502,7 @@
 	PlaySE(4, "S06/06/150600351", 128, 64);
 	OutputLine(NULL, "「まぁ、そんな話はいいや。",
 		   NULL, "\"Well,", Line_WaitForInput);
-	PlaySE(4, "", 128, 64);
+	PlaySE(4, "S06/06/150600352", 128, 64);
 	OutputLine(NULL, "で？",
 		   NULL, " anyway,", Line_WaitForInput);
 	PlaySE(4, "S06/06/150600353", 128, 64);
@@ -1520,7 +1513,7 @@
 		   NULL, " He looked smart, so does he read a lot of books?\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
-	PlaySE(4, "", 128, 64);
+	PlaySE(4, "S06/03/150300119", 128, 64);
 	OutputLine(NULL, "「あ、あははは！",
 		   NULL, "\"Aha, ahahaha!", Line_WaitForInput);
 	PlaySE(4, "S06/03/150300120", 128, 64);
