@@ -17,18 +17,24 @@
 	DrawSceneWithMask( "Ie1", "maskright", 1, 0, 300 );
 	SetSpeedOfMessage( FALSE, 0 );
 
+	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "「あれれ？",
 		   NULL, "\"Whaaat?", Line_WaitForInput);
+	PlaySE(4, "S06/02/150200190", 128, 64);
 	OutputLine(NULL, "　魅ぃちゃんも何だか寝不足な感じだよ？",
 		   NULL, " Mii-chan, you didn't get much sleep either, did you?", Line_WaitForInput);
+	PlaySE(4, "S06/02/150200191", 128, 64);
 	OutputLine(NULL, "　だよ？」",
 		   NULL, " Did you?\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
+	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "「…うん。",
 		   NULL, "\"...Yeah.", Line_WaitForInput);
+	PlaySE(4, "S06/06/150601983", 128, 64);
 	OutputLine(NULL, "寝たの３時くらいだからね。",
 		   NULL, " I went to bed at like, three.", Line_WaitForInput);
+	PlaySE(4, "S02/03/130300144", 128, 64);
 	OutputLine(NULL, "……眠い。」",
 		   NULL, " ...I'm a little tired.\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -36,16 +42,20 @@
 	DrawBustshotWithFiltering( 1, "Kei_Majime", "maskleft", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 8, 300, TRUE );
 	DisplayWindow();
 
+	PlaySE(4, "S06/01/150100176", 128, 64);
 	OutputLine(NULL, "「さ、３時ぃ？！",
 		   NULL, "\"Th-Three?!", Line_WaitForInput);
+	PlaySE(4, "S02/01/130100435", 128, 64);
 	OutputLine(NULL, "　おいおい、…夜更かしにも限度ってもんがあるぞ？！",
 		   NULL, " Hey, now... You can't keep staying up late!", Line_WaitForInput);
 	DisableWindow();
 	ChangeBustshot( 1, "Kei_Warai", 200, TRUE );
 	DisplayWindow();
 
+	PlaySE(4, "S02/01/130100436", 128, 64);
 	OutputLine(NULL, "　大方、漫画の単行本が面白くなっちゃって、１巻から読破してしまったんだろう。",
 		   NULL, " You probably read the first volume of a manga, thought it was interesting, then read the entire series, didn't you?", Line_WaitForInput);
+	PlaySE(4, "S02/01/130100437", 128, 64);
 	OutputLine(NULL, "うんうん、俺にも経験があるぞ。」",
 		   NULL, " I understand, I've done that before.\"", Line_Normal);
 	ClearMessage();
@@ -53,12 +63,15 @@
 	ChangeBustshot( 2, "Re_BikkuriB1", 200, TRUE );
 	DisplayWindow();
 
+	PlaySE(4, "S02/02/130200107", 128, 64);
 	OutputLine(NULL, "「……………あれ、……ひょっとして、…村長さんのこと？",
 		   NULL, "\"......What? ...Wait... is it about the mayor?", Line_WaitForInput);
+	PlaySE(4, "S02/02/130200108", 128, 64);
 	OutputLine(NULL, "　まだ見つかってないの？」",
 		   NULL, " He still hasn't been found?\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
+	PlaySE(4, "S02/03/130300145", 128, 64);
 	OutputLine(NULL, "「………うん。」",
 		   NULL, "\"......Nope.\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -254,6 +267,7 @@
 	PlayBGM( 0, "semi", 120, 0 );
 	DrawSceneWithMask( "GR3", "maskup", 1, 0, 300 );
 
+	PlaySE(4, "S06/06/150601985", 128, 64);
 	OutputLine(NULL, "「…………古手家頭首として、今回の件はどこまで知ってるの？」",
 		   NULL, "\"As the leader of the Furude family, how much do you know about the incident?\"", Line_Normal);
 	ClearMessage();
@@ -273,6 +287,7 @@
 	DrawBustshotWithFiltering( 2, "Ri_DefA1", "maskright", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 10, 300, TRUE );
 	DisplayWindow();
 
+	PlaySE(4, "S06/05/150500027", 128, 64);
 	OutputLine(NULL, "「……富竹たちのことですか？」",
 		   NULL, "\"......Are you talking about Tomitake and Takano?\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -292,22 +307,28 @@
 	ChangeBustshot( 2, "Ri_KomaruA1", 200, TRUE );
 	DisplayWindow();
 
+	PlaySE(4, "S06/05/150500028", 128, 64);
 	OutputLine(NULL, "「……オヤシロさまの祟りなのですよ、としか言えないのです。」",
 		   NULL, "\"......That's the curse of Oyashiro-sama.\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
+	PlaySE(4, "S06/06/150601986", 128, 64);
 	OutputLine(NULL, "「そんなのはわかってるよ。」",
 		   NULL, "\"I already know that.\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
+	PlaySE(4, "S06/01/330100436", 128, 64);
 	OutputLine(NULL, "「……。」",
 		   NULL, "\".........\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
+	PlaySE(4, "S06/06/150601987", 128, 64);
 	OutputLine(NULL, "「ならまだ終わってないよね？",
 		   NULL, "\"But it's not over yet, is it?", Line_WaitForInput);
+	PlaySE(4, "S06/06/150601988", 128, 64);
 	OutputLine(NULL, "　あと２人残っている。",
 		   NULL, " There should still be two more.", Line_WaitForInput);
+	PlaySE(4, "S06/06/150601989", 128, 64);
 	OutputLine(NULL, "その２人はどうなるか、聞いてる？」",
 		   NULL, " Have you heard about what will happen to them?\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -335,6 +356,7 @@
 	ChangeBustshot( 2, "Ri_DefA1", 200, TRUE );
 	DisplayWindow();
 
+	PlaySE(4, "S06/05/150500030", 128, 64);
 	OutputLine(NULL, "「………………別にどうでもいいと思いますですよ。」",
 		   NULL, "\".........I don't think that matters anymore.\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -355,12 +377,15 @@
 		   NULL, " It's impossible to figure out what she's thinking.", Line_Normal);
 	ClearMessage();
 
+	PlaySE(4, "S06/06/150601990", 128, 64);
 	OutputLine(NULL, "「どうでもいい、ってことはないでしょ？",
 		   NULL, "\"What do you mean?", Line_WaitForInput);
+	PlaySE(4, "S06/06/150601991", 128, 64);
 	OutputLine(NULL, "　それじゃあけじめにならないのは分かってる？」",
 		   NULL, " How can they get away with what they've done?\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
+	PlaySE(4, "S06/05/150500031", 128, 64);
 	OutputLine(NULL, "「…………ボクは、…ちゃんと反省したならそれでいいと思いますです。」",
 		   NULL, "\"......I think, if they feel bad about what they've done, that should be fine.\"", Line_Normal);
 	ClearMessage();
@@ -387,6 +412,7 @@
 		   NULL, "...I recalled how people thought of Rika Furude's father during the dam conflict.", Line_Normal);
 	ClearMessage();
 
+	PlaySE(4, "S02/03/130300575", 128, 64);
 	OutputLine(NULL, "　そうだ。",
 		   NULL, "Yes.", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -412,20 +438,26 @@
 		   NULL, "I aggressively grabbed Rika Furude by the collar.", Line_Normal);
 	ClearMessage();
 
+	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "「あぁん？",
 		   NULL, "\"Huh?", Line_WaitForInput);
+	PlaySE(4, "S06/06/150601993", 128, 64);
 	OutputLine(NULL, "　何を日和ったことを言ってんだかぁ。",
 		   NULL, " What the heck are you talking about?", Line_WaitForInput);
+	PlaySE(4, "S06/06/150601994", 128, 64);
 	OutputLine(NULL, "古手家は先代もあんたも、つくづく甘ったるいねぇ？」",
 		   NULL, " You're pretty stupid. Just like your predecessor, aren't you?\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
+	PlaySE(4, "S06/03/150300457", 128, 64);
 	OutputLine(NULL, "「………………………。」",
 		   NULL, "\"............\"", Line_Normal);
 	ClearMessage();
 
+	PlaySE(4, "S06/06/150601995", 128, 64);
 	OutputLine(NULL, "「あんたたち古手家が、祭具殿がいかに神聖で不可侵な聖域が一番理解してなくちゃならないんだよ？",
 		   NULL, "\"The Furude family must understand better than anybody how sacred the ritual storehouse is.", Line_WaitForInput);
+	PlaySE(4, "S06/06/150601996", 128, 64);
 	OutputLine(NULL, "　その古手家の仮にも頭首が、何を甘ったるいことを言ってるわけ？」",
 		   NULL, " How could the head of that family say such a thing?\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -440,8 +472,10 @@
 		   NULL, "I was told the same thing by someone else and was now saying it to Rika.", Line_Normal);
 	ClearMessage();
 
+	PlaySE(4, "S06/06/150601997", 128, 64);
 	OutputLine(NULL, "「祭具殿を侵した罪が、どれほどの大罪か。",
 		   NULL, "\"Don't you know", Line_WaitForInput);
+	PlaySE(4, "S06/06/150601998", 128, 64);
 	OutputLine(NULL, "理解してないわけじゃないんでしょ？！」",
 		   NULL, " how serious a crime trespassing in the ritual storehouse is?!\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -449,14 +483,18 @@
 	ChangeBustshot( 0, "Ri_DefA1", 200, TRUE );
 	DisplayWindow();
 
+	PlaySE(4, "S06/05/150500033", 128, 64);
 	OutputLine(NULL, "「……祭具殿はオヤシロさまの大切な場所なのです。",
 		   NULL, "\"......It's a very important place for Oyashiro-sama.", Line_WaitForInput);
+	PlaySE(4, "S06/05/150500034", 128, 64);
 	OutputLine(NULL, "…勝手に入ったりとかしちゃ駄目なとこなのです。」",
 		   NULL, " So nobody can go in without permission.\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
+	PlaySE(4, "S06/06/150601999", 128, 64);
 	OutputLine(NULL, "「わかってるじゃない。",
 		   NULL, "\"See, you know that.", Line_WaitForInput);
+	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "そこに穢れを持ち込んだんだよ、あの４人は。」",
 		   NULL, " But those four people brought their filth in there.\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -464,26 +502,34 @@
 	ChangeBustshot( 0, "Ri_KomaruA1", 200, TRUE );
 	DisplayWindow();
 
+	PlaySE(4, "S06/05/150500035", 128, 64);
 	OutputLine(NULL, "「……悪い猫さんなのです。",
 		   NULL, "\"......What bad kitty cats.", Line_WaitForInput);
+	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "……にゃー。」",
 		   NULL, " ...Meow.\"", Line_Normal);
 	ClearMessage();
 
+	PlaySE(4, "S06/06/150602001", 128, 64);
 	OutputLine(NULL, "「そうだね悪い猫だ。",
 		   NULL, "\"That's right, bad cats.", Line_WaitForInput);
+	PlaySE(4, "S06/06/150602002", 128, 64);
 	OutputLine(NULL, "２匹は捕まえてお仕置きした。",
 		   NULL, " Two cats have been caught and punished.", Line_WaitForInput);
+	PlaySE(4, "S06/06/150602003", 128, 64);
 	OutputLine(NULL, "あと２匹いる。」",
 		   NULL, " There are two more.\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
+	PlaySE(4, "S06/05/150500037", 128, 64);
 	OutputLine(NULL, "「……にゃー。」",
 		   NULL, "\"......Meow.\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
+	PlaySE(4, "S06/06/150602004", 128, 64);
 	OutputLine(NULL, "「どうけじめをつけるべきだろうねぇ？",
 		   NULL, "\"How do you think they should be punished?", Line_WaitForInput);
+	PlaySE(4, "S06/06/150602005", 128, 64);
 	OutputLine(NULL, "　古手家頭首のご意見を聞かせてよ。」",
 		   NULL, " Tell me your opinion, as the head of the Furude family.\"", Line_Normal);
 	ClearMessage();
@@ -502,33 +548,43 @@
 		   NULL, "Rika was a little disturbed. I sensed she was trying to see what I was thinking in turn.", Line_Normal);
 	ClearMessage();
 
+	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "「……ボクは２匹の猫さんは、",
 		   NULL, "\"I want to forgive...", Line_ContinueAfterTyping);
 	SetValidityOfInput( FALSE );
 	Wait( 1000 );
 	SetValidityOfInput( TRUE );
+	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "……許してあげたいです。」",
 		   NULL, " those two kitty cats.\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
+	PlaySE(4, "S06/06/150602006", 128, 64);
 	OutputLine(NULL, "「それでけじめになると思ってんの？！」",
 		   NULL, "\"Why should they get away with what they've done?\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
+	PlaySE(4, "S06/05/150500039", 128, 64);
 	OutputLine(NULL, "「……魅ぃ、…けじめって言葉がボクにはよくわからないです。」",
 		   NULL, "\"Mii... What are you trying to say...?\"", Line_Normal);
 	ClearMessage();
 
+	PlaySE(4, "S06/06/150602007", 128, 64);
 	OutputLine(NULL, "「あぁいい質問だね、じゃあお勉強しよう。",
 		   NULL, "\"That's a good question, so let me explain.", Line_WaitForInput);
+	PlaySE(4, "S06/06/150602008", 128, 64);
 	OutputLine(NULL, "けじめってのはね、罪を贖うってことなの。",
 		   NULL, " Those two must offer compensation for what they've done.", Line_WaitForInput);
+	PlaySE(4, "S06/06/150602009", 128, 64);
 	OutputLine(NULL, "罪は残せない。",
 		   NULL, " They have to clear away their sins.", Line_WaitForInput);
+	PlaySE(4, "S06/06/150602010", 128, 64);
 	OutputLine(NULL, "オヤシロさまのお怒りを放置することになるんだからね。",
 		   NULL, " Otherwise Oyashiro-sama won't stop being angry.", Line_WaitForInput);
+	PlaySE(4, "S06/06/150602011", 128, 64);
 	OutputLine(NULL, "だから罪の大きさに比例したけじめで、罪を清めなければならないの。",
 		   NULL, " Every crime must be punished appropriately.", Line_WaitForInput);
+	PlaySE(4, "S06/06/150602012", 128, 64);
 	OutputLine(NULL, "わかるよね？」",
 		   NULL, " Do you understand?\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -536,10 +592,12 @@
 	ChangeBustshot( 0, "Ri_DefA1", 200, TRUE );
 	DisplayWindow();
 
+	PlaySE(4, "S06/05/150500040", 128, 64);
 	OutputLine(NULL, "「……オヤシロさまは、別に祭具殿を見られても怒らないのですよ。」",
 		   NULL, "\"...Oyashiro-sama doesn't get angry even if someone enters the storehouse.\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
+	PlaySE(4, "S06/06/150602013", 128, 64);
 	OutputLine(NULL, "「はぁ？　あんた何言ってんの？」",
 		   NULL, "\"Huh? What are you saying?\"", Line_Normal);
 	ClearMessage();
@@ -547,20 +605,27 @@
 	ChangeBustshot( 0, "Ri_KomaruA1", 200, TRUE );
 	DisplayWindow();
 
+	PlaySE(4, "S06/05/150500041", 128, 64);
 	OutputLine(NULL, "「……あの中を見ちゃダメなのは、あの中に怖い道具がいっぱいあるからなのです。",
 		   NULL, "\"The reason why nobody is allowed to see the ritual storehouse is because there are too many scary tools in there.", Line_WaitForInput);
+	PlaySE(4, "S06/05/150500042", 128, 64);
 	OutputLine(NULL, "見るときっと怖がる人もいると思いますのです。",
 		   NULL, " I'm sure people would get scared if they saw them.", Line_WaitForInput);
+	PlaySE(4, "S06/05/150500043", 128, 64);
 	OutputLine(NULL, "だから誰にも見せないようにしてあるのですよ…？",
 		   NULL, " That's why we don't let people in there.", Line_WaitForInput);
+	PlaySE(4, "S06/05/150500044", 128, 64);
 	OutputLine(NULL, "　見た人もきっと怖かったと思います。",
 		   NULL, " I'm sure those intruders were scared, too.", Line_WaitForInput);
+	PlaySE(4, "S06/05/150500045", 128, 64);
 	OutputLine(NULL, "だから反省してると思いますのです。」",
 		   NULL, " And I'm sure they feel bad about what they've done.\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
+	PlaySE(4, "S06/06/150602014", 128, 64);
 	OutputLine(NULL, "「反省してるから許されるって？！",
 		   NULL, "\"They're forgiven once they feel bad about what they've done?", Line_WaitForInput);
+	PlaySE(4, "S06/06/150602015", 128, 64);
 	OutputLine(NULL, "　あんたが決めることじゃないでしょ、そりゃオヤシロさまが決めること！！」",
 		   NULL, " That's not for you to decide! That's what Oyashiro-sama decides!!\"", Line_Normal);
 	ClearMessage();
@@ -568,12 +633,15 @@
 	ChangeBustshot( 0, "Ri_DefA1", 200, TRUE );
 	DisplayWindow();
 
+	PlaySE(4, "S06/05/150500046", 128, 64);
 	OutputLine(NULL, "「……ボクは、オヤシロさまの巫女ですよ？」",
 		   NULL, "\"I'm the shrine maiden of Oyashiro-sama, don't you know?\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
+	PlaySE(4, "S06/06/150602016", 128, 64);
 	OutputLine(NULL, "「そんなことは知ってるよ！！",
 		   NULL, "\"Of course I do!!", Line_WaitForInput);
+	PlaySE(4, "S06/06/150602017", 128, 64);
 	OutputLine(NULL, "　じゃあ何さ、あんたはオヤシロさまに怒ってませんよって直接声を聞いて確認したとでも言うわけ？！」",
 		   NULL, " You aren't telling me that Oyashiro-sama told you he isn't angry, are you?\"", Line_Normal);
 	ClearMessage();
@@ -590,12 +658,16 @@
 		   NULL, "I'm not surprised. I'm shocked.", Line_Normal);
 	ClearMessage();
 
+	PlaySE(4, "S06/06/150602018", 128, 64);
 	OutputLine(NULL, "「は！！",
 		   NULL, "\"Huh!!", Line_WaitForInput);
+	PlaySE(4, "S06/06/150602019", 128, 64);
 	OutputLine(NULL, "　あんたら古手家がそんなザマだから、あんたの両親は一昨年の祟りで死んじゃったんだよ。",
 		   NULL, " That's why your parents died of the curse two years ago.", Line_WaitForInput);
+	PlaySE(4, "S06/06/150602020", 128, 64);
 	OutputLine(NULL, "オヤシロさまに、仕える資格がないとお怒りを受けてね！！",
 		   NULL, " Oyashiro-sama was angry because they didn't deserve to serve him!!", Line_WaitForInput);
+	PlaySE(4, "S06/06/150602021", 128, 64);
 	OutputLine(NULL, "　それであんたの父親を祟り殺したんだよ！！」",
 		   NULL, " That's why he cursed your father!!\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -603,24 +675,32 @@
 	ChangeBustshot( 0, "Ri_KomaruA1", 200, TRUE );
 	DisplayWindow();
 
+	PlaySE(4, "S06/05/150500047", 128, 64);
 	OutputLine(NULL, "「……オヤシロさまはそんなことしないのです。",
 		   NULL, "\"Oyashiro-sama would never do that.", Line_WaitForInput);
+	PlaySE(4, "S06/05/150500048", 128, 64);
 	OutputLine(NULL, "…お父様は…オヤシロさまの祟りで死んだんじゃないのです……。」",
 		   NULL, " My father didn't die because of the curse of Oyashiro-sama...\"", Line_Normal);
 	ClearMessage();
 
+	PlaySE(4, "S06/06/150602022", 128, 64);
 	OutputLine(NULL, "「かーー！！",
 		   NULL, "\"Bah!!", Line_WaitForInput);
+	PlaySE(4, "S06/06/150602023", 128, 64);
 	OutputLine(NULL, "　こんなのが最後の古手家の巫女だとはね！",
 		   NULL, " Am I really talking to the last shrine maiden of the Furude family?", Line_WaitForInput);
+	PlaySE(4, "S06/06/150602024", 128, 64);
 	OutputLine(NULL, "　オヤシロさまが心を安らかにできないのがよくわかるよ！！",
 		   NULL, " Obviously, Oyashiro-sama can't be at peace!!", Line_WaitForInput);
+	PlaySE(4, "S06/06/150602025", 128, 64);
 	OutputLine(NULL, "　オヤシロさまをお祀りする古手家の人間でありながら！",
 		   NULL, " You are supposed to worship Oyashiro-sama!", Line_WaitForInput);
+	PlaySE(4, "S06/06/150602026", 128, 64);
 	OutputLine(NULL, "　嘆かわしい。」",
 		   NULL, " How pathetic...\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
+	PlaySE(4, "S06/05/150500049", 128, 64);
 	OutputLine(NULL, "「……魅ぃが何を怒っているのか、ボクにはよくわからないのですよ…？」",
 		   NULL, "\"I don't know why you're so angry, Mii...\"", Line_Normal);
 	ClearMessage();
@@ -668,6 +748,7 @@
 		   NULL, "Rika, having tumbled downward, looked up at me with tears in her eyes.", Line_Normal);
 	ClearMessage();
 
+	PlaySE(4, "S06/06/150602027", 128, 64);
 	OutputLine(NULL, "「そもそも、あんたが祭具殿の鍵が重いから簡単なものに付け替えたい、って言い出したのが事の発端なんだよね？」",
 		   NULL, "\"This all happened because you wanted to change the storehouse's lock to something that was easier for you, right?\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -675,18 +756,24 @@
 	DrawBustshotWithFiltering( 2, "Ri_KomaruA1", "maskup", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 10, 1300, TRUE );
 	DisplayWindow();
 
+	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "「……そうですよ。",
 		   NULL, "\"...That's true.", Line_WaitForInput);
+	PlaySE(4, "S06/05/150500051", 128, 64);
 	OutputLine(NULL, "……固くてボクでは大変だったので、…公由に相談して、簡単な鍵に付け替えてもらったのです。」",
 		   NULL, " The old one was too heavy... so I talked to Kimiyoshi and he changed it to a cheaper, lighter one.\"", Line_Normal);
 	ClearMessage();
 
+	PlaySE(4, "S06/06/150602028", 128, 64);
 	OutputLine(NULL, "「あんたがその程度の手間を惜しまず、頑丈な施錠をそのまま残していたなら、祭具殿への侵入を許さなかったかもしれない。",
 		   NULL, "\"If you left the heavy lock on, maybe that would have prevented them from trespassing.", Line_WaitForInput);
+	PlaySE(4, "S06/06/150602029", 128, 64);
 	OutputLine(NULL, "……今回の一件はあんたにも責任の一端があるんだからね？",
 		   NULL, " This is your fault too.", Line_WaitForInput);
+	PlaySE(4, "S06/06/150602030", 128, 64);
 	OutputLine(NULL, "　それを忘れない方がいいよ。",
 		   NULL, " Don't you forget that.", Line_WaitForInput);
+	PlaySE(4, "S06/06/150602031", 128, 64);
 	OutputLine(NULL, "もちろん、あんたと一緒に鍵を付け替えた公由家頭首にも、責任があるんだけどね…。」",
 		   NULL, " Of course, the Kimiyoshi family who actually changed the lock is responsible for this too.\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -703,16 +790,20 @@
 		   NULL, "I wanted to pressure her psychologically by doing so.", Line_Normal);
 	ClearMessage();
 
+	PlaySE(4, "S06/06/150602032", 128, 64);
 	OutputLine(NULL, "「公由家頭首は、…けじめをつけてもらうことになった。",
 		   NULL, "\"The head of the Kimiyoshi family had to pay for his crime.", Line_WaitForInput);
+	PlaySE(4, "S06/06/150602033", 128, 64);
 	OutputLine(NULL, "だから消えた。」",
 		   NULL, " That's why he disappeared.\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
+	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "「………………………………。」",
 		   NULL, "\".....................\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
+	PlaySE(4, "S06/06/150602034", 128, 64);
 	OutputLine(NULL, "「古手家頭首にも、けじめをつけてもらうことになるよ……。」",
 		   NULL, "\"The head of the Furude family has to pay for her crime too, you know...\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -721,31 +812,40 @@
 		   NULL, "Rika was still on the floor, tears pouring down her cheeks.", Line_Normal);
 	ClearMessage();
 
+	PlaySE(4, "S06/06/150602035", 128, 64);
 	OutputLine(NULL, "「あと残ってるのは前原圭一だけ。",
 		   NULL, "\"Keiichi Maebara is the last one left.", Line_WaitForInput);
+	PlaySE(4, "S06/06/150602036", 128, 64);
 	OutputLine(NULL, "……こいつは古手家の方で頼むことにする。」",
 		   NULL, " I suppose the Furude family will take care of him.\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
+	PlaySE(4, "S06/05/150500031", 128, 64);
 	OutputLine(NULL, "「……ボクは、",
 		   NULL, "\"...I...", Line_ContinueAfterTyping);
 	SetValidityOfInput( FALSE );
 	Wait( 800 );
 	SetValidityOfInput( TRUE );
+	PlaySE(4, "S06/05/150500053", 128, 64);
 	OutputLine(NULL, "………何もわかんないのですよ…。」",
 		   NULL, " don't know anything...\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
+	PlaySE(4, "S06/06/150602037", 128, 64);
 	OutputLine(NULL, "「別にあんたはわかんなくてもいいでしょ？",
 		   NULL, "\"You don't need to know anything, do you?", Line_WaitForInput);
+	PlaySE(4, "S06/06/150602038", 128, 64);
 	OutputLine(NULL, "　憂慮したり、困った顔をするだけでいいんだから。",
 		   NULL, " You just have to look worried. That's all it takes.", Line_WaitForInput);
+	PlaySE(4, "S06/06/150602039", 128, 64);
 	OutputLine(NULL, "それはうちも同じ。",
 		   NULL, " That's how it is at our house too.", Line_WaitForInput);
+	PlaySE(4, "S06/06/150602040", 128, 64);
 	OutputLine(NULL, "…とにかく、頼んどくよ。」",
 		   NULL, " Anyway, good luck!\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
+	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "「………………そんなの…………………。」",
 		   NULL, "\"......I don't...\"", Line_Normal);
 	ClearMessage();
@@ -922,8 +1022,10 @@
 
 	OutputLine(NULL, "　大丈夫。",
 		   NULL, "Don't worry.", Line_WaitForInput);
+	PlaySE(4, "S06/18/153300076", 128, 64);
 	OutputLine(NULL, "詩音ちゃんがちゃんと反省してるなら、鬼隠しになんかなるもんか。",
 		   NULL, " If Shion-chan feels bad about what she has done, she won't be demoned away.", Line_WaitForInput);
+	PlaySE(4, "S06/18/153300077", 128, 64);
 	OutputLine(NULL, "公由のおじいちゃんに任せなさい……。",
 		   NULL, " Leave it to me......", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -1115,6 +1217,7 @@
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
 
+	PlaySE(4, "S09/02/170201202", 128, 64);
 	OutputLine(NULL, "　そんなのは決まってる。",
 		   NULL, "That was simple.", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -1391,6 +1494,7 @@
 		   NULL, " I'm using the exact same system that killed Satoshi-kun.", Line_Normal);
 	ClearMessage();
 
+	PlaySE(4, "S03/11/140700026", 128, 64);
 	OutputLine(NULL, "　……前原圭一か。",
 		   NULL, "Keiichi Maebara...", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -1593,12 +1697,15 @@
 	FadeOutBGM( 3, 0, FALSE );
 	DrawBustshot( 19, "no_data", 0, 100, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, TRUE );
 
+	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "「……はい。",
 		   NULL, "\"Yes?", Line_WaitForInput);
+	PlaySE(4, "S06/06/150602042", 128, 64);
 	OutputLine(NULL, "どちら様でしょう。」",
 		   NULL, " Who is it?\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
+	PlaySE(4, "S06/05/150500054_1", 128, 64);
 	OutputLine(NULL, "『こんにちはなのです。』",
 		   NULL, "\"Hello.\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -1608,14 +1715,18 @@
 	ClearMessage();
 	PlayBGM( 0, "higurashi", 120, 0 );
 
+	PlaySE(4, "S06/06/150602043", 128, 64);
 	OutputLine(NULL, "「ん、梨花ちゃんか。",
 		   NULL, "\"Rika-chan...", Line_WaitForInput);
+	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "……どうしたの？",
 		   NULL, " What are you doing here", Line_WaitForInput);
+	PlaySE(4, "S06/06/150602045", 128, 64);
 	OutputLine(NULL, "　こんな時間に。」",
 		   NULL, " at this time of day?\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
+	PlaySE(4, "S06/05/150500054_2", 128, 64);
 	OutputLine(NULL, "『……実は、お醤油を分けてもらいに来たのですよ。』",
 		   NULL, "\"......I ran out of soy sauce, so could you share some with me?\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -1713,20 +1824,26 @@
 	ClearMessage();
 	DrawSceneWithMask( "black", "maskdown", 7, 0, 300 );
 
+	PlaySE(4, "S06/06/150602046", 128, 64);
 	OutputLine(NULL, "「うん、いいよ。",
 		   NULL, "\"Sure.", Line_WaitForInput);
+	PlaySE(4, "S06/06/150602047", 128, 64);
 	OutputLine(NULL, "入れるものは持ってきてるの？」",
 		   NULL, " Did you bring a container?\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
+	PlaySE(4, "S06/05/150500054_3", 128, 64);
 	OutputLine(NULL, "『お醤油の瓶を持ってきましたのです。』",
 		   NULL, "\"I brought a soy sauce bottle.\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
+	PlaySE(4, "S06/06/150602048", 128, 64);
 	OutputLine(NULL, "「ＯＫ。",
 		   NULL, "\"Okay.", Line_WaitForInput);
+	PlaySE(4, "S06/06/150602049", 128, 64);
 	OutputLine(NULL, "勝手に入ってきていいよ。",
 		   NULL, " Come on in.", Line_WaitForInput);
+	PlaySE(4, "S06/06/150602050", 128, 64);
 	OutputLine(NULL, "玄関で待ってる。」",
 		   NULL, " I'll be at the front door.\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -1735,14 +1852,18 @@
 		   NULL, "As I headed there, I heard the doorbell ring again.", Line_Normal);
 	ClearMessage();
 
+	PlaySE(4, "S06/05/150500054_4", 128, 64);
 	OutputLine(NULL, "『……魅ぃ、内側から閉まってて、門が入れないのですよ。』",
 		   NULL, "\"Mii, the gate is locked from the inside. I can't open it.\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
+	PlaySE(4, "S06/06/150602051", 128, 64);
 	OutputLine(NULL, "「あぁ、そうだった。",
 		   NULL, "\"Ah, that's right.", Line_WaitForInput);
+	PlaySE(4, "S06/06/150602052", 128, 64);
 	OutputLine(NULL, "ごめんごめん。",
 		   NULL, " Sorry.", Line_WaitForInput);
+	PlaySE(4, "S06/06/150602053", 128, 64);
 	OutputLine(NULL, "今開けに行くよ、待ってて。」",
 		   NULL, " I'll be right there, just hang on.\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);

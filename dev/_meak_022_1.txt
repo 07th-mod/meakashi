@@ -24,62 +24,82 @@
 	FadeOutBGM( 1, 0, FALSE );
 	DrawBustshot( 19, "no_data", 0, 100, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, TRUE );
 
+	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "「圭一！",
 		   NULL, "\"Keiichi!", Line_WaitForInput);
+	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "　さっきから呼んでるぞ！",
 		   NULL, " I've been calling your name for a while!", Line_WaitForInput);
+	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "　電話だ。",
 		   NULL, " You have a phone call.", Line_WaitForInput);
+	PlaySE(4, "S02/00/132600004", 128, 64);
 	OutputLine(NULL, "……園崎さんから。」",
 		   NULL, " ...It's from Sonozaki-san.\"", Line_Normal);
 	ClearMessage();
 
+	PlaySE(4, "S02/01/130100511", 128, 64);
 	OutputLine(NULL, "「そ、園崎さんって……どっち？",
 		   NULL, "\"S-Sonozaki-san...... which one?", Line_WaitForInput);
+	PlaySE(4, "S02/01/130100512", 128, 64);
 	OutputLine(NULL, "　姉？",
 		   NULL, " The older sister, or", Line_WaitForInput);
+	PlaySE(4, "S02/01/130100513", 128, 64);
 	OutputLine(NULL, "　妹…？」",
 		   NULL, " the younger one...?\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
+	PlaySE(4, "S02/00/132600005", 128, 64);
 	OutputLine(NULL, "「…そんなのは知らん。",
 		   NULL, "\"...I don't know.", Line_WaitForInput);
+	PlaySE(4, "S02/00/132600006", 128, 64);
 	OutputLine(NULL, "自分で出て聞きなさい。」",
 		   NULL, " Ask her yourself.\"", Line_Normal);
 	ClearMessage();
 
+	PlaySE(4, "S02/01/130100514", 128, 64);
 	OutputLine(NULL, "「………も、",
 		   NULL, "\"H-", Line_ContinueAfterTyping);
 	SetValidityOfInput( FALSE );
 	Wait( 800 );
 	SetValidityOfInput( TRUE );
+	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "……もしもし。",
 		   NULL, "Hello...?", Line_WaitForInput);
+	PlaySE(4, "S02/01/130100515", 128, 64);
 	OutputLine(NULL, "……魅音か？",
 		   NULL, " ......Mion?", Line_WaitForInput);
+	PlaySE(4, "S02/01/130100516", 128, 64);
 	OutputLine(NULL, "　…詩音か？」",
 		   NULL, " ...Or is it Shion?\"", Line_Normal);
 	ClearMessage();
 	DrawSceneWithMask( "So_G1", "maskup", 1, 0, 1300 );
 	PlayBGM( 0, "Nazo", 120, 0 );
 
+	PlaySE(4, "S02/06/130600285", 128, 64);
 	OutputLine(NULL, "「私です。",
 		   NULL, "\"It's me.", Line_WaitForInput);
+	PlaySE(4, "S02/06/130600286", 128, 64);
 	OutputLine(NULL, "…詩音です。",
 		   NULL, " ...Shion.", Line_WaitForInput);
+	PlaySE(4, "S02/06/130600287", 128, 64);
 	OutputLine(NULL, "こんばんは。」",
 		   NULL, " Good evening.\"", Line_Normal);
 	ClearMessage();
 
+	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "「詩音！",
 		   NULL, "\"Shion!", Line_WaitForInput);
+	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "……その、",
 		   NULL, " Umm...", Line_ContinueAfterTyping);
 	SetValidityOfInput( FALSE );
 	Wait( 600 );
 	SetValidityOfInput( TRUE );
+	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "……昨夜は……すまなかった。",
 		   NULL, " ...Sorry about... last night.", Line_WaitForInput);
+	PlaySE(4, "S02/01/130100518", 128, 64);
 	OutputLine(NULL, "…つい興奮して……。」",
 		   NULL, " ...I got all riled up...\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -88,18 +108,23 @@
 		   NULL, "He must have been worried about how I hung up the phone so suddenly last night.", Line_Normal);
 	ClearMessage();
 
+	PlaySE(4, "S06/06/150602166", 128, 64);
 	OutputLine(NULL, "「私たちは運命共同体なんです。",
 		   NULL, "\"We're tied to the same fate.", Line_WaitForInput);
+	PlaySE(4, "S06/06/150602167", 128, 64);
 	OutputLine(NULL, "互いの無事の確認が、自分たちの安全の唯一の保証なんです。」",
 		   NULL, " Making sure the other is alright is the only way to guarantee our own safety.\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
+	PlaySE(4, "S06/01/150100189", 128, 64);
 	OutputLine(NULL, "「…あぁ、…それについては同感だ。」",
 		   NULL, "\"...Yeah... I agree.\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
+	PlaySE(4, "S02/06/130600293", 128, 64);
 	OutputLine(NULL, "「……だから、私たちは互いの知っている情報を共有する必要があります。",
 		   NULL, "\"...We absolutely need to share whatever information we have.", Line_WaitForInput);
+	PlaySE(4, "S02/06/130600294", 128, 64);
 	OutputLine(NULL, "……鷹野さんたちみたいな死に方をしないために。」",
 		   NULL, " ...So that we don't die, like Takano-san and Tomitake-san did.\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -110,14 +135,18 @@
 		   NULL, " I heard Keiichi swallow loudly.", Line_Normal);
 	ClearMessage();
 
+	PlaySE(4, "S02/06/130600295", 128, 64);
 	OutputLine(NULL, "「では……昨日の続きを話します。",
 		   NULL, "\"Then... let's continue from where we left off.", Line_WaitForInput);
+	PlaySE(4, "S02/06/130600296", 128, 64);
 	OutputLine(NULL, "……もう怒らないで聞いてくれますよね？」",
 		   NULL, " ...You'll listen without getting angry this time, right?\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
+	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "「……あぁ。",
 		   NULL, "\"...Yeah.", Line_WaitForInput);
+	PlaySE(4, "S02/01/130100525", 128, 64);
 	OutputLine(NULL, "…大丈夫だ。」",
 		   NULL, " ...I'll be fine.\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -142,31 +171,40 @@
 		   NULL, "It was ironic, of course, that while I was warning him, I was also the one who made sure the curse would fall upon him.", Line_Normal);
 	ClearMessage();
 
+	PlaySE(4, "S02/06/130600304", 128, 64);
 	OutputLine(NULL, "「……互いに、何か気になることがあったら報告し合いましょう。",
 		   NULL, "\"...Let's report anything we noticed that seemed strange.", Line_WaitForInput);
+	PlaySE(4, "S02/06/130600305", 128, 64);
 	OutputLine(NULL, "…互いの持つ小さな断片を合わせていけば、…ひょっとすると、鷹野さんたちを殺した、",
 		   NULL, " ...If we connect all the tiny pieces that we have...", Line_WaitForInput);
+	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "…いえ、今年の事件に限らない。",
 		   NULL, " then just maybe we'll find out who killed them...", Line_ContinueAfterTyping);
 	SetValidityOfInput( FALSE );
 	Wait( 1000 );
 	SetValidityOfInput( TRUE );
+	PlaySE(4, "S02/06/130600306", 128, 64);
 	OutputLine(NULL, "過去の連続事件を解決するカギが見つかるかもしれません。」",
 		   NULL, " or maybe even the truth behind the incidents of the past few years.\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
+	PlaySE(4, "S02/01/130100528", 128, 64);
 	OutputLine(NULL, "「……ん、……そうだな。",
 		   NULL, "\"...Mm... you're right.", Line_WaitForInput);
+	PlaySE(4, "S02/01/130100529", 128, 64);
 	OutputLine(NULL, "…確かにそうだ。」",
 		   NULL, " ...You're right about that.\"", Line_Normal);
 	ClearMessage();
 
+	PlaySE(4, "S02/06/130600307", 128, 64);
 	OutputLine(NULL, "「……では、まずは言い出した私から行きます。",
 		   NULL, "\"...Then I'll start, since I suggested it.", Line_WaitForInput);
+	PlaySE(4, "S06/06/150602176", 128, 64);
 	OutputLine(NULL, "…最近、誰かに監視されているような気がします。」",
 		   NULL, " ...I feel like somebody has been watching me lately.\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
+	PlaySE(4, "S06/01/150100194", 128, 64);
 	OutputLine(NULL, "「えぇ…ッ？！？！」",
 		   NULL, "\"What...?!?!\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -177,18 +215,24 @@
 		   NULL, " I just wanted him to realize how urgent the situation was.", Line_Normal);
 	ClearMessage();
 
+	PlaySE(4, "S02/06/130600309", 128, 64);
 	OutputLine(NULL, "「……と言っても、気のせいかもしれません。",
 		   NULL, "\"......It might be my imagination, but...", Line_WaitForInput);
+	PlaySE(4, "S02/06/130600310", 128, 64);
 	OutputLine(NULL, "…でも一応、報告します。",
 		   NULL, " I'll tell you anyway.", Line_WaitForInput);
+	PlaySE(4, "S02/06/130600311", 128, 64);
 	OutputLine(NULL, "……今は気のせいだと思っていますけど、…もしも圭ちゃんも同じように、誰かに監視されているように感じるなら……。",
 		   NULL, " ...I think it's just me, but... if you feel like you're being watched too, Kei-chan, then...", Line_WaitForInput);
+	PlaySE(4, "S02/06/130600312", 128, 64);
 	OutputLine(NULL, "……これは気のせいじゃないのかもしれませんから…。」",
 		   NULL, " ...Maybe it's not just in my head...\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
+	PlaySE(4, "S02/01/130100531", 128, 64);
 	OutputLine(NULL, "「そ、…そういうことなら安心しろ。",
 		   NULL, "\"W-Well... Don't worry.", Line_WaitForInput);
+	PlaySE(4, "S02/01/130100532", 128, 64);
 	OutputLine(NULL, "……少なくとも…俺の方は大丈夫だ。」",
 		   NULL, " ...At the very least... Everything's fine with me.\"", Line_Normal);
 	ClearMessage();
@@ -249,43 +293,55 @@
 		   NULL, "Then I remembered Shion wouldn't know too much about the disappearance of the mayor, so I continued.", Line_Normal);
 	ClearMessage();
 
+	PlaySE(4, "S06/06/150602181", 128, 64);
 	OutputLine(NULL, "「私もついさっき聞いたんですが………、",
 		   NULL, "\"...I just heard this myself...", Line_WaitForInput);
+	PlaySE(4, "S06/06/150602182", 128, 64);
 	OutputLine(NULL, "公由のお爺ちゃんが行方不明になったって…本当ですか？」",
 		   NULL, " Is it true... that Uncle Kimiyoshi went missing?\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
+	PlaySE(4, "S06/01/150100197", 128, 64);
 	OutputLine(NULL, "「村長さんのことか…？",
 		   NULL, "\"You mean the mayor...?", Line_WaitForInput);
+	PlaySE(4, "S06/01/150100198", 128, 64);
 	OutputLine(NULL, "　…何だ、詩音、",
 		   NULL, " Wait, Shion...", Line_ContinueAfterTyping);
 	SetValidityOfInput( FALSE );
 	Wait( 800 );
 	SetValidityOfInput( TRUE );
+	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "…聞いてないのか？」",
 		   NULL, " you haven't heard?\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
+	PlaySE(4, "S02/06/130600402", 128, 64);
 	OutputLine(NULL, "「何も知らないです！",
 		   NULL, "\"I don't know anything!", Line_ContinueAfterTyping);
 	SetValidityOfInput( FALSE );
 	Wait( 600 );
 	SetValidityOfInput( TRUE );
+	PlaySE(4, "S02/06/130600403", 128, 64);
 	OutputLine(NULL, "……お父さんが電話でそう話してるのを、また盗み聞いただけですから。」",
 		   NULL, " ...I just overheard my father talking about it on the phone again.\"", Line_Normal);
 	ClearMessage();
 
+	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "「…あぁ。",
 		   NULL, "\"...Yeah.", Line_WaitForInput);
+	PlaySE(4, "S02/01/130100587", 128, 64);
 	OutputLine(NULL, "実はな、…昨夜、会合のあと、家に帰ってこないとかで雛見沢中で大騒ぎになったんだ。",
 		   NULL, " Actually... last night, after the meeting, he didn't come home, so the whole village was in a panic.", Line_WaitForInput);
+	PlaySE(4, "S02/01/130100588", 128, 64);
 	OutputLine(NULL, "村中で捜したみたいだけど、まだ見つかったって話は聞かないな…。",
 		   NULL, " They searched all over Hinamizawa, but if they've found him, then I haven't heard...", Line_WaitForInput);
+	PlaySE(4, "S02/01/130100589", 128, 64);
 	OutputLine(NULL, "警察も捜してるはずなんだけど………。」",
 		   NULL, " The police should be searching for him as well...\"", Line_Normal);
 	ClearMessage();
 
 	SetSpeedOfMessage( TRUE, 128 );
+	PlaySE(4, "S02/06/130600404", 128, 64);
 	OutputLine(NULL, "「な、なんでそんな大事な話を先にしてくれなかったんですかッ！！！！！」",
 		   NULL, "\"Wh-Why didn't you tell me something that important right away???!!\"", Line_ContinueAfterTyping);
 	StartShakingOfWindow( 248, 40, 0, 2, 4*2, FALSE );
@@ -294,88 +350,115 @@
 
 	ClearMessage();
 
+	PlaySE(4, "S02/01/130100590", 128, 64);
 	OutputLine(NULL, "「わ、悪ぃ…、",
 		   NULL, "\"S-Sorry...", Line_ContinueAfterTyping);
 	SetValidityOfInput( FALSE );
 	Wait( 600 );
 	SetValidityOfInput( TRUE );
+	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "…もう知ってると思ってたんだよ…。",
 		   NULL, " I thought you already knew...", Line_WaitForInput);
+	PlaySE(4, "S02/01/130100591", 128, 64);
 	OutputLine(NULL, "隠す気なんかなかった…！」",
 		   NULL, " I didn't want to hide it or anything...!\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
+	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "「…………………………………圭ちゃん、",
 		   NULL, "\"............Kei-chan...", Line_ContinueAfterTyping);
 	SetValidityOfInput( FALSE );
 	Wait( 1000 );
 	SetValidityOfInput( TRUE );
+	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "……私、",
 		   NULL, " ...What...", Line_ContinueAfterTyping);
 	SetValidityOfInput( FALSE );
 	Wait( 800 );
 	SetValidityOfInput( TRUE );
+	PlaySE(4, "S18/02/160200285", 128, 64);
 	OutputLine(NULL, "……………どうしよう……。」",
 		   NULL, " ......What should I do...?\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
+	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "「…どうした。",
 		   NULL, "\"...What's wrong?", Line_WaitForInput);
+	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "……話せよ。",
 		   NULL, " ...Tell me.", Line_WaitForInput);
+	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "俺たちの間で隠し事はなしだろ…？」",
 		   NULL, " We're not keeping secrets from each other, right...?\"", Line_Normal);
 	ClearMessage();
 
+	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "「……ごめん。",
 		   NULL, "\"...I'm sorry.", Line_WaitForInput);
+	PlaySE(4, "S02/06/130600407", 128, 64);
 	OutputLine(NULL, "…あの、……隠すつもりはなかったんです。",
 		   NULL, " ...I... well, I didn't mean to hide it.", Line_WaitForInput);
+	PlaySE(4, "S02/06/130600408", 128, 64);
 	OutputLine(NULL, "…ちょっとその、言うのが前後したって言うか、………。」",
 		   NULL, " ...It was just that, well, the conversation got turned around and...\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
+	PlaySE(4, "S02/01/130100596", 128, 64);
 	OutputLine(NULL, "「…俺たちは仲間だろ？！",
 		   NULL, "\"...We're on the same side, right?!", Line_WaitForInput);
+	PlaySE(4, "S02/01/130100597", 128, 64);
 	OutputLine(NULL, "　怒ったりしないから正直に話せよ…。」",
 		   NULL, " I won't get mad, so just tell me...\"", Line_Normal);
 	ClearMessage();
 
+	PlaySE(4, "S04/37/310300312", 128, 64);
 	OutputLine(NULL, "「私、",
 		   NULL, "\"I...", Line_ContinueAfterTyping);
 	SetSpeedOfMessage( TRUE, 16 );
+	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "…………",
 		   NULL, "......", Line_ContinueAfterTyping);
 	SetSpeedOfMessage( FALSE, 0 );
+	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "公由のお爺ちゃんに",
 		   NULL, " Uncle Kimiyoshi, I...", Line_ContinueAfterTyping);
 	SetValidityOfInput( FALSE );
 	Wait( 1000 );
 	SetValidityOfInput( TRUE );
+	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "……打ち明けたんです。」",
 		   NULL, " ...I told him everything.\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
+	PlaySE(4, "S02/01/130100598", 128, 64);
 	OutputLine(NULL, "「……公由の爺さんってのは、…詩音にとって、相談できる心安い人なんだろ…？」",
 		   NULL, "\"......Old man Kimiyoshi... He's someone you feel comfortable confiding in, Shion...?\"", Line_Normal);
 	ClearMessage();
 
+	PlaySE(4, "S02/06/130600410", 128, 64);
 	OutputLine(NULL, "「…………はい。",
 		   NULL, "\"......Yes.", Line_WaitForInput);
+	PlaySE(4, "S02/06/130600411", 128, 64);
 	OutputLine(NULL, "……私のこと、………小さい頃から本当に可愛がってくれて…。",
 		   NULL, " ...He would... When I was little, he was really nice to me...", Line_WaitForInput);
+	PlaySE(4, "S02/06/130600412", 128, 64);
 	OutputLine(NULL, "……私、いっつも意地悪なことをしてたのに……いつもにこにこと笑って…。",
 		   NULL, " ...All I did was play tricks on him... but he would always just smile...", Line_WaitForInput);
+	PlaySE(4, "S02/06/130600413", 128, 64);
 	OutputLine(NULL, "……私の言うことは何でも聞いてくれて……。",
 		   NULL, " ...He listened to anything I had to say...", Line_WaitForInput);
+	PlaySE(4, "S02/06/130600414", 128, 64);
 	OutputLine(NULL, "……本当にやさしい人だったのに………。」",
 		   NULL, " ...He was such a kind person...\"", Line_Normal);
 	ClearMessage();
 
+	PlaySE(4, "S02/01/130100599", 128, 64);
 	OutputLine(NULL, "「…お、落ち着けよ詩音。",
 		   NULL, "\"...C-Calm down, Shion.", Line_WaitForInput);
+	PlaySE(4, "S02/01/130100600", 128, 64);
 	OutputLine(NULL, "…別に死んでしまったわけじゃないだろ？",
 		   NULL, " ...It's not like he's dead, right?", Line_WaitForInput);
+	PlaySE(4, "S02/01/130100601", 128, 64);
 	OutputLine(NULL, "　そんな簡単に諦めるなよ…。」",
 		   NULL, " Don't lose heart so easily...\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -396,50 +479,66 @@
 		   NULL, "It really made me laugh.", Line_Normal);
 	ClearMessage();
 
+	PlaySE(4, "S02/06/130600415", 128, 64);
 	OutputLine(NULL, "「……村長さんに、",
 		   NULL, "\"......That night...", Line_WaitForInput);
+	PlaySE(4, "S02/06/130600416", 128, 64);
 	OutputLine(NULL, "……私、あの晩、",
 		   NULL, " ...I told the mayor...", Line_WaitForInput);
+	PlaySE(4, "S02/06/130600417", 128, 64);
 	OutputLine(NULL, "祭具殿に忍び込んだこと……打ち明けたんです。",
 		   NULL, " that we snuck into the ritual storehouse.", Line_WaitForInput);
+	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "…誰かにそれを見られてて、……私たちを狙っている人がいるって。」",
 		   NULL, " ...Also that someone saw us... and was out to get us.\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
+	PlaySE(4, "S02/01/130100602", 128, 64);
 	OutputLine(NULL, "「…村長さんは、鷹野さんたちがまともじゃない死に方をしたのを知ってるのか…？」",
 		   NULL, "\"...Does the mayor know how absurdly Takano-san and Tomitake-san died...?\"", Line_Normal);
 	ClearMessage();
 
+	PlaySE(4, "S02/06/130600419", 128, 64);
 	OutputLine(NULL, "「………はい。",
 		   NULL, "\"......Yes.", Line_WaitForInput);
+	PlaySE(4, "S02/06/130600420", 128, 64);
 	OutputLine(NULL, "…知っていました。",
 		   NULL, " ...He knew about it.", Line_WaitForInput);
+	PlaySE(4, "S02/06/130600421", 128, 64);
 	OutputLine(NULL, "……あの２人がオヤシロさまの祟りで死んだから、…私はその怒りを鎮める生贄にされるんじゃないか、って。",
 		   NULL, " ...I told him that they died by Oyashiro-sama's curse... and that I could be made a sacrifice to calm his anger.", Line_WaitForInput);
+	PlaySE(4, "S02/06/130600422", 128, 64);
 	OutputLine(NULL, "…本当に率直に言いました。」",
 		   NULL, " ...I just said it straight out.\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
+	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "「………あぁ。",
 		   NULL, "\"...Right.", Line_WaitForInput);
+	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "…それで？」",
 		   NULL, " ...What then?\"", Line_Normal);
 	ClearMessage();
 
+	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "「……公由のお爺ちゃん、…怒らなかった。",
 		   NULL, "\"...Uncle Kimiyoshi... didn't get angry.", Line_WaitForInput);
+	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "……そして、にっこり笑って、詩音ちゃんがちゃんと反省してるなら、鬼隠しになんかなるものか、…って。",
 		   NULL, " ...He smiled, then told me that if I was remorseful about it, there was no way I'd be demoned away...", Line_WaitForInput);
+	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "…本当に",
 		   NULL, " ...He was really...", Line_ContinueAfterTyping);
 	SetValidityOfInput( FALSE );
 	Wait( 800 );
 	SetValidityOfInput( TRUE );
+	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "……笑いながら……任せなさい…って………。",
 		   NULL, " ...smiling... ...and he told me to leave it to... him...", Line_ContinueAfterTyping);
 	SetValidityOfInput( FALSE );
 	Wait( 1200 );
 	SetValidityOfInput( TRUE );
+	PlaySE(4, "S06/06/150602426", 128, 64);
 	OutputLine(NULL, "……ぅぅ…ッ！！」",
 		   NULL, " ...ngh...!!\"", Line_Normal);
 	ClearMessage();
@@ -468,30 +567,41 @@
 	ClearMessage();
 	DrawSceneWithMask( "black", "maskup", 1, 0, 300 );
 
+	PlaySE(4, "S02/06/130600426", 128, 64);
 	OutputLine(NULL, "「…………………私のせいです。",
 		   NULL, "\".........It's my fault.", Line_WaitForInput);
+	PlaySE(4, "S02/06/130600427", 128, 64);
 	OutputLine(NULL, "…私が、…打ち明けてしまったから……。」",
 		   NULL, " ...Because I... I confessed everything...\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
+	PlaySE(4, "S02/01/130100605", 128, 64);
 	OutputLine(NULL, "「…よせよ詩音…。",
 		   NULL, "\"...Stop it, Shion...", Line_WaitForInput);
+	PlaySE(4, "S02/01/130100606", 128, 64);
 	OutputLine(NULL, "…詩音のせいじゃないよ。」",
 		   NULL, " ...It's not your fault.\"", Line_Normal);
 	ClearMessage();
 
+	PlaySE(4, "S02/06/130600428", 128, 64);
 	OutputLine(NULL, "「いいえッ！！",
 		   NULL, "\"No!", Line_WaitForInput);
+	PlaySE(4, "S02/06/130600429", 128, 64);
 	OutputLine(NULL, "　私のせいなんです！！",
 		   NULL, " It is my fault!", Line_WaitForInput);
+	PlaySE(4, "S02/06/130600430", 128, 64);
 	OutputLine(NULL, "　私が…打ち明けてしまったから…！",
 		   NULL, " I... I told him our secret...!", Line_WaitForInput);
+	PlaySE(4, "S02/06/130600431", 128, 64);
 	OutputLine(NULL, "　公由のお爺ちゃんが…知ってしまったから…！",
 		   NULL, " Uncle Kimiyoshi found out about everything...!", Line_WaitForInput);
+	PlaySE(4, "S02/06/130600432", 128, 64);
 	OutputLine(NULL, "　だから……殺されてしまったに違いないんです！！",
 		   NULL, " So... he had to have been killed!!", Line_WaitForInput);
+	PlaySE(4, "S02/06/130600433", 128, 64);
 	OutputLine(NULL, "　だって、…打ち明けてすぐなんですよ？！",
 		   NULL, " ...It was right after I confessed to him, after all!!", Line_WaitForInput);
+	PlaySE(4, "S02/06/130600434", 128, 64);
 	OutputLine(NULL, "　打ち明けて、…大丈夫って言ってくれたその晩に消えてしまった！！！」",
 		   NULL, " He disappeared the same night... and he told me everything was going to be all right!!\"", Line_Normal);
 	ClearMessage();
@@ -533,25 +643,32 @@
 	ClearMessage();
 	DrawSceneWithMask( "So_G1", "maskdown", 1, 0, 300 );
 
+	PlaySE(4, "S02/06/130600435", 128, 64);
 	OutputLine(NULL, "「話すんじゃなかったッ！！！",
 		   NULL, "\"I should never have told him!!!", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
+	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "　これは全部、…私たち４人の咎だったはず！！",
 		   NULL, "All of this... should have only been our fault! Only the four of us!!", Line_WaitForInput);
+	PlaySE(4, "S02/06/130600437", 128, 64);
 	OutputLine(NULL, "　他人に話してはいけないことだったんです！！",
 		   NULL, " It wasn't something I should have told someone else!!", Line_WaitForInput);
+	PlaySE(4, "S02/06/130600438", 128, 64);
 	OutputLine(NULL, "　話したから殺されてしまった！",
 		   NULL, " He got killed because I told him!", Line_WaitForInput);
+	PlaySE(4, "S02/06/130600448", 128, 64);
 	OutputLine(NULL, "　知ったから殺されてしまった！",
 		   NULL, " He got killed because he knew!", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
 
+	PlaySE(4, "S02/06/130600449", 128, 64);
 	OutputLine(NULL, "　打ち明けたから",
 		   NULL, "He got killed...", Line_ContinueAfterTyping);
 	SetSpeedOfMessage( TRUE, 16 );
+	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "……",
 		   NULL, "...", Line_ContinueAfterTyping);
 	SetSpeedOfMessage( FALSE, 0 );
@@ -560,30 +677,39 @@
 	SetValidityOfInput( TRUE );
 	SetSpeedOfMessage( TRUE, 128 );
 
+	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "殺されてしまったッ！",
 		   NULL, " because I confessed to him!!!!", Line_ContinueAfterTyping);
 	StartShakingOfWindow( 248, 40, 0, 2, 3*2, FALSE );
 	StartShakingOfAllObjects( 248, 40, 0, 2, 3*2, TRUE );
 
 	SetSpeedOfMessage( FALSE, 0 );
+	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "」",
 		   NULL, "\"", Line_Normal);
 	ClearMessage();
 
+	PlaySE(4, "S02/01/130100607", 128, 64);
 	OutputLine(NULL, "「おい待てよ！！",
 		   NULL, "\"Hey, stop!!", Line_WaitForInput);
+	PlaySE(4, "S02/01/130100608", 128, 64);
 	OutputLine(NULL, "　そんなヤツなら、…打ち明けた村長を殺す前に、お前からさきに殺すに決まってるじゃないか！",
 		   NULL, " If they were doing that... then they would obviously have killed you before killing the mayor!", Line_WaitForInput);
+	PlaySE(4, "S02/01/130100609", 128, 64);
 	OutputLine(NULL, "　順番が違うよ！！",
 		   NULL, " It doesn't make sense!", Line_WaitForInput);
+	PlaySE(4, "S02/01/130100610", 128, 64);
 	OutputLine(NULL, "　殺されるなら俺か詩音が先！！",
 		   NULL, " You or I should have been killed first!!", Line_WaitForInput);
+	PlaySE(4, "S02/01/130100611", 128, 64);
 	OutputLine(NULL, "　他のヤツらが先に死んだりするものか！！！」",
 		   NULL, "Why would other people die before us?!!\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
+	PlaySE(4, "S02/06/130600441", 128, 64);
 	OutputLine(NULL, "「順番はあります！！",
 		   NULL, "\"It does make sense!", Line_WaitForInput);
+	PlaySE(4, "S02/06/130600442", 128, 64);
 	OutputLine(NULL, "　私たちを、一番最後に殺すつもりに違いないんです！！」",
 		   NULL, " They must be planning to kill us last of all!!\"", Line_Normal);
 	ClearMessage();
@@ -593,13 +719,16 @@
 	FadeOutBGM( 3, 0, FALSE );
 	DrawBustshot( 19, "no_data", 0, 100, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, TRUE );
 
+	PlaySE(4, "S06/01/150100224", 128, 64);
 	OutputLine(NULL, "「…は…？",
 		   NULL, "\"...Hah...?", Line_WaitForInput);
+	PlaySE(4, "S06/01/150100225", 128, 64);
 	OutputLine(NULL, "　な、…なんだって？！」",
 		   NULL, " Wha... What!?\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 	PlayBGM( 0, "hig_sample_kyouki", 120, 0 );
 
+	PlaySE(4, "S02/06/130600443", 128, 64);
 	OutputLine(NULL, "「…ひと思いに殺さないで…、親しい人たちから順々に殺していって…、散々悲しい思いをさせた後に殺す、……そういう狙いに違いないんです！！」",
 		   NULL, "\"...'They' start by killing those we're close to... and after they've caused us so much pain, then they'll kill us... That must be what they're doing!!\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -676,104 +805,136 @@
 
 	DrawScene( "black", 400 );
 
+	PlaySE(4, "S02/01/130100618", 128, 64);
 	OutputLine(NULL, "「…り、………梨花ちゃんッ！！",
 		   NULL, "\"...Ri...... Rika-chan!!", Line_WaitForInput);
+	PlaySE(4, "S02/01/130100619", 128, 64);
 	OutputLine(NULL, "　梨花ちゃんだッ！！！！」",
 		   NULL, " It's Rika-chan!!!!\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
+	PlaySE(4, "S02/06/130600450", 128, 64);
 	OutputLine(NULL, "「………え？",
 		   NULL, "\"......What?", Line_WaitForInput);
+	PlaySE(4, "S02/06/130600451", 128, 64);
 	OutputLine(NULL, "　……今、何て言ったんですか…？！」",
 		   NULL, " ...What did you say just now...?!\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
+	PlaySE(4, "S02/01/130100620", 128, 64);
 	OutputLine(NULL, "「お、…俺も",
 		   NULL, "\"I... I, well...", Line_ContinueAfterTyping);
 	SetValidityOfInput( FALSE );
 	Wait( 800 );
 	SetValidityOfInput( TRUE );
+	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "……実は…、",
 		   NULL, " ...The truth is...", Line_ContinueAfterTyping);
 	SetValidityOfInput( FALSE );
 	Wait( 800 );
 	SetValidityOfInput( TRUE );
+	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "…う、",
 		   NULL, " ...I...", Line_ContinueAfterTyping);
 	SetValidityOfInput( FALSE );
 	Wait( 900 );
 	SetValidityOfInput( TRUE );
+	PlaySE(4, "S06/01/150100304", 128, 64);
 	OutputLine(NULL, "…打ち明けたんだ。",
 		   NULL, " ...I told her about it.", Line_WaitForInput);
+	PlaySE(4, "S06/01/150100229", 128, 64);
 	OutputLine(NULL, "…梨花ちゃんに、",
 		   NULL, " ...I told Rika-chan...", Line_ContinueAfterTyping);
 	SetValidityOfInput( FALSE );
 	Wait( 1000 );
 	SetValidityOfInput( TRUE );
+	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "……今日ッ！！」",
 		   NULL, " ...today!!\"", Line_Normal);
 	ClearMessage();
 
+	PlaySE(4, "S06/06/150602226", 128, 64);
 	OutputLine(NULL, "「梨花ちゃんって、…梨花ちゃまのことですか？",
 		   NULL, "\"Rika-chan... You mean Rika-chama?", Line_WaitForInput);
+	PlaySE(4, "S06/06/150602227", 128, 64);
 	OutputLine(NULL, "　古手神社の梨花ちゃま？」",
 		   NULL, " The one from the Furude Shrine?\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
+	PlaySE(4, "S06/01/150100230", 128, 64);
 	OutputLine(NULL, "「そうだよ、梨花ちゃんだよ！！",
 		   NULL, "\"Yes, Rika-chan!", Line_WaitForInput);
+	PlaySE(4, "S02/01/130100623", 128, 64);
 	OutputLine(NULL, "　……俺も、…どうしようもなく不安で……打ち明けたんだ。",
 		   NULL, " ...I felt... I felt so scared and uneasy... that I did it.", Line_WaitForInput);
+	PlaySE(4, "S02/01/130100624", 128, 64);
 	OutputLine(NULL, "…梨花ちゃんに。」",
 		   NULL, " ...I told Rika-chan.\"", Line_Normal);
 	ClearMessage();
 
+	PlaySE(4, "S02/06/130600454", 128, 64);
 	OutputLine(NULL, "「………そうしたら、………梨花ちゃまはなんて…？」",
 		   NULL, "\"...When you did... what did she say...?\"", Line_Normal);
 	ClearMessage();
 
+	PlaySE(4, "S02/05/130500066", 128, 64);
 	OutputLine(NULL, "「……猫さんの心配し過ぎなのです。",
 		   NULL, "\"...The cat is worrying too much.", Line_WaitForInput);
+	PlaySE(4, "S02/05/130500067", 128, 64);
 	OutputLine(NULL, "ボクがきっと、何とかしてあげますですよ。",
 		   NULL, " I'll do something about it for sure.", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
 
+	PlaySE(4, "S06/01/150100235", 128, 64);
 	OutputLine(NULL, "　って梨花ちゃんはそう言って…！！",
 		   NULL, "That's what Rika-chan said...!!", Line_WaitForInput);
+	PlaySE(4, "S06/01/150100236", 128, 64);
 	OutputLine(NULL, "　……ご、ごめん詩音！",
 		   NULL, " ...I-I'm sorry, Shion!", Line_WaitForInput);
+	PlaySE(4, "S06/01/150100237", 128, 64);
 	OutputLine(NULL, "　お、俺…俺、…ちょっと…梨花ちゃんのことが心配になっちゃって…！！」",
 		   NULL, " I-I-I... I'm a bit... I'm worried about Rika-chan...!!\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
+	PlaySE(4, "S06/06/150602229", 128, 64);
 	OutputLine(NULL, "「あ、はい！　…そんなに心配でしたら、ぜひ電話を。",
 		   NULL, "\"Ah, right! ...If you're that concerned, then don't worry about me.", Line_WaitForInput);
+	PlaySE(4, "S06/06/150602230", 128, 64);
 	OutputLine(NULL, "安否を確認してみて下さい。」",
 		   NULL, " Please, go find out whether she's safe.\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
+	PlaySE(4, "S06/01/150100238", 128, 64);
 	OutputLine(NULL, "「…あ、あぁ！！",
 		   NULL, "\"Y-Yeah...!", Line_WaitForInput);
+	PlaySE(4, "S06/01/150100239", 128, 64);
 	OutputLine(NULL, "　そうさせてもらう！」",
 		   NULL, " I'll do that!\"", Line_Normal);
 	ClearMessage();
 
+	PlaySE(4, "S06/06/150602231", 128, 64);
 	OutputLine(NULL, "「また明日も、このくらいの時間に連絡します。",
 		   NULL, "\"I'll call you again tomorrow at the same time.", Line_WaitForInput);
+	PlaySE(4, "S06/06/150602232", 128, 64);
 	OutputLine(NULL, "それを以て、私の安否確認として下さい。」",
 		   NULL, " When I do, you'll know I'm still alright.\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
+	PlaySE(4, "S06/01/150100240", 128, 64);
 	OutputLine(NULL, "「…わかった。",
 		   NULL, "\"...I got it.", Line_WaitForInput);
+	PlaySE(4, "S06/01/150100241", 128, 64);
 	OutputLine(NULL, "待ってる。",
 		   NULL, " I'll be waiting.", Line_WaitForInput);
+	PlaySE(4, "S06/01/150100242", 128, 64);
 	OutputLine(NULL, "じゃあな！",
 		   NULL, " Okay, bye!", Line_WaitForInput);
+	PlaySE(4, "S06/01/150100243", 128, 64);
 	OutputLine(NULL, "　すまん！　",
 		   NULL, " Sorry!", Line_WaitForInput);
+	PlaySE(4, "S06/01/150100244", 128, 64);
 	OutputLine(NULL, "切るぞ！！」",
 		   NULL, " I'm hanging up!!\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -784,8 +945,10 @@
 	DrawScene( "Moon", 400 );
 	PlayBGM( 1, "yabaisemi", 120, 0 );
 
+	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "「…………ぷ。",
 		   NULL, "\"......", Line_WaitForInput);
+	PlaySE(4, "S06/06/150602234", 128, 64);
 	OutputLine(NULL, "…あっはっはっはっはっはっは！！！」",
 		   NULL, "Ah ha ha ha ha!!!\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);

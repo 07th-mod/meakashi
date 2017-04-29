@@ -74,18 +74,23 @@
 	ClearMessage();
 	DrawSceneWithMask( "M_Y4", "maskleft", 1, 0, 300 );
 
+	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "「……去年の捜索って、何時に終わりにしましたっけ？」",
 		   NULL, "\"......When did we stop searching last year, do you remember?\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
+	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "「ん？",
 		   NULL, "\"Hmm?", Line_WaitForInput);
+	PlaySE(4, "S20/00/villB44001", 128, 64);
 	OutputLine(NULL, "　北条んとこの悟史ん時かい？",
 		   NULL, " When Satoshi Houjou-kun was missing?", Line_WaitForInput);
+	PlaySE(4, "S20/00/villB44002", 128, 64);
 	OutputLine(NULL, "　ありゃあ何時だったっけ？」",
 		   NULL, " Oh, what time was it?\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
+	PlaySE(4, "S20/00/eldA44001", 128, 64);
 	OutputLine(NULL, "「午前の０時過ぎくらいには解散したような気がするなぁ。」",
 		   NULL, "\"I guess that was around midnight.\"", Line_Normal);
 	ClearMessage();
