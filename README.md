@@ -18,13 +18,13 @@ Old collaborators welcome to join the repository, however it's still preferred t
 - [x] _meak_006.txt
 - [x] _meak_007.txt
 - [x] _meak_008.txt
-- [ ] **_meak_009.txt**
-- [ ] _meak_010.txt
-- [ ] _meak_011.txt
-- [ ] _meak_012.txt
-- [ ] _meak_013.txt
-- [ ] _meak_014_1.txt
-- [ ] _meak_014_2.txt
+- [x] **_meak_009.txt**
+- [x] _meak_010.txt
+- [x] _meak_011.txt
+- [x] _meak_012.txt
+- [x] _meak_013.txt
+- [x] _meak_014_1.txt
+- [x] _meak_014_2.txt
 - [ ] _meak_015_1.txt
 - [ ] _meak_015_2.txt
 - [ ] _meak_016_1.txt
@@ -70,3 +70,6 @@ Old collaborators welcome to join the repository, however it's still preferred t
 # Known issues (for fixing)
 
 > in _meak_002.txt, line 1308, a voice line is missing. Worth to look inside the PS2 voices.
+> in _meak_011.txt, line 921, a voice line is missing.      ^
+> in _meak_012.txt, from lines 1800 onwards, a bunch of voice lines related to the torture scene are missing.
+> in _meak_014_1.txt, the story about "Watanagashi" has no voices (line 2447). Some stuff was also censored later (line 2645).

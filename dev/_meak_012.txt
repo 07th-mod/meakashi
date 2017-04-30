@@ -69,7 +69,7 @@
 	PlaySE(4, "S06/19/153100016", 128, 64);
 	OutputLine(NULL, "……………はい？",
 		   NULL, " ...What?", Line_WaitForInput);
-	PlaySE(4, "", 128, 64);
+	PlaySE(4, "S06/19/153100017", 128, 64);
 	OutputLine(NULL, "　あ、……そうですか。",
 		   NULL, " All right...", Line_WaitForInput);
 	PlaySE(4, "S06/19/153100018", 128, 64);
@@ -183,7 +183,7 @@
 		   NULL, "\"...Where's Kasai?\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
-	PlaySE(4, "", 128, 64);
+	PlaySE(4, "S06/00/bukaA15002", 128, 64);
 	OutputLine(NULL, "「……………。」",
 		   NULL, "\".........\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -397,7 +397,7 @@
 	DrawBustshot( 19, "no_data", 0, 100, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, TRUE );
 	PlayBGM( 0, "semi_r", 120, 0 );
 
-	PlaySE(4, "", 128, 64);
+	PlaySE(4, "S06/06/150600916", 128, 64);
 	OutputLine(NULL, "「……これが噂の、地下拷問室ってやつですね？」",
 		   NULL, "\"...So, this is the underground torture room, huh?\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -736,7 +736,7 @@
 	DrawSceneWithMask( "JSA4", "maskup", 1, 0, 300 );
 	PlayBGM( 0, "hgrs01", 120, 0 );
 
-	PlaySE(4, "", 128, 64);
+	PlaySE(4, "S06/06/150600919", 128, 64);
 	OutputLine(NULL, "「……鬼婆、あんた何言ってんの？",
 		   NULL, "\"...What are you saying, you old hag?", Line_WaitForInput);
 	PlaySE(4, "S06/06/150600920", 128, 64);
@@ -747,12 +747,12 @@
 	PlaySE(4, "S06/17/152300017", 128, 64);
 	OutputLine(NULL, "「ああぁん？！",
 		   NULL, "\"Huhh?!", Line_WaitForInput);
-	PlaySE(4, "", 128, 64);
+	PlaySE(4, "S06/17/152300018", 128, 64);
 	OutputLine(NULL, "　なんばねすったら口の聞きぃ！！」",
 		   NULL, " Who the hell do you think you're talking to?!!\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
-	PlaySE(4, "", 128, 64);
+	PlaySE(4, "S06/06/150600921", 128, 64);
 	OutputLine(NULL, "「やかましいッ、終いまで聞きなよ鬼婆ッ！！！！」",
 		   NULL, "\"Shut the fuck up!! Let me finish!!!\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -927,7 +927,7 @@
 		   NULL, " I understand what you wanted to say.\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
-	PlaySE(4, "S06/03/150300457", 128, 64);
+	PlaySE(4, "S06/06/150600945", 128, 64);
 	OutputLine(NULL, "「………………………。」",
 		   NULL, "\".....................\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -950,7 +950,7 @@
 		   NULL, " You have to pay for what you did.\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
-	PlaySE(4, "", 128, 64);
+	PlaySE(4, "S06/06/150600946", 128, 64);
 	OutputLine(NULL, "「……………けじめ？！",
 		   NULL, "\"......What did I do?!", Line_WaitForInput);
 	PlaySE(4, "S06/06/150600947", 128, 64);
@@ -978,7 +978,7 @@
 	PlaySE(4, "S06/03/150300197", 128, 64);
 	OutputLine(NULL, "「……あなたの言う個人の理屈は多分正しい。",
 		   NULL, "\"...You're probably right,", Line_WaitForInput);
-	PlaySE(4, "", 128, 64);
+	PlaySE(4, "S06/03/150300198", 128, 64);
 	OutputLine(NULL, "……でもね？",
 		   NULL, " but...", Line_WaitForInput);
 	PlaySE(4, "S06/03/150300199", 128, 64);
@@ -999,7 +999,7 @@
 		   NULL, "I interrupted her.", Line_Normal);
 	ClearMessage();
 
-	PlaySE(4, "", 128, 64);
+	PlaySE(4, "S06/06/150600949", 128, 64);
 	OutputLine(NULL, "「あんたとは、こっちに帰ってからどうもその辺りの話が食い合わないですね。",
 		   NULL, "\"We haven't agreed on that matter ever since I came back.", Line_WaitForInput);
 	PlaySE(4, "S06/06/150600950", 128, 64);
@@ -1033,13 +1033,12 @@
 		   NULL, "Mion interrupted me, just like I did her.", Line_Normal);
 	ClearMessage();
 
-	PlaySE(4, "", 128, 64);
+	PlaySE(4, "S06/03/150300203_1", 128, 64);
 	OutputLine(NULL, "「…………詩音は今日まで興宮で生活するにあたって、",
 		   NULL, "\"......How many people did you depend on", Line_ContinueAfterTyping);
 	SetValidityOfInput( FALSE );
 	Wait( 1000 );
 	SetValidityOfInput( TRUE );
-	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "…どれだけの人の世話になってる？」",
 		   NULL, " to start your new life in Okinomiya?\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -1056,7 +1055,7 @@
 		   NULL, "\"......Kasai-san is in the cell at the back.\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
-	PlaySE(4, "", 128, 64);
+	PlaySE(4, "S06/06/150600956", 128, 64);
 	OutputLine(NULL, "「な、……なんで葛西がッ？！」",
 		   NULL, "\"Wh-Why... Why Kasai?!\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -1111,7 +1110,7 @@
 		   NULL, "But I resented the fact that I'd be putting the people who supported me at risk.", Line_Normal);
 	ClearMessage();
 
-	PlaySE(4, "", 128, 64);
+	PlaySE(4, "S06/03/150300206", 128, 64);
 	OutputLine(NULL, "「……詩音。",
 		   NULL, "\"...Shion,", Line_WaitForInput);
 	PlaySE(4, "S06/03/150300207", 128, 64);
@@ -1125,7 +1124,7 @@
 		   NULL, " All right?\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
-	PlaySE(4, "", 128, 64);
+	PlaySE(4, "S06/06/150600957", 128, 64);
 	OutputLine(NULL, "「でも……でも、魅音…。",
 		   NULL, "\"But... but, Mion,", Line_WaitForInput);
 	PlaySE(4, "S06/06/150600958", 128, 64);
@@ -1209,7 +1208,7 @@
 	ClearMessage();
 	DrawScene( "JSA4", 400 );
 
-	PlaySE(4, "", 128, 64);
+	PlaySE(4, "S06/06/150600960", 128, 64);
 	OutputLine(NULL, "「ま、…………ま、待ってお姉……！！」",
 		   NULL, "\"Wa-Wait... Sis...!!\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -1231,13 +1230,12 @@
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
 	SetSpeedOfMessage( TRUE, 16 );
-	PlaySE(4, "", 128, 64);
+	PlaySE(4, "S06/06/150600961", 128, 64);
 	OutputLine(NULL, "「…………………ご、",
 		   NULL, "\"......I'm", Line_ContinueAfterTyping);
 	SetValidityOfInput( FALSE );
 	Wait( 800 );
 	SetValidityOfInput( TRUE );
-	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "……………、」",
 		   NULL, ".........\"", Line_Normal);
 	ClearMessage();
@@ -1251,7 +1249,7 @@
 		   NULL, "...I no longer cared about my pride.", Line_Normal);
 	ClearMessage();
 
-	PlaySE(4, "", 128, 64);
+	PlaySE(4, "S06/06/150600962", 128, 64);
 	OutputLine(NULL, "「………ごめんなさい…。",
 		   NULL, "\"...I'm sorry...", Line_WaitForInput);
 	PlaySE(4, "S06/06/150600963", 128, 64);
@@ -1297,7 +1295,7 @@
 		   NULL, " How do you propose to pay for this?\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
-	PlaySE(4, "", 128, 64);
+	PlaySE(4, "S06/06/150600965", 128, 64);
 	OutputLine(NULL, "「け、……………けじめって、…………どうすれば…………。」",
 		   NULL, "\"P-Pay...? What do you want me to do...?\"", Line_Normal);
 	ClearMessage();
@@ -1333,20 +1331,18 @@
 	DrawBustshotWithFiltering( 2, "Me_majimeA2", "maskright", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 10, 0, FALSE );
 	DrawSceneWithMask( "JSA5", "maskright", 1, 0, 300 );
 
-	PlaySE(4, "", 128, 64);
+	PlaySE(4, "S06/06/150600966", 128, 64);
 	OutputLine(NULL, "「………………なに、………これ……。」",
 		   NULL, "\"...What is... this...?\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
-	PlaySE(4, "", 128, 64);
+	PlaySE(4, "S06/03/150300215", 128, 64);
 	OutputLine(NULL, "「……爪を剥ぐための道具です。",
 		   NULL, "\"...It's a tool for removing fingernails.", Line_WaitForInput);
-	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "使い方はわかります？」",
 		   NULL, " Do you know how to use it...?\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
-	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "「わ、……………わかるわけ……ないでしょ…………。」",
 		   NULL, "\"N-No way...\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -1380,7 +1376,7 @@
 	PlaySE(4, "S06/03/150300215", 128, 64);
 	OutputLine(NULL, "「爪１枚ずつで、詩音が掛けた迷惑のそれぞれのけじめとします。",
 		   NULL, "\"Each fingernail represents one of your responsibilities...", Line_WaitForInput);
-	PlaySE(4, "", 128, 64);
+	PlaySE(4, "S06/03/150300216", 128, 64);
 	OutputLine(NULL, "………園崎詩音。",
 		   NULL, " Shion Sonozaki,", Line_WaitForInput);
 	PlaySE(4, "S06/03/150300217", 128, 64);
@@ -1407,12 +1403,12 @@
 		   NULL, "...It was a fairly reasonable number.", Line_Normal);
 	ClearMessage();
 
-	PlaySE(4, "", 128, 64);
+	PlaySE(4, "S06/06/150600968", 128, 64);
 	OutputLine(NULL, "「ほ、…………本当にそれで……………他の人は許してくれるんですか………。」",
 		   NULL, "\"Will you... really not punish the others...?\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
-	PlaySE(4, "S06/02/150200223", 128, 64);
+	PlaySE(4, "S06/03/150300219", 128, 64);
 	OutputLine(NULL, "「……………………。」",
 		   NULL, "\".....................\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -1420,7 +1416,7 @@
 	PlaySE(4, "S06/06/150600969", 128, 64);
 	OutputLine(NULL, "「約束して……。",
 		   NULL, "\"Promise me...", Line_WaitForInput);
-	PlaySE(4, "", 128, 64);
+	PlaySE(4, "S06/06/150600970", 128, 64);
 	OutputLine(NULL, "私がちゃんと自分の爪を剥げたら……他のみんなは許すと約束して……。」",
 		   NULL, " Please let them go if I do this...\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -1436,7 +1432,7 @@
 	PlaySE(4, "S06/06/150600971", 128, 64);
 	OutputLine(NULL, "「やるから待って！！！",
 		   NULL, "\"I'll do it!!", Line_WaitForInput);
-	PlaySE(4, "", 128, 64);
+	PlaySE(4, "S06/06/150600972", 128, 64);
 	OutputLine(NULL, "　待ってよ……やるから……、……やるから…。」",
 		   NULL, " Just give me a second... I'm doing it...\"", Line_Normal);
 	ClearMessage();
@@ -1500,19 +1496,17 @@
 		   NULL, "It was the silence that awaited my next action.", Line_Normal);
 	ClearMessage();
 
-	PlaySE(4, "", 128, 64);
+	PlaySE(4, "S06/06/150600973", 128, 64);
 	OutputLine(NULL, "「……で、",
 		   NULL, "\"...So...", Line_ContinueAfterTyping);
 	SetValidityOfInput( FALSE );
 	Wait( 500 );
 	SetValidityOfInput( TRUE );
-	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "……ど、",
 		   NULL, " what", Line_ContinueAfterTyping);
 	SetValidityOfInput( FALSE );
 	Wait( 600 );
 	SetValidityOfInput( TRUE );
-	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "……………どうするの…………。」",
 		   NULL, " should I do now.........?\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -1567,19 +1561,17 @@
 	ClearMessage();
 	DrawSceneWithMask( "JSA5", "maskleft", 1, 0, 300 );
 
-	PlaySE(4, "", 128, 64);
+	PlaySE(4, "S06/06/150600974", 128, 64);
 	OutputLine(NULL, "「は、",
 		   NULL, "\"Huff", Line_ContinueAfterTyping);
 	SetValidityOfInput( FALSE );
 	Wait( 800 );
 	SetValidityOfInput( TRUE );
-	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "………は、",
 		   NULL, "... huff", Line_ContinueAfterTyping);
 	SetValidityOfInput( FALSE );
 	Wait( 600 );
 	SetValidityOfInput( TRUE );
-	PlaySE(4, "S03/01/140100674", 128, 64);
 	OutputLine(NULL, "………はぁ………はぁ………。」",
 		   NULL, "... hah... hah...\"", Line_Normal);
 	ClearMessage();
@@ -1606,7 +1598,6 @@
 		   NULL, "...If it were Kasai, he'd have to sacrifice his little finger, or something even worse.", Line_Normal);
 	ClearMessage();
 
-	PlaySE(4, "S14/18/213300014", 128, 64);
 	OutputLine(NULL, "　わかってるわかってる。",
 		   NULL, "I knew. I knew that.", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -1630,7 +1621,6 @@
 	ClearMessage();
 	DrawScene( "black", 400 );
 
-	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "「はぁ……はぁ……はあ……はぁ！」",
 		   NULL, "\"Huff... huff... huff... huff!\"", Line_Normal);
 	ClearMessage();
@@ -1651,7 +1641,6 @@
 		   NULL, "...Would they tell him to remove his fingernails in exchange for forgiving me?", Line_Normal);
 	ClearMessage();
 
-	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "「……はぁ……はぁ……はぁ……はあ…はぁ！」",
 		   NULL, "\"...Huff... huff... huff... huff... huff!\"", Line_Normal);
 	ClearMessage();
@@ -1712,7 +1701,6 @@
 		   NULL, "So... So I just needed to bear the pain...", Line_Normal);
 	ClearMessage();
 
-	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "「はぁ、……あぁ、………あう、……あぁ……！」",
 		   NULL, "\"Hah... ahh... oww... ahh...!\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -1764,7 +1752,7 @@
 	OutputLine(NULL, "　はあ！！",
 		   NULL, " Hahh", Line_WaitForInput);
 	SetSpeedOfMessage( TRUE, 16 );
-	PlaySE(4, "", 128, 64);
+	PlaySE(4, "S06/06/150600980", 128, 64);
 	OutputLine(NULL, "　………………………、」",
 		   NULL, ".....................!!\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -1815,7 +1803,6 @@
 	PlaySE( 0, "s_tataku", 128, 64 );
 	DrawScene( "black", 0 );
 
-	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "「……………ッッ！！！！」",
 		   NULL, "\".........Tcch!!!!\"", Line_Normal);
 	ClearMessage();
@@ -1828,7 +1815,6 @@
 		   NULL, "A moment later, the pain pulsated with my heartbeat.", Line_Normal);
 	ClearMessage();
 
-	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "「……ぅううぅううぅ、……うううぅううぅううぅう！！！」",
 		   NULL, "\"......Ooooohhhh...... oooohhhhh!!!\"", Line_Normal);
 	ClearMessage();
@@ -1919,16 +1905,14 @@
 		   NULL, "They wouldn't forgive me until I removed two more fingernails...!", Line_Normal);
 	ClearMessage();
 
-	PlaySE(4, "", 128, 64);
+	PlaySE(4, "S06/06/150600984", 128, 64);
 	OutputLine(NULL, "「………魅音、………これで、…許して…………。",
 		   NULL, "\"...Mion... look, isn't this enough...?", Line_WaitForInput);
-	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "あのね、…あのね、……これ、…本当に痛いの……、すごく痛いんだよ……。",
 		   NULL, " It really hurts, you know that?", Line_WaitForInput);
-	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "ほら、…私の顔を見れば…わかるよね……？",
 		   NULL, " You see that in my eyes, don't you?", Line_WaitForInput);
-	PlaySE(4, "", 128, 64);
+	PlaySE(4, "S06/06/150600987", 128, 64);
 	OutputLine(NULL, "　…本当にさ、……痛くて、………えへ、…えへへへへ………、」",
 		   NULL, " It really... hurts... Heh heh... heh heh heh heh...\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -1937,10 +1921,8 @@
 		   NULL, "Mion answered, still wearing a cold look.", Line_Normal);
 	ClearMessage();
 
-	PlaySE(4, "S02/01/130100383", 128, 64);
 	OutputLine(NULL, "「…………詩音。",
 		   NULL, "\"...You can't keep going...?", Line_WaitForInput);
-	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "………もう、……無理？」",
 		   NULL, " Shion?\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -1959,25 +1941,19 @@
 		   NULL, "I knew that... I really did know!", Line_Normal);
 	ClearMessage();
 
-	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "「や、…やれるよッ！！！",
 		   NULL, "\"I... I'll do it!!!", Line_WaitForInput);
-	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "　こんなの全然楽勝だって……！！",
 		   NULL, " This is easy...!!", Line_WaitForInput);
-	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "　このサディスト共がぁ！！",
 		   NULL, " You sadists!!", Line_WaitForInput);
-	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "　はあ、…はぁ！！",
 		   NULL, " Hah... hah!!", Line_WaitForInput);
-	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "　こんなの怖くない、こんなの痛くない…、",
 		   NULL, " This doesn't scare me, this doesn't hurt...", Line_ContinueAfterTyping);
 	SetValidityOfInput( FALSE );
 	Wait( 800 );
 	SetValidityOfInput( TRUE );
-	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "ああぁあぁああぁあぁぁ…！！！」",
 		   NULL, " Ahhhhhhhh...!!!\"", Line_Normal);
 	ClearMessage();
@@ -2033,12 +2009,10 @@
 		   NULL, " Again......?!", Line_Normal);
 	ClearMessage();
 
-	PlaySE(4, "S19/01/HR_KEI31430", 128, 64);
 	OutputLine(NULL, "「………………詩音…？」",
 		   NULL, "\".........Shion?\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
-	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "「やだ、…………ぇぐ、………やだぁああぁあぁあ！！！」",
 		   NULL, "\"No... hikk... I don't want to do it!!!\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -2052,22 +2026,16 @@
 	ClearMessage();
 	DrawScene( "Aka2", 400 );
 
-	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "「もうやだやだ！！",
 		   NULL, "\"I can't take it anymore!!", Line_WaitForInput);
-	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "　もう無理なの本当に痛いの…！！",
 		   NULL, " It's too painful...!!", Line_WaitForInput);
-	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "　もう許して、本当に許してよぉ！！",
 		   NULL, " Forgive me, please!!", Line_WaitForInput);
-	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "　ごめんなさいごめんなさい、謝りますから許してください！！",
 		   NULL, " I'm sorry. I apologize!!", Line_WaitForInput);
-	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "　ごめんなさいごめんなさい、ごめんなさいごめんなさい！！",
 		   NULL, " I'm sorry, I'm sorry,", Line_WaitForInput);
-	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "　ごめんなさいごめんなさいごめんなさい！！」",
 		   NULL, " I'm sorry, I'm sorry, I'm sorry!!\"", Line_Normal);
 	ClearMessage();
@@ -2097,7 +2065,7 @@
 		   NULL, " and whispered to my crying face.", Line_Normal);
 	ClearMessage();
 
-	PlaySE(4, "", 128, 64);
+	PlaySE(4, "S06/03/150300225", 128, 64);
 	OutputLine(NULL, "「……詩音。",
 		   NULL, "\"...Shion...", Line_WaitForInput);
 	PlaySE(4, "S06/03/150300226", 128, 64);
@@ -2111,10 +2079,8 @@
 	PlaySE(4, "S06/06/150601001", 128, 64);
 	OutputLine(NULL, "　本当に無理、本当に痛いの…、痛いのぉおお！！",
 		   NULL, " I can't do this!! It really hurts! It really does!!", Line_WaitForInput);
-	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "　うっく、……えぐ、……わああぁああああぁあぁああああああぁああ！！",
 		   NULL, " Hic... ooh... waaaahhhh!!", Line_WaitForInput);
-	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "　うわあああぁああぁあぁああぁあぁあぁ！！」",
 		   NULL, " Ahhhhhh!!\"", Line_Normal);
 	ClearMessage();
@@ -2142,10 +2108,8 @@
 	ClearMessage();
 
 
-	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "「やや、やめてよやめてよ！！",
 		   NULL, "\"No, stop it!", Line_WaitForInput);
-	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "　いやぁ嫌あああぁああぁああ！！！」",
 		   NULL, " Noooooo!!!\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -2168,13 +2132,10 @@
 		   NULL, "...He... put the metal beak between my ring finger and its fingernail......", Line_Normal);
 	ClearMessage();
 
-	PlaySE(4, "S06/06/150600691", 128, 64);
 	OutputLine(NULL, "「やああぁあぁあぁあ！！！",
 		   NULL, "\"Noooooo!!!", Line_WaitForInput);
-	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "　助けて、おかあさん……おかあさああぁあん！！",
 		   NULL, " Mom, help me... Mooooomm!!", Line_WaitForInput);
-	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "　あああああああぁああぁああぁああああああ！！！」",
 		   NULL, " Ahhhhhhhhh!!!\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
