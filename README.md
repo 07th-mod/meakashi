@@ -18,21 +18,21 @@ Old collaborators welcome to join the repository, however it's still preferred t
 - [x] _meak_006.txt
 - [x] _meak_007.txt
 - [x] _meak_008.txt
-- [x] **_meak_009.txt**
+- [x] _meak_009.txt
 - [x] _meak_010.txt
 - [x] _meak_011.txt
 - [x] _meak_012.txt
 - [x] _meak_013.txt
 - [x] _meak_014_1.txt
 - [x] _meak_014_2.txt
-- [ ] _meak_015_1.txt
-- [ ] _meak_015_2.txt
-- [ ] _meak_016_1.txt
-- [ ] _meak_016_2.txt
-- [ ] _meak_017.txt
-- [ ] _meak_018.txt
-- [ ] _meak_019_1.txt
-- [ ] _meak_019_2.txt
+- [x] _meak_015_1.txt
+- [x] _meak_015_2.txt
+- [x] _meak_016_1.txt
+- [x] _meak_016_2.txt
+- [x] _meak_017.txt
+- [x] _meak_018.txt
+- [x] _meak_019_1.txt
+- [x] _meak_019_2.txt
 - [ ] _meak_020.txt
 - [ ] _meak_021_1.txt
 - [ ] _meak_021_2.txt
@@ -76,3 +76,9 @@ Old collaborators welcome to join the repository, however it's still preferred t
 > in _meak_012.txt, from lines 1800 onwards, a bunch of voice lines related to the torture scene are missing.
 
 > in _meak_014_1.txt, the story about "Watanagashi" has no voices (line 2447). Some stuff was also censored later (line 2645).
+
+> in _meak_015_1.txt, pretty most of the starting script (until line 1000) is censored. The voice lines are still in because they're kinda close to the original. Leaving it there and changing the translation is up for discussion.
+
+> in _meak_016_02.txt, line 2017, a voice line about the sacrifice is missing. Worth to look inside the PS2 voices.
+
+> in _meak_018.txt, a good chunk of the script has no voices.
