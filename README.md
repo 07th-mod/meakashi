@@ -69,10 +69,6 @@ Old collaborators welcome to join the repository, however it's still preferred t
 
 # Known issues (for fixing)
 
-> in _meak_002.txt, line 1308, a voice line is missing. Worth to look inside the PS2 voices.
-
-> in _meak_011.txt, line 921, a voice line is missing.      ^
-
 > in _meak_012.txt, from lines 1800 onwards, a bunch of voice lines related to the torture scene are missing.
 
 > in _meak_014_1.txt, the story about "Watanagashi" has no voices (line 2447). Some stuff was also censored later (line 2645).
