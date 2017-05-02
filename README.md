@@ -33,12 +33,12 @@ Old collaborators welcome to join the repository, however it's still preferred t
 - [x] _meak_018.txt
 - [x] _meak_019_1.txt
 - [x] _meak_019_2.txt
-- [ ] _meak_020.txt
-- [ ] _meak_021_1.txt
-- [ ] _meak_021_2.txt
-- [ ] _meak_022_1.txt
-- [ ] _meak_022_2.txt
-- [ ] _meak_023.txt
+- [x] _meak_020.txt
+- [x] _meak_021_1.txt
+- [x] _meak_021_2.txt
+- [x] _meak_022_1.txt
+- [x] _meak_022_2.txt
+- [x] _meak_023.txt
 - [ ] _meak_024.txt
 - [ ] _meak_ep_01.txt
 - [ ] _meak_ep_02.txt
