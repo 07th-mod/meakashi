@@ -128,10 +128,10 @@
 		   NULL, " I then realized who was supposed to lead today's staff meeting.", Line_Normal);
 	ClearMessage();
 
-	PlaySE(4, "", 128, 64);
+	PlaySE(4, "S06/06/150601762", 128, 64);
 	OutputLine(NULL, "「……おじい、……じゃなくって、公由さん。",
 		   NULL, "\"Uncl... no, Kimiyoshi-san.", Line_WaitForInput);
-	PlaySE(4, "", 128, 64);
+	PlaySE(4, "S06/06/150601763", 128, 64);
 	OutputLine(NULL, "今日の会合だけど……司会、…私じゃないと……？」",
 		   NULL, " Do I really have to lead the meeting today?\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -247,10 +247,10 @@
 	PlaySE(4, "S06/18/153300032", 128, 64);
 	OutputLine(NULL, "健ちゃんも座ったままでいいよ。",
 		   NULL, " Ken-chan, you stay seated, too.", Line_WaitForInput);
-	PlaySE(4, "", 128, 64);
+	PlaySE(4, "S06/18/153300033", 128, 64);
 	OutputLine(NULL, "…今日は平日の夕方にお集まりいただきまして、誠にありがとうございます。",
 		   NULL, " Thank you all for coming today.", Line_WaitForInput);
-	PlaySE(4, "", 128, 64);
+	PlaySE(4, "S06/18/153300034", 128, 64);
 	OutputLine(NULL, "また、昨日は綿流しを本当にお疲れ様でございました。",
 		   NULL, " Also, you all did a great job at Watanagashi yesterday.", Line_WaitForInput);
 	PlaySE(4, "S06/18/153300035", 128, 64);
@@ -390,14 +390,13 @@
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
 
-	PlaySE(4, "S19/03/990300629", 128, 64);
 	OutputLine(NULL, "　そう。",
 		   NULL, "Ah.", Line_WaitForInput);
 	OutputLine(NULL, "…ここで先に口を開くのは園崎家頭首、鬼婆の役目だったのだ。",
 		   NULL, " This was where the head of the Sonozaki family would speak.", Line_Normal);
 	ClearMessage();
 
-	PlaySE(4, "", 128, 64);
+	PlaySE(4, "S06/18/153300044", 128, 64);
 	OutputLine(NULL, "「魅音ちゃん。",
 		   NULL, "\"Mion-chan,", Line_WaitForInput);
 	PlaySE(4, "S06/18/153300045", 128, 64);
@@ -442,7 +441,6 @@
 		   NULL, "That was me.", Line_WaitForInput);
 	OutputLine(NULL, "私だって、あれ。",
 		   NULL, " I was her.", Line_WaitForInput);
-	PlaySE(4, "S12/09/180900219", 128, 64);
 	OutputLine(NULL, "………………………………。",
 		   NULL, ".....................", Line_Normal);
 	ClearMessage();
@@ -494,7 +492,10 @@
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
 	SetSpeedOfMessage( TRUE, 128 );
-	PlaySE(4, "S06/00/eldA15001|S06/00/00014239|S06/00/00014241|S06/00/00014240", 128, 64);
+	PlaySE(4, "S06/00/eldA15001", 128, 64);
+	PlaySE(5, "S06/00/00014239", 128, 64);
+	PlaySE(6, "S06/00/00014241", 128, 64);
+	PlaySE(7, "S06/00/00014240", 128, 64);
 	OutputLine(NULL, "「なんちゅーーーことをッ！！」",
 		   NULL, "\"How dare they!!\"", Line_ContinueAfterTyping);
 	SetSpeedOfMessage( FALSE, 0 );
@@ -762,7 +763,6 @@
 	SetValidityOfInput( FALSE );
 	Wait( 1000 );
 	SetValidityOfInput( TRUE );
-	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "………何のけじめもなく、許されることはありません。」",
 		   NULL, " but there will be some kind of punishment.\"", Line_Normal);
 	ClearMessage();
@@ -795,7 +795,7 @@
 		   NULL, "...They wanted to know who they were, to put their minds at ease.", Line_Normal);
 	ClearMessage();
 
-	PlaySE(4, "", 128, 64);
+	PlaySE(4, "S06/06/150601779", 128, 64);
 	OutputLine(NULL, "「………その２人の狼藉者は、…園崎詩音。",
 		   NULL, "\"......The other two who snuck into the ritual storehouse were Shion Sonozaki,", Line_WaitForInput);
 	PlaySE(4, "S06/06/150601780", 128, 64);
@@ -811,10 +811,10 @@
 		   NULL, "It was so dry it almost felt like it was going to start making a crackling noise...", Line_Normal);
 	ClearMessage();
 
-	PlaySE(4, "", 128, 64);
+	PlaySE(4, "S06/06/150601781", 128, 64);
 	OutputLine(NULL, "「…………園崎詩音は。",
 		   NULL, "\"Shion Sonozaki has...", Line_WaitForInput);
-	PlaySE(4, "", 128, 64);
+	PlaySE(4, "S06/06/150601782", 128, 64);
 	OutputLine(NULL, "…………すでに。」",
 		   NULL, " already...\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -892,13 +892,12 @@
 		   NULL, "\"What about Keiichi Maebara?\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
-	PlaySE(4, "S12/01/180100073", 128, 64);
+	PlaySE(4, "S06/06/150601783", 128, 64);
 	OutputLine(NULL, "「………………、",
 		   NULL, "\"......", Line_ContinueAfterTyping);
 	SetValidityOfInput( FALSE );
 	Wait( 1000 );
 	SetValidityOfInput( TRUE );
-	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "………………まだです。」",
 		   NULL, ".........Not yet.\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -1043,7 +1042,7 @@
 		   NULL, "\"......Does Oryou-san want to see me?\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
-	PlaySE(4, "", 128, 64);
+	PlaySE(4, "S06/06/150601789", 128, 64);
 	OutputLine(NULL, "「はい。",
 		   NULL, "\"Yes.", Line_WaitForInput);
 	PlaySE(4, "S06/06/150601790", 128, 64);
@@ -1106,7 +1105,7 @@
 		   NULL, "\"......I think... she wants to talk to you about Shion.\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
-	PlaySE(4, "", 128, 64);
+	PlaySE(4, "S06/18/153300054", 128, 64);
 	OutputLine(NULL, "「……………………………。」",
 		   NULL, "\".....................\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -1130,17 +1129,17 @@
 	PlaySE(4, "S06/06/150601794", 128, 64);
 	OutputLine(NULL, "「………詩音は、去年がありますからね。",
 		   NULL, "\"You remember the incident from last year with Shion, yes?", Line_WaitForInput);
-	PlaySE(4, "", 128, 64);
+	PlaySE(4, "S06/06/150601795", 128, 64);
 	OutputLine(NULL, "北条家の人間なんかと…………懇意になるなんて。」",
 		   NULL, " She became... friendly with people of the Houjou family...\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
-	PlaySE(4, "", 128, 64);
+	PlaySE(4, "S06/18/153300055", 128, 64);
 	OutputLine(NULL, "「去年は………………、……………爪を剥いで許してもらったんだったね。」",
 		   NULL, "\"She was forgiven............ after ripping out her nails... wasn't she?\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
-	PlaySE(4, "S06/06/150602393", 128, 64);
+	PlaySE(4, "S06/06/150601796", 128, 64);
 	OutputLine(NULL, "「……えぇ。",
 		   NULL, "\"Yes.", Line_WaitForInput);
 	PlaySE(4, "S06/06/150601797", 128, 64);
@@ -1152,7 +1151,7 @@
 		   NULL, "Uncle Kimiyoshi folded his arms and thought for a while.", Line_Normal);
 	ClearMessage();
 
-	PlaySE(4, "", 128, 64);
+	PlaySE(4, "S06/18/153300056", 128, 64);
 	OutputLine(NULL, "「………詩音ちゃんは、……今は？」",
 		   NULL, "\"Where... is Shion-chan now?\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -1195,7 +1194,7 @@
 	PlaySE(4, "S06/18/153300058", 128, 64);
 	OutputLine(NULL, "「………魅音ちゃん。",
 		   NULL, "\"Mion-chan...", Line_WaitForInput);
-	PlaySE(4, "", 128, 64);
+	PlaySE(4, "S06/18/153300059", 128, 64);
 	OutputLine(NULL, "率直なところ、お魎さんは詩音ちゃんのこと、どうするって言ってるんだい？」",
 		   NULL, " Tell me, what is Oryou-san going to do with Shion-chan?\"", Line_Normal);
 	ClearMessage();
@@ -1223,18 +1222,18 @@
 		   NULL, "Uncle Kimiyoshi thought that the hag must be unsure of what to do with Shion.", Line_Normal);
 	ClearMessage();
 
-	PlaySE(4, "", 128, 64);
+	PlaySE(4, "S06/06/150601802", 128, 64);
 	OutputLine(NULL, "「おじいちゃんは、………詩音の処遇、…どうなると思います？」",
 		   NULL, "\"What do you think? What do you think will happen... to Shion?\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
-	PlaySE(4, "", 128, 64);
+	PlaySE(4, "S06/18/153300063", 128, 64);
 	OutputLine(NULL, "「…………そりゃ、…………爪３枚より、もっと酷いことになるだろうなぁ…。",
 		   NULL, "\"Well... I'm sure it'll be far more... than just three nails this time.", Line_WaitForInput);
 	PlaySE(4, "S06/18/153300064", 128, 64);
 	OutputLine(NULL, "お魎さんのことだから、…身内に甘くするってことはないと思う。",
 		   NULL, " Knowing how Oryou-san is, she won't hold back just because it's her granddaughter.", Line_WaitForInput);
-	PlaySE(4, "", 128, 64);
+	PlaySE(4, "S06/18/153300065", 128, 64);
 	OutputLine(NULL, "むしろ、身内だからこそ、……厳しく当たるだろうからな…。」",
 		   NULL, " Actually, she might be even more harsh, especially because they're related.\"", Line_Normal);
 	ClearMessage();
@@ -1247,10 +1246,10 @@
 		   NULL, " That's not something that can be forgiven so easily...\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
-	PlaySE(4, "", 128, 64);
+	PlaySE(4, "S06/18/153300066", 128, 64);
 	OutputLine(NULL, "「…………………さすがになぁ…。",
 		   NULL, "\"......Indeed.", Line_WaitForInput);
-	PlaySE(4, "", 128, 64);
+	PlaySE(4, "S06/18/153300067", 128, 64);
 	OutputLine(NULL, "…祭具殿はなぁ……。」",
 		   NULL, " It's sacred, after all...\"", Line_Normal);
 	ClearMessage();
@@ -1369,7 +1368,7 @@
 	DrawScene( "black", 400 );
 	DrawSceneWithMask( "Heya1", "maskup", 1, 0, 300 );
 
-	PlaySE(4, "", 128, 64);
+	PlaySE(4, "S06/18/153300069", 128, 64);
 	OutputLine(NULL, "「……魅音ちゃん。」",
 		   NULL, "\"Mion-chan...\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -1377,7 +1376,7 @@
 	PlaySE(4, "S06/06/150601812", 128, 64);
 	OutputLine(NULL, "「私には、……………詩音がどういう処遇になるか、想像もつきません。",
 		   NULL, "\"I can't even imagine... what will happen to Shion.", Line_WaitForInput);
-	PlaySE(4, "", 128, 64);
+	PlaySE(4, "S06/06/150601813", 128, 64);
 	OutputLine(NULL, "そして、どんなことに決まっても、……意見できる立場にありません。",
 		   NULL, " Whatever it is Granny decides to do... I'm not in a position to say anything about it.", Line_WaitForInput);
 	PlaySE(4, "S06/06/150601814", 128, 64);
@@ -1385,7 +1384,7 @@
 		   NULL, " She doesn't listen to her relatives.\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
-	PlaySE(4, "", 128, 64);
+	PlaySE(4, "S06/18/153300070", 128, 64);
 	OutputLine(NULL, "「…………そうだなぁ。",
 		   NULL, "\"......You're right.", Line_WaitForInput);
 	PlaySE(4, "S06/18/153300071", 128, 64);
@@ -1398,7 +1397,7 @@
 		   NULL, "\"If... Shion wasn't Shion Sonozaki... she would have been dead a long time ago.\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
-	PlaySE(4, "S06/06/150602645", 128, 64);
+	PlaySE(4, "S06/18/153300072", 128, 64);
 	OutputLine(NULL, "「……………………………………。」",
 		   NULL, "\"........................\"", Line_Normal);
 	ClearMessage();
@@ -1406,15 +1405,15 @@
 	PlaySE(4, "S06/06/150601816", 128, 64);
 	OutputLine(NULL, "「………………死に準ずる罰が、果たしてどのようなものか、…私には想像もつきません。",
 		   NULL, "\".........I can't even begin to imagine... what kind of punishment might be equal to death.", Line_WaitForInput);
-	PlaySE(4, "", 128, 64);
+	PlaySE(4, "S06/06/150601817", 128, 64);
 	OutputLine(NULL, "…殺されなかったにしたって、………多分、一生、日の光を見ることはできないでしょう。",
 		   NULL, " ...Even if she isn't killed... ...She'll probably never see the light of day again.", Line_WaitForInput);
-	PlaySE(4, "", 128, 64);
+	PlaySE(4, "S06/06/150601818", 128, 64);
 	OutputLine(NULL, "………つまりは、……『鬼隠し』ということかと…。」",
 		   NULL, " In other words... she'll be... demoned away...\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
-	PlaySE(4, "", 128, 64);
+	PlaySE(4, "S06/18/153300044", 128, 64);
 	OutputLine(NULL, "「魅音ちゃん。",
 		   NULL, "\"Mion-chan...", Line_WaitForInput);
 	PlaySE(4, "S06/18/153300074", 128, 64);
@@ -1422,7 +1421,7 @@
 		   NULL, " ...Does Shion-chan regret what she has done?\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
-	PlaySE(4, "", 128, 64);
+	PlaySE(4, "S06/06/150601819", 128, 64);
 	OutputLine(NULL, "「…………………えぇ。」",
 		   NULL, "\"Yes......\"", Line_Normal);
 	ClearMessage();
@@ -1435,7 +1434,7 @@
 		   NULL, "He smiled reliably.", Line_Normal);
 	ClearMessage();
 
-	PlaySE(4, "", 128, 64);
+	PlaySE(4, "S06/18/153300075", 128, 64);
 	OutputLine(NULL, "「大丈夫。",
 		   NULL, "\"Don't worry.", Line_WaitForInput);
 	PlaySE(4, "S06/18/153300076", 128, 64);
@@ -1507,7 +1506,7 @@
 	Wait( 3000 );
 	SetSpeedOfMessage( FALSE, 0 );
 
-	PlaySE(4, "", 128, 64);
+	PlaySE(4, "S06/06/150601823", 128, 64);
 	OutputLine(NULL, "「…北条家の坊主って、……悟史くんのことですか？",
 		   NULL, "\"A brat of the Houjou family... Are you talking about Satoshi-kun?", Line_WaitForInput);
 	PlaySE(4, "S06/06/150601824", 128, 64);
@@ -1518,10 +1517,9 @@
 	PlaySE(4, "S06/18/153300082", 128, 64);
 	OutputLine(NULL, "「北条の連中は仕方ないさな。",
 		   NULL, "\"Those Houjou people...", Line_WaitForInput);
-	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "村を丸ごと売ろうとした売国奴同然のやつらだ。",
 		   NULL, " They were traitors who tried to sell out the whole village.", Line_WaitForInput);
-	PlaySE(4, "", 128, 64);
+	PlaySE(4, "S06/18/153300084", 128, 64);
 	OutputLine(NULL, "そういうやつらなら鬼隠しだってあり得るだろうけど、そりゃ北条家だからの話だよ。」",
 		   NULL, " Of course he got demoned away. He was a Houjou, after all.\"", Line_Normal);
 	ClearMessage();
@@ -1547,10 +1545,10 @@
 		   NULL, " It won't happen to someone like her.\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
-	PlaySE(4, "", 128, 64);
+	PlaySE(4, "S06/06/150601825", 128, 64);
 	OutputLine(NULL, "「………おじいちゃん。",
 		   NULL, "\"...Uncle.", Line_WaitForInput);
-	PlaySE(4, "", 128, 64);
+	PlaySE(4, "S06/06/150601826", 128, 64);
 	OutputLine(NULL, "でも、……悟史くんは去年、詩音がけじめをつけたから、……見逃してもらえることになったんじゃないの……？」",
 		   NULL, " Didn't... Didn't Shion take care of that for Satoshi-kun last year? ...Wasn't he supposed to be forgiven?\"", Line_Normal);
 	ClearMessage();
@@ -1563,13 +1561,12 @@
 		   NULL, " What do you mean?\"", Line_Normal);
 	ClearMessage();
 
-	PlaySE(4, "", 128, 64);
+	PlaySE(4, "S06/06/150601827", 128, 64);
 	OutputLine(NULL, "「ほら、……爪を３枚、",
 		   NULL, "\"Remember? Three nails.", Line_ContinueAfterTyping);
 	SetValidityOfInput( FALSE );
 	Wait( 1000 );
 	SetValidityOfInput( TRUE );
-	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "…剥いだじゃないですか…。",
 		   NULL, " She removed three of her nails.", Line_WaitForInput);
 	PlaySE(4, "S06/06/150601828", 128, 64);
@@ -1578,19 +1575,16 @@
 	SetValidityOfInput( FALSE );
 	Wait( 800 );
 	SetValidityOfInput( TRUE );
-	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "義郎叔父さん、",
 		   NULL, " Uncle Yoshiroh,", Line_ContinueAfterTyping);
 	SetValidityOfInput( FALSE );
 	Wait( 800 );
 	SetValidityOfInput( TRUE );
-	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "…それから、悟史くんで、",
 		   NULL, " and then Satoshi-kun", Line_ContinueAfterTyping);
 	SetValidityOfInput( FALSE );
 	Wait( 800 );
 	SetValidityOfInput( TRUE );
-	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "……３人分、",
 		   NULL, "...three people.", Line_WaitForInput);
 	PlaySE(4, "S06/06/150601829", 128, 64);
@@ -1599,7 +1593,7 @@
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 	PlayBGM( 1, "kaze", 120, 0 );
 
-	PlaySE(4, "", 128, 64);
+	PlaySE(4, "S06/18/153300091", 128, 64);
 	OutputLine(NULL, "「え？",
 		   NULL, "\"Eh?", Line_WaitForInput);
 	PlaySE(4, "S06/18/153300092", 128, 64);
@@ -1612,7 +1606,7 @@
 
 	ClearMessage();
 
-	PlaySE(4, "", 128, 64);
+	PlaySE(4, "S06/06/150601830", 128, 64);
 	OutputLine(NULL, "「あの、３枚は……そういう意味じゃなかったんですか…？」",
 		   NULL, "\"Wasn't that the significance of those three nails?\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -1626,7 +1620,7 @@
 	PlaySE(4, "S06/18/153300095", 128, 64);
 	OutputLine(NULL, "そう私も聞いてるよ。",
 		   NULL, " I heard that too.", Line_WaitForInput);
-	PlaySE(4, "", 128, 64);
+	PlaySE(4, "S06/18/153300096", 128, 64);
 	OutputLine(NULL, "……でも、」",
 		   NULL, " But...\"", Line_Normal);
 	ClearMessage();
@@ -1636,13 +1630,12 @@
 		   NULL, "\"But... what?\"", Line_Normal);
 	ClearMessage();
 
-	PlaySE(4, "", 128, 64);
+	PlaySE(4, "S06/18/153300097", 128, 64);
 	OutputLine(NULL, "「………葛西さん、",
 		   NULL, "\"Kasai-san,", Line_ContinueAfterTyping);
 	SetValidityOfInput( FALSE );
 	Wait( 800 );
 	SetValidityOfInput( TRUE );
-	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "義郎さん、",
 		   NULL, " Yoshiroh-san...", Line_ContinueAfterTyping);
 	SetValidityOfInput( FALSE );
@@ -1669,10 +1662,8 @@
 
 	OutputLine(NULL, "　え…？",
 		   NULL, "Eh...?", Line_WaitForInput);
-	PlaySE(4, "S19/03/500300168", 128, 64);
 	OutputLine(NULL, "　………あれ？",
 		   NULL, " ...What?", Line_WaitForInput);
-	PlaySE(4, "S19/06/660600091", 128, 64);
 	OutputLine(NULL, "　………………え？",
 		   NULL, " .........Huh?", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -1759,7 +1750,6 @@
 		   NULL, " Eh?", Line_WaitForInput);
 	OutputLine(NULL, "　……え？",
 		   NULL, " ...Eh?", Line_WaitForInput);
-	PlaySE(4, "S04/36/310100713", 128, 64);
 	OutputLine(NULL, "　…あれ？",
 		   NULL, " Huh?", Line_Normal);
 	ClearMessage();
@@ -1799,7 +1789,7 @@
 		   NULL, "\"...Why do you think Satoshi Houjou-kun got demoned away?\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
-	PlaySE(4, "", 128, 64);
+	PlaySE(4, "S06/18/153300099", 128, 64);
 	OutputLine(NULL, "「え？」",
 		   NULL, "\"Eh?\"", Line_Normal);
 	ClearMessage();
@@ -1818,7 +1808,7 @@
 		   NULL, " What has he done?\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
-	PlaySE(4, "", 128, 64);
+	PlaySE(4, "S06/18/153300100", 128, 64);
 	OutputLine(NULL, "「…………え、……魅音ちゃん？」",
 		   NULL, "\"...Eh... Mion-chan?\"", Line_Normal);
 	ClearMessage();
@@ -1849,7 +1839,7 @@
 		   NULL, " She decided that the curse of Oyashiro-sama would fall upon all the Houjous.\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
-	PlaySE(4, "", 128, 64);
+	PlaySE(4, "S06/18/153300101", 128, 64);
 	OutputLine(NULL, "「ま、…………待って、魅音ちゃん。",
 		   NULL, "\"W...Wait, Mion-chan.", Line_WaitForInput);
 	PlaySE(4, "S06/18/153300102", 128, 64);
@@ -1868,7 +1858,7 @@
 	PlaySE(4, "S06/18/153300104", 128, 64);
 	OutputLine(NULL, "　北条家にはオヤシロさまの祟りがいずれ下る。",
 		   NULL, " The curse of Oyashiro-sama falling upon the Houjou family...", Line_WaitForInput);
-	PlaySE(4, "", 128, 64);
+	PlaySE(4, "S06/18/153300105", 128, 64);
 	OutputLine(NULL, "そういう話をおぼろげにしたことはあっても、…そんなはっきりとしたことを言及したことは一度もないし、誰もしていないよ…。」",
 		   NULL, " I do remember talking about something like that, but we never decided that, nobody did...\"", Line_Normal);
 	ClearMessage();
@@ -1881,7 +1871,7 @@
 		   NULL, " 'because he was one of the Houjous' earlier?\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
-	PlaySE(4, "", 128, 64);
+	PlaySE(4, "S06/18/153300106", 128, 64);
 	OutputLine(NULL, "「あ、……ぁ、……ごめんよ魅音ちゃん。",
 		   NULL, "\"Ah...... ah... sorry, Mion-chan.", Line_WaitForInput);
 	PlaySE(4, "S06/18/153300107", 128, 64);
@@ -1890,7 +1880,7 @@
 	ClearMessage();
 	PlayBGM( 0, "semi_r", 120, 0 );
 
-	PlaySE(4, "", 128, 64);
+	PlaySE(4, "S06/06/150601846", 128, 64);
 	OutputLine(NULL, "「そういうことです。",
 		   NULL, "\"That's just it.", Line_WaitForInput);
 	PlaySE(4, "S06/06/150601847", 128, 64);
@@ -1912,434 +1902,363 @@
 
 	ClearMessage();
 	SetSpeedOfMessage( TRUE, 128 );
-	PlaySE(4, "", 128, 64);
+	PlaySE(4, "S06/06/150601851", 128, 64);
 	OutputLine(NULL, "　そ",
 		   NULL, "And", Line_ContinueAfterTyping);
 	SetValidityOfInput( FALSE );
 	Wait( 90 );
 	SetValidityOfInput( TRUE );
-	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "し",
 		   NULL, " you", Line_ContinueAfterTyping);
 	SetValidityOfInput( FALSE );
 	Wait( 90 );
 	SetValidityOfInput( TRUE );
-	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "て",
 		   NULL, " all", Line_ContinueAfterTyping);
 	SetValidityOfInput( FALSE );
 	Wait( 90 );
 	SetValidityOfInput( TRUE );
-	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "あ",
 		   NULL, " be", Line_ContinueAfterTyping);
 	SetValidityOfInput( FALSE );
 	Wait( 90 );
 	SetValidityOfInput( TRUE );
-	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "な",
 		   NULL, "lieved", Line_ContinueAfterTyping);
 	SetValidityOfInput( FALSE );
 	Wait( 90 );
 	SetValidityOfInput( TRUE );
-	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "た",
 		   NULL, " in", Line_ContinueAfterTyping);
 	SetValidityOfInput( FALSE );
 	Wait( 90 );
 	SetValidityOfInput( TRUE );
-	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "は",
 		   NULL, " that", Line_ContinueAfterTyping);
 	SetValidityOfInput( FALSE );
 	Wait( 90 );
 	SetValidityOfInput( TRUE );
-	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "そ",
 		   NULL, " idea.", Line_ContinueAfterTyping);
 	SetValidityOfInput( FALSE );
 	Wait( 90 );
 	SetValidityOfInput( TRUE );
-	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "の",
 		   NULL, " You", Line_ContinueAfterTyping);
 	SetValidityOfInput( FALSE );
 	Wait( 90 );
 	SetValidityOfInput( TRUE );
-	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "蔓",
 		   NULL, " couldn't", Line_ContinueAfterTyping);
 	SetValidityOfInput( FALSE );
 	Wait( 90 );
 	SetValidityOfInput( TRUE );
-	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "延",
 		   NULL, " even", Line_ContinueAfterTyping);
 	SetValidityOfInput( FALSE );
 	Wait( 90 );
 	SetValidityOfInput( TRUE );
-	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "で",
 		   NULL, " think", Line_ContinueAfterTyping);
 	SetValidityOfInput( FALSE );
 	Wait( 90 );
 	SetValidityOfInput( TRUE );
-	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "燻",
 		   NULL, " straight", Line_ContinueAfterTyping);
 	SetValidityOfInput( FALSE );
 	Wait( 90 );
 	SetValidityOfInput( TRUE );
-	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "さ",
 		   NULL, " any", Line_ContinueAfterTyping);
 	SetValidityOfInput( FALSE );
 	Wait( 90 );
 	SetValidityOfInput( TRUE );
-	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "れ",
 		   NULL, " more.", Line_ContinueAfterTyping);
 	SetValidityOfInput( FALSE );
 	Wait( 90 );
 	SetValidityOfInput( TRUE );
-	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "た",
 		   NULL, " I", Line_ContinueAfterTyping);
 	SetValidityOfInput( FALSE );
 	Wait( 90 );
 	SetValidityOfInput( TRUE );
-	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "穢",
 		   NULL, " can't", Line_ContinueAfterTyping);
 	SetValidityOfInput( FALSE );
 	Wait( 90 );
 	SetValidityOfInput( TRUE );
-	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "れ",
 		   NULL, " for", Line_ContinueAfterTyping);
 	SetValidityOfInput( FALSE );
 	Wait( 90 );
 	SetValidityOfInput( TRUE );
-	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "た",
 		   NULL, "give", Line_ContinueAfterTyping);
 	SetValidityOfInput( FALSE );
 	Wait( 90 );
 	SetValidityOfInput( TRUE );
-	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "思",
 		   NULL, " you.", Line_ContinueAfterTyping);
 	SetValidityOfInput( FALSE );
 	Wait( 90 );
 	SetValidityOfInput( TRUE );
-	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "考に",
 		   NULL, " I", Line_ContinueAfterTyping);
 	SetValidityOfInput( FALSE );
 	Wait( 90 );
 	SetValidityOfInput( TRUE );
-	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "汚",
 		   NULL, " can't", Line_ContinueAfterTyping);
 	SetValidityOfInput( FALSE );
 	Wait( 90 );
 	SetValidityOfInput( TRUE );
-	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "染",
 		   NULL, " let", Line_ContinueAfterTyping);
 	SetValidityOfInput( FALSE );
 	Wait( 90 );
 	SetValidityOfInput( TRUE );
-	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "さ",
 		   NULL, " some", Line_ContinueAfterTyping);
 	SetValidityOfInput( FALSE );
 	Wait( 90 );
 	SetValidityOfInput( TRUE );
-	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "れ",
 		   NULL, "one", Line_ContinueAfterTyping);
 	SetValidityOfInput( FALSE );
 	Wait( 90 );
 	SetValidityOfInput( TRUE );
-	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "迷",
 		   NULL, " like", Line_ContinueAfterTyping);
 	SetValidityOfInput( FALSE );
 	Wait( 90 );
 	SetValidityOfInput( TRUE );
-	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "信",
 		   NULL, " you", Line_ContinueAfterTyping);
 	SetValidityOfInput( FALSE );
 	Wait( 90 );
 	SetValidityOfInput( TRUE );
-	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "妄",
 		   NULL, " exist.", Line_ContinueAfterTyping);
 	SetValidityOfInput( FALSE );
 	Wait( 90 );
 	SetValidityOfInput( TRUE );
-	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "信",
 		   NULL, " Peo", Line_ContinueAfterTyping);
 	SetValidityOfInput( FALSE );
 	Wait( 90 );
 	SetValidityOfInput( TRUE );
-	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "許",
 		   NULL, "ple", Line_ContinueAfterTyping);
 	SetValidityOfInput( FALSE );
 	Wait( 90 );
 	SetValidityOfInput( TRUE );
-	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "せ",
 		   NULL, " like", Line_ContinueAfterTyping);
 	SetValidityOfInput( FALSE );
 	Wait( 90 );
 	SetValidityOfInput( TRUE );
-	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "な",
 		   NULL, " you", Line_ContinueAfterTyping);
 	SetValidityOfInput( FALSE );
 	Wait( 90 );
 	SetValidityOfInput( TRUE );
-	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "い",
 		   NULL, " cor", Line_ContinueAfterTyping);
 	SetValidityOfInput( FALSE );
 	Wait( 90 );
 	SetValidityOfInput( TRUE );
-	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "お",
 		   NULL, "nered", Line_ContinueAfterTyping);
 	SetValidityOfInput( FALSE );
 	Wait( 90 );
 	SetValidityOfInput( TRUE );
-	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "前",
 		   NULL, " Satoshi", Line_ContinueAfterTyping);
 	SetValidityOfInput( FALSE );
 	Wait( 90 );
 	SetValidityOfInput( TRUE );
-	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "の",
 		   NULL, "-kun", Line_ContinueAfterTyping);
 	SetValidityOfInput( FALSE );
 	Wait( 90 );
 	SetValidityOfInput( TRUE );
-	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "よ",
 		   NULL, " and", Line_ContinueAfterTyping);
 	SetValidityOfInput( FALSE );
 	Wait( 90 );
 	SetValidityOfInput( TRUE );
-	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "う",
 		   NULL, " his", Line_ContinueAfterTyping);
 	SetValidityOfInput( FALSE );
 	Wait( 90 );
 	SetValidityOfInput( TRUE );
-	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "な",
 		   NULL, " family.", Line_ContinueAfterTyping);
 	SetValidityOfInput( FALSE );
 	Wait( 90 );
 	SetValidityOfInput( TRUE );
-	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "存",
 		   NULL, " Poor", Line_ContinueAfterTyping);
 	SetValidityOfInput( FALSE );
 	Wait( 90 );
 	SetValidityOfInput( TRUE );
-	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "在",
 		   NULL, " Satoshi", Line_ContinueAfterTyping);
 	SetValidityOfInput( FALSE );
 	Wait( 90 );
 	SetValidityOfInput( TRUE );
-	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "が",
 		   NULL, "-kun!", Line_ContinueAfterTyping);
 	SetValidityOfInput( FALSE );
 	Wait( 90 );
 	SetValidityOfInput( TRUE );
-	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "許",
 		   NULL, " What", Line_ContinueAfterTyping);
 	SetValidityOfInput( FALSE );
 	Wait( 90 );
 	SetValidityOfInput( TRUE );
-	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "せ",
 		   NULL, " has", Line_ContinueAfterTyping);
 	SetValidityOfInput( FALSE );
 	Wait( 90 );
 	SetValidityOfInput( TRUE );
-	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "な",
 		   NULL, " he", Line_ContinueAfterTyping);
 	SetValidityOfInput( FALSE );
 	Wait( 90 );
 	SetValidityOfInput( TRUE );
-	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "い",
 		   NULL, " done?", Line_ContinueAfterTyping);
 	SetValidityOfInput( FALSE );
 	Wait( 90 );
 	SetValidityOfInput( TRUE );
-	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "お",
 		   NULL, " He", Line_ContinueAfterTyping);
 	SetValidityOfInput( FALSE );
 	Wait( 90 );
 	SetValidityOfInput( TRUE );
-	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "前",
 		   NULL, " hasn't", Line_ContinueAfterTyping);
 	SetValidityOfInput( FALSE );
 	Wait( 90 );
 	SetValidityOfInput( TRUE );
-	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "の",
 		   NULL, " done", Line_ContinueAfterTyping);
 	SetValidityOfInput( FALSE );
 	Wait( 90 );
 	SetValidityOfInput( TRUE );
-	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "よ",
 		   NULL, " any", Line_ContinueAfterTyping);
 	SetValidityOfInput( FALSE );
 	Wait( 90 );
 	SetValidityOfInput( TRUE );
-	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "う",
 		   NULL, "thing!", Line_ContinueAfterTyping);
 	SetValidityOfInput( FALSE );
 	Wait( 90 );
 	SetValidityOfInput( TRUE );
-	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "な",
 		   NULL, " He", Line_ContinueAfterTyping);
 	SetValidityOfInput( FALSE );
 	Wait( 90 );
 	SetValidityOfInput( TRUE );
-	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "や",
 		   NULL, " was", Line_ContinueAfterTyping);
 	SetValidityOfInput( FALSE );
 	Wait( 90 );
 	SetValidityOfInput( TRUE );
-	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "つ",
 		   NULL, " a", Line_ContinueAfterTyping);
 	SetValidityOfInput( FALSE );
 	Wait( 90 );
 	SetValidityOfInput( TRUE );
-	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "が",
 		   NULL, " Hou", Line_ContinueAfterTyping);
 	SetValidityOfInput( FALSE );
 	Wait( 90 );
 	SetValidityOfInput( TRUE );
-	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "悟",
 		   NULL, "jou,", Line_ContinueAfterTyping);
 	SetValidityOfInput( FALSE );
 	Wait( 90 );
 	SetValidityOfInput( TRUE );
-	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "史",
 		   NULL, " that's", Line_ContinueAfterTyping);
 	SetValidityOfInput( FALSE );
 	Wait( 90 );
 	SetValidityOfInput( TRUE );
-	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "く",
 		   NULL, " all!", Line_ContinueAfterTyping);
 	SetValidityOfInput( FALSE );
 	Wait( 90 );
 	SetValidityOfInput( TRUE );
-	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "ん",
 		   NULL, " What", Line_ContinueAfterTyping);
 	SetValidityOfInput( FALSE );
 	Wait( 90 );
 	SetValidityOfInput( TRUE );
-	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "た",
 		   NULL, " kind", Line_ContinueAfterTyping);
 	SetValidityOfInput( FALSE );
 	Wait( 90 );
 	SetValidityOfInput( TRUE );
-	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "ち",
 		   NULL, " of", Line_ContinueAfterTyping);
 	SetValidityOfInput( FALSE );
 	Wait( 90 );
 	SetValidityOfInput( TRUE );
-	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "一",
 		   NULL, " a", Line_ContinueAfterTyping);
 
 	SetValidityOfInput( FALSE );
 	Wait( 90 );
 	SetValidityOfInput( TRUE );
-	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "家",
 		   NULL, " crime", Line_ContinueAfterTyping);
 	SetValidityOfInput( FALSE );
 	Wait( 90 );
 	SetValidityOfInput( TRUE );
-	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "を",
 		   NULL, " is", Line_ContinueAfterTyping);
 	SetValidityOfInput( FALSE );
 	Wait( 90 );
 	SetValidityOfInput( TRUE );
-	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "追",
 		   NULL, " that?", Line_ContinueAfterTyping);
 	SetValidityOfInput( FALSE );
 	Wait( 90 );
 	SetValidityOfInput( TRUE );
-	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "い",
 		   NULL, " Why", Line_ContinueAfterTyping);
 	SetValidityOfInput( FALSE );
 	Wait( 90 );
 	SetValidityOfInput( TRUE );
-	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "詰",
 		   NULL, " did", Line_ContinueAfterTyping);
 	SetValidityOfInput( FALSE );
 	Wait( 90 );
 	SetValidityOfInput( TRUE );
-	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "め",
 		   NULL, " the", Line_ContinueAfterTyping);
 	SetValidityOfInput( FALSE );
 	Wait( 90 );
 	SetValidityOfInput( TRUE );
-	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "て",
 		   NULL, " curse", Line_ContinueAfterTyping);
 	SetValidityOfInput( FALSE );
 	Wait( 90 );
 	SetValidityOfInput( TRUE );
-	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "追",
 		   NULL, " fall", Line_ContinueAfterTyping);
 	SetValidityOfInput( FALSE );
 	Wait( 90 );
 	SetValidityOfInput( TRUE );
-	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "い",
 		   NULL, " upon", Line_ContinueAfterTyping);
 	SetValidityOfInput( FALSE );
 	Wait( 90 );
 	SetValidityOfInput( TRUE );
-	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "詰",
 		   NULL, " him?", Line_ContinueAfterTyping);
 
@@ -2348,565 +2267,471 @@
 	SetValidityOfInput( FALSE );
 	Wait( 90 );
 	SetValidityOfInput( TRUE );
-	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "め",
 		   NULL, " Why?", Line_ContinueAfterTyping);
 	SetValidityOfInput( FALSE );
 	Wait( 90 );
 	SetValidityOfInput( TRUE );
-	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "て",
 		   NULL, " Why?", Line_ContinueAfterTyping);
 	SetValidityOfInput( FALSE );
 	Wait( 90 );
 	SetValidityOfInput( TRUE );
-	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "あ",
 		   NULL, " Why?", Line_ContinueAfterTyping);
 	SetValidityOfInput( FALSE );
 	Wait( 90 );
 	SetValidityOfInput( TRUE );
-	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "ん",
 		   NULL, " Why?", Line_ContinueAfterTyping);
 	SetValidityOfInput( FALSE );
 	Wait( 90 );
 	SetValidityOfInput( TRUE );
-	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "な",
 		   NULL, " Why?", Line_ContinueAfterTyping);
 	SetValidityOfInput( FALSE );
 	Wait( 90 );
 	SetValidityOfInput( TRUE );
-	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "に",
 		   NULL, " Why?", Line_ContinueAfterTyping);
 	SetValidityOfInput( FALSE );
 	Wait( 90 );
 	SetValidityOfInput( TRUE );
-	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "も",
 		   NULL, " Why?", Line_ContinueAfterTyping);
 	SetValidityOfInput( FALSE );
 	Wait( 90 );
 	SetValidityOfInput( TRUE );
-	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "す",
 		   NULL, " Why?", Line_ContinueAfterTyping);
 	SetValidityOfInput( FALSE );
 	Wait( 90 );
 	SetValidityOfInput( TRUE );
-	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "り",
 		   NULL, " Why?", Line_ContinueAfterTyping);
 	SetValidityOfInput( FALSE );
 	Wait( 90 );
 	SetValidityOfInput( TRUE );
-	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "減",
 		   NULL, " Why?", Line_ContinueAfterTyping);
 	SetValidityOfInput( FALSE );
 	Wait( 90 );
 	SetValidityOfInput( TRUE );
-	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "ら",
 		   NULL, " Why?", Line_ContinueAfterTyping);
 	SetValidityOfInput( FALSE );
 	Wait( 90 );
 	SetValidityOfInput( TRUE );
-	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "し",
 		   NULL, " Why?", Line_ContinueAfterTyping);
 	SetValidityOfInput( FALSE );
 	Wait( 90 );
 	SetValidityOfInput( TRUE );
-	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "て",
 		   NULL, " Why?", Line_ContinueAfterTyping);
 	SetValidityOfInput( FALSE );
 	Wait( 90 );
 	SetValidityOfInput( TRUE );
-	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "悟",
 		   NULL, " Why?", Line_ContinueAfterTyping);
 	SetValidityOfInput( FALSE );
 	Wait( 90 );
 	SetValidityOfInput( TRUE );
-	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "史",
 		   NULL, " Why?", Line_ContinueAfterTyping);
 	SetValidityOfInput( FALSE );
 	Wait( 90 );
 	SetValidityOfInput( TRUE );
-	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "く",
 		   NULL, " Why?", Line_ContinueAfterTyping);
 	SetValidityOfInput( FALSE );
 	Wait( 90 );
 	SetValidityOfInput( TRUE );
-	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "ん",
 		   NULL, " Why?", Line_ContinueAfterTyping);
 	SetValidityOfInput( FALSE );
 	Wait( 90 );
 	SetValidityOfInput( TRUE );
-	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "が",
 		   NULL, " Why?", Line_ContinueAfterTyping);
 	SetValidityOfInput( FALSE );
 	Wait( 90 );
 	SetValidityOfInput( TRUE );
-	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "可",
 		   NULL, " Why?", Line_ContinueAfterTyping);
 	SetValidityOfInput( FALSE );
 	Wait( 90 );
 	SetValidityOfInput( TRUE );
-	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "哀",
 		   NULL, " Why?", Line_ContinueAfterTyping);
 	SetValidityOfInput( FALSE );
 	Wait( 90 );
 	SetValidityOfInput( TRUE );
-	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "想",
 		   NULL, " Why?", Line_ContinueAfterTyping);
 	SetValidityOfInput( FALSE );
 	Wait( 90 );
 	SetValidityOfInput( TRUE );
-	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "本",
 		   NULL, " Why?", Line_ContinueAfterTyping);
 	SetValidityOfInput( FALSE );
 	Wait( 90 );
 	SetValidityOfInput( TRUE );
-	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "当",
 		   NULL, " Why?", Line_ContinueAfterTyping);
 	SetValidityOfInput( FALSE );
 	Wait( 90 );
 	SetValidityOfInput( TRUE );
-	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "に",
 		   NULL, " Why?", Line_ContinueAfterTyping);
 	SetValidityOfInput( FALSE );
 	Wait( 90 );
 	SetValidityOfInput( TRUE );
-	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "可",
 		   NULL, " Why?", Line_ContinueAfterTyping);
 	SetValidityOfInput( FALSE );
 	Wait( 90 );
 	SetValidityOfInput( TRUE );
-	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "哀",
 		   NULL, " Why?", Line_ContinueAfterTyping);
 	SetValidityOfInput( FALSE );
 	Wait( 90 );
 	SetValidityOfInput( TRUE );
-	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "想",
 		   NULL, " Why?", Line_ContinueAfterTyping);
 	SetValidityOfInput( FALSE );
 	Wait( 90 );
 	SetValidityOfInput( TRUE );
-	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "彼",
 		   NULL, " Why?", Line_ContinueAfterTyping);
 	SetValidityOfInput( FALSE );
 	Wait( 90 );
 	SetValidityOfInput( TRUE );
-	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "が",
 		   NULL, " Why?", Line_ContinueAfterTyping);
 	SetValidityOfInput( FALSE );
 	Wait( 90 );
 	SetValidityOfInput( TRUE );
-	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "何",
 		   NULL, " Why?", Line_ContinueAfterTyping);
 	SetValidityOfInput( FALSE );
 	Wait( 90 );
 	SetValidityOfInput( TRUE );
-	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "を",
 		   NULL, " Why?", Line_ContinueAfterTyping);
 	SetValidityOfInput( FALSE );
 	Wait( 90 );
 	SetValidityOfInput( TRUE );
-	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "し",
 		   NULL, " Why?", Line_ContinueAfterTyping);
 	SetValidityOfInput( FALSE );
 	Wait( 90 );
 	SetValidityOfInput( TRUE );
-	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "た",
 		   NULL, " Why?", Line_ContinueAfterTyping);
 	SetValidityOfInput( FALSE );
 	Wait( 90 );
 	SetValidityOfInput( TRUE );
-	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "の",
 		   NULL, " Why?", Line_ContinueAfterTyping);
 	SetValidityOfInput( FALSE );
 	Wait( 90 );
 	SetValidityOfInput( TRUE );
-	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "？",
 		   NULL, " Why?", Line_ContinueAfterTyping);
 	SetValidityOfInput( FALSE );
 	Wait( 90 );
 	SetValidityOfInput( TRUE );
-	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "何",
 		   NULL, " Why?", Line_ContinueAfterTyping);
 	SetValidityOfInput( FALSE );
 	Wait( 90 );
 	SetValidityOfInput( TRUE );
-	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "も",
 		   NULL, " Why?", Line_ContinueAfterTyping);
 	SetValidityOfInput( FALSE );
 	Wait( 90 );
 	SetValidityOfInput( TRUE );
-	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "し",
 		   NULL, " Why?", Line_ContinueAfterTyping);
 	SetValidityOfInput( FALSE );
 	Wait( 90 );
 	SetValidityOfInput( TRUE );
-	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "て",
 		   NULL, " Why?", Line_ContinueAfterTyping);
 	SetValidityOfInput( FALSE );
 	Wait( 90 );
 	SetValidityOfInput( TRUE );
-	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "な",
 		   NULL, " Why?", Line_ContinueAfterTyping);
 	SetValidityOfInput( FALSE );
 	Wait( 90 );
 	SetValidityOfInput( TRUE );
-	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "い",
 		   NULL, " Why?", Line_ContinueAfterTyping);
 	SetValidityOfInput( FALSE );
 	Wait( 90 );
 	SetValidityOfInput( TRUE );
-	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "何",
 		   NULL, " Why?", Line_ContinueAfterTyping);
 	SetValidityOfInput( FALSE );
 	Wait( 90 );
 	SetValidityOfInput( TRUE );
-	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "も",
 		   NULL, " Why?", Line_ContinueAfterTyping);
 	SetValidityOfInput( FALSE );
 	Wait( 90 );
 	SetValidityOfInput( TRUE );
-	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "や",
 		   NULL, " Why?", Line_ContinueAfterTyping);
 	SetValidityOfInput( FALSE );
 	Wait( 90 );
 	SetValidityOfInput( TRUE );
-	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "っ",
 		   NULL, " Why?", Line_ContinueAfterTyping);
 	SetValidityOfInput( FALSE );
 	Wait( 90 );
 	SetValidityOfInput( TRUE );
-	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "て",
 		   NULL, " Why?", Line_ContinueAfterTyping);
 	SetValidityOfInput( FALSE );
 	Wait( 90 );
 	SetValidityOfInput( TRUE );
-	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "な",
 		   NULL, " Why?", Line_ContinueAfterTyping);
 	SetValidityOfInput( FALSE );
 	Wait( 90 );
 	SetValidityOfInput( TRUE );
-	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "い",
 		   NULL, " Why?", Line_ContinueAfterTyping);
 	SetValidityOfInput( FALSE );
 	Wait( 90 );
 	SetValidityOfInput( TRUE );
-	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "た",
 		   NULL, " Why?", Line_ContinueAfterTyping);
 	SetValidityOfInput( FALSE );
 	Wait( 90 );
 	SetValidityOfInput( TRUE );
-	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "だ",
 		   NULL, " Why?", Line_ContinueAfterTyping);
 	SetValidityOfInput( FALSE );
 	Wait( 90 );
 	SetValidityOfInput( TRUE );
-	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "北",
 		   NULL, " Why?", Line_ContinueAfterTyping);
 	SetValidityOfInput( FALSE );
 	Wait( 90 );
 	SetValidityOfInput( TRUE );
-	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "条",
 		   NULL, " Why?", Line_ContinueAfterTyping);
 	SetValidityOfInput( FALSE );
 	Wait( 90 );
 	SetValidityOfInput( TRUE );
-	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "で",
 		   NULL, " Why?", Line_ContinueAfterTyping);
 	SetValidityOfInput( FALSE );
 	Wait( 90 );
 	SetValidityOfInput( TRUE );
-	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "あ",
 		   NULL, " Why?", Line_ContinueAfterTyping);
 	SetValidityOfInput( FALSE );
 	Wait( 90 );
 	SetValidityOfInput( TRUE );
-	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "っ",
 		   NULL, " Why?", Line_ContinueAfterTyping);
 	SetValidityOfInput( FALSE );
 	Wait( 90 );
 	SetValidityOfInput( TRUE );
-	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "た",
 		   NULL, " Why?", Line_ContinueAfterTyping);
 	SetValidityOfInput( FALSE );
 	Wait( 90 );
 	SetValidityOfInput( TRUE );
-	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "だ",
 		   NULL, " Why?", Line_ContinueAfterTyping);
 	SetValidityOfInput( FALSE );
 	Wait( 90 );
 	SetValidityOfInput( TRUE );
-	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "け",
 		   NULL, " Why?", Line_ContinueAfterTyping);
 	SetValidityOfInput( FALSE );
 	Wait( 90 );
 	SetValidityOfInput( TRUE );
-	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "そ",
 		   NULL, " Why?", Line_ContinueAfterTyping);
 	SetValidityOfInput( FALSE );
 	Wait( 90 );
 	SetValidityOfInput( TRUE );
-	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "れ",
 		   NULL, " Why?", Line_ContinueAfterTyping);
 	SetValidityOfInput( FALSE );
 	Wait( 90 );
 	SetValidityOfInput( TRUE );
-	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "に",
 		   NULL, " Why?", Line_ContinueAfterTyping);
 	SetValidityOfInput( FALSE );
 	Wait( 90 );
 	SetValidityOfInput( TRUE );
-	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "ど",
 		   NULL, " Why?", Line_ContinueAfterTyping);
 	SetValidityOfInput( FALSE );
 	Wait( 90 );
 	SetValidityOfInput( TRUE );
-	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "ん",
 		   NULL, " Why?", Line_ContinueAfterTyping);
 	SetValidityOfInput( FALSE );
 	Wait( 90 );
 	SetValidityOfInput( TRUE );
-	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "な",
 		   NULL, " Why?", Line_ContinueAfterTyping);
 	SetValidityOfInput( FALSE );
 	Wait( 90 );
 	SetValidityOfInput( TRUE );
-	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "罪",
 		   NULL, " Why?", Line_ContinueAfterTyping);
 	SetValidityOfInput( FALSE );
 	Wait( 90 );
 	SetValidityOfInput( TRUE );
-	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "が",
 		   NULL, " Why?", Line_ContinueAfterTyping);
 	SetValidityOfInput( FALSE );
 	Wait( 90 );
 	SetValidityOfInput( TRUE );
-	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "罰",
 		   NULL, " Why?", Line_ContinueAfterTyping);
 	SetValidityOfInput( FALSE );
 	Wait( 90 );
 	SetValidityOfInput( TRUE );
-	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "が",
 		   NULL, " Why?", Line_ContinueAfterTyping);
 	SetValidityOfInput( FALSE );
 	Wait( 90 );
 	SetValidityOfInput( TRUE );
-	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "祟",
 		   NULL, " Why?", Line_ContinueAfterTyping);
 	SetValidityOfInput( FALSE );
 	Wait( 90 );
 	SetValidityOfInput( TRUE );
-	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "り",
 		   NULL, " Why?", Line_ContinueAfterTyping);
 	SetValidityOfInput( FALSE );
 	Wait( 90 );
 	SetValidityOfInput( TRUE );
-	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "が",
 		   NULL, " Why?", Line_ContinueAfterTyping);
 	SetValidityOfInput( FALSE );
 	Wait( 90 );
 	SetValidityOfInput( TRUE );
-	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "呪",
 		   NULL, " Why?", Line_ContinueAfterTyping);
 	SetValidityOfInput( FALSE );
 	Wait( 90 );
 	SetValidityOfInput( TRUE );
-	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "い",
 		   NULL, " Why?", Line_ContinueAfterTyping);
 	SetValidityOfInput( FALSE );
 	Wait( 90 );
 	SetValidityOfInput( TRUE );
-	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "が",
 		   NULL, " Why?", Line_ContinueAfterTyping);
 	SetValidityOfInput( FALSE );
 	Wait( 90 );
 	SetValidityOfInput( TRUE );
-	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "ど",
 		   NULL, " Why?", Line_ContinueAfterTyping);
 	SetValidityOfInput( FALSE );
 	Wait( 90 );
 	SetValidityOfInput( TRUE );
-	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "う",
 		   NULL, " Why?", Line_ContinueAfterTyping);
 	SetValidityOfInput( FALSE );
 	Wait( 90 );
 	SetValidityOfInput( TRUE );
-	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "し",
 		   NULL, " Why?", Line_ContinueAfterTyping);
 	SetValidityOfInput( FALSE );
 	Wait( 90 );
 	SetValidityOfInput( TRUE );
-	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "て",
 		   NULL, " Why?", Line_ContinueAfterTyping);
 	SetValidityOfInput( FALSE );
 	Wait( 90 );
 	SetValidityOfInput( TRUE );
-	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "降",
 		   NULL, " Why?", Line_ContinueAfterTyping);
 	SetValidityOfInput( FALSE );
 	Wait( 90 );
 	SetValidityOfInput( TRUE );
-	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "り",
 		   NULL, " Why?", Line_ContinueAfterTyping);
 	SetValidityOfInput( FALSE );
 	Wait( 90 );
 	SetValidityOfInput( TRUE );
-	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "か",
 		   NULL, " Why?", Line_ContinueAfterTyping);
 	SetValidityOfInput( FALSE );
 	Wait( 90 );
 	SetValidityOfInput( TRUE );
-	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "か",
 		   NULL, " Why?", Line_ContinueAfterTyping);
 	SetValidityOfInput( FALSE );
 	Wait( 90 );
 	SetValidityOfInput( TRUE );
-	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "ら",
 		   NULL, " Why?", Line_ContinueAfterTyping);
 	SetValidityOfInput( FALSE );
 	Wait( 90 );
 	SetValidityOfInput( TRUE );
-	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "ね",
 		   NULL, " Why?", Line_ContinueAfterTyping);
 	SetValidityOfInput( FALSE );
 	Wait( 90 );
 	SetValidityOfInput( TRUE );
-	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "ば",
 		   NULL, " Why?", Line_ContinueAfterTyping);
 	SetValidityOfInput( FALSE );
 	Wait( 90 );
 	SetValidityOfInput( TRUE );
-	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "な",
 		   NULL, " Why?", Line_ContinueAfterTyping);
 	SetValidityOfInput( FALSE );
 	Wait( 90 );
 	SetValidityOfInput( TRUE );
-	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "ら",
 		   NULL, " Why?", Line_ContinueAfterTyping);
 	SetValidityOfInput( FALSE );
 	Wait( 90 );
 	SetValidityOfInput( TRUE );
-	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "な",
 		   NULL, " Why?", Line_ContinueAfterTyping);
 	SetValidityOfInput( FALSE );
 	Wait( 90 );
 	SetValidityOfInput( TRUE );
-	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "か",
 		   NULL, " Why?", Line_ContinueAfterTyping);
 	SetValidityOfInput( FALSE );
 	Wait( 90 );
 	SetValidityOfInput( TRUE );
-	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "っ",
 		   NULL, " Why?", Line_ContinueAfterTyping);
 	SetValidityOfInput( FALSE );
 	Wait( 90 );
 	SetValidityOfInput( TRUE );
-	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "た",
 		   NULL, " Why?", Line_ContinueAfterTyping);
 	SetValidityOfInput( FALSE );
 	Wait( 90 );
 	SetValidityOfInput( TRUE );
-	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "の",
 		   NULL, " Why?", Line_ContinueAfterTyping);
 	SetValidityOfInput( FALSE );
 	Wait( 90 );
 	SetValidityOfInput( TRUE );
-	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "か",
 		   NULL, " Why?", Line_ContinueAfterTyping);
 	SetValidityOfInput( FALSE );
 	Wait( 90 );
 	SetValidityOfInput( TRUE );
-	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "、",
 		   NULL, " Why?", Line_ContinueAfterTyping);
 	SetValidityOfInput( FALSE );
@@ -2919,7 +2744,6 @@
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
 	SetSpeedOfMessage( TRUE, 128 );
-	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "一体悟史くんに何の罪があったというのかッ！！！」",
 		   NULL, "What kind of crime has he committed?!!!\"", Line_Normal);
 	ClearMessage();
@@ -2944,7 +2768,6 @@
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
 
-	PlaySE(4, "S09/03/170300222", 128, 64);
 	OutputLine(NULL, "　それでおしまい。",
 		   NULL, "That was that.", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -2967,10 +2790,10 @@
 	Wait( 1000 );
 	SetValidityOfInput( TRUE );
 
-	PlaySE(4, "S02/01/130100368", 128, 64);
+	PlaySE(4, "S06/01/150100163", 128, 64);
 	OutputLine(NULL, "「……ごめん、詩音。",
 		   NULL, "\"...Sorry, Shion.", Line_WaitForInput);
-	PlaySE(4, "S02/01/130100369", 128, 64);
+	PlaySE(4, "S06/01/150100164", 128, 64);
 	OutputLine(NULL, "…今、何て言った？」",
 		   NULL, " ...What was that you just said?\"", Line_Normal);
 	ClearMessage();
@@ -3030,7 +2853,7 @@
 		   NULL, "\"Then you mean... their deaths... are going to be dealt with in total secrecy?!\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
-	PlaySE(4, "", 128, 64);
+	PlaySE(4, "S06/06/150601860", 128, 64);
 	OutputLine(NULL, "「そういうことです。",
 		   NULL, "\"That's how it is.", Line_WaitForInput);
 	PlaySE(4, "S06/06/150601861", 128, 64);
@@ -3060,34 +2883,32 @@
 		   NULL, " it means that no matter who dies on the night of Watanagashi, it won't go public.\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
-	PlaySE(4, "S02/01/130100397", 128, 64);
+	PlaySE(4, "S06/01/150100168", 128, 64);
 	OutputLine(NULL, "「……そ、そんな馬鹿な話があってたまるか…！」",
 		   NULL, "\"...Th-That's the biggest pile of bullshit I've ever heard...!\"", Line_Normal);
 	ClearMessage();
 
-	PlaySE(4, "", 128, 64);
+	PlaySE(4, "S06/06/150601866", 128, 64);
 	OutputLine(NULL, "「圭ちゃん。",
 		   NULL, "\"Kei-chan.", Line_WaitForInput);
-	PlaySE(4, "S02/06/130600274", 128, 64);
+	PlaySE(4, "S06/06/150601867", 128, 64);
 	OutputLine(NULL, "…私、以前に、オヤシロさまの祟りは村人が起こしてるかもしれないって言いましたよね。",
 		   NULL, " ...Remember how I said before that the villagers could be the ones carrying out Oyashiro-sama's curse?", Line_WaitForInput);
-	PlaySE(4, "S02/06/130600275", 128, 64);
+	PlaySE(4, "S06/06/150601868", 128, 64);
 	OutputLine(NULL, "……つまりそういうことなんです。",
 		   NULL, " ...That's what I mean.", Line_WaitForInput);
-	PlaySE(4, "S02/06/130600276", 128, 64);
+	PlaySE(4, "S06/06/150601869", 128, 64);
 	OutputLine(NULL, "…この雛見沢では、毎年、綿流しの夜に、オヤシロさまの祟りということにして誰かを殺してもいい土壌が、",
 		   NULL, " ...At some point, a tradition was created here in Hinamizawa...", Line_ContinueAfterTyping);
 	SetValidityOfInput( FALSE );
 	Wait( 1000 );
 	SetValidityOfInput( TRUE );
-	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "……いつの間にか作り上げられているんです。」",
 		   NULL, " where every year, you're allowed to kill someone on the night of Watanagashi.\"", Line_Normal);
 	ClearMessage();
 	DrawScene( "Hi1", 1000 );
 	PlayBGM( 1, "yabaisemi", 120, 0 );
 
-	PlaySE(4, "S19/03/990300629", 128, 64);
 	OutputLine(NULL, "　そう。",
 		   NULL, "Yes.", Line_WaitForInput);
 	OutputLine(NULL, "これこそが、雛見沢村連続怪死事件、通称オヤシロさまの祟りの、真実。",
@@ -3212,7 +3033,6 @@
 		   NULL, " I had finally figured out how it all worked.", Line_Normal);
 	ClearMessage();
 
-	PlaySE(4, "S13/03/DS41030223", 128, 64);
 	OutputLine(NULL, "　もう一度整理しよう。",
 		   NULL, "Phrased in a more organized matter, it would go as follows:", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -3608,12 +3428,11 @@
 	SetValidityOfInput( FALSE );
 	Wait( 1000 );
 	SetValidityOfInput( TRUE );
-	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "…全然。」",
 		   NULL, " nothing.\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
-	PlaySE(4, "", 128, 64);
+	PlaySE(4, "S06/00/villb15008", 128, 64);
 	OutputLine(NULL, "「……………………………。」",
 		   NULL, "\"...........................\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -3650,7 +3469,7 @@
 		   NULL, "\"Did Oryou-san say that?\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
-	PlaySE(4, "", 128, 64);
+	PlaySE(4, "S06/06/150601879", 128, 64);
 	OutputLine(NULL, "「はい。",
 		   NULL, "\"Yes.", Line_WaitForInput);
 	PlaySE(4, "S06/06/150601880", 128, 64);
@@ -3688,10 +3507,10 @@
 		   NULL, " I'll get everyone together right away.\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
-	PlaySE(4, "", 128, 64);
+	PlaySE(4, "S06/06/150601883", 128, 64);
 	OutputLine(NULL, "「えぇ。",
 		   NULL, "\"Okay,", Line_WaitForInput);
-	PlaySE(4, "", 128, 64);
+	PlaySE(4, "S06/06/150601884", 128, 64);
 	OutputLine(NULL, "では。」",
 		   NULL, " see you later.\"", Line_Normal);
 	ClearMessage();
@@ -3766,18 +3585,16 @@
 		   NULL, "Kimiyoshi could only make noise with the chain. He couldn't even express any emotion other than anguish.", Line_Normal);
 	ClearMessage();
 
-	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "「鎖、少し長くしてあげましょうか？",
 		   NULL, "\"Is the chain too short?", Line_WaitForInput);
-	PlaySE(4, "", 128, 64);
+	PlaySE(4, "S06/06/150601888_1", 128, 64);
 	OutputLine(NULL, "　私の質問にちゃんと答えてくれる度に、そうですね、鎖の輪っか、１個分長くしてあげます。",
 		   NULL, " Why don't I make it longer every time you give me an answer to a question?", Line_WaitForInput);
-	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "…あと３個も長くなれば、だいぶ楽になると思うんですけどね？」",
 		   NULL, " If it's even a little longer, you'll feel better.\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
-	PlaySE(4, "", 128, 64);
+	PlaySE(4, "S06/18/153300108", 128, 64);
 	OutputLine(NULL, "「……………ぅうぅ…………ぅ…………。」",
 		   NULL, "\"...Oooh... oooh...\"", Line_Normal);
 	ClearMessage();
@@ -3826,12 +3643,12 @@
 		   NULL, " Please tell me anything you know about Satoshi Houjou-kun.\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
-	PlaySE(4, "S03/01/140100870", 128, 64);
+	PlaySE(4, "S06/18/153300109", 128, 64);
 	OutputLine(NULL, "「…………………ぅ……………。」",
 		   NULL, "\"......Oooh......\"", Line_Normal);
 	ClearMessage();
 
-	PlaySE(4, "", 128, 64);
+	PlaySE(4, "S06/06/150601895", 128, 64);
 	OutputLine(NULL, "「……あぁ、ごめんなさい。",
 		   NULL, "\"...Oh, sorry.", Line_WaitForInput);
 	PlaySE(4, "S06/06/150601896", 128, 64);
@@ -3884,7 +3701,7 @@
 		   NULL, " As the head of the Kimiyoshi family, I would like you to tell me what you think has happened to Satoshi-kun.\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
-	PlaySE(4, "", 128, 64);
+	PlaySE(4, "S06/18/153300113", 128, 64);
 	OutputLine(NULL, "「…………………………。」",
 		   NULL, "\"...............\"", Line_Normal);
 	ClearMessage();
@@ -3940,19 +3757,17 @@
 		   NULL, "\"Ah, about him going to Tokyo on a bullet train, right?\"", Line_Normal);
 	ClearMessage();
 
-	PlaySE(4, "", 128, 64);
+	PlaySE(4, "S06/18/153300115", 128, 64);
 	OutputLine(NULL, "「…………警察が、",
 		   NULL, "\"...The police...", Line_ContinueAfterTyping);
 	SetValidityOfInput( FALSE );
 	Wait( 700 );
 	SetValidityOfInput( TRUE );
-	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "………東京で姿を見た、",
 		   NULL, " have seen him in Tokyo...", Line_ContinueAfterTyping);
 	SetValidityOfInput( FALSE );
 	Wait( 800 );
 	SetValidityOfInput( TRUE );
-	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "……というようなのを聞いた覚えが…。」",
 		   NULL, " or something like that...\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -3982,7 +3797,6 @@
 	SetValidityOfInput( FALSE );
 	Wait( 1000 );
 	SetValidityOfInput( TRUE );
-	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "わざわざ生かしておくのにどんな理由があるんです？",
 		   NULL, " after going through the trouble of making him disappear?", Line_WaitForInput);
 	PlaySE(4, "S06/06/150601908", 128, 64);
@@ -3990,7 +3804,7 @@
 		   NULL, " I don't think there's any reason for that.\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
-	PlaySE(4, "", 128, 64);
+	PlaySE(4, "S06/18/153300116", 128, 64);
 	OutputLine(NULL, "「…………………………。」",
 		   NULL, "\"..................\"", Line_Normal);
 	ClearMessage();
@@ -4001,7 +3815,7 @@
 	PlaySE(4, "S06/06/150601910", 128, 64);
 	OutputLine(NULL, "私は大石と一時期、連絡を密にしていましたが、そんなのは聞いたことないです。",
 		   NULL, " I was in close contact with Ooishi for a while, but he never mentioned it to me.", Line_WaitForInput);
-	PlaySE(4, "", 128, 64);
+	PlaySE(4, "S06/06/150601911", 128, 64);
 	OutputLine(NULL, "………おじいちゃん？",
 		   NULL, " ...Uncle?", Line_WaitForInput);
 	PlaySE(4, "S06/06/150601912", 128, 64);
@@ -4010,7 +3824,6 @@
 	SetValidityOfInput( FALSE );
 	Wait( 900 );
 	SetValidityOfInput( TRUE );
-	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "…………かえって怒っちゃいますよ？」",
 		   NULL, " it's not going to work...... you know that, don't you?\"", Line_Normal);
 	ClearMessage();
@@ -4035,19 +3848,17 @@
 		   NULL, " I'm simply asking you to help me look for Satoshi-kun, that's all.\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
-	PlaySE(4, "", 128, 64);
+	PlaySE(4, "S06/18/153300119", 128, 64);
 	OutputLine(NULL, "「わ、",
 		   NULL, "\"I-", Line_ContinueAfterTyping);
 	SetValidityOfInput( FALSE );
 	Wait( 600 );
 	SetValidityOfInput( TRUE );
-	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "……わかってる、",
 		   NULL, "I know... I know that.", Line_ContinueAfterTyping);
 	SetValidityOfInput( FALSE );
 	Wait( 1000 );
 	SetValidityOfInput( TRUE );
-	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "…ちゃんと真面目に考えるから…！」",
 		   NULL, " I'll answer you...!\"", Line_Normal);
 	ClearMessage();
@@ -4073,30 +3884,27 @@
 		   NULL, " or dead?\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
-	PlaySE(4, "", 128, 64);
+	PlaySE(4, "S06/18/153300120", 128, 64);
 	OutputLine(NULL, "「………………………生きてると考えるのは",
 		   NULL, "\"I... think...", Line_ContinueAfterTyping);
 	SetValidityOfInput( FALSE );
 	Wait( 300 );
 	SetValidityOfInput( TRUE );
-	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "…",
 		   NULL, "...", Line_ContinueAfterTyping);
 	SetValidityOfInput( FALSE );
 	Wait( 300 );
 	SetValidityOfInput( TRUE );
-	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "…",
 		   NULL, "...", Line_ContinueAfterTyping);
 	SetValidityOfInput( FALSE );
 	Wait( 300 );
 	SetValidityOfInput( TRUE );
-	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "難しいんじゃないかと思う…。」",
 		   NULL, " you shouldn't think he is alive...\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
-	PlaySE(4, "S06/06/150602625", 128, 64);
+	PlaySE(4, "S06/06/150601918", 128, 64);
 	OutputLine(NULL, "「………。",
 		   NULL, "\"......", Line_WaitForInput);
 	PlaySE(4, "S06/06/150601919", 128, 64);
@@ -4122,18 +3930,16 @@
 		   NULL, " What do you think about that?\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
-	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "「…………でも、…それの犯人は確か、麻薬中毒の危ない奴だと聞いたよ。」",
 		   NULL, "\"......Well... I heard that the culprit was some kind of drug addict.\"", Line_Normal);
 	ClearMessage();
 
-	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "「あれ、どう思います？",
 		   NULL, "\"What do you think about that?", Line_WaitForInput);
 	PlaySE(4, "S06/06/150601925", 128, 64);
 	OutputLine(NULL, "　……私は、…あはは、私がこういうのも変だけど、悟史くんが叔母殺しの犯人だって信じてるですよ。",
 		   NULL, " I... ahahaha, maybe I shouldn't say this, but I believe Satoshi-kun is the culprit.", Line_WaitForInput);
-	PlaySE(4, "", 128, 64);
+	PlaySE(4, "S06/06/150601926", 128, 64);
 	OutputLine(NULL, "あいつは、例えば鬼婆辺りに買収されて仕立て上げられた身代わりじゃないかと思うんですけど。」",
 		   NULL, " The drug addict was probably a decoy the hag arranged.\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -4164,7 +3970,7 @@
 		   NULL, "\"Why do you think that, though?\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
-	PlaySE(4, "", 128, 64);
+	PlaySE(4, "S06/18/153300126", 128, 64);
 	OutputLine(NULL, "「………………警察は……悟史くんが犯人だと思って捜査を進めてたんだよね…？",
 		   NULL, "\"The police were investigating the case, and Satoshi-kun was their primary suspect, wasn't he?", Line_WaitForInput);
 	PlaySE(4, "S06/18/153300127", 128, 64);
@@ -4216,19 +4022,17 @@
 		   NULL, " but I never knew she was that powerful...\"", Line_Normal);
 	ClearMessage();
 
-	PlaySE(4, "", 128, 64);
+	PlaySE(4, "S06/18/153300131", 128, 64);
 	OutputLine(NULL, "「………詩音ちゃんだって、",
 		   NULL, "\"...I'm sure you've heard quite a few rumors", Line_ContinueAfterTyping);
 	SetValidityOfInput( FALSE );
 	Wait( 800 );
 	SetValidityOfInput( TRUE );
-	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "…色々とダム戦争の頃から噂は聞いてるだろうし、",
 		   NULL, " during the dam conflict.", Line_ContinueAfterTyping);
 	SetValidityOfInput( FALSE );
 	Wait( 1000 );
 	SetValidityOfInput( TRUE );
-	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "中には実際に、直接聞いたものもあるんじゃないかい…？」",
 		   NULL, " Didn't you also hear things directly?\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -4277,7 +4081,6 @@
 	PlaySE(4, "S06/18/153300132", 128, 64);
 	OutputLine(NULL, "「詩音ちゃんだって、建設省の幹部の息子…、",
 		   NULL, "\"You've heard about", Line_WaitForInput);
-	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "というか建設大臣の孫だな…。",
 		   NULL, " the kidnapping case of", Line_ContinueAfterTyping);
 	SetValidityOfInput( FALSE );
@@ -4291,38 +4094,36 @@
 	PlaySE(4, "S06/06/150601932", 128, 64);
 	OutputLine(NULL, "「あれってやっぱ誘拐だったんですか？",
 		   NULL, "\"So it was really a kidnapping, huh?", Line_WaitForInput);
-	PlaySE(4, "", 128, 64);
+	PlaySE(4, "S06/06/150601933", 128, 64);
 	OutputLine(NULL, "　孫が『鬼隠し』になって、高津戸だか谷河内だかの山奥で見つかったって話は知ってたんですけどね。」",
 		   NULL, " I heard the grandson was demoned away and then found in the middle of the mountains in Takatsudo or Yagouchi.\"", Line_Normal);
 	ClearMessage();
 
-	PlaySE(4, "S06/06/150600360", 128, 64);
+	PlaySE(4, "S06/18/153300134", 128, 64);
 	OutputLine(NULL, "「…………あれは、",
 		   NULL, "\"That was", Line_ContinueAfterTyping);
 	SetValidityOfInput( FALSE );
 	Wait( 1000 );
 	SetValidityOfInput( TRUE );
-	PlaySE(4, "S06/18/153300134", 128, 64);
 	OutputLine(NULL, "…お魎さんの指図によるものだよ…。",
 		   NULL, " at Oryou-san's command...", Line_WaitForInput);
-	PlaySE(4, "", 128, 64);
+	PlaySE(4, "S06/18/153300135", 128, 64);
 	OutputLine(NULL, "……ダム工事の中止の約束が取り付けられたんで、孫を釈放したっていうのは、",
 		   NULL, " The Minister promised to stop the dam construction, and the grandson was released.", Line_ContinueAfterTyping);
 	SetValidityOfInput( FALSE );
 	Wait( 1000 );
 	SetValidityOfInput( TRUE );
-	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "………おじいちゃんたち、旧同盟の幹部ならみんな知ってる。」",
 		   NULL, " ......All the top people in the ex-Guardians know that.\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
-	PlaySE(4, "", 128, 64);
+	PlaySE(4, "S06/06/150601934", 128, 64);
 	OutputLine(NULL, "「……ふぅん。",
 		   NULL, "\"...Hmmm.", Line_WaitForInput);
 	PlaySE(4, "S06/06/150601935", 128, 64);
 	OutputLine(NULL, "……身近に居すぎて私がよくわかってなかっただけで。",
 		   NULL, " I guess I was right in the middle of it when it was happening, but I didn't notice.", Line_WaitForInput);
-	PlaySE(4, "", 128, 64);
+	PlaySE(4, "S06/06/150601936", 128, 64);
 	OutputLine(NULL, "………やっぱり鬼婆や御三家や、旧同盟って大したもんだったんですね。",
 		   NULL, " The hag, the Three Families, and the ex-Guardians are truly magnificent, huh?", Line_WaitForInput);
 	PlaySE(4, "S06/06/150601937", 128, 64);
@@ -4351,7 +4152,7 @@
 		   NULL, "\"Who actually demoned away Satoshi-kun?\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
-	PlaySE(4, "S09/02/170200630", 128, 64);
+	PlaySE(4, "S06/18/153300136", 128, 64);
 	OutputLine(NULL, "「………………わからないよ…。",
 		   NULL, "\"I don't know.", Line_WaitForInput);
 	PlaySE(4, "S06/18/153300137", 128, 64);
@@ -4371,7 +4172,7 @@
 		   NULL, " And so, that was a bad question.", Line_Normal);
 	ClearMessage();
 
-	PlaySE(4, "", 128, 64);
+	PlaySE(4, "S06/06/150601939", 128, 64);
 	OutputLine(NULL, "「誰がやったにせよ、……大したものですよね。",
 		   NULL, "\"Whoever it was did a great job,", Line_WaitForInput);
 	PlaySE(4, "S06/06/150601940", 128, 64);
@@ -4390,7 +4191,7 @@
 		   NULL, " ...You know about the well farther down from here, the one used to dump bodies, don't you?\"", Line_Normal);
 	ClearMessage();
 
-	PlaySE(4, "S14/15/2115000066", 128, 64);
+	PlaySE(4, "S06/06/150601941", 128, 64);
 	OutputLine(NULL, "「あぁ……確かに。",
 		   NULL, "\"Yeah, I do.", Line_WaitForInput);
 	PlaySE(4, "S06/06/150601942", 128, 64);
@@ -4416,13 +4217,11 @@
 		   NULL, " It's very possible that the well was used for that.", Line_Normal);
 	ClearMessage();
 
-	PlaySE(4, "S06/06/150601897", 128, 64);
 	OutputLine(NULL, "　じゃあ、",
 		   NULL, "Then", Line_ContinueAfterTyping);
 	SetValidityOfInput( FALSE );
 	Wait( 700 );
 	SetValidityOfInput( TRUE );
-	PlaySE(4, "S06/06/150601022", 128, 64);
 	OutputLine(NULL, "…………悟史くんは、",
 		   NULL, " Satoshi-kun is", Line_ContinueAfterTyping);
 	SetValidityOfInput( FALSE );
@@ -4479,7 +4278,7 @@
 		   NULL, " Then screamed into the well.", Line_Normal);
 	ClearMessage();
 
-	PlaySE(4, "S06/06/150601425", 128, 64);
+	PlaySE(4, "S06/06/150601943", 128, 64);
 	OutputLine(NULL, "「……悟史くん。",
 		   NULL, "\"Satoshi-kun!", Line_WaitForInput);
 	PlaySE(4, "S06/06/150601944", 128, 64);
@@ -4549,7 +4348,6 @@
 
 	OutputLine(NULL, "　詩音。…",
 		   NULL, "Shion.", Line_WaitForInput);
-	PlaySE(4, "S06/02/150200085", 128, 64);
 	OutputLine(NULL, "……やっと、",
 		   NULL, " You", Line_ContinueAfterTyping);
 	SetValidityOfInput( FALSE );
@@ -4566,13 +4364,11 @@
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
 
-	PlaySE(4, "S06/06/150600873", 128, 64);
 	OutputLine(NULL, "　悟史くん、",
 		   NULL, "Satoshi-kun,", Line_ContinueAfterTyping);
 	SetValidityOfInput( FALSE );
 	Wait( 600 );
 	SetValidityOfInput( TRUE );
-	PlaySE(4, "S06/06/150601386", 128, 64);
 	OutputLine(NULL, "……悟史くん……、",
 		   NULL, " Satoshi-kun...", Line_ContinueAfterTyping);
 	SetValidityOfInput( FALSE );
@@ -4602,7 +4398,6 @@
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
 
-	PlaySE(4, "S06/06/150600873", 128, 64);
 	OutputLine(NULL, "　悟史くん、",
 		   NULL, "Satoshi-kun,", Line_WaitForInput);
 	OutputLine(NULL, "…私も、悟史くんのところに行く。",
@@ -4657,7 +4452,6 @@
 	SetValidityOfInput( FALSE );
 	Wait( 700 );
 	SetValidityOfInput( TRUE );
-	PlaySE(4, "S19/09/500900037", 128, 64);
 	OutputLine(NULL, "今度はね、",
 		   NULL, " I'll be", Line_ContinueAfterTyping);
 	SetValidityOfInput( FALSE );
@@ -4705,16 +4499,15 @@
 		   NULL, " so long as you're alive...", Line_Normal);
 	ClearMessage();
 
-	PlaySE(4, "", 128, 64);
+	PlaySE(4, "S06/06/150601945", 128, 64);
 	OutputLine(NULL, "「…………………生きる。",
 		   NULL, "\"...To live.", Line_WaitForInput);
-	PlaySE(4, "", 128, 64);
+	PlaySE(4, "S06/06/150601946", 128, 64);
 	OutputLine(NULL, "…………生きるよ…………、",
 		   NULL, " I will... live.", Line_ContinueAfterTyping);
 	SetValidityOfInput( FALSE );
 	Wait( 1000 );
 	SetValidityOfInput( TRUE );
-	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "…生きる。」",
 		   NULL, " I will live.\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -4729,7 +4522,6 @@
 		   NULL, "I wasn't allowed to go down to the bottom.", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
-	PlaySE(4, "S19/01/HR_KEI27530", 128, 64);
 	OutputLine(NULL, "　……でも、",
 		   NULL, "But", Line_ContinueAfterTyping);
 	SetValidityOfInput( FALSE );
@@ -4755,33 +4547,31 @@
 	DrawSceneWithMask( "JSA6", "maskup", 1, 0, 1300 );
 	PlayBGM( 0, "yoru", 120, 0 );
 
-	PlaySE(4, "S06/01/150100341", 128, 64);
+	PlaySE(4, "S06/06/150601947", 128, 64);
 	OutputLine(NULL, "「………魅音。",
 		   NULL, "\"Mion.", Line_WaitForInput);
-	PlaySE(4, "", 128, 64);
+	PlaySE(4, "S06/06/150601948", 128, 64);
 	OutputLine(NULL, "……悟史くん、",
 		   NULL, " Satoshi-kun...", Line_ContinueAfterTyping);
 	SetValidityOfInput( FALSE );
 	Wait( 800 );
 	SetValidityOfInput( TRUE );
-	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "………見つけた…。",
 		   NULL, " I found him...", Line_WaitForInput);
-	PlaySE(4, "", 128, 64);
+	PlaySE(4, "S06/06/150601949", 128, 64);
 	OutputLine(NULL, "井戸の、……底なんだね。」",
 		   NULL, " He's at the bottom of the well, isn't he?\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
-	PlaySE(4, "", 128, 64);
+	PlaySE(4, "S06/03/150300399", 128, 64);
 	OutputLine(NULL, "「……………………………そうだと…思う。",
 		   NULL, "\"...I think so...", Line_WaitForInput);
-	PlaySE(4, "", 128, 64);
+	PlaySE(4, "S06/03/150300400", 128, 64);
 	OutputLine(NULL, "…………そこしか、",
 		   NULL, " I can't think of", Line_ContinueAfterTyping);
 	SetValidityOfInput( FALSE );
 	Wait( 1000 );
 	SetValidityOfInput( TRUE );
-	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "……ないもん。」",
 		   NULL, " anywhere else he'd be.\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -4795,7 +4585,7 @@
 		   NULL, "\"You weren't there... when Satoshi-kun was killed, were you?\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
-	PlaySE(4, "S20/02/440200089", 128, 64);
+	PlaySE(4, "S06/03/150300401", 128, 64);
 	OutputLine(NULL, "「………………うん。」",
 		   NULL, "\".........No.\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -4803,7 +4593,7 @@
 	PlaySE(4, "S06/06/150601951", 128, 64);
 	OutputLine(NULL, "「もし居合わせたら。",
 		   NULL, "\"If you were there...", Line_WaitForInput);
-	PlaySE(4, "", 128, 64);
+	PlaySE(4, "S06/06/150601952", 128, 64);
 	OutputLine(NULL, "……悟史くんを許してもらえるよう、鬼婆に意見してくれたかな………。」",
 		   NULL, " Would you have begged the hag to forgive him?\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -4929,7 +4719,6 @@
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
 
-	PlaySE(4, "S19/06/660300221", 128, 64);
 	OutputLine(NULL, "　……あははは……、",
 		   NULL, "Ahahahaha...", Line_ContinueAfterTyping);
 	SetValidityOfInput( FALSE );
@@ -4945,7 +4734,6 @@
 	SetValidityOfInput( FALSE );
 	Wait( 700 );
 	SetValidityOfInput( TRUE );
-	PlaySE(4, "S17/02/110200137", 128, 64);
 	OutputLine(NULL, "…そうだよね。",
 		   NULL, " I get it.", Line_WaitForInput);
 	OutputLine(NULL, "…他の怖い親類の前だもんね…私情なんか……出せないよね…？",
@@ -4967,16 +4755,14 @@
 
 	OutputLineAll(NULL, "", Line_WaitForInput);
 
-	PlaySE(4, "", 128, 64);
+	PlaySE(4, "S06/06/150601956", 128, 64);
 	OutputLine(NULL, "　助けろ！！",
 		   NULL, " Help him!!", Line_WaitForInput);
-	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "　助けろ！！",
 		   NULL, " Help him!!", Line_WaitForInput);
 	PlaySE(4, "S06/06/150601957", 128, 64);
 	OutputLine(NULL, "　何で？！",
 		   NULL, " Why?!", Line_WaitForInput);
-	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "　何で助けないのッ！！？",
 		   NULL, " Why didn't you help him?!!", Line_WaitForInput);
 	PlaySE(4, "S06/06/150601958", 128, 64);
@@ -4990,16 +4776,14 @@
 	PlaySE(4, "S06/06/150601960", 128, 64);
 	OutputLine(NULL, "　あんたは同情する素振りを見せるだけで、助けなかった！！",
 		   NULL, "You pretended to sympathize, but you didn't help him!!", Line_WaitForInput);
-	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "　見殺した！！！",
 		   NULL, " You ignored him!!!", Line_WaitForInput);
 	PlaySE(4, "S06/06/150601961", 128, 64);
 	OutputLine(NULL, "　あんたが悟史くんを助けなかったから、追い詰められたんだ！！",
 		   NULL, " He was cornered because you didn't help him!!", Line_WaitForInput);
-	PlaySE(4, "", 128, 64);
+	PlaySE(4, "S06/06/150601962", 128, 64);
 	OutputLine(NULL, "　私は救おうとがんばったよ？！",
 		   NULL, " I tried!", Line_WaitForInput);
-	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "　彼の心の支えになろうとがんばった！！",
 		   NULL, " I tried to support him!!", Line_WaitForInput);
 	PlaySE(4, "S06/06/150601963", 128, 64);
@@ -5008,18 +4792,16 @@
 	PlaySE(4, "S06/06/150601964", 128, 64);
 	OutputLine(NULL, "　私は彼のアリバイのために自らを投げ打って戦った！！",
 		   NULL, " I sacrificed myself to fight for him!!", Line_WaitForInput);
-	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "　その結果が爪３枚なんて安いもんでしょ！！",
 		   NULL, " Three nails were nothing!!", Line_Normal);
 	ClearMessage();
 
-	PlaySE(4, "", 128, 64);
+	PlaySE(4, "S06/06/150601965", 128, 64);
 	OutputLine(NULL, "　でもね、それだけの努力じゃ、悟史くんを救うには……全然足りなかった…。",
 		   NULL, "But it wasn't enough to rescue Satoshi-kun...", Line_WaitForInput);
-	PlaySE(4, "", 128, 64);
+	PlaySE(4, "S06/06/150601966", 128, 64);
 	OutputLine(NULL, "届かなかった……。",
 		   NULL, " I couldn't help him...", Line_WaitForInput);
-	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "どうしてか？",
 		   NULL, " Do you know why?", Line_WaitForInput);
 	PlaySE(4, "S06/06/150601967", 128, 64);
@@ -5031,7 +4813,6 @@
 	PlaySE(4, "S06/06/150601969", 128, 64);
 	OutputLine(NULL, "…でもあんたは違う。",
 		   NULL, " But you were different.", Line_WaitForInput);
-	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "あんたは魅音だった。",
 		   NULL, " You were Mion.", Line_WaitForInput);
 	PlaySE(4, "S06/06/150601970", 128, 64);
@@ -5063,7 +4844,6 @@
 	PlaySE(4, "S06/06/150601978", 128, 64);
 	OutputLine(NULL, "　私があんたに貸してあげるようになっただけで、本当は私のだったじゃないッ！！",
 		   NULL, " I just let you be Mion, remember? It was mine!!", Line_WaitForInput);
-	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "　返せ！！",
 		   NULL, " Give it back to me!!", Line_WaitForInput);
 	PlaySE(4, "S06/06/150601979", 128, 64);
@@ -5075,7 +4855,6 @@
 	PlaySE(4, "S06/06/150601981", 128, 64);
 	OutputLine(NULL, "　お前じゃなく私が魅音だったら！",
 		   NULL, " If I were Mion then!!", Line_WaitForInput);
-	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "　だったらぁあぁあああぁあッ！！！」",
 		   NULL, " Ahhhhhh!!!\"", Line_Normal);
 	ClearMessage();

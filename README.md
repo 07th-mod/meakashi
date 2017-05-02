@@ -71,3 +71,14 @@ Old collaborators welcome to join the repository, however it's still preferred t
 
 > in _meak_015_1.txt, pretty most of the starting script (until line 1000) is censored. The voice lines are still in because they're kinda close to the original. Leaving it there and changing the translation is up for discussion.
 
+> in _meak_020.txt, line 1520, a voice line is missing. Most likely you can find it in the PS2 voices.
+
+> in _meak_020.txt, line 3588, the entire dialog has no voices. S06/06/150601888_1 is mildly wrong, so looking in the PS2 voices should be ideal.
+
+> in _meak_020.txt, line 3933, part of the dialog has no voices. S06/06/150601926 is also mildly censored, you know the drill.
+
+> in _meak_021_2.txt, line 897, a voice line is missing. S06/06/150602076 is also mildly censored, so it should be worth to get a replacement.
+
+> in _meak_021_2.txt, line 1920, part of the dialog does not have voices.
+
+> in _meak_023.txt, line 65> is heavily censored on PS3. Line 326, 529, 588, 684 (until 712), 1093, 1895, 1912, 1922, 1924, 2472 doesn't have voices. Looks like the PS3 release hates the sound of dying people.
