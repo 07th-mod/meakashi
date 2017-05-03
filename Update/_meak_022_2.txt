@@ -22,8 +22,10 @@
 	SetValidityOfInput( TRUE );
 	DrawSceneWithMask( "Y_Ie2", "maskdown", 1, 0, 1300 );
 
+	PlaySE(4, "S06/06/150602235", 128, 64);
 	OutputLine(NULL, "「……圭ちゃん、本気で言ってんの？",
 		   NULL, "\"...Kei-chan, are you serious?", Line_WaitForInput);
+	PlaySE(4, "S06/06/150602236", 128, 64);
 	OutputLine(NULL, "　もし冗談だったら、かなり怒るよ？」",
 		   NULL, " I'm going to get really mad if this is a joke.\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -35,22 +37,28 @@
 	DrawBustshotWithFiltering( 2, "Re_DefB1#", "maskright", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 10, 300, TRUE );
 	DisplayWindow();
 
+	PlaySE(4, "S06/02/150200195", 128, 64);
 	OutputLine(NULL, "「魅ぃちゃん。",
 		   NULL, "\"Mii-chan.", Line_WaitForInput);
+	PlaySE(4, "S06/02/150200196", 128, 64);
 	OutputLine(NULL, "本当に冗談だったなら、怒るんじゃなく、笑おうよ。",
 		   NULL, " If it really is a joke, don't get mad, smile.", Line_WaitForInput);
+	PlaySE(4, "S06/02/150200197", 128, 64);
 	OutputLine(NULL, "だって冗談なんだから。",
 		   NULL, " It would be a joke, after all.", Line_WaitForInput);
 	DisableWindow();
 	ChangeBustshot( 2, "Re_KomaruA1#", 200, TRUE );
 	DisplayWindow();
 
+	PlaySE(4, "S06/02/150200198", 128, 64);
 	OutputLine(NULL, "……私たちはそれが冗談であることを確かめなくちゃいけない。」",
 		   NULL, " ...We need to go make sure whether it's a joke or not.\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
+	PlaySE(4, "S06/06/150602237", 128, 64);
 	OutputLine(NULL, "「………そうだね。",
 		   NULL, "\"......You're right.", Line_WaitForInput);
+	PlaySE(4, "S06/06/150602238", 128, 64);
 	OutputLine(NULL, "…機嫌の悪そうなことを言ってごめん。」",
 		   NULL, " ...Sorry for getting upset.\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -226,14 +234,17 @@
 	DrawSceneWithMask( "YHu2", "maskdown", 1, 0, 300 );
 	PlayBGM( 0, "yoru", 120, 0 );
 
+	PlaySE(4, "S06/02/150200199", 128, 64);
 	OutputLine(NULL, "「…魅ぃちゃん、大丈夫？」",
 		   NULL, "\"Mii-chan, are you okay?\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
+	PlaySE(4, "S06/06/150602239", 128, 64);
 	OutputLine(NULL, "「ん？",
 		   NULL, "\"Hmm?", Line_WaitForInput);
 	OutputLine(NULL, "　あぁあぁ、ごめん…！",
 		   NULL, " Ah, ah, yeah, sorry!", Line_WaitForInput);
+	PlaySE(4, "S06/06/150602240", 128, 64);
 	OutputLine(NULL, "　ほらさ、昨日から寝不足で…、ごめん…。」",
 		   NULL, " I haven't slept since yesterday, y'know... Sorry...\"", Line_Normal);
 	ClearMessage();
@@ -253,18 +264,22 @@
 	ChangeBustshot( 0, "Re_NandeB1#", 200, TRUE );
 	DisplayWindow();
 
+	PlaySE(4, "S06/02/150200201", 128, 64);
 	OutputLine(NULL, "「魅ぃちゃん、私、念のため、本宅の方も見てくるね！",
 		   NULL, "\"Mii-chan, I'm going to go check the main house just to be sure, okay?", Line_WaitForInput);
 	DisableWindow();
 	FadeBustshotWithFiltering( 0, "maskright" , 7, FALSE, 0, 0, 300, TRUE );
 	DisplayWindow();
 
+	PlaySE(4, "S06/02/150200202", 128, 64);
 	OutputLine(NULL, "　すぐ戻るから！」",
 		   NULL, " I'll be right back!\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
+	PlaySE(4, "S06/06/150602241", 128, 64);
 	OutputLine(NULL, "「ぁ、…あぁ、ごめん。",
 		   NULL, "\"A-Ah, okay.", Line_WaitForInput);
+	PlaySE(4, "S06/06/150602242", 128, 64);
 	OutputLine(NULL, "よろしく！」",
 		   NULL, " Be careful!\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -279,6 +294,7 @@
 		   NULL, "When I looked up, I saw Keiichi trying to open a window, but all of them were locked.", Line_Normal);
 	ClearMessage();
 
+	PlaySE(4, "S06/01/150100245", 128, 64);
 	OutputLine(NULL, "「……本宅って何だ？」",
 		   NULL, "\"...What did Rena mean by 'main house'?\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -287,26 +303,34 @@
 		   NULL, "Keiichi asked me from the top of the ladder.", Line_Normal);
 	ClearMessage();
 
+	PlaySE(4, "S06/06/150602243", 128, 64);
 	OutputLine(NULL, "「古手家の本当の家だよ。",
 		   NULL, "\"It's the Furude family's actual house.", Line_WaitForInput);
+	PlaySE(4, "S06/06/150602244", 128, 64);
 	OutputLine(NULL, "両親が亡くなって以来、ずっと放置してあるそうだけど。」",
 		   NULL, " After her parents passed away, I think it's been left like that.\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
+	PlaySE(4, "S06/01/150100246", 128, 64);
 	OutputLine(NULL, "「………あ、…そうか。",
 		   NULL, "\"....Ah... right.", Line_WaitForInput);
+	PlaySE(4, "S06/01/150100247", 128, 64);
 	OutputLine(NULL, "……梨花ちゃんのご両親って、…亡くなってるんだよな。」",
 		   NULL, " ...Rika-chan's parents... they passed away, huh?\"", Line_Normal);
 	ClearMessage();
 
+	PlaySE(4, "S06/06/150602245", 128, 64);
 	OutputLine(NULL, "「沙都子も親なしだよ。",
 		   NULL, "\"Satoko's also an orphan.", Line_WaitForInput);
+	PlaySE(4, "S06/06/150602246", 128, 64);
 	OutputLine(NULL, "………オヤシロさまの祟りってことで、両親が崖から落っこちてね。",
 		   NULL, " ...Her parents fell from a cliff because of Oyashiro-sama's curse.", Line_WaitForInput);
+	PlaySE(4, "S06/06/150602247", 128, 64);
 	OutputLine(NULL, "……お兄さんだった悟史くんも……いなくなっちゃって…。」",
 		   NULL, " ...Then her older brother, Satoshi-kun... he disappeared...\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
+	PlaySE(4, "S06/01/150100248", 128, 64);
 	OutputLine(NULL, "「…悟史って、……前に聞いた名前だな。」",
 		   NULL, "\"...Satoshi... I've heard that name before.\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -346,22 +370,29 @@
 	ClearMessage();
 	DrawSceneWithMask( "Moon", "maskup", 1, 0, 300 );
 
+	PlaySE(4, "S06/06/150602248", 128, 64);
 	OutputLine(NULL, "「沙都子は梨花ちゃんと一緒にこの小屋で暮らしてるんだよ。",
 		   NULL, "\"Satoko and Rika-chan have been living in this shack ever since.", Line_WaitForInput);
+	PlaySE(4, "S06/06/150602249", 128, 64);
 	OutputLine(NULL, "互いに身寄りのないひとりぼっち同士。",
 		   NULL, " Neither of them has any family, but at least they're together.", Line_WaitForInput);
+	PlaySE(4, "S06/06/150602250", 128, 64);
 	OutputLine(NULL, "…助け合ってね。」",
 		   NULL, " ...They help each other out.\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
+	PlaySE(4, "S06/01/150100249", 128, 64);
 	OutputLine(NULL, "「……本宅って言ったか？",
 		   NULL, "\"...Didn't Rena say there was a main house?", Line_WaitForInput);
+	PlaySE(4, "S06/01/150100250", 128, 64);
 	OutputLine(NULL, "　そっちで暮らした方が楽だろうに…。」",
 		   NULL, " Wouldn't it be easier to live there...?\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
+	PlaySE(4, "S06/06/150602251", 128, 64);
 	OutputLine(NULL, "「初めはそうしてたみたい。",
 		   NULL, "\"I think she tried that at first.", Line_WaitForInput);
+	PlaySE(4, "S06/06/150602252", 128, 64);
 	OutputLine(NULL, "……でも、両親を思い出すから辛いって言って。」",
 		   NULL, " ...She said it was hard, though, because it reminded her of her parents.\"", Line_Normal);
 	ClearMessage();
@@ -448,6 +479,7 @@
 	ClearMessage();
 	DrawScene( "Moon", 400 );
 
+	PlaySE(4, "S06/01/150100251", 128, 64);
 	OutputLine(NULL, "「…梨花ちゃんも",
 		   NULL, "\"...Rika-chan", Line_ContinueAfterTyping);
 	SetValidityOfInput( FALSE );
@@ -471,14 +503,17 @@
 	DrawScene( "black", 200 );
 	PlayBGM( 1, "yabaisemi", 120, 0 );
 
+	PlaySE(4, "S06/06/150602253", 128, 64);
 	OutputLine(NULL, "「呪われてるんだよ。」",
 		   NULL, "\"She's cursed.\"", Line_Normal);
 	ClearMessage();
 
+	PlaySE(4, "S06/01/150100252", 128, 64);
 	OutputLine(NULL, "「……え？」",
 		   NULL, "\"...Huh?\"", Line_Normal);
 	ClearMessage();
 
+	PlaySE(4, "S06/01/150100253", 128, 64);
 	OutputLine(NULL, "「…魅音、",
 		   NULL, "\"...Mion...", Line_ContinueAfterTyping);
 	SetValidityOfInput( FALSE );
@@ -498,16 +533,20 @@
 		   NULL, " just say?\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
+	PlaySE(4, "S06/06/150602254", 128, 64);
 	OutputLine(NULL, "「呪われてるって言ったの。」",
 		   NULL, "\"I said, she's cursed.\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
+	PlaySE(4, "S06/01/150100254", 128, 64);
 	OutputLine(NULL, "「……み、…魅音、お前………何てカオしてんだよ…？」",
 		   NULL, "\"...Mi... Mion, you... Why are you making that face...?\"", Line_Normal);
 	ClearMessage();
 
+	PlaySE(4, "S06/06/150602255", 128, 64);
 	OutputLine(NULL, "「北条沙都子はね。",
 		   NULL, "\"Satoko Houjou...", Line_WaitForInput);
+	PlaySE(4, "S06/06/150602256", 128, 64);
 	OutputLine(NULL, "……オヤシロさまの祟りを一身に受けた、呪われた子なの。」",
 		   NULL, " ...She's been cursed by Oyashiro-sama.\"", Line_Normal);
 	ClearMessage();
@@ -873,36 +912,47 @@
 		   NULL, "If a person responsible for executing the curse was nearby, he wouldn't come back safely...", Line_Normal);
 	ClearMessage();
 
+	PlaySE(4, "S06/00/villA15001", 128, 64);
 	OutputLine(NULL, "「魅音ちゃん、御蛇ヶ池の方もぐるっと捜したけど全然だめだね。",
 		   NULL, "\"Mion-chan, we went all around Ojaga Lake, but didn't find anything.", Line_WaitForInput);
+	PlaySE(4, "S06/00/villA15002", 128, 64);
 	OutputLine(NULL, "池の中も照らしたけど、明るくなんないとわかんないよ。」",
 		   NULL, " We tried to light up the pond, but we're going to have to wait until the sun is up.\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
+	PlaySE(4, "S06/06/150602257", 128, 64);
 	OutputLine(NULL, "「うん、ありがとうございます。",
 		   NULL, "\"Okay, thanks for your hard work.", Line_WaitForInput);
+	PlaySE(4, "S06/06/150602258", 128, 64);
 	OutputLine(NULL, "婦人部の皆さんがお味噌汁を作ってくれてますので、召し上がって休んでください。」",
 		   NULL, " The women are making some miso soup, so please rest up and have some.\"", Line_Normal);
 	ClearMessage();
 
+	PlaySE(4, "S06/00/villB15018", 128, 64);
 	OutputLine(NULL, "「…魅音ちゃん、あの二人って自転車はどこに停めてたんか知ってるかい？」",
 		   NULL, "\"Mion-chan, do you know where they usually park their bicycles?\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
+	PlaySE(4, "S06/06/150602259", 128, 64);
 	OutputLine(NULL, "「さぁ。",
 		   NULL, "\"No...", Line_WaitForInput);
+	PlaySE(4, "S06/06/150602260", 128, 64);
 	OutputLine(NULL, "多分、境内の階段の下じゃないかな。",
 		   NULL, " They probably parked them at the bottom of the stairs leading up here.", Line_WaitForInput);
+	PlaySE(4, "S06/06/150602261", 128, 64);
 	OutputLine(NULL, "まさかあの階段を担いで上がったりはしないでしょ。」",
 		   NULL, " I don't think they'd come up while carrying them.\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
+	PlaySE(4, "S06/00/villB15019", 128, 64);
 	OutputLine(NULL, "「ないんだよね二人の自転車がさ。",
 		   NULL, "\"We can't find their bicycles.", Line_WaitForInput);
+	PlaySE(4, "S06/00/villB15020", 128, 64);
 	OutputLine(NULL, "どこかに行っちゃったんだろうかねぇ…。」",
 		   NULL, " Where did they go...?\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
+	PlaySE(4, "S06/00/villC15001", 128, 64);
 	OutputLine(NULL, "「自転車で遊びに行ったなら、",
 		   NULL, "\"If they left on their bikes, ", Line_ContinueAfterTyping);
 	SetValidityOfInput( FALSE );
@@ -910,70 +960,91 @@
 	SetValidityOfInput( TRUE );
 	OutputLine(NULL, "…遠くかも知れんなぁ…。",
 		   NULL, " they could have gone pretty far...", Line_WaitForInput);
+	PlaySE(4, "S06/00/villC15002", 128, 64);
 	OutputLine(NULL, "町か…？」",
 		   NULL, " Maybe even as far as the town...\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
+	PlaySE(4, "S06/00/villB15021", 128, 64);
 	OutputLine(NULL, "「だとすると、雛見沢の中にはいないんかも知れんなぁ…？」",
 		   NULL, "\"In that case, we'll have to look outside of Hinamizawa...\"", Line_Normal);
 	ClearMessage();
 
+	PlaySE(4, "S06/00/villD15001", 128, 64);
 	OutputLine(NULL, "「そう言えば、梨花ちゃまがいなくなったってのは、誰が最初に気付いたんだ？」",
 		   NULL, "\"By the way, who first noticed that Rika-chama was gone?\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
+	PlaySE(4, "S06/06/150602262", 128, 64);
 	OutputLine(NULL, "「ん？",
 		   NULL, "\"Hmm?", Line_WaitForInput);
+	PlaySE(4, "S06/06/150602263", 128, 64);
 	OutputLine(NULL, "　あー、圭ちゃんだけど？",
 		   NULL, " Ah, it was Kei-chan.", Line_WaitForInput);
+	PlaySE(4, "S06/06/150602264", 128, 64);
 	OutputLine(NULL, "　急に虫が報せたんだとか。」",
 		   NULL, " He suddenly had a hunch....\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
+	PlaySE(4, "S06/00/villD15002", 128, 64);
 	OutputLine(NULL, "「……前原屋敷のせがれさんか。",
 		   NULL, "\"Oh, that Maebara kid, huh?", Line_WaitForInput);
+	PlaySE(4, "S06/00/villD15003", 128, 64);
 	OutputLine(NULL, "んんん、なんやん怪しいなぁ。」",
 		   NULL, " Mmmm, he's a little suspicious.\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
+	PlaySE(4, "S06/00/villE15001", 128, 64);
 	OutputLine(NULL, "「そう言えば、前原家は来てないのか、この一大事の時に。」",
 		   NULL, "\"Speaking of which, why hasn't the Maebara family shown up when we're in a crisis like this?\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
+	PlaySE(4, "S06/00/villF15001", 128, 64);
 	OutputLine(NULL, "「前原家は町会未加入だから、青年団の連絡網に入ってないんよ。」",
 		   NULL, "\"The Maebaras still haven't joined the town council, so they're not in the youth group's phone directory.\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
+	PlaySE(4, "S06/00/villG15001", 128, 64);
 	OutputLine(NULL, "「んなーー、すったらんしょおがなぁー。」",
 		   NULL, "\"Really? Well, ain't no helping it then.\"", Line_Normal);
 	ClearMessage();
 
+	PlaySE(4, "S06/00/villD15004", 128, 64);
 	OutputLine(NULL, "「あれ？",
 		   NULL, "\"Huh?", Line_WaitForInput);
+	PlaySE(4, "S06/00/villD15005", 128, 64);
 	OutputLine(NULL, "　入ったろ町会。",
 		   NULL, " They joined, didn't they?", Line_WaitForInput);
+	PlaySE(4, "S06/00/villD15006", 128, 64);
 	OutputLine(NULL, "あー、あれさね、連絡網に名前が載ってないだけんと違う？",
 		   NULL, " I think it's just that their name isn't in the directory yet...", Line_WaitForInput);
+	PlaySE(4, "S06/00/villD15007", 128, 64);
 	OutputLine(NULL, "　連絡網、新年に作ったきりやんね。",
 		   NULL, " The last time we updated it was at the beginning of the year.", Line_WaitForInput);
+	PlaySE(4, "S06/00/villD15008", 128, 64);
 	OutputLine(NULL, "途中から越して来たから載ってないん。」",
 		   NULL, " They just moved here, so that's why they aren't on it.\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
+	PlaySE(4, "S06/00/villE15002", 128, 64);
 	OutputLine(NULL, "「前原のせがれさんの、虫の報せってのがどうもなぁ。」",
 		   NULL, "\"That Maebara kid's hunch is still suspicious.\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
+	PlaySE(4, "S06/00/villF15002", 128, 64);
 	OutputLine(NULL, "「第一発見者が一等怪しい言うやんね。」",
 		   NULL, "\"They do they say the first on the scene is the most suspicious.\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
+	PlaySE(4, "S06/00/villF15003", 128, 64);
 	OutputLine(NULL, "「そのせがれはどこ行ったんかいね？」",
 		   NULL, "\"Where did he go?\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
+	PlaySE(4, "S06/00/villA15003", 128, 64);
 	OutputLine(NULL, "「さっき松林の方にふらふら行くのを見たよ。",
 		   NULL, "\"I saw him walking toward the pine trees.", Line_WaitForInput);
+	PlaySE(4, "S06/00/villA15004", 128, 64);
 	OutputLine(NULL, "誰か呼んでくる？」",
 		   NULL, " Can someone go get him?\"", Line_Normal);
 	ClearMessage();
@@ -986,8 +1057,10 @@
 	ClearMessage();
 	DrawSceneWithMask( "JY2", "maskleft", 1, 0, 300 );
 
+	PlaySE(4, "S06/06/150602265", 128, 64);
 	OutputLine(NULL, "「…圭ちゃん、どこ行ってたんだよ。",
 		   NULL, "\"...Kei-chan, where did you go?", Line_WaitForInput);
+	PlaySE(4, "S06/06/150602266", 128, 64);
 	OutputLine(NULL, "圭ちゃんまでいなくなったのかと心配したよ？」",
 		   NULL, " I was worried you'd disappeared too!\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -995,6 +1068,7 @@
 	DrawBustshot( 0, "Kei_Nayamu#", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 9, 400, TRUE );
 	DisplayWindow();
 
+	PlaySE(4, "S06/01/150100255", 128, 64);
 	OutputLine(NULL, "「……………すまん…。」",
 		   NULL, "\".........Sorry...\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -1016,10 +1090,13 @@
 	DrawBustshotWithFiltering( 2, "Oisi2", "maskright", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 10, 0, FALSE );
 	DrawSceneWithMask( "JY2", "maskright", 1, 0, 300 );
 
+	PlaySE(4, "S06/11/150700358", 128, 64);
 	OutputLine(NULL, "「…おんやおやおや…！",
 		   NULL, "\"...Oh, my, my, my...!", Line_WaitForInput);
+	PlaySE(4, "S06/11/150700359", 128, 64);
 	OutputLine(NULL, "　おいしい匂いが漂ってくると思ったら。",
 		   NULL, " I knew I smelled something good coming from over here.", Line_WaitForInput);
+	PlaySE(4, "S06/11/150700360", 128, 64);
 	OutputLine(NULL, "これはぜひご相伴に与かりたいですねぇ。」",
 		   NULL, " I'd be much obliged if you'd allow me to have some.\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);

@@ -23,23 +23,29 @@
 	DrawSceneWithMask( "JE1", "maskright", 1, 0, 300 );
 	SetSpeedOfMessage( FALSE, 0 );
 
+	PlaySE(4, "S06/00/yataiA15011", 128, 64);
 	OutputLine(NULL, "「ヘイらっしゃい。",
 		   NULL, "\"Welcome!", Line_WaitForInput);
+	PlaySE(4, "S06/00/yataiA15012", 128, 64);
 	OutputLine(NULL, "はいよ、網とお椀。」",
 		   NULL, " Here's your net and a bowl.\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
+	PlaySE(4, "S06/03/150300311", 128, 64);
 	OutputLine(NULL, "「よし、やるぞ。",
 		   NULL, "\"Great!", Line_WaitForInput);
+	PlaySE(4, "S06/06/150601398_1", 128, 64);
 	OutputLine(NULL, "……うーん、金魚はみんな活きがいいねぇ！！",
 		   NULL, " Wow... these fish are so active!!", Line_WaitForInput);
 
 	PlaySE( 0, "s_boyoon", 128, 64 );
 
+	PlaySE(4, "S06/06/150601398_2", 128, 64);
 	OutputLine(NULL, "　実に美味しそう！",
 		   NULL, " They look delicious!", Line_WaitForInput);
 	PlaySE( 0, "s_boyoon", 128, 64 );
 
+	PlaySE(4, "S06/06/150601398_3", 128, 64);
 	OutputLine(NULL, "　この小さいのなんか、そのままボリボリと生で行けちゃうよね〜！！！」",
 		   NULL, " I could eat this little one raw right here!\"", Line_Normal);
 	ClearMessage();
@@ -50,6 +56,7 @@
 	DrawBustshotWithFiltering( 1, "Sa_OdorokiA1#", "maskright", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 8, 0, FALSE );
 	DrawSceneWithMask( "JE4", "maskright", 1, 0, 300 );
 
+	PlaySE(4, "S06/04/150400020", 128, 64);
 	OutputLine(NULL, "「…み、…魅音さんは…なな、何を言ってるんでございますの…？」",
 		   NULL, "\"What are you saying, Mion-san...?\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -57,14 +64,17 @@
 	DrawBustshotWithFiltering( 2, "Re_BikkuriB1#", "maskright", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 10, 300, TRUE );
 	DisplayWindow();
 
+	PlaySE(4, "S06/02/150200161", 128, 64);
 	OutputLine(NULL, "「……魅ぃちゃん……食べてたの？",
 		   NULL, "\"Mii-chan... you eat goldfish...?", Line_WaitForInput);
+	PlaySE(4, "S06/02/150200162", 128, 64);
 	OutputLine(NULL, "　去年、レナからもらったのも…食べちゃったの？」",
 		   NULL, " Did you eat the one I gave you last year too...?\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 	DrawBustshotWithFiltering( 2, "Me_OdorokiA2#", "maskleft", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 10, 0, FALSE );
 	DrawSceneWithMask( "JE1", "maskleft", 1, 0, 300 );
 
+	PlaySE(4, "S06/03/150300315", 128, 64);
 	OutputLine(NULL, "「ち、ちが……わ、私そんなこと言ってない…！！」",
 		   NULL, "\"No...! I didn't say that...!!\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -76,15 +86,19 @@
 	DrawBustshotWithFiltering( 1, "Kei_majime#", "maskleft", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 8, 300, TRUE );
 	DisplayWindow();
 
+	PlaySE(4, "S06/01/150100082", 128, 64);
 	OutputLine(NULL, "「いや、でも……今、魅音、お前自分で言ったぞ。",
 		   NULL, "\"But you just said it...", Line_WaitForInput);
+	PlaySE(4, "S06/01/150100083", 128, 64);
 	OutputLine(NULL, "実に美味しそうだ、って。」",
 		   NULL, " You said they look delicious...\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 	DrawSceneWithMask( "JE4", "maskright", 1, 0, 300 );
 
+	PlaySE(4, "S06/06/150601398", 128, 64);
 	OutputLine(NULL, "「えぇ、確かに言いました。",
 		   NULL, "\"I heard it too.", Line_WaitForInput);
+	PlaySE(4, "S06/06/150601399", 128, 64);
 	OutputLine(NULL, "お姉って雑食ですから、口に入れば何でも食べちゃうんです。」",
 		   NULL, " Sis eats everything, as long as it fits inside her mouth.\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -92,6 +106,7 @@
 	DrawBustshotWithFiltering( 1, "Ri_WaraiA1%", "maskleft", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 8, 300, TRUE );
 	DisplayWindow();
 
+	PlaySE(4, "S06/05/150500024", 128, 64);
 	OutputLine(NULL, "「……おいしいなら、今度ボクも試してみるのです。」",
 		   NULL, "\"......If it's really good, I'll try it once.\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -99,22 +114,28 @@
 	DrawBustshot( 0, "Re_BikkuriA1#", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 9, 400, TRUE );
 	DisplayWindow();
 
+	PlaySE(4, "S06/02/150200163", 128, 64);
 	OutputLine(NULL, "「だだだだだだ、だめだよ梨花ちゃん、お腹壊しちゃうよ…！！！」",
 		   NULL, "\"No, you can't, Rika-chan! You're going to get sick!!\"", Line_Normal);
 	ClearMessage();
 	DrawBustshotWithFiltering( 2, "Kei_Def1#", "maskright", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 10, 0, FALSE );
 	DrawSceneWithMask( "JE1", "maskright", 1, 0, 300 );
 
+	PlaySE(4, "S06/01/150100084", 128, 64);
 	OutputLine(NULL, "「……ちょっと待て。",
 		   NULL, "\"Wait a minute...", Line_WaitForInput);
+	PlaySE(4, "S06/01/150100085", 128, 64);
 	OutputLine(NULL, "おいコラ。",
 		   NULL, " Hey, you...", Line_WaitForInput);
+	PlaySE(4, "S06/01/150100086", 128, 64);
 	OutputLine(NULL, "お前、いつの間にいるんだよ、…詩音ッ！！！！」",
 		   NULL, " How long have you been here... Shion?\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
+	PlaySE(4, "S06/06/150601400", 128, 64);
 	OutputLine(NULL, "「ハ〜イ、圭ちゃんにお姉にみんな！",
 		   NULL, "\"Hi, Kei-chan, Sis, and everyone else!", Line_WaitForInput);
+	PlaySE(4, "S06/06/150601401", 128, 64);
 	OutputLine(NULL, "　こんばんは。」",
 		   NULL, " Good evening!\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -122,12 +143,15 @@
 	DrawBustshotWithFiltering( 1, "Me_OdorokiA1#", "maskleft", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 8, 300, TRUE );
 	DisplayWindow();
 
+	PlaySE(4, "S06/03/150300316", 128, 64);
 	OutputLine(NULL, "「あ、……あ゛ぁああぁああぁーー！！！",
 		   NULL, "\"Aaaaaaah!!", Line_WaitForInput);
+	PlaySE(4, "S06/03/150300317", 128, 64);
 	OutputLine(NULL, "　アンタどこから湧いてきたの詩音んんーー！！！！」",
 		   NULL, " When did you get here, Shion?\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
+	PlaySE(4, "S06/06/150601402", 128, 64);
 	OutputLine(NULL, "「焼きそば屋さんの時からずっとです。お姉たちは騒がしいからすぐに見つけられました。」",
 		   NULL, "\"I've been here since you were at the chow mein booth. I found you guys quickly since you were making so much noise.\"", Line_Normal);
 	ClearMessage();
@@ -135,20 +159,27 @@
 	ChangeBustshot( 1, "Me_TohohoA2#", 200, TRUE );
 	DisplayWindow();
 
+	PlaySE(4, "S06/03/150300318", 128, 64);
 	OutputLine(NULL, "「もー！！",
 		   NULL, "\"Hey!!", Line_WaitForInput);
+	PlaySE(4, "S06/03/150300319", 128, 64);
 	OutputLine(NULL, "　アンタは関係ないでしょー？！？！",
 		   NULL, " You're not in our club!", Line_WaitForInput);
+	PlaySE(4, "S06/03/150300320", 128, 64);
 	OutputLine(NULL, "　早くどっかへ消えなさいよー！！」",
 		   NULL, " Get lost!\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
+	PlaySE(4, "S06/06/150601403", 128, 64);
 	OutputLine(NULL, "「も〜、お姉もあまり私を邪険にしないで下さい。",
 		   NULL, "\"Don't be mean, Sis.", Line_WaitForInput);
+	PlaySE(4, "S06/06/150601404", 128, 64);
 	OutputLine(NULL, "…ね？",
 		   NULL, " Right,", Line_WaitForInput);
+	PlaySE(4, "S06/06/150601405", 128, 64);
 	OutputLine(NULL, "　圭ちゃん？",
 		   NULL, " Kei-chan?", Line_WaitForInput);
+	PlaySE(4, "S06/06/150601406", 128, 64);
 	OutputLine(NULL, "　私が一緒でもいいですよね？」",
 		   NULL, " You're fine if I come with you guys, right?\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -256,18 +287,24 @@
 	DrawBustshotWithFiltering( 2, "Tomi_Def#", "maskright", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 10, 0, FALSE );
 	DrawSceneWithMask( "JE4", "maskright", 1, 0, 300 );
 
+	PlaySE(4, "S06/09/150900096", 128, 64);
 	OutputLine(NULL, "「あら。",
 		   NULL, "\"Oh,", Line_WaitForInput);
+	PlaySE(4, "S06/09/150900097", 128, 64);
 	OutputLine(NULL, "楽しんでるみたいね。",
 		   NULL, " looks like you're having fun.", Line_WaitForInput);
+	PlaySE(4, "S06/09/150900098", 128, 64);
 	OutputLine(NULL, "こんばんは、詩音ちゃん。",
 		   NULL, " Good evening, Shion-chan.", Line_WaitForInput);
+	PlaySE(4, "S06/09/150900099", 128, 64);
 	OutputLine(NULL, "月の綺麗な晩ね。」",
 		   NULL, " The moon looks beautiful tonight, doesn't it?\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
+	PlaySE(4, "S06/06/150601407", 128, 64);
 	OutputLine(NULL, "「……あれ、すごいお久しぶりですね鷹野さん！",
 		   NULL, "\"......Oh, it's been forever, Takano-san!", Line_WaitForInput);
+	PlaySE(4, "S06/06/150601408", 128, 64);
 	OutputLine(NULL, "　えっとそれから……、」",
 		   NULL, " And you were......\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -275,22 +312,29 @@
 	ChangeBustshot( 2, "Tomi_Warai#", 200, TRUE );
 	DisplayWindow();
 
+	PlaySE(4, "S06/08/150800001", 128, 64);
 	OutputLine(NULL, "「そうだね、挨拶をするのはこれが初めてだね。",
 		   NULL, "\"Nice to meet you.", Line_WaitForInput);
+	PlaySE(4, "S06/08/150800002", 128, 64);
 	OutputLine(NULL, "僕は富竹。",
 		   NULL, " I'm Tomitake.", Line_WaitForInput);
+	PlaySE(4, "S06/08/150800003", 128, 64);
 	OutputLine(NULL, "魅音ちゃんの双子の妹さんだって話は聞いてるよ。」",
 		   NULL, " I heard you were Mion-chan's twin sister.\"", Line_Normal);
 	ClearMessage();
 
+	PlaySE(4, "S06/06/150601409", 128, 64);
 	OutputLine(NULL, "「よろしくです富竹さん。",
 		   NULL, "\"Nice to meet you too, Tomitake-san.", Line_WaitForInput);
+	PlaySE(4, "S06/06/150601410", 128, 64);
 	OutputLine(NULL, "凄腕のカメラマンとのお噂だとか。",
 		   NULL, " I heard you were a great cameraman.", Line_WaitForInput);
+	PlaySE(4, "S06/06/150601411", 128, 64);
 	OutputLine(NULL, "ぜひ今度、私も写してくださいね。」",
 		   NULL, " Please take a picture of me someday.\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
+	PlaySE(4, "S06/08/150800004", 128, 64);
 	OutputLine(NULL, "「あはははははは…、デビューを夢見て投稿を繰り返す素人だけどね。」",
 		   NULL, "\"Ahahahahaha... I'm just an amateur dreaming of going professional.\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -298,12 +342,16 @@
 	ChangeBustshot( 1, "Ta_Warai#", 200, TRUE );
 	DisplayWindow();
 
+	PlaySE(4, "S06/09/150900100", 128, 64);
 	OutputLine(NULL, "「そんなことないわよ。",
 		   NULL, "\"Well, you're actually great,", Line_WaitForInput);
+	PlaySE(4, "S06/09/150900101", 128, 64);
 	OutputLine(NULL, "ジロウさんは上手よ？",
 		   NULL, " Jirou-san.", Line_WaitForInput);
+	PlaySE(4, "S06/09/150900102", 128, 64);
 	OutputLine(NULL, "　いろいろとね。",
 		   NULL, " You're good at many things...", Line_WaitForInput);
+	PlaySE(4, "S06/09/150900103", 128, 64);
 	OutputLine(NULL, "くすくすくす…。」",
 		   NULL, " Hee hee hee...\"", Line_Normal);
 	ClearMessage();
@@ -311,8 +359,10 @@
 	ChangeBustshot( 2, "Tomi_Def#", 200, TRUE );
 	DisplayWindow();
 
+	PlaySE(4, "S06/08/150800005", 128, 64);
 	OutputLine(NULL, "「いやいや…、まだまだ勉強が足りないよ。",
 		   NULL, "\"No, I need to study more.", Line_WaitForInput);
+	PlaySE(4, "S06/08/150800006", 128, 64);
 	OutputLine(NULL, "才能に恵まれない分を、努力で補わないとね。」",
 		   NULL, " I have no talent, so I have to put out a lot of effort to compensate.\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -323,24 +373,32 @@
 		   NULL, "They must've been in a relationship.", Line_Normal);
 	ClearMessage();
 
+	PlaySE(4, "S06/06/150601412", 128, 64);
 	OutputLine(NULL, "「鷹野さんと富竹さん、仲がよろしいようで。",
 		   NULL, "\"You two look so happy together.", Line_WaitForInput);
+	PlaySE(4, "S06/06/150601413", 128, 64);
 	OutputLine(NULL, "私ゃお邪魔ですかね？」",
 		   NULL, " Am I interrupting you?\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
+	PlaySE(4, "S06/09/150900104", 128, 64);
 	OutputLine(NULL, "「あらあら。",
 		   NULL, "\"Oh, no.", Line_WaitForInput);
+	PlaySE(4, "S06/09/150900105", 128, 64);
 	OutputLine(NULL, "ご賢察痛み入るけどお気遣いは結構よ。",
 		   NULL, " I appreciate your consideration, but you're not interrupting us at all.", Line_WaitForInput);
+	PlaySE(4, "S06/09/150900106", 128, 64);
 	OutputLine(NULL, "…それに、鷹野なんて何だか他人行儀みたいな呼び方ね。",
 		   NULL, " And... you can call me Miyo like before,", Line_WaitForInput);
+	PlaySE(4, "S06/09/150900107", 128, 64);
 	OutputLine(NULL, "昔みたいに三四って呼んでくれていいのに。」",
 		   NULL, " not Takano-san.\"", Line_Normal);
 	ClearMessage();
 
+	PlaySE(4, "S06/06/150601414", 128, 64);
 	OutputLine(NULL, "「あはははは…、やっぱり目上の人にファーストネーム呼びつけはちょっと気になるものでして。",
 		   NULL, "\"Aha ha ha ha... It's a bit hard for me to call someone older than me by her first name...", Line_WaitForInput);
+	PlaySE(4, "S06/06/150601415", 128, 64);
 	OutputLine(NULL, "まぁその、気にしないで下さい。」",
 		   NULL, " Well, never mind.\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -352,22 +410,27 @@
 	ChangeBustshot( 1, "Ta_Def#", 200, TRUE );
 	DisplayWindow();
 
+	PlaySE(4, "S06/09/150900108", 128, 64);
 	OutputLine(NULL, "「あれから図書館には来ないのね。",
 		   NULL, "\"I haven't seen you in the library since.", Line_WaitForInput);
+	PlaySE(4, "S06/09/150900109", 128, 64);
 	OutputLine(NULL, "研究の同志として、もっともっといろいろお話ししたかったのに。」",
 		   NULL, " I wanted to talk to you more, as a fellow researcher.\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
+	PlaySE(4, "S06/06/150601416", 128, 64);
 	OutputLine(NULL, "「あははは…、まぁ気が向いたらその内ってことで。」",
 		   NULL, "\"Ahahaha... well, when I feel like it.\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
+	PlaySE(4, "S06/08/150800007", 128, 64);
 	OutputLine(NULL, "「研究の同志って、……まさか詩音ちゃんも興味があるのかい？",
 		   NULL, "\"A fellow researcher...? Are you interested in it, too, Shion-chan?", Line_WaitForInput);
 	DisableWindow();
 	ChangeBustshot( 2, "Tomi_Komaru#", 200, TRUE );
 	DisplayWindow();
 
+	PlaySE(4, "S06/08/150800008", 128, 64);
 	OutputLine(NULL, "　その、……この村の昔話とかに。」",
 		   NULL, " I mean... in the legend of this village?\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -430,10 +493,13 @@
 	DrawBustshotWithFiltering( 2, "Ta_Def#", "maskleft", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 10, 0, FALSE );
 	DrawSceneWithMask( "JE4", "maskleft", 1, 0, 300 );
 
+	PlaySE(4, "S06/06/150601417", 128, 64);
 	OutputLine(NULL, "「いよいよ始まりますね。",
 		   NULL, "\"It's starting.", Line_WaitForInput);
+	PlaySE(4, "S06/06/150601418", 128, 64);
 	OutputLine(NULL, "そろそろ私も行くかな。",
 		   NULL, " I should head over.", Line_WaitForInput);
+	PlaySE(4, "S06/06/150601419", 128, 64);
 	OutputLine(NULL, "鷹野さんたちも見に行くんですよね、梨花ちゃまの儀式。」",
 		   NULL, " Aren't you guys coming to see Rika-chama's performance?\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -441,8 +507,10 @@
 	ChangeBustshot( 1, "Tomi_komaru#", 200, TRUE );
 	DisplayWindow();
 
+	PlaySE(4, "S06/08/150800009", 128, 64);
 	OutputLine(NULL, "「ん？",
 		   NULL, "\"Hmm?", Line_WaitForInput);
+	PlaySE(4, "S06/08/150800010", 128, 64);
 	OutputLine(NULL, "　………んん、……あはははは。」",
 		   NULL, " ......Hmm.... Ahahahaha.\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -462,14 +530,17 @@
 	DrawBustshot( 0, "Ta_Akuwarai#", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 9, 400, TRUE );
 	DisplayWindow();
 
+	PlaySE(4, "S06/09/150900110", 128, 64);
 	OutputLine(NULL, "「実はね。",
 		   NULL, "\"To tell you the truth...", Line_WaitForInput);
 	PlayBGM( 0, "yoru", 120, 0 );
 
+	PlaySE(4, "S06/09/150900111", 128, 64);
 	OutputLine(NULL, "……………これから祭具殿の中に入ってみようと思うの。」",
 		   NULL, " ...We're thinking of sneaking into the ritual storehouse.\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
+	PlaySE(4, "S06/06/150601420", 128, 64);
 	OutputLine(NULL, "「……………え、」",
 		   NULL, "\".........Eh?\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -539,6 +610,7 @@
 	DrawBustshot( 0, "Ta_Def#", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 9, 0, FALSE );
 	DrawScene( "JE4", 400 );
 
+	PlaySE(4, "S06/06/150601421", 128, 64);
 	OutputLine(NULL, "「…でも、…確かものすごい厳重な鍵が掛かってたと思いましたよ…？」",
 		   NULL, "\"...I'm pretty sure it's tightly locked...\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -546,18 +618,24 @@
 	ChangeBustshot( 0, "Ta_Warai#", 200, TRUE );
 	DisplayWindow();
 
+	PlaySE(4, "S06/09/150900112", 128, 64);
 	OutputLine(NULL, "「去年まではね。",
 		   NULL, "\"It was, until last year...", Line_WaitForInput);
+	PlaySE(4, "S06/09/150900113", 128, 64);
 	OutputLine(NULL, "……前のカンヌキじゃ重すぎて大変だと梨花ちゃんが言ったらしいの。",
 		   NULL, " Rika-chan had the heavy bolt changed to a cheap padlock", Line_WaitForInput);
+	PlaySE(4, "S06/09/150900114", 128, 64);
 	OutputLine(NULL, "それで今年から、ものすごく安っぽい南京錠に替わったの。",
 		   NULL, " because the bolt was too heavy for her to lift.", Line_WaitForInput);
+	PlaySE(4, "S06/09/150900115", 128, 64);
 	OutputLine(NULL, "知ってた？」",
 		   NULL, " Did you know that?\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
+	PlaySE(4, "S06/06/150601422", 128, 64);
 	OutputLine(NULL, "「い、いえ、知りません。",
 		   NULL, "\"N-No...", Line_WaitForInput);
+	PlaySE(4, "S06/06/150601423", 128, 64);
 	OutputLine(NULL, "……でも、安っぽいと言ったって、錠前が掛かってますよ…？」",
 		   NULL, " but even if it's cheap, it's still locked, isn't it...?\"", Line_Normal);
 	ClearMessage();
@@ -565,20 +643,26 @@
 	ChangeBustshot( 0, "Ta_Akuwarai#", 200, TRUE );
 	DisplayWindow();
 
+	PlaySE(4, "S06/09/150900116", 128, 64);
 	OutputLine(NULL, "「ジロウさんね、とても器用なの。」",
 		   NULL, "\"Jirou-san is very skilled.\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
+	PlaySE(4, "S06/06/150601424", 128, 64);
 	OutputLine(NULL, "「……え、……ピッキング、…ですか。」",
 		   NULL, "\"......Oh, are you... good at lock-picking...?\"", Line_Normal);
 	ClearMessage();
 
+	PlaySE(4, "S06/09/150900117", 128, 64);
 	OutputLine(NULL, "「綿流しの儀式が始まれば、全員が儀式に集まるでしょ？",
 		   NULL, "\"Once the Watanagashi ritual starts, everybody will gather around the stage, right?", Line_WaitForInput);
+	PlaySE(4, "S06/09/150900118", 128, 64);
 	OutputLine(NULL, "　祭具殿の周りには人影はまったくなくなる。",
 		   NULL, " Then the area around this storehouse will be completely devoid of people.", Line_WaitForInput);
+	PlaySE(4, "S06/09/150900119", 128, 64);
 	OutputLine(NULL, "……今夜が一番の死角なの。",
 		   NULL, " Tonight, this place will be a blind spot.", Line_WaitForInput);
+	PlaySE(4, "S06/09/150900120", 128, 64);
 	OutputLine(NULL, "灯台下暗しとでも言うのかしらね。」",
 		   NULL, " Can't see the forest for the trees, I suppose.\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -592,12 +676,16 @@
 	ChangeBustshot( 0, "Ta_Warai#", 200, TRUE );
 	DisplayWindow();
 
+	PlaySE(4, "S06/09/150900121", 128, 64);
 	OutputLine(NULL, "「よかったら、後でこっそりいらっしゃいな。",
 		   NULL, "\"Why don't you join us in a bit?", Line_WaitForInput);
+	PlaySE(4, "S06/09/150900122", 128, 64);
 	OutputLine(NULL, "二度とないチャンスよ？",
 		   NULL, " It's now or never.", Line_WaitForInput);
+	PlaySE(4, "S06/09/150900123", 128, 64);
 	OutputLine(NULL, "　くすくすくすくす。",
 		   NULL, " Hee hee hee hee.", Line_WaitForInput);
+	PlaySE(4, "S06/09/150900124", 128, 64);
 	OutputLine(NULL, "じゃ、よかったら後でね。」",
 		   NULL, " So, maybe I'll see you then.\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -605,14 +693,18 @@
 	DrawBustshotWithFiltering( 2, "Tomi_Def#", "maskright", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 10, 300, TRUE );
 	DisplayWindow();
 
+	PlaySE(4, "S06/08/150800011", 128, 64);
 	OutputLine(NULL, "「鷹野さん、何の内緒話だい？」",
 		   NULL, "\"Takano-san, what are you telling her?\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
+	PlaySE(4, "S06/09/150900125", 128, 64);
 	OutputLine(NULL, "「女同士の内緒話よ。",
 		   NULL, "\"Just girl talk.", Line_WaitForInput);
+	PlaySE(4, "S06/09/150900126", 128, 64);
 	OutputLine(NULL, "行きましょ、暗くてひと気のないところへ逢引に。",
 		   NULL, " Let's go to some dark place for a quick date.", Line_WaitForInput);
+	PlaySE(4, "S06/09/150900127", 128, 64);
 	OutputLine(NULL, "くすくす…。」",
 		   NULL, " Hee hee hee...\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -620,8 +712,10 @@
 	ChangeBustshot( 2, "Tomi_Komaru#", 200, TRUE );
 	DisplayWindow();
 
+	PlaySE(4, "S06/08/150800012", 128, 64);
 	OutputLine(NULL, "「ん？",
 		   NULL, "\"Huh?", Line_WaitForInput);
+	PlaySE(4, "S06/08/150800013", 128, 64);
 	OutputLine(NULL, "　あ、あははははははは………。」",
 		   NULL, " Ah, ahahahahahaha...\"", Line_Normal);
 	ClearMessage();
@@ -727,13 +821,16 @@
 
 	OutputLine(NULL, "　………別に祭具殿の中に何があったって、……悟史くんが帰ってくるわけじゃない。",
 		   NULL, "...Whatever was in there... it didn't mean that Satoshi-kun would come back.", Line_WaitForInput);
+	PlaySE(4, "S06/03/150300336", 128, 64);
 	OutputLine(NULL, "……………………。",
 		   NULL, ".........", Line_Normal);
 	ClearMessage();
 	DrawSceneWithMask( "JE1", "maskright", 1, 0, 300 );
 
+	PlaySE(4, "S06/06/150601425", 128, 64);
 	OutputLine(NULL, "「………悟史くん。",
 		   NULL, "\"...What should I do,", Line_WaitForInput);
+	PlaySE(4, "S06/06/150601426", 128, 64);
 	OutputLine(NULL, "…………どうしよう……？」",
 		   NULL, " Satoshi-kun...?\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -812,6 +909,7 @@
 	ClearMessage();
 	DrawSceneWithMask( "JYT2", "maskup", 1, 0, 300 );
 
+	PlaySE(4, "S06/06/150601427", 128, 64);
 	OutputLine(NULL, "「……わ、…………な、何考えてんだ私……。」",
 		   NULL, "\"......Whoa...... What am I thinking...?\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -823,14 +921,18 @@
 	DrawBustshotWithFiltering( 2, "Kei_Def1#", "maskright", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 10, 300, TRUE );
 	DisplayWindow();
 
+	PlaySE(4, "S06/01/150100087", 128, 64);
 	OutputLine(NULL, "「どうしたんだよ詩音。",
 		   NULL, "\"What's going on, Shion?", Line_WaitForInput);
+	PlaySE(4, "S06/01/150100088", 128, 64);
 	OutputLine(NULL, "それより、奉納演舞がよく見えるとこって、まだ遠いのか？」",
 		   NULL, " Where's the best place to see Rika-chan's dance from? Is it far?\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
+	PlaySE(4, "S06/06/150601427_1", 128, 64);
 	OutputLine(NULL, "「え？",
 		   NULL, "\"Huh?", Line_WaitForInput);
+	PlaySE(4, "S06/06/150601427_2", 128, 64);
 	OutputLine(NULL, "　奉納演舞がよく見えるなんて誰が言いました？」",
 		   NULL, " I never said I was going to show you that.\"", Line_Normal);
 	ClearMessage();
@@ -881,8 +983,10 @@
 	DrawBustshotWithFiltering( 2, "Tomi_Def#", "maskright", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 10, 300, TRUE );
 	DisplayWindow();
 
+	PlaySE(4, "S06/08/150800014", 128, 64);
 	OutputLine(NULL, "「真っ暗だねぇ。",
 		   NULL, "\"It's so dark in here.", Line_WaitForInput);
+	PlaySE(4, "S06/08/150800015", 128, 64);
 	OutputLine(NULL, "みんな転ばないように気をつけるんだよ。」",
 		   NULL, " Take care not to trip over anything.\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -890,10 +994,13 @@
 	DrawBustshotWithFiltering( 1, "Ta_Def#", "maskleft", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 8, 300, TRUE );
 	DisplayWindow();
 
+	PlaySE(4, "S06/09/150900128", 128, 64);
 	OutputLine(NULL, "「ご心配ありがとう。",
 		   NULL, "\"I appreciate the concern.", Line_WaitForInput);
+	PlaySE(4, "S06/09/150900129", 128, 64);
 	OutputLine(NULL, "…じゃあ門番をよろしくね。",
 		   NULL, " ...Okay, doorman, keep a good watch.", Line_WaitForInput);
+	PlaySE(4, "S06/09/150900130", 128, 64);
 	OutputLine(NULL, "ここ、閉めるわよ。」",
 		   NULL, " We're shutting the door now.\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -905,8 +1012,10 @@
 	ChangeBustshot( 2, "Tomi_Komaru#", 200, TRUE );
 	DisplayWindow();
 
+	PlaySE(4, "S06/08/150800016", 128, 64);
 	OutputLine(NULL, "「やれやれ…。",
 		   NULL, "\"Man...", Line_WaitForInput);
+	PlaySE(4, "S06/08/150800017", 128, 64);
 	OutputLine(NULL, "…じゃあみんな、ゆっくり楽しんでおいで。」",
 		   NULL, " ...All right, everyone, have fun.\"", Line_Normal);
 	ClearMessage();
@@ -924,10 +1033,13 @@
 		   NULL, "...All we could rely on was Takano-san's lantern.", Line_Normal);
 	ClearMessage();
 
+	PlaySE(4, "S06/09/150900131", 128, 64);
 	OutputLine(NULL, "「大丈夫よ。",
 		   NULL, "\"It'll be fine.", Line_WaitForInput);
+	PlaySE(4, "S06/09/150900132", 128, 64);
 	OutputLine(NULL, "予備電池も入ってるアウトドア仕様なんだから。",
 		   NULL, " It's an outdoor lantern with backup batteries inside.", Line_WaitForInput);
+	PlaySE(4, "S06/09/150900133", 128, 64);
 	OutputLine(NULL, "消えたりなんかしないわよ。」",
 		   NULL, " It won't go out or anything.\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -945,8 +1057,10 @@
 	ClearMessage();
 	DrawSceneWithMask( "black", "maskright", 1, 0, 300 );
 
+	PlaySE(4, "S06/09/150900134", 128, 64);
 	OutputLine(NULL, "「さ、入りましょう。",
 		   NULL, "\"Let's go in.", Line_WaitForInput);
+	PlaySE(4, "S06/09/150900135", 128, 64);
 	OutputLine(NULL, "…よいしょ、っと。」",
 		   NULL, " ...Here we go... There.\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -976,6 +1090,7 @@
 	DrawBustshot( 19, "no_data", 0, 100, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, TRUE );
 	PlayBGM( 1, "suzu", 120, 0 );
 
+	PlaySE(4, "S06/06/150601428", 128, 64);
 	OutputLine(NULL, "「…ぅわ…！！」",
 		   NULL, "\"Wow...!\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -993,6 +1108,7 @@
 	DrawBustshotWithFiltering( 2, "Ta_Def#", "maskright", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 10, 300, TRUE );
 	DisplayWindow();
 
+	PlaySE(4, "S06/09/150900136", 128, 64);
 	OutputLine(NULL, "「あれが雛見沢の守り神、…オヤシロさまよ。」",
 		   NULL, "\"That's the guardian god of Hinamizawa... Oyashiro-sama.\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -1145,8 +1261,10 @@
 		   NULL, "...Who demoned you away...?", Line_Normal);
 	ClearMessage();
 
+	PlaySE(4, "S06/06/150601429", 128, 64);
 	OutputLine(NULL, "「……………ね、…悟史くん。",
 		   NULL, "\"...Are you listening...?", Line_WaitForInput);
+	PlaySE(4, "S06/06/150601430", 128, 64);
 	OutputLine(NULL, "…………聞いてる…？」",
 		   NULL, " Satoshi-kun...?\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -1393,8 +1511,10 @@
 		   NULL, "Though I heard it right nearby...... it sounded as though a child was hopping on a wooden floor somewhere distant.", Line_Normal);
 	ClearMessage();
 
+	PlaySE(4, "S06/06/150601431", 128, 64);
 	OutputLine(NULL, "「…………どうしたの……悟史くん………。",
 		   NULL, "\"......What's wrong, Satoshi-kun......?", Line_WaitForInput);
+	PlaySE(4, "S06/06/150601432", 128, 64);
 	OutputLine(NULL, "…何か、……怒ってるの……？」",
 		   NULL, " Are you angry about something......?\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -1571,8 +1691,10 @@
 	DrawBustshotWithFiltering( 0, "Kei_Warai#", "maskright", 1, 0, 0, FALSE, 0, 0, 0, 0, 0, 9, 300, TRUE );
 	DisplayWindow();
 
+	PlaySE(4, "S06/01/150100091", 128, 64);
 	OutputLine(NULL, "「どうしたよ、詩音。",
 		   NULL, "\"What's up, Shion...?", Line_WaitForInput);
+	PlaySE(4, "S06/01/150100092", 128, 64);
 	OutputLine(NULL, "…ひょっとして怖くなった？」",
 		   NULL, " Did you get scared?\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -1587,12 +1709,16 @@
 		   NULL, "Even though he'd looked horrified just a little while ago, he now looked satisfied to see me scared too.", Line_Normal);
 	ClearMessage();
 
+	PlaySE(4, "S06/06/150601433", 128, 64);
 	OutputLine(NULL, "「あはははは、お化け屋敷で女の子がしがみ付いてくるのはデフォじゃないですかー。",
 		   NULL, "\"Ahahahaha. I know girls tend to get freaked out by haunted houses.", Line_WaitForInput);
+	PlaySE(4, "S06/06/150601434", 128, 64);
 	OutputLine(NULL, "まんざらでもないくせに。",
 		   NULL, " Well, I don't mind it.", Line_WaitForInput);
+	PlaySE(4, "S06/06/150601435", 128, 64);
 	OutputLine(NULL, "ほらほら、行きましょう。",
 		   NULL, " Anyway, let's go.", Line_WaitForInput);
+	PlaySE(4, "S06/06/150601436", 128, 64);
 	OutputLine(NULL, "鷹野さんに置いてかれます。」",
 		   NULL, " Before Takano-san leaves us behind.\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -1754,14 +1880,18 @@
 	DrawBustshotWithFiltering( 1, "Kei_Def1#", "maskup", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 8, 0, FALSE );
 	DrawSceneWithMask( "JSA3", "maskup", 1, 0, 300 );
 
+	PlaySE(4, "S06/01/150100093", 128, 64);
 	OutputLine(NULL, "「………詩音、…大丈夫か？」",
 		   NULL, "\"...Shion, are you all right?\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
+	PlaySE(4, "S06/06/150601437", 128, 64);
 	OutputLine(NULL, "「はい？",
 		   NULL, "\"Huh?", Line_WaitForInput);
+	PlaySE(4, "S06/06/150601438", 128, 64);
 	OutputLine(NULL, "　全然平気ですよ？",
 		   NULL, " I'm fine.", Line_WaitForInput);
+	PlaySE(4, "S06/06/150601439", 128, 64);
 	OutputLine(NULL, "　それより圭ちゃんこそ、顔面蒼白でかなりヤバげかと。」",
 		   NULL, " You look pale, though.\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -1769,10 +1899,12 @@
 	ChangeBustshot( 1, "Kei_Def2#", 200, TRUE );
 	DisplayWindow();
 
+	PlaySE(4, "S06/01/150100094", 128, 64);
 	OutputLine(NULL, "「んなら、あんまり俺の服を引っ張り過ぎないでくれると嬉しいんだけどな…。」",
 		   NULL, "\"Then I'd appreciate it if you didn't stretch my clothes too much...\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
+	PlaySE(4, "S06/06/150601439_1", 128, 64);
 	OutputLine(NULL, "「あ、こりゃ失礼です……。」",
 		   NULL, "\"Oh, sorry......\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -1780,10 +1912,13 @@
 	DrawBustshotWithFiltering( 2, "Ta_Def#", "maskright", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 10, 300, TRUE );
 	DisplayWindow();
 
+	PlaySE(4, "S06/09/150900137", 128, 64);
 	OutputLine(NULL, "「あらあら。",
 		   NULL, "\"Oh.", Line_WaitForInput);
+	PlaySE(4, "S06/09/150900138", 128, 64);
 	OutputLine(NULL, "私はお邪魔かしら？",
 		   NULL, " Am I interrupting you two?", Line_WaitForInput);
+	PlaySE(4, "S06/09/150900139", 128, 64);
 	OutputLine(NULL, "　くすくす…。」",
 		   NULL, " Hee hee hee...\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -1810,8 +1945,10 @@
 		   NULL, "...I should just ignore the noise...", Line_Normal);
 	ClearMessage();
 
+	PlaySE(4, "S06/06/150601440", 128, 64);
 	OutputLine(NULL, "「で、鷹野さんはその風習が、実は現代にも残っているんじゃないかと思って、研究をしてるんです。",
 		   NULL, "\"Takano-san, you're researching whether those customs survived into the present.", Line_WaitForInput);
+	PlaySE(4, "S06/06/150601441", 128, 64);
 	OutputLine(NULL, "…そうでしたよね？」",
 		   NULL, " ...You are, right?\" ", Line_ContinueAfterTyping);
 
@@ -1836,10 +1973,13 @@
 	ChangeBustshot( 2, "Ta_Akuwarai#", 200, TRUE );
 	DisplayWindow();
 
+	PlaySE(4, "S06/09/150900140", 128, 64);
 	OutputLine(NULL, "「……これ、本当に内緒なんだからね？",
 		   NULL, "\"...What I'm about to tell you is a secret, all right?", Line_WaitForInput);
+	PlaySE(4, "S06/09/150900141", 128, 64);
 	OutputLine(NULL, "　詩音ちゃんは理解のある人だから話したけど、他の村人には聞かれたくないの。",
 		   NULL, " I told you, Shion-chan, because you're an understanding person, but the other villagers don't want to hear it.", Line_WaitForInput);
+	PlaySE(4, "S06/09/150900142", 128, 64);
 	OutputLine(NULL, "…下手をしたら罰当たり者ってことで、袋叩きにされかねないんだから。」",
 		   NULL, " ...If things go awry, I could be ganged up on and punished.\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -1861,20 +2001,26 @@
 
 	ClearMessage();
 
+	PlaySE(4, "S06/09/150900143", 128, 64);
 	OutputLine(NULL, "「前原くんも内緒にしてね？",
 		   NULL, "\"Maebara-kun, you keep it a secret too, okay?", Line_WaitForInput);
+	PlaySE(4, "S06/09/150900144", 128, 64);
 	OutputLine(NULL, "　知られたら私、オヤシロさまの祟りにあうか、生贄にされちゃうかするかもしれない。",
 		   NULL, " If this gets out, I could suffer Oyashiro-sama's curse, or be made into a sacrifice.", Line_WaitForInput);
 	DisableWindow();
 	ChangeBustshot( 2, "Ta_Def#", 200, TRUE );
 	DisplayWindow();
 
+	PlaySE(4, "S06/09/150900145", 128, 64);
 	OutputLine(NULL, "祟りなら、今年はどんな死に方をさせられちゃうのかしら。",
 		   NULL, " If it's the curse, then I wonder what kind of death it'll be this year?", Line_WaitForInput);
+	PlaySE(4, "S06/09/150900146", 128, 64);
 	OutputLine(NULL, "生贄なら…鬼ヶ淵の沼に生きたまま沈められちゃうのかしら？",
 		   NULL, " If it's the sacrifice... then will I be thrown into the Onigafuchi Swamp while still alive?", Line_WaitForInput);
+	PlaySE(4, "S06/09/150900147", 128, 64);
 	OutputLine(NULL, "……そう言えば今夜よね。",
 		   NULL, " ...And it is tonight, you know.", Line_WaitForInput);
+	PlaySE(4, "S06/09/150900148", 128, 64);
 	OutputLine(NULL, "オヤシロさまの祟りがある夜は。」",
 		   NULL, " The night of Oyashiro-sama's curse.\"", Line_Normal);
 	ClearMessage();
@@ -1929,10 +2075,13 @@
 	ClearMessage();
 	PlaySE( 0, "s_page", 128, 64 );
 
+	PlaySE(4, "S06/09/150900149", 128, 64);
 	OutputLine(NULL, "「これは実際にあったお話よ。",
 		   NULL, "\"This is a story that actually happened.", Line_WaitForInput);
+	PlaySE(4, "S06/09/150900150", 128, 64);
 	OutputLine(NULL, "明治の終わり頃にね。",
 		   NULL, " It was around the end of the Meiji Era.", Line_WaitForInput);
+	PlaySE(4, "S06/09/150900151", 128, 64);
 	OutputLine(NULL, "…鬼ヶ淵村で身元不明の惨殺死体が発見されたんですって。」",
 		   NULL, " ...They discovered an unknown, mangled corpse, the victim of a murder, in Onigafuchi Village.\"", Line_ContinueAfterTyping);
 	SetSpeedOfMessage( TRUE, 128 );
@@ -1952,6 +2101,7 @@
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
 
+	PlaySE(4, "S06/09/150900152", 128, 64);
 	OutputLine(NULL, "「…カクモ無惨且ツ残虐非道ヲ………。」",
 		   NULL, "\"...Never before has there been a corpse treated with such cruelty and inhumanity...\"", Line_ContinueAfterTyping);
 	SetSpeedOfMessage( TRUE, 128 );
@@ -2007,8 +2157,10 @@
 	ChangeBustshot( 2, "Tomi_Warai#", 200, TRUE );
 	DisplayWindow();
 
+	PlaySE(4, "S06/08/150800018", 128, 64);
 	OutputLine(NULL, "「あっはっはっは。",
 		   NULL, "\"Aha ha ha ha.", Line_WaitForInput);
+	PlaySE(4, "S06/08/150800019", 128, 64);
 	OutputLine(NULL, "驚かせちゃったかな？」",
 		   NULL, " Did I startle you?\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -2016,8 +2168,10 @@
 	DrawBustshotWithFiltering( 1, "Ta_Def#", "maskleft", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 8, 300, TRUE );
 	DisplayWindow();
 
+	PlaySE(4, "S06/09/150900153", 128, 64);
 	OutputLine(NULL, "「あら、ジロウさんも見たくて我慢できなくなったかしら？",
 		   NULL, "\"Oh, Jirou-san, could you not resist seeing inside?", Line_WaitForInput);
+	PlaySE(4, "S06/09/150900154", 128, 64);
 	OutputLine(NULL, "　……ここ、素敵な拷問道具の宝庫よ。」",
 		   NULL, " ...This is a splendid treasure trove of torture devices.\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -2025,8 +2179,10 @@
 	ChangeBustshot( 2, "Tomi_Komaru#", 200, TRUE );
 	DisplayWindow();
 
+	PlaySE(4, "S06/08/150800020", 128, 64);
 	OutputLine(NULL, "「僕は遠慮させてもらうよ。",
 		   NULL, "\"I'll pass on that.", Line_WaitForInput);
+	PlaySE(4, "S06/08/150800021", 128, 64);
 	OutputLine(NULL, "…あははは…、",
 		   NULL, " Ahahaha...", Line_ContinueAfterTyping);
 	SetValidityOfInput( FALSE );
@@ -2043,10 +2199,13 @@
 	ChangeBustshot( 2, "Tomi_Def#", 200, TRUE );
 	DisplayWindow();
 
+	PlaySE(4, "S06/08/150800021_1", 128, 64);
 	OutputLine(NULL, "「それより。",
 		   NULL, "\"In any case.", Line_WaitForInput);
+	PlaySE(4, "S06/08/150800021_2", 128, 64);
 	OutputLine(NULL, "演舞とセレモニーが終わって、みんな沢の方に下りて行ったよ。",
 		   NULL, " The dance and ceremony are over, and everyone's going down to the river.", Line_WaitForInput);
+	PlaySE(4, "S06/08/150800021_3", 128, 64);
 	OutputLine(NULL, "あと何分もしない内にお祭りは終わっちゃう。」",
 		   NULL, " The festival as a whole will be over within minutes.\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -2059,8 +2218,10 @@
 		   NULL, "...I'd never expected that Tomitake-san would save me from this nightmare. His face suddenly looked heroic.", Line_Normal);
 	ClearMessage();
 
+	PlaySE(4, "S06/08/150800022", 128, 64);
 	OutputLine(NULL, "「ん？",
 		   NULL, "\"Oh?", Line_WaitForInput);
+	PlaySE(4, "S06/08/150800023", 128, 64);
 	OutputLine(NULL, "　圭一くんも出るかい？」",
 		   NULL, " Keiichi-kun, are you leaving too?\"\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -2069,18 +2230,24 @@
 	DrawBustshotWithFiltering( 1, "Kei_Def1#", "maskleft", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 8, 300, TRUE );
 	DisplayWindow();
 
+	PlaySE(4, "S06/01/150100096", 128, 64);
 	OutputLine(NULL, "「……もう充分に見ましたので。",
 		   NULL, "\"...I've seen enough.", Line_WaitForInput);
+	PlaySE(4, "S06/01/150100097", 128, 64);
 	OutputLine(NULL, "…詩音、もういいだろ？",
 		   NULL, " ...Shion, you're good too, right?", Line_WaitForInput);
+	PlaySE(4, "S06/01/150100098", 128, 64);
 	OutputLine(NULL, "　出ようぜ。",
 		   NULL, " Let's get out of here.", Line_WaitForInput);
+	PlaySE(4, "S06/01/150100099", 128, 64);
 	OutputLine(NULL, "…きれいな空気が吸いたいよ。」",
 		   NULL, " ...I want some fresh air.\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
+	PlaySE(4, "S06/06/150601442", 128, 64);
 	OutputLine(NULL, "「同感です。",
 		   NULL, "\"I agree.", Line_WaitForInput);
+	PlaySE(4, "S06/06/150601443", 128, 64);
 	OutputLine(NULL, "出ましょう。」",
 		   NULL, " Let's leave.\"", Line_Normal);
 	ClearMessage();

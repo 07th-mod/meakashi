@@ -42,10 +42,12 @@
 		   NULL, "I carried Satoko to the bedroom and laid out our futons.", Line_Normal);
 	ClearMessage();
 
+	PlaySE(4, "S20/07/443300006", 128, 64);
 	OutputLine(NULL, "「ほら、沙都子。",
 		   NULL, "\"Here, Satoko.", Line_WaitForInput);
 	OutputLine(NULL, "…布団が敷けたよ？",
 		   NULL, " Your futon is ready,", Line_WaitForInput);
+	PlaySE(4, "S20/07/443300007", 128, 64);
 	OutputLine(NULL, "　布団に入りな。」",
 		   NULL, " so get in, okay?\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);

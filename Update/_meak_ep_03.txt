@@ -19,8 +19,10 @@
 	PlayBGM( 0, "03_cele", 120, 0 );
 	SetSpeedOfMessage( FALSE, 0 );
 
+	PlaySE(4, "S06/01/150100451", 128, 64);
 	OutputLine(NULL, "「よっしゃーお昼だお昼！！",
 		   NULL, "\"All right, it's lunchtime!!", Line_WaitForInput);
+	PlaySE(4, "S06/01/150100452", 128, 64);
 	OutputLine(NULL, "　そらレナ、机をくっ付けろ！」",
 		   NULL, " Hey, Rena, put our desks together!\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -29,6 +31,7 @@
 	DrawBustshotWithFiltering( 1, "Re_WaraiA1", "maskleft", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 8, 300, TRUE );
 	DisplayWindow();
 
+	PlaySE(4, "S06/02/150200235", 128, 64);
 	OutputLine(NULL, "「あははは、今日はレナのお弁当はミートボールなんだよー！」",
 		   NULL, "\"Ahahahaha. My lunch has meat balls today!\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -38,10 +41,13 @@
 	DrawBustshotWithFiltering( 2, "Me_WinkA1", "maskright", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 10, 300, TRUE );
 	DisplayWindow();
 
+	PlaySE(4, "S06/03/150300472", 128, 64);
 	OutputLine(NULL, "「おおーそりゃいいねぇ。",
 		   NULL, "\"Sounds good!", Line_WaitForInput);
+	PlaySE(4, "S06/03/150300473", 128, 64);
 	OutputLine(NULL, "おじさんもぜひいただくよ。",
 		   NULL, " This ol' man will have some, then.", Line_WaitForInput);
+	PlaySE(4, "S06/03/150300474", 128, 64);
 	OutputLine(NULL, "ほら梨花ちゃん、机、机。」",
 		   NULL, " Rika-chan, bring your desk over.", Line_Normal);
 	ClearMessage();
@@ -49,8 +55,10 @@
 	DrawBustshotWithFiltering( 1, "Ri_WaraiA1", "maskleft", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 8, 0, FALSE );
 	DrawSceneWithMask( "GK2", "maskleft", 1, 0, 300 );
 
+	PlaySE(4, "S06/05/150500066", 128, 64);
 	OutputLine(NULL, "「……くっ付けるのですよ。",
 		   NULL, "\"......I'm coming.", Line_WaitForInput);
+	PlaySE(4, "S06/05/150500067", 128, 64);
 	OutputLine(NULL, "ぺたー☆」",
 		   NULL, " Whoosh☆.\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -59,10 +67,13 @@
 	DrawBustshotWithFiltering( 2, "Sa_WaraiB1", "maskright", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 10, 300, TRUE );
 	DisplayWindow();
 
+	PlaySE(4, "S06/04/150400098", 128, 64);
 	OutputLine(NULL, "「ほっほっほ！",
 		   NULL, "\"Ho ho ho!", Line_WaitForInput);
+	PlaySE(4, "S06/04/150400099", 128, 64);
 	OutputLine(NULL, "　残念なことにミートボールは私も大好物でございましてよ！",
 		   NULL, " Unfortunately, meat balls are my favorite too!", Line_WaitForInput);
+	PlaySE(4, "S06/04/150400100", 128, 64);
 	OutputLine(NULL, "　皆さんに一口でも口に入ると思わないことでしてよー！！」",
 		   NULL, " I won't allow you to have any!!\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -70,12 +81,14 @@
 	DrawBustshotWithFiltering( 0, "Si_AkuwaraiA1", "maskright", 1, 0, 0, FALSE, 0, 0, 0, 0, 0, 9, 0, FALSE );
 	DrawSceneWithMask( "GK3", "maskright", 1, 0, 300 );
 
+	PlaySE(4, "S06/06/150602745", 128, 64);
 	OutputLine(NULL, "「ざぁんねん、そうは行かないです沙都子。",
 		   NULL, "\"Unfortunately, I won't let you do that either, Satoko.", Line_WaitForInput);
 	DisableWindow();
 	ChangeBustshot( 0, "Si_WaraiA1", 200, TRUE );
 	DisplayWindow();
 
+	PlaySE(4, "S06/06/150602746", 128, 64);
 	OutputLine(NULL, "明らかに野菜不足の沙都子には特別にカボチャ弁当を用意させてもらいました。」",
 		   NULL, " You have to have some veggies, so I cooked some squash for you.\"", Line_Normal);
 	ClearMessage();
@@ -85,6 +98,7 @@
 	DrawBustshotWithFiltering( 1, "Kei_Warai", "maskleft", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 8, 300, TRUE );
 	DisplayWindow();
 
+	PlaySE(4, "S06/01/150100453", 128, 64);
 	OutputLine(NULL, "「うっわ、そりゃイジメだぞ詩音〜。」",
 		   NULL, "\"Whoa, that's harsh, Shion.\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -93,8 +107,10 @@
 	DrawBustshotWithFiltering( 2, "Sa_HannbesoB1", "maskright", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 10, 300, TRUE );
 	DisplayWindow();
 
+	PlaySE(4, "S06/04/150400101", 128, 64);
 	OutputLine(NULL, "「ふわぁあぁ………カボチャは嫌ですのーー！！",
 		   NULL, "\"Whaaah...... I hate squash!!", Line_WaitForInput);
+	PlaySE(4, "S06/04/150400102", 128, 64);
 	OutputLine(NULL, "　わああぁん！」",
 		   NULL, " Whaah!\"", Line_Normal);
 	ClearMessage();
@@ -102,26 +118,31 @@
 	DrawBustshotWithFiltering( 1, "Si_WaraiA1", "maskleft", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 8, 0, FALSE );
 	DrawSceneWithMask( "GK1", "maskleft", 1, 0, 300 );
 
+	PlaySE(4, "S06/06/150602747", 128, 64);
 	OutputLine(NULL, "「ほら、そのカボチャ嫌いは駄目です！",
 		   NULL, "\"Don't be so picky about your food!", Line_WaitForInput);
 	DisableWindow();
 	ChangeBustshot( 1, "Si_WinkA1", 200, TRUE );
 	DisplayWindow();
 
+	PlaySE(4, "S06/06/150602748", 128, 64);
 	OutputLine(NULL, "　カボチャはですね栄養価にとても優れているんです。",
 		   NULL, " Squash is very nutritious.", Line_WaitForInput);
+	PlaySE(4, "S06/06/150602749", 128, 64);
 	OutputLine(NULL, "育ち盛りの沙都子は特に栄養に気を遣わないといけないんですよ？",
 		   NULL, " You're still growing, so you need to think about things like that.", Line_WaitForInput);
 	DisableWindow();
 	ChangeBustshot( 1, "Si_TokuiA1", 200, TRUE );
 	DisplayWindow();
 
+	PlaySE(4, "S06/06/150602750", 128, 64);
 	OutputLine(NULL, "　私の目の黒い内は偏食は認めないのでその覚悟でお願いします。",
 		   NULL, " As long as I live, I won't let you have an unbalanced diet.", Line_WaitForInput);
 	DisableWindow();
 	ChangeBustshot( 1, "Si_WinkA1", 200, TRUE );
 	DisplayWindow();
 
+	PlaySE(4, "S06/06/150602751", 128, 64);
 	OutputLine(NULL, "ほらほらみんなもどうぞどうぞ、ホコホコのカボチャって甘くて美味しいんですよー？」",
 		   NULL, " Here guys, have some. Steamed squash is delicious.\"", Line_Normal);
 	ClearMessage();
@@ -131,8 +152,10 @@
 	DrawBustshotWithFiltering( 2, "Ri_WaraiA1", "maskright", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 10, 300, TRUE );
 	DisplayWindow();
 
+	PlaySE(4, "S06/05/150500068", 128, 64);
 	OutputLine(NULL, "「……もにゅもにゅ。",
 		   NULL, "\"......Munch, munch.", Line_WaitForInput);
+	PlaySE(4, "S06/05/150500069", 128, 64);
 	OutputLine(NULL, "沙都子、これなら甘くておいしいのですよ？」",
 		   NULL, " Satoko, it's really sweet.\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -141,10 +164,13 @@
 	DrawBustshotWithFiltering( 1, "Kei_Warai", "maskleft", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 8, 300, TRUE );
 	DisplayWindow();
 
+	PlaySE(4, "S06/01/150100454", 128, 64);
 	OutputLine(NULL, "「お、確かにこりゃいけるなぁ。",
 		   NULL, "\"Yeah, it's super good!", Line_WaitForInput);
+	PlaySE(4, "S06/01/150100455", 128, 64);
 	OutputLine(NULL, "カボチャの甘味がいやみなくそれでいて絶妙で！",
 		   NULL, " The balance of flavors is perfect!", Line_WaitForInput);
+	PlaySE(4, "S06/01/150100456", 128, 64);
 	OutputLine(NULL, "　沙都子、お前は食うなもったいない！！」",
 		   NULL, " Satoko, don't eat this. It's too good for you!!\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -153,8 +179,10 @@
 	DrawBustshot( 0, "Sa_OdorokiB1", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 9, 400, TRUE );
 	DisplayWindow();
 
+	PlaySE(4, "S06/04/150400103", 128, 64);
 	OutputLine(NULL, "「な、なんですってええぇえ！！",
 		   NULL, "\"E-Excuse me?!!", Line_WaitForInput);
+	PlaySE(4, "S06/04/150400104", 128, 64);
 	OutputLine(NULL, "　カボチャは嫌いですけど言い方が気に入りませんわぁあ！！」",
 		   NULL, " I don't like your tone!!\"", Line_Normal);
 	ClearMessage();
@@ -162,8 +190,10 @@
 	DrawBustshotWithFiltering( 1, "Me_WinkB2", "maskleft", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 8, 0, FALSE );
 	DrawSceneWithMask( "GK1", "maskleft", 1, 0, 300 );
 
+	PlaySE(4, "S06/03/150300475", 128, 64);
 	OutputLine(NULL, "「そら行った行った！",
 		   NULL, "\"Just try one!", Line_WaitForInput);
+	PlaySE(4, "S06/03/150300476", 128, 64);
 	OutputLine(NULL, "　一口にがばっと行ってみなよ！」",
 		   NULL, " Take a bite!\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -172,8 +202,10 @@
 	DrawBustshotWithFiltering( 2, "Re_WaraiB1", "maskright", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 10, 300, TRUE );
 	DisplayWindow();
 
+	PlaySE(4, "S06/02/150200236", 128, 64);
 	OutputLine(NULL, "「ほらね？",
 		   NULL, "\"See?", Line_WaitForInput);
+	PlaySE(4, "S06/02/150200237", 128, 64);
 	OutputLine(NULL, "　おいしいでしょ？」",
 		   NULL, " Isn't it good?\"", Line_Normal);
 	ClearMessage();
@@ -183,6 +215,7 @@
 	DrawBustshotWithFiltering( 1, "Sa_AkireruB1", "maskleft", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 8, 300, TRUE );
 	DisplayWindow();
 
+	PlaySE(4, "S06/04/150400105", 128, 64);
 	OutputLine(NULL, "「…………んんんん、",
 		   NULL, "\"......Hmm......", Line_ContinueAfterTyping);
 	SetValidityOfInput( FALSE );
@@ -196,14 +229,17 @@
 	DrawBustshotWithFiltering( 2, "Si_DefA1", "maskright", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 10, 300, TRUE );
 	DisplayWindow();
 
+	PlaySE(4, "S06/06/150602752", 128, 64);
 	OutputLine(NULL, "「当り前です。",
 		   NULL, "\"Of course it isn't.", Line_WaitForInput);
+	PlaySE(4, "S06/06/150602753", 128, 64);
 	OutputLine(NULL, "沙都子がカボチャ嫌いを克服できるように日夜研究してますので。",
 		   NULL, " I've been working hard every day to get you to overcome your dislike of squash.", Line_WaitForInput);
 	DisableWindow();
 	ChangeBustshot( 2, "Si_WinkA1", 200, TRUE );
 	DisplayWindow();
 
+	PlaySE(4, "S06/06/150602754", 128, 64);
 	OutputLine(NULL, "さて、この調子で今年中に、ナス、",
 		   NULL, " Okay, now that that's done with, why don't you overcome your fear of eggplants,", Line_ContinueAfterTyping);
 	SetValidityOfInput( FALSE );
@@ -222,8 +258,10 @@
 	ChangeBustshot( 1, "Sa_HannbesoA1", 200, TRUE );
 	DisplayWindow();
 
+	PlaySE(4, "S06/04/150400106", 128, 64);
 	OutputLine(NULL, "「冗談はごめんですわーーー！！！",
 		   NULL, "\"Stop joking!!!", Line_WaitForInput);
+	PlaySE(4, "S06/04/150400107", 128, 64);
 	OutputLine(NULL, "　私が興宮の学校に転校しましてよー！！！」",
 		   NULL, " At this rate, I'll transfer to a school in Okinomiya!!!\"", Line_Normal);
 	ClearMessage();
@@ -232,10 +270,13 @@
 	ChangeBustshot( 2, "Si_WaraiA1", 200, TRUE );
 	DisplayWindow();
 
+	PlaySE(4, "S06/06/150602755", 128, 64);
 	OutputLine(NULL, "「だぁめです。",
 		   NULL, "\"Come on!", Line_WaitForInput);
+	PlaySE(4, "S06/06/150602756", 128, 64);
 	OutputLine(NULL, "悟史くんから頼まれている以上、健康管理は私の担当です。",
 		   NULL, " I'm in charge of your health, since Satoshi-kun asked me to take care of you.", Line_WaitForInput);
+	PlaySE(4, "S06/06/150602757", 128, 64);
 	OutputLine(NULL, "不摂生も許しませんからそのつもりで！」",
 		   NULL, " I won't let you eat junk food, either!\"", Line_Normal);
 	ClearMessage();
@@ -244,8 +285,10 @@
 	ChangeBustshot( 1, "Sa_NakuB1", 200, TRUE );
 	DisplayWindow();
 
+	PlaySE(4, "S06/04/150400108", 128, 64);
 	OutputLine(NULL, "「ふわああん、詩音さん嫌いーー！！",
 		   NULL, "\"Whaaaah, I hate you, Shion-san!!", Line_WaitForInput);
+	PlaySE(4, "S06/04/150400109", 128, 64);
 	OutputLine(NULL, "　カボチャ嫌ーー！！！」",
 		   NULL, " I hate squash!!!\"", Line_Normal);
 	ClearMessage();
