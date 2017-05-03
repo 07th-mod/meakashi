@@ -1,0 +1,594 @@
+﻿void main()
+{
+	FadeOutBGM( 0, 0, FALSE );
+	FadeOutBGM( 1, 0, FALSE );
+	FadeOutBGM( 2, 0, FALSE );
+	FadeOutBGM( 3, 0, FALSE );
+	ClearMessage();
+
+	DrawScene( "black", 400 );
+	FadeOutBGM( 0, 0, FALSE );
+	FadeOutBGM( 1, 0, FALSE );
+	FadeOutBGM( 2, 0, FALSE );
+	FadeOutBGM( 3, 0, FALSE );
+	DrawBustshot( 19, "no_data", 0, 100, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, TRUE );
+	SetValidityOfInput( FALSE );
+	Wait( 2000 );
+	SetValidityOfInput( TRUE );
+	DrawScene( "nort150", 1000 );
+	Wait( 10000 );
+	DrawScene( "black", 3000 );
+	SetValidityOfInput( FALSE );
+	Wait( 2000 );
+	SetValidityOfInput( TRUE );
+	DrawScene( "Sora3", 3000 );
+	SetValidityOfInput( FALSE );
+	Wait( 4000 );
+	SetValidityOfInput( TRUE );
+	DrawSceneWithMask( "white", "maskc", 1, 0, 300 );
+	DrawBustshotWithFiltering( 2, "Sa_AkireruA1#", "maskup", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 10, 0, FALSE );
+	DrawSceneWithMask( "Ji5", "maskup", 1, 0, 300 );
+	PlayBGM( 0, "semi", 120, 0 );
+	SetSpeedOfMessage( FALSE, 0 );
+
+	OutputLine(NULL, "「まったく、圭一さんのどスケベぶりには呆れましてよー！！」",
+		   NULL, "\"Humph! I'm quite amazed by your dirty deeds, Keiichi-san!!\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+	DisableWindow();
+	DrawBustshotWithFiltering( 1, "Ri_WaraiA1#", "maskleft", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 8, 300, TRUE );
+	DisplayWindow();
+
+	OutputLine(NULL, "「……男の子なら仕方がないのですよ。」",
+		   NULL, "\"......He is a boy, after all.\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+	DisableWindow();
+	FadeBustshotWithFiltering( 2, "maskleft" , 1, FALSE, 0, 0, 300, TRUE );
+	DrawBustshotWithFiltering( 2, "Re_HauB1#", "maskright", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 10, 300, TRUE );
+	DisplayWindow();
+
+	OutputLine(NULL, "「魅ぃちゃんも詩ぃちゃんも…圭一くん、困ってるよ………はぅ…。」",
+		   NULL, "\"Mii-chan, Shii-chan... Keiichi-kun looks confused...... hau...\"", Line_Normal);
+	ClearMessage();
+	DrawSceneWithMask( "black", "maskleft", 1, 0, 300 );
+	DrawSceneWithMask( "Ji2", "maskleft", 1, 0, 300 );
+
+	OutputLine(NULL, "「ですってよーーお姉。",
+		   NULL, "\"Did you hear that, Sis?", Line_WaitForInput);
+	OutputLine(NULL, "大岡越前じゃあるまいしー、このまま圭ちゃんが引き千切れるまで引っ張りっこしますー？！」",
+		   NULL, " We're not playing tug of war here. Are you trying to tear Kei-chan apart?!\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+	DisableWindow();
+	DrawBustshotWithFiltering( 0, "Me_OdorokiA1#", "maskright", 1, 0, 0, FALSE, 0, 0, 0, 0, 0, 9, 300, TRUE );
+
+	DisplayWindow();
+
+	OutputLine(NULL, "「引っ張りっこなんかしてないよ、詩音が引っ張らなければ済むことでしょー？！",
+		   NULL, "\"I'm not playing tug of war! You're the one who's stretching him.", Line_WaitForInput);
+	DisableWindow();
+	ChangeBustshot( 0, "Me_TohohoA1#", 200, TRUE );
+
+	DisplayWindow();
+
+	OutputLine(NULL, "　詩音は興宮に帰れーーーー！」",
+		   NULL, " Go back to Okinomiya, Shion!\"", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "「ハイ了解。",
+		   NULL, "\"Okay,", Line_WaitForInput);
+	OutputLine(NULL, "そうしますね。",
+		   NULL, " I will.", Line_WaitForInput);
+	OutputLine(NULL, "ぱっ、と。」",
+		   NULL, " Oops.\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+	PlaySE( 0, "s_furu", 128, 64 );
+	DisableWindow();
+	FadeBustshotWithFiltering( 0, "maskright" , 7, FALSE, 0, 0, 300, TRUE );
+	DisplayWindow();
+	PlaySE( 0, "s_Down", 128, 64 );
+	StartShakingOfWindow( 248, 40, 0, 0, 4*2, FALSE );
+	StartShakingOfAllObjects( 248, 40, 0, 0, 4*2, TRUE );
+
+	OutputLine(NULL, "　私がぱっと手を放したので、お姉と圭一はゴムが弾けるように勢いよくすっ飛んでいく。",
+		   NULL, "I let go of Keiichi suddenly, so he and Sis flew off like a rubber band.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　圭一は地面の上をごろごろと転がり、お姉に至っては向こうの茂みに頭から突っ込んでいる。",
+		   NULL, "Keiichi rolled on the ground while Sis was stuck in a bush head-first...", Line_WaitForInput);
+	OutputLine(NULL, "…やれやれ、熱くなりやすいやつめ。",
+		   NULL, " What lively people.", Line_Normal);
+	ClearMessage();
+	DrawSceneWithMask( "Ji5", "maskright", 1, 0, 300 );
+
+	OutputLine(NULL, "「じゃ圭ちゃん。",
+		   NULL, "\"See you, Kei-chan.", Line_WaitForInput);
+	OutputLine(NULL, "これ以上からかうとお姉に噛みつかれかねないので、今日はこれで帰りますね。」",
+		   NULL, " Sis might assault me if I stick around any longer, so I'll get going.\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+	DisableWindow();
+	DrawBustshotWithFiltering( 2, "Kei_Def2#", "maskright", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 10, 300, TRUE );
+	DisplayWindow();
+
+	OutputLine(NULL, "「あ、詩音。",
+		   NULL, "\"Oh, Shion...", Line_WaitForInput);
+	OutputLine(NULL, "そのさ、…今日はありがとな。」",
+		   NULL, " uh... thanks for today.\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "「あーー、あんなのお安い御用です。",
+		   NULL, "\"Ah, forget it.", Line_WaitForInput);
+	OutputLine(NULL, "あの程度で恩が着せられるならいくらでもって位に。」",
+		   NULL, " I didn't do much.\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+	DisableWindow();
+	ChangeBustshot( 2, "Kei_Warai#", 200, TRUE );
+	DisplayWindow();
+
+	OutputLine(NULL, "「じゃ、またな、詩音。」",
+		   NULL, "\"See you, Shion.\"", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　ぼすっと。",
+		   NULL, "His hand landed", Line_WaitForInput);
+	OutputLine(NULL, "……圭一の手が、私の頭を鷲掴んだ。",
+		   NULL, " on my head......", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　わしわしわしわし。",
+		   NULL, "Rub, rub, rub.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　……すっごく乱暴に頭を撫でる。",
+		   NULL, "...He stroked my head pretty roughly.", Line_WaitForInput);
+	OutputLine(NULL, "でも、ちょっとだけ温かいのが、……懐かしくて、",
+		   NULL, " But the warmth reminded me......", Line_Normal);
+	ClearMessage();
+	DrawScene( "black", 400 );
+	DrawSceneWithMask( "Sora2", "maskup", 1, 0, 300 );
+
+	OutputLine(NULL, "「あ、あははははははは…！！",
+		   NULL, "\"Ah, ahahahahaha...!!", Line_WaitForInput);
+	OutputLine(NULL, "　じゃあすみませんね、今日は失礼します。",
+		   NULL, " Excuse me, I'm going.", Line_WaitForInput);
+	OutputLine(NULL, "またねーお姉！」",
+		   NULL, " See you, Sis!\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "「二度と来るなーーーーーー！！！",
+		   NULL, "\"Don't ever come here again!!!", Line_WaitForInput);
+	OutputLine(NULL, "　レナは哨戒！",
+		   NULL, " Rena, keep your eyes on her!", Line_WaitForInput);
+	OutputLine(NULL, "　沙都子はトラップ！",
+		   NULL, " Satoko, set traps!", Line_WaitForInput);
+	OutputLine(NULL, "　梨花ちゃんは塩まいてーーー！！」",
+		   NULL, " Rika-chan, purify this area with salt!!\"", Line_Normal);
+	ClearMessage();
+	FadeOutBGM( 0, 0, FALSE );
+	FadeOutBGM( 1, 0, FALSE );
+	FadeOutBGM( 2, 0, FALSE );
+	FadeOutBGM( 3, 0, FALSE );
+	DrawBustshot( 19, "no_data", 0, 100, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, TRUE );
+	DrawSceneWithMask( "Hi4", "maskleft", 1, 0, 300 );
+	PlayBGM( 1, "higurashi", 120, 0 );
+
+	OutputLine(NULL, "　頭の天辺が、……温かくて、…むず痒くて、……ジンジンと痛んだ。",
+		   NULL, "The warmth remained on the top of my head...... It felt ticklish and... sore.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　私は耐え切れなくなり…単車を止め、路肩の電柱に痛む場所を押し付ける。",
+		   NULL, "I had to stop... I got off my moped and pushed that aching spot against a telephone pole.", Line_Normal);
+	ClearMessage();
+	PlayBGM( 0, "T2", 120, 0 );
+	FadeOutBGM( 1, 0, FALSE );
+	DrawBustshot( 19, "no_data", 0, 100, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, TRUE );
+
+	OutputLine(NULL, "　ごめん悟史くん、ごめん悟史くん！！",
+		   NULL, "I'm sorry, Satoshi-kun. I'm sorry!!", Line_WaitForInput);
+	OutputLine(NULL, "　ごめん…ごめんごめん！！！",
+		   NULL, " I'm sorry, I'm sorry, I'm sorry!!!", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　私は…悟史くんのことを忘れてないんだよ…、ちゃんと覚えてるんだよ…。",
+		   NULL, "I never forgot about you... I still remember you...", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　悟史くんが帰って来ないと私は駄目なんだよ……、悟史くんのいない生活なんて……灰色で…寒々しくて…つまんないだけなんだよ……、",
+		   NULL, "I'm worthless without you... I can't stand life without you because it's gray and cold and boring...", Line_WaitForInput);
+	OutputLine(NULL, "本当なの…、本当だよ…。",
+		   NULL, " It's true... it's true...", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　悟史くんがいないから、楽しく笑うなんてこと……全然……、",
+		   NULL, "I can never smile because you aren't here... I can't...", Line_Normal);
+	ClearMessage();
+	DrawScene( "black", 400 );
+
+	ClearMessage();
+	OutputLine(NULL, "“じゃ、またな、詩音。”",
+		   NULL, "'See you, Shion.'", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　まぶたの裏に、さっきの圭一の笑い顔が浮かぶ。",
+		   NULL, "Keiichi's face appeared in my mind.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　…私の頭をわしわしと撫でたときの感触が蘇る…。",
+		   NULL, "...I recalled the touch of his hand stroking my head...", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　全然、温かくなんかなかったよ！！",
+		   NULL, "It wasn't warm!!", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　うれしくなんかなかった！",
+		   NULL, "I wasn't happy!", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　乱暴で痛いだけだった！",
+		   NULL, "It was rough and painful!", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　あんなデリカシーのないヤツ大嫌い！",
+		   NULL, "I hate that insensitive guy!", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　あいつなんて、お子様でガキンチョで思慮が足りなくて温かみがない、ただの野良犬！！",
+		   NULL, "He's too childish, rude, and cold! He's like a stray dog!!", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　うれしくなんかなかった、温かくなんかなかった！！！",
+		   NULL, "I wasn't happy! It wasn't warm!!!", Line_WaitForInput);
+	OutputLine(NULL, "　私は全然うれしくも楽しくも",
+		   NULL, " I wasn't happy or overjoyed at all...", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "「嘘だああああぁあああぁッ！！！！………ぅうぅぅ、……悟……ト、シ……くん…………。",
+		   NULL, "\"Noooooo!!!! ...Oohhh... Satoshi... kun...", Line_WaitForInput);
+	OutputLine(NULL, "……ぅわあぁあぁぁ…ぁ……、……うわぁあぁぁぁ…ん…、」",
+		   NULL, " Ooohhh... wahhhhhh...\"", Line_Normal);
+	ClearMessage();
+	SetValidityOfInput( FALSE );
+	Wait( 3000 );
+	SetValidityOfInput( TRUE );
+
+	OutputLine(NULL, "　…………………むぅ…。",
+		   NULL, "...............Mmph...", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　悟史くんが…困った声を出した。",
+		   NULL, "Satoshi-kun mumbled.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　…悟史くんは、気の利いた言葉をよく知らないから…、こういう時、どういう言葉をかければいいのか、わからないのだ。",
+		   NULL, "...He didn't know what to say in a situation like this.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　……でも、声をかけなければいけないことだけはわかっていて、",
+		   NULL, "......But he knew that he had better say something.", Line_ContinueAfterTyping);
+	SetValidityOfInput( FALSE );
+	Wait( 800 );
+	SetValidityOfInput( TRUE );
+	OutputLine(NULL, "……何か声が掛けたくて…、",
+		   NULL, " ...He wanted to say something...", Line_ContinueAfterTyping);
+	SetValidityOfInput( FALSE );
+	Wait( 600 );
+	SetValidityOfInput( TRUE );
+	OutputLine(NULL, "…それでも何を言えばいいのか分からなくて……。",
+		   NULL, " ...but he didn't know what to say...", Line_WaitForInput);
+	OutputLine(NULL, "………むぅ、と、……呟く。",
+		   NULL, " so, he just mumbled...", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　ごめんね…………詩音。",
+		   NULL, "I'm sorry...... Shion.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　なんで悟史くんが謝るの……？",
+		   NULL, "Why are you apologizing, Satoshi-kun...?", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　謝るのはね……私の方なんだよ…？",
+		   NULL, "I'm the one who should apologize.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　私、……悟史くんのこと、ずっと待ってるって言ったのに、……その気持ちは揺るがないって信じてるのに…。",
+		   NULL, "Even though I said I'd wait for you...... even though I believed my heart wouldn't change......", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　………こんなにも、いつの間にか隙間だらけ。",
+		   NULL, "......My heart is full of holes.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　……私の胸の中の悟史くんが、………体中のひびから…少しずつね……漏れて行くんだよ…。",
+		   NULL, "......You're leaking out from the small cracks in my heart, little by little......", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　……滲んで…漏れて……私の中から……どんどん君がいなくなる……！",
+		   NULL, "......You're leaking out... from me......!", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　………僕がいるから、……辛い……？",
+		   NULL, "......Are you suffering because I'm here...?", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　な、なんで…？！",
+		   NULL, "Wh-Why...?!", Line_WaitForInput);
+	OutputLine(NULL, "　悟史くんは私の大切な人だよ…。",
+		   NULL, " You're so precious to me...", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　悟史くんがいるから辛いなんて言わないで…！！",
+		   NULL, "So, don't say that...!!", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　…………僕はずっと…詩音と一緒にいたよ？",
+		   NULL, "...I've been here with you all this time.", Line_WaitForInput);
+	SetSpeedOfMessage( TRUE, 16 );
+	OutputLine(NULL, "………",
+		   NULL, " .........", Line_ContinueAfterTyping);
+	SetSpeedOfMessage( FALSE, 0 );
+	OutputLine(NULL, "でも、",
+		   NULL, "But...", Line_ContinueAfterTyping);
+	SetValidityOfInput( FALSE );
+	Wait( 800 );
+	SetValidityOfInput( TRUE );
+	OutputLine(NULL, "……僕がいつまでも一緒だと、",
+		   NULL, " I think I'm hurting you", Line_ContinueAfterTyping);
+	SetValidityOfInput( FALSE );
+	Wait( 600 );
+	SetValidityOfInput( TRUE );
+	OutputLine(NULL, "………結局、…僕の存在が詩音を苦しめてるね…。",
+		   NULL, " by continuing to exist...", Line_WaitForInput);
+	OutputLine(NULL, "……そんなの、……僕は嫌だよ。",
+		   NULL, " I don't want that.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　嘘だ………嘘だ嘘だ嘘だッ！！！！",
+		   NULL, "That's not true...... No, no, no!!!!", Line_WaitForInput);
+	OutputLine(NULL, "　悟史くんはどこにいたの？！",
+		   NULL, " Where have you been, Satoshi-kun?!", Line_WaitForInput);
+	OutputLine(NULL, "　私と一緒になんかいないじゃない！！",
+		   NULL, " You weren't with me!!", Line_WaitForInput);
+	OutputLine(NULL, "　いるなら教えてよどこにいるのか教えてよ！",
+		   NULL, " Tell me where you are!", Line_WaitForInput);
+	OutputLine(NULL, "　住所は郵便番号は町名は番地は！！",
+		   NULL, " What's the address? What's the postal code? What's the name of the city? What's the street number?!", Line_WaitForInput);
+	OutputLine(NULL, "　私に教えてよ…！！！",
+		   NULL, " Tell me...!!!", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　…………………………住所は、",
+		   NULL, ".....................There isn't", Line_ContinueAfterTyping);
+	SetValidityOfInput( FALSE );
+	Wait( 1000 );
+	SetValidityOfInput( TRUE );
+	OutputLine(NULL, "…………ないよ………。",
+		   NULL, " an address...", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　……………あははははははは。",
+		   NULL, "............Ahahahahahaha.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　……やっぱり、………そういうことですか。",
+		   NULL, "......I knew it......", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　…ずっと一緒にいたとか、いつも近くにいるよとか、……そういうやつですか。",
+		   NULL, "...Telling me you've always been with me, always by my side... That's such a cliche.........", Line_WaitForInput);
+	OutputLine(NULL, "………あははははははは…………。",
+		   NULL, " Ahahahahaha.........", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　詩音は、……どっちがいいかな。",
+		   NULL, "Which do you prefer, Shion...?", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　……僕がいて詩音が少しでも元気になれるなら、僕はずっと側にいるから。",
+		   NULL, "...If I can give you strength, I'll stay by your side forever......", Line_WaitForInput);
+	OutputLine(NULL, "………僕がいて詩音が少しでも辛い思いをするなら、僕はすぐにでもどこかへ行くから。",
+		   NULL, " but if you're suffering because of me, I'll disappear right away.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "「……そんなこと…言わないでよ…。",
+		   NULL, "\"......Don't say that......", Line_WaitForInput);
+	OutputLine(NULL, "一緒がいい……、一緒がいいよ…。",
+		   NULL, " I want to be with you... always...", Line_WaitForInput);
+	OutputLine(NULL, "悟史くんと……いつまでも一緒がいい……。」",
+		   NULL, " I want to be with you... forever...\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　うん。",
+		   NULL, "Okay...", Line_WaitForInput);
+	OutputLine(NULL, "……一緒に、いるからね。",
+		   NULL, " I'll stay with you then.", Line_Normal);
+	ClearMessage();
+	DrawScene( "Sora2", 400 );
+	PlayBGM( 1, "higurashi", 120, 0 );
+
+	OutputLine(NULL, "　車が私の脇を通り抜けていく。",
+		   NULL, "A car passed by.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　その音で私は我に返った。",
+		   NULL, "The noise snapped me out of my reverie.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "「………はぁ。",
+		   NULL, "\"...Huff...", Line_WaitForInput);
+	OutputLine(NULL, "………はぁ、………………。」",
+		   NULL, " huff.........\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　…………空が黄昏色に染まっていく。",
+		   NULL, "...The sky was turning orange.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　早く帰らないと、肌寒くなっちゃう。",
+		   NULL, "I should get home before it gets cold......", Line_WaitForInput);
+	OutputLine(NULL, "……帰ろう、…興宮へ。",
+		   NULL, " I should go home, to Okinomiya.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　……一緒なんだよね…。",
+		   NULL, "......You're with me, right...?", Line_WaitForInput);
+	OutputLine(NULL, "……今も一緒にいてくれるんだよね……悟史くん…？",
+		   NULL, " Are you with me right now... Satoshi-kun...?", Line_Normal);
+	ClearMessage();
+	FadeOutBGM( 0, 0, FALSE );
+	FadeOutBGM( 2, 0, FALSE );
+	DrawBustshot( 19, "no_data", 0, 100, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, TRUE );
+	DrawSceneWithMask( "Hi4", "maskright", 1, 0, 300 );
+
+	OutputLine(NULL, "　私は単車の元へ戻る。",
+		   NULL, "I walked back to my moped.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　……雑草の茂みを踏み分けながら。",
+		   NULL, "...My feet sank into the grass...", Line_WaitForInput);
+	OutputLine(NULL, "……ざくざくざく。",
+		   NULL, " Crunch crunch crunch...", Line_Normal);
+	ClearMessage();
+	FadeOutBGM( 0, 0, FALSE );
+	FadeOutBGM( 2, 0, FALSE );
+	DrawBustshot( 19, "no_data", 0, 100, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, TRUE );
+
+	OutputLine(NULL, "　単車の前まで来て足を止めた時。",
+		   NULL, "I stopped when I reached my bike.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　…私の足音とひとつずれて。",
+		   NULL, "...But then I heard", Line_WaitForInput);
+	OutputLine(NULL, "足音がひとつ余計に聞こえた。",
+		   NULL, " an extra footstep.", Line_Normal);
+	ClearMessage();
+	FadeOutBGM( 1, 0, FALSE );
+	DrawBustshot( 19, "no_data", 0, 100, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, TRUE );
+
+	OutputLine(NULL, "　私ははっとする。",
+		   NULL, "I gasped...", Line_WaitForInput);
+	OutputLine(NULL, "……私だけじゃない、人の気配。",
+		   NULL, " I could feel somebody else's presence.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　私も馬鹿じゃない。",
+		   NULL, "I'm not stupid.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　周りに誰もいないのはわかってる。",
+		   NULL, "Nobody else was around here.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　それなのに背後に突然気配など現われるわけがない。",
+		   NULL, "Nobody had suddenly appeared behind me.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　…………だから、",
+		   NULL, ".........So I wasn't surprised to find nobody", Line_ContinueAfterTyping);
+	SetValidityOfInput( FALSE );
+	Wait( 800 );
+	SetValidityOfInput( TRUE );
+	OutputLine(NULL, "…振り返ってもそこに誰もいないのを見たとしても、驚かなかった。",
+		   NULL, " when I turned around.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　でも、",
+		   NULL, "But...", Line_ContinueAfterTyping);
+	SetValidityOfInput( FALSE );
+	Wait( 600 );
+	SetValidityOfInput( TRUE );
+	OutputLine(NULL, "……間違いなく、",
+		   NULL, " he was definitely", Line_ContinueAfterTyping);
+	SetValidityOfInput( FALSE );
+	Wait( 600 );
+	SetValidityOfInput( TRUE );
+	OutputLine(NULL, "…そこには、いてくれているのがわかった。",
+		   NULL, " still there.", Line_Normal);
+	ClearMessage();
+	DrawSceneWithMask( "Sora2", "maskup", 1, 0, 300 );
+	PlayBGM( 0, "Soul_scour", 120, 0 );
+
+	OutputLine(NULL, "「……悟史くん……………。」",
+		   NULL, "\"...Satoshi-kun.........\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　見えないけど、……いた。",
+		   NULL, "I couldn't see him...... but he was there......", Line_WaitForInput);
+	OutputLine(NULL, "……いてくれた。",
+		   NULL, " He was there for me.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　悟史くんは…嘘なんか絶対につかないんだから。",
+		   NULL, "Satoshi-kun never lies.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　……その悟史くんが、いつも一緒にいるよって言ったんだから…。",
+		   NULL, "......He said he'd be with me all the time......", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　……だから…今まで気付かなかったのは、私が鈍感だっただけなんだよ。",
+		   NULL, "...I'd just been too insensitive to feel his existence until now.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "「悟史くん……………、",
+		   NULL, "\"Satoshi-kun.........", Line_ContinueAfterTyping);
+	SetValidityOfInput( FALSE );
+	Wait( 800 );
+	SetValidityOfInput( TRUE );
+	OutputLine(NULL, "……悟史くん…………。」",
+		   NULL, " ...Satoshi-kun...\"", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　風が私の髪をくすぐる。",
+		   NULL, "A breeze tickled my hair.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　…冷たい風だけど、",
+		   NULL, "...It felt cold", Line_ContinueAfterTyping);
+	SetValidityOfInput( FALSE );
+	Wait( 800 );
+	SetValidityOfInput( TRUE );
+	OutputLine(NULL, "……でも、",
+		   NULL, " ...but...", Line_ContinueAfterTyping);
+	SetValidityOfInput( FALSE );
+	Wait( 1000 );
+	SetValidityOfInput( TRUE );
+	OutputLine(NULL, "…それは紛れもなく…悟史くんの手の平の温かさで…。",
+		   NULL, " to me, it was nothing but the warmth of his hand...", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　私は………熱い涙で顔を濡らしていることにもしばらく気付けないでいた……。",
+		   NULL, "It took me a while to notice that my cheeks were wet with tears...", Line_Normal);
+	ClearMessage();
+	SetValidityOfInput( FALSE );
+	Wait( 2000 );
+	SetValidityOfInput( TRUE );
+
+	CallScript( "&eye" );
+	DrawScene( "black", 1000 );
+	SetSpeedOfMessage( FALSE, 0 );
+	PlayBGM( 0, "Soul_scour", 120, 0 );
+}

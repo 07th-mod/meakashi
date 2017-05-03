@@ -1,0 +1,91 @@
+﻿void main()
+{
+	EnableJumpingOfReturnIcon();
+	FadeOutBGM( 0, 0, FALSE );
+	FadeOutBGM( 1, 0, FALSE );
+	FadeOutBGM( 2, 0, FALSE );
+	FadeOutBGM( 3, 0, FALSE );
+	ClearMessage();
+
+	PlayBGM( 0, "getting_mad", 120, 0 );
+	DrawScene( "Nort2", 400 );
+
+	OutputLine(NULL, "　鬼婆が即死していたのは、本当に計算外だった。",
+		   NULL, "I wasn't planning to kill the hag so quickly.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　この時点での私は、いつか殺す相手だった問題ないと負け惜しみを言っているが、明らかに痛手だった。",
+		   NULL, "I was going to kill her anyway, but it was too soon.", Line_Normal);
+	ClearMessage();
+	PlaySE( 0, "s_page", 128, 64 );
+
+	OutputLine(NULL, "　園崎天皇とも呼ばれる園崎本家の命令中枢は、一般にはピラミッド型だと思われているが、実際はそうではない。",
+		   NULL, "People would normally assume that the Sonozaki family operates as a hierarchy, but that's not true.", Line_Normal);
+	ClearMessage();
+	PlaySE( 0, "s_page", 128, 64 );
+
+	OutputLine(NULL, "　厳密には、省庁のような縦割り型で、それぞれの部門が小ピラミッドを形成してる。",
+		   NULL, "It's actually more like a system of government. Several ministries stem from the main family, and each forms a hierarchy of its own.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　縦割りゆえに横の連絡がない。",
+		   NULL, "These ministries don't communicate with one another.", Line_ContinueAfterTyping);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　いや、それどころか自分のピラミッド以外がわからない秘密主義だと言えるだろう。",
+		   NULL, "The people who belong to a given ministry don't know what other ministries are doing. That way, the Sonozaki family's dealings are kept perfectly secret.", Line_Normal);
+	ClearMessage();
+	PlaySE( 0, "s_page", 128, 64 );
+
+	OutputLine(NULL, "　もちろん園崎家の重鎮たちは、いくつもあるピラミッドの頂点に位置する。",
+		   NULL, "Of course, the most important people in the family govern several ministries.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　自分の下位のピラミッドについては精通している。",
+		   NULL, "They know, of course, about their own ministries...", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　他の親類たちが管理しているピラミッドについても、多少の情報交換は出来ている。",
+		   NULL, "And they know a little bit about the ministries their relatives run.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　だが、それでも全部のピラミッドについてはわかっていない。",
+		   NULL, "But none of them know everything.", Line_Normal);
+	ClearMessage();
+	PlaySE( 0, "s_page", 128, 64 );
+
+	OutputLine(NULL, "　陽のピラミッド、",
+		   NULL, "There are ministries that work in the open,", Line_WaitForInput);
+	OutputLine(NULL, "陰のピラミッド。",
+		   NULL, " there are ministries that work unseen,", Line_WaitForInput);
+	OutputLine(NULL, "その他にお魎直轄の秘密の小ピラミッドがいくつか。",
+		   NULL, " and there are some smaller ones that Oryou runs herself.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　そのほとんどを頭首代行である魅音は知っているようだが、だからと言って、全部知っているとは限らない。",
+		   NULL, "Mion seems to know about most of them, but she doesn't necessarily know them all.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　現に、最高機密である「オヤシロさまの祟り」については知らなかった。",
+		   NULL, "In fact, she didn't know about 'the curse'.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　それを思うと、鬼婆が死して永遠に口を閉ざしたのは、暗部を暴く上で致命的な痛手と言えた……。",
+		   NULL, "Considering that, the fact that the hag died before I could interrogate her is a huge loss...", Line_Normal);
+	ClearMessage();
+	Wait( 1000 );
+	DrawScene( "black", 1000 );
+}

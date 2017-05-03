@@ -1,0 +1,80 @@
+﻿void main()
+{
+	EnableJumpingOfReturnIcon();
+	FadeOutBGM( 0, 0, FALSE );
+	FadeOutBGM( 1, 0, FALSE );
+	FadeOutBGM( 2, 0, FALSE );
+	FadeOutBGM( 3, 0, FALSE );
+	ClearMessage();
+
+	PlayBGM( 0, "depressive paranoia", 120, 0 );
+	DrawScene( "JSA1", 1000 );
+
+	OutputLine(NULL, "　祭具殿の不可侵性は、オヤシロさま崇拝の中でも群を抜く。",
+		   NULL, "The sanctity of the ritual storehouse is one of the most prominent elements in the worship of Oyashiro-sama.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　もちろんそれは私も、雛見沢に縁のある人間として知ってはいた。",
+		   NULL, "Of course, I knew that, since I'm originally from Hinamizawa.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　だが、実際は私が知る以上に、もっともっと偏執的なくらいの不可侵性があったのだ。",
+		   NULL, "But violating that sanctity is actually a more serious problem than I thought.", Line_Normal);
+	ClearMessage();
+	PlaySE( 0, "s_page", 128, 64 );
+
+	OutputLine(NULL, "　鷹野さんの研究によるなら、祭具殿の不可侵性の歴史は相当古いという。",
+		   NULL, "Takano-san's research shows that the history of the ritual storehouse goes way back.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　それだけ祭具を使った奇祭「綿流し」が神聖視されていたことの証だろう。",
+		   NULL, "The ritual implements within have long been viewed as inviolable objects, which is why it was strictly forbidden to enter.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　だが、鷹野さんの研究では綿流しは純粋な宗教儀式でなく、御三家の支配体制をより磐石にするための、公開処刑的な意味があったという。",
+		   NULL, "Takano-san's theory says that Watanagashi was once a public execution, performed to stabilize the reign of the Three Families, rather than a purely religious ritual.", Line_Normal);
+	ClearMessage();
+	PlaySE( 0, "s_page", 128, 64 );
+	DrawScene( "JYSA1", 1000 );
+
+	OutputLine(NULL, "　だとするなら、そもそも神聖視という呼び方が間違っている。",
+		   NULL, "If so, the ritual should hardly be called sacred.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　そんな状況下でなら、憎悪と恐怖の対象として疎まれた存在のはず。",
+		   NULL, "Under those circumstances, the implements should have been despised as symbols of hatred and fear.", Line_Normal);
+	ClearMessage();
+	PlaySE( 0, "s_page", 128, 64 );
+
+	OutputLine(NULL, "　恐怖は露見し過ぎればただの恐怖支配に過ぎない。",
+		   NULL, "When instruments of fear are too visible, it only creates a reign of terror.", Line_WaitForInput);
+	OutputLine(NULL, "だが、極力隠せば神聖さが宿る。",
+		   NULL, " But keep them as hidden as possible, and they gain divinity.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　俗人が触れると穢れがつくとよく言う。",
+		   NULL, "Many said they would become tainted if the laymen touched them.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　それは衆人環視に晒されたら威厳がなくなるので、もったいぶって隠した方が、箔がつく…という意味でしかないのだ。",
+		   NULL, "The only reason for that was to preserve their false prestige through secrecy, since they would lose their sanctity if revealed before the common folk.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　つまり、祭具殿の不可侵性の正体は、…恐怖。",
+		   NULL, "In other words, the true identity of the ritual storehouse's sacredness... was fear.", Line_WaitForInput);
+	OutputLine(NULL, "この村を支配する真の感情の正体なのだ……。",
+		   NULL, " That was the true emotion ruling over this village...", Line_Normal);
+	ClearMessage();
+	Wait( 1000 );
+	DrawScene( "black", 1000 );
+}
