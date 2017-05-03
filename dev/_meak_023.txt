@@ -62,10 +62,13 @@
 		   NULL, " There was no response.", Line_Normal);
 	ClearMessage();
 
+	PlaySE(4, "S06/06/150602270", 128, 64);
 	OutputLine(NULL, "「公由のおじいちゃん？",
 		   NULL, "\"Uncle Kimiyoshi?", Line_WaitForInput);
+	PlaySE(4, "S06/06/150602271", 128, 64);
 	OutputLine(NULL, "　生きてるなら正直に生きてるって言って下さいよ？",
 		   NULL, " If you're alive, you better tell me, okay?", Line_WaitForInput);
+	PlaySE(4, "S06/06/150602272", 128, 64);
 	OutputLine(NULL, "　死体のふりして逃げ出そうなんて通用しないから。」",
 		   NULL, " You can't fool me.\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -323,6 +326,7 @@
 	ClearMessage();
 	PlaySE( 0, "s_furu", 128, 64 );
 
+	PlaySE(4, "S06/04/150400042", 128, 64);
 	OutputLine(NULL, "「…ぐうう！！",
 		   NULL, "\"Ooo!!", Line_ContinueAfterTyping);
 	PlaySE( 1, "Thisikuki", 128, 64 );
@@ -331,6 +335,7 @@
 
 	PlaySE( 0, "s_furu", 128, 64 );
 
+	PlaySE(4, "S06/04/150400043", 128, 64);
 	OutputLine(NULL, "　ふぎゃッ！！",
 		   NULL, " Gyahh!!", Line_ContinueAfterTyping);
 	PlaySE( 1, "Thisikuki", 128, 64 );
@@ -339,6 +344,7 @@
 
 	PlaySE( 0, "s_furu", 128, 64 );
 
+	PlaySE(4, "S06/04/150400044", 128, 64);
 	OutputLine(NULL, "　…ッが！！」",
 		   NULL, " Guhhh!!\"", Line_ContinueAfterTyping);
 	PlaySE( 1, "Thisikuki", 128, 64 );
@@ -526,11 +532,13 @@
 	DrawScene( "black", 0 );
 	FadeFilm( 400, TRUE );
 
+	PlaySE(4, "S06/04/150400045", 128, 64);
 	OutputLine(NULL, "「ぎぃああやああああおああぉおああがああが…、",
 		   NULL, "\"Gyaahhhhhhh...", Line_ContinueAfterTyping);
 	SetValidityOfInput( FALSE );
 	Wait( 800 );
 	SetValidityOfInput( TRUE );
+	PlaySE(4, "S06/04/150400046", 128, 64);
 	OutputLine(NULL, "…ぎゃああああ！！！」",
 		   NULL, " gyahhhhh!!!\"", Line_Normal);
 	ClearMessage();
@@ -585,6 +593,7 @@
 	SetValidityOfInput( TRUE );
 	PlaySE( 0, "s_tataku", 128, 64 );
 
+	PlaySE(4, "S06/04/150400048", 128, 64);
 	OutputLine(NULL, "「ぐぎゃあああぁあ……ッ！！！！」",
 		   NULL, "\"Gyaahhhhh!!!!\"", Line_Normal);
 	ClearMessage();
@@ -681,6 +690,7 @@
 		   NULL, " you killed him!!!\"", Line_Normal);
 	ClearMessage();
 
+	PlaySE(4, "S06/04/150400049", 128, 64);
 	OutputLine(NULL, "「…………ッ、",
 		   NULL, "\"......!", Line_ContinueAfterTyping);
 	SetValidityOfInput( FALSE );
@@ -688,18 +698,23 @@
 	SetValidityOfInput( TRUE );
 	OutputLine(NULL, "……………ふぐ…！！",
 		   NULL, " Gouhhh", Line_WaitForInput);
+	PlaySE(4, "S06/04/150400050", 128, 64);
 	OutputLine(NULL, "　…………………………。」",
 		   NULL, "...............!!\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
+	PlaySE(4, "S06/06/150602331", 128, 64);
 	OutputLine(NULL, "「……どうしたよ。",
 		   NULL, "\"What's this?", Line_WaitForInput);
+	PlaySE(4, "S06/06/150602332", 128, 64);
 	OutputLine(NULL, "右腕はもう感覚がない？",
 		   NULL, " You don't feel anything in your right arm anymore?", Line_WaitForInput);
+	PlaySE(4, "S06/06/150602333", 128, 64);
 	OutputLine(NULL, "　じゃあ左腕にするか。」",
 		   NULL, " Okay, then let's use your left.\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
+	PlaySE(4, "S06/04/150400051", 128, 64);
 	OutputLine(NULL, "「………………ぎゅ、",
 		   NULL, "\".........Gyah!", Line_ContinueAfterTyping);
 	SetValidityOfInput( FALSE );
@@ -707,6 +722,7 @@
 	SetValidityOfInput( TRUE );
 	OutputLine(NULL, "…………………かッ！！",
 		   NULL, " ......Ahhh", Line_WaitForInput);
+	PlaySE(4, "S06/04/150400052", 128, 64);
 	OutputLine(NULL, "　……………。」",
 		   NULL, "...............!!\"", Line_Normal);
 	ClearMessage();
@@ -1088,16 +1104,22 @@
 	ClearMessage();
 	DrawScene( "ryuuketu1", 1000 );
 
+	PlaySE(4, "S06/06/150602345", 128, 64);
 	OutputLine(NULL, "「はあ、はあ！",
 		   NULL, "\"Hah, hah!", Line_WaitForInput);
+	PlaySE(4, "S06/06/150602346", 128, 64);
 	OutputLine(NULL, "　はぁ！",
 		   NULL, " Hah!", Line_WaitForInput);
+	PlaySE(4, "S06/06/150602347", 128, 64);
 	OutputLine(NULL, "　はあ！",
 		   NULL, " Hah!", Line_WaitForInput);
+	PlaySE(4, "S06/06/150602348", 128, 64);
 	OutputLine(NULL, "　…はあ！",
 		   NULL, " ...Hah!", Line_WaitForInput);
+	PlaySE(4, "S06/06/150602349", 128, 64);
 	OutputLine(NULL, "　はあ！！",
 		   NULL, " Hah!!", Line_WaitForInput);
+	PlaySE(4, "S06/06/150602350", 128, 64);
 	OutputLine(NULL, "　…………はあ！」",
 		   NULL, " ......Hah!\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -1890,6 +1912,7 @@
 	PlaySE(4, "S06/06/150602358", 128, 64);
 	OutputLine(NULL, "　鬼ってのも悪くないねぇ！！",
 		   NULL, " Being a demon isn't that bad, huh?", Line_WaitForInput);
+	PlaySE(4, "S06/06/150602359", 128, 64);
 	OutputLine(NULL, "　人が泣いたり、叫んだりするのを見るのがこんなにも楽しいものだなんて知らなかったよ。",
 		   NULL, " I never knew how fun it would be to see other people cry and scream.", Line_WaitForInput);
 	PlaySE(4, "S06/06/150602360", 128, 64);
@@ -1907,6 +1930,7 @@
 	PlaySE(4, "S06/06/150602364", 128, 64);
 	OutputLine(NULL, "あんたを殺すために今があるんだもの、私はそのためにいる。",
 		   NULL, " That's why I'm here, after all.", Line_WaitForInput);
+	PlaySE(4, "S06/06/150602365", 128, 64);
 	OutputLine(NULL, "人を嘆かせて泣き声をすするのが私の、鬼の愉悦だもんね！",
 		   NULL, " Demons are pleased when they see people cry and grieve, see?", Line_Normal);
 	ClearMessage();
@@ -1917,8 +1941,10 @@
 	PlaySE(4, "S06/06/150602367", 128, 64);
 	OutputLine(NULL, "よし、あんたの前で圭ちゃんを引き裂いてあげるよ！！",
 		   NULL, " Okay, I'll rip Kei-chan apart before your eyes!!", Line_WaitForInput);
+	PlaySE(4, "S06/06/150602368", 128, 64);
 	OutputLine(NULL, "　これは極め付けだね！！",
 		   NULL, " What a great idea!!", Line_WaitForInput);
+	PlaySE(4, "S06/06/150602369", 128, 64);
 	OutputLine(NULL, "　その後にあんたを殺し、私も殺そう。",
 		   NULL, " I'll kill you, and then myself after that.", Line_WaitForInput);
 	PlaySE(4, "S06/06/150602370", 128, 64);
