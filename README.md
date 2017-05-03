@@ -39,33 +39,33 @@ Old collaborators welcome to join the repository, however it's still preferred t
 - [x] _meak_022_1.txt
 - [x] _meak_022_2.txt
 - [x] _meak_023.txt
-- [ ] _meak_024.txt
-- [ ] _meak_ep_01.txt
-- [ ] _meak_ep_02.txt
-- [ ] _meak_ep_03.txt
-- [ ] _meak_tips_01.txt
-- [ ] _meak_tips_02.txt
-- [ ] _meak_tips_03.txt
-- [ ] _meak_tips_04.txt
-- [ ] _meak_tips_05.txt
-- [ ] _meak_tips_06.txt
-- [ ] _meak_tips_07.txt
-- [ ] _meak_tips_08.txt
-- [ ] _meak_tips_09.txt
-- [ ] _meak_tips_10.txt
-- [ ] _meak_tips_11.txt
-- [ ] _meak_tips_12.txt
-- [ ] _meak_tips_13.txt
-- [ ] _meak_tips_14.txt
-- [ ] _meak_tips_15.txt
-- [ ] _meak_tips_16.txt
-- [ ] _meak_tips_17.txt
-- [ ] _meak_tips_18.txt
-- [ ] _meak_tips_19.txt
-- [ ] _meak_tips_20.txt
-- [ ] _meak_tips_21.txt
-- [ ] _meak_tips_22.txt
-- [ ] _meak_tips_23.txt
+- [x] _meak_024.txt
+- [x] _meak_ep_01.txt
+- [x] _meak_ep_02.txt
+- [x] _meak_ep_03.txt
+- [x] _meak_tips_01.txt
+- [x] _meak_tips_02.txt
+- [x] _meak_tips_03.txt
+- [x] _meak_tips_04.txt
+- [x] _meak_tips_05.txt
+- [x] _meak_tips_06.txt
+- [x] _meak_tips_07.txt
+- [x] _meak_tips_08.txt
+- [x] _meak_tips_09.txt
+- [x] _meak_tips_10.txt
+- [x] _meak_tips_11.txt
+- [x] _meak_tips_12.txt
+- [x] _meak_tips_13.txt
+- [x] _meak_tips_14.txt
+- [x] _meak_tips_15.txt
+- [x] _meak_tips_16.txt
+- [x] _meak_tips_17.txt
+- [x] _meak_tips_18.txt
+- [x] _meak_tips_19.txt
+- [x] _meak_tips_20.txt
+- [x] _meak_tips_21.txt
+- [x] _meak_tips_22.txt
+- [x] _meak_tips_23.txt
 
 # Known issues (for fixing)
 
@@ -74,3 +74,5 @@ Old collaborators welcome to join the repository, however it's still preferred t
 > in _meak_020.txt, S06/06/150601926 is also mildly censored, you know the drill.
 
 > in _meak_021_2.txt, S06/06/150602076 is also mildly censored, so it should be worth to get a replacement.
+
+> in _meak_024.txt, line 2900, the torture scene has no voices in the PS3 version.

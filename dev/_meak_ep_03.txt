@@ -55,7 +55,7 @@
 	DrawBustshotWithFiltering( 1, "Ri_WaraiA1", "maskleft", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 8, 0, FALSE );
 	DrawSceneWithMask( "GK2", "maskleft", 1, 0, 300 );
 
-	PlaySE(4, "S20/05/440500080", 128, 64);
+	PlaySE(4, "S06/05/150500066", 128, 64);
 	OutputLine(NULL, "「……くっ付けるのですよ。",
 		   NULL, "\"......I'm coming.", Line_WaitForInput);
 	PlaySE(4, "S06/05/150500067", 128, 64);
@@ -67,7 +67,7 @@
 	DrawBustshotWithFiltering( 2, "Sa_WaraiB1", "maskright", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 10, 300, TRUE );
 	DisplayWindow();
 
-	PlaySE(4, "", 128, 64);
+	PlaySE(4, "S06/04/150400098", 128, 64);
 	OutputLine(NULL, "「ほっほっほ！",
 		   NULL, "\"Ho ho ho!", Line_WaitForInput);
 	PlaySE(4, "S06/04/150400099", 128, 64);
@@ -81,7 +81,7 @@
 	DrawBustshotWithFiltering( 0, "Si_AkuwaraiA1", "maskright", 1, 0, 0, FALSE, 0, 0, 0, 0, 0, 9, 0, FALSE );
 	DrawSceneWithMask( "GK3", "maskright", 1, 0, 300 );
 
-	PlaySE(4, "S20/06/440600051", 128, 64);
+	PlaySE(4, "S06/06/150602745", 128, 64);
 	OutputLine(NULL, "「ざぁんねん、そうは行かないです沙都子。",
 		   NULL, "\"Unfortunately, I won't let you do that either, Satoko.", Line_WaitForInput);
 	DisableWindow();
@@ -107,7 +107,7 @@
 	DrawBustshotWithFiltering( 2, "Sa_HannbesoB1", "maskright", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 10, 300, TRUE );
 	DisplayWindow();
 
-	PlaySE(4, "S20/04/440400122", 128, 64);
+	PlaySE(4, "S06/04/150400101", 128, 64);
 	OutputLine(NULL, "「ふわぁあぁ………カボチャは嫌ですのーー！！",
 		   NULL, "\"Whaaah...... I hate squash!!", Line_WaitForInput);
 	PlaySE(4, "S06/04/150400102", 128, 64);
@@ -125,10 +125,10 @@
 	ChangeBustshot( 1, "Si_WinkA1", 200, TRUE );
 	DisplayWindow();
 
-	PlaySE(4, "S14/06/210600011", 128, 64);
+	PlaySE(4, "S06/06/150602748", 128, 64);
 	OutputLine(NULL, "　カボチャはですね栄養価にとても優れているんです。",
 		   NULL, " Squash is very nutritious.", Line_WaitForInput);
-	PlaySE(4, "S14/06/210600012", 128, 64);
+	PlaySE(4, "S06/06/150602749", 128, 64);
 	OutputLine(NULL, "育ち盛りの沙都子は特に栄養に気を遣わないといけないんですよ？",
 		   NULL, " You're still growing, so you need to think about things like that.", Line_WaitForInput);
 	DisableWindow();
@@ -152,7 +152,7 @@
 	DrawBustshotWithFiltering( 2, "Ri_WaraiA1", "maskright", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 10, 300, TRUE );
 	DisplayWindow();
 
-	PlaySE(4, "S20/05/440500081", 128, 64);
+	PlaySE(4, "S06/05/150500068", 128, 64);
 	OutputLine(NULL, "「……もにゅもにゅ。",
 		   NULL, "\"......Munch, munch.", Line_WaitForInput);
 	PlaySE(4, "S06/05/150500069", 128, 64);
@@ -215,13 +215,12 @@
 	DrawBustshotWithFiltering( 1, "Sa_AkireruB1", "maskleft", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 8, 300, TRUE );
 	DisplayWindow();
 
-	PlaySE(4, "S20/04/440400124", 128, 64);
+	PlaySE(4, "S06/04/150400105", 128, 64);
 	OutputLine(NULL, "「…………んんんん、",
 		   NULL, "\"......Hmm......", Line_ContinueAfterTyping);
 	SetValidityOfInput( FALSE );
 	Wait( 900 );
 	SetValidityOfInput( TRUE );
-	PlaySE(4, "S06/04/150400105", 128, 64);
 	OutputLine(NULL, "………まぁその、食べれなくもないですわね…。」",
 		   NULL, " well, it isn't so bad...\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -233,26 +232,24 @@
 	PlaySE(4, "S06/06/150602752", 128, 64);
 	OutputLine(NULL, "「当り前です。",
 		   NULL, "\"Of course it isn't.", Line_WaitForInput);
-	PlaySE(4, "S14/06/210600020", 128, 64);
+	PlaySE(4, "S06/06/150602753", 128, 64);
 	OutputLine(NULL, "沙都子がカボチャ嫌いを克服できるように日夜研究してますので。",
 		   NULL, " I've been working hard every day to get you to overcome your dislike of squash.", Line_WaitForInput);
 	DisableWindow();
 	ChangeBustshot( 2, "Si_WinkA1", 200, TRUE );
 	DisplayWindow();
 
-	PlaySE(4, "S14/06/210600021", 128, 64);
+	PlaySE(4, "S06/06/150602754", 128, 64);
 	OutputLine(NULL, "さて、この調子で今年中に、ナス、",
 		   NULL, " Okay, now that that's done with, why don't you overcome your fear of eggplants,", Line_ContinueAfterTyping);
 	SetValidityOfInput( FALSE );
 	Wait( 800 );
 	SetValidityOfInput( TRUE );
-	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "ピーマン、",
 		   NULL, " green peppers,", Line_ContinueAfterTyping);
 	SetValidityOfInput( FALSE );
 	Wait( 900 );
 	SetValidityOfInput( TRUE );
-	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "アスパラガスと制覇して行きましょう。」",
 		   NULL, " and asparagus within the year?\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
