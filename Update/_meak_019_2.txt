@@ -5,7 +5,7 @@
 	ClearMessage();
 
 	DisableWindow();
-	DrawBustshotWithFiltering( 2, "Kei_Def1#", "maskright", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 10, 300, TRUE );
+	DrawBustshot( 2, "kei2_Def1_0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
 	DisplayWindow();
 
 	OutputLine(NULL, "「魅音と違って、詩音は待ち合わせ時間を守るなぁ…。",
@@ -20,7 +20,7 @@
 		   NULL, " Making my sister the standard for everything will get you in trouble.\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 	DisableWindow();
-	ChangeBustshot( 2, "Kei_Warai#", 200, TRUE );
+	DrawBustshot( 2, "kei2_Warai_0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
 	DisplayWindow();
 
 	OutputLine(NULL, "「ん？",
@@ -42,6 +42,7 @@
 	OutputLine(NULL, "私、お姉より要領いいですから。」",
 		   NULL, " I'm smarter than my sis, after all.\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+	DrawBustshot( 2, "kei2_Komaru_0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
 
 	OutputLine(NULL, "「おいおい…。",
 		   NULL, "\"Hey now...", Line_WaitForInput);
@@ -57,7 +58,7 @@
 		   NULL, " ...We're going to the library, right?\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 	DisableWindow();
-	ChangeBustshot( 2, "Kei_Def2#", 200, TRUE );
+	DrawBustshot( 2, "kei2_Def2_0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
 	DisplayWindow();
 
 	OutputLine(NULL, "「あぁ、頼むよ。",
@@ -151,7 +152,7 @@
 	OutputLine(NULL, "　自動ドアをくぐるとエアカーテンの涼しさが迎える。",
 		   NULL, "I tasted cool air on my skin as soon as I walked through the automated door.", Line_Normal);
 	ClearMessage();
-	DrawSceneWithMask( "Tosyo2", "maskleft", 1, 0, 300 );
+	DrawSceneWithMask( "Tosyo8", "maskleft", 1, 0, 300 );
 
 	OutputLine(NULL, "　セミの声で充満した外より静かな館内。",
 		   NULL, "Unlike outside, it was very quiet in here.", Line_WaitForInput);
@@ -165,7 +166,7 @@
 		   NULL, "I could smell the scent of old pages...", Line_Normal);
 	ClearMessage();
 	DisableWindow();
-	DrawBustshot( 0, "Kei_Def1#", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 9, 400, TRUE );
+	DrawBustshot( 0, "kei2_Def1_0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 9, 400, TRUE );
 	DisplayWindow();
 
 	OutputLine(NULL, "「…どこの図書館も似たようなもんだな。」",
@@ -212,9 +213,7 @@
 	OutputLine(NULL, "……神さまの皮肉のつもりだろうか。",
 		   NULL, " Did God have a sense of irony?", Line_Normal);
 	ClearMessage();
-	DrawSceneWithMask( "black", "maskleft", 1, 0, 300 );
-	DrawBustshotWithFiltering( 0, "Kei_Majime#", "maskleft", 1, 0, 0, FALSE, 0, 0, 0, 0, 0, 9, 0, FALSE );
-	DrawSceneWithMask( "Tosyo3", "maskleft", 1, 0, 300 );
+	DrawBustshot( 2, "kei2_Majime_0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
 
 	OutputLine(NULL, "「…言われて見れば…。",
 		   NULL, "\"...Now that you mention it...", Line_WaitForInput);
@@ -246,7 +245,7 @@
 		   NULL, " There are Sonozakis in the city council and the prefectural assembly too, since they have the Okinomiya area giving them strong electoral support.\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 	DisableWindow();
-	ChangeBustshot( 0, "Kei_Komaru#", 200, TRUE );
+	DrawBustshot( 2, "kei2_Komaru_0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
 	DisplayWindow();
 
 	OutputLine(NULL, "「……ちょっと待て。",
@@ -298,10 +297,9 @@
 	FadeOutBGM( 0, 0, FALSE );
 	FadeOutBGM( 2, 0, FALSE );
 	DrawBustshot( 19, "no_data", 0, 100, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, TRUE );
-
-	DrawBustshotWithFiltering( 1, "Kei_Komaru#", "maskright", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 8, 0, FALSE );
-	DrawBustshotWithFiltering( 2, "Oisi2", "maskright", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 10, 0, FALSE );
-	DrawSceneWithMask( "Tosyo3", "maskright", 1, 0, 300 );
+	DrawScene( "tosyo7", 400 );
+	DrawBustshot( 1, "kei2_Komaru_0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 200, TRUE );
+	DrawBustshot( 3, "oi_si_wa_a1", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
 
 	OutputLine(NULL, "「えぇ。",
 		   NULL, "\"Yep.", Line_WaitForInput);
@@ -422,7 +420,7 @@
 		   NULL, " Why did he have to show up at a time like this?", Line_Normal);
 	ClearMessage();
 	DisableWindow();
-	ChangeBustshot( 2, "Oisi1", 200, TRUE );
+	DrawBustshot( 3, "oi_si_de_a1", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
 	DisplayWindow();
 
 	OutputLine(NULL, "「前原さん、でしたよね？",
@@ -457,7 +455,7 @@
 		   NULL, "I didn't want him to, nor did I want Keiichi to have any preconceptions.", Line_Normal);
 	ClearMessage();
 	DisableWindow();
-	ChangeBustshot( 2, "Oisi5", 200, TRUE );
+	DrawBustshot( 3, "oisi1_5_0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
 	DisplayWindow();
 
 	OutputLine(NULL, "　大石がすごく嫌らしい目をしながら、私の方をちらりとうかがう。",
@@ -488,7 +486,7 @@
 		   NULL, " ...I really do need to get to my job.\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 	DisableWindow();
-	ChangeBustshot( 1, "Kei_majime#", 200, TRUE );
+	DrawBustshot( 1, "kei2_Majime_0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 200, TRUE );
 	DisplayWindow();
 
 	OutputLine(NULL, "「え？",
@@ -503,7 +501,7 @@
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
 	DisableWindow();
-	ChangeBustshot( 2, "Oisi2", 200, TRUE );
+	DrawBustshot( 3, "oi_si_wa_a1", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
 	DisplayWindow();
 
 	OutputLine(NULL, "　大石は私のその判断に、にやっと笑って応える。",
@@ -516,7 +514,7 @@
 		   NULL, " He won today, but I'll win next time.", Line_Normal);
 	ClearMessage();
 	DisableWindow();
-	ChangeBustshot( 1, "Kei_majime2#", 200, TRUE );
+	DrawBustshot( 1, "kei2_Majime2_0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 200, TRUE );
 	DisplayWindow();
 
 	OutputLine(NULL, "「そう言えば…、今日は詩音、何か話があるんじゃなかったのか…？",

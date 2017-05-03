@@ -13,6 +13,7 @@
 
 	SetValidityOfInput( TRUE );
 	DrawScene( "GK1", 400 );
+	DrawBustshot( 3, "Tie_def", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
 
 	OutputLine(NULL, "「ハイ、委員長、号令。」",
 		   NULL, "\"President, if you would.\"", Line_Normal);
@@ -28,9 +29,6 @@
 		   NULL, " All rise!!\"", Line_Normal);
 	ClearMessage();
 	PlayBGM( 0, "semi", 120, 0 );
-	DisableWindow();
-	DrawBustshotWithFiltering( 2, "Tie1", "maskright", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 10, 300, TRUE );
-	DisplayWindow();
 
 	OutputLine(NULL, "「委員長も少し寝不足みたいですね。",
 		   NULL, "\"Looks like you didn't get enough sleep.", Line_WaitForInput);
@@ -45,7 +43,7 @@
 	OutputLine(NULL, "「「「は〜〜〜〜〜〜い！」」」",
 		   NULL, "\"Yes, ma'am!\"", Line_Normal);
 	ClearMessage();
-	DrawSceneWithMask( "GK2", "maskright", 1, 0, 300 );
+	DrawSceneWithMask( "black", "maskright", 1, 0, 300 );
 
 	OutputLine(NULL, "　…この幼稚園と小学校を足して３で割ったような雰囲気は、何とも怪しいものだった。",
 		   NULL, "...I'm not sure this place can be called a school.", Line_WaitForInput);
@@ -64,8 +62,8 @@
 	OutputLine(NULL, "　学校で魅音が作っているキャラクターイメージもわかりやすく、演じるのはそう難しくなさそうだった。",
 		   NULL, "It wasn't too difficult to act like Mion here.", Line_Normal);
 	ClearMessage();
-	DrawBustshotWithFiltering( 2, "Sato_komaru", "maskright", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 10, 0, FALSE );
 	DrawSceneWithMask( "GK3", "maskright", 1, 0, 300 );
+	DrawBustshot( 3, "sato1_komaru_0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
 
 	OutputLine(NULL, "　悟史くんは、………お姉から聞いた通り、…すっかりやつれていた。",
 		   NULL, "As Sis told me... Satoshi-kun looked exhausted.", Line_WaitForInput);
@@ -85,14 +83,14 @@
 		   NULL, "I was interested in another person in this classroom.", Line_Normal);
 	ClearMessage();
 	DisableWindow();
-	FadeBustshotWithFiltering( 2, "maskright" , 1, FALSE, 0, 0, 300, TRUE );
+	FadeAllBustshots( 400, TRUE );
 	DisplayWindow();
 
 	OutputLine(NULL, "　それが……悟史くんの妹、沙都子だった。",
 		   NULL, "Satoko... Satoshi-kun's little sister.", Line_Normal);
 	ClearMessage();
 	DisableWindow();
-	DrawBustshotWithFiltering( 1, "Sa_MuhyouA1", "maskleft", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 8, 300, TRUE );
+	DrawBustshot( 1, "sa1a_MuhyouA1_0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 200, TRUE );
 	DisplayWindow();
 
 	OutputLine(NULL, "　悟史くんに負けず劣らず……、ぼろぼろの、まるで感情を失った人形みたいだった。",
@@ -137,12 +135,9 @@
 	OutputLine(NULL, "……とにかく何か、声をかけてやりたかった。",
 		   NULL, " More than anything, I just wanted to chat with him.", Line_Normal);
 	ClearMessage();
-	DisableWindow();
-	DrawBustshot( 0, "Me_MajimeB2", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 9, 400, TRUE );
-	DisplayWindow();
 
 	OutputLine(NULL, "　でも私は、事前にお姉から釘を刺されていた。",
-		   NULL, "However, Sis hd told me.", Line_WaitForInput);
+		   NULL, "However, Sis had told me.", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
@@ -198,7 +193,7 @@
 	FadeOutBGM( 2, 0, FALSE );
 	DrawBustshot( 19, "no_data", 0, 100, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, TRUE );
 	DisableWindow();
-	DrawBustshot( 0, "Sato_komaru", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 9, 400, TRUE );
+	DrawBustshot( 2, "sato1_komaru_0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
 	DisplayWindow();
 
 	OutputLine(NULL, "　悟史くんは私の声に過敏に反応して振り返った。",
@@ -465,6 +460,9 @@
 		   NULL, "Streaks of tears ran down my cheeks.", Line_Normal);
 	ClearMessage();
 	DrawScene( "G2", 400 );
+	DrawBustshot( 2, "sato1_Ikari_0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
+	Wait( 1000 );
+	FadeAllBustshots( 400, TRUE );
 
 	OutputLine(NULL, "　……悟史くんはとても面倒くさいものを見るような…嫌な目つきをした後、…私に声をかけることもなく、踵を返すと立ち去った。",
 		   NULL, "...Satoshi-kun gave me a hateful glare, and walked away without saying another word.", Line_WaitForInput);
@@ -500,6 +498,7 @@
 	DrawScene( "white", 10 );
 	PlaySE( 0, "s_door", 128, 64 );
 	DrawSceneWithMask( "GK1", "maskright", 7, 0, 300 );
+	DrawBustshot( 3, "sa1a_SakebuA1_0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
 	PlayBGM( 1, "semi", 120, 0 );
 
 	OutputLine(NULL, "　…………泣き声の主は、",
@@ -545,7 +544,7 @@
 		   NULL, "Yet Satoko... started begging through her tears.", Line_Normal);
 	ClearMessage();
 	DisableWindow();
-	DrawBustshot( 2, "Sa_SakebuB1", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
+	DrawBustshot( 3, "sa1b_SakebuB1_0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
 	DisplayWindow();
 
 	OutputLine(NULL, "「助けてよ、助けてよぅ…、にーにーー！！",
@@ -553,6 +552,7 @@
 	OutputLine(NULL, "　わぁあぁぁあぁああぁぁあん！！！」",
 		   NULL, " Waaaaahhhhhhh!!!\"", Line_Normal);
 	ClearMessage();
+	DrawScene( "aka1", 400 );
 
 	OutputLine(NULL, "　感情のたがが外れかけていた私は、心の中に灯った怒りの火が、全身を火だるまにしてしまうのを感じた。",
 		   NULL, "Because of what happened with Satoshi-kun, I couldn't suppress my emotions very well.", Line_Normal);
@@ -595,8 +595,8 @@
 	OutputLine(NULL, "…どうして私に悪意をぶつけられなければならないのか、理解できずにいた。",
 		   NULL, " She must be wondering why I did that.", Line_Normal);
 	ClearMessage();
-	DrawBustshot( 0, "Sa_NakuA1", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 9, 0, FALSE );
-	DrawScene( "GK2", 400 );
+	DrawScene( "GK1", 400 );
+	DrawBustshot( 1, "sa1b_NakuB1_0_zoom", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 200, TRUE );
 
 	OutputLine(NULL, "「……何であんたがそういう目に遭うか、理解できる？」",
 		   NULL, "\"...Do you know why I did that?\"", Line_WaitForInput);
@@ -612,6 +612,7 @@
 
 	OutputLine(NULL, "　私は再び沙都子の頭を鷲掴みにすると、今度は床に叩きのめすように投げつけた。",
 		   NULL, "And so, I grabbed her head and threw her again.", Line_ContinueAfterTyping);
+	FadeAllBustshots( 400, TRUE );
 	StartShakingOfWindow( 248, 30, 0, 2, 4*2, FALSE );
 	StartShakingOfAllObjects( 248, 30, 0, 2, 4*2, TRUE );
 	OutputLineAll(NULL, "", Line_WaitForInput);
@@ -632,8 +633,8 @@
 	OutputLine(NULL, "身を硬くしてうずくまり、上目遣いに私を見上げ、がたがたと震えていた。",
 		   NULL, " She just crouched and trembled while looking up at me.", Line_Normal);
 	ClearMessage();
-	DrawBustshotWithFiltering( 2, "Sa_SakebuB1", "maskleft", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 10, 0, FALSE );
-	DrawSceneWithMask( "GK3", "maskleft", 1, 0, 300 );
+	DrawSceneWithMask( "GK1", "maskleft", 1, 0, 300 );
+	DrawBustshot( 2, "sa1b_SakebuB1_0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
 
 	OutputLine(NULL, "「助けて……たすけて……、",
 		   NULL, "\"Help... help...", Line_ContinueAfterTyping);
@@ -761,6 +762,7 @@
 	OutputLine(NULL, "　うわああぁああぁああん！！！」",
 		   NULL, " Whaaaaahhhhhh!!!\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+	DrawScene( "aka2", 400 );
 
 	OutputLine(NULL, "　沙都子の号泣は、もう今の私には怒りに油を注ぐだけだった。",
 		   NULL, "Her desperate cries only increased my irritation.", Line_Normal);
@@ -803,7 +805,9 @@
 		   NULL, "...Satoko curled up to protect herself, and cried even harder.", Line_Normal);
 	ClearMessage();
 	DisableWindow();
-	DrawBustshot( 0, "Ri_KomaruA1", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 9, 400, TRUE );
+	DrawScene( "gk1", 400 );
+	DrawBustshot( 1, "ri_se_de_a1", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
+	DrawBustshot( 2, "sa1b_SakebuB1_0", -50, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
 	DisplayWindow();
 
 	OutputLine(NULL, "　髪の長い少女が躍り出て、縮こまる沙都子に覆い被さった。",
@@ -856,6 +860,7 @@
 		   NULL, " If you keep getting in the way, I'll crack your head open!!!\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 	PlaySE( 0, "s_furu", 128, 64 );
+	DrawScene( "black", 400 );
 
 	OutputLine(NULL, "　私はイスを掴み、振り上げる。",
 		   NULL, "I grabbed a chair and lifted it over my head.", Line_WaitForInput);
@@ -881,8 +886,8 @@
 	FadeOutBGM( 3, 0, FALSE );
 	DrawBustshot( 19, "no_data", 0, 100, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, TRUE );
 	PlaySE( 0, "s_door", 128, 64 );
-	DrawBustshotWithFiltering( 2, "Re_okoruA1", "maskleft", 7, 160, 0, FALSE, 0, 0, 0, 0, 0, 10, 0, FALSE );
 	DrawSceneWithMask( "GK1", "maskleft", 7, 0, 300 );
+	DrawBustshot( 3, "re_se_ik_a1", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
 
 	OutputLine(NULL, "「やめて！！",
 		   NULL, "\"Stop!!", Line_WaitForInput);
@@ -896,8 +901,7 @@
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
 	DisableWindow();
-	FadeBustshotWithFiltering( 2, "maskleft" , 7, FALSE, 0, 0, 300, TRUE );
-	DrawBustshotWithFiltering( 1, "Sato_Ikari", "maskright", 7, -160, 0, FALSE, 0, 0, 0, 0, 0, 8, 300, TRUE );
+	DrawBustshot( 3, "sato1_Ikari_0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
 	DisplayWindow();
 
 	OutputLine(NULL, "　そのレナを押しのけ、駆け込んできたのは、………悟史くんだった。",
@@ -926,9 +930,11 @@
 	OutputLine(NULL, "……私は慣れぬ衝撃に身を屈めてしまう。",
 		   NULL, " I crouched there in pain.", Line_Normal);
 	ClearMessage();
-	DrawBustshot( 0, "Sa_nakuB1", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 9, 0, FALSE );
-	DrawBustshot( 2, "Sato_komaru", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, FALSE );
-	DrawScene( "GK3", 400 );
+	DrawScene( "GK1", 400 );
+	DrawBustshot( 1, "ri_se_de_a1", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
+	DrawBustshot( 2, "sa1b_SakebuB1_0", -50, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
+	DrawBustshot( 3, "sato1_komaru_0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
+	
 	FadeOutBGM( 1, 0, FALSE );
 	DrawBustshot( 19, "no_data", 0, 100, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, TRUE );
 
@@ -946,13 +952,16 @@
 		   NULL, " Whaaaaaahhh!!\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
-
+	ClearMessage();
+	FadeAllBustshots( 400, TRUE );
+	DrawBustshot( 2, "sato1_komaru_0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
+	DrawBustshot( 3, "sa1b_SakebuB1_0", 110, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
 
 	OutputLine(NULL, "　沙都子は、たった今まで身を挺して庇ってくれていた梨花を押しのけると、悟史くんに飛びついて、…泣いた。",
 		   NULL, "Satoko pushed Rika aside, jumped at her brother... and started crying again.", Line_Normal);
 	ClearMessage();
 	DisableWindow();
-	ChangeBustshot( 2, "Sato_ikari", 400, TRUE );
+	DrawBustshot( 2, "sato1_Ikari_0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
 
 	DisplayWindow();
 
@@ -976,7 +985,9 @@
 
 	DisableWindow();
 	FadeBustshotWithFiltering( 2, "mask00" , 0, FALSE, 0, 0, 200, FALSE );
-	ChangeBustshot( 0, "Sato_ikari", 200, TRUE );
+	FadeAllBustshots( 400, TRUE );
+	DrawBustshot( 2, "sato1_Ikari_0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
+	DrawBustshot( 3, "sa1b_SakebuB1_0", -50, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
 	DisplayWindow();
 
 	OutputLine(NULL, "「ど、……どういうことだよ魅音ッ！！！」",
@@ -1004,6 +1015,8 @@
 	OutputLine(NULL, "　どうしてだよッ！！！」",
 		   NULL, " Why?!!!\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+	FadeAllBustshots( 400, TRUE );
+	DrawBustshot( 2, "sato1_Ikari_0_zoom", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
 
 	OutputLine(NULL, "　沙都子を解放し、悟史くんは私に迫り、…襟首を掴み上げた。",
 		   NULL, "He released Satoko and rushed up to me, grabbing me by the neck.", Line_Normal);
@@ -1066,8 +1079,8 @@
 	OutputLine(NULL, "　…もう完全に心の堰が崩れ、感情のダムの決壊が起こっていた。",
 		   NULL, "...I no longer had any control over my emotions at all.", Line_Normal);
 	ClearMessage();
-	DrawBustshot( 0, "Sato_Ikari", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 9, 0, FALSE );
-	DrawScene( "GK1", 400 );
+	DrawScene( "GK3", 400 );
+	DrawBustshot( 2, "sato1_Ikari_0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
 
 	OutputLine(NULL, "「悟史くんだって…沙都子を甘やかし過ぎてるよ！！！",
 		   NULL, "\"You spent so much time protecting her!!!", Line_WaitForInput);
@@ -1116,16 +1129,16 @@
 	OutputLine(NULL, "　鬼のような形相で、私と悟史くんを交互に睨みつけながら、私たちの間に割って入る。",
 		   NULL, "She stepped in, looking as fierce as a demon.", Line_Normal);
 	ClearMessage();
-	DrawBustshot( 2, "Re_OkoruB1", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, FALSE );
-	DrawBustshot( 1, "Sato_Ikari", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 8, 0, FALSE );
-	DrawScene( "GK1", 400 );
+	DrawBustshot( 2, "re_se_ik_b1", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, FALSE );
+	DrawBustshot( 1, "sato1_Ikari_0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 8, 0, FALSE );
+	DrawScene( "GK3", 400 );
 
 	OutputLine(NULL, "「悟史くん、もうやめてあげて。",
 		   NULL, "\"Satoshi-kun, please.", Line_WaitForInput);
 	OutputLine(NULL, "魅ぃちゃんに悪気はなかった。",
 		   NULL, " Mii-chan doesn't have any bad intentions.", Line_WaitForInput);
 	DisableWindow();
-	ChangeBustshot( 2, "Re_DefB1", 200, TRUE );
+	ChangeBustshot( 2, "re_se_de_b1", 200, TRUE );
 	DisplayWindow();
 
 	OutputLine(NULL, "……悟史くんの力になってあげたくて、その気持ちがちょっとずれて、空回りしちゃっただけ。",
@@ -1134,7 +1147,7 @@
 		   NULL, " ...Okay?\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 	DisableWindow();
-	ChangeBustshot( 1, "Sato_komaru", 200, TRUE );
+	ChangeBustshot( 1, "sato1_komaru_0", 200, TRUE );
 	DisplayWindow();
 
 	OutputLine(NULL, "「……………………………。」",
@@ -1145,16 +1158,13 @@
 		   NULL, "Satoshi-kun looked like he wanted to say something back, but he chose not to.", Line_Normal);
 	ClearMessage();
 	DisableWindow();
-	ChangeBustshot( 2, "Re_OkoruA1", 200, TRUE );
+	ChangeBustshot( 2, "re_se_ik_a1", 200, TRUE );
 	DisplayWindow();
 
 	OutputLine(NULL, "「魅ぃちゃんも、もうやめて。",
 		   NULL, "\"You too, Mii-chan...", Line_WaitForInput);
 	OutputLine(NULL, "…魅ぃちゃんが誰よりも悟史くんのことを心配してるのは知ってる。",
 		   NULL, " I know how much you worry about Satoshi-kun.", Line_WaitForInput);
-	DisableWindow();
-	ChangeBustshot( 2, "Re_DefB1", 200, TRUE );
-	DisplayWindow();
 
 	OutputLine(NULL, "だけれど、こんなやり方はそれの解決にはならない。",
 		   NULL, " But you can't solve the problem like that.", Line_WaitForInput);
@@ -1165,8 +1175,8 @@
 	OutputLine(NULL, "　悟史くんが何も言わなかったから、…私もまた沈黙を守ることにした。",
 		   NULL, "Since Satoshi-kun didn't say anything, I kept quiet, too.", Line_Normal);
 	ClearMessage();
-	DrawBustshotWithFiltering( 2, "Re_waraiB1", "maskright", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 10, 0, FALSE );
-	DrawBustshotWithFiltering( 0, "Sa_sakebuA1", "maskright", 1, 0, 0, FALSE, 0, 0, 0, 0, 0, 9, 0, FALSE );
+	DrawBustshotWithFiltering( 2, "re1b_waraiB1_0", "maskright", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 10, 0, FALSE );
+	DrawBustshotWithFiltering( 0, "sa1a_SakebuA1_0", "maskright", 1, 0, 0, FALSE, 0, 0, 0, 0, 0, 9, 0, FALSE );
 	DrawSceneWithMask( "GK3", "maskright", 1, 0, 300 );
 
 	OutputLine(NULL, "「ほら、沙都子ちゃんも。",
@@ -1179,7 +1189,7 @@
 		   NULL, " Do you feel better now?\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 	DisableWindow();
-	DrawBustshotWithFiltering( 1, "Ri_KomaruA1", "maskleft", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 8, 300, TRUE );
+	DrawBustshotWithFiltering( 1, "ri1_KomaruA1_0", "maskleft", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 8, 300, TRUE );
 	DisplayWindow();
 
 	OutputLine(NULL, "「……沙都子、ボクがお弁当箱を拾ってあげますよ…。」",
@@ -1197,7 +1207,7 @@
 	FadeBustshotWithFiltering( 0, "mask00" , 0, FALSE, 0, 0, 400, FALSE );
 	FadeBustshotWithFiltering( 1, "mask00" , 0, FALSE, 0, 0, 400, FALSE );
 	FadeBustshotWithFiltering( 2, "mask00" , 0, FALSE, 0, 0, 400, TRUE );
-	DrawBustshot( 0, "Re_DefA1", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 9, 400, TRUE );
+	DrawBustshot( 0, "re_se_de_a1", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 9, 400, TRUE );
 	DisplayWindow();
 
 	OutputLine(NULL, "「みんな。…片付けを手伝ってくれる？",
@@ -1216,8 +1226,8 @@
 		   NULL, "The classmates looked at each other and nodded... then started picking up the stuff on the floor.", Line_Normal);
 	ClearMessage();
 	DrawScene( "black", 400 );
-	DrawBustshot( 1, "Re_KomaruA1", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 8, 0, FALSE );
-	DrawScene( "GK2", 400 );
+	DrawScene( "GK3", 400 );
+	DrawBustshot( 2, "re_se_de_a1", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
 
 	OutputLine(NULL, "「はい。",
 		   NULL, "\"Here,", Line_WaitForInput);
@@ -1227,7 +1237,7 @@
 		   NULL, " why don't you guys shake hands as a sign of reconciliation?\"", Line_Normal);
 	ClearMessage();
 	DisableWindow();
-	FadeBustshotWithFiltering( 1, "maskright" , 1, FALSE, 0, 0, 300, TRUE );
+	DrawBustshot( 2, "sato1_komaru_0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
 	DisplayWindow();
 
 	OutputLine(NULL, "「…………………ごめん……。",
@@ -1239,9 +1249,6 @@
 	OutputLine(NULL, "　私の激情の、残った欠片が…再び目から零れ落ちる。",
 		   NULL, "Tears started to roll down my cheeks again.", Line_Normal);
 	ClearMessage();
-	DisableWindow();
-	DrawBustshot( 0, "Sato_Komaru", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 9, 400, TRUE );
-	DisplayWindow();
 
 	OutputLine(NULL, "「…………僕も、",
 		   NULL, "\"......I'm sorry,", Line_ContinueAfterTyping);
@@ -1255,17 +1262,15 @@
 	OutputLine(NULL, "……………ごめん。」",
 		   NULL, " I'm sorry...\"", Line_Normal);
 	ClearMessage();
-	DrawBustshotWithFiltering( 2, "Re_DefB1", "maskleft", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 10, 0, FALSE );
-	DrawSceneWithMask( "GK3", "maskleft", 1, 0, 300 );
-
+	DrawBustshot( 2, "re_se_de_a1", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
+	
 	OutputLine(NULL, "「さ、魅ぃちゃんは次に沙都子ちゃんに謝る。",
 		   NULL, "\"Okay.", Line_WaitForInput);
 	OutputLine(NULL, "……はい。」",
 		   NULL, " Mii-chan, why don't you apologize to Satoko-chan now?\"", Line_Normal);
 	ClearMessage();
 
-	DrawBustshotWithFiltering( 1, "Sa_HannbesoB3", "maskleft", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 8, 0, FALSE );
-	DrawSceneWithMask( "GK3", "maskleft", 1, 0, 300 );
+	DrawBustshot( 2, "sa1b_HannbesoB3_0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
 
 	OutputLine(NULL, "　……悟史くんには謝れても、…沙都子に謝る気はさらさらなかった。",
 		   NULL, "...I was fine with apologizing to Satoshi-kun, but I didn't want to apologize to her.", Line_WaitForInput);
@@ -1277,7 +1282,7 @@
 		   NULL, "But the situation wouldn't be settled otherwise... so I reluctantly apologized.", Line_Normal);
 	ClearMessage();
 	DisableWindow();
-	ChangeBustshot( 1, "Sa_HannbesoA3", 200, TRUE );
+	DrawBustshot( 2, "sa1a_HannbesoA3_0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
 	DisplayWindow();
 
 	OutputLine(NULL, "　沙都子は憮然とした表情のまま、…謝罪を受け入れたことを示す意味で頷いてみせる…。",
@@ -1356,7 +1361,7 @@
 	FadeOutBGM( 2, 0, FALSE );
 	FadeOutBGM( 3, 0, FALSE );
 	DrawBustshot( 19, "no_data", 0, 100, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, TRUE );
-	DrawSceneWithMask( "Sora", "maskdown", 1, 0, 1300 );
+	DrawSceneWithMask( "Sora3", "maskdown", 1, 0, 1300 );
 	PlaySE( 0, "s_chaim", 128, 64 );
 	Wait( 300 );
 	PlaySE( 0, "s_chaim", 128, 64 );
@@ -1370,9 +1375,16 @@
 	SetValidityOfInput( TRUE );
 	DrawScene( "Sora2", 1000 );
 	SetValidityOfInput( FALSE );
-	Wait( 1000 );
+	Wait( 1700 );
 	SetValidityOfInput( TRUE );
 	PlayBGM( 0, "yoru", 120, 0 );
+	SetValidityOfInput( FALSE );
+	Wait( 1000 );
+	SetValidityOfInput( TRUE );
+	DrawScene( "Sora4", 1000 );
+	SetValidityOfInput( FALSE );
+	Wait( 1000 );
+	SetValidityOfInput( TRUE );
 	DrawScene( "black", 400 );
 
 	SetSpeedOfMessage( FALSE, 0 );
@@ -1380,6 +1392,7 @@
 	OutputLine(NULL, "　お姉は呆れるような同情するような、複雑な気持ちのようだった。",
 		   NULL, "Sis sounded both amazed and confused.", Line_Normal);
 	ClearMessage();
+	DrawScene( "si_h2", 400 );
 
 	OutputLine(NULL, "「…ただでさえ綿流しの直前でいろいろと忙しいってのに…。",
 		   NULL, "\"...You know, I'm busy with the festival preparations...", Line_WaitForInput);

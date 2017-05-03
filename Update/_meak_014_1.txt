@@ -15,7 +15,7 @@
 		   NULL, " What did you just say?\"", Line_Normal);
 	ClearMessage();
 	DrawBustshotWithFiltering( 0, "Kasa1", "maskleft", 1, 0, 0, FALSE, 0, 0, 0, 0, 0, 9, 0, FALSE );
-	DrawSceneWithMask( "Si_H1", "maskleft", 1, 0, 300 );
+	DrawSceneWithMask( "Si_g1", "maskleft", 1, 0, 300 );
 	PlayBGM( 0, "Nazo", 120, 0 );
 
 	OutputLine(NULL, "「信頼できる筋の噂ですが、悟史くんの叔母殺しの犯人が見つかったらしいです。」",
@@ -89,7 +89,7 @@
 		   NULL, "The reason Ooishi approached me is because he was convinced that Satoshi-kun did it.", Line_Normal);
 	ClearMessage();
 	DisableWindow();
-	ChangeBustshot( 0, "Kasa2", 200, TRUE );
+	ChangeBustshot( 0, "Kasa3", 200, TRUE );
 	DisplayWindow();
 
 	OutputLine(NULL, "「ご安心を。",
@@ -240,15 +240,15 @@
 	ClearMessage();
 
 	DrawSceneWithMask( "white", "maskc", 1, 0, 300 );
-	DrawSceneWithMask( "Sora", "maskm1", 1, 0, 300 );
+	DrawSceneWithMask( "Sora3", "maskm1", 1, 0, 300 );
 	SetValidityOfInput( FALSE );
 	Wait( 1500 );
 	SetValidityOfInput( TRUE );
-	DrawSceneWithMask( "ke1", "maskleft", 1, 0, 1300 );
+	DrawSceneWithMask( "ke1--", "maskleft", 1, 0, 1300 );
 	SetValidityOfInput( FALSE );
 	Wait( 2000 );
 	SetValidityOfInput( TRUE );
-	DrawBustshotWithFiltering( 2, "Oisi1", "maskleft", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 10, 0, FALSE );
+	DrawBustshotWithFiltering( 2, "oi_si_de_a1", "maskleft", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 10, 0, FALSE );
 	DrawSceneWithMask( "Ke_Ky1", "maskleft", 1, 0, 300 );
 	PlayBGM( 0, "higurashi", 120, 0 );
 	SetSpeedOfMessage( FALSE, 0 );
@@ -269,7 +269,7 @@
 		   NULL, "\"I thought you knew his whereabouts already, since you seemed very convinced he was the culprit.\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 	DisableWindow();
-	ChangeBustshot( 2, "Oisi2", 200, TRUE );
+	ChangeBustshot( 2, "oi_si_wa_a1", 200, TRUE );
 	DisplayWindow();
 
 	OutputLine(NULL, "「なっはっはっはっは。",
@@ -282,7 +282,7 @@
 		   NULL, "Ooishi chuckled and poured a cup of coffee which looked far too hot.", Line_Normal);
 	ClearMessage();
 	DisableWindow();
-	ChangeBustshot( 2, "Oisi4", 200, TRUE );
+	ChangeBustshot( 2, "oisi1_4_0", 200, TRUE );
 	DisplayWindow();
 
 	OutputLine(NULL, "「……しかし、耳が早いなぁ。」",
@@ -293,7 +293,7 @@
 		   NULL, "\"Huh?\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 	DisableWindow();
-	ChangeBustshot( 2, "Oisi2", 200, TRUE );
+	ChangeBustshot( 2, "oi_si_wa_a1", 200, TRUE );
 	DisplayWindow();
 
 	OutputLine(NULL, "「秘匿捜査指定だってのに、どこの誰が漏らしてるやら。",
@@ -464,15 +464,15 @@
 	OutputLine(NULL, "　その顔は、ほんの少し真剣だった。",
 		   NULL, "He looked serious.", Line_Normal);
 	ClearMessage();
-	DrawBustshotWithFiltering( 0, "Oisi1", "maskdown", 1, 0, 0, FALSE, 0, 0, 0, 0, 0, 9, 0, FALSE );
-	DrawSceneWithMask( "Ke_Ky3", "maskdown", 1, 0, 300 );
-
+	DrawBustshotWithFiltering( 0, "oi_si_de_a1", "maskleft", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 10, 0, FALSE );
+	DrawSceneWithMask( "Ke_Ky1", "maskdown", 1, 0, 300 );
+	
 	OutputLine(NULL, "「…こりゃあ個人的な意見ですよ？",
 		   NULL, "\"...This is just what I personally feel, okay?", Line_WaitForInput);
 	OutputLine(NULL, "　他の誰にも内緒ということで。",
 		   NULL, " So please keep it between the two of us.", Line_WaitForInput);
 	DisableWindow();
-	ChangeBustshot( 0, "Oisi4", 200, TRUE );
+	ChangeBustshot( 0, "oisi1_4_0", 200, TRUE );
 	DisplayWindow();
 
 	OutputLine(NULL, "…………私ゃ、このトンチンカンは何かの間違いだと思ってます。」",
@@ -491,7 +491,7 @@
 	OutputLine(NULL, "…………………ねぇ？",
 		   NULL, " ...you know?", Line_WaitForInput);
 	DisableWindow();
-	ChangeBustshot( 0, "Oisi2", 200, TRUE );
+	ChangeBustshot( 0, "oi_si_wa_a1", 200, TRUE );
 	DisplayWindow();
 
 	OutputLine(NULL, "　なっはっはっは。」",
@@ -502,7 +502,7 @@
 		   NULL, "\"I have no idea what you're talking about.\"", Line_Normal);
 	ClearMessage();
 	DisableWindow();
-	ChangeBustshot( 0, "Oisi1", 200, TRUE );
+	ChangeBustshot( 0, "oi_si_de_a1", 200, TRUE );
 	DisplayWindow();
 
 	OutputLine(NULL, "「私は今でも、犯人は北条悟史くんだと思っています。」",
@@ -513,7 +513,7 @@
 		   NULL, "\"......You sound confident.\"", Line_Normal);
 	ClearMessage();
 	DisableWindow();
-	ChangeBustshot( 0, "Oisi4", 200, TRUE );
+	ChangeBustshot( 0, "oisi1_4_0", 200, TRUE );
 	DisplayWindow();
 
 	OutputLine(NULL, "「残念ながら、現場検証では犯人を特定できるような痕跡は何一つ発見できませんでした。",
@@ -528,7 +528,7 @@
 		   NULL, "\"......But you still believe he did it?\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 	DisableWindow();
-	ChangeBustshot( 0, "Oisi1", 200, TRUE );
+	ChangeBustshot( 0, "oi_si_de_a1", 200, TRUE );
 	DisplayWindow();
 
 	OutputLine(NULL, "「えぇ。」",
@@ -543,7 +543,7 @@
 		   NULL, " Is that supposed to be like the hunch of an experienced detective?\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 	DisableWindow();
-	ChangeBustshot( 0, "Oisi2", 200, TRUE );
+	ChangeBustshot( 0, "oi_si_wa_a1", 200, TRUE );
 	DisplayWindow();
 
 	OutputLine(NULL, "「えぇ。",
@@ -587,7 +587,7 @@
 	OutputLine(NULL, "　…悟史くんが失踪した理由がどんどん曖昧になり、霞んでいく…。",
 		   NULL, "...The reason for his disappearance had become unclear...", Line_Normal);
 	ClearMessage();
-	DrawBustshot( 2, "Oisi1", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, FALSE );
+	DrawBustshotWithFiltering( 2, "oi_si_de_a1", "maskleft", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 10, 0, FALSE );
 	DrawScene( "Ke_Ky1", 400 );
 
 	OutputLine(NULL, "「んーーーーーーーー………………。",
@@ -595,7 +595,7 @@
 	OutputLine(NULL, "……私は仇敵との恋仲程度で、人ひとりを失踪させるなんてリスクを冒すとは思わないんですがねぇ。",
 		   NULL, " I don't think they'd bother to make one person disappear just because of an undesirable relationship.", Line_WaitForInput);
 	DisableWindow();
-	ChangeBustshot( 2, "Oisi4", 200, TRUE );
+	ChangeBustshot( 2, "oisi1_4_0", 200, TRUE );
 	DisplayWindow();
 
 	OutputLine(NULL, "………実際、園崎家の内部としてはどうなんです？",
@@ -608,7 +608,7 @@
 		   NULL, "\"I wouldn't be here if I did.\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 	DisableWindow();
-	ChangeBustshot( 2, "Oisi2", 200, TRUE );
+	ChangeBustshot( 2, "oi_si_wa_a1", 200, TRUE );
 	DisplayWindow();
 
 	OutputLine(NULL, "「なっはっはっは。ごもっともごもっとも。」",
@@ -621,7 +621,7 @@
 		   NULL, " and after he stopped laughing, he leaned over.", Line_Normal);
 	ClearMessage();
 	DisableWindow();
-	ChangeBustshot( 2, "Oisi1", 200, TRUE );
+	ChangeBustshot( 2, "oi_si_de_a1", 200, TRUE );
 	DisplayWindow();
 
 	OutputLine(NULL, "「よぅし、ならひとつどうですかねぇ。",
@@ -638,7 +638,7 @@
 		   NULL, " On what?\"", Line_Normal);
 	ClearMessage();
 	DisableWindow();
-	ChangeBustshot( 2, "Oisi2", 200, TRUE );
+	ChangeBustshot( 2, "oi_si_wa_a1", 200, TRUE );
 	DisplayWindow();
 
 	OutputLine(NULL, "「悟史くん失踪事件、捜査情報共有協定。",
@@ -659,7 +659,7 @@
 		   NULL, "Ooishi chuckled.", Line_Normal);
 	ClearMessage();
 	DisableWindow();
-	ChangeBustshot( 2, "Oisi1", 200, TRUE );
+	ChangeBustshot( 2, "oi_si_de_a1", 200, TRUE );
 	DisplayWindow();
 
 	OutputLine(NULL, "「……詩音さん。",
@@ -669,7 +669,7 @@
 	OutputLine(NULL, "そうなると、悟史くんの扱いは単なる家出人になります。",
 		   NULL, " If that happens, Satoshi-kun's disappearance will be treated as just another runaway minor.", Line_WaitForInput);
 	DisableWindow();
-	ChangeBustshot( 2, "Oisi4", 200, TRUE );
+	ChangeBustshot( 2, "oisi1_4_0", 200, TRUE );
 	DisplayWindow();
 
 	OutputLine(NULL, "つまり、積極的な捜査は打ち切られるということです。」",
@@ -680,7 +680,7 @@
 		   NULL, "\".....................\"", Line_Normal);
 	ClearMessage();
 	DisableWindow();
-	ChangeBustshot( 2, "Oisi1", 200, TRUE );
+	ChangeBustshot( 2, "oi_si_de_a1", 200, TRUE );
 	DisplayWindow();
 
 	OutputLine(NULL, "「ですが、私だけは続けます。",
@@ -688,7 +688,7 @@
 	OutputLine(NULL, "私だけは悟史くんの行方を引き続き捜します。",
 		   NULL, " Only I will do it.", Line_WaitForInput);
 	DisableWindow();
-	ChangeBustshot( 2, "Oisi2", 200, TRUE );
+	ChangeBustshot( 2, "oi_si_wa_a1", 200, TRUE );
 	DisplayWindow();
 
 	OutputLine(NULL, "…詩音さんも私も、悟史くんの行方を捜しているという点では一致していると思うんですがねぇ？」",
@@ -712,6 +712,9 @@
 	OutputLine(NULL, "「…あやしいもんです。」",
 		   NULL, "\"...I doubt that.\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+	DisableWindow();
+	ChangeBustshot( 2, "oisi1_5_0", 200, TRUE );
+	DisplayWindow();
 
 	OutputLine(NULL, "「なっはっはっはっは…。」",
 		   NULL, "\"Na ha ha ha ha...\"", Line_WaitForInput);
@@ -723,7 +726,7 @@
 		   NULL, " but his smile didn't reach his eyes.", Line_Normal);
 	ClearMessage();
 	DisableWindow();
-	ChangeBustshot( 2, "Oisi1", 200, TRUE );
+	ChangeBustshot( 2, "oi_si_de_a1", 200, TRUE );
 	DisplayWindow();
 
 	OutputLine(NULL, "「…………ま、今後も仲良くやりましょう。",
@@ -736,7 +739,7 @@
 		   NULL, "\"I'm not opposed to the Sonozaki family, though.\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 	DisableWindow();
-	ChangeBustshot( 2, "Oisi2", 200, TRUE );
+	ChangeBustshot( 2, "oi_si_wa_a1", 200, TRUE );
 	DisplayWindow();
 
 	OutputLine(NULL, "「あ、ホントに？",
@@ -827,8 +830,8 @@
 	OutputLine(NULL, "この辺りならではの方言と言っていい。",
 		   NULL, " It's part of the local dialect.", Line_Normal);
 	ClearMessage();
-	DrawBustshot( 0, "Oisi4", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 9, 0, FALSE );
-	DrawScene( "Ke_Ky2", 400 );
+	DrawBustshotWithFiltering( 0, "oisi1_4_0", "maskleft", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 10, 0, FALSE );
+	DrawScene( "Ke_Ky1", 400 );
 
 	OutputLine(NULL, "「…………鬼ヶ淵沼の底の、鬼の国にさらわれたって？",
 		   NULL, "\".........He was kidnapped and taken to Hell through the bottom of the Onigafuchi Swamp...?", Line_WaitForInput);
@@ -836,13 +839,13 @@
 		   NULL, " That's ridiculous...\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 	DisableWindow();
-	ChangeBustshot( 0, "Oisi1", 200, TRUE );
+	ChangeBustshot( 0, "oi_si_de_a1", 200, TRUE );
 	DisplayWindow();
 
 	OutputLine(NULL, "「兎にも角にも、連続怪死事件もこれで４年目です。",
 		   NULL, "\"Anyway, the series of mysterious deaths has struck for the fourth time.", Line_WaitForInput);
 	DisableWindow();
-	ChangeBustshot( 0, "Oisi2", 200, TRUE );
+	ChangeBustshot( 0, "oi_si_wa_a1", 200, TRUE );
 	DisplayWindow();
 
 	OutputLine(NULL, "…気の早い話ですがね、来年もまた起こるんじゃないかなんて、もう囁かれてるんだとか。」",
@@ -853,7 +856,7 @@
 		   NULL, "\"Are you saying that the murder was the result of Oyashiro-sama's curse?\"", Line_Normal);
 	ClearMessage();
 	DisableWindow();
-	ChangeBustshot( 0, "Oisi1", 200, TRUE );
+	ChangeBustshot( 0, "oi_si_de_a1", 200, TRUE );
 	DisplayWindow();
 
 	OutputLine(NULL, "「…全体的に見てみれば、ホトケも北条家のひとり。",
@@ -932,7 +935,7 @@
 	DrawScene( "black", 1000 );
 	DrawFilm( 2, 0x88, 0x88, 0x88, 256, 0, 0, TRUE );
 
-	DrawSceneWithMask( "Mo_B1", "maskdown", 1, 0, 1300 );
+	DrawSceneWithMask( "M_Hi9", "maskdown", 1, 0, 1300 );
 
 	OutputLine(NULL, "　そうだ。",
 		   NULL, "Ah, that's right...", Line_WaitForInput);
@@ -1032,7 +1035,7 @@
 
 	DrawScene( "white", 400 );
 	PlayBGM( 1, "Mati", 120, 0 );
-	DrawScene( "Sora", 1000 );
+	DrawScene( "Sora3", 1000 );
 	SetValidityOfInput( FALSE );
 	Wait( 3500 );
 	SetValidityOfInput( TRUE );
@@ -1150,7 +1153,7 @@
 		   NULL, "It's apparent that the target was selected based on the villagers' preference.", Line_Normal);
 	ClearMessage();
 	DrawSceneWithMask( "black", "maskleft", 7, 0, 300 );
-	DrawSceneWithMask( "Kawa1", "maskleft", 7, 0, 300 );
+	DrawSceneWithMask( "ji2++", "maskleft", 7, 0, 300 );
 
 	OutputLine(NULL, "　次に２年目。",
 		   NULL, "The second year.", Line_WaitForInput);
@@ -1210,7 +1213,7 @@
 	OutputLine(NULL, "　だが、実際にはもう１年清算が続いた。",
 		   NULL, "Yet those incidents were followed by another one.", Line_Normal);
 	ClearMessage();
-	DrawSceneWithMask( "Ji2", "maskleft", 7, 0, 300 );
+	DrawSceneWithMask( "Ji2+", "maskleft", 7, 0, 300 );
 
 	OutputLine(NULL, "　そして３年目。",
 		   NULL, "The third year.", Line_WaitForInput);
@@ -1310,7 +1313,7 @@
 	OutputLine(NULL, "　４番目の序列として、妥当に思える。",
 		   NULL, "It comes naturally as a fourth target.", Line_Normal);
 	ClearMessage();
-	DrawSceneWithMask( "Hi1", "maskleft", 7, 0, 300 );
+	DrawSceneWithMask( "Hi2-", "maskleft", 7, 0, 300 );
 
 	OutputLine(NULL, "　村の守り神であるオヤシロさまを祀る祭りの当日に、ダム戦争の戦犯たちを年々「祟殺し」ていく。",
 		   NULL, "On the day the villagers worship Oyashiro-sama, their guardian deity, the criminals of the dam conflict have been 'punished by the curse'.", Line_WaitForInput);
@@ -1576,8 +1579,8 @@
 		   NULL, " I couldn't stop myself from gasping when I realized that.", Line_Normal);
 	ClearMessage();
 
-	DrawBustshotWithFiltering( 0, "Ta_Warai#", "maskright", 7, 0, 0, FALSE, 0, 0, 0, 0, 0, 9, 0, FALSE );
-	DrawSceneWithMask( "Tosyo7", "maskright", 7, 0, 300 );
+	DrawBustshotWithFiltering( 0, "ta1_warai_0", "maskright", 7, 0, 0, FALSE, 0, 0, 0, 0, 0, 9, 0, FALSE );
+	DrawSceneWithMask( "Tosyo8", "maskright", 7, 0, 300 );
 	PlayBGM( 0, "higurashi", 120, 0 );
 
 	OutputLine(NULL, "「…………ごめんなさい。",
@@ -1610,7 +1613,7 @@
 		   NULL, "But she just stared at my face instead...", Line_Normal);
 	ClearMessage();
 	DisableWindow();
-	ChangeBustshot( 0, "Ta_Def#", 200, TRUE );
+	ChangeBustshot( 0, "ta_si_de_a1", 200, TRUE );
 	DisplayWindow();
 
 	OutputLine(NULL, "「……………………………あなたが、園崎詩音さん？」",
@@ -1629,7 +1632,7 @@
 		   NULL, "People you've never met before can tell exactly who you are.", Line_Normal);
 	ClearMessage();
 	DisableWindow();
-	ChangeBustshot( 0, "Ta_Warai#", 200, TRUE );
+	ChangeBustshot( 0, "ta1_warai_0", 200, TRUE );
 	DisplayWindow();
 
 	OutputLine(NULL, "「くすくす、ごめんなさいね。",
@@ -1660,7 +1663,7 @@
 		   NULL, "She seemed to love her own hair, because she kept running her fingers through it boastfully.", Line_Normal);
 	ClearMessage();
 	DisableWindow();
-	ChangeBustshot( 0, "Ta_Def#", 200, TRUE );
+	ChangeBustshot( 0, "ta_si_de_a1", 200, TRUE );
 	DisplayWindow();
 
 	OutputLine(NULL, "「鷹野三四。",
@@ -1672,7 +1675,7 @@
 	OutputLine(NULL, "「お気遣いありがとうございます、鷹野さん。」",
 		   NULL, "\"Nice to meet you, Takano-san.\"", Line_Normal);
 	ClearMessage();
-	DrawSceneWithMask( "Tosyo8", "maskleft", 7, 0, 300 );
+	DrawSceneWithMask( "black", "maskleft", 7, 0, 300 );
 
 	OutputLine(NULL, "　私は先ほどから、何か小馬鹿にされているような感じがして不愉快でしょうがなかった。",
 		   NULL, "Her condescending attitude bugged me.", Line_WaitForInput);
@@ -1688,7 +1691,8 @@
 		   NULL, "I closed my notebook and got ready to leave the desk.", Line_Normal);
 	ClearMessage();
 	DisableWindow();
-	DrawBustshotWithFiltering( 1, "Ta_Def#", "maskleft", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 8, 300, TRUE );
+	DrawBustshotWithFiltering( 1, "ta1_hatena_0", "maskright", 7, 0, 0, FALSE, 0, 0, 0, 0, 0, 9, 0, FALSE );
+	DrawScene( "Tosyo8", 200 );
 	DisplayWindow();
 
 	OutputLine(NULL, "「あら、…………怒ってる？」",
@@ -1702,6 +1706,9 @@
 	OutputLine(NULL, "失礼します、御機嫌よう。」",
 		   NULL, " Excuse me.\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+	DisableWindow();
+	ChangeBustshot( 1, "ta1_akuwarai_0", 200, TRUE );
+	DisplayWindow();
 
 	OutputLine(NULL, "「…残念ね。",
 		   NULL, "\"...That's a shame.", Line_WaitForInput);
@@ -1715,7 +1722,7 @@
 		   NULL, " I don't think so.\"", Line_Normal);
 	ClearMessage();
 	DisableWindow();
-	ChangeBustshot( 1, "Ta_Warai#", 200, TRUE );
+	ChangeBustshot( 1, "ta1_warai_0", 200, TRUE );
 	DisplayWindow();
 
 	OutputLine(NULL, "「だって、オヤシロさまの祟りについて研究する同志に出会えたんですもの。",
@@ -1741,7 +1748,7 @@
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 	PlayBGM( 0, "Nazo", 120, 0 );
 	DisableWindow();
-	ChangeBustshot( 1, "Ta_Akuwarai#", 200, TRUE );
+	ChangeBustshot( 1, "ta1_akuwarai_0", 200, TRUE );
 	DisplayWindow();
 
 	OutputLine(NULL, "「オヤシロさまの祟りと呼ばれる一連の連続怪死事件。",
@@ -1768,7 +1775,7 @@
 		   NULL, "...But I realized right away that she'd said something extraordinary.", Line_Normal);
 	ClearMessage();
 	DisableWindow();
-	ChangeBustshot( 1, "Ta_Warai#", 200, TRUE );
+	ChangeBustshot( 1, "ta1_warai_0", 200, TRUE );
 	DisplayWindow();
 
 	OutputLine(NULL, "「雛見沢村連続怪死事件の犠牲者が常に偶数人数だってことは、あなたも気付いてたんじゃない？",
@@ -1835,8 +1842,8 @@
 	OutputLine(NULL, "　主犯格が未だ行方不明であることは、悟史くんと同様に、『鬼隠し』で消された可能性も否定できないと。",
 		   NULL, "The main culprit was still missing. He might have been demoned away, just like Satoshi-kun.", Line_Normal);
 	ClearMessage();
-	DrawBustshot( 0, "Ta_Def#", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 9, 0, FALSE );
-	DrawScene( "Tosyo7", 400 );
+	DrawBustshot( 0, "ta_si_de_a1", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 9, 0, FALSE );
+	DrawScene( "Tosyo8", 400 );
 
 	OutputLine(NULL, "「…………………………。」",
 		   NULL, "\".....................\"", Line_WaitForInput);
@@ -1859,7 +1866,7 @@
 	OutputLine(NULL, "　二人で存分に語り明かしたかったんだけど、あなたが孤独を好むなら仕方がないしね。",
 		   NULL, " I really would have enjoyed a conversation with you, but I think you prefer being alone.", Line_WaitForInput);
 	DisableWindow();
-	ChangeBustshot( 0, "Ta_Warai#", 200, TRUE );
+	ChangeBustshot( 0, "ta1_warai_0", 200, TRUE );
 	DisplayWindow();
 
 	OutputLine(NULL, "…くすくすくす。」",
@@ -1924,7 +1931,7 @@
 		   NULL, " One dies due to the curse and the other one is... a sacrifice?\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 	DisableWindow();
-	ChangeBustshot( 0, "Ta_Def#", 200, TRUE );
+	ChangeBustshot( 0, "ta_si_de_a1", 200, TRUE );
 	DisplayWindow();
 
 	OutputLine(NULL, "「………ねぇ詩音ちゃん。",
@@ -1963,7 +1970,7 @@
 		   NULL, " I'm just curious.\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 	DisableWindow();
-	ChangeBustshot( 0, "Ta_Warai#", 200, TRUE );
+	ChangeBustshot( 0, "ta1_warai_0", 200, TRUE );
 	DisplayWindow();
 
 	OutputLine(NULL, "「……………なるほどね。",
@@ -2004,7 +2011,7 @@
 	OutputLine(NULL, "なぜ、祟りを研究すると、連続怪死事件にまで踏み込むことになるのですか？」",
 		   NULL, " but why would you delve into the mysterious deaths if you're researching the curse itself?\"", Line_Normal);
 	ClearMessage();
-	DrawBustshot( 1, "Ta_Def#", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 8, 0, FALSE );
+	DrawBustshot( 1, "ta_si_de_a1", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 9, 0, FALSE );
 	DrawScene( "Tosyo8", 400 );
 
 	OutputLine(NULL, "「詩音ちゃん、質問が一度に多過ぎるわね。",
@@ -2030,7 +2037,7 @@
 	OutputLine(NULL, "……私が研究しているのは祟りじゃなく、もっと広義。",
 		   NULL, " I'm not just researching the curse, as my subject is much broader than that.", Line_WaitForInput);
 	DisableWindow();
-	ChangeBustshot( 1, "Ta_Warai#", 200, TRUE );
+	ChangeBustshot( 1, "ta1_warai_0", 200, TRUE );
 	DisplayWindow();
 
 	OutputLine(NULL, "鬼ヶ淵村の風俗史よ。",
@@ -2074,7 +2081,7 @@
 		   NULL, " the man-eating demons, huh?", Line_Normal);
 	ClearMessage();
 	DrawScene( "black", 400 );
-	DrawScene( "Hi2", 400 );
+	DrawScene( "Hi3", 400 );
 
 	OutputLine(NULL, "　雛見沢村に伝わるおとぎ話だ。",
 		   NULL, "That was a fairytale told in Hinamizawa.", Line_WaitForInput);
@@ -2153,7 +2160,7 @@
 	OutputLine(NULL, "　そんな私でさえ避ける禁句をあっさりと口にする三四さんは、そんなことはまるで気にしない風だった。",
 		   NULL, "Miyo-san, however, seemed to have no qualms with saying it out loud.", Line_Normal);
 	ClearMessage();
-	DrawBustshotWithFiltering( 2, "Ta_Def#", "maskup", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 10, 0, FALSE );
+	DrawBustshot( 2, "ta_si_de_a1", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 9, 0, FALSE );
 	DrawSceneWithMask( "Tosyo8", "maskup", 1, 0, 300 );
 
 	OutputLine(NULL, "「…気に障った？」",
@@ -2176,7 +2183,7 @@
 		   NULL, " Would you continue?\"", Line_Normal);
 	ClearMessage();
 	DisableWindow();
-	ChangeBustshot( 2, "Ta_Warai#", 200, TRUE );
+	ChangeBustshot( 2, "ta1_warai_0", 200, TRUE );
 	DisplayWindow();
 
 	OutputLine(NULL, "「ありがとう。",
@@ -2229,7 +2236,7 @@
 		   NULL, "I couldn't wholly believe it right away. She sensed that from my expression.", Line_Normal);
 	ClearMessage();
 	DisableWindow();
-	ChangeBustshot( 2, "Ta_Def#", 200, TRUE );
+	ChangeBustshot( 2, "ta_si_de_a1", 200, TRUE );
 	DisplayWindow();
 
 	OutputLine(NULL, "「もちろん、思いつきなでっち上げなんかでは断じてない。",
@@ -2254,13 +2261,16 @@
 	OutputLine(NULL, "お借りできるものなら、後でゆっくり読んでみたいと思います。」",
 		   NULL, " I'd love to read it.\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+	DisableWindow();
+	ChangeBustshot( 2, "ta1_akuwarai_0", 200, TRUE );
+	DisplayWindow();
 
 	OutputLine(NULL, "「えぇ、いいわよ。",
 		   NULL, "\"Sure.", Line_WaitForInput);
 	OutputLine(NULL, "本当は閲覧厳禁の秘密ノートだけれどね。",
 		   NULL, " I'd like to keep it confidential...", Line_WaitForInput);
 	DisableWindow();
-	ChangeBustshot( 2, "Ta_Warai#", 200, TRUE );
+	ChangeBustshot( 2, "ta1_warai_0", 200, TRUE );
 	DisplayWindow();
 
 	OutputLine(NULL, "……くすくす、研究の同志になら、特別に見せてあげてもいいわね。」",
@@ -2429,7 +2439,7 @@
 	OutputLine(NULL, "内容を理解できたなら、私の話がそういい加減なものでもないことが分かるはず…。」",
 		   NULL, " You'll see that what I'm telling you isn't far from the truth at all...\"", Line_Normal);
 	ClearMessage();
-	DrawSceneWithMask( "Tosyo2", "maskleft", 1, 0, 300 );
+	DrawSceneWithMask( "Tosyo8", "maskleft", 1, 0, 300 );
 	PlayBGM( 0, "higurashi", 120, 0 );
 
 	OutputLine(NULL, "　突然、そこで男の人の声が聞こえた。",
@@ -2441,8 +2451,7 @@
 	OutputLine(NULL, "　鷹野さ〜んと、向こうの入口のところで、帽子を被った中年の男性が手を振って呼んでいる。",
 		   NULL, "A middle-aged man with a hat was waving at Miyo-san from the entrance.", Line_Normal);
 	ClearMessage();
-	DrawBustshotWithFiltering( 0, "Ta_Def#", "maskright", 1, 0, 0, FALSE, 0, 0, 0, 0, 0, 9, 0, FALSE );
-	DrawSceneWithMask( "Tosyo7", "maskright", 1, 0, 300 );
+	DrawBustshotWithFiltering( 0, "ta_si_de_a1", "maskright", 1, 0, 0, FALSE, 0, 0, 0, 0, 0, 9, 0, FALSE );
 
 	OutputLine(NULL, "「…ごめんなさい、待ち人が来たみたい。",
 		   NULL, "\"...Sorry, I think I have to go.", Line_WaitForInput);
@@ -2453,7 +2462,7 @@
 	OutputLine(NULL, "そのノートはそれまで預けておくわね。",
 		   NULL, " I'll leave those notes to you.", Line_WaitForInput);
 	DisableWindow();
-	ChangeBustshot( 0, "Ta_Warai#", 200, TRUE );
+	ChangeBustshot( 0, "ta1_warai_0", 200, TRUE );
 	DisplayWindow();
 
 	OutputLine(NULL, "中身をよく読んで理解できたなら、私のいい話し相手になってくれるのを楽しみにしているわね。」",
@@ -2472,13 +2481,12 @@
 	OutputLine(NULL, "　私の手元には、彼女に押し付けられた、年季の入った２冊のスクラップ帳が残っている。",
 		   NULL, "She left her old notebooks in my hands.", Line_Normal);
 	ClearMessage();
-	DrawSceneWithMask( "Tosyo2", "maskleft", 1, 0, 300 );
 
 	OutputLine(NULL, "　男性と合流した三四さんは、こちらに手を振ると、そのまま図書館を出て行った。",
 		   NULL, "Miyo-san waved at me as she left the library with her companion.", Line_Normal);
 	ClearMessage();
 	DrawSceneWithMask( "black", "maskright", 1, 0, 300 );
-	DrawSceneWithMask( "Tosyo8", "maskright", 1, 0, 300 );
+	DrawSceneWithMask( "ke5", "maskright", 1, 0, 300 );
 
 	OutputLine(NULL, "　…私は、再び着席し、三四さんの秘蔵の研究ノートをぱらりと開く。",
 		   NULL, "...I took a seat again and opened what she'd given me...", Line_ContinueAfterTyping);

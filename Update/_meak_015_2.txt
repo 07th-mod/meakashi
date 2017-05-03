@@ -26,8 +26,10 @@
 	Wait( 4000 );
 	SetValidityOfInput( TRUE );
 	DrawSceneWithMask( "white", "maskc", 1, 0, 300 );
-	DrawBustshotWithFiltering( 2, "Sa_AkireruA1#", "maskup", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 10, 0, FALSE );
 	DrawSceneWithMask( "Ji5", "maskup", 1, 0, 300 );
+	DrawBustshot( 1, "re_si_ko_a1", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 200, TRUE );
+	DrawBustshot( 2, "ri2_WaraiA1_0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
+	DrawBustshot( 3, "sa_si_ak_a1", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
 	PlayBGM( 0, "semi", 120, 0 );
 	SetSpeedOfMessage( FALSE, 0 );
 
@@ -35,15 +37,14 @@
 		   NULL, "\"Humph! I'm quite amazed by your dirty deeds, Keiichi-san!!\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 	DisableWindow();
-	DrawBustshotWithFiltering( 1, "Ri_WaraiA1#", "maskleft", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 8, 300, TRUE );
+	DrawBustshot( 2, "ri2_DefA1_0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
 	DisplayWindow();
 
 	OutputLine(NULL, "「……男の子なら仕方がないのですよ。」",
 		   NULL, "\"......He is a boy, after all.\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 	DisableWindow();
-	FadeBustshotWithFiltering( 2, "maskleft" , 1, FALSE, 0, 0, 300, TRUE );
-	DrawBustshotWithFiltering( 2, "Re_HauB1#", "maskright", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 10, 300, TRUE );
+	DrawBustshot( 1, "re_si_ha_b1", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 200, TRUE );
 	DisplayWindow();
 
 	OutputLine(NULL, "「魅ぃちゃんも詩ぃちゃんも…圭一くん、困ってるよ………はぅ…。」",
@@ -51,21 +52,19 @@
 	ClearMessage();
 	DrawSceneWithMask( "black", "maskleft", 1, 0, 300 );
 	DrawSceneWithMask( "Ji2", "maskleft", 1, 0, 300 );
+	DrawBustshot( 2, "kei2_Nayamu_0_zoom", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
+	DrawBustshot( 1, "me2_OdorokiA1_0_zoom", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 200, TRUE );
 
 	OutputLine(NULL, "「ですってよーーお姉。",
 		   NULL, "\"Did you hear that, Sis?", Line_WaitForInput);
 	OutputLine(NULL, "大岡越前じゃあるまいしー、このまま圭ちゃんが引き千切れるまで引っ張りっこしますー？！」",
 		   NULL, " We're not playing tug of war here. Are you trying to tear Kei-chan apart?!\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
-	DisableWindow();
-	DrawBustshotWithFiltering( 0, "Me_OdorokiA1#", "maskright", 1, 0, 0, FALSE, 0, 0, 0, 0, 0, 9, 300, TRUE );
-
-	DisplayWindow();
 
 	OutputLine(NULL, "「引っ張りっこなんかしてないよ、詩音が引っ張らなければ済むことでしょー？！",
 		   NULL, "\"I'm not playing tug of war! You're the one who's stretching him.", Line_WaitForInput);
 	DisableWindow();
-	ChangeBustshot( 0, "Me_TohohoA1#", 200, TRUE );
+	DrawBustshot( 1, "me2_IkariA1_0_zoom", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 200, TRUE );
 
 	DisplayWindow();
 
@@ -82,7 +81,7 @@
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 	PlaySE( 0, "s_furu", 128, 64 );
 	DisableWindow();
-	FadeBustshotWithFiltering( 0, "maskright" , 7, FALSE, 0, 0, 300, TRUE );
+	FadeAllBustshots( 400, TRUE );
 	DisplayWindow();
 	PlaySE( 0, "s_Down", 128, 64 );
 	StartShakingOfWindow( 248, 40, 0, 0, 4*2, FALSE );
@@ -97,7 +96,6 @@
 	OutputLine(NULL, "…やれやれ、熱くなりやすいやつめ。",
 		   NULL, " What lively people.", Line_Normal);
 	ClearMessage();
-	DrawSceneWithMask( "Ji5", "maskright", 1, 0, 300 );
 
 	OutputLine(NULL, "「じゃ圭ちゃん。",
 		   NULL, "\"See you, Kei-chan.", Line_WaitForInput);
@@ -105,7 +103,7 @@
 		   NULL, " Sis might assault me if I stick around any longer, so I'll get going.\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 	DisableWindow();
-	DrawBustshotWithFiltering( 2, "Kei_Def2#", "maskright", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 10, 300, TRUE );
+	DrawBustshotWithFiltering( 2, "kei2_Def2_0_zoom", "maskright", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 10, 300, TRUE );
 	DisplayWindow();
 
 	OutputLine(NULL, "「あ、詩音。",
@@ -120,7 +118,7 @@
 		   NULL, " I didn't do much.\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 	DisableWindow();
-	ChangeBustshot( 2, "Kei_Warai#", 200, TRUE );
+	ChangeBustshot( 2, "kei2_Warai_0_zoom", 200, TRUE );
 	DisplayWindow();
 
 	OutputLine(NULL, "「じゃ、またな、詩音。」",
@@ -145,7 +143,7 @@
 		   NULL, " But the warmth reminded me......", Line_Normal);
 	ClearMessage();
 	DrawScene( "black", 400 );
-	DrawSceneWithMask( "Sora2", "maskup", 1, 0, 300 );
+	DrawSceneWithMask( "Sora3", "maskup", 1, 0, 300 );
 
 	OutputLine(NULL, "「あ、あははははははは…！！",
 		   NULL, "\"Ah, ahahahahaha...!!", Line_WaitForInput);
@@ -169,7 +167,7 @@
 	FadeOutBGM( 2, 0, FALSE );
 	FadeOutBGM( 3, 0, FALSE );
 	DrawBustshot( 19, "no_data", 0, 100, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, TRUE );
-	DrawSceneWithMask( "Hi4", "maskleft", 1, 0, 300 );
+	DrawSceneWithMask( "sora2", "maskleft", 1, 0, 300 );
 	PlayBGM( 1, "higurashi", 120, 0 );
 
 	OutputLine(NULL, "　頭の天辺が、……温かくて、…むず痒くて、……ジンジンと痛んだ。",
@@ -203,6 +201,7 @@
 		   NULL, "I can never smile because you aren't here... I can't...", Line_Normal);
 	ClearMessage();
 	DrawScene( "black", 400 );
+	DrawBustshot( 2, "kei2_Warai_0_zoom", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
 
 	ClearMessage();
 	OutputLine(NULL, "“じゃ、またな、詩音。”",
@@ -242,6 +241,7 @@
 	OutputLine(NULL, "　私は全然うれしくも楽しくも",
 		   NULL, " I wasn't happy or overjoyed at all...", Line_Normal);
 	ClearMessage();
+	FadeAllBustshots( 400, TRUE );
 
 	OutputLine(NULL, "「嘘だああああぁあああぁッ！！！！………ぅうぅぅ、……悟……ト、シ……くん…………。",
 		   NULL, "\"Noooooo!!!! ...Oohhh... Satoshi... kun...", Line_WaitForInput);
@@ -449,7 +449,7 @@
 	FadeOutBGM( 0, 0, FALSE );
 	FadeOutBGM( 2, 0, FALSE );
 	DrawBustshot( 19, "no_data", 0, 100, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, TRUE );
-	DrawSceneWithMask( "Hi4", "maskright", 1, 0, 300 );
+	DrawSceneWithMask( "black", "maskright", 1, 0, 300 );
 
 	OutputLine(NULL, "　私は単車の元へ戻る。",
 		   NULL, "I walked back to my moped.", Line_WaitForInput);

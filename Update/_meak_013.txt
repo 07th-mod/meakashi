@@ -50,7 +50,7 @@
 	OutputLine(NULL, "　それから、すぐに興宮の整形外科に車で連れて行かれた。",
 		   NULL, "I was taken to a hospital in Okinomiya.", Line_Normal);
 	ClearMessage();
-	DrawSceneWithMask( "Kuruma5", "maskleft", 1, 0, 300 );
+	DrawSceneWithMask( "Kuruma5-", "maskleft", 1, 0, 300 );
 
 	OutputLine(NULL, "　病院までの道中の揺れがとにかく辛かった。",
 		   NULL, "The car shook on the way, adding extra pain on top of what I already felt.", Line_WaitForInput);
@@ -71,12 +71,12 @@
 	OutputLine(NULL, "…水も飲まずに、痛みがぶり返す度に頭痛薬を唾で飲み込んで耐えた。",
 		   NULL, " I swallowed the pills without water.", Line_Normal);
 	ClearMessage();
-	DrawSceneWithMask( "Sinryo_matiai2", "maskleft", 1, 0, 300 );
+	DrawSceneWithMask( "Sinryo_matiai2-", "maskleft", 1, 0, 300 );
 
 	OutputLine(NULL, "　…病院で治療を受け、待合室で呆然としていた時。",
 		   NULL, "...While I was spacing out in the waiting lounge...", Line_WaitForInput);
 	DisableWindow();
-	DrawBustshot( 2, "Kasa2", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
+	DrawBustshot( 2, "Kasa3-", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
 	DisplayWindow();
 
 	OutputLine(NULL, "………葛西が来たのだった。",
@@ -105,7 +105,7 @@
 		   NULL, "...I was relieved that my sacrifice had meant something.", Line_Normal);
 	ClearMessage();
 	DisableWindow();
-	ChangeBustshot( 2, "Kasa3", 200, TRUE );
+	ChangeBustshot( 2, "Kasa2-", 200, TRUE );
 	DisplayWindow();
 
 	OutputLine(NULL, "　葛西は何も言わなかった。",
@@ -152,7 +152,7 @@
 		   NULL, "\".....................\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 	DisableWindow();
-	ChangeBustshot( 2, "Kasa2", 200, TRUE );
+	ChangeBustshot( 2, "Kasa3-", 200, TRUE );
 	DisplayWindow();
 
 	OutputLine(NULL, "「………したたかな方です。",
@@ -197,11 +197,13 @@
 	OutputLine(NULL, "　…………その後、勘定を済ませ、私は葛西の車で自分の部屋に送り届けられたのだった……。",
 		   NULL, "...I paid the hospital bill, and Kasai gave me a ride home...", Line_Normal);
 	ClearMessage();
+	DrawScene( "maskc", 400 );
 	PlayBGM( 1, "semi", 120, 0 );
 
 	OutputLine(NULL, "　…ぼーっとする頭が、ようやくこの部屋がノックされていることに気付く。",
 		   NULL, "...I finally realized that somebody was knocking on my door.", Line_Normal);
 	ClearMessage();
+	DrawScene( "black", 400 );
 
 	OutputLine(NULL, "「詩音さん、……そろそろ体を起こしてください。",
 		   NULL, "\"Shion-san...", Line_WaitForInput);
@@ -218,7 +220,7 @@
 		   NULL, "He put some side dishes on the table, and we started nibbling at them...", Line_Normal);
 	ClearMessage();
 	DisableWindow();
-	DrawBustshotWithFiltering( 2, "Kasa2", "maskright", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 10, 300, TRUE );
+	DrawBustshotWithFiltering( 2, "Kasa3", "maskright", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 10, 300, TRUE );
 	DisplayWindow();
 	FadeOutBGM( 1, 0, FALSE );
 	DrawBustshot( 19, "no_data", 0, 100, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, TRUE );
@@ -244,6 +246,7 @@
 	OutputLine(NULL, "あとは天井を見てるか、眠っているかのどっちか。」",
 		   NULL, " Otherwise, I've been either sleeping or staring at the ceiling.\"", Line_Normal);
 	ClearMessage();
+	DrawScene( "black", 400 );
 
 	OutputLine(NULL, "　あれから３日間。",
 		   NULL, "It had been three days...", Line_WaitForInput);
@@ -262,7 +265,6 @@
 	OutputLine(NULL, "　何も交わす言葉がなく、……私は黙々と箸を口に運ぶだけだった。",
 		   NULL, "I wasn't able to think of anything to talk to Kasai about... so I just ate silently.", Line_Normal);
 	ClearMessage();
-	DrawScene( "black", 400 );
 	DrawScene( "Si_H2", 400 );
 
 	OutputLine(NULL, "「昨日、………魅音さんから連絡がありました。",
@@ -336,8 +338,8 @@
 	OutputLine(NULL, "　そして…会話の流れを断ち切らず、…ずっと聞きたかったことを口にした。",
 		   NULL, "Before the conversation ended... I should ask him what I wanted to know.", Line_Normal);
 	ClearMessage();
-	DrawBustshotWithFiltering( 0, "Kasa1", "maskup", 1, 0, 0, FALSE, 0, 0, 0, 0, 0, 9, 0, FALSE );
 	DrawSceneWithMask( "Si_H3", "maskup", 1, 0, 300 );
+	DrawBustshot( 3, "kasa1", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
 
 	OutputLine(NULL, "「…………………悟史くんは、",
 		   NULL, "\".........How's Satoshi-kun", Line_ContinueAfterTyping);
@@ -376,7 +378,7 @@
 		   NULL, "Kasai put his chopsticks down.", Line_Normal);
 	ClearMessage();
 	DisableWindow();
-	ChangeBustshot( 0, "Kasa3", 200, TRUE );
+	ChangeBustshot( 0, "Kasa2", 200, TRUE );
 	DisplayWindow();
 
 	OutputLine(NULL, "「本家から、……北条悟史くんのことは忘れろと託かっています。」",
@@ -509,8 +511,8 @@
 	OutputLine(NULL, "……そんな危険を冒してまで、悟史くんに、私は何をしようと言うんだろう……？",
 		   NULL, " Should I risk it? What the hell did I even want from Satoshi-kun...?", Line_Normal);
 	ClearMessage();
-	DrawBustshot( 2, "Kasa2", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, FALSE );
-	DrawScene( "Si_H2", 400 );
+	DrawBustshot( 2, "Kasa3", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, FALSE );
+	DrawScene( "Si_H3", 400 );
 
 	OutputLine(NULL, "「…………………………葛西。",
 		   NULL, "\".....................Kasai.", Line_WaitForInput);
@@ -558,11 +560,7 @@
 	SetValidityOfInput( FALSE );
 	Wait( 2000 );
 	SetValidityOfInput( TRUE );
-	DrawSceneWithMask( "Mati1", "maskright", 1, 0, 300 );
-	SetValidityOfInput( FALSE );
-	Wait( 2000 );
-	SetValidityOfInput( TRUE );
-	DrawSceneWithMask( "mati_O1", "maskright", 1, 0, 300 );
+	DrawSceneWithMask( "mati1", "maskright", 1, 0, 300 );
 	SetSpeedOfMessage( FALSE, 0 );
 	PlayBGM( 0, "demo_48khz", 120, 0 );
 
@@ -583,7 +581,7 @@
 	OutputLine(NULL, "　悟史くんに似た雰囲気の人とすれ違う度に、顔をしげしげと覗き込んでしまうのだから。",
 		   NULL, "I couldn't stop myself from looking at the faces of passersby who resembled him.", Line_Normal);
 	ClearMessage();
-	DrawScene( "Sora", 400 );
+	DrawScene( "Sora3", 400 );
 
 	OutputLine(NULL, "　おもちゃ屋のショーケースを見る。",
 		   NULL, "I looked into the store's window.", Line_WaitForInput);
@@ -649,7 +647,7 @@
 	OutputLine(NULL, "　だが、私に対してのものだとは思わず、無視を続けていたが、しつこく続くので顔を上げた。",
 		   NULL, "I didn't think it was honking at me at first, but it was so persistent that I had to look up.", Line_Normal);
 	ClearMessage();
-	DrawSceneWithMask( "mati_O1", "maskleft", 1, 0, 300 );
+	DrawSceneWithMask( "mati1", "maskleft", 1, 0, 300 );
 
 	OutputLine(NULL, "　車から誰かが手を振っている。",
 		   NULL, "The person waving at me from their car...", Line_WaitForInput);
@@ -661,7 +659,7 @@
 		   NULL, "He was waving at me all carefree, oblivious to my feelings.", Line_Normal);
 	ClearMessage();
 	DisableWindow();
-	DrawBustshotWithFiltering( 2, "Iri_Def2#", "maskright", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 10, 300, TRUE );
+	DrawBustshotWithFiltering( 2, "iri1_Def2_0", "maskright", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 10, 300, TRUE );
 	DisplayWindow();
 
 	OutputLine(NULL, "「園崎さん〜。",
@@ -676,7 +674,7 @@
 		   NULL, "\"......No, I'm not.\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 	DisableWindow();
-	ChangeBustshot( 2, "Iri_Def1#", 200, TRUE );
+	ChangeBustshot( 2, "ir_si_de_a1", 200, TRUE );
 	DisplayWindow();
 
 	OutputLine(NULL, "「そのおもちゃ屋さんのショーウィンドゥは、北条さんもよく覗いていましたからね。",
@@ -699,7 +697,7 @@
 		   NULL, "He smiled upon seeing its empty display space.", Line_Normal);
 	ClearMessage();
 	DisableWindow();
-	ChangeBustshot( 2, "Iri_Warai#", 200, TRUE );
+	ChangeBustshot( 2, "iri1_Warai_0", 200, TRUE );
 	DisplayWindow();
 
 	OutputLine(NULL, "「……昨日が沙都子ちゃんの誕生日でした。",
@@ -720,7 +718,7 @@
 		   NULL, "\"...Did he... turn in his resignation to the Hinamizawa Fighters?\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 	DisableWindow();
-	ChangeBustshot( 2, "Iri_Def2#", 200, TRUE );
+	ChangeBustshot( 2, "iri1_Def2_0", 200, TRUE );
 	DisplayWindow();
 
 	OutputLine(NULL, "「そんなもの出てたんですか？",
@@ -735,7 +733,7 @@
 		   NULL, "\"...Ahahaha. No, I didn't.\"", Line_Normal);
 	ClearMessage();
 	DisableWindow();
-	ChangeBustshot( 2, "Iri_Warai#", 200, TRUE );
+	ChangeBustshot( 2, "iri1_Warai_0", 200, TRUE );
 	DisplayWindow();
 
 	OutputLine(NULL, "「誰も退部届けを受け取ってないなら、ははは、まだうちの部員ってことですね。",
@@ -756,7 +754,7 @@
 		   NULL, "He must have been trying to sound optimistic because he knew I was feeling a bit down.", Line_Normal);
 	ClearMessage();
 	DisableWindow();
-	ChangeBustshot( 2, "Iri_Def1#", 200, TRUE );
+	ChangeBustshot( 2, "ir_si_de_a1", 200, TRUE );
 	DisplayWindow();
 
 	OutputLine(NULL, "「………園崎さんも、落ち着いたらいつでもチームに帰って来てください。",
@@ -764,7 +762,7 @@
 	OutputLine(NULL, "あなたがいないと、やっぱり寂しいですよ。",
 		   NULL, " It might as well be empty without you.", Line_WaitForInput);
 	DisableWindow();
-	ChangeBustshot( 2, "Iri_warai#", 200, TRUE );
+	ChangeBustshot( 2, "iri1_Warai_0", 200, TRUE );
 	DisplayWindow();
 
 	OutputLine(NULL, "…園崎さんが帰ってきてくれたら、ぜひ女子マネージャーの制服をメイドさんな格好にしようと思ってまして。」",
@@ -791,7 +789,7 @@
 		   NULL, " I've been pretending to be her for a few reasons.\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 	DisableWindow();
-	ChangeBustshot( 2, "Iri_Def2#", 200, TRUE );
+	ChangeBustshot( 2, "iri1_Def2_0", 200, TRUE );
 	DisplayWindow();
 
 	OutputLine(NULL, "「え、……え？",
@@ -823,7 +821,7 @@
 	FadeOutBGM( 3, 0, FALSE );
 	DrawBustshot( 19, "no_data", 0, 100, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, TRUE );
 	DisableWindow();
-	DrawBustshotWithFiltering( 1, "Oisi2", "maskleft", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 8, 300, TRUE );
+	DrawBustshotWithFiltering( 1, "oi_si_wa_a1", "maskleft", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 8, 300, TRUE );
 	DisplayWindow();
 
 	OutputLine(NULL, "「なっはっはっは。そりゃまったく同感です。」",
@@ -847,7 +845,7 @@
 		   NULL, " Ooishi.", Line_Normal);
 	ClearMessage();
 	DisableWindow();
-	ChangeBustshot( 1, "Oisi1", 200, TRUE );
+	ChangeBustshot( 1, "oi_si_de_a1", 200, TRUE );
 	DisplayWindow();
 
 	OutputLine(NULL, "「入江先生もこんにちは。",
@@ -856,7 +854,7 @@
 		   NULL, " Thank you for your cooperation last night.\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 	DisableWindow();
-	ChangeBustshot( 2, "Iri_Def1#", 200, TRUE );
+	ChangeBustshot( 2, "ir_si_de_a1", 200, TRUE );
 	DisplayWindow();
 
 	OutputLine(NULL, "「いえ、何もお役に立てませんで、申し訳ないです。」",
@@ -877,8 +875,7 @@
 		   NULL, "Irie whispered to me.", Line_Normal);
 	ClearMessage();
 
-	DrawBustshot( 0, "Iri_majime#", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 9, 0, FALSE );
-	DrawScene( "mati_O1", 400 );
+	ChangeBustshot( 2, "iri1_Majime_0", 200, TRUE );
 
 	OutputLine(NULL, "「……私はもうここを離れますが、一緒に車に乗りますか？",
 		   NULL, "\"......I'm leaving now. Do you want to get in my car?", Line_WaitForInput);
@@ -889,10 +886,6 @@
 	OutputLine(NULL, "　監督は、大石の狙いが私にあるものと思い、さり気なく助け舟を出してくれたのだった。",
 		   NULL, "Irie figured that Ooishi was after me, so he was giving me a chance to slip away.", Line_Normal);
 	ClearMessage();
-	DisableWindow();
-	FadeBustshotWithFiltering( 0, "mask00" , 0, FALSE, 0, 0, 300, TRUE );
-	DrawBustshotWithFiltering( 1, "Oisi1", "maskleft", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 8, 300, TRUE );
-	DisplayWindow();
 
 	OutputLine(NULL, "　確かに大石の顔を見ると、明らかに関心が私に向けられていることは明白だ。",
 		   NULL, "Looking at Ooishi's face, it was clear that his focus was on me, not Irie.", Line_WaitForInput);
@@ -918,14 +911,14 @@
 		   NULL, " Let's get going.\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 	DisableWindow();
-	ChangeBustshot( 1, "Oisi4", 200, TRUE );
+	ChangeBustshot( 1, "oisi1_4_0", 200, TRUE );
 	DisplayWindow();
 
 	OutputLine(NULL, "「…ありゃあ、お二人でどちらかにお出掛けの途中でしたか？」",
 		   NULL, "\"...Oh, are you two going somewhere together?\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 	DisableWindow();
-	DrawBustshotWithFiltering( 2, "Iri_Def2#", "maskright", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 10, 300, TRUE );
+	DrawBustshotWithFiltering( 2, "iri1_Def2_0", "maskright", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 10, 300, TRUE );
 	DisplayWindow();
 
 	OutputLine(NULL, "「えぇ。",
@@ -936,6 +929,8 @@
 		   NULL, " We have to drop by a few places, so will you excuse us?\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+	FadeAllBustshots( 400, TRUE );
+	DrawBustshotWithFiltering( 1, "oisi1_4_0", "maskleft", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 8, 300, TRUE );
 
 
 	OutputLine(NULL, "　監督がお辞儀したので、私も一緒にお辞儀する。",
@@ -956,7 +951,7 @@
 		   NULL, "But he didn't have a warrant, so he couldn't stop us. I moved to get into Irie's car.", Line_Normal);
 	ClearMessage();
 	DisableWindow();
-	ChangeBustshot( 1, "Oisi2", 200, TRUE );
+	ChangeBustshot( 1, "oi_si_wa_a1", 200, TRUE );
 	DisplayWindow();
 
 	OutputLine(NULL, "「………お怪我は大丈夫なんですか？",
@@ -983,8 +978,8 @@
 	OutputLine(NULL, "　だから大石は、私の左手の包帯を見ていないはず。",
 		   NULL, "There was no way Ooishi could have been able to see it.", Line_Normal);
 	ClearMessage();
-	DrawBustshot( 0, "Oisi4", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 9, 0, FALSE );
-	DrawScene( "mati_O1", 400 );
+	DrawScene( "mati1", 400 );
+	DrawBustshot( 1, "oisi1_4_0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 200, TRUE );
 
 	OutputLine(NULL, "「化膿さえしなきゃ、綺麗に治りますよ",
 		   NULL, "\"They'll heal with no problems if they don't get infected.", Line_WaitForInput);
@@ -1030,7 +1025,7 @@
 		   NULL, " Excuse us.\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 	DisableWindow();
-	ChangeBustshot( 0, "Oisi1", 200, TRUE );
+	DrawBustshot( 1, "oi_si_de_a1", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 200, TRUE );
 	DisplayWindow();
 
 	OutputLine(NULL, "「園崎詩音さん。",
@@ -1045,7 +1040,7 @@
 		   NULL, " Are you hitting on me?\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 	DisableWindow();
-	ChangeBustshot( 0, "Oisi2", 200, TRUE );
+	DrawBustshot( 1, "oi_si_wa_a1", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 200, TRUE );
 	DisplayWindow();
 
 	OutputLine(NULL, "「そういうことでもいいですよ？",
@@ -1062,7 +1057,7 @@
 		   NULL, " I can't waste any of that precious time on things that don't interest me.\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 	DisableWindow();
-	ChangeBustshot( 0, "Oisi4", 200, TRUE );
+	DrawBustshot( 1, "oisi1_4_0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 200, TRUE );
 	DisplayWindow();
 
 	OutputLine(NULL, "「あーあー…もう、参ったなぁ…。",
@@ -1083,7 +1078,7 @@
 		   NULL, " I doubt you could call it a conversation.\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 	DisableWindow();
-	ChangeBustshot( 0, "Oisi2", 200, TRUE );
+	DrawBustshot( 1, "oi_si_wa_a1", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 200, TRUE );
 	DisplayWindow();
 
 	OutputLine(NULL, "「えぇえぇ、それで結構です。",
@@ -1112,7 +1107,7 @@
 		   NULL, " I got a bit curious, even though I was still skeptical.", Line_Normal);
 	ClearMessage();
 	DisableWindow();
-	FadeBustshotWithFiltering( 0, "maskleft" , 1, FALSE, 0, 0, 300, TRUE );
+	FadeAllBustshots( 400, TRUE );
 	DisplayWindow();
 
 	OutputLine(NULL, "「……監督。",
@@ -1121,7 +1116,7 @@
 		   NULL, " I think I'll go with the old man instead.\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 	DisableWindow();
-	DrawBustshotWithFiltering( 2, "Iri_Majime#", "maskright", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 10, 300, TRUE );
+	DrawBustshotWithFiltering( 2, "iri1_Majime_0", "maskright", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 10, 300, TRUE );
 	DisplayWindow();
 
 	OutputLine(NULL, "「魅ぉ、……じゃない、詩音さん…。」",
@@ -1170,7 +1165,7 @@
 		   NULL, "Ooishi carefully checked for oncoming traffic, and then started driving.", Line_Normal);
 	ClearMessage();
 	DrawSceneWithMask( "black", "maskleft", 1, 0, 300 );
-	DrawSceneWithMask( "ke1", "maskleft", 1, 0, 300 );
+	DrawSceneWithMask( "ke1--", "maskleft", 1, 0, 300 );
 
 	OutputLine(NULL, "　大石の車は予想を裏切らず、本当に興宮署にやって来た。",
 		   NULL, "Ooishi took me to the police station, as I thought he might.", Line_WaitForInput);
@@ -1182,10 +1177,6 @@
 		   NULL, "...If he had taken me to a nice cafe, he would've scored some points...", Line_WaitForInput);
 	OutputLine(NULL, "……まぁそんなもんだ。",
 		   NULL, " but whatever.", Line_Normal);
-	ClearMessage();
-	DisableWindow();
-	DrawBustshotWithFiltering( 2, "Oisi1", "maskright", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 10, 300, TRUE );
-	DisplayWindow();
 
 	OutputLine(NULL, "「署の方が都合がいいと思ったから署にしただけです。",
 		   NULL, "\"I thought it'd be more convenient if we came here...", Line_WaitForInput);
@@ -1198,6 +1189,10 @@
 	OutputLine(NULL, "……署内には腕組んで入ってあげましょうか、おじさま？」",
 		   NULL, " Do you want me to go into the station hand in hand with you?\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+	ClearMessage();
+	DisableWindow();
+	DrawBustshotWithFiltering( 2, "oi_si_de_a1", "maskright", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 10, 300, TRUE );
+	DisplayWindow();
 
 	OutputLine(NULL, "　大石はカラカラと笑いながら車を降りると、私を先導して歩き出す…。",
 		   NULL, "Ooishi chuckled and got out of the car. He escorted me inside the station...", Line_Normal);
@@ -1228,7 +1223,7 @@
 		   NULL, "I'd never been to this part of the police station. I looked around in curiosity.", Line_Normal);
 	ClearMessage();
 	DisableWindow();
-	DrawBustshotWithFiltering( 1, "Oisi4", "maskleft", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 8, 300, TRUE );
+	DrawBustshot( 2, "oisi1_4_0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
 	DisplayWindow();
 
 	OutputLine(NULL, "「まさか、取調室でカツ丼でも食わされると思いました？」",
@@ -1245,7 +1240,7 @@
 		   NULL, " I thought you'd whip me or something.\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 	DisableWindow();
-	ChangeBustshot( 1, "Oisi2", 200, TRUE );
+	DrawBustshot( 2, "oi_si_wa_a1", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
 	DisplayWindow();
 
 	OutputLine(NULL, "「そういうのは私の趣味じゃないなぁ。",
@@ -1260,7 +1255,7 @@
 		   NULL, " I thought you wanted to talk.\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 	DisableWindow();
-	ChangeBustshot( 1, "Oisi1", 200, TRUE );
+	DrawBustshot( 2, "oi_si_de_a1", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
 	DisplayWindow();
 
 	OutputLine(NULL, "「じゃあ最初からいきなり単刀直入に。",
@@ -1275,7 +1270,7 @@
 		   NULL, " It's getting boring already. I'm going home.\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 	DisableWindow();
-	ChangeBustshot( 1, "Oisi2", 200, TRUE );
+	DrawBustshot( 2, "oi_si_wa_a1", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
 	DisplayWindow();
 
 	OutputLine(NULL, "「なはははははは…、じゃあ今のはナシということで。」",
@@ -1296,7 +1291,7 @@
 		   NULL, "\"...I already talked to Detective Kumagai about Satoshi-kun's alibi that day.\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 	DisableWindow();
-	ChangeBustshot( 1, "Oisi1", 200, TRUE );
+	DrawBustshot( 2, "oi_si_de_a1", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
 	DisplayWindow();
 
 	OutputLine(NULL, "「もちろん私も熊ちゃ、…いや、熊谷くんの調書は読んでます。",
@@ -1311,7 +1306,7 @@
 		   NULL, " Don't think you can poke holes in it.\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 	DisableWindow();
-	ChangeBustshot( 1, "Oisi4", 200, TRUE );
+	DrawBustshot( 2, "oisi1_4_0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
 	DisplayWindow();
 
 	OutputLine(NULL, "「まさかまさか、そんなこと考えてません。",
@@ -1342,7 +1337,7 @@
 		   NULL, "I got up off the couch.", Line_Normal);
 	ClearMessage();
 	DisableWindow();
-	ChangeBustshot( 1, "Oisi1", 200, TRUE );
+	DrawBustshot( 2, "oi_si_de_a1", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
 	DisplayWindow();
 
 	OutputLine(NULL, "「詩音さん。",
@@ -1369,7 +1364,7 @@
 		   NULL, "Ooishi didn't get anxious, but instead spoke a little louder.", Line_Normal);
 	ClearMessage();
 	DisableWindow();
-	ChangeBustshot( 1, "Oisi4", 200, TRUE );
+	DrawBustshot( 2, "oisi1_4_0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
 	DisplayWindow();
 
 	OutputLine(NULL, "「でもね詩音さん。",
@@ -1401,8 +1396,8 @@
 	OutputLine(NULL, "　…え？",
 		   NULL, "...What?", Line_Normal);
 	ClearMessage();
-	DrawBustshot( 0, "Oisi4", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 9, 0, FALSE );
-	DrawScene( "Ke_S1", 400 );
+	DrawBustshot( 0, "oisi1_4_0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 9, 0, FALSE );
+	DrawScene( "Ke_S2", 400 );
 
 	OutputLine(NULL, "「……悟史くんが失踪されたことは、ご存知なかった？」",
 		   NULL, "\"...Didn't you know that he went missing?\"", Line_WaitForInput);
@@ -1432,7 +1427,7 @@
 		   NULL, " What the hell?!\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 	DisableWindow();
-	ChangeBustshot( 0, "Oisi1", 200, TRUE );
+	ChangeBustshot( 0, "oi_si_de_a1", 200, TRUE );
 	DisplayWindow();
 
 	OutputLine(NULL, "「ひとつ確実に分かっていることは、彼が三時前に、興宮の郵便局で貯金を全額下ろしているということだけです。",
@@ -1457,7 +1452,7 @@
 		   NULL, "...Yes, he definitely bought that teddy bear yesterday.", Line_Normal);
 	ClearMessage();
 	DisableWindow();
-	ChangeBustshot( 0, "Oisi2", 200, TRUE );
+	ChangeBustshot( 0, "oi_si_wa_a1", 200, TRUE );
 	DisplayWindow();
 
 	OutputLine(NULL, "「…こりゃ私の想像ですよ？",
@@ -1481,7 +1476,7 @@
 	OutputLine(NULL, "「確かにあのおもちゃ屋から、一番高いぬいぐるみが売れていました。",
 		   NULL, "\"Yes, the most expensive teddy bear in that toy store was sold.", Line_WaitForInput);
 	DisableWindow();
-	ChangeBustshot( 0, "Oisi4", 200, TRUE );
+	ChangeBustshot( 0, "oisi1_4_0", 200, TRUE );
 	DisplayWindow();
 
 	OutputLine(NULL, "でもね、それを悟史くんが買った確証が取れないんです。」",
@@ -1539,7 +1534,7 @@
 		   NULL, " That's nonsense!\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 	DisableWindow();
-	ChangeBustshot( 0, "Oisi2", 200, TRUE );
+	ChangeBustshot( 0, "oi_si_wa_a1", 200, TRUE );
 	DisplayWindow();
 
 	OutputLine(NULL, "「いいですよ？",
@@ -1551,7 +1546,7 @@
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 	PlayBGM( 1, "kaze", 120, 0 ); //should be kaze sound
 
-	DrawSceneWithMask( "Ke_S1_nega1", "maskc", 0, 0, 300 );
+	DrawSceneWithMask( "Ke_S2-", "maskc", 0, 0, 300 );
 
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
@@ -1595,7 +1590,7 @@
 	OutputLine(NULL, "　…悟史くんは、身を削って得たぬいぐるみを、絶対に沙都子に渡すはずだ。",
 		   NULL, "...Satoshi-kun should've given it to Satoko.", Line_Normal);
 	ClearMessage();
-	DrawScene( "white", 400 );
+	DrawScene( "black", 400 );
 
 
 	OutputLine(NULL, "　だが、悟史くんはぬいぐるみを買ったのに、",
@@ -1828,7 +1823,8 @@
 	FadeOutBGM( 2, 0, FALSE );
 	FadeOutBGM( 3, 0, FALSE );
 	DrawBustshot( 19, "no_data", 0, 100, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, TRUE );
-	DrawScene( "Ke_S1", 400 );
+	DrawScene( "Ke_S2", 400 );
+	DrawBustshot( 2, "oi_si_wa_a1", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
 	PlayBGM( 1, "suzu", 120, 0 );
 
 	OutputLine(NULL, "「悟史くんが、……………消された………………？",
@@ -1895,7 +1891,7 @@
 	FadeOutBGM( 1, 0, FALSE );
 	DrawBustshot( 19, "no_data", 0, 100, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, TRUE );
 	DisableWindow();
-	DrawBustshotWithFiltering( 2, "Oisi1", "maskright", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 10, 300, TRUE );
+	DrawBustshot( 2, "oi_si_de_a1", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
 	DisplayWindow();
 
 	OutputLine(NULL, "「詩音さん。",
@@ -1943,7 +1939,7 @@
 	ClearMessage();
 	PlayBGM( 0, "z2_hig1", 120, 0 );
 	DisableWindow();
-	ChangeBustshot( 2, "Oisi4", 200, TRUE );
+	DrawBustshot( 2, "oisi1_4_0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
 	DisplayWindow();
 
 	OutputLine(NULL, "「………死んだ叔母が、悟史くんと沙都子さんを虐めていたことは、よーく聞いています。",
@@ -1984,7 +1980,7 @@
 		   NULL, " Just go on!!\"", Line_Normal);
 	ClearMessage();
 	DisableWindow();
-	ChangeBustshot( 2, "Oisi1", 200, TRUE );
+	DrawBustshot( 2, "oi_si_de_a1", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
 	DisplayWindow();
 
 	OutputLine(NULL, "「北条悟史は、叔母殺しを計画し、実行した。",
@@ -2003,7 +1999,7 @@
 		   NULL, " Just keep talking...!!\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 	DisableWindow();
-	ChangeBustshot( 2, "Oisi4", 200, TRUE );
+	DrawBustshot( 2, "oisi1_4_0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
 	DisplayWindow();
 
 	OutputLine(NULL, "「ここで話は変わります。",
@@ -2052,8 +2048,8 @@
 	OutputLine(NULL, "　だからその時点で、園崎本家は殺人犯と恋仲にある私の存在が、急に疎ましくなり………放置できなくなったのだ。",
 		   NULL, "The Sonozaki family didn't like that I was in love with a murderer. They decided to step in...", Line_Normal);
 	ClearMessage();
-	DrawBustshot( 0, "Oisi4", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 9, 0, FALSE );
-	DrawScene( "Ke_S1", 400 );
+	DrawBustshot( 0, "oisi1_4_0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 9, 0, FALSE );
+	DrawScene( "Ke_S2", 400 );
 
 	OutputLine(NULL, "「あと、…あなた、諦めが悪いことでも知られてるんじゃないですか？",
 		   NULL, "\"Also... you're known to not give up easily, aren't you?", Line_WaitForInput);
@@ -2077,7 +2073,7 @@
 		   NULL, "But I still knew Satoshi-kun's phone number, and I expected him to rejoin the Hinamizawa Fighters eventually.", Line_Normal);
 	ClearMessage();
 	DisableWindow();
-	ChangeBustshot( 0, "Oisi1", 200, TRUE );
+	ChangeBustshot( 0, "oi_si_de_a1", 200, TRUE );
 	DisplayWindow();
 
 	OutputLine(NULL, "「園崎本家は、悟史くんとあなたの縁は、ちょっと脅しただけじゃ絶対に切れないとわかっていたと思います。",
@@ -2085,7 +2081,7 @@
 	OutputLine(NULL, "あなたをいくら脅してもどうにもならない。",
 		   NULL, " They could threaten you all they liked to no avail.", Line_WaitForInput);
 	DisableWindow();
-	ChangeBustshot( 0, "Oisi2", 200, TRUE );
+	ChangeBustshot( 0, "oi_si_wa_a1", 200, TRUE );
 	DisplayWindow();
 
 	OutputLine(NULL, "じゃあ、……もうひとりの方をどうにかするしかないですよね…？」",
@@ -2165,8 +2161,8 @@
 	OutputLine(NULL, "　大石たちが慌てた顔をして何人か駆け寄ってきて、私を起こしてくれた。",
 		   NULL, "Ooishi and some others rushed over to me and helped me up.", Line_Normal);
 	ClearMessage();
-	DrawBustshotWithFiltering( 2, "Oisi1", "maskup", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 10, 0, FALSE );
-	DrawSceneWithMask( "Ke_S1", "maskup", 1, 0, 300 );
+	DrawSceneWithMask( "Ke_S2", "maskup", 1, 0, 300 );
+	DrawBustshot( 2, "oi_si_de_a1", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
 
 	OutputLine(NULL, "「落ち着いて、詩音さん。",
 		   NULL, "\"Calm down, Shion-san...", Line_WaitForInput);
@@ -2224,7 +2220,7 @@
 		   NULL, " Is he...?!\"", Line_Normal);
 	ClearMessage();
 	DisableWindow();
-	ChangeBustshot( 2, "Oisi4", 200, TRUE );
+	DrawBustshot( 2, "oisi1_4_0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
 	DisplayWindow();
 
 	OutputLine(NULL, "「ここからもまた私の想像になりますがね。",
@@ -2279,7 +2275,7 @@
 		   NULL, " He would never leave Satoko behind!!\"", Line_Normal);
 	ClearMessage();
 	DisableWindow();
-	ChangeBustshot( 2, "Oisi1", 200, TRUE );
+	DrawBustshot( 2, "oi_si_de_a1", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
 	DisplayWindow();
 
 	OutputLine(NULL, "「私もそう思います。",
@@ -2294,7 +2290,7 @@
 		   NULL, "\"But he'd never use it for anything other than buying that teddy bear.\"", Line_Normal);
 	ClearMessage();
 	DisableWindow();
-	ChangeBustshot( 2, "Oisi2", 200, TRUE );
+	DrawBustshot( 2, "oi_si_wa_a1", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
 	DisplayWindow();
 
 	OutputLine(NULL, "「でしょうねぇ。",
@@ -2306,6 +2302,7 @@
 	FadeOutBGM( 2, 0, FALSE );
 	FadeOutBGM( 3, 0, FALSE );
 	DrawBustshot( 19, "no_data", 0, 100, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, TRUE );
+	DrawBustshot( 2, "oisi1_5_0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
 
 	OutputLine(NULL, "でももしですよ？",
 		   NULL, " But...", Line_WaitForInput);
@@ -2336,7 +2333,7 @@
 	OutputLine(NULL, "　……その末に掴んだお金。",
 		   NULL, "...The money was worth all that pain.", Line_Normal);
 	ClearMessage();
-	DrawScene( "mati_O1", 400 );
+	DrawScene( "mati1", 400 );
 
 	OutputLine(NULL, "　それを握り締め…彼は唯一の目的だった、妹への誕生日プレゼントを求めて、おもちゃ屋へ駆け込んだのだ。",
 		   NULL, "He went to the toy store with that money in order to buy his beloved sister a present. That was the only purpose for that money.", Line_WaitForInput);
@@ -2369,7 +2366,7 @@
 	OutputLine(NULL, "　…そう思い、うきうきとしながら、お店ののれんをくぐったに違いない。",
 		   NULL, "...He must've gone into the store joyously.", Line_Normal);
 	ClearMessage();
-	DrawSceneWithMask( "mati_O2", "maskleft", 1, 0, 300 );
+	DrawSceneWithMask( "mati0", "maskleft", 1, 0, 300 );
 
 	OutputLine(NULL, "　………そして、……店内で、どんなやり取りがされたのか。",
 		   NULL, "...I couldn't guess at exactly what happened next.", Line_WaitForInput);
@@ -2378,7 +2375,6 @@
 	OutputLine(NULL, "　想像するだけでも、……胸が張り裂けそうになる。",
 		   NULL, "My heart would tear up if I tried to imagine it, anyway.", Line_Normal);
 	ClearMessage();
-	DrawSceneWithMask( "mati_O2", "maskleft", 1, 0, 300 );
 
 	OutputLine(NULL, "　予約をしたはずなのに。",
 		   NULL, "Why didn't they have it,", Line_WaitForInput);
@@ -2419,7 +2415,7 @@
 		   NULL, " never even considered that his dream might be taken away.", Line_Normal);
 	ClearMessage();
 	DrawScene( "black", 400 );
-	DrawSceneWithMask( "Sora", "maskleft", 1, 0, 300 );
+	DrawSceneWithMask( "Sora3", "maskleft", 1, 0, 300 );
 
 	OutputLine(NULL, "　ふらつきながら…時に電柱に身を寄りかけながら。",
 		   NULL, "He must've been wobbling his way home in sorrow,", Line_WaitForInput);
@@ -2524,7 +2520,7 @@
 	OutputLine(NULL, "…そして、……沙都子の面倒は見てくれるとも。",
 		   NULL, " They said they'd take care of Satoko.", Line_Normal);
 	ClearMessage();
-	DrawSceneWithMask( "Mati1", "maskright", 1, 0, 300 );
+	DrawSceneWithMask( "Mati2", "maskright", 1, 0, 300 );
 
 	OutputLine(NULL, "　悟史くんは沙都子に合わせる顔がなかった。",
 		   NULL, "Satoshi-kun didn't feel like seeing his sister.", Line_WaitForInput);
@@ -2566,8 +2562,8 @@
 	OutputLine(NULL, "　…悟史くんは帰ってくるつもりなんだから、絶対に会える…！",
 		   NULL, "...He must be coming back, so I'll definitely see him again...!", Line_Normal);
 	ClearMessage();
-	DrawBustshotWithFiltering( 0, "Oisi1", "maskup", 1, 0, 0, FALSE, 0, 0, 0, 0, 0, 9, 0, FALSE );
-	DrawSceneWithMask( "Ke_S1", "maskup", 1, 0, 300 );
+	DrawBustshotWithFiltering( 0, "oi_si_de_a1", "maskup", 1, 0, 0, FALSE, 0, 0, 0, 0, 0, 9, 0, FALSE );
+	DrawSceneWithMask( "Ke_S2", "maskup", 1, 0, 300 );
 
 	OutputLine(NULL, "「そうして、ずっと遠方に隠れ家か受け入れ先を用意してくれたんじゃないかと思います。",
 		   NULL, "\"I assume that the Sonozaki family set up some place for him to stay.", Line_WaitForInput);

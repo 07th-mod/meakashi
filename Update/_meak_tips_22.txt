@@ -37,7 +37,8 @@
 	OutputLine(NULL, "　悪いけど、周辺の部屋のベランダとかも調べ直してください。」",
 		   NULL, " Ah, would you look at the neighboring balcony again?\"", Line_Normal);
 	ClearMessage();
-	DrawSceneWithMask( "Ke_Ky2", "maskleft", 1, 0, 300 );
+	DrawSceneWithMask( "tosyo7", "maskleft", 1, 0, 300 );
+	DrawBustshot( 2, "kuma_Def_0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
 
 	OutputLine(NULL, "「大石さーーん、３番にお電話です。」",
 		   NULL, "\"Ooishi-san, you've got a call on line three.\"", Line_WaitForInput);
@@ -75,6 +76,7 @@
 		   NULL, " I'll buy you a drink on Flower Road!\"", Line_Normal);
 	ClearMessage();
 	DrawSceneWithMask( "Ke_S2", "maskright", 1, 0, 300 );
+	DrawBustshot( 3, "kuma_Komaru_0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
 
 	OutputLine(NULL, "「何です、今の電話。",
 		   NULL, "\"What was that call about?", Line_WaitForInput);
@@ -99,6 +101,7 @@
 	OutputLine(NULL, "　…の関係が理解できる。」",
 		   NULL, " Anyway, with that, you gain a clearer understanding of their relationship.\"", Line_Normal);
 	ClearMessage();
+	DrawBustshot( 3, "kuma_Def_0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
 
 	OutputLine(NULL, "「ノートって、先日のあの、大石さん宛てと書かれて郵便ポストに投函されてたって言う怪ノートのことですか？",
 		   NULL, "\"Are you talking about the mysterious notebook you received the other day?", Line_WaitForInput);
@@ -121,7 +124,7 @@
 	OutputLine(NULL, "最後のページの、生まれてきてごめんなさいなんて、…読んでるとこっちまで飛び降りたくなりますよ…。」",
 		   NULL, " You know this line on the last page, about how she's sorry for being born...? That makes me want to jump out the window!\"", Line_Normal);
 	ClearMessage();
-	DrawScene( "Sora", 1000 );
+	DrawScene( "Sora3", 1000 );
 
 	OutputLine(NULL, "「…………でも。",
 		   NULL, "\"...Even so...", Line_WaitForInput);

@@ -7,7 +7,7 @@
 	ClearMessage();
 
 	PlayBGM( 0, "yoru", 120, 0 );
-	DrawScene( "Ima2", 1000 );
+	DrawScene( "so5", 1000 );
 
 	OutputLine(NULL, "　綿流しの祭りが終わった後、園崎家の親戚たちは皆、本家に集まり、一部の親戚たちと簡単な酒盛りをした。",
 		   NULL, "My relatives gathered at the Sonozaki house after the festival to have a little party.", Line_Normal);
@@ -24,7 +24,7 @@
 		   NULL, "...I was trying to get rid of my eerie memories of the ritual storehouse.", Line_Normal);
 	ClearMessage();
 	DrawSceneWithMask( "black", "maskright", 1, 0, 300 );
-	DrawBustshotWithFiltering( 0, "Me_SinmyouA1#", "maskright", 1, 0, 0, FALSE, 0, 0, 0, 0, 0, 9, 0, FALSE );
+	DrawBustshotWithFiltering( 0, "me_sinmyoua1#", "maskright", 1, 0, 0, FALSE, 0, 0, 0, 0, 0, 9, 0, FALSE );
 	DrawSceneWithMask( "Ima1", "maskright", 1, 0, 300 );
 
 	OutputLine(NULL, "　魅音は終始、次期頭首さまだったので、私は近寄らずにいた。",
@@ -38,7 +38,6 @@
 	FadeOutBGM( 0, 0, FALSE );
 	FadeOutBGM( 2, 0, FALSE );
 	DrawBustshot( 19, "no_data", 0, 100, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, TRUE );
-	DrawSceneWithMask( "Ima2", "maskup", 1, 0, 300 );
 	PlayBGM( 0, "Iru", 120, 0 );
 
 	OutputLine(NULL, "　鬼婆に気を遣い、酒盛りは午後の１１時くらいでお開きになった。",
@@ -56,18 +55,20 @@
 	OutputLine(NULL, "　３０分くらいで全部片付き、親戚たちはどんどんと散って行った。",
 		   NULL, "It only took about thirty minutes. Then everyone left, one after another.", Line_Normal);
 	ClearMessage();
+	DrawSceneWithMask( "Ima1", "maskright", 1, 0, 300 );
+	DrawBustshot( 3, "me_si_wi_a1", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
 
 	OutputLine(NULL, "　この頃になると、魅音も頭首モードは終わっていて、私のよく知る魅音に戻っていた。",
 		   NULL, "By then Mion was no longer acting as the Sonozaki successor and was back to being being her normal self.", Line_Normal);
 	ClearMessage();
 	DrawSceneWithMask( "black", "maskdown", 1, 0, 300 );
-	DrawScene( "Ima3", 400 );
 
 	OutputLine(NULL, "　私は少し急いで飲みすぎたせいか、畳の上でぐったりとしていた。",
 		   NULL, "Maybe I drank too much. I was lying on the tatami floor.", Line_Normal);
 	ClearMessage();
 	DisableWindow();
-	DrawBustshot( 2, "Kasa2", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
+	DrawSceneWithMask( "Ima1", "maskright", 1, 0, 300 );
+	DrawBustshot( 1, "kasa3", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 200, TRUE );
 	DisplayWindow();
 
 	OutputLine(NULL, "　葛西が、車に乗れますか？",
@@ -75,7 +76,6 @@
 	OutputLine(NULL, "と聞いてきたので、乗ったら吐くと言い返してやった。",
 		   NULL, " so I told him I'd barf if I got in now.", Line_Normal);
 	ClearMessage();
-	DrawSceneWithMask( "Ima1", "maskleft", 1, 0, 300 );
 
 	OutputLine(NULL, "「…お姉、今日、泊まってってもいい？",
 		   NULL, "\"Sis, can I spend the night here?", Line_WaitForInput);
@@ -83,13 +83,13 @@
 		   NULL, " I just want to sleep...\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 	DisableWindow();
-	DrawBustshot( 2, "Me_AkuwaraiA1#", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
+	DrawBustshot( 3, "me_akuwaraia1#", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
 	DisplayWindow();
 
 	OutputLine(NULL, "「婆っちゃに見つかると怒られるよ…？",
 		   NULL, "\"Granny will get mad if she finds you...", Line_WaitForInput);
 	DisableWindow();
-	ChangeBustshot( 2, "Me_TohohoA1#", 200, TRUE );
+	DrawBustshot( 3, "me_tohohoa2#", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
 	DisplayWindow();
 
 
@@ -106,7 +106,7 @@
 	OutputLine(NULL, "「あんたの学校、開校記念日って年に何回あるわけ？",
 		   NULL, "\"How many times a year does your school have its anniversary?", Line_WaitForInput);
 	DisableWindow();
-	ChangeBustshot( 2, "Me_WinkA2#", 200, TRUE );
+	DrawBustshot( 3, "me_si_wi_a1", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
 	DisplayWindow();
 
 	OutputLine(NULL, "　……まぁ、いいっかぁ。",
@@ -117,7 +117,7 @@
 		   NULL, " She can stay here tonight.\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 	DisableWindow();
-	DrawBustshotWithFiltering( 1, "Kasa1", "maskleft", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 8, 300, TRUE );
+	DrawBustshot( 1, "kasa1", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 200, TRUE );
 	DisplayWindow();
 
 	OutputLine(NULL, "「わかりました。",
@@ -125,10 +125,8 @@
 	OutputLine(NULL, "ではよろしくお願いいたします。」",
 		   NULL, " Good night.\"", Line_Normal);
 	ClearMessage();
-
-	DrawBustshot( 1, "Kasa1", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 8, 0, FALSE );
-	DrawBustshot( 2, "Me_WaraiA1#", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, FALSE );
 	DrawScene( "Ima1", 400 );
+	DrawBustshot( 3, "me_si_wa_a1", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
 
 	OutputLine(NULL, "「ほら詩音、起きてー。ここで寝てると婆っちゃに怒られるって。",
 		   NULL, "\"Come on, Shion, wake up. Granny will get really mad if you fall asleep here.", Line_WaitForInput);
@@ -178,7 +176,7 @@
 	OutputLine(NULL, "　それで、少し後片付けした後、魅音もその脇に布団を敷いて、部屋の灯りを消して横になったはず…。",
 		   NULL, "After a while, Mion got her futon ready next to me, turned the lights off, and went to sleep... At least, that's what I'd thought...", Line_Normal);
 	ClearMessage();
-	DrawSceneWithMask( "Heya5", "maskm1", 1, 0, 1300 );
+	DrawSceneWithMask( "jsa7", "maskm1", 1, 0, 1300 );
 
 	OutputLine(NULL, "　私は起き上がって、灯りを付けた。",
 		   NULL, "I got up and turned the lights on.", Line_Normal);
@@ -282,7 +280,7 @@
 	OutputLine(NULL, "　……草木も眠る時間だけあり、二人の会話は少し離れていてもよく聞こえた。",
 		   NULL, "Since it was the middle of the night, I could hear their words very clearly.", Line_Normal);
 	ClearMessage();
-	DrawSceneWithMask( "Heya4", "maskleft", 1, 0, 300 );
+	DrawSceneWithMask( "jsa7", "maskleft", 1, 0, 300 );
 
 	OutputLine(NULL, "「しゃもねえやんなぁ。",
 		   NULL, "\"But you know...", Line_WaitForInput);
@@ -318,13 +316,13 @@
 	OutputLine(NULL, "鷹野さんだろうね。」",
 		   NULL, " It's probably Takano-san.\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
-
+	ClearMessage();
+	DrawSceneWithMask( "jsa7_nega", "mask2", 1, 0, 2000 );
+	
 	OutputLine(NULL, "　心臓が止まりそうになる。",
 		   NULL, "My heart almost stopped.", Line_Normal);
-	ClearMessage();
-	DrawSceneWithMask( "Heya4_nega1", "mask2", 1, 0, 2000 );
-
-	PlayBGM( 0, "hig_sample_kyouki", 120, 0 );
+	
+	PlayBGM( 0, "hig_sample_kyouki", 120, 0 );			
 
 	OutputLine(NULL, "　オヤシロさまの祟りに触れた。",
 		   NULL, "Oyashiro-sama got angry.", Line_WaitForInput);
@@ -413,7 +411,7 @@
 		   NULL, " were also subject to Oyashiro-sama's curse?", Line_Normal);
 	ClearMessage();
 	DrawScene( "white", 0 );
-	DrawScene( "black", 200 );
+	DrawScene( "jsa7", 200 );
 
 	PlayBGM( 1, "M_Denwa8k", 120, 0 );
 
@@ -662,7 +660,7 @@
 	PlayBGM( 0, "iwakannnohatuga", 120, 0 );
 
 	DisableWindow();
-	DrawBustshot( 0, "Me_Hi_majiA2#", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 9, 400, TRUE );
+	DrawBustshot( 0, "me_si_him_a1_zoom--", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 9, 400, TRUE );
 	DisplayWindow();
 
 	OutputLine(NULL, "　それは……魅音だった。",
@@ -761,11 +759,6 @@
 	OutputLine(NULL, "　短いやり取りだけすると、魅音は受話器を置いた。",
 		   NULL, "Mion put down the phone after a short conversation.", Line_Normal);
 	ClearMessage();
-	DrawScene( "Rouka3", 0 );
-	DisableWindow();
-	DrawBustshot( 0, "Me_majimeA1#", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 9, 200, TRUE );
-
-	DisplayWindow();
 
 	OutputLine(NULL, "　口封じって何？！",
 		   NULL, "What did she mean, make sure nobody talks about this?", Line_WaitForInput);
@@ -779,9 +772,7 @@
 	OutputLine(NULL, "　魅音は襟首を掴んだまま、私に額を寄せて……言った。",
 		   NULL, "Mion put her forehead to mine and spoke to me.", Line_Normal);
 	ClearMessage();
-	DisableWindow();
-	ChangeBustshot( 0, "Me_majimeA2#", 200, TRUE );
-	DisplayWindow();
+	DrawScene( "cg_205", 1000 );
 
 	OutputLine(NULL, "「…………………聞いてた…？」",
 		   NULL, "\"Did you hear?\"", Line_Normal);
@@ -865,10 +856,6 @@
 		   NULL, " the curse of Oyashiro-sama?\"", Line_Normal);
 	ClearMessage();
 	PlayBGM( 3, "yabaisemi", 120, 0 );
-
-	DisableWindow();
-	ChangeBustshot( 0, "Me_Hi_MajiA1#", 200, TRUE );
-	DisplayWindow();
 
 	OutputLine(NULL, "「富竹さんは、自らの手で喉を掻き毟ってお亡くなりになりました。",
 		   NULL, "\"Tomitake-san killed himself by clawing out his throat.", Line_WaitForInput);
@@ -1162,7 +1149,7 @@
 		   NULL, "I won't be killed like you, Satoshi-kun.", Line_Normal);
 	ClearMessage();
 	DrawSceneWithMask( "black", "maskup", 1, 0, 300 );
-	DrawScene( "Heya4", 400 );
+	DrawScene( "jsa7", 400 );
 
 	OutputLine(NULL, "　私が鬼婆の部屋に入った時。",
 		   NULL, "I walked into the hag's room.", Line_WaitForInput);
@@ -1191,7 +1178,7 @@
 	ClearMessage();
 	DrawScene( "white", 10 );
 	DrawScene( "black", 0 );
-	DrawScene( "Heya4", 400 );
+	DrawScene( "jsa7", 400 );
 
 	OutputLine(NULL, "　…電気の爆ぜる、形容のしにくい音がして、まるでスタンガンのスイッチが、鬼婆自身のスイッチでもあったみたいに。",
 		   NULL, "I heard an indescribable electrical sound, and the hag's lights went out.", Line_WaitForInput);
@@ -1291,7 +1278,7 @@
 	OutputLine(NULL, "そのスイッチを入れる。",
 		   NULL, " and turned it on.", Line_ContinueAfterTyping);
 	DrawScene( "white", 10 );
-	DrawScene( "JSA2", 400 );
+	DrawScene( "So_K1", 400 );
 	OutputLineAll(NULL, "", Line_Normal);
 
 	ClearMessage();
@@ -1312,7 +1299,6 @@
 		   NULL, "I decided to put Mion in a cell beyond the torture room.", Line_Normal);
 	ClearMessage();
 	DrawSceneWithMask( "black", "maskright", 1, 0, 300 );
-	DrawSceneWithMask( "JSA5", "maskright", 1, 0, 300 );
 
 	OutputLine(NULL, "　拷問室だけは灯りがふんだんで、真昼のように明るくなっていた。",
 		   NULL, "The lights in the torture room were so bright that it was like daylight.", Line_WaitForInput);
@@ -1352,7 +1338,7 @@
 	OutputLine(NULL, "　灯りのスイッチがすぐ脇にないかと手探りで探すと、案の定、それらしきものに触れた。",
 		   NULL, "I felt along the wall to find a light switch.", Line_Normal);
 	ClearMessage();
-	DrawSceneWithMask( "JSA4", "maskc", 1, 0, 300 );
+	DrawSceneWithMask( "bg_undergr1", "maskc", 1, 0, 300 );
 	PlayBGM( 0, "yoru", 120, 0 );
 
 	OutputLine(NULL, "　スイッチを入れると……いくつかの裸電球に明かりが灯り、むき出しの岩肌の大空洞が広がった。",
@@ -1405,7 +1391,6 @@
 	OutputLine(NULL, "　……だが、非力なふりをする必要がないことを知った今の私は、何の苦もなく彼女らの体を担ぎ上げたり、引き摺ったりすることができた。",
 		   NULL, "But now I didn't need to pretend to be weak. I could easily lift and drag their bodies.", Line_Normal);
 	ClearMessage();
-	DrawSceneWithMask( "JSA6", "maskleft", 1, 0, 300 );
 	PlaySE( 0, "s_Down", 128, 64 );
 
 	OutputLine(NULL, "　魅音を岩牢の奥へ放り込む。",
@@ -1423,8 +1408,6 @@
 	OutputLine(NULL, "　私は鉄格子を閉め鍵をすると、同じく目を醒ましかけているに違いない鬼婆のもとへ走った。",
 		   NULL, "I closed the bars and turned the key in the lock. Then I ran to the hag, who must've been starting to wake up too.", Line_Normal);
 	ClearMessage();
-	DrawSceneWithMask( "black", "maskright", 1, 0, 300 );
-	DrawSceneWithMask( "JSA5", "maskright", 1, 0, 300 );
 
 	OutputLine(NULL, "　だが幸いなことに、鬼婆の方はまだぐったりしていて身動きひとつできなかった。",
 		   NULL, "Fortunately, there was so sign of her regaining consciousness.", Line_WaitForInput);
@@ -1459,7 +1442,6 @@
 	OutputLine(NULL, "　そもそも、車椅子を改造した拘束道具らしく、こうしてしまえば、あとは普通の車椅子と特別な違いはなかった。",
 		   NULL, "This must've been a wheelchair specially remodeled to restrain a person. Other than the restraints, it was a regular wheelchair.", Line_Normal);
 	ClearMessage();
-	DrawScene( "black", 400 );
 
 	OutputLine(NULL, "　私は鬼婆が目を醒ますのを待った。",
 		   NULL, "I waited for the hag to wake up.", Line_Normal);
@@ -1505,7 +1487,7 @@
 	FadeOutBGM( 2, 0, FALSE );
 	FadeOutBGM( 3, 0, FALSE );
 	DrawBustshot( 19, "no_data", 0, 100, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, TRUE );
-	DrawScene( "JSA4", 400 );
+	DrawScene( "bg_undergr1", 400 );
 
 	OutputLine(NULL, "　牢屋の方から、鉄格子を鳴らす音が聞こえてくる。",
 		   NULL, "I heard a noise from the cell.", Line_WaitForInput);
@@ -1527,7 +1509,6 @@
 		   NULL, "I left the hag there and headed for the cell.", Line_Normal);
 	ClearMessage();
 	DrawSceneWithMask( "black", "maskleft", 1, 0, 300 );
-	DrawSceneWithMask( "JSA6", "maskleft", 1, 0, 300 );
 	PlayBGM( 0, "depressive paranoia", 120, 0 );
 
 	OutputLine(NULL, "「………………詩音…、…これは……何の真似ですか……？」",
@@ -1626,7 +1607,6 @@
 	OutputLine(NULL, "　魅音は答えなかった。",
 		   NULL, "Mion didn't reply.", Line_Normal);
 	ClearMessage();
-	DrawScene( "JSA6", 400 );
 
 	OutputLine(NULL, "　……私は余裕ぶって不敵な笑みを浮かべていたが、すぐに痺れを切らし、いらついて鉄格子を蹴飛ばした。",
 		   NULL, "I was smiling boldly, but I became impatient and finally kicked the bars.", Line_Normal);
@@ -1665,7 +1645,6 @@
 	OutputLine(NULL, "………………えっと、………。」",
 		   NULL, " ...Let's see...\"", Line_Normal);
 	ClearMessage();
-	DrawSceneWithMask( "black", "maskdown", 1, 0, 300 );
 
 	OutputLine(NULL, "　今の私にとって、聞きたい問いはあまりに多すぎた。",
 		   NULL, "I had just too many things I wanted to ask her.", Line_Normal);
@@ -1720,7 +1699,6 @@
 	OutputLine(NULL, "　表情が凍り付いているのがこの暗がりでもよくわかる。",
 		   NULL, "Although the light was dim, I could tell she was frightened.", Line_Normal);
 	ClearMessage();
-	DrawSceneWithMask( "JSA6", "maskright", 1, 0, 300 );
 
 	OutputLine(NULL, "「じゃ、聞くよ。",
 		   NULL, "\"Okay, here I go.", Line_WaitForInput);
@@ -1848,7 +1826,6 @@
 	OutputLine(NULL, "　魅音はこれ以上を聞かれても、何も答えようがないと、小さく首を振った。",
 		   NULL, "Mion shook her head.", Line_Normal);
 	ClearMessage();
-	DrawScene( "black", 400 );
 
 	OutputLine(NULL, "「ま、いいや。",
 		   NULL, "\"Okay,", Line_WaitForInput);
@@ -1928,7 +1905,6 @@
 	OutputLine(NULL, "…そう言っているのだ。",
 		   NULL, " that person should be killed.", Line_Normal);
 	ClearMessage();
-	DrawScene( "JSA6", 400 );
 
 	OutputLine(NULL, "「私がこっちに帰って来て以降、たまに魅音とは認識が食い違いますね。",
 		   NULL, "\"What you know and what I know aren't matching up anymore.", Line_WaitForInput);
@@ -1962,7 +1938,7 @@
 		   NULL, "But... to the elderly people of Hinamizawa, it's something more serious...!\"", Line_Normal);
 	ClearMessage();
 	DrawScene( "black", 400 );
-	DrawScene( "Ji2", 400 );
+	DrawScene( "ji2-", 400 );
 
 	OutputLine(NULL, "　魅音は、村の老人たちがいかにオヤシロさまを妄信し、祭り事をどれだけ神聖視しているかを話した。",
 		   NULL, "Mion explained to me how the elderly people blindly believe in Oyashiro-sama, and how sacred the festivals are to them.", Line_Normal);
@@ -2016,7 +1992,7 @@
 	OutputLine(NULL, "…だから敢えてカマをかける。",
 		   NULL, " So I tried to lead her a little.", Line_Normal);
 	ClearMessage();
-	DrawSceneWithMask( "JSA6", "maskup", 1, 0, 300 );
+	DrawSceneWithMask( "black", "maskup", 1, 0, 300 );
 
 	OutputLine(NULL, "「……………確かに、",
 		   NULL, "\"I know...", Line_ContinueAfterTyping);
@@ -2053,7 +2029,6 @@
 	OutputLine(NULL, "　魅音は口ごもっては飲み込みを二度ほど繰り返してから、おずおずとそれを口にした。",
 		   NULL, "Mion hesitated a little first and then started to speak.", Line_Normal);
 	ClearMessage();
-	DrawScene( "black", 400 );
 
 	OutputLine(NULL, "「……祭具殿に忍び込んだのは実は４人、",
 		   NULL, "\"Actually, four people snuck into the shrine storage...", Line_ContinueAfterTyping);
@@ -2065,7 +2040,6 @@
 	OutputLine(NULL, "……とか。」",
 		   NULL, " so maybe...\"", Line_Normal);
 	ClearMessage();
-	DrawScene( "JSA6", 400 );
 	PlayBGM( 1, "yabaisemi", 120, 0 );
 
 	OutputLine(NULL, "「………………ふぅん？",

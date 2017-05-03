@@ -7,7 +7,7 @@
 	ClearMessage();
 
 	DrawFilm( 3, 255, 255, 255, 256, 0, 400, TRUE );
-	DrawSceneWithMask( "Si_H2", "maskm1", 1, 0, 1300 );
+	DrawSceneWithMask( "si_h2", "maskm1", 1, 0, 1300 );
 	PlayBGM( 0, "semi_r", 120, 0 );
 	SetSpeedOfMessage( FALSE, 0 );
 
@@ -77,7 +77,7 @@
 	OutputLine(NULL, "…はあぁあぁ…。",
 		   NULL, " ...Hah, hah, hah...", Line_Normal);
 	ClearMessage();
-	DrawSceneWithMask( "Si_H6", "maskright", 1, 0, 300 );
+	DrawSceneWithMask( "Si_H2", "maskright", 1, 0, 300 );
 
 	OutputLine(NULL, "　私は背中の詩音に向かって吠えたり、怒鳴ったりした。",
 		   NULL, "I shouted at the Shion at my back.", Line_WaitForInput);
@@ -302,7 +302,6 @@
 		   NULL, " Ahahaha, hahahaa, heeheeheekyee!!!", Line_Normal);
 	ClearMessage();
 	DrawSceneWithMask( "black", "maskleft", 1, 0, 300 );
-	DrawSceneWithMask( "Moon", "maskleft", 1, 0, 300 );
 
 	OutputLine(NULL, "　私はドアの向こうにいる詩音を避けるため、ベランダへ出た。",
 		   NULL, "I went out onto the balcony to avoid Shion, who was on the other side of the door.", Line_Normal);
@@ -390,8 +389,8 @@
 		   NULL, "Even from here, I could tell that Keiichi was running down the stairs.", Line_Normal);
 	ClearMessage();
 	PlayBGM( 1, "yabaisemi", 120, 0 );
-	DrawBustshot( 0, "Kei_Majime#", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 9, 0, FALSE );
 	DrawScene( "Ma2", 400 );
+	DrawBustshot( 2, "kei2_Majime_0--", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
 
 	OutputLine(NULL, "　そしてすぐに圭一は現われた。",
 		   NULL, "He showed up quickly...", Line_WaitForInput);
@@ -464,7 +463,7 @@
 		   NULL, " Kee heehee...!!", Line_Normal);
 	ClearMessage();
 	DisableWindow();
-	ChangeBustshot( 0, "Kei_komaru#", 200, TRUE );
+	DrawBustshot( 2, "kei2_Komaru_0--", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
 	DisplayWindow();
 
 	OutputLine(NULL, "「……お前、",
@@ -482,7 +481,7 @@
 		   NULL, " ...Ehehehe.\"", Line_Normal);
 	ClearMessage();
 	DisableWindow();
-	ChangeBustshot( 0, "Kei_Def2#", 200, TRUE );
+	DrawBustshot( 2, "kei2_Def2_0--", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
 	DisplayWindow();
 
 	OutputLine(NULL, "「それより……どうしたんだよ。",
@@ -530,7 +529,7 @@
 		   NULL, " stay for any longer...\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 	DisableWindow();
-	ChangeBustshot( 0, "Kei_Komaru#", 200, TRUE );
+	DrawBustshot( 2, "kei2_Komaru_0--", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
 	DisplayWindow();
 
 	OutputLine(NULL, "「だ、大丈夫か…。",
@@ -626,7 +625,7 @@
 		   NULL, " ghaa...", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 	DisableWindow();
-	ChangeBustshot( 0, "Kei_Majime#", 200, TRUE );
+	DrawBustshot( 2, "kei2_Majime_0--", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
 	DisplayWindow();
 
 	OutputLine(NULL, "「大丈夫かよ…！",
@@ -634,7 +633,7 @@
 	OutputLine(NULL, "　もう無理するな…。",
 		   NULL, " Don't force yourself...", Line_WaitForInput);
 	DisableWindow();
-	ChangeBustshot( 0, "Kei_Def1#", 200, TRUE );
+	DrawBustshot( 2, "kei2_Def1_0--", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
 	DisplayWindow();
 
 	OutputLine(NULL, "あ、…そうだ。",
@@ -845,7 +844,7 @@
 		   NULL, "That incredible pain finally cleared the fog away from my nightmare...", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
-
+	DrawScene( "cg_017", 1000 );
 
 	OutputLine(NULL, "　…私は非常階段から自分の部屋のベランダに戻ろうとして足を滑らせて、",
 		   NULL, "I just slipped from the fire escape as I tried to return to my balcony...", Line_ContinueAfterTyping);
@@ -886,6 +885,7 @@
 	OutputLine(NULL, "……何もないがゆえの、安堵感。",
 		   NULL, " The nothingness brought me peace.", Line_Normal);
 	ClearMessage();
+	DrawScene( "black", 1000 );
 
 	OutputLine(NULL, "　生まれてから、魅音の名を受け、…今日までの記憶が次々蘇る。",
 		   NULL, "All my memories from when I was born and named Mion, up until today, came to my mind.", Line_WaitForInput);
@@ -906,6 +906,7 @@
 	OutputLine(NULL, "　私の人生は、どこで選択肢を間違えたんだろう？",
 		   NULL, "When in my life did I make the wrong choice?", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+	DrawScene( "moon", 1000 );
 
 	OutputLine(NULL, "　そう、私はもう知ってるよ、悟史くんが思いださせてくれた………。",
 		   NULL, "Ah, I do know just where and when that was... because Satoshi-kun reminded me...", Line_Normal);
@@ -1157,6 +1158,7 @@
 	OutputLine(NULL, "　…むぅ。",
 		   NULL, "...Mmph.", Line_Normal);
 	ClearMessage();
+	DrawScene( "ryuuketu1", 1000 );
 
 	OutputLine(NULL, "　え？",
 		   NULL, "Eh?", Line_Normal);

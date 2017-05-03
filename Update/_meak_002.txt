@@ -137,7 +137,7 @@
 	OutputLine(NULL, "　馬鹿っぽいが、景気づけはとても大事。",
 		   NULL, "It might have looked stupid, but it helped psych me up.", Line_Normal);
 	ClearMessage();
-	DrawSceneWithMask( "Si_H5", "maskright", 1, 0, 300 );
+	DrawSceneWithMask( "black", "maskright", 1, 0, 300 );
 
 	OutputLine(NULL, "　学園では共用スペースにしかテレビがなかった上、民放は見せてもらえなかった。",
 		   NULL, "At the school, there was a TV only in the common room, and we weren't allowed to watch any cable channels.", Line_WaitForInput);
@@ -162,16 +162,12 @@
 	OutputLine(NULL, "　それにも飽きてお腹が空いた頃、葛西が弁当を持って訪ねて来てくれた。",
 		   NULL, "Kasai dropped by with lunch right when I started to feel hungry.", Line_Normal);
 	ClearMessage();
-	DrawSceneWithMask( "white", "maskright", 1, 0, 300 );
-	DrawBustshotWithFiltering( 0, "Kasa1", "maskright", 1, 0, 0, FALSE, 0, 0, 0, 0, 0, 9, 0, FALSE );
-	DrawSceneWithMask( "Si_G1", "maskright", 1, 0, 300 );
-
+	
 	OutputLine(NULL, "「詩音さん、おはようございます。",
 		   NULL, "\"Good morning, Shion-san.", Line_WaitForInput);
 	OutputLine(NULL, "昨夜はよく眠れましたか？」",
 		   NULL, " Did you sleep well last night?\"", Line_Normal);
 	ClearMessage();
-	DrawSceneWithMask( "Si_H3", "maskleft", 1, 0, 300 );
 
 	OutputLine(NULL, "「ソファーに毛布でごろ寝は結構辛いです。",
 		   NULL, "\"Sleeping on the couch was a bit too uncomfortable.", Line_WaitForInput);
@@ -180,9 +176,6 @@
 	OutputLine(NULL, "うんうん、たくあんがおいしい〜！」",
 		   NULL, " Ah, this pickled radish is good!\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
-	DisableWindow();
-	DrawBustshotWithFiltering( 2, "Kasa1", "maskright", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 10, 300, TRUE );
-	DisplayWindow();
 
 	OutputLine(NULL, "「それは良かった。",
 		   NULL, "\"That's good to hear.", Line_WaitForInput);
@@ -219,9 +212,6 @@
 	OutputLine(NULL, "私が選んだ生活なんだから、自分で何とかするのは当然！」",
 		   NULL, " This is the life I chose, so naturally I have to take care of it myself!\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
-	DisableWindow();
-	ChangeBustshot( 2, "Kasa2", 200, TRUE );
-	DisplayWindow();
 
 	OutputLine(NULL, "「それはたくましい限りです。",
 		   NULL, "\"That's reassuring to hear.", Line_WaitForInput);
@@ -240,7 +230,6 @@
 	OutputLine(NULL, "　魅音が出たら受話器代わって。」",
 		   NULL, " When Mion answers, pass me the reciever.\"", Line_Normal);
 	ClearMessage();
-	DrawSceneWithMask( "Si_H2", "maskright", 1, 0, 300 );
 
 	OutputLine(NULL, "「やれやれ、何を企んでるやら。",
 		   NULL, "\"Oh well, whatever you say.", Line_WaitForInput);
@@ -457,7 +446,7 @@
 	FadeOutBGM( 0, 0, FALSE );
 	FadeOutBGM( 2, 0, FALSE );
 	DrawBustshot( 19, "no_data", 0, 100, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, TRUE );
-	DrawSceneWithMask( "Sora", "maskleft", 1, 0, 300 );
+	DrawSceneWithMask( "Sora3", "maskleft", 1, 0, 300 );
 	PlayBGM( 0, "Cafe", 120, 0 );
 
 	OutputLine(NULL, "「お姉、今は電話大丈夫なの？」",
@@ -556,7 +545,7 @@
 		   NULL, " Oh, money's out of the question, okay?!\"", Line_Normal);
 	ClearMessage();
 	DrawSceneWithMask( "black", "maskright", 1, 0, 300 );
-	DrawSceneWithMask( "Si_H3", "maskright", 1, 0, 300 );
+	DrawSceneWithMask( "Si_H2", "maskright", 1, 0, 300 );
 
 	OutputLine(NULL, "「さすがにお金を無心できるとは思ってません。",
 		   NULL, "\"I never thought I could pester you for money.", Line_WaitForInput);
@@ -837,14 +826,10 @@
 	SetValidityOfInput( FALSE );
 	Wait( 1500 );
 	SetValidityOfInput( TRUE );
-	DrawSceneWithMask( "Re_d1", "maskleft", 1, 0, 300 );
-	SetValidityOfInput( FALSE );
-	Wait( 1000 );
-	SetValidityOfInput( TRUE );
 	DrawScene( "black", 1000 );
 	FadeOutBGM( 1, 0, FALSE );
 	DrawBustshot( 19, "no_data", 0, 100, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, TRUE );
-	DrawSceneWithMask( "Re2", "maskdown", 1, 0, 1300 );
+	DrawSceneWithMask( "Re5", "maskdown", 1, 0, 1300 );
 
 	PlayBGM( 0, "Cafe", 120, 0 );
 	SetSpeedOfMessage( FALSE, 0 );
@@ -1009,8 +994,6 @@
 	OutputLine(NULL, "　というものだった。",
 		   NULL, "And so on.", Line_Normal);
 	ClearMessage();
-	DrawScene( "white", 400 );
-	DrawScene( "Re2", 400 );
 
 	OutputLine(NULL, "　私が閉じ込められた聖ルチーア学園については、いろいろと噂が飛び交うだけで、その中身についてはみんな興味津々だったらしい。",
 		   NULL, "Apparently there were all kinds of rumors going around about the St. Lucia Academy I was confined to, and everyone was curious about it.", Line_WaitForInput);
@@ -1161,7 +1144,7 @@
 	OutputLine(NULL, "　切断された右腕が、体を求めて未だ徘徊している…という話は、子どもの世界では圧倒的信憑性を持ってまかり通っていたものだ。",
 		   NULL, "We seriously believed that the severed right arm was roaming in search of the body it belonged to.", Line_Normal);
 	ClearMessage();
-	DrawSceneWithMask( "Ji2", "maskright", 1, 0, 300 );
+	DrawSceneWithMask( "Ji2+", "maskright", 1, 0, 300 );
 
 	OutputLine(NULL, "　しかもその事件のあった日は、雛見沢の守り神、オヤシロさまを祭る祭の夜…ともなれば、",
 		   NULL, "It didn't take long for the rumor of Oyashiro-sama's curse to become a topic of discussion among occult researchers and the like,", Line_WaitForInput);
@@ -1180,7 +1163,7 @@
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
-	DrawSceneWithMask( "Ji2_mono1", "masktoketu", 1, 0, 500 );
+	DrawSceneWithMask( "ryuuketu1", "masktoketu", 1, 0, 500 );
 
 
 	OutputLine(NULL, "　祟りは再び起こったのだ。",
@@ -1207,7 +1190,7 @@
 	OutputLine(NULL, "　薄れ掛けていたオヤシロさまの祟りの話は一気にぶり返したのだった。",
 		   NULL, "So the fuss over Oyashiro-sama's curse rose up again.", Line_Normal);
 	ClearMessage();
-	DrawScene( "Ji2", 400 );
+	DrawScene( "Ji2++", 400 );
 
 	OutputLine(NULL, "　それまで、オヤシロさまの存在は希薄なものだった。",
 		   NULL, "Until then, Oyashiro-sama wasn't considered very important.", Line_WaitForInput);
@@ -1301,7 +1284,7 @@
 	OutputLine(NULL, "　でも内心は、異郷に送られることで、オヤシロさまの祟りに遭うのでは……と、ちょっぴり怖がっていたことを覚えてる。",
 		   NULL, "But in fact, I was a little scared of the curse.", Line_Normal);
 	ClearMessage();
-	DrawSceneWithMask( "Re2", "maskup", 1, 0, 300 );
+	DrawSceneWithMask( "Re5", "maskup", 1, 0, 300 );
 
 	OutputLine(NULL, "「でさ、その翌年にも起こったんだよな。」",
 		   NULL, "\"Yeah, it happened again the year after.\"", Line_WaitForInput);

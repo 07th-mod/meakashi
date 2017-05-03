@@ -8,12 +8,12 @@
 	ClearMessage();
 	DrawSceneWithMask( "white", "maskc", 1, 0, 300 );
 	PlayBGM( 0, "z2_hig3", 120, 0 );
-	DrawScene( "Sora", 1000 );
+	DrawScene( "Sora3", 1000 );
 	SetValidityOfInput( FALSE );
 	Wait( 4000 );
 	SetValidityOfInput( TRUE );
 
-	DrawSceneWithMask( "Mati1", "maskup", 1, 0, 300 );
+	DrawSceneWithMask( "Mati3", "maskup", 1, 0, 300 );
 	SetSpeedOfMessage( FALSE, 0 );
 
 	OutputLine(NULL, "　のんびりとしたいつもの昼下がりだった。",
@@ -237,7 +237,7 @@
 	OutputLine(NULL, "私を使って天罰をするのは勝手だけど、その後こうして路地裏みたいなところに引きずり込まれて、不良三人組に、よってたかって罵倒されることに対するフォローはどうなってるわけ…？",
 		   NULL, " you can use me to punish these guys, but how will you compensate me later...?", Line_Normal);
 	ClearMessage();
-	DrawSceneWithMask( "Sora", "maskup", 1, 0, 300 );
+	DrawSceneWithMask( "Sora3", "maskup", 1, 0, 300 );
 
 	OutputLine(NULL, "　はぁ、と大きなため息をひとつ。",
 		   NULL, "I heaved a huge sigh.", Line_WaitForInput);
@@ -360,7 +360,7 @@
 	OutputLine(NULL, "　夕暮れ時にもなれば、ここは様々な人間が通る主要幹線に早変わりする。",
 		   NULL, "In the late afternoon, many people will be passing through here.", Line_Normal);
 	ClearMessage();
-	DrawScene( "Sora2", 400 );
+	DrawScene( "Sora3", 400 );
 
 	OutputLine(NULL, "　そして、刻限はそろそろ夕方。",
 		   NULL, "That time had almost arrived.", Line_WaitForInput);
@@ -529,7 +529,8 @@
 	FadeOutBGM( 0, 0, FALSE );
 	FadeOutBGM( 2, 0, FALSE );
 	DrawBustshot( 19, "no_data", 0, 100, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, TRUE );
-	DrawScene( "Mati3", 400 );
+	DrawScene( "Mati4", 400 );
+	DrawBustshot( 2, "sato1_komaru_0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
 
 	OutputLine(NULL, "「い、…いい加減にしないか…！",
 		   NULL, "\"Cu... Cut it out...!", Line_WaitForInput);
@@ -600,6 +601,7 @@
 		   NULL, " yet he didn't hesitate.", Line_Normal);
 	ClearMessage();
 	DrawScene( "Mati4", 400 );
+	DrawBustshot( 2, "sato1_Ikari_0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
 
 	OutputLine(NULL, "「黙ってたらわからんがなあぁああ！！",
 		   NULL, "\"Fookin' say sumtin'!!", Line_WaitForInput);
@@ -713,7 +715,7 @@
 		   NULL, "...The boy stood up. He was covered in dust.", Line_Normal);
 	ClearMessage();
 	DisableWindow();
-	DrawBustshotWithFiltering( 2, "Sato_warai", "maskleft", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 10, 300, TRUE );
+	DrawBustshot( 2, "sato1_Warai_0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
 	DisplayWindow();
 
 	OutputLine(NULL, "　私と目が合うと、本当に薄く苦笑いしながら、大丈夫かい？",
@@ -734,7 +736,7 @@
 		   NULL, " Pick your opponents better next time.\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 	DisableWindow();
-	ChangeBustshot( 2, "Sato_Def2", 200, TRUE );
+	DrawBustshot( 2, "sato1_Def2_0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
 	DisplayWindow();
 
 	OutputLine(NULL, "「…最初は迷ったよ。",
@@ -771,7 +773,7 @@
 		   NULL, " not brave.\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 	DisableWindow();
-	ChangeBustshot( 2, "Sato_Komaru2", 200, TRUE );
+	DrawBustshot( 2, "sato1_Komaru2_0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
 	DisplayWindow();
 
 	OutputLine(NULL, "「……むぅ。",
@@ -790,7 +792,7 @@
 		   NULL, " That was just an act...!\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 	DisableWindow();
-	ChangeBustshot( 2, "Sato_Def2", 200, TRUE );
+	DrawBustshot( 2, "sato1_Def2_0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
 	DisplayWindow();
 
 	OutputLine(NULL, "「あははははははは。",
@@ -826,7 +828,7 @@
 	OutputLine(NULL, "「はっはっはっは、信じるから、信じるから。」",
 		   NULL, "\"Ha ha ha ha. I believe you, I do.\"", Line_Normal);
 	ClearMessage();
-	DrawSceneWithMask( "Sora", "maskup", 1, 0, 300 );
+	DrawSceneWithMask( "Sora3", "maskup", 1, 0, 300 );
 
 	OutputLine(NULL, "　その一連のやりとりでこっそりと気付く。",
 		   NULL, "I realized one thing.", Line_WaitForInput);
@@ -844,7 +846,7 @@
 		   NULL, " He thought I was Mion with a different hairstyle.", Line_Normal);
 	ClearMessage();
 	DrawScene( "black", 400 );
-	DrawScene( "Hi1", 400 );
+	DrawScene( "Hi2", 400 );
 
 	OutputLine(NULL, "　…私たち姉妹は、小学校に上がる時に住まいを分けられた。",
 		   NULL, "...Mion and I had to live separately since before we went to elementary school.", Line_WaitForInput);
@@ -852,6 +854,9 @@
 
 	OutputLine(NULL, "　魅音は雛見沢。",
 		   NULL, "Mion was in Hinamizawa,", Line_WaitForInput);
+	ClearMessage();
+	DrawScene( "mati3", 400 );
+	
 	OutputLine(NULL, "私は興宮。",
 		   NULL, " and I was in Okinomiya.", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -892,8 +897,8 @@
 	OutputLine(NULL, "　…考えようによっては、彼とのやりとりは、今の不良連中との喧嘩よりも厄介なものなのかもしれない。",
 		   NULL, "...Dealing with him could be more difficult than handling those punks...", Line_Normal);
 	ClearMessage();
-	DrawBustshot( 0, "Sato_Def1", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 9, 0, FALSE );
 	DrawScene( "Mati4", 400 );
+	DrawBustshot( 2, "sato1_Def1_0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
 
 	OutputLine(NULL, "「…でも、ま。",
 		   NULL, "\"...Well,", Line_WaitForInput);
@@ -905,7 +910,7 @@
 		   NULL, "\"You sound hostile. What exactly do you mean by that?\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 	DisableWindow();
-	ChangeBustshot( 0, "Sato_Warai", 200, TRUE );
+	DrawBustshot( 2, "sato1_Warai_0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
 	DisplayWindow();
 
 	OutputLine(NULL, "「魅音のことだから、何だか珍妙な拳法でも使って、瞬く間に撃退してしまうんじゃないかって期待してたね。",
@@ -927,7 +932,7 @@
 		   NULL, ".....................\"", Line_Normal);
 	ClearMessage();
 	DisableWindow();
-	ChangeBustshot( 0, "Sato_Def2", 200, TRUE );
+	DrawBustshot( 2, "sato1_Def2_0_zoom", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
 	DisplayWindow();
 
 	OutputLine(NULL, "　…彼は大きな手の平を私の頭の上に、そっと乗せると、…まるで赤ん坊の頭をそうするように、撫でてくれた。",
@@ -998,7 +1003,7 @@
 		   NULL, "...He'd already saved me from those guys, after all.", Line_Normal);
 	ClearMessage();
 	DisableWindow();
-	ChangeBustshot( 0, "Sato_Def1", 200, TRUE );
+	DrawBustshot( 2, "sato1_Def1_0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
 	DisplayWindow();
 
 	OutputLine(NULL, "「…じゃ、僕は行かなきゃならないから。",
@@ -1037,7 +1042,7 @@
 		   NULL, " This time, he smiled a bit mischievously.", Line_Normal);
 	ClearMessage();
 	DisableWindow();
-	ChangeBustshot( 0, "Sato_Def2", 200, TRUE );
+	DrawBustshot( 2, "sato1_Def2_0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
 	DisplayWindow();
 
 	OutputLine(NULL, "「あはは、安心しなよ。",
@@ -1045,7 +1050,7 @@
 	OutputLine(NULL, "魅音が泣いてたなんて、誰にも言わないから。",
 		   NULL, " I won't tell anybody you were crying.", Line_WaitForInput);
 	DisableWindow();
-	ChangeBustshot( 0, "Sato_warai", 200, TRUE );
+	DrawBustshot( 2, "sato1_Warai_0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
 	DisplayWindow();
 
 	OutputLine(NULL, "……あはは、もっとも言った所で、誰も信じないだろうけどね。",
@@ -1056,7 +1061,7 @@
 		   NULL, " Ahahahaha.\"", Line_Normal);
 	ClearMessage();
 	DisableWindow();
-	FadeBustshotWithFiltering( 0, "mask00" , 0, FALSE, 0, 0, 400, TRUE );
+	FadeAllBustshots( 400, TRUE );
 	DisplayWindow();
 
 	OutputLine(NULL, "　彼はもう一度お尻の埃を叩いてから、立ち上がる。",
@@ -1071,7 +1076,7 @@
 		   NULL, "Then he turned around.", Line_Normal);
 	ClearMessage();
 	DisableWindow();
-	DrawBustshotWithFiltering( 1, "Sato_Def1", "maskleft", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 8, 300, TRUE );
+	DrawBustshot( 2, "sato1_Def1_0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
 	DisplayWindow();
 
 	OutputLine(NULL, "「じゃ、また明日。",
@@ -1086,7 +1091,7 @@
 		   NULL, " See you in school.\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 	DisableWindow();
-	FadeBustshotWithFiltering( 1, "maskright" , 1, FALSE, 0, 0, 300, TRUE );
+	FadeAllBustshots( 400, TRUE );
 	DisplayWindow();
 
 	OutputLine(NULL, "　彼は、眩しくて目がくらむ様な日差しに満ちた大通りに消えていく。",
@@ -1182,6 +1187,7 @@
 	OutputLine(NULL, "…ちょっと調子を落としてるけど。」",
 		   NULL, " so she's feeling a bit down.\"", Line_Normal);
 	ClearMessage();
+	DrawScene( "black", 400 );
 
 	OutputLine(NULL, "　悟史くんのことを知ろうとすれば、妹の情報に及ぶのは当然だ。",
 		   NULL, "His sister came up naturally in the conversation.", Line_WaitForInput);
@@ -1211,6 +1217,7 @@
 		   NULL, "...I must have been blushing.", Line_Normal);
 	ClearMessage();
 	PlayBGM( 0, "yoru", 120, 0 );
+	DrawSceneWithMask( "Si_H2", "maskup", 1, 0, 300 );
 
 	OutputLine(NULL, "「もしもし？",
 		   NULL, "\"Hello?", Line_WaitForInput);
@@ -1233,7 +1240,7 @@
 	FadeOutBGM( 0, 0, FALSE );
 	FadeOutBGM( 2, 0, FALSE );
 	DrawBustshot( 19, "no_data", 0, 100, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, TRUE );
-	DrawSceneWithMask( "Ho1_Houjouke", "maskup", 1, 0, 300 );
+	DrawSceneWithMask( "Ho1_Houjouke-", "maskup", 1, 0, 300 );
 	PlayBGM( 0, "demo_48khz", 120, 0 );
 
 	OutputLine(NULL, "　お姉から聞かされた話は興味深かった。",
@@ -1383,7 +1390,6 @@
 	OutputLine(NULL, "　少し呆れるが、まぁそんなことはどうでもいい。",
 		   NULL, "I was amazed to realize that.", Line_Normal);
 	ClearMessage();
-	DrawScene( "Si_H3", 400 );
 
 	OutputLine(NULL, "「まぁ、そんな話はいいや。",
 		   NULL, "\"Well,", Line_WaitForInput);

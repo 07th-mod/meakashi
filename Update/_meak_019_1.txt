@@ -8,7 +8,6 @@
 
 	PlayBGM( 0, "03_cele", 120, 0 );
 	DrawScene( "white", 3000 );
-	DrawSceneWithMask( "black", "maskm1", 1, 0, 1300 );
 
 	OutputLine(NULL, "　…それはとても楽しい夢。",
 		   NULL, "I was having such a happy dream.", Line_Normal);
@@ -17,20 +16,20 @@
 	OutputLine(NULL, "　悟史くんが、…何事もなかったように日々の生活に戻っている夢。",
 		   NULL, "Satoshi-kun was in the dream. He was leading his normal everyday life.", Line_Normal);
 	ClearMessage();
-	DrawBustshotWithFiltering( 2, "Sato_Warai!", "maskup", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 10, 0, FALSE );
-	DrawSceneWithMask( "Oki_G2", "maskup", 1, 0, 1300 );
+	DrawBustshotWithFiltering( 2, "sato2_Warai_0", "maskup", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 10, 0, FALSE );
+	DrawSceneWithMask( "Oki_G3", "maskup", 1, 0, 1300 );
 
 	OutputLine(NULL, "　何事もなかったように、野球チームに彼は戻ってきた。",
 		   NULL, "He was back on the baseball team.", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+	DrawSceneWithMask( "white", "maskleft", 1, 0, 300 );
 
 
 	OutputLine(NULL, "　私と監督は、何事もなかったように接するのが大人の対応だとばかりに、これまでの空白時間を全て忘れて、彼を迎えてあげるのだ。",
 		   NULL, "Irie and I acted normally around him because we knew that's how mature people should act. We welcomed him back, as if he had been here with us the whole time.", Line_Normal);
 	ClearMessage();
-	DrawSceneWithMask( "white", "maskleft", 1, 0, 300 );
-	DrawBustshotWithFiltering( 1, "Sato_Def2!", "maskleft", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 8, 0, FALSE );
+	DrawBustshotWithFiltering( 1, "sato2_Def2_0", "maskleft", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 8, 0, FALSE );
 	DrawSceneWithMask( "Oki_G3", "maskleft", 1, 0, 300 );
 
 	OutputLine(NULL, "　練習では悪くない打率なのに、…なぜか試合では全然だめ。",
@@ -55,7 +54,7 @@
 		   NULL, "Then Satoshi-kun pouted as he mumbled:", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 	DisableWindow();
-	ChangeBustshot( 1, "Sato_Komaru2!", 200, TRUE );
+	ChangeBustshot( 1, "sato2_komaru2_0", 200, TRUE );
 	DisplayWindow();
 
 	OutputLine(NULL, "「………むぅ。」",
@@ -65,6 +64,7 @@
 	OutputLine(NULL, "　私の目から熱いものがぼろりと零れる。",
 		   NULL, "I felt tears pouring down my face.", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+	DrawSceneWithMask( "white", "maskleft", 1, 0, 300 );
 
 	OutputLine(NULL, "　……ぅ、",
 		   NULL, "......Ooh...", Line_ContinueAfterTyping);
@@ -100,11 +100,12 @@
 		   NULL, " Soon it was all gone.", Line_Normal);
 	ClearMessage();
 	DrawScene( "white", 400 );
-	DrawSceneWithMask( "Heya3", "maskm1", 1, 0, 300 );
+	DrawSceneWithMask( "sgtitle990000", "maskm1", 1, 0, 300 );
 
 	OutputLine(NULL, "　朝日がカーテンの隙間から零れてくる。",
 		   NULL, "I could see the bright morning sun through a crack in the curtains.", Line_Normal);
 	ClearMessage();
+	DrawScene( "black", 1000 );
 
 	OutputLine(NULL, "　ここは…園崎本家の、魅音の部屋だった。",
 		   NULL, "I was in Mion's room at the Sonozaki house.", Line_Normal);
@@ -334,6 +335,7 @@
 	OutputLine(NULL, "呼んできますね。」",
 		   NULL, " I'll get her for you.\"", Line_Normal);
 	ClearMessage();
+	DrawScene( "black", 1000 );
 
 	OutputLine(NULL, "　私は詩音を演じることに決め、わざと廊下を行き来して足音と間を演出した後、受話器を再び取った。",
 		   NULL, "I decided to play two parts. I went back and forth down the hallway and picked up the phone again.", Line_Normal);
@@ -927,7 +929,7 @@
 	OutputLine(NULL, "　そして、そうさ「けじめ」をつけてやる……………。",
 		   NULL, "Yes, I was going to settle the score.", Line_Normal);
 	ClearMessage();
-	DrawScene( "Heya1", 400 );
+	DrawScene( "jsa7", 400 );
 	FadeOutBGM( 1, 0, FALSE );
 	DrawBustshot( 19, "no_data", 0, 100, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, TRUE );
 
@@ -1001,9 +1003,8 @@
 	OutputLine(NULL, "　時計を見ると、登校時間はもうすぐだった。",
 		   NULL, "It was almost time to leave the house.", Line_Normal);
 	ClearMessage();
-	DrawSceneWithMask( "white", "maskright", 1, 0, 300 );
-	DrawSceneWithMask( "M_Hi6", "maskright", 1, 0, 300 );
-	DrawBustshotWithFiltering( 2, "Re_WaraiB1", "maskright", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 10, 0, FALSE );
+	DrawSceneWithMask( "sora3", "maskright", 1, 0, 300 );
+	DrawBustshotWithFiltering( 2, "re1a_waraiA1_0", "maskright", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 10, 0, FALSE );
 	DrawSceneWithMask( "Ie2", "maskright", 1, 0, 300 );
 
 	OutputLine(NULL, "「魅ぃちゃ〜〜ん！！",
@@ -1022,7 +1023,7 @@
 		   NULL, " Y-You should have just gone on ahead...\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 	DisableWindow();
-	DrawBustshotWithFiltering( 1, "Kei_Def1", "maskleft", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 8, 300, TRUE );
+	DrawBustshotWithFiltering( 1, "kei1_Def1_0", "maskleft", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 8, 300, TRUE );
 	DisplayWindow();
 
 	OutputLine(NULL, "「あれ、魅音？",
@@ -1033,7 +1034,7 @@
 		   NULL, " You're breathing heavily, too.\"", Line_Normal);
 	ClearMessage();
 	DisableWindow();
-	ChangeBustshot( 2, "Re_NandeA1", 200, TRUE );
+	ChangeBustshot( 2, "re1a_nandeA1_0_zoom", 200, TRUE );
 	DisplayWindow();
 
 	OutputLine(NULL, "「……魅ぃちゃん、…ひょっとして、具合悪くない？」",
@@ -1048,7 +1049,7 @@
 		   NULL, "\"...Rena, your hand is pretty cold.\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 	DisableWindow();
-	ChangeBustshot( 2, "Re_KomaruB1", 200, TRUE );
+	ChangeBustshot( 2, "re1a_komaruA1_0_zoom", 200, TRUE );
 	DisplayWindow();
 
 	OutputLine(NULL, "「魅ぃちゃん…ちょとだけど熱あるよ？」",
@@ -1061,7 +1062,7 @@
 		   NULL, " ...Give it half a day and I'll be fit as a fiddle.\"", Line_Normal);
 	ClearMessage();
 	DisableWindow();
-	ChangeBustshot( 1, "Kei_majime2", 200, TRUE );
+	ChangeBustshot( 1, "kei1_Majime2_0", 200, TRUE );
 	DisplayWindow();
 
 	OutputLine(NULL, "「本当に大丈夫かよ。",
@@ -1086,7 +1087,7 @@
 		   NULL, "I'd thought they would tease me, but they didn't.", Line_Normal);
 	ClearMessage();
 	DisableWindow();
-	ChangeBustshot( 2, "Re_HauA1", 200, TRUE );
+	ChangeBustshot( 2, "re1a_hauA1_0_zoom", 200, TRUE );
 	DisplayWindow();
 
 	OutputLine(NULL, "「む、無理しない方がいいと思うな。",
@@ -1103,7 +1104,7 @@
 		   NULL, " I think it's already working.\"", Line_Normal);
 	ClearMessage();
 	DisableWindow();
-	ChangeBustshot( 1, "Kei_Def2", 200, TRUE );
+	ChangeBustshot( 1, "kei1_Def2_0", 200, TRUE );
 	DisplayWindow();
 
 	OutputLine(NULL, "「じゃあ…行こうか。",
@@ -1114,7 +1115,7 @@
 		   NULL, " ...the time.\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 	DisableWindow();
-	ChangeBustshot( 2, "Re_BikkuriB1", 200, TRUE );
+	ChangeBustshot( 2, "re1a_bikkuriA1_0_zoom", 200, TRUE );
 	DisplayWindow();
 
 	OutputLine(NULL, "「わ？！",
@@ -1154,6 +1155,7 @@
 	SetValidityOfInput( TRUE );
 	SetSpeedOfMessage( FALSE, 0 );
 	DrawSceneWithMask( "GK1", "maskup", 1, 0, 300 );
+	DrawBustshot( 3, "Tie_def", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
 
 	OutputLine(NULL, "「それでは委員長、号令。」",
 		   NULL, "\"President, if you would.\"", Line_WaitForInput);
@@ -1175,7 +1177,8 @@
 		   NULL, "I never learn, do I?", Line_Normal);
 	ClearMessage();
 	DisableWindow();
-	DrawBustshotWithFiltering( 1, "Re_KomaruA1", "maskleft", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 8, 300, TRUE );
+	DrawScene( "gk3", 400 );
+	DrawBustshot( 1, "re1a_komaruA1_0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 200, TRUE );
 	DisplayWindow();
 
 	OutputLine(NULL, "「魅ぃちゃん本当に大丈夫かな…？",
@@ -1184,7 +1187,7 @@
 		   NULL, " She doesn't look good...\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 	DisableWindow();
-	DrawBustshotWithFiltering( 2, "Sa_AkireruA1", "maskright", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 10, 300, TRUE );
+	DrawBustshot( 3, "sa1a_AkireruA1_0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
 	DisplayWindow();
 
 	OutputLine(NULL, "「…あら、…そうなんですの？",
@@ -1200,8 +1203,7 @@
 	OutputLine(NULL, "　挙動が普段と多少違っても言い訳になる。",
 		   NULL, "Even if I did things differently from Mion, I had an excuse.", Line_Normal);
 	ClearMessage();
-	DrawBustshotWithFiltering( 2, "Kei_Warai", "maskright", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 10, 0, FALSE );
-	DrawSceneWithMask( "GK2", "maskright", 1, 0, 300 );
+	DrawBustshot( 1, "kei1_Warai_0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 200, TRUE );
 
 	OutputLine(NULL, "「まぁ、そのアレだ。",
 		   NULL, "\"Well, you know.", Line_WaitForInput);
@@ -1209,11 +1211,13 @@
 		   NULL, " Girls have those days when they just don't feel well...\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 	DisableWindow();
-	DrawBustshotWithFiltering( 1, "Ri_WaraiA1", "maskleft", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 8, 300, TRUE );
+	DrawBustshot( 3, "ri1_FumanA1_0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
 	DisplayWindow();
 
 	OutputLine(NULL, "「……ボクにはそんな日はないのですよ？",
 		   NULL, "\"...I don't have those days.", Line_WaitForInput);
+	DrawBustshot( 3, "ri1_WaraiA1_0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );	   
+		   
 	OutputLine(NULL, "　にぱー☆」",
 		   NULL, " Nipah☆.\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -1291,11 +1295,14 @@
 	OutputLine(NULL, "　………そうすれば、彼に近付く魔手も察知しやすいのではないか……。",
 		   NULL, "That should make him aware of his surroundings... and maybe he would notice if anything odd took place.", Line_Normal);
 	ClearMessage();
-	DrawSceneWithMask( "GK3", "maskup", 1, 0, 300 );
+	DrawSceneWithMask( "GK1", "maskup", 1, 0, 300 );
+	DrawBustshot( 1, "kei1_Komaru_0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 200, TRUE );
+	DrawBustshot( 3, "Tie_Niramu", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
 
 	OutputLine(NULL, "　前原圭一は居眠りがバレて、先生に顔を洗ってくるよう命令されて廊下に出るところだった。",
 		   NULL, "The teacher caught him sleeping, so she ordered him to go wash his face. He walked out into the hallway.", Line_Normal);
 	ClearMessage();
+	DrawScene( "black", 1000 );
 
 	OutputLine(NULL, "　………眠いと言えば、…私も眠い。",
 		   NULL, "I was sleepy too.", Line_WaitForInput);
@@ -1319,6 +1326,7 @@
 	FadeOutBGM( 2, 0, FALSE );
 	DrawBustshot( 19, "no_data", 0, 100, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, TRUE );
 	DrawScene( "GR2", 400 );
+	DrawBustshot( 2, "kei1_Nayamu_0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
 	PlayBGM( 0, "semi", 120, 0 );
 
 	OutputLine(NULL, "　昇降口から出ると、圭一は表の流しでザブザブと、律儀に顔を洗っていた。",
@@ -1331,11 +1339,15 @@
 		   NULL, " It feels better outside, huh?\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 	DisableWindow();
-	DrawBustshotWithFiltering( 0, "Kei_Def2", "maskdown", 1, 0, 0, FALSE, 0, 0, 0, 0, 0, 9, 300, TRUE );
+	DrawBustshot( 2, "kei1_Def2_0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
 	DisplayWindow();
 
 	OutputLine(NULL, "「ん、…魅音か。",
 		   NULL, "\"Hm... Mion?", Line_WaitForInput);
+	DisableWindow();
+	DrawBustshot( 2, "kei1_Nayamu_0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
+	DisplayWindow();
+	
 	OutputLine(NULL, "…ふぁ〜ぁ。",
 		   NULL, " ...Yaaawn.", Line_WaitForInput);
 	OutputLine(NULL, "授業、さぼるなよな〜。」",
@@ -1354,7 +1366,7 @@
 		   NULL, "But it didn't feel as good as it looked.", Line_Normal);
 	ClearMessage();
 	DisableWindow();
-	ChangeBustshot( 0, "Kei_Def1", 200, TRUE );
+	DrawBustshot( 2, "kei1_Def1_0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
 	DisplayWindow();
 
 	OutputLine(NULL, "「…魅音、風邪の方はいいのかよ。",
@@ -1377,7 +1389,7 @@
 		   NULL, " I pretended to drink with an invisible glass.", Line_Normal);
 	ClearMessage();
 	DisableWindow();
-	ChangeBustshot( 0, "Kei_Warai", 200, TRUE );
+	DrawBustshot( 2, "kei1_Komaru_0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
 	DisplayWindow();
 
 	OutputLine(NULL, "「ふ、二日酔いかよー？！",
@@ -1390,7 +1402,7 @@
 		   NULL, "Keiichi exaggerated his reaction, but he still seemed worried.", Line_Normal);
 	ClearMessage();
 	DisableWindow();
-	ChangeBustshot( 0, "Kei_Def2", 200, TRUE );
+	DrawBustshot( 2, "kei1_Def2_0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
 	DisplayWindow();
 
 	OutputLine(NULL, "「じゃあな。俺は教室に戻るぜ。",
@@ -1401,7 +1413,7 @@
 		   NULL, " Don't wobble into a sewer or a brook, got it?\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 	DisableWindow();
-	FadeBustshotWithFiltering( 0, "maskright" , 1, FALSE, 0, 0, 300, TRUE );
+	FadeAllBustshots( 400, TRUE );
 	DisplayWindow();
 
 	OutputLine(NULL, "　圭一はそれだけを告げ、教室に戻ろうと身をひるがえした。",
@@ -1418,7 +1430,7 @@
 		   NULL, " He, in response, turned around.", Line_Normal);
 	ClearMessage();
 	DisableWindow();
-	DrawBustshotWithFiltering( 1, "Kei_Def1", "maskleft", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 8, 300, TRUE );
+	DrawBustshotWithFiltering( 1, "kei1_Def1_0", "maskleft", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 8, 300, TRUE );
 	DisplayWindow();
 
 	OutputLine(NULL, "「なんだー？」",
@@ -1440,7 +1452,7 @@
 		   NULL, " ...Did you see Tomitake-san or Takano-san anywhere?\"", Line_Normal);
 	ClearMessage();
 	DisableWindow();
-	ChangeBustshot( 1, "Kei_Nayamu", 200, TRUE );
+	ChangeBustshot( 1, "kei1_Komaru_0", 200, TRUE );
 	DisplayWindow();
 
 	OutputLine(NULL, "　……圭一の体が一瞬、強張ったのを見逃さない。",
@@ -1474,9 +1486,6 @@
 	OutputLine(NULL, "　……圭一が何とか言い逃れようと、必死に思案しているのがよくわかる。",
 		   NULL, "He was trying to come up with an excuse.", Line_Normal);
 	ClearMessage();
-	DisableWindow();
-	ChangeBustshot( 1, "Kei_Komaru", 200, TRUE );
-	DisplayWindow();
 
 	OutputLine(NULL, "「……さ、…さぁ…どうかな。",
 		   NULL, "\"I can't remember...", Line_WaitForInput);
@@ -1524,8 +1533,8 @@
 	OutputLine(NULL, "　…………………、…今は思い出さなくてもいいことだ…。",
 		   NULL, ".........I didn't need to be thinking about him right now...", Line_Normal);
 	ClearMessage();
-	DrawBustshot( 0, "Kei_Komaru", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 9, 0, FALSE );
 	DrawScene( "GR2", 400 );
+	DrawBustshot( 1, "kei1_Komaru_0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 200, TRUE );
 
 	OutputLine(NULL, "「…………そう。",
 		   NULL, "\".........I see.", Line_WaitForInput);
@@ -1543,7 +1552,7 @@
 		   NULL, " Keiichi was perplexed, as I'd expected.", Line_Normal);
 	ClearMessage();
 	DisableWindow();
-	ChangeBustshot( 0, "Kei_Majime", 200, TRUE );
+	DrawBustshot( 1, "kei1_Majime_0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 200, TRUE );
 	DisplayWindow();
 
 	OutputLine(NULL, "「…それ、…昨日も聞いたよな？",
@@ -1588,7 +1597,7 @@
 		   NULL, " ...I guess I just thought I'd get a different answer if I asked you again.\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 	DisableWindow();
-	ChangeBustshot( 0, "Kei_Komaru", 200, TRUE );
+	DrawBustshot( 1, "kei1_Komaru_0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 200, TRUE );
 	DisplayWindow();
 
 	OutputLine(NULL, "「ど、どうして会ったかどうかを、そんなに気にするんだよ？」",
@@ -1791,7 +1800,6 @@
 		   NULL, "Anyone who had ever experienced Granny's wrath would understand.", Line_Normal);
 	ClearMessage();
 	DrawScene( "black", 400 );
-	DrawSceneWithMask( "Heya2", "maskup", 1, 0, 300 );
 
 	OutputLine(NULL, "　私は魅音の部屋へ帰ると、魅音愛用の目覚まし時計を２時くらいにセットし、布団に潜り込んだ。",
 		   NULL, "I headed into Mion's room, set her alarm clock for 2 PM, and crawled into her bed.", Line_Normal);
@@ -1947,7 +1955,7 @@
 		   NULL, " I go past there on my way to work anyway.\"", Line_Normal);
 	ClearMessage();
 	DrawScene( "black", 400 );
-	DrawScene( "Sora", 400 );
+	DrawScene( "Sora3", 400 );
 
 	OutputLine(NULL, "　話の展開の関係で、私たちは興宮で落ち合うことになった。",
 		   NULL, "We decided to meet in Okinomiya.", Line_Normal);

@@ -47,7 +47,6 @@
 	OutputLine(NULL, "　私は本家で少し休んで時間を調整した後、家を出た。",
 		   NULL, "I rested for a while at the house, then left for the meeting.", Line_Normal);
 	ClearMessage();
-	DrawSceneWithMask( "JOK1", "maskup", 1, 0, 300 );
 
 	OutputLine(NULL, "　古手神社へと続く長い階段を上り、境内に入る。",
 		   NULL, "I walked up the long stairs to the Furude Shrine.", Line_Normal);
@@ -61,6 +60,7 @@
 	OutputLine(NULL, "　…集会所の中で昔、ボヤがあったのでそれ以来、中は禁煙なのだとか。",
 		   NULL, "Since they had a minor fire a long time ago, it had been made into a non-smoking area.", Line_Normal);
 	ClearMessage();
+	DrawBustshot( 2, "ki_Def_0-", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
 
 	OutputLine(NULL, "「あれ、魅音ちゃんかい？」",
 		   NULL, "\"Is that Mion-chan?\"", Line_WaitForInput);
@@ -137,6 +137,7 @@
 	OutputLine(NULL, "…そんなの私にはできない。",
 		   NULL, " There was no way I could do that...", Line_Normal);
 	ClearMessage();
+	DrawBustshot( 2, "ki_Warai_0-", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
 
 	OutputLine(NULL, "「あぁあぁ、大丈夫大丈夫、おじいちゃんがやるから。",
 		   NULL, "\"Ah, don't worry, I'll do it.", Line_WaitForInput);
@@ -204,7 +205,6 @@
 	OutputLine(NULL, "　そう思えば、古手家の席が空席なのは理解に容易だった。",
 		   NULL, "In this way, the empty Furude family seat was easily explained.", Line_Normal);
 	ClearMessage();
-	DrawScene( "JS4", 400 );
 
 	OutputLine(NULL, "　全員が腰を下ろすと、婦人部長がお茶を配ってくれた。",
 		   NULL, "When everyone was seated, the head of the women's association served tea.", Line_WaitForInput);
@@ -225,6 +225,7 @@
 	OutputLine(NULL, "村長、どんぞ。」",
 		   NULL, " Go ahead, please...\"", Line_Normal);
 	ClearMessage();
+	DrawBustshot( 2, "ki_Def_0_zoom-", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
 
 	OutputLine(NULL, "「あーー、座ったままで失礼します。",
 		   NULL, "\"Ah, please excuse me for staying seated.", Line_WaitForInput);
@@ -265,6 +266,7 @@
 	OutputLine(NULL, "　８人程度の拍手では景気が悪いだけだった。",
 		   NULL, "An applause with only eight people doesn't sound so great.", Line_Normal);
 	ClearMessage();
+	FadeAllBustshots( 400, TRUE );
 
 	OutputLine(NULL, "「そんれでは引き続き、議事の方に入ってまいりたいと思います。",
 		   NULL, "\"Okay, let's move on to today's proceedings.", Line_WaitForInput);
@@ -285,6 +287,7 @@
 	OutputLine(NULL, "よろしくお願いします。」",
 		   NULL, " Please go ahead.\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+	DrawBustshot( 2, "ki_Def_0_zoom-", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
 
 	OutputLine(NULL, "「どうも、健ちゃんお疲れ様。",
 		   NULL, "\"Thank you, Ken-chan.", Line_WaitForInput);
@@ -349,6 +352,7 @@
 	OutputLine(NULL, "　誰も口を開かない。",
 		   NULL, "Nobody said a thing.", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+	DrawBustshot( 2, "ki_Def_0_zoom-", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
 
 	OutputLine(NULL, "　……ふと見ると、公由さんは私を見ていた。",
 		   NULL, "Then, I noticed Kimiyoshi-san looking at me.", Line_WaitForInput);
@@ -367,6 +371,7 @@
 	OutputLine(NULL, "……お魎さんは何か言ってたかい？」",
 		   NULL, " has Oryou-san said anything about this whole thing?\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+	FadeAllBustshots( 400, TRUE );
 
 	OutputLine(NULL, "　みんなの目が私に向く。",
 		   NULL, "Everyone looked in my direction.", Line_WaitForInput);
@@ -765,6 +770,7 @@
 	OutputLine(NULL, "　それに対して、どんな悲しみ、あるいは憐れみの表情を浮かべてくれるか、知りたかったから。",
 		   NULL, "I wanted to see how distressed and sad he'd look.", Line_Normal);
 	ClearMessage();
+	DrawBustshot( 2, "ki_Komaru_0_zoom-", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
 
 	OutputLine(NULL, "　そして公由のおじいちゃんの表情を見たとき。",
 		   NULL, "And when I saw his face...", Line_WaitForInput);
@@ -869,7 +875,6 @@
 	OutputLine(NULL, "　…未だ祟りが下されない狼藉者の名前を脳裏に刻み込んでいるようだった。",
 		   NULL, "They were memorizing the names of the intruder the curse had yet to fall upon.", Line_Normal);
 	ClearMessage();
-	DrawSceneWithMask( "JS4", "maskup", 1, 0, 300 );
 	FadeOutBGM( 1, 0, FALSE );
 	DrawBustshot( 19, "no_data", 0, 100, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, TRUE );
 
@@ -896,7 +901,6 @@
 	OutputLine(NULL, "を確認し、会合は閉会となった…。",
 		   NULL, " With those closing remarks, the meeting was over.", Line_Normal);
 	ClearMessage();
-	DrawScene( "black", 400 );
 
 	FadeOutBGM( 0, 0, FALSE );
 	FadeOutBGM( 1, 0, FALSE );
@@ -924,7 +928,6 @@
 	OutputLine(NULL, "　老人たちは互いに簡単に挨拶を済ますと、自転車やバイク、または車で、自分の家へそれぞれ引き上げて行った…。",
 		   NULL, "The elderly people said goodbye to each other and left on their bicycles, on their motorcycles, or in their cars...", Line_Normal);
 	ClearMessage();
-	DrawSceneWithMask( "M_Y7", "maskleft", 1, 0, 300 );
 
 	OutputLine(NULL, "　公由のおじいちゃんも、他の老人たちに手を振ると、自らも家路に就こうとしていた。",
 		   NULL, "Uncle Kimiyoshi waved them goodbye and started to head home himself.", Line_WaitForInput);
@@ -949,6 +952,7 @@
 	OutputLine(NULL, "…おじいちゃんは足を止めた。",
 		   NULL, " He stopped.", Line_Normal);
 	ClearMessage();
+	DrawBustshot( 2, "ki_Komaru_0--", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
 
 	OutputLine(NULL, "「………いや、何もないよ。」",
 		   NULL, "\"No, I don't have anything planned.\"", Line_WaitForInput);
@@ -983,7 +987,7 @@
 	OutputLine(NULL, "　鬼婆に呼ばれ、二人だけで密談をすることも多いからこそ、これだけの会話でうちに呼ぶことができるのだ……。",
 		   NULL, "He often came to the house to have secret meetings with the hag, so he wasn't suspicious at all...", Line_Normal);
 	ClearMessage();
-	DrawScene( "Rouka2", 400 );
+	DrawScene( "ima3", 400 );
 
 	OutputLine(NULL, "　公由のおじいちゃんを応接の間に招きいれると、",
 		   NULL, "I invited Uncle Kimiyoshi into the living room.", Line_WaitForInput);
@@ -991,7 +995,7 @@
 		   NULL, " I served him a cup of tea and told him I was going to fetch the hag. I left the room and killed some time down the hallway.", Line_Normal);
 	ClearMessage();
 	DrawSceneWithMask( "black", "maskright", 1, 0, 300 );
-	DrawSceneWithMask( "Heya1", "maskleft", 1, 0, 300 );
+	DrawSceneWithMask( "jsa7", "maskleft", 1, 0, 300 );
 
 	OutputLine(NULL, "「……婆っちゃ、着替えてから来るそうです。",
 		   NULL, "\"Granny will be here after she gets dressed.", Line_WaitForInput);
@@ -1245,7 +1249,7 @@
 		   NULL, "............Since then, we've been separated.", Line_Normal);
 	ClearMessage();
 	DrawScene( "black", 400 );
-	DrawSceneWithMask( "Heya1", "maskup", 1, 0, 300 );
+	DrawSceneWithMask( "jsa7", "maskup", 1, 0, 300 );
 
 	OutputLine(NULL, "「……魅音ちゃん。」",
 		   NULL, "\"Mion-chan...\"", Line_WaitForInput);
@@ -2556,7 +2560,7 @@
 	DrawBustshot( 19, "no_data", 0, 100, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, TRUE );
 	DrawScene( "white", 100 );
 	DrawScene( "black", 0 );
-	DrawSceneWithMask( "Heya1", "maskup", 1, 0, 300 );
+	DrawSceneWithMask( "jsa7", "maskup", 1, 0, 300 );
 
 	OutputLine(NULL, "　うをああああわああぁああああああぁああぁあッ！！！",
 		   NULL, "Whaaaaaahhhhhhhh!!!", Line_Normal);
@@ -2683,7 +2687,7 @@
 	OutputLine(NULL, "……いつの間にか作り上げられているんです。」",
 		   NULL, " where every year, you're allowed to kill someone on the night of Watanagashi.\"", Line_Normal);
 	ClearMessage();
-	DrawScene( "Hi1", 1000 );
+	DrawScene( "hi2-", 1000 );
 	PlayBGM( 1, "yabaisemi", 120, 0 );
 
 	OutputLine(NULL, "　そう。",
@@ -2726,7 +2730,7 @@
 	OutputLine(NULL, "　そう、それはお魎が作り出した園崎本家の、磨ぎ汁のような霧で隠した命令システムそのもの。",
 		   NULL, "That was the system of vague commands used in the Sonozaki family, created by its head, Oryou.", Line_Normal);
 	ClearMessage();
-	DrawScene( "Heya4", 400 );
+	DrawScene( "Heya3", 400 );
 
 	OutputLine(NULL, "　園崎本家における命令系統の特筆すべき点は、命令者と執行者の両点が、線で結ばれていないところにある。",
 		   NULL, "One thing that must be mentioned about that command system is that the person giving the orders and the one executing them didn't need to interact in any way.", Line_WaitForInput);
@@ -2772,14 +2776,12 @@
 	OutputLine(NULL, "　でも、結果的にお魎の思い通りの結果になったことはわかるし、そのために尽力した人間が身内の誰かだということはおぼろげに分かっている。",
 		   NULL, "But they all knew things would conclude just as Oryou wanted, and they could assume it was one of their own who did it for her.", Line_Normal);
 	ClearMessage();
-	DrawScene( "Hi2", 400 );
+	DrawScene( "hi2-", 400 );
 
 	OutputLine(NULL, "　この消極的な協力システムは綿密で、村ぐるみと呼べるほど広大で、そしてその結束はダム戦争で鍛錬され、この上なく強固だ。",
 		   NULL, "This passive support system was thoroughly effective, and it spread all over the village. Its ties became even tighter after the dam conflict.", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
-
-	DrawSceneWithMask( "M_Hi3", "maskleft", 1, 0, 300 );
 
 	OutputLine(NULL, "　誰もが執行者になりうる。",
 		   NULL, "Anyone could be the one to execute Oryou's orders.", Line_WaitForInput);
@@ -2825,7 +2827,7 @@
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
-	DrawScene( "Hi2", 400 );
+	DrawScene( "hi2-", 400 );
 
 	OutputLine(NULL, "　それは長い排他的な歴史を持つ雛見沢では自然に生まれた。",
 		   NULL, "It was created during the long and unique history of Hinamizawa.", Line_WaitForInput);
@@ -3037,7 +3039,7 @@
 	OutputLine(NULL, "　……雑草の根を、途中で千切れないように、深く深く丹念に執念深く掘り起こすようなものだった。",
 		   NULL, "It was like pulling a weed while being very careful not to break its roots.", Line_Normal);
 	ClearMessage();
-	DrawSceneWithMask( "JS4", "maskdown", 1, 0, 300 );
+	DrawSceneWithMask( "JS4-", "maskdown", 1, 0, 300 );
 
 	OutputLine(NULL, "　役員会の席上で私は、前原圭一も祭具殿を侵したひとりと発言した。",
 		   NULL, "I announced that Keiichi Maebara was one of the people who snuck into the shrine storage.", Line_Normal);
@@ -3285,7 +3287,7 @@
 	FadeOutBGM( 2, 0, FALSE );
 	FadeOutBGM( 3, 0, FALSE );
 	DrawBustshot( 19, "no_data", 0, 100, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, TRUE );
-	DrawSceneWithMask( "JSA6", "maskdown", 1, 0, 300 );
+	DrawSceneWithMask( "black", "maskdown", 1, 0, 300 );
 
 	OutputLine(NULL, "「公由のおじいちゃん、お具合はいかがですか？」",
 		   NULL, "\"How are you doing, Uncle Kimiyoshi?\"", Line_Normal);
@@ -3657,7 +3659,6 @@
 	OutputLine(NULL, "…警察の捜査がいつまでも続くのは、面白くなかったんじゃないかな……。」",
 		   NULL, " she didn't want the police to continue the investigation, I guess...\"", Line_Normal);
 	ClearMessage();
-	DrawSceneWithMask( "black", "maskdown", 1, 0, 300 );
 
 	OutputLine(NULL, "　公由の意見は興味深い。",
 		   NULL, "What Kimiyoshi just said is very interesting.", Line_WaitForInput);
@@ -3676,7 +3677,6 @@
 	OutputLine(NULL, "　だから、捜査を終わらせるために身代わりをでっち上げたという考えは、かなり信憑性がある。",
 		   NULL, "Therefore, the hag came up with a decoy in order to bring an end to the investigation.", Line_Normal);
 	ClearMessage();
-	DrawSceneWithMask( "JSA6", "maskup", 1, 0, 300 );
 
 	OutputLine(NULL, "「でも、そんな犯人のでっち上げなんて、そうそう簡単にできることじゃないですよ？」",
 		   NULL, "\"But fabricating a suspect can't be that easy, don't you agree?\"", Line_WaitForInput);
@@ -3708,7 +3708,7 @@
 		   NULL, " Didn't you also hear things directly?\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 	DrawScene( "black", 400 );
-	DrawScene( "Heya4", 400 );
+	DrawScene( "heya3-", 400 );
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
 
@@ -3720,7 +3720,7 @@
 		   NULL, " or, \"can we set up a checkpoint to blockade their construction vehicles?\"", Line_Normal);
 	ClearMessage();
 	DrawSceneWithMask( "black", "maskleft", 1, 0, 300 );
-	DrawSceneWithMask( "JS4", "maskleft", 1, 0, 300 );
+	DrawSceneWithMask( "js4--", "maskleft", 1, 0, 300 );
 
 	OutputLine(NULL, "　そして、その結果、警察に捕まった仲間たちを釈放したり、あるいはアリバイを作ったり、証拠を崩したり捏造したり。",
 		   NULL, "They set free their comrades from the police by coming up with alibis, destroying or forging evidence...", Line_WaitForInput);
@@ -3747,7 +3747,7 @@
 	OutputLine(NULL, "　…文字通り、裏世界を牛耳る黒幕だ。",
 		   NULL, "She was truly the mastermind who controlled the underside of the world.", Line_Normal);
 	ClearMessage();
-	DrawSceneWithMask( "JSA6", "maskup", 1, 0, 300 );
+	DrawSceneWithMask( "black", "maskup", 1, 0, 300 );
 
 	OutputLine(NULL, "「詩音ちゃんだって、建設省の幹部の息子…、",
 		   NULL, "\"You've heard about", Line_WaitForInput);
@@ -3806,7 +3806,6 @@
 	OutputLine(NULL, "…悟史くんがもう生きていないことが、動かしがたい事実になっていくのが、悲しかった。",
 		   NULL, " the more I realized Satoshi-kun really was dead... That made me very sad.", Line_Normal);
 	ClearMessage();
-	DrawScene( "black", 400 );
 
 	OutputLine(NULL, "「……………悟史くんを、…『鬼隠し』にした実行犯は誰だと思います？」",
 		   NULL, "\"Who actually demoned away Satoshi-kun?\"", Line_WaitForInput);
@@ -3896,7 +3895,6 @@
 	OutputLine(NULL, "　私は懐中電灯を掴むと、岩牢のある大空洞へ向かった。",
 		   NULL, "I grabbed a flashlight and headed to the huge cave with all the cells.", Line_Normal);
 	ClearMessage();
-	DrawSceneWithMask( "JSA4", "maskleft", 1, 0, 300 );
 
 	OutputLine(NULL, "　大空洞の灯りを付けたので、岩牢の中の魅音が私が来たのに気付いたようで、不安そうな目線を向けていた。",
 		   NULL, "As I turned on the lights in the cave, Mion noticed me and gave me a worried look.", Line_WaitForInput);
@@ -3911,7 +3909,7 @@
 	OutputLine(NULL, "　………よくもこう自然そうにカモフラージュしたものだと、その隠し方に芸術性すら覚えた。",
 		   NULL, "...I was still very impressed by how the well was hidden. It was almost artistic.", Line_Normal);
 	ClearMessage();
-	DrawScene( "black", 400 );
+	DrawScene( "bg_undergr2", 400 );
 
 	OutputLine(NULL, "　井戸の底に懐中電灯の灯りを向ける。",
 		   NULL, "I shone the flashlight at the bottom of the well.", Line_WaitForInput);
@@ -4191,7 +4189,7 @@
 	SetValidityOfInput( FALSE );
 	Wait( 4000 );
 	SetValidityOfInput( TRUE );
-	DrawSceneWithMask( "JSA6", "maskup", 1, 0, 1300 );
+	DrawSceneWithMask( "black", "maskup", 1, 0, 1300 );
 	PlayBGM( 0, "yoru", 120, 0 );
 
 	OutputLine(NULL, "「………魅音。",
@@ -4260,7 +4258,6 @@
 	OutputLine(NULL, "「嘘だあああぁああぁああッ！！！」",
 		   NULL, "\"YOU LIAAAaAAaAAR!!!\"", Line_Normal);
 	ClearMessage();
-	DrawScene( "JSA3", 1000 );
 	PlayBGM( 0, "hgrs01", 120, 0 );
 
 	OutputLine(NULL, "　一年前のあの日。",
@@ -4377,7 +4374,7 @@
 		   NULL, " Mmph...", Line_Normal);
 	ClearMessage();
 	DrawScene( "white", 10 );
-	DrawScene( "JSA6", 0 );
+	DrawScene( "aka1", 0 );
 
 	SetSpeedOfMessage( TRUE, 128 );
 	OutputLine(NULL, "「うわああああああぁああぁあぁああぁあ！！",
@@ -4464,6 +4461,7 @@
 	OutputLine(NULL, "　だったらぁあぁあああぁあッ！！！」",
 		   NULL, " Ahhhhhh!!!\"", Line_Normal);
 	ClearMessage();
+	DrawScene( "aka2", 400 );
 
 	SetSpeedOfMessage( TRUE, 128 );
 	OutputLine(NULL, "　鉄格子を蹴る、",

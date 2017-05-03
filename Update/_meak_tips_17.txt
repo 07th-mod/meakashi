@@ -8,7 +8,7 @@
 	ClearMessage();
 
 	PlayBGM( 0, "yoru", 120, 0 );
-	DrawScene( "Nort2", 1000 );
+	DrawScene( "Nort", 1000 );
 
 	OutputLine(NULL, "　５年目の祟り以降、もっとも電話が多かったのは、やはり側近の公由家頭首だった。",
 		   NULL, "The head of the Kimiyoshi family was the one who called the main house most often after the fifth year's curse.", Line_WaitForInput);
@@ -20,7 +20,6 @@
 		   NULL, "My father called the second most.", Line_Normal);
 	ClearMessage();
 	PlaySE( 0, "s_page", 128, 64 );
-	DrawSceneWithMask( "Heya4", "maskright", 7, 0, 300 );
 
 	OutputLine(NULL, "　うちの両親の序列は高いには高いが、うちの母親の昔の勘当騒ぎが尾を引いていて、表舞台にそうそう顔を出せない、やや日陰者っぽい扱いなのだと言う。",
 		   NULL, "My parents were still high in the hierarchy, but the stir caused by my mother's disownment still hung over us, so we got treated as outcasts.", Line_WaitForInput);

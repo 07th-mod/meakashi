@@ -6,7 +6,7 @@
 	FadeOutBGM( 3, 0, FALSE );
 	ClearMessage();
 
-	DrawScene( "black", 400 );
+	DrawScene( "bg_171", 400 );
 	PlayBGM( 0, "demo_48khz", 120, 0 );
 
 	OutputLine(NULL, "　もちろん、狡猾な刑事たちは私たちを二人一緒になど取調べはしなかった。",
@@ -54,6 +54,7 @@
 	SetValidityOfInput( FALSE );
 	Wait( 2000 );
 	SetValidityOfInput( TRUE );
+	DrawBustshot( 3, "kuma_Def_0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
 	FadeOutBGM( 1, 0, FALSE );
 	DrawBustshot( 19, "no_data", 0, 100, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, TRUE );
 
@@ -74,6 +75,7 @@
 	OutputLine(NULL, "すぐに。」",
 		   NULL, " Right away.\"", Line_Normal);
 	ClearMessage();
+	DrawScene( "black", 400 );
 
 	OutputLine(NULL, "　受話器を置くと私に、家から迎えが来ていると告げた。",
 		   NULL, "He hung up and told me somebody had come to retrieve me.", Line_Normal);
@@ -134,12 +136,15 @@
 	OutputLine(NULL, "　私を送る若い刑事に言ってやる。",
 		   NULL, "I asked the young cop just in case.", Line_Normal);
 	ClearMessage();
+	DrawScene( "bg_172", 400 );
+	DrawBustshot( 2, "kuma_Def_0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
 
 	OutputLine(NULL, "「ねね。",
 		   NULL, "\"Hey,", Line_WaitForInput);
 	OutputLine(NULL, "アメリカなんかでよく、死刑囚が死刑廃止の州で捕まると、引き渡さないでくれるっていう話あるじゃないですか。」",
 		   NULL, " did you know that, in America, if a condemned criminal gets arrested in a state which has banned capital punishment, they'll refuse to surrender him to the state prosecuting him if that state hasn't banned it?\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+	DrawBustshot( 2, "kuma_Komaru_0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
 
 	OutputLine(NULL, "「うん…？？」",
 		   NULL, "\"Huh...??\"", Line_WaitForInput);
@@ -222,7 +227,7 @@
 	ClearMessage();
 
 	DrawSceneWithMask( "black", "maskleft", 1, 0, 300 );
-	DrawSceneWithMask( "Kuruma6", "maskleft", 1, 0, 300 );
+	DrawSceneWithMask( "kuruma4", "maskleft", 1, 0, 300 );
 	PlayBGM( 1, "Mati", 120, 0 );
 
 	OutputLine(NULL, "　園崎本家には、ろくな時に招かれた記憶がない。",
@@ -240,7 +245,7 @@
 	ClearMessage();
 	FadeOutBGM( 1, 0, FALSE );
 	DrawBustshot( 19, "no_data", 0, 100, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, TRUE );
-	DrawSceneWithMask( "So2", "maskright", 1, 0, 300 );
+	DrawSceneWithMask( "So5", "maskright", 1, 0, 300 );
 
 	OutputLine(NULL, "　車は本家の表門でなく、裏手に停まった。",
 		   NULL, "The car parked behind the house.", Line_WaitForInput);
@@ -263,7 +268,7 @@
 	FadeOutBGM( 3, 0, FALSE );
 	DrawBustshot( 19, "no_data", 0, 100, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, TRUE );
 	DisableWindow();
-	DrawBustshot( 0, "Me_MajimeA1", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 9, 400, TRUE );
+	DrawBustshot( 0, "me1a_MajimeA1_0--", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 9, 400, TRUE );
 	DisplayWindow();
 	PlayBGM( 1, "suzu", 120, 0 );
 
@@ -320,7 +325,7 @@
 	OutputLine(NULL, "　魅音を先導され、私たちは歩き出す……。",
 		   NULL, "Mion escorted me, and the others followed...", Line_Normal);
 	ClearMessage();
-	DrawScene( "So3", 400 );
+	DrawScene( "So6", 400 );
 
 	OutputLine(NULL, "　家でなく、庭に向かう。",
 		   NULL, "We went to the garden, not into the house.", Line_WaitForInput);
@@ -357,7 +362,7 @@
 	OutputLine(NULL, "　それを今日、自らの身をもって知れるとは、…あの頃は夢にも思わなかった…。",
 		   NULL, "I'd never expected to see the torture room for myself...", Line_Normal);
 	ClearMessage();
-	DrawSceneWithMask( "Mo3", "maskright", 1, 0, 300 );
+	DrawSceneWithMask( "ymo3", "maskright", 1, 0, 300 );
 
 	OutputLine(NULL, "　やがて、鬱蒼とした深い森の中が大きく盆地になっているところにやってきた。",
 		   NULL, "We came to a concave clearing in the middle of the woods.", Line_WaitForInput);
@@ -448,7 +453,7 @@
 	FadeOutBGM( 0, 0, FALSE );
 	FadeOutBGM( 2, 0, FALSE );
 	DrawBustshot( 19, "no_data", 0, 100, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, TRUE );
-	DrawSceneWithMask( "JSA4", "maskc", 1, 0, 300 );
+	DrawSceneWithMask( "JSA7", "maskc", 1, 0, 300 );
 	PlayBGM( 0, "higurashi_soundscape", 120, 0 );
 
 	OutputLine(NULL, "　そこは…広い部屋だった。",
@@ -508,7 +513,7 @@
 	OutputLine(NULL, "　この部屋に入ると同時に、私は若い男ふたりに両腕をがっちりと組まれていたから。",
 		   NULL, "Two young men had been holding me by the arms since I got here.", Line_Normal);
 	ClearMessage();
-	DrawSceneWithMask( "JSA5", "maskright", 1, 0, 300 );
+	DrawSceneWithMask( "black", "maskright", 1, 0, 300 );
 
 	OutputLine(NULL, "　シャワールームの壁には、……初めて見るのに用途の想像が付く、奇怪なものたちが並べられていた。",
 		   NULL, "There were oddly-shaped things hanging from the wall...", Line_Normal);
@@ -546,7 +551,8 @@
 	OutputLine(NULL, "……拷問具たちであることを理解している…。",
 		   NULL, " torture devices from Hell...", Line_Normal);
 	ClearMessage();
-	DrawSceneWithMask( "JSA4", "maskleft", 1, 0, 300 );
+	DrawSceneWithMask( "JS7", "maskleft", 1, 0, 300 );
+	DrawBustshot( 2, "oryou_Def_0_zoom--", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
 
 	OutputLine(NULL, "「だぁほが。",
 		   NULL, "\"Damned fool!", Line_WaitForInput);
@@ -640,7 +646,8 @@
 	OutputLine(NULL, "　でもそれは……悟史くんの両親のことであって、その息子である悟史くんに問われる非ではないと思っていたからだ。",
 		   NULL, "But I didn't think that Satoshi-kun was also burdened with that responsibility.", Line_Normal);
 	ClearMessage();
-	DrawScene( "JSA4", 400 );
+	DrawScene( "JS7", 400 );
+	DrawBustshot( 2, "oryou_Def_0_zoom--", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
 
 	OutputLine(NULL, "「……そんなの、…悟史くん、関係ないじゃないですか…。",
 		   NULL, "\"......He has nothing to do with that...", Line_WaitForInput);
@@ -651,6 +658,7 @@
 	FadeOutBGM( 1, 0, FALSE );
 	FadeOutBGM( 2, 0, FALSE );
 	FadeOutBGM( 3, 0, FALSE );
+	DrawBustshot( 2, "oryou_Sakebi_0_zoom--", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
 	DrawBustshot( 19, "no_data", 0, 100, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, TRUE );
 	PlayBGM( 1, "kaze", 120, 0 );
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -665,6 +673,7 @@
 	OutputLineAll(NULL, "", Line_Normal);
 
 	ClearMessage();
+	DrawBustshot( 2, "oryou_Def_0_zoom--", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
 
 	OutputLine(NULL, "　鬼婆に一喝され、私は言葉を最後まで言い切ることが出来ず、すくみ上がる。",
 		   NULL, "The hag interrupted me with a shout, which made me cower in fear.", Line_WaitForInput);
@@ -703,7 +712,8 @@
 	FadeOutBGM( 2, 0, FALSE );
 	FadeOutBGM( 3, 0, FALSE );
 	DrawBustshot( 19, "no_data", 0, 100, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, TRUE );
-	DrawSceneWithMask( "JSA4", "maskup", 1, 0, 300 );
+	DrawSceneWithMask( "JS7", "maskup", 1, 0, 300 );
+	DrawBustshot( 2, "oryou_Def_0_zoom--", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
 	PlayBGM( 0, "hgrs01", 120, 0 );
 
 	OutputLine(NULL, "「……鬼婆、あんた何言ってんの？",
@@ -711,6 +721,7 @@
 	OutputLine(NULL, "　黙って聞いてれば言いたい放題。」",
 		   NULL, " Everything you've spouted is nonsense!\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+	DrawBustshot( 2, "oryou_Sakebi_0_zoom--", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
 
 	OutputLine(NULL, "「ああぁん？！",
 		   NULL, "\"Huhh?!", Line_WaitForInput);
@@ -721,6 +732,8 @@
 	OutputLine(NULL, "「やかましいッ、終いまで聞きなよ鬼婆ッ！！！！」",
 		   NULL, "\"Shut the fuck up!! Let me finish!!!\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+	ClearMessage();
+	DrawBustshot( 2, "oryou_Def_0_zoom--", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
 
 	OutputLine(NULL, "　私は鬼婆の怒鳴りすら一喝し、声を張り上げた。",
 		   NULL, "I shouted loudly to silence the hag.", Line_Normal);
@@ -802,7 +815,7 @@
 	OutputLine(NULL, "　…それは、私が悟史くんに恋心を持っていることなのだ…。",
 		   NULL, "...The fact that I was in love with Satoshi-kun...", Line_Normal);
 	ClearMessage();
-	DrawScene( "JSA4", 400 );
+	DrawScene( "jsa7", 400 );
 
 	OutputLine(NULL, "「あははははははははは！",
 		   NULL, "\"Ahahahahaha!", Line_WaitForInput);
@@ -858,7 +871,8 @@
 		   NULL, "Then, she slowly walked in my direction.", Line_Normal);
 	ClearMessage();
 	DisableWindow();
-	DrawBustshotWithFiltering( 1, "Me_MajimeB2", "maskleft", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 8, 300, TRUE );
+	DrawScene( "js7", 400 );
+	DrawBustshot( 2, "me1a_MajimeA1_0_zoom--", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
 	DisplayWindow();
 
 	OutputLine(NULL, "「……………もう結構です詩音。",
@@ -875,7 +889,7 @@
 		   NULL, "Mion put her head close to mine and whispered.", Line_Normal);
 	ClearMessage();
 	DisableWindow();
-	ChangeBustshot( 1, "Me_YowakiB1", 200, TRUE );
+	DrawBustshot( 2, "me1a_YowakiA1_0_zoom--", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
 	DisplayWindow();
 
 	OutputLine(NULL, "「……詩音の覚悟はよくわかったよ。",
@@ -894,7 +908,7 @@
 		   NULL, " That's ridiculous...\"", Line_ContinueAfterTyping);
 	Wait( 1000 );
 	DisableWindow();
-	ChangeBustshot( 1, "Me_majimeB2", 200, TRUE );
+	DrawBustshot( 2, "me1a_MajimeA1_0_zoom--", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
 	DisplayWindow();
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
@@ -939,7 +953,7 @@
 		   NULL, " I don't give a fuck about...\"", Line_ContinueAfterTyping);
 	Wait( 900 );
 	DisableWindow();
-	ChangeBustshot( 1, "Me_IkariA1", 200, TRUE );
+	DrawBustshot( 2, "me1a_IkariA1_0_zoom--", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
 	DisplayWindow();
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
@@ -965,7 +979,7 @@
 		   NULL, "...Chills shot through my spine.", Line_Normal);
 	ClearMessage();
 	DisableWindow();
-	ChangeBustshot( 1, "Me_MajimeA2", 200, TRUE );
+	DrawBustshot( 2, "me1a_MajimeA1_0_zoom--", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
 	DisplayWindow();
 
 	OutputLine(NULL, "「………葛西さん、奥の牢屋にいる。」",
@@ -1043,15 +1057,11 @@
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
-	DisableWindow();
-	ChangeBustshot( 1, "Me_majimeA1", 200, TRUE );
-	DisplayWindow();
-
 	OutputLine(NULL, "　……私にけじめを付ける覚悟がないことを見て取った魅音は、わずかばかり見せた仏心を引っ込め、…元の冷酷な表情に戻る。",
 		   NULL, "...The moment Mion learned that I wasn't willing to apologize, her expression turned cold again.", Line_Normal);
 	ClearMessage();
 	DisableWindow();
-	FadeBustshotWithFiltering( 1, "maskright" , 1, FALSE, 0, 0, 300, TRUE );
+	FadeAllBustshots( 400, TRUE );
 	DisplayWindow();
 
 	OutputLine(NULL, "　そして、私に背を向けて座敷の方へ戻っていく。",
@@ -1083,7 +1093,7 @@
 	OutputLine(NULL, "　……そう、悟史くん本人に、何も罪がないように、葛西や義郎叔父さんにも罪がない。",
 		   NULL, "...Yes, Kasai and Yoshiroh-san were blameless, just as Satoshi-kun was.", Line_Normal);
 	ClearMessage();
-	DrawScene( "black", 400 );
+	DrawScene( "jsa7", 400 );
 
 	OutputLine(NULL, "　その時、……その胸中を全て読み切ったかのように、",
 		   NULL, "But then... as if she read my mind,", Line_ContinueAfterTyping);
@@ -1113,7 +1123,7 @@
 	OutputLine(NULL, "……巻き込まれるかもしれないよ？",
 		   NULL, "......On top of Kasai and Uncle Yoshiroh.", Line_Normal);
 	ClearMessage();
-	DrawScene( "JSA4", 400 );
+	DrawScene( "black", 400 );
 
 	OutputLine(NULL, "「ま、…………ま、待ってお姉……！！」",
 		   NULL, "\"Wa-Wait... Sis...!!\"", Line_WaitForInput);
@@ -1127,7 +1137,8 @@
 		   NULL, " Please forgive them!", Line_Normal);
 	ClearMessage();
 	DisableWindow();
-	DrawBustshotWithFiltering( 2, "Me_majimeA1", "maskright", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 10, 300, TRUE );
+	DrawScene( "js7", 400 );
+	DrawBustshot( 2, "me1a_MajimeA1_0_zoom--", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
 	DisplayWindow();
 
 	OutputLine(NULL, "「……何ですか、詩音…？」",
@@ -1161,6 +1172,7 @@
 		   NULL, " Please forgive me.\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+	DrawBustshot( 2, "oryou_Def_0_zoom--", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
 
 
 	OutputLine(NULL, "　鬼婆の気に入るように言ったはずだ。",
@@ -1185,7 +1197,7 @@
 		   NULL, "Just then, Mion spoke as the successor.", Line_Normal);
 	ClearMessage();
 	DisableWindow();
-	ChangeBustshot( 2, "Me_MajimeB2", 200, TRUE );
+	DrawBustshot( 2, "me1a_MajimeA1_0_zoom--", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
 	DisplayWindow();
 
 	OutputLine(NULL, "「では詩音。",
@@ -1226,8 +1238,8 @@
 	OutputLine(NULL, "　…そして、私の前に机を運び、その器具をそこに載せる。",
 		   NULL, "...then set a table in front of me and put the device on top of it.", Line_Normal);
 	ClearMessage();
-	DrawBustshotWithFiltering( 2, "Me_majimeA2", "maskright", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 10, 0, FALSE );
-	DrawSceneWithMask( "JSA5", "maskright", 1, 0, 300 );
+	DrawSceneWithMask( "JS7", "maskright", 1, 0, 300 );
+	DrawBustshot( 2, "me1a_MajimeA1_0_zoom--", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
 
 	OutputLine(NULL, "「………………なに、………これ……。」",
 		   NULL, "\"...What is... this...?\"", Line_WaitForInput);
@@ -1246,7 +1258,6 @@
 	OutputLine(NULL, "　わなわなと震えながら……机の上の、薄気味悪い器具に目を向ける。",
 		   NULL, "I shook as I stared at the tool.", Line_Normal);
 	ClearMessage();
-	DrawSceneWithMask( "black", "maskdown", 1, 0, 300 );
 
 	OutputLine(NULL, "　それはちょっと見たところ、とても大きな爪切りのような形をしていた。",
 		   NULL, "It looked like a giant nail clipper.", Line_WaitForInput);
@@ -1266,8 +1277,6 @@
 	OutputLine(NULL, "　その用途を頭の中で思い描くだけで……指先が震え、体中に悪寒が走り抜けた。",
 		   NULL, "The chills ran up and down my spine when I imagined that...", Line_Normal);
 	ClearMessage();
-	DrawBustshot( 0, "Me_majimeA2", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 9, 0, FALSE );
-	DrawScene( "JSA5", 400 );
 
 	OutputLine(NULL, "「爪１枚ずつで、詩音が掛けた迷惑のそれぞれのけじめとします。",
 		   NULL, "\"Each fingernail represents one of your responsibilities...", Line_WaitForInput);
@@ -1403,7 +1412,7 @@
 	OutputLine(NULL, "　……思い切り叩いて一気に行った方が、むしろ痛みは少ないかもしれませんという忠告付きで。",
 		   NULL, "...He recommended that the latter would be easier, to make it quick.", Line_Normal);
 	ClearMessage();
-	DrawScene( "JSA4", 400 );
+	DrawScene( "JSA7", 400 );
 
 	OutputLine(NULL, "　あとは、もう誰も強制しなかった。",
 		   NULL, "Nobody said anything after that.", Line_WaitForInput);
@@ -1442,7 +1451,6 @@
 	OutputLine(NULL, "　…もしそれをしないなら、…罰は私を助けてくれた、親しい人たち全てに及んでしまう。",
 		   NULL, " ...If I refused, they would suffer.", Line_Normal);
 	ClearMessage();
-	DrawSceneWithMask( "JSA5", "maskleft", 1, 0, 300 );
 
 	OutputLine(NULL, "「は、",
 		   NULL, "\"Huff", Line_ContinueAfterTyping);
@@ -1679,7 +1687,7 @@
 	SetValidityOfInput( TRUE );
 	DrawScene( "white", 10 );
 	PlaySE( 0, "s_tataku", 128, 64 );
-	DrawScene( "black", 0 );
+	DrawScene( "aka1", 10 );
 
 	OutputLine(NULL, "「……………ッッ！！！！」",
 		   NULL, "\".........Tcch!!!!\"", Line_Normal);
@@ -1720,7 +1728,6 @@
 	OutputLine(NULL, "　私は…恐る恐る目を開けた。",
 		   NULL, "Timidly... I opened my eyes.", Line_Normal);
 	ClearMessage();
-	DrawSceneWithMask( "JSA5", "maskup", 1, 0, 1300 );
 
 	OutputLine(NULL, "　……私の左手の小指は、……血で真っ赤ということはなかった。",
 		   NULL, "...I found that my little finger wasn't really drenched in blood.", Line_WaitForInput);
@@ -1753,7 +1760,7 @@
 	OutputLine(NULL, "　薬指と、中指も、…こんなことをしないといけないの…？",
 		   NULL, "Did I have to remove the nails from my ring and middle fingers as well...?", Line_Normal);
 	ClearMessage();
-	DrawSceneWithMask( "JSA4", "maskright", 1, 0, 300 );
+	DrawSceneWithMask( "JSA7", "maskright", 1, 0, 300 );
 
 	OutputLine(NULL, "　許しを乞うように、鬼婆と魅音を見る。",
 		   NULL, "I looked at the hag and at Mion, begging for mercy.", Line_Normal);
@@ -1956,7 +1963,7 @@
 	OutputLine(NULL, "　うわあああぁああぁあぁああぁあぁあぁ！！」",
 		   NULL, " Ahhhhhh!!\"", Line_Normal);
 	ClearMessage();
-	DrawSceneWithMask( "JSA5", "maskright", 1, 0, 300 );
+	DrawSceneWithMask( "JSA7", "maskright", 1, 0, 300 );
 
 	OutputLine(NULL, "　魅音は小さく首を横に振ると、若い男たちに顎で合図を送った。",
 		   NULL, "Mion shook her head, then signaled the subordinates.", Line_Normal);

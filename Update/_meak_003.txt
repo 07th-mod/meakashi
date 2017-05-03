@@ -62,7 +62,7 @@
 		   NULL, "...It's not that I don't trust Mion, but I don't want to let her know where I live.", Line_Normal);
 	ClearMessage();
 	DrawSceneWithMask( "white", "maskright", 1, 0, 300 );
-	DrawSceneWithMask( "Tosyo2", "maskright", 1, 0, 300 );
+	DrawSceneWithMask( "Tosyo8", "maskright", 1, 0, 300 );
 
 	OutputLine(NULL, "　この、賑わいのない図書館は、町の人間もそんなには使わないし、ましてや雛見沢の人間はさらに使わない。",
 		   NULL, "Not many people use this library, so I won't see anyone from Hinamizawa here.", Line_WaitForInput);
@@ -73,8 +73,6 @@
 	OutputLine(NULL, "　だから、人知れず私たちが落ち合うには都合がよかった。",
 		   NULL, "It's very convenient for meeting someone in secret.", Line_Normal);
 	ClearMessage();
-	DrawSceneWithMask( "black", "maskright", 1, 0, 300 );
-	DrawSceneWithMask( "Tosyo3", "maskright", 1, 0, 300 );
 
 	OutputLine(NULL, "　私たちは今後の生活の仕方や、私のバイトの今後の進め方、姉妹の連携の仕方を十分に確認し終えると、よもやま話に花を咲かせるのだった。",
 		   NULL, "After we discussed my life plan and work schedule, we moved to small talk.", Line_Normal);
@@ -127,7 +125,7 @@
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
-	DrawScene( "Kawa1", 400 );
+	DrawScene( "ji2++", 400 );
 
 	OutputLine(NULL, "　ダム計画の凍結が発表され、勝利に沸き返る雛見沢で迎えた綿流しの祭の日に、",
 		   NULL, "The pro-dam activist couple fell off the cliff", Line_WaitForInput);
@@ -140,7 +138,7 @@
 	OutputLine(NULL, "　これも…相当のインパクトがあった。",
 		   NULL, "This one also left quite the impact.", Line_Normal);
 	ClearMessage();
-	DrawScene( "Ji3", 400 );
+	DrawScene( "Ji2+", 400 );
 
 	OutputLine(NULL, "　雛見沢を穢すダム現場の監督に天誅が下り、そして次に村の裏切り者に天誅が下る。",
 		   NULL, "The evil construction site manager was punished, and the next year, the traitor to the village met the same fate.", Line_WaitForInput);
@@ -202,17 +200,14 @@
 	OutputLine(NULL, "雛見沢の村人たちから、あまりいい目で見られてなかった事実があると、…その信憑性はますます高まった。",
 		   NULL, " the fact that people in Hinamizawa didn't care for him much... added even more credibility to the idea.", Line_Normal);
 	ClearMessage();
-	DrawBustshotWithFiltering( 2, "Me_DefA1#", "maskright", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 10, 0, FALSE );
-	DrawSceneWithMask( "Tosyo3", "maskright", 1, 0, 300 );
+	DrawSceneWithMask( "Tosyo8", "maskright", 1, 0, 300 );
+	DrawBustshot( 2, "me_defa1#", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
 
 	OutputLine(NULL, "「神主は確か……嫌われてませんでした？",
 		   NULL, "\"Wasn't the priest... hated by a few?", Line_WaitForInput);
 	OutputLine(NULL, "　同盟の役員から。」",
 		   NULL, " Especially by the committee members?\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
-	DisableWindow();
-	ChangeBustshot( 2, "Me_DefA2#", 200, TRUE );
-	DisplayWindow();
 
 	OutputLine(NULL, "「うん。",
 		   NULL, "\"Yeah.", Line_WaitForInput);
@@ -366,7 +361,7 @@
 	DrawScene( "black", 400 );
 	FadeFilm( 0, TRUE );
 
-	DrawSceneWithMask( "Hi1", "maskright", 1, 0, 300 );
+	DrawSceneWithMask( "ji5", "maskright", 1, 0, 300 );
 
 	OutputLine(NULL, "　神主は、反ダムに異論は唱えなかったものの、",
 		   NULL, "While the priest never objected to the anti-dam movement,", Line_WaitForInput);
@@ -395,7 +390,8 @@
 	OutputLine(NULL, "今にきっとオヤシロさまのバチが当たる…、と噂し合っていた……。",
 		   NULL, " that Oyashiro-sama's curse would soon strike him down... along with other rumors...", Line_Normal);
 	ClearMessage();
-	DrawSceneWithMask( "Tosyo4", "maskup", 1, 0, 300 );
+	DrawSceneWithMask( "Tosyo8", "maskup", 1, 0, 300 );
+	DrawBustshot( 2, "me_defa1#", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
 
 	OutputLine(NULL, "「今にして考えると、神主さんって結構オトナだったのかもね、って思いません？」",
 		   NULL, "\"Don't you think the priest was more mature than those around him?\"", Line_WaitForInput);
@@ -428,7 +424,7 @@
 	ClearMessage();
 	PlayBGM( 0, "higurashi", 120, 0 );
 	DisableWindow();
-	DrawBustshotWithFiltering( 0, "Me_SinmyouA2#", "maskright", 1, 0, 0, FALSE, 0, 0, 0, 0, 0, 9, 300, TRUE );
+	DrawBustshotWithFiltering( 0, "me_sinmyoua1#", "maskright", 1, 0, 0, FALSE, 0, 0, 0, 0, 0, 9, 300, TRUE );
 	DisplayWindow();
 
 	OutputLine(NULL, "「…うーん…。",
@@ -581,7 +577,8 @@
 	OutputLine(NULL, "　この一年ちょっとの間に、魅音は…こんなにも「次期頭首」になっていたのだ。",
 		   NULL, "Mion has become very like a successor since I've been gone.", Line_Normal);
 	ClearMessage();
-	DrawSceneWithMask( "Tosyo3", "maskup", 1, 0, 300 );
+	DrawSceneWithMask( "Tosyo8", "maskup", 1, 0, 300 );
+	DrawBustshot( 2, "me_defa1#", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
 
 	OutputLine(NULL, "「……ふぅん。",
 		   NULL, "\"...Uh-huh.", Line_WaitForInput);
@@ -593,7 +590,7 @@
 		   NULL, "She seemed to get what I was implying.", Line_Normal);
 	ClearMessage();
 	DisableWindow();
-	DrawBustshotWithFiltering( 2, "Me_SinmyouA1#", "maskright", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 10, 300, TRUE );
+	DrawBustshot( 2, "me_sinmyoua1#", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
 	DisplayWindow();
 
 	OutputLine(NULL, "「…やっぱり、私も婆っちゃみたいな考え方になっちゃってきたかな…？」",
@@ -610,7 +607,7 @@
 		   NULL, " You've definitely learned the art of ruling.\"", Line_Normal);
 	ClearMessage();
 	DisableWindow();
-	ChangeBustshot( 2, "Me_OdorokiA2#", 200, TRUE );
+	ChangeBustshot( 2, "me_odorokia1#", 200, TRUE );
 	DisplayWindow();
 
 	OutputLine(NULL, "「そんなの学んでないよ。",
@@ -683,7 +680,7 @@
 		   NULL, " You don't have to feel sorry for anything.\"", Line_Normal);
 	ClearMessage();
 	DrawScene( "black", 400 );
-	DrawScene( "Sora", 400 );
+	DrawScene( "Sora3", 400 );
 
 	OutputLine(NULL, "　私たちは母の胎内を出る瞬間まで限りなく公平だった。",
 		   NULL, "Up until birth, we were perfectly equal.", Line_WaitForInput);
@@ -769,8 +766,8 @@
 	OutputLine(NULL, "　魅音は、次期頭首という分けて口に入れられない飴玉を、…口に入れていいものか、ずっと私の表情を窺いながら今日まで過して来たに違いないのだ。",
 		   NULL, "Mion must have been hesitating to put the candy of the successor in her mouth and was waiting to see if I was okay with that.", Line_Normal);
 	ClearMessage();
-	DrawBustshot( 0, "Me_HauA1#", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 9, 0, FALSE );
-	DrawScene( "Tosyo3", 400 );
+	DrawScene( "Tosyo8", 400 );
+	DrawBustshot( 2, "me_haua1#_zoom", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
 
 	OutputLine(NULL, "「がんばれ、…魅音。",
 		   NULL, "\"Do your best, Mion...", Line_WaitForInput);
@@ -818,7 +815,7 @@
 		   NULL, " We can communicate by touch, just like this.", Line_Normal);
 	ClearMessage();
 	DisableWindow();
-	ChangeBustshot( 0, "Me_SinmyouA1#", 200, TRUE );
+	DrawBustshot( 2, "me_sinmyoua1#_zoom", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
 	DisplayWindow();
 
 	OutputLine(NULL, "「…………うん。",
@@ -884,7 +881,7 @@
 		   NULL, "Maybe it's because we hadn't seen each other for over a year.", Line_Normal);
 	ClearMessage();
 	DrawScene( "white", 400 );
-	DrawSceneWithMask( "Sora", "maskm1", 1, 0, 300 );
+	DrawSceneWithMask( "Sora3", "maskm1", 1, 0, 300 );
 
 	OutputLine(NULL, "「…………ふー。」",
 		   NULL, "\"......Whew.\"", Line_WaitForInput);
@@ -983,7 +980,7 @@
 	SetValidityOfInput( FALSE );
 	Wait( 1000 );
 	SetValidityOfInput( TRUE );
-	DrawScene( "Si_H4", 400 );
+	DrawScene( "black", 400 );
 
 	OutputLine(NULL, "　買ってきたものを袋から出して冷蔵庫にしまっている時、葛西がやってきた。",
 		   NULL, "Kasai came to the door while I was putting stuff I bought into the fridge.", Line_Normal);
@@ -994,13 +991,12 @@
 	OutputLine(NULL, "今、カギ開けます。」",
 		   NULL, " I'm coming.\"", Line_Normal);
 	ClearMessage();
-	DrawSceneWithMask( "black", "maskright", 1, 0, 300 );
 	PlaySE( 0, "s_Lf257", 128, 64 );
 	SetValidityOfInput( FALSE );
 	Wait( 1500 );
 	SetValidityOfInput( TRUE );
-	DrawBustshotWithFiltering( 2, "Kasa1", "maskright", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 10, 0, FALSE );
 	DrawSceneWithMask( "Si_G1", "maskright", 1, 0, 300 );
+	DrawBustshot( 2, "kasa1", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
 
 	OutputLine(NULL, "「…お買い物の帰りですか？",
 		   NULL, "\"...Did you go grocery shopping?", Line_WaitForInput);
@@ -1025,7 +1021,6 @@
 	OutputLine(NULL, "　葛西は、さてさてどんなものが出てくるやらと、興味津々な笑みを浮かべている。",
 		   NULL, "Kasai looked curious about what I'd cook.", Line_Normal);
 	ClearMessage();
-	DrawSceneWithMask( "Si_d1", "maskright", 1, 0, 300 );
 
 	OutputLine(NULL, "「ちぇー。",
 		   NULL, "\"Humph.", Line_WaitForInput);
@@ -1040,6 +1035,8 @@
 	OutputLine(NULL, "　入れておきますよ。」",
 		   NULL, " I'll do it.\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+	ClearMessage();
+	FadeAllBustshots( 400, TRUE );
 
 	OutputLine(NULL, "「あ、悪いね。",
 		   NULL, "\"Oh, thanks...", Line_WaitForInput);
@@ -1056,8 +1053,6 @@
 	OutputLine(NULL, "　そして、ふと気付き、私に声をかける。",
 		   NULL, "He noticed something.", Line_Normal);
 	ClearMessage();
-	DrawBustshotWithFiltering( 0, "Kasa1", "maskleft", 1, 0, 0, FALSE, 0, 0, 0, 0, 0, 9, 0, FALSE );
-	DrawSceneWithMask( "Si_H4", "maskleft", 1, 0, 300 );
 
 	OutputLine(NULL, "「……詩音さん。",
 		   NULL, "\"...Shion-san,", Line_WaitForInput);
@@ -1100,9 +1095,6 @@
 	OutputLine(NULL, "　テレビでも見てて大人しくしててよー。」",
 		   NULL, " Go watch TV or something.\"", Line_Normal);
 	ClearMessage();
-	DisableWindow();
-	FadeBustshotWithFiltering( 0, "maskright" , 1, FALSE, 0, 0, 300, TRUE );
-	DisplayWindow();
 
 	OutputLine(NULL, "　葛西は小さく笑うと、それ以上ちょっかいは出さず、大人しく引っ込んでくれた。",
 		   NULL, "Kasai chuckled and left.", Line_Normal);
@@ -1191,13 +1183,13 @@
 	OutputLine(NULL, "あはははははははは。",
 		   NULL, " Ahahahahaha.", Line_Normal);
 	ClearMessage();
-	DrawSceneWithMask( "Si_H4", "maskright", 1, 0, 300 );
+	DrawSceneWithMask( "Si_G1", "maskright", 1, 0, 300 );
 
 	OutputLine(NULL, "「葛西〜、机の上の新聞どけて〜。」",
 		   NULL, "\"Kasai, set the table, would you?\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 	DisableWindow();
-	DrawBustshotWithFiltering( 2, "Kasa2", "maskright", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 10, 300, TRUE );
+	DrawBustshot( 2, "kasa2", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
 	DisplayWindow();
 
 	OutputLine(NULL, "「いい匂いですね。",
@@ -1361,7 +1353,7 @@
 		   NULL, "A few days later, Mion told me that the hag had heard about my escape.", Line_Normal);
 	ClearMessage();
 	PlayBGM( 0, "higurashi", 120, 0 );
-	DrawScene( "Sora", 1000 );
+	DrawScene( "Sora2", 1000 );
 
 	OutputLine(NULL, "「で？",
 		   NULL, "\"So?", Line_WaitForInput);

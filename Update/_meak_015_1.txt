@@ -16,7 +16,7 @@
 
 	DrawScene( "white", 10 );
 	PlayBGM( 0, "Iru", 120, 0 );
-	DrawSceneWithMask( "Sora", "maskm1", 1, 0, 300 );
+	DrawSceneWithMask( "Sora3", "maskm1", 1, 0, 300 );
 	SetSpeedOfMessage( FALSE, 0 );
 
 	OutputLine(NULL, "　途中編入で馴染めなかった興宮の学校にも、まぁそこそこに友人も出来た。",
@@ -48,7 +48,7 @@
 	OutputLine(NULL, "　かくいう今日も、私は隠れ家で過すつもりでいた。",
 		   NULL, "In fact, I was planning to spend a day there today.", Line_Normal);
 	ClearMessage();
-	DrawSceneWithMask( "Mati4", "maskup", 1, 0, 300 );
+	DrawSceneWithMask( "Mati3", "maskup", 1, 0, 300 );
 
 	OutputLine(NULL, "「…畜生〜、先公めー！",
 		   NULL, "\"...Damn that teacher!", Line_WaitForInput);
@@ -84,7 +84,7 @@
 		   NULL, " I think I learned from it.", Line_Normal);
 	ClearMessage();
 	DrawSceneWithMask( "black", "maskright", 1, 0, 300 );
-	DrawSceneWithMask( "Mati1", "maskright", 1, 0, 300 );
+	DrawSceneWithMask( "Mati2", "maskright", 1, 0, 300 );
 
 	OutputLine(NULL, "　私は今夜のおかずだけでなく、１週間くらい隠れ家で過すつもりで買出しをしていた。",
 		   NULL, "I was going grocery shopping, and thought I'd get enough food for a week or so.", Line_WaitForInput);
@@ -95,7 +95,6 @@
 	OutputLine(NULL, "　少しくらい私の顔を見れなくなった方が、親も私の有り難味を感じるだろうという、親孝行な配慮からだ。",
 		   NULL, "My parents would appreciate my presence more after missing me for a week. I was doing this for their sakes.", Line_Normal);
 	ClearMessage();
-	DrawSceneWithMask( "Mati4", "maskright", 1, 0, 300 );
 
 	OutputLine(NULL, "「あれ？",
 		   NULL, "\"Oh? Oh, wait!", Line_WaitForInput);
@@ -173,7 +172,7 @@
 		   NULL, " I felt like I'd gone through the exact same experience before. ", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
-
+	DrawScene( "black", 400 );
 
 	OutputLine(NULL, "　目をぱちくりさせながらその光景を思い出そうとする私の襟首が引っ張られ、私は薄暗い路地裏に引きずり込まれた。",
 		   NULL, "While blinking my eyes in an effort to recall when that was, some people grabbed me by the neck and dragged me into a dark alley.", Line_Normal);
@@ -186,6 +185,7 @@
 	OutputLine(NULL, "　……やっぱり、とても不思議な既視感を感じる。",
 		   NULL, "...This really was strange... I was having deja vu.", Line_Normal);
 	ClearMessage();
+	DrawScene( "mati4", 400 );
 
 	OutputLine(NULL, "「んだてめンなろぉおおぉおおおッ！！",
 		   NULL, "\"Dafuq're ye, bitch?!!", Line_ContinueAfterTyping);
@@ -249,15 +249,15 @@
 	OutputLine(NULL, "　私は、……耳を疑った。",
 		   NULL, "I doubted my ears.", Line_Normal);
 	ClearMessage();
+	DrawScene( "mati4-", 400 );
 	PlayBGM( 0, "T1", 120, 0 );
+	
 
 	OutputLine(NULL, "「……いい加減にしやがれ。",
 		   NULL, "\"...Cut it out.", Line_WaitForInput);
 	OutputLine(NULL, "もう泣いてるじゃねえかよ…！！」",
 		   NULL, " Can't you see she's crying...?!!\"", Line_Normal);
 	ClearMessage();
-	DrawBustshot( 0, "Kei_Ikari1#", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 9, 0, FALSE );
-	DrawScene( "Mati1", 400 );
 
 	OutputLine(NULL, "　私と同い年くらいの、男の子だった。",
 		   NULL, "It was a boy about my age.", Line_WaitForInput);
@@ -279,6 +279,8 @@
 		   NULL, "...It couldn't be...", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+	DrawScene( "mati4", 400 );
+	DrawBustshot( 2, "kei2_Ikari1_0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
 
 
 	OutputLine(NULL, "　そして、私が自分で夢から覚めた時、悟史くんに似た人影は、…やはり違う人の姿であることを知った。",
@@ -321,7 +323,7 @@
 	FadeOutBGM( 0, 0, FALSE );
 	FadeOutBGM( 2, 0, FALSE );
 	DrawBustshot( 19, "no_data", 0, 100, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, TRUE );
-	DrawSceneWithMask( "black", "maskdown", 1, 0, 300 );
+	DrawBustshot( 2, "kei2_Komaru_0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
 	PlayBGM( 1, "semi", 120, 0 );
 
 	OutputLine(NULL, "「あぁ…いやその、",
@@ -389,6 +391,7 @@
 	OutputLine(NULL, "　脱がしたらさぞや…むげへへへへへへ！！」",
 		   NULL, " Let's stripper down'n see...! Yee hee hee hee!!\"", Line_Normal);
 	ClearMessage();
+	DrawScene( "black", 400 );
 
 	OutputLine(NULL, "　……おいおい、マジかよこいつら。",
 		   NULL, "...Hey,", Line_WaitForInput);
@@ -472,7 +475,8 @@
 	DrawScene( "F_b", 10 );
 	PlaySE( 0, "s_Down", 128, 64 );
 	DrawScene( "F_a", 10 );
-	DrawScene( "Mati1", 0 );
+	DrawScene( "Mati4", 0 );
+	DrawBustshot( 2, "kei2_Ikari2_0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
 
 	SetSpeedOfMessage( TRUE, 128 );
 	OutputLine(NULL, "「このボケナスどもがああああぁああぁあ！！！！」",
@@ -542,7 +546,8 @@
 	DrawScene( "F_b", 0 );
 	StartShakingOfWindow( 248, 40, 0, 0, 4*2, FALSE );
 	StartShakingOfAllObjects( 248, 40, 0, 0, 4*2, TRUE );
-	DrawScene( "Mati1", 0 );
+	DrawScene( "Mati4", 0 );
+	DrawBustshot( 2, "kei2_Ikari2_0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
 	OutputLineAll(NULL, "", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
@@ -604,7 +609,8 @@
 	SetValidityOfInput( TRUE );
 	PlaySE( 0, "s_daidageki", 128, 64 );
 	ChangeScene( "mozaik", 6, 500 );
-
+	DrawScene( "mati4", 400 );
+	DrawBustshot( 2, "kei2_Ikari2_0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
 
 	OutputLine(NULL, "「ぷげッ！！」",
 		   NULL, "\"Wuff!!\"", Line_ContinueAfterTyping);
@@ -630,7 +636,6 @@
 	OutputLineAll(NULL, "", Line_Normal);
 
 	ClearMessage();
-	DrawScene( "Mati1", 0 );
 
 	OutputLine(NULL, "「先ほどＡＶの脱衣シーンを引き合いに出したな。",
 		   NULL, "\"You mentioned a porn movie, didn't you?", Line_WaitForInput);
@@ -770,7 +775,8 @@
 	DrawScene( "F_a", 0 );
 	StartShakingOfWindow( 248, 40, 0, 2, 3*2, FALSE );
 	StartShakingOfAllObjects( 248, 40, 0, 2, 3*2, TRUE );
-	DrawScene( "Mati1", 0 );
+	DrawScene( "Mati4", 0 );
+	DrawBustshot( 2, "kei2_Ikari2_0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
 
 	OutputLine(NULL, "　よおし描けたようだな次に進むぞ。",
 		   NULL, " Good, you all seem to have an image in your heads now. Let's move on.", Line_ContinueAfterTyping);
@@ -884,8 +890,8 @@
 	DrawScene( "F_a", 0 );
 	StartShakingOfWindow( 248, 40, 0, 2, 4*2, FALSE );
 	StartShakingOfAllObjects( 248, 40, 0, 2, 4*2, TRUE );
-	DrawScene( "Mati1", 0 );
-
+	DrawScene( "Mati4", 0 );
+	DrawBustshot( 2, "kei2_Ikari2_0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
 
 	SetSpeedOfMessage( FALSE, 0 );
 	OutputLine(NULL, "毛唐に日本の和の心など分かりはしない！！！",
@@ -949,7 +955,8 @@
 	OutputLine(NULL, "　その時、どたどたと何人もが走ってくる音が聞こえた。",
 		   NULL, "At that point, I heard a bustle of people running this way.", Line_Normal);
 	ClearMessage();
-	DrawSceneWithMask( "Mati1", "maskleft", 1, 0, 300 );
+	DrawSceneWithMask( "Mati4", "maskleft", 1, 0, 300 );
+	DrawBustshot( 2, "kei2_Ikari2_0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
 
 	OutputLine(NULL, "「前原さぁあん！！",
 		   NULL, "\"Maebara-san!!", Line_WaitForInput);
@@ -979,6 +986,7 @@
 	OutputLine(NULL, "　今までずっと目を点にしていた三人組は、状況が不利になったことを悟り、逃げ去って行った………。",
 		   NULL, "The three punks had just been standing there agape, but they started running away when they saw that many people...", Line_Normal);
 	ClearMessage();
+	DrawBustshot( 1, "oka1_Def_0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 200, TRUE );
 	PlayBGM( 0, "Cafe", 120, 0 );
 
 	OutputLine(NULL, "「さすが前原さんですね…！",
@@ -986,6 +994,7 @@
 	OutputLine(NULL, "　たったひとりであんな怖そうな三人組を釘付けにしちゃうなんて…！」",
 		   NULL, " You had those punks transfixed, all by yourself...!\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+	DrawBustshot( 3, "tomita1_Def", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
 
 	OutputLine(NULL, "「三人の１人、鼻血出してましたね…。",
 		   NULL, "\"One of them even had a nosebleed...", Line_WaitForInput);
@@ -993,7 +1002,7 @@
 		   NULL, " You're so strong, Maebara-san!\"", Line_Normal);
 	ClearMessage();
 	DisableWindow();
-	DrawBustshotWithFiltering( 2, "Kei_Def1#", "maskright", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 10, 300, TRUE );
+	DrawBustshot( 2, "kei2_Def1_0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
 	DisplayWindow();
 
 	OutputLine(NULL, "「……ふーーーー…。",
@@ -1010,6 +1019,9 @@
 	OutputLine(NULL, "…大丈夫かよ魅音？」",
 		   NULL, " are you all right, Mion?\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+	ClearMessage();
+	FadeAllBustshots( 400, TRUE );
+	DrawBustshot( 2, "kei2_Def1_0_zoom", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
 
 	OutputLine(NULL, "　前原と呼ばれた怪しさ全開の男の子が、私に振り返る。",
 		   NULL, "The boy was apparently called Maebara. He turned around to face me.", Line_WaitForInput);
@@ -1025,7 +1037,7 @@
 		   NULL, "...But Satoshi-kun isn't a pervert like him!", Line_Normal);
 	ClearMessage();
 	DisableWindow();
-	ChangeBustshot( 2, "Kei_warai#", 200, TRUE );
+	ChangeBustshot( 2, "kei2_Warai_0_zoom", 200, TRUE );
 	DisplayWindow();
 
 	OutputLine(NULL, "「天下御免の魅音が、どんな情け容赦のない必殺技で撃退してみせるか、ちょっと楽しみにして見てたんだぜー？",
@@ -1058,7 +1070,7 @@
 		   NULL, " until his hand touched my head...", Line_Normal);
 	ClearMessage();
 	DisableWindow();
-	ChangeBustshot( 2, "Kei_Def1#", 200, TRUE );
+	ChangeBustshot( 2, "kei2_Def1_0_zoom", 200, TRUE );
 	DisplayWindow();
 
 	OutputLine(NULL, "「まぁ…その、なんだ。",
@@ -1089,7 +1101,7 @@
 		   NULL, "But still... his hand had the same warmth.", Line_Normal);
 	ClearMessage();
 	DrawSceneWithMask( "black", "maskleft", 1, 0, 300 );
-	DrawSceneWithMask( "Sora", "maskup", 1, 0, 300 );
+	DrawSceneWithMask( "Sora3", "maskup", 1, 0, 300 );
 
 	OutputLine(NULL, "　その後、魅音に聞き、彼のことがようやくわかった。",
 		   NULL, "Later on, Mion told me about him.", Line_Normal);
@@ -1156,8 +1168,8 @@
 	OutputLine(NULL, "…それをからかってやりたい小悪魔的な感情も湧き上がる。",
 		   NULL, " I'd love to tease her about it.", Line_Normal);
 	ClearMessage();
-	DrawBustshot( 0, "Kei_Def1#", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 9, 0, FALSE );
-	DrawScene( "Mati1", 400 );
+	DrawBustshot( 0, "kei2_Def1_0_zoom", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 9, 0, FALSE );
+	DrawScene( "Mati4", 400 );
 
 	OutputLine(NULL, "「ありがと圭ちゃん。",
 		   NULL, "\"Thanks, Kei-chan.", Line_WaitForInput);
@@ -1170,7 +1182,7 @@
 	OutputLine(NULL, "　悟史くんなら遠慮する。",
 		   NULL, "Satoshi-kun would refuse out of modesty.", Line_WaitForInput);
 	DisableWindow();
-	ChangeBustshot( 0, "Kei_Warai#", 200, TRUE );
+	ChangeBustshot( 0, "kei2_Warai_0_zoom", 200, TRUE );
 	DisplayWindow();
 
 	OutputLine(NULL, "だけど、前原圭一は二つ返事でＯＫと返した。",
@@ -1210,6 +1222,7 @@
 	SetValidityOfInput( FALSE );
 	Wait( 2000 );
 	SetValidityOfInput( TRUE );
+	DrawScene( "si_h2", 400 );
 
 	OutputLine(NULL, "　前原圭一は本当に面白い人だった。",
 		   NULL, "Keiichi Maebara was fun.", Line_WaitForInput);
@@ -1228,7 +1241,6 @@
 	OutputLine(NULL, "　私はそんな魅音を見て、ちょっとした保護者的な気分を感じて微笑み返すのだった。",
 		   NULL, "I was happy for her. It made me smile.", Line_Normal);
 	ClearMessage();
-	DrawScene( "Si_H3", 400 );
 
 	OutputLine(NULL, "「お姉は圭ちゃんのこと、本当に気に入ってますねー。",
 		   NULL, "\"I guess Kei-chan is really your favorite,", Line_WaitForInput);
@@ -1238,13 +1250,14 @@
 		   NULL, " What's the most interesting thing about him?\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 	DisableWindow();
-	DrawBustshot( 0, "Me_WaraiA1#", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 9, 400, TRUE );
+	DrawScene( "si_g1", 400 );
+	DrawBustshot( 0, "me_si_wa_a1", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 9, 400, TRUE );
 	DisplayWindow();
 
 	OutputLine(NULL, "「あはははははは…、そうだねー！",
 		   NULL, "\"Ahahahaha... Let's see...", Line_WaitForInput);
 	DisableWindow();
-	ChangeBustshot( 0, "Me_WinkA2#", 200, TRUE );
+	ChangeBustshot( 0, "me_si_wi_a1", 200, TRUE );
 	DisplayWindow();
 
 
@@ -1372,7 +1385,7 @@
 	OutputLine(NULL, "…困ったような笑うような、曖昧な顔で、…むぅ…って言って。",
 		   NULL, " He'd put on a puzzled smile while mumbling \"mmph...\" like always...", Line_Normal);
 	ClearMessage();
-	DrawScene( "Si_H3", 400 );
+	DrawScene( "Si_H2", 400 );
 
 	OutputLine(NULL, "「………むぅ。」",
 		   NULL, "\"...Mmph...\"", Line_WaitForInput);
@@ -1512,8 +1525,8 @@
 	OutputLine(NULL, "………悟史くんなんかとは全然、人の成熟が違う。",
 		   NULL, " not like Satoshi-kun.", Line_Normal);
 	ClearMessage();
-	DrawBustshotWithFiltering( 0, "Me_YowakiA1#", "maskup", 1, 0, 0, FALSE, 0, 0, 0, 0, 0, 9, 0, FALSE );
-	DrawSceneWithMask( "Si_H3", "maskup", 1, 0, 300 );
+	DrawBustshotWithFiltering( 0, "me_si_yw_a1", "maskup", 1, 0, 0, FALSE, 0, 0, 0, 0, 0, 9, 0, FALSE );
+	DrawSceneWithMask( "si_g1", "maskup", 1, 0, 300 );
 
 	OutputLine(NULL, "「………やり直したい。",
 		   NULL, "\"...I want to start all over...", Line_WaitForInput);
@@ -1528,9 +1541,6 @@
 	OutputLine(NULL, "互いに傷つきあって爛れちゃうと、まぁやり直しも面倒でしょうが。」",
 		   NULL, " It'd be harder if you guys fought over it or something.\"", Line_Normal);
 	ClearMessage();
-	DisableWindow();
-	ChangeBustshot( 0, "Me_YowakiA2#", 200, TRUE );
-	DisplayWindow();
 
 	OutputLine(NULL, "「……やり直せる…かな。」",
 		   NULL, "\"...Can I start over...?\"", Line_WaitForInput);
@@ -1551,9 +1561,6 @@
 	OutputLine(NULL, "今日からの生活を少しずつ改めて、ポイントを稼ぎなおせばいいだけのことです。」",
 		   NULL, " If you change your attitude from tomorrow on, you can still change his mind.\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
-	DisableWindow();
-	ChangeBustshot( 0, "Me_YowakiA1#", 200, TRUE );
-	DisplayWindow();
 
 	OutputLine(NULL, "「生活を改めるって………どうやって……？」",
 		   NULL, "\"How do I change my attitude...? How...?\"", Line_Normal);
@@ -1572,9 +1579,6 @@
 	OutputLine(NULL, "　現在の圭ちゃんの中では、お姉よりもレナの方が高ポイントの可能性が高いです。」",
 		   NULL, " Kei-chan might prefer Rena at this point.\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
-	DisableWindow();
-	ChangeBustshot( 0, "Me_YowakiA1#", 200, TRUE );
-	DisplayWindow();
 
 
 	OutputLine(NULL, "「……………うぅ…、確かに…レナは女の子っぽいしなぁ…。",
@@ -1595,7 +1599,7 @@
 		   NULL, " Maybe I should try that on Kei-chan myself......\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 	DisableWindow();
-	ChangeBustshot( 0, "Me_OdorokiA1#", 200, TRUE );
+	ChangeBustshot( 0, "me_odorokia1#", 200, TRUE );
 	DisplayWindow();
 
 	OutputLine(NULL, "「え、あ、だだ、駄目だよ…駄目……！」",
@@ -1614,7 +1618,7 @@
 		   NULL, " Hey, Sis, why don't we have a competition over him?\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 	DisableWindow();
-	ChangeBustshot( 0, "Me_OdorokiA2#", 200, TRUE );
+	ChangeBustshot( 0, "me_si_bi_a2", 200, TRUE );
 	DisplayWindow();
 
 
@@ -1751,7 +1755,7 @@
 	OutputLine(NULL, "　…………悟史くんはどこへ消えたの…？",
 		   NULL, "......Where did Satoshi-kun go...?", Line_Normal);
 	ClearMessage();
-	DrawScene( "ke1", 400 );
+	DrawScene( "ke1--", 400 );
 
 	OutputLine(NULL, "　去年、悟史くんが失踪してしばらくの頃は、…私は園崎本家や裏の界隈での情報にアンテナを伸ばし、",
 		   NULL, "Last year, right after his disappearance, I'd paid close attention to the information circulating in the Sonozaki family and its underground connections,", Line_WaitForInput);
@@ -1802,7 +1806,7 @@
 	OutputLine(NULL, "…落ち葉がはらはらと落ちて、地面を覆ってしまうように、……私が本当に大切に思っていたものが…埋もれて見えなくなってしまって。",
 		   NULL, " I felt like I was losing sight of what was really important to me...", Line_Normal);
 	ClearMessage();
-	DrawSceneWithMask( "Sora", "maskup", 1, 0, 300 );
+	DrawSceneWithMask( "moon", "maskup", 1, 0, 300 );
 
 	OutputLine(NULL, "　気付けば、……いつの間にか季節は春を終えようとしている。",
 		   NULL, "It was already almost the end of spring.", Line_WaitForInput);
@@ -1825,7 +1829,6 @@
 	OutputLine(NULL, "　悟史くんがいなくなってから、……………一年が経ってしまう。",
 		   NULL, "It'd been almost a year... since Satoshi-kun went missing.", Line_Normal);
 	ClearMessage();
-	DrawScene( "Hi1", 400 );
 
 	OutputLine(NULL, "　雛見沢では、オヤシロさまの祟りと呼ばれる一連の連続怪死事件は禁句となっていて、公では迂闊に喋るなということになっている。",
 		   NULL, "In Hinamizawa, they don't allow you to talk openly about Oyashiro-sama's curse, or the series of mysterious deaths.", Line_WaitForInput);

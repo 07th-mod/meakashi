@@ -8,7 +8,7 @@
 	ClearMessage();
 	DrawScene( "white", 400 );
 	PlayBGM( 1, "Mati", 120, 0 );
-	DrawSceneWithMask( "Sora", "maskup", 1, 0, 300 );
+	DrawSceneWithMask( "Sora3", "maskup", 1, 0, 300 );
 
 	OutputLine(NULL, "　私が過ごす日々は、まぁ窮屈でないとは言えないものだった。",
 		   NULL, "The life I lived really was beginning to suffocate me.", Line_Normal);
@@ -85,7 +85,7 @@
 	OutputLine(NULL, "彼と突然再会する機会を得るのは。",
 		   NULL, " I got a chance to see him again.", Line_Normal);
 	ClearMessage();
-	DrawScene( "Kouen", 400 );
+	DrawScene( "Sora3", 400 );
 	FadeOutBGM( 0, 0, FALSE );
 	FadeOutBGM( 2, 0, FALSE );
 	DrawBustshot( 19, "no_data", 0, 100, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, TRUE );
@@ -111,6 +111,7 @@
 	ClearMessage();
 	PlayBGM( 0, "Iru", 120, 0 );
 	FadeOutBGM( 1, 0, FALSE );
+	DrawScene( "kouen", 400 );
 	DrawBustshot( 19, "no_data", 0, 100, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, TRUE );
 
 	OutputLine(NULL, "「へーい。",
@@ -119,7 +120,7 @@
 		   NULL, " What are you doing here?\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 	DisableWindow();
-	DrawBustshot( 0, "Sato_Komaru", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 9, 400, TRUE );
+	DrawBustshot( 2, "sato1_komaru_0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
 	DisplayWindow();
 
 	OutputLine(NULL, "「………………魅音か。",
@@ -134,7 +135,7 @@
 		   NULL, " I've been standing here for a couple of minutes now. Didn't you notice me?\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 	DisableWindow();
-	ChangeBustshot( 0, "Sato_Def2", 200, TRUE );
+	DrawBustshot( 2, "sato1_Def2_0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
 	DisplayWindow();
 
 	OutputLine(NULL, "「……そうなのかい？",
@@ -158,7 +159,9 @@
 	OutputLine(NULL, "　聞いて楽になるものなら聞くし、力になれるものなら惜しまないけど？」",
 		   NULL, " You can talk to me if you want. Maybe I can help.\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
-
+	ClearMessage();
+	DrawBustshot( 2, "sato1_komaru_0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
+	
 	OutputLine(NULL, "「いや、別に…。」",
 		   NULL, "\"N-No... that's okay...\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -172,9 +175,6 @@
 	OutputLine(NULL, "　見くびられたもんだなぁ。」",
 		   NULL, " Don't you know how mighty I am?\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
-	DisableWindow();
-	ChangeBustshot( 0, "Sato_Def1", 200, TRUE );
-	DisplayWindow();
 
 	OutputLine(NULL, "「別に…。",
 		   NULL, "\"I'm okay...", Line_WaitForInput);
@@ -198,7 +198,7 @@
 		   NULL, "...Satoshi-kun noticed that and smiled.", Line_Normal);
 	ClearMessage();
 	DisableWindow();
-	ChangeBustshot( 0, "Sato_komaru", 200, TRUE );
+	DrawBustshot( 2, "sato1_Def1_0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
 	DisplayWindow();
 
 	OutputLine(NULL, "「違うんだよ、魅音。",
@@ -235,8 +235,8 @@
 	OutputLine(NULL, "　そういった情報のどろどろのスープを、お姉だったらこう喋るというフィルターにくぐらせていく……。",
 		   NULL, "I deduced all that from what Sis told me, and carefully chose my words so as to sound like her...", Line_Normal);
 	ClearMessage();
-	DrawBustshot( 0, "Sato_Def1", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 9, 0, FALSE );
 	DrawScene( "Kouen", 400 );
+	DrawBustshot( 2, "sato1_Def1_0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
 
 	OutputLine(NULL, "「なぁんだ…。",
 		   NULL, "\"What?", Line_WaitForInput);
@@ -244,7 +244,7 @@
 		   NULL, " Are you feeling down just because of that?\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 	DisableWindow();
-	ChangeBustshot( 0, "Sato_Komaru2", 200, TRUE );
+	DrawBustshot( 2, "sato1_Komaru2_0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
 	DisplayWindow();
 
 	OutputLine(NULL, "「そんなことで、って。",
@@ -282,6 +282,8 @@
 	OutputLine(NULL, "　まぁ悟史くんに、相手のピッチャーに小細工をしてまで勝ちたいという執念があるなら、おじさん色々と協力できるかもしれませんけどねぇ。」",
 		   NULL, " Well, if you want to beat the opposing pitcher so badly you're willing to pull some tricks, then I might be able to help you in a few ways.\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+	ClearMessage();
+	DrawBustshot( 2, "sato1_Tukare_0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
 
 	OutputLine(NULL, "「むぅ……。ズルしても何の意味もないよ…。",
 		   NULL, "\"Mmph... there's no point if I cheat...", Line_WaitForInput);
@@ -304,22 +306,22 @@
 	OutputLine(NULL, "やっぱり男に生まれたからには、一度くらいは晴れ舞台でスターになってみたいでしょ？」",
 		   NULL, " If you're a man, then don't you want to be a star and have your fifteen minutes of fame?\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+	ClearMessage();
+	DrawBustshot( 2, "sato1_Def2_0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
 
 	OutputLine(NULL, "　悟史くんは、そりゃそうさとにっこり笑って答えた。",
 		   NULL, "Satoshi-kun grinned and said 'yes'.", Line_Normal);
 	ClearMessage();
 	DisableWindow();
-	ChangeBustshot( 0, "Sato_Warai", 200, TRUE );
+	DrawBustshot( 2, "sato1_Warai_0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
 	DisplayWindow();
 
 	OutputLine(NULL, "「もちろん、ヒーローを目指すのが華だけど。",
 		   NULL, "\"Of course, that'd be wonderful,", Line_WaitForInput);
 	OutputLine(NULL, "それが目的で野球をやってるわけじゃないよ。",
 		   NULL, " but that's not why I play baseball.", Line_WaitForInput);
-	DisableWindow();
-	ChangeBustshot( 0, "Sato_Def1", 200, TRUE );
-	DisplayWindow();
-
+	ClearMessage();
+	
 	OutputLine(NULL, "純粋にボールを投げたり打ったりするのが楽しいからやってるんだよ。",
 		   NULL, " I just have fun batting and throwing the ball...", Line_WaitForInput);
 	OutputLine(NULL, "…魅音でも、そういうの、わかるよね？」",
@@ -335,11 +337,12 @@
 	OutputLine(NULL, "あははは！」",
 		   NULL, " Ahahaha!\"", Line_Normal);
 	ClearMessage();
+	DrawBustshot( 2, "sato1_Komaru2_0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
 
 	OutputLine(NULL, "「むぅ…。",
 		   NULL, "\"Mmph...", Line_WaitForInput);
 	DisableWindow();
-	ChangeBustshot( 0, "Sato_Warai", 200, TRUE );
+	DrawBustshot( 2, "sato1_Warai_0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
 	DisplayWindow();
 
 	OutputLine(NULL, "あははははははははは。魅音らしい答えだなぁ。」",
@@ -364,7 +367,7 @@
 		   NULL, "Maybe I just jumped to conclusions when I saw him sitting alone in the park.", Line_Normal);
 	ClearMessage();
 	DisableWindow();
-	ChangeBustshot( 0, "Sato_Def2", 200, TRUE );
+	DrawBustshot( 2, "sato1_Def1_0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
 	DisplayWindow();
 
 	OutputLine(NULL, "「……でも、魅音は一番になるために色々と努力をするからね。",
@@ -382,8 +385,9 @@
 	OutputLine(NULL, "無警戒なところに。",
 		   NULL, " I totally wasn't prepared for that.", Line_Normal);
 	ClearMessage();
-	DrawScene( "white", 10 );
-	DrawScene( "Sora", 400 );
+	DrawBustshot( 2, "sato1_Def1_0_zoom", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
+	Wait( 1500 );
+	DrawScene( "black", 400 );
 	PlaySE( 0, "s_boyoon", 128, 64 );
 
 	OutputLine(NULL, "「へ？",
@@ -438,8 +442,8 @@
 		   NULL, " He suddenly withdrew his hand.", Line_Normal);
 	ClearMessage();
 	PlayBGM( 1, "higurashi", 120, 0 );
-	DrawBustshotWithFiltering( 2, "Sato_Def1", "maskup", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 10, 0, FALSE );
-	DrawSceneWithMask( "Kouen", "maskup", 1, 0, 300 );
+	DrawSceneWithMask( "Kouen2", "maskup", 1, 0, 300 );
+	DrawBustshot( 2, "sato1_Def1_0_zoom-", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
 
 	OutputLine(NULL, "「……じゃ、僕はそろそろ帰るよ。",
 		   NULL, "\"...I need to get going.", Line_WaitForInput);
@@ -469,7 +473,7 @@
 		   NULL, " too...\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 	DisableWindow();
-	ChangeBustshot( 2, "Sato_Def2", 200, TRUE );
+	DrawBustshot( 2, "sato1_komaru_0_zoom-", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
 	DisplayWindow();
 
 	OutputLine(NULL, "「？",
@@ -512,7 +516,7 @@
 		   NULL, " Is that a problem?\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 	DisableWindow();
-	ChangeBustshot( 2, "Sato_Warai", 200, TRUE );
+	DrawBustshot( 2, "sato1_Def2_0_zoom-", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
 	DisplayWindow();
 
 	OutputLine(NULL, "「…あはは。",
@@ -532,9 +536,6 @@
 	OutputLine(NULL, "　頭、撫でないでぇ〜！」",
 		   NULL, " Stop stroking my head!\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
-	DisableWindow();
-	ChangeBustshot( 2, "Sato_Def2", 200, TRUE );
-	DisplayWindow();
 
 	OutputLine(NULL, "「あはは、あはは。」",
 		   NULL, "\"Ahaha, ahaha.\"", Line_WaitForInput);
@@ -554,7 +555,7 @@
 	DrawSceneWithMask( "white", "maskleft", 1, 0, 300 );
 	FadeOutBGM( 1, 0, FALSE );
 	DrawBustshot( 19, "no_data", 0, 100, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, TRUE );
-	DrawSceneWithMask( "Mati1", "maskleft", 1, 0, 300 );
+	DrawSceneWithMask( "Mati3-", "maskleft", 1, 0, 300 );
 
 	OutputLine(NULL, "　悟史くんと一緒に上一色の商店街を歩きながら、…ふと考えた。",
 		   NULL, "While walking with Satoshi-kun in the shopping district of Kami-isshiki... it suddenly occurred to me.", Line_WaitForInput);
@@ -585,7 +586,7 @@
 	OutputLine(NULL, "…だから深く考えずに認めた。",
 		   NULL, " I had to just admit...", Line_Normal);
 	ClearMessage();
-	DrawSceneWithMask( "Sora", "maskdown", 1, 0, 300 );
+	DrawSceneWithMask( "Sora2", "maskdown", 1, 0, 300 );
 
 	OutputLine(NULL, "　つまりこれは。",
 		   NULL, "It was simply because,", Line_WaitForInput);
@@ -640,8 +641,8 @@
 	FadeOutBGM( 2, 0, FALSE );
 	FadeOutBGM( 3, 0, FALSE );
 	DrawBustshot( 19, "no_data", 0, 100, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, TRUE );
-	DrawBustshotWithFiltering( 1, "Sato_Komaru", "maskleft", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 8, 0, FALSE );
 	DrawSceneWithMask( "Tennai1", "maskleft", 1, 0, 300 );
+	DrawBustshot( 3, "sato1_komaru_0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
 	PlayBGM( 0, "z2_hig2", 120, 0 );
 
 	OutputLine(NULL, "「えっと……。",
@@ -684,7 +685,7 @@
 		   NULL, " Ahahahaha!\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 	DisableWindow();
-	ChangeBustshot( 1, "Sato_Komaru2", 200, TRUE );
+	DrawBustshot( 3, "sato1_Komaru2_0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
 	DisplayWindow();
 
 	OutputLine(NULL, "「……むぅ。",
@@ -715,7 +716,7 @@
 		   NULL, "He stumbles over everything he buys, after all.", Line_Normal);
 	ClearMessage();
 	DrawScene( "white", 400 );
-	DrawScene( "Sora", 400 );
+	DrawScene( "tennai1", 400 );
 	PlaySE( 0, "s_boyoon", 128, 64 );
 
 	OutputLine(NULL, "「それは調理塩。",
@@ -751,7 +752,7 @@
 	SetSpeedOfMessage( FALSE, 0 );
 	DrawScene( "Tennai1", 400 );
 	DisableWindow();
-	DrawBustshotWithFiltering( 2, "Sato_Def1", "maskright", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 10, 300, TRUE );
+	DrawBustshotWithFiltering( 2, "sato1_Def1_0", "maskright", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 10, 300, TRUE );
 	DisplayWindow();
 
 	OutputLine(NULL, "「えっと、……あはははは、魅音がいてくれると買い物が楽で助かるよ…。」",
@@ -764,7 +765,7 @@
 		   NULL, " I think you should study more...\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 	DisableWindow();
-	ChangeBustshot( 2, "Sato_Komaru2", 200, TRUE );
+	ChangeBustshot( 2, "sato1_Komaru2_0", 200, TRUE );
 	DisplayWindow();
 
 	OutputLine(NULL, "「むぅ…。",
@@ -848,8 +849,8 @@
 	OutputLine(NULL, "　悟史くんが領収書だらけの財布を漁り続けるのを無視して、会計を済ます。",
 		   NULL, "I finished checking out, ignoring Satoshi-kun as he fished through his wallet full of receipts.", Line_Normal);
 	ClearMessage();
-	DrawBustshotWithFiltering( 0, "Sato_Komaru", "maskup", 1, 0, 0, FALSE, 0, 0, 0, 0, 0, 9, 0, FALSE );
 	DrawSceneWithMask( "Tennai1", "maskup", 1, 0, 300 );
+	DrawBustshot( 1, "sato1_komaru_0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 200, TRUE );
 
 	OutputLine(NULL, "「ひどいな魅音…。",
 		   NULL, "\"That was horrible, Mion...", Line_WaitForInput);
@@ -867,7 +868,7 @@
 		   NULL, " Listen, at times like that, you should get it out before reaching the register!\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 	DisableWindow();
-	ChangeBustshot( 0, "Sato_Warai", 200, TRUE );
+	DrawBustshot( 1, "sato1_Warai_0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 200, TRUE );
 	DisplayWindow();
 
 	OutputLine(NULL, "「…あ、…そうか。",
@@ -884,7 +885,7 @@
 		   NULL, " Satoshi-kun, I bet you don't open your wallet and start looking for change until you're about to get off and have to pay while holding up everyone behind you.\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 	DisableWindow();
-	ChangeBustshot( 0, "Sato_Komaru", 200, TRUE );
+	DrawBustshot( 1, "sato1_Komaru2_0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 200, TRUE );
 	DisplayWindow();
 
 	OutputLine(NULL, "「…むぅ〜〜〜………、",
@@ -908,7 +909,7 @@
 		   NULL, " Do you get it?!\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 	DisableWindow();
-	ChangeBustshot( 0, "Sato_Def2", 200, TRUE );
+	DrawBustshot( 1, "sato1_Def2_0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 200, TRUE );
 	DisplayWindow();
 
 	OutputLine(NULL, "「わわ、わかったよぅ。",
@@ -949,7 +950,7 @@
 		   NULL, " Now your aunt won't freak out when she opens this shopping bag in her kitchen.\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 	DisableWindow();
-	ChangeBustshot( 0, "Sato_Warai", 200, TRUE );
+	DrawBustshot( 1, "sato1_Warai_0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 200, TRUE );
 	DisplayWindow();
 
 	OutputLine(NULL, "「あ、…ありがと。",
@@ -966,7 +967,7 @@
 		   NULL, " That's definitely not the only thing!\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 	DisableWindow();
-	ChangeBustshot( 0, "Sato_komaru2", 200, TRUE );
+	DrawBustshot( 1, "sato1_Komaru2_0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 200, TRUE );
 	DisplayWindow();
 
 	OutputLine(NULL, "「……む、…むぅ……。」",
@@ -1021,8 +1022,8 @@
 	OutputLine(NULL, "…飛び出して来てくれたのだから、やはり、それはとてもすごいことなのだ。",
 		   NULL, " That was really admirable of him.", Line_Normal);
 	ClearMessage();
-	DrawBustshot( 0, "Sato_Warai", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 9, 0, FALSE );
 	DrawScene( "Tennai1", 400 );
+	DrawBustshot( 2, "sato1_Warai_0_zoom", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
 
 	OutputLine(NULL, "「えらいえらい。",
 		   NULL, "\"Good boy.", Line_WaitForInput);
@@ -1032,7 +1033,7 @@
 		   NULL, " There, there.\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 	DisableWindow();
-	ChangeBustshot( 0, "Sato_Komaru2", 200, TRUE );
+	DrawBustshot( 2, "sato1_Komaru2_0_zoom", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
 	DisplayWindow();
 
 	OutputLine(NULL, "「な、………何だよ。",
@@ -1059,7 +1060,7 @@
 		   NULL, " Do you know how to get there?\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 	DisableWindow();
-	ChangeBustshot( 0, "Sato_Komaru", 200, TRUE );
+	DrawBustshot( 2, "sato1_komaru_0_zoom", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
 	DisplayWindow();
 
 	OutputLine(NULL, "「むぅ…。",
@@ -1067,6 +1068,7 @@
 	OutputLine(NULL, "やっぱりばかにしてる…。」",
 		   NULL, " You <i>are</i> making fun of me...\"", Line_Normal);
 	ClearMessage();
+	DrawBustshot( 2, "sato1_Komaru2_0_zoom", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
 
 	OutputLine(NULL, "　悟史くんはむくれながら、私に頭を撫でられるままに委ね、少し赤くなりながら俯いていた。",
 		   NULL, "Satoshi-kun's sulky face flushed red....", Line_WaitForInput);
@@ -1088,8 +1090,6 @@
 	OutputLine(NULL, "少年野球チーム、メンバー募集。",
 		   NULL, " Junior Baseball Team--Members Wanted.'", Line_Normal);
 	ClearMessage();
-	DrawBustshotWithFiltering( 2, "Sato_Def1", "maskdown", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 10, 0, FALSE );
-	DrawSceneWithMask( "Tennai1", "maskdown", 1, 0, 300 );
 
 	OutputLine(NULL, "　悟史くんのチーム、雛見沢ファイターズのチームメイト募集のポスターだった。",
 		   NULL, "It was a posting for the team Satoshi-kun belonged to.", Line_WaitForInput);
@@ -1108,9 +1108,6 @@
 	OutputLine(NULL, "　見たことはないけど、野球もこんな感じなのだろう。",
 		   NULL, "I figured he must be just the same when playing baseball.", Line_Normal);
 	ClearMessage();
-	DisableWindow();
-	ChangeBustshot( 2, "Sato_Komaru", 200, TRUE );
-	DisplayWindow();
 
 	OutputLine(NULL, "　悟史くんは私が野球チームのポスターを読んでいるのに気付くと、急にバツが悪そうになり、その場を立ち去ろうとした。",
 		   NULL, "Satoshi-kun realized that I was reading the posting. He looked uncomfortable and walked away.", Line_Normal);
@@ -1126,7 +1123,8 @@
 		   NULL, " ...Am I right?!\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 	DisableWindow();
-	ChangeBustshot( 2, "Sato_Komaru2", 200, TRUE );
+	DrawScene( "tennai1", 400 );
+	DrawBustshot( 2, "sato1_Komaru2_0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
 	DisplayWindow();
 
 	OutputLine(NULL, "「む、…むぅ……。",
@@ -1174,7 +1172,7 @@
 		   NULL, " It's getting dark, so be careful on your way back!\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 	DisableWindow();
-	DrawBustshot( 0, "Sato_Def1", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 9, 400, TRUE );
+	DrawBustshot( 2, "sato1_Def1_0-", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
 	DisplayWindow();
 
 	OutputLine(NULL, "「魅音は一緒に帰らないのかい？",
@@ -1189,7 +1187,7 @@
 		   NULL, " Don't worry about me.\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 	DisableWindow();
-	ChangeBustshot( 0, "Sato_Warai", 200, TRUE );
+	DrawBustshot( 2, "sato1_Warai_0-", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
 	DisplayWindow();
 
 	OutputLine(NULL, "「僕の買い物を手伝ってもらったんだから、付き合うよ。",
@@ -1210,7 +1208,7 @@
 		   NULL, " Ahhhahahahaha!\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 	DisableWindow();
-	ChangeBustshot( 0, "Sato_Komaru", 200, TRUE );
+	DrawBustshot( 2, "sato1_komaru_0-", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
 	DisplayWindow();
 
 	OutputLine(NULL, "「…むぅ…。",
@@ -1235,13 +1233,13 @@
 		   NULL, "As a result, I forgot to keep my guard up.", Line_Normal);
 	ClearMessage();
 	DisableWindow();
-	ChangeBustshot( 0, "Sato_Def2", 200, TRUE );
+	DrawBustshot( 2, "sato1_Def2_0_zoom-", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
 	DisplayWindow();
 
 	OutputLine(NULL, "「あ、でも、手伝ってくれてありがとうね。",
 		   NULL, "\"Uh, thank you for the help.", Line_WaitForInput);
 	DisableWindow();
-	ChangeBustshot( 0, "Sato_Warai", 200, TRUE );
+	DrawBustshot( 2, "sato1_Warai_0_zoom-", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
 	DisplayWindow();
 
 	OutputLine(NULL, "本当に助かったから。」",
@@ -1280,8 +1278,9 @@
 	SetValidityOfInput( FALSE );
 	Wait( 1000 );
 	SetValidityOfInput( TRUE );
-	DrawBustshot( 2, "Sato_Def2", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, FALSE );
-	DrawScene( "Mati5", 400 );
+	DrawScene( "mati3-", 400 );
+	DrawBustshot( 3, "sato1_Def2_0-", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
+	
 
 	OutputLine(NULL, "「じゃあね、魅音。",
 		   NULL, "\"See you, Mion!", Line_WaitForInput);
@@ -1297,7 +1296,7 @@
 		   NULL, " See you in school tomorrow too!\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 	DisableWindow();
-	FadeBustshotWithFiltering( 2, "maskleft" , 1, FALSE, 0, 0, 300, TRUE );
+	FadeAllBustshots( 400, TRUE );
 	DisplayWindow();
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
@@ -1311,7 +1310,6 @@
 	OutputLine(NULL, "むしろ、魅音としての時間を貸してくれるお姉に感謝したい気分だ。",
 		   NULL, " I had to thank Sis for letting me use her name.", Line_Normal);
 	ClearMessage();
-	DrawSceneWithMask( "Moon", "maskup", 1, 0, 300 );
 
 	OutputLine(NULL, "　やがて彼と別れた後。",
 		   NULL, "After I separated from him....", Line_WaitForInput);
