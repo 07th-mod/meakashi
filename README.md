@@ -1,68 +1,28 @@
-# PS3 Voice and Graphics Patch (in progress)
+# PS3 Voice and Graphics Patch
+#### For Higurashi No Naku Koro Ni - Chapter 5 Meakashi
 
-Currently hosting only the automated placed lines. All files need manual fixing, avoid placing them on your game.
+> This repository **only** hosts the script files and a few voice files needed to fix bugs, check our [wiki](https://github.com/07th-mod/guide/wiki/Getting-started) for instructions on how to install the patch!
 
-README's going to be updated as the patch is developed. Refer to our [wiki](https://github.com/07th-mod/guide/wiki) for more details about the patch.
+This patch aims to combine the efforts of the PS3 voice patch and the PS3 sprites/background patch, and fill in missing voice files not covered by the original voice patch.
 
-Old collaborators welcome to join the repository, however it's still preferred to fork the repository and update through pull requests.
+# Installing the patch
 
-# Scripts progress
+> [Check our wiki](https://github.com/07th-mod/guide/wiki/Getting-started).
 
->Bold lines mean "in progress"
+# Releases
 
-- [x] _meak_001.txt
-- [x] _meak_002.txt
-- [x] _meak_003.txt
-- [x] _meak_004.txt
-- [x] _meak_005.txt
-- [x] _meak_006.txt
-- [x] _meak_007.txt
-- [x] _meak_008.txt
-- [x] _meak_009.txt
-- [x] _meak_010.txt
-- [x] _meak_011.txt
-- [x] _meak_012.txt
-- [x] _meak_013.txt
-- [x] _meak_014_1.txt
-- [x] _meak_014_2.txt
-- [x] _meak_015_1.txt
-- [x] _meak_015_2.txt
-- [x] _meak_016_1.txt
-- [x] _meak_016_2.txt
-- [x] _meak_017.txt
-- [x] _meak_018.txt
-- [x] _meak_019_1.txt
-- [x] _meak_019_2.txt
-- [x] _meak_020.txt
-- [x] _meak_021_1.txt
-- [x] _meak_021_2.txt
-- [x] _meak_022_1.txt
-- [x] _meak_022_2.txt
-- [x] _meak_023.txt
-- [x] _meak_024.txt
-- [x] _meak_ep_01.txt
-- [x] _meak_ep_02.txt
-- [x] _meak_ep_03.txt
-- [x] _meak_tips_01.txt
-- [x] _meak_tips_02.txt
-- [x] _meak_tips_03.txt
-- [x] _meak_tips_04.txt
-- [x] _meak_tips_05.txt
-- [x] _meak_tips_06.txt
-- [x] _meak_tips_07.txt
-- [x] _meak_tips_08.txt
-- [x] _meak_tips_09.txt
-- [x] _meak_tips_10.txt
-- [x] _meak_tips_11.txt
-- [x] _meak_tips_12.txt
-- [x] _meak_tips_13.txt
-- [x] _meak_tips_14.txt
-- [x] _meak_tips_15.txt
-- [x] _meak_tips_16.txt
-- [x] _meak_tips_17.txt
-- [x] _meak_tips_18.txt
-- [x] _meak_tips_19.txt
-- [x] _meak_tips_20.txt
-- [x] _meak_tips_21.txt
-- [x] _meak_tips_22.txt
-- [x] _meak_tips_23.txt
+https://github.com/07th-mod/meakashi/releases/
+
+This repository is in constant change. Sometimes new releases might get on hold until there is enough content to push a new patch. If the latest patch have a bug that seems to be already fixed in the repository, try downloading the master file. The master file will always have the latest files, regardless of the current release being outdated or not.
+
+# Developing with us
+
+Usually, older contributors are welcome to join the repository and push their own changes without supervision. However, you can also aid the development just by forking the repository and working on your own changes. After you are done, commit the changes, make a pull request and if it's good enough, the changes will be merged. Both approaches are more than welcome!
+
+# Credits
+
+- @DoctorDiablo - For laying the foundation to our current graphics mod and fixing a ton of issues
+- @enumag - For coding the new automation script (and the compiler!)
+- @Grelo - For making the graphics mod
+- Anon - For giving us the PS3 files and scripts
+- @ItaloKnox - For making the voice patch and the installer
