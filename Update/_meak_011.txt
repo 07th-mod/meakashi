@@ -224,7 +224,7 @@ void main()
 	OutputLine(NULL, "…今日は私、夜まで姿を隠してるから、バイトに出られるんじゃない…？」",
 		   NULL, " I'll hide somewhere until tonight, so maybe you can work today...?\"", Line_Normal);
 	ClearMessage();
-	DrawSceneWithMask( "Si_H3", "maskright", 1, 0, 300 );
+	DrawSceneWithMask( "black", "maskright", 1, 0, 300 );
 
 	OutputLine(NULL, "　綿流しの事前打ち合わせやら準備やらのせいで、最近のお姉は公の場に出ずっぱりだった。",
 		   NULL, "Sis has been appearing in public places during festival preparations and whatnot.", Line_WaitForInput);
@@ -253,8 +253,7 @@ void main()
 	OutputLine(NULL, "　……だが、部屋でアンニュイな気分を楽しめるほど、私の財政状況は潤ってはいなかった。",
 		   NULL, "...But I couldn't afford to be sitting around, either.", Line_Normal);
 	ClearMessage();
-	DrawSceneWithMask( "black", "maskleft", 1, 0, 300 );
-	DrawSceneWithMask( "Si_G2", "maskleft", 1, 0, 300 );
+	DrawSceneWithMask( "si_mansion", "maskleft", 1, 0, 300 );
 
 	OutputLine(NULL, "　部屋を出て鍵を掛けていると、その音で私の外出に気付いたのか、隣の部屋の戸が開き、葛西が顔を覗かせた。",
 		   NULL, "When I locked my apartment door before leaving, the door of the next apartment over opened and Kasai appeared.", Line_Normal);
@@ -300,7 +299,7 @@ void main()
 	OutputLine(NULL, "　こういう言い方をすると葛西が、食費くらい私が出しますなんて言いかねない。",
 		   NULL, "Kasai might suggest he'd donate money to my cause.", Line_Normal);
 	ClearMessage();
-	DrawSceneWithMask( "Sora", "maskdown", 1, 0, 300 );
+	DrawSceneWithMask( "Sora3", "maskdown", 1, 0, 300 );
 
 	OutputLine(NULL, "　だが、葛西にお金を無心しないというのはここでの生活を始めた時に、強く誓ったことだ。",
 		   NULL, "However, I had sworn to myself when I started living here that I wouldn't depend on Kasai.", Line_WaitForInput);
@@ -327,7 +326,7 @@ void main()
 	DrawBustshot( 19, "no_data", 0, 100, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, TRUE );
 	DrawScene( "white", 400 );
 	PlayBGM( 1, "Mati", 120, 0 );
-	DrawScene( "Mati4", 400 );
+	DrawScene( "kuruma5_01", 400 );
 
 	OutputLine(NULL, "　叔父さんの店へ車で行こうとすると、必ずこの信号で捕まる。",
 		   NULL, "Every time we went to my uncle's store by car, we stopped at this traffic light.", Line_WaitForInput);
@@ -377,7 +376,7 @@ void main()
 	OutputLine(NULL, "　葛西が何事かと聞き返すが、私は答えずに車を降りた。",
 		   NULL, "Kasai looked taken aback, but I got out of the car regardless.", Line_Normal);
 	ClearMessage();
-	DrawScene( "Sora", 400 );
+	DrawScene( "Sora3", 400 );
 
 	OutputLine(NULL, "　車道の信号は青になる。",
 		   NULL, "The light turned green.", Line_Normal);
@@ -415,7 +414,7 @@ void main()
 		   NULL, "...So, I smiled as brightly as I could.", Line_Normal);
 	ClearMessage();
 	DisableWindow();
-	DrawBustshot( 0, "Sato_tukare", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 9, 400, TRUE );
+	DrawBustshot( 0, "sato1_komaru_0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 9, 400, TRUE );
 	DisplayWindow();
 
 	PlaySE(4, "S06/07/151200280", 128, 64);
@@ -447,7 +446,7 @@ void main()
 		   NULL, "I was aware of that myself, so it must have been obvious to Satoshi-kun.", Line_Normal);
 	ClearMessage();
 	DisableWindow();
-	ChangeBustshot( 0, "Sato_Def2", 200, TRUE );
+	ChangeBustshot( 0, "sato1_Def2_0", 200, TRUE );
 	DisplayWindow();
 
 	PlaySE(4, "S06/07/151200281", 128, 64);
@@ -484,6 +483,7 @@ void main()
 	OutputLine(NULL, "　何か機嫌がよくなるようないいことがありましたか？」",
 		   NULL, " Did something good happen?\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+	DrawBustshot( 2, "sato1_komaru_0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
 
 	PlaySE(4, "S06/07/151200282", 128, 64);
 	OutputLine(NULL, "「………いい事なんかないよ。",
@@ -496,7 +496,7 @@ void main()
 	OutputLine(NULL, "　一瞬、私は失言してしまって、悟史くんをひどく落胆させてしまうのではないかと思った。",
 		   NULL, "I might've asked something dumb.", Line_Normal);
 	ClearMessage();
-	DrawScene( "Sora", 400 );
+	DrawScene( "Sora3", 400 );
 
 	OutputLine(NULL, "　だが、そんな私の焦りは本当に杞憂だった。",
 		   NULL, "He seemed to be okay with it, though.", Line_WaitForInput);
@@ -563,7 +563,7 @@ void main()
 	OutputLine(NULL, "　呪縛のような何かから解放された彼を労いたくて、私は何事もなかったかのように笑いながら問い掛けた。",
 		   NULL, "I wanted to celebrate his release from that curse, so I smiled like nothing was different as I asked...", Line_Normal);
 	ClearMessage();
-	DrawBustshotWithFiltering( 2, "Sato_Def1", "maskright", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 10, 0, FALSE );
+	DrawBustshotWithFiltering( 2, "sato1_Def1_0", "maskright", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 10, 0, FALSE );
 	DrawSceneWithMask( "Mati2", "maskright", 1, 0, 300 );
 
 	PlaySE(4, "S06/06/150600843", 128, 64);
@@ -587,7 +587,7 @@ void main()
 		   NULL, "\"...A stop?\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 	DisableWindow();
-	ChangeBustshot( 2, "Sato_Def2", 200, TRUE );
+	ChangeBustshot( 2, "sato1_Def2_0", 200, TRUE );
 	DisplayWindow();
 
 	PlaySE(4, "S06/07/151200286", 128, 64);
@@ -645,7 +645,7 @@ void main()
 	OutputLine(NULL, "この様子だと、沙都子の誕生日当日にもらえるのかもしれない。",
 		   NULL, " Maybe he was only getting paid on Satoko's birthday.", Line_Normal);
 	ClearMessage();
-	DrawSceneWithMask( "mati_O1", "maskright", 1, 0, 300 );
+	DrawSceneWithMask( "mati1", "maskright", 1, 0, 300 );
 
 	OutputLine(NULL, "　おもちゃ屋が見えてくると、悟史くんは急に小走りになり、ショーウィンドゥの中を覗き込んだ。",
 		   NULL, "When we got near the toy store, he rushed to the display window.", Line_WaitForInput);
@@ -661,7 +661,7 @@ void main()
 	ClearMessage();
 	PlayBGM( 0, "Iru", 120, 0 );
 	DisableWindow();
-	DrawBustshot( 0, "Sato_Warai", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 9, 400, TRUE );
+	DrawBustshot( 0, "sato1_Warai_0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 9, 400, TRUE );
 	DisplayWindow();
 
 	PlaySE(4, "S06/07/151200288", 128, 64);
@@ -683,7 +683,7 @@ void main()
 		   NULL, " Why don't you reserve it?\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 	DisableWindow();
-	ChangeBustshot( 0, "Sato_Komaru2", 200, TRUE );
+	ChangeBustshot( 0, "sato1_Komaru2_0", 200, TRUE );
 	DisplayWindow();
 
 	PlaySE(4, "S06/07/151200291", 128, 64);
@@ -715,8 +715,8 @@ void main()
 	OutputLine(NULL, "　売り物というよりは、展示品やレイアウトの一部といった雰囲気だった。",
 		   NULL, "Really, it looked more like a display model than an item for sale.", Line_Normal);
 	ClearMessage();
-	DrawBustshotWithFiltering( 2, "Sato_Def1", "maskup", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 10, 0, FALSE );
-	DrawSceneWithMask( "mati_O1", "maskup", 1, 0, 300 );
+	DrawBustshotWithFiltering( 2, "sato1_Def1_0", "maskup", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 10, 0, FALSE );
+	DrawSceneWithMask( "mati1", "maskup", 1, 0, 300 );
 
 	PlaySE(4, "S06/06/150600848", 128, 64);
 	OutputLine(NULL, "「値札が付いてないけど、これ、本当に売り物なんですか？",
@@ -726,7 +726,7 @@ void main()
 		   NULL, " How much is it?\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 	DisableWindow();
-	ChangeBustshot( 2, "Sato_Def2", 200, TRUE );
+	ChangeBustshot( 2, "sato1_Def2_0", 200, TRUE );
 	DisplayWindow();
 
 	PlaySE(4, "S06/07/151200292", 128, 64);
@@ -745,7 +745,7 @@ void main()
 		   NULL, " Does it fit your budget?\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 	DisableWindow();
-	ChangeBustshot( 2, "Sato_Komaru", 200, TRUE );
+	ChangeBustshot( 2, "sato1_komaru_0", 200, TRUE );
 	DisplayWindow();
 
 	PlaySE(4, "S06/07/151200294", 128, 64);
@@ -767,13 +767,13 @@ void main()
 	OutputLine(NULL, "その方が悟史くんも心の荷が下りていいでしょうしね。」",
 		   NULL, " Then you won't have to feel anxious anymore.\"", Line_Normal);
 	ClearMessage();
-	DrawSceneWithMask( "mati_O2", "maskright", 1, 0, 300 );
+	DrawSceneWithMask( "mati0", "maskright", 1, 0, 300 );
 
 	OutputLine(NULL, "　私たちはちょっと埃っぽい店内に入り、お店の人の姿を探す。",
 		   NULL, "We entered the store and looked for a clerk.", Line_Normal);
 	ClearMessage();
 	DisableWindow();
-	DrawBustshot( 0, "Sato_Def1", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 9, 400, TRUE );
+	DrawBustshot( 0, "sato1_Def1_0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 9, 400, TRUE );
 	DisplayWindow();
 
 	PlaySE(4, "S06/07/151200295", 128, 64);
@@ -789,7 +789,7 @@ void main()
 		   NULL, " Maybe you can get it without paying.\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 	DisableWindow();
-	ChangeBustshot( 0, "Sato_Komaru", 200, TRUE );
+	ChangeBustshot( 0, "sato1_komaru_0", 200, TRUE );
 	DisplayWindow();
 
 	PlaySE(4, "S06/07/151200295_1", 128, 64);
@@ -815,7 +815,7 @@ void main()
 		   NULL, "\"Uh... no. Sorry. Ahahahaha...\"", Line_Normal);
 	ClearMessage();
 	DisableWindow();
-	ChangeBustshot( 0, "Sato_Def2", 200, TRUE );
+	ChangeBustshot( 0, "sato1_Def2_0", 200, TRUE );
 	DisplayWindow();
 
 	OutputLine(NULL, "　悟史くんが取り繕ったように笑う。",
@@ -839,7 +839,7 @@ void main()
 	OutputLine(NULL, "　……だけど、そんなことは砂浜に書いた文字が、波に一度覆われただけで跡形もなく消えてしまうくらいに、すーっと消えてしまっていた。",
 		   NULL, "...But now I felt as though all those things simply vanished into the air around us.", Line_Normal);
 	ClearMessage();
-	DrawSceneWithMask( "mati_O4", "maskright", 1, 0, 300 );
+	DrawSceneWithMask( "black", "maskright", 1, 0, 300 );
 
 	OutputLine(NULL, "　レジの奥に揺り椅子があり、お店の人らしい老人が昼寝をしているのを見つける。",
 		   NULL, "I found an old person napping in the back. He must be the clerk, I thought.", Line_WaitForInput);
@@ -891,7 +891,7 @@ void main()
 		   NULL, "She went to the cash register after that.", Line_Normal);
 	ClearMessage();
 	DrawScene( "black", 400 );
-	DrawScene( "mati_O3", 400 );
+	DrawScene( "mati0", 400 );
 
 	PlaySE(4, "S06/00/omoA15005", 128, 64);
 	OutputLine(NULL, "「お恥ずかしいところを見せちゃってごめんなさいねぇ。",
@@ -901,7 +901,7 @@ void main()
 		   NULL, " So, how can I help you?\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 	DisableWindow();
-	DrawBustshotWithFiltering( 2, "Sato_Def1", "maskright", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 10, 300, TRUE );
+	DrawBustshotWithFiltering( 2, "sato1_Def1_0", "maskright", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 10, 300, TRUE );
 	DisplayWindow();
 
 	PlaySE(4, "S06/07/151200299", 128, 64);
@@ -926,7 +926,7 @@ void main()
 		   NULL, " You know that, right?\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 	DisableWindow();
-	ChangeBustshot( 2, "Sato_Def2", 200, TRUE );
+	ChangeBustshot( 2, "sato1_Def2_0", 200, TRUE );
 	DisplayWindow();
 
 	PlaySE(4, "S06/07/151200301", 128, 64);
@@ -958,7 +958,7 @@ void main()
 		   NULL, " You don't have to worry about the teddy bear anymore.\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 	DisableWindow();
-	ChangeBustshot( 2, "Sato_Warai", 200, TRUE );
+	ChangeBustshot( 2, "sato1_Warai_0", 200, TRUE );
 	DisplayWindow();
 
 	PlaySE(4, "S06/07/151200304", 128, 64);
@@ -987,8 +987,8 @@ void main()
 	OutputLine(NULL, "　その心的負担から解放されたのか、悟史くんは本当にほっとした笑顔で、予約券を取れた喜びを噛みしめているようだった。",
 		   NULL, "Satoshi-kun looked very relieved indeed.", Line_Normal);
 	ClearMessage();
-	DrawBustshotWithFiltering( 0, "Sato_Def2", "maskup", 1, 0, 0, FALSE, 0, 0, 0, 0, 0, 9, 0, FALSE );
-	DrawSceneWithMask( "mati_O1", "maskup", 1, 0, 300 );
+	DrawBustshotWithFiltering( 0, "sato1_Def2_0", "maskup", 1, 0, 0, FALSE, 0, 0, 0, 0, 0, 9, 0, FALSE );
+	DrawSceneWithMask( "mati1", "maskup", 1, 0, 300 );
 
 	PlaySE(4, "S06/07/151200306", 128, 64);
 	OutputLine(NULL, "「これなら、もっと早くに予約をしてれば良かったなぁ。」",
@@ -1003,7 +1003,7 @@ void main()
 		   NULL, " It's very rare for somebody not to think of that.\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 	DisableWindow();
-	ChangeBustshot( 0, "Sato_Komaru2", 200, TRUE );
+	ChangeBustshot( 0, "sato1_Komaru2_0", 200, TRUE );
 	DisplayWindow();
 
 	PlaySE(4, "S06/07/151200307", 128, 64);
@@ -1025,7 +1025,7 @@ void main()
 		   NULL, "Satoshi-kun looked like he'd forgotten everything that happened up until yesterday.", Line_Normal);
 	ClearMessage();
 	DisableWindow();
-	ChangeBustshot( 0, "Sato_Warai", 200, TRUE );
+	ChangeBustshot( 0, "sato1_Warai_0_zoom", 200, TRUE );
 	DisplayWindow();
 
 	PlaySE(4, "S06/07/151200308", 128, 64);
@@ -1081,7 +1081,7 @@ void main()
 
 	DrawScene( "white", 400 );
 	PlayBGM( 0, "higurashi", 120, 0 );
-	DrawScene( "mati_O1", 400 );
+	DrawScene( "mati1", 400 );
 
 	OutputLine(NULL, "　背広姿の男たちが４人。",
 		   NULL, "There were four men in suits blocking our way.", Line_WaitForInput);
@@ -1091,7 +1091,7 @@ void main()
 		   NULL, "It looked as though they'd been waiting for us to exit the toy store.", Line_Normal);
 	ClearMessage();
 	DisableWindow();
-	DrawBustshotWithFiltering( 0, "Oisi2", "maskright", 1, 0, 0, FALSE, 0, 0, 0, 0, 0, 9, 300, TRUE );
+	DrawBustshotWithFiltering( 0, "oi_si_wa_a1", "maskright", 1, 0, 0, FALSE, 0, 0, 0, 0, 0, 9, 300, TRUE );
 	DisplayWindow();
 
 	PlaySE(4, "S06/11/150700106", 128, 64);
@@ -1130,7 +1130,7 @@ void main()
 	OutputLine(NULL, "いい雰囲気だったところを邪魔しちゃって、実に申し訳ないです。」",
 		   NULL, " I'm sorry to bother you at a time like this.\"", Line_Normal);
 	ClearMessage();
-	DrawBustshotWithFiltering( 0, "Oisi2", "maskdown", 1, 0, 0, FALSE, 0, 0, 0, 0, 0, 9, 0, FALSE );
+	DrawBustshotWithFiltering( 0, "oi_si_wa_a1", "maskdown", 1, 0, 0, FALSE, 0, 0, 0, 0, 0, 9, 0, FALSE );
 	DrawSceneWithMask( "black", "maskdown", 1, 0, 1300 );
 
 	OutputLine(NULL, "　大石蔵人。",
@@ -1166,8 +1166,8 @@ void main()
 	OutputLine(NULL, "　私はお姉ならこう返すに違いないと、その反応をシミュレーションしていく。",
 		   NULL, "I tried to imagine how Sis would react.", Line_Normal);
 	ClearMessage();
-	DrawBustshot( 0, "Oisi2", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 9, 0, FALSE );
-	DrawScene( "mati_O1", 400 );
+	DrawBustshot( 0, "oi_si_wa_a1", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 9, 0, FALSE );
+	DrawScene( "mati1", 400 );
 
 	PlaySE(4, "S06/06/150600866", 128, 64);
 	OutputLine(NULL, "「…ありゃあ、大石さんですか。",
@@ -1204,6 +1204,7 @@ void main()
 	ClearMessage();
 	DisableWindow();
 	FadeBustshotWithFiltering( 0, "maskleft" , 1, FALSE, 0, 0, 300, TRUE );
+	DrawBustshot( 1, "sato1_komaru_0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 200, TRUE );
 	DisplayWindow();
 
 	OutputLine(NULL, "　悟史くんの様子を窺うと、……過剰な反応は示さないまでにも、落ち着きをなくしていることが見て取れた。",
@@ -1216,7 +1217,7 @@ void main()
 		   NULL, "The other three cops loosely surrounded us to prevent our escape.", Line_Normal);
 	ClearMessage();
 	DisableWindow();
-	DrawBustshotWithFiltering( 2, "Oisi4", "maskright", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 10, 300, TRUE );
+	DrawBustshotWithFiltering( 2, "oisi1_4_0", "maskright", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 10, 300, TRUE );
 	DisplayWindow();
 
 	PlaySE(4, "S06/11/150700111", 128, 64);
@@ -1293,7 +1294,9 @@ void main()
 	OutputLine(NULL, "　そして警察は丹念に外堀を埋め、…任意同行から一気に畳みかけて悟史くんの自白を引き出そうとするに違いない。",
 		   NULL, "The police were trying to corner him and lead him to confess.", Line_Normal);
 	ClearMessage();
-	DrawScene( "Sora", 400 );
+	DrawScene( "mati1", 400 );
+	DrawBustshot( 1, "sato1_komaru_0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 200, TRUE );
+	DrawBustshot( 3, "oisi1_4_0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
 
 	OutputLine(NULL, "　…悟史くんの表情をもう一度見る。",
 		   NULL, "...I looked at Satoshi-kun's face once again.", Line_WaitForInput);
@@ -1384,17 +1387,14 @@ void main()
 	OutputLine(NULL, "　それに気圧されて悟史くんがよろりと、後ろへ後退る。",
 		   NULL, "Satoshi-kun fell back.", Line_Normal);
 	ClearMessage();
-	DrawBustshot( 2, "Oisi1", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, FALSE );
-	DrawBustshot( 1, "Sato_Tukare", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 8, 0, FALSE );
-	DrawScene( "mati_O1", 400 );
+	DrawBustshot( 2, "oi_si_de_a1", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, FALSE );
+	DrawBustshot( 1, "sato1_komaru_0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 8, 0, FALSE );
+	DrawScene( "mati1", 400 );
 
 	PlaySE(4, "S06/07/151200309", 128, 64);
 	OutputLine(NULL, "「…………あ、…………………ぅ。」",
 		   NULL, "\"...Uh...... ooh...\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
-	DisableWindow();
-	ChangeBustshot( 2, "Oisi4", 200, TRUE );
-	DisplayWindow();
 
 	PlaySE(4, "S06/11/150700113", 128, 64);
 	OutputLine(NULL, "「大して時間は取らせませんから。",
@@ -1403,7 +1403,7 @@ void main()
 	OutputLine(NULL, "そんな怖がらないください。",
 		   NULL, " Come on, don't be scared...", Line_WaitForInput);
 	DisableWindow();
-	ChangeBustshot( 2, "Oisi2", 200, TRUE );
+	ChangeBustshot( 2, "oi_si_wa_a1", 200, TRUE );
 	DisplayWindow();
 
 	PlaySE(4, "S06/11/150700115", 128, 64);
@@ -1430,7 +1430,7 @@ void main()
 		   NULL, "Satoshi-kun looked like he was at his breaking point. Ooishi was clearly aware of it...", Line_Normal);
 	ClearMessage();
 	DisableWindow();
-	ChangeBustshot( 2, "Oisi5", 200, TRUE );
+	ChangeBustshot( 2, "oisi1_4_0", 200, TRUE );
 	DisplayWindow();
 
 	OutputLine(NULL, "　大石はにやぁっと笑い、……悟史くんの肩に手をかけようと、その腕を伸ばす……。",
@@ -1468,9 +1468,6 @@ void main()
 		   NULL, "\"Do you want to know his alibi?\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
-	DrawBustshot( 0, "Oisi4", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 9, 0, FALSE );
-	DrawScene( "mati_O1", 400 );
-
 	PlaySE(4, "S06/11/150700116", 128, 64);
 	OutputLine(NULL, "「………うん？」",
 		   NULL, "\"......Hmm?\"", Line_WaitForInput);
@@ -1500,7 +1497,7 @@ void main()
 		   NULL, "It didn't really matter what I said.", Line_Normal);
 	ClearMessage();
 	DisableWindow();
-	ChangeBustshot( 0, "Oisi1", 200, TRUE );
+	ChangeBustshot( 0, "oi_si_de_a1", 200, TRUE );
 	DisplayWindow();
 
 	PlaySE(4, "S06/11/150700117", 128, 64);
@@ -1510,7 +1507,7 @@ void main()
 	OutputLine(NULL, "北条悟史さんのアリバイが知りたいんです。",
 		   NULL, " I want to get Houjou-san's alibi.", Line_WaitForInput);
 	DisableWindow();
-	ChangeBustshot( 0, "Oisi2", 200, TRUE );
+	ChangeBustshot( 0, "oi_si_wa_a1", 200, TRUE );
 	DisplayWindow();
 
 	PlaySE(4, "S06/11/150700119", 128, 64);
@@ -1563,14 +1560,14 @@ void main()
 		   NULL, " He was with me. Wouldn't that be enough?\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 	DisableWindow();
-	ChangeBustshot( 0, "Oisi4", 200, TRUE );
+	ChangeBustshot( 0, "oisi1_4_0", 200, TRUE );
 	DisplayWindow();
 
 	PlaySE(4, "S06/11/150700129", 128, 64);
 	OutputLine(NULL, "「…あなたが仲良しのお友達と終始一緒にいたのはわかっているし、私も会場で実際にお見かけしています。",
 		   NULL, "\"...I know you were there with your other friends that night. I saw that myself.", Line_WaitForInput);
 	DisableWindow();
-	ChangeBustshot( 0, "Oisi5", 200, TRUE );
+	ChangeBustshot( 0, "oisi1_5_0", 200, TRUE );
 	DisplayWindow();
 
 	PlaySE(4, "S06/11/150700130", 128, 64);
@@ -1616,7 +1613,7 @@ void main()
 	ClearMessage();
 	DrawScene( "nort27", 1000 );
 	Wait( 10000 );
-	DrawScene( "black", 3000 );
+	DrawScene( "cg_009a", 1000 );
 	SetSpeedOfMessage( FALSE, 0 );
 	FadeOutBGM( 1, 0, FALSE );
 	DrawBustshot( 19, "no_data", 0, 100, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, TRUE );
@@ -1629,8 +1626,6 @@ void main()
 	OutputLine(NULL, "だから元々、綿流しになんか行ってません。」",
 		   NULL, " I didn't go to the Watanagashi festival in the first place.\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
-	DrawBustshot( 0, "Oisi4", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 9, 0, FALSE );
-	DrawScene( "mati_O1", 0 );
 
 	PlaySE(4, "S06/11/150700134", 128, 64);
 	OutputLine(NULL, "「……は？」",
@@ -1648,9 +1643,6 @@ void main()
 	OutputLine(NULL, "　大石はにやにやと笑いを浮かべたままだったが、混乱しているのは間違いなかった。",
 		   NULL, "Ooishi was still smirking, but he apparently felt confused.", Line_Normal);
 	ClearMessage();
-	DisableWindow();
-	ChangeBustshot( 0, "Oisi5", 200, TRUE );
-	DisplayWindow();
 
 	PlaySE(4, "S06/11/150700135", 128, 64);
 	OutputLine(NULL, "「…あんた、何を言ってるの？",
@@ -1702,9 +1694,6 @@ void main()
 		   NULL, "All the cops looked bewildered now.", Line_Normal);
 	ClearMessage();
 	PlayBGM( 1, "Mati", 120, 0 );
-	DisableWindow();
-	ChangeBustshot( 0, "Oisi4", 200, TRUE );
-	DisplayWindow();
 
 	PlaySE(4, "S06/11/150700139", 128, 64);
 	OutputLine(NULL, "「……園崎、しおんさん？」",
@@ -1734,7 +1723,7 @@ void main()
 	OutputLine(NULL, "お手柔らかによろしくお願いいたします。」",
 		   NULL, " Please go easy on us.\"", Line_Normal);
 	ClearMessage();
-	DrawScene( "Sora", 400 );
+	DrawScene( "Sora3", 400 );
 
 	OutputLine(NULL, "　刑事たちは車のところで集まり、何か言い合いをしているようだった。",
 		   NULL, "The cops gathered at their car and started discussing something.", Line_WaitForInput);
@@ -1755,8 +1744,8 @@ void main()
 	OutputLine(NULL, "　お姉の馬鹿には釘を刺しておいたから、詩音と一緒だったアリバイを後付けで作ることは出来ないことじゃない。",
 		   NULL, "It shouldn't be too difficult to talk to Sis about this, then forge up an alibi together.", Line_Normal);
 	ClearMessage();
-	DrawBustshotWithFiltering( 2, "Sato_komaru", "maskup", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 10, 0, FALSE );
-	DrawSceneWithMask( "mati_O1", "maskup", 1, 0, 300 );
+	DrawSceneWithMask( "mati1", "maskup", 1, 0, 300 );
+	DrawBustshot( 1, "sato1_komaru_0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 200, TRUE );
 
 	PlaySE(4, "S06/06/150600895", 128, 64);
 	OutputLine(NULL, "「悟史くん。",
@@ -1792,9 +1781,6 @@ void main()
 	OutputLine(NULL, "　ここでしっかりしないと刑事たちの思うつぼです。」",
 		   NULL, " You can't mess this up, okay?\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
-	DisableWindow();
-	ChangeBustshot( 2, "Sato_Tukare", 200, TRUE );
-	DisplayWindow();
 
 	PlaySE(4, "S06/07/151200312", 128, 64);
 	OutputLine(NULL, "「あ、……う、………うん。」",
@@ -1823,9 +1809,6 @@ void main()
 	OutputLine(NULL, "「………………怒ってます…？」",
 		   NULL, "\"...Are you upset?\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
-	DisableWindow();
-	ChangeBustshot( 2, "Sato_Komaru", 200, TRUE );
-	DisplayWindow();
 
 	PlaySE(4, "S06/07/151200313", 128, 64);
 	OutputLine(NULL, "「……なんで？」",
@@ -1837,7 +1820,7 @@ void main()
 		   NULL, "\"Because... I've been fooling you.\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 	DisableWindow();
-	ChangeBustshot( 2, "Sato_Def2", 200, TRUE );
+	DrawBustshot( 1, "sato1_Def2_0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 200, TRUE );
 	DisplayWindow();
 
 	PlaySE(4, "S06/07/151200314", 128, 64);
@@ -1881,7 +1864,7 @@ void main()
 		   NULL, " Or maybe he was only pretending to be that way.", Line_Normal);
 	ClearMessage();
 	DisableWindow();
-	ChangeBustshot( 2, "Sato_Def1", 200, TRUE );
+	DrawBustshot( 1, "sato1_Def1_0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 200, TRUE );
 	DisplayWindow();
 
 	PlaySE(4, "S06/07/151200317", 128, 64);
@@ -1920,7 +1903,7 @@ void main()
 		   NULL, "\"Huh?\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 	DisableWindow();
-	ChangeBustshot( 2, "Sato_Warai", 200, TRUE );
+	DrawBustshot( 1, "sato1_Warai_0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 200, TRUE );
 	DisplayWindow();
 
 	PlaySE(4, "S06/07/151200322", 128, 64);
@@ -1928,7 +1911,7 @@ void main()
 		   NULL, "\"That's a beautiful name.\"", Line_Normal);
 	ClearMessage();
 	DisableWindow();
-	DrawBustshotWithFiltering( 1, "Oisi1", "maskleft", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 8, 300, TRUE );
+	DrawBustshot( 3, "oi_si_de_a1", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
 	DisplayWindow();
 
 	PlaySE(4, "S06/11/150700142", 128, 64);

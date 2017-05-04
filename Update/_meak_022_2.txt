@@ -21,6 +21,7 @@
 	Wait( 2000 );
 	SetValidityOfInput( TRUE );
 	DrawSceneWithMask( "Y_Ie2", "maskdown", 1, 0, 1300 );
+	DrawBustshot( 1, "kei2_Komaru_0--", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 200, TRUE );
 
 	PlaySE(4, "S06/06/150602235", 128, 64);
 	OutputLine(NULL, "「……圭ちゃん、本気で言ってんの？",
@@ -34,7 +35,7 @@
 		   NULL, "I scolded Keiichi for suspecting that Rika had disappeared.", Line_Normal);
 	ClearMessage();
 	DisableWindow();
-	DrawBustshotWithFiltering( 2, "Re_DefB1#", "maskright", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 10, 300, TRUE );
+	DrawBustshot( 3, "Re_DefB1--", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
 	DisplayWindow();
 
 	PlaySE(4, "S06/02/150200195", 128, 64);
@@ -47,7 +48,7 @@
 	OutputLine(NULL, "だって冗談なんだから。",
 		   NULL, " It would be a joke, after all.", Line_WaitForInput);
 	DisableWindow();
-	ChangeBustshot( 2, "Re_KomaruA1#", 200, TRUE );
+	DrawBustshot( 3, "re2a_komaruA2_0--", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
 	DisplayWindow();
 
 	PlaySE(4, "S06/02/150200198", 128, 64);
@@ -185,7 +186,7 @@
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
 	DisableWindow();
-	DrawBustshotWithFiltering( 0, "Re_DefA1#", "maskdown", 1, 0, 0, FALSE, 0, 0, 0, 0, 0, 9, 300, TRUE );
+	DrawBustshot( 2, "Re_DefA1", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
 	DisplayWindow();
 
 	OutputLine(NULL, "　なのに、…この竜宮レナという娘と目が合うと、",
@@ -204,6 +205,7 @@
 	OutputLine(NULL, "　なんでこんな小娘に、私は屈服しそうになるのか…？",
 		   NULL, "Why did I feel that way with Rena?", Line_Normal);
 	ClearMessage();
+	FadeAllBustshots( 400, TRUE );
 
 	OutputLine(NULL, "　…そう言えば、動物の喧嘩って、睨み合ったり強さを誇示したりで決着することが多いって聞いたことがある。",
 		   NULL, "I'd heard that in the animal world, during battle, animals glare at each other to display their strength.", Line_WaitForInput);
@@ -230,8 +232,8 @@
 	FadeOutBGM( 0, 0, FALSE );
 	FadeOutBGM( 2, 0, FALSE );
 	DrawBustshot( 19, "no_data", 0, 100, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, TRUE );
-	DrawBustshotWithFiltering( 0, "Re_nandeA1#", "maskdown", 1, 0, 0, FALSE, 0, 0, 0, 0, 0, 9, 0, FALSE );
 	DrawSceneWithMask( "YHu2", "maskdown", 1, 0, 300 );
+	DrawBustshot( 2, "re2a_nandeA1_0--", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
 	PlayBGM( 0, "yoru", 120, 0 );
 
 	PlaySE(4, "S06/02/150200199", 128, 64);
@@ -261,14 +263,14 @@
 		   NULL, " Rena cautioned me to hold onto it tightly.", Line_Normal);
 	ClearMessage();
 	DisableWindow();
-	ChangeBustshot( 0, "Re_NandeB1#", 200, TRUE );
+	DrawBustshot( 2, "re2b_nandeB1_0--", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
 	DisplayWindow();
 
 	PlaySE(4, "S06/02/150200201", 128, 64);
 	OutputLine(NULL, "「魅ぃちゃん、私、念のため、本宅の方も見てくるね！",
 		   NULL, "\"Mii-chan, I'm going to go check the main house just to be sure, okay?", Line_WaitForInput);
 	DisableWindow();
-	FadeBustshotWithFiltering( 0, "maskright" , 7, FALSE, 0, 0, 300, TRUE );
+	FadeAllBustshots( 400, TRUE );
 	DisplayWindow();
 
 	PlaySE(4, "S06/02/150200202", 128, 64);
@@ -786,9 +788,7 @@
 		   NULL, "I could tell the demon inside of me wanted to roar.", Line_Normal);
 	ClearMessage();
 	DrawScene( "black", 400 );
-	DrawBustshot( 0, "Kei_Komaru#", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 9, 0, FALSE );
-	DrawScene( "YHu2", 400 );
-
+	
 	OutputLine(NULL, "　……気付けば圭一が、私を見下ろしていた。",
 		   NULL, "...I noticed Keiichi was looking down at me.", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -807,6 +807,7 @@
 	FadeOutBGM( 2, 0, FALSE );
 	FadeOutBGM( 3, 0, FALSE );
 	DrawBustshot( 19, "no_data", 0, 100, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, TRUE );
+	DrawScene( "YHu2", 400 );
 	PlayBGM( 0, "yoru", 120, 0 );
 
 	OutputLine(NULL, "　その時、大勢の足音が近付いてくるのが聞こえる。",
@@ -821,7 +822,6 @@
 	OutputLine(NULL, "　その後、倉庫小屋の鍵が開けられ、みんなで中に踏み込む。",
 		   NULL, "One of them opened the lock on the cabin door, and we all went inside.", Line_Normal);
 	ClearMessage();
-	DrawSceneWithMask( "Hu_R2", "maskright", 1, 0, 300 );
 	PlayBGM( 0, "Nazo", 120, 0 );
 
 	OutputLine(NULL, "　もちろん、何の気配もあろうはずがない。",
@@ -840,7 +840,6 @@
 	OutputLine(NULL, "　だが、そういう痕跡があったら面白くない。",
 		   NULL, "But it wouldn't be fun if she had.", Line_Normal);
 	ClearMessage();
-	DrawSceneWithMask( "Hu_R3", "maskright", 1, 0, 300 );
 
 	OutputLine(NULL, "　私は先に飛び込んだレナを押しのけ、室内にそういう痕跡がないか探した。",
 		   NULL, "Because of that, I hurried into the room ahead of Rena to make sure there was nothing left behind.", Line_Normal);
@@ -871,7 +870,6 @@
 		   NULL, "I felt so pleased that my body almost went numb...", Line_Normal);
 	ClearMessage();
 	DrawScene( "black", 400 );
-	DrawScene( "JY2", 400 );
 
 	OutputLine(NULL, "　神社の境内には今や大勢の村人たちが慌しく出入りし、",
 		   NULL, "Lots of villagers went in and out of the shrine.", Line_WaitForInput);
@@ -911,6 +909,7 @@
 	OutputLine(NULL, "　……もしお前を狙う「祟りの執行者」が身近にいるなら、きっとただでは済まないぞ……。",
 		   NULL, "If a person responsible for executing the curse was nearby, he wouldn't come back safely...", Line_Normal);
 	ClearMessage();
+	DrawScene( "jy1", 400 );
 
 	PlaySE(4, "S06/00/villA15001", 128, 64);
 	OutputLine(NULL, "「魅音ちゃん、御蛇ヶ池の方もぐるっと捜したけど全然だめだね。",
@@ -1048,14 +1047,12 @@
 	OutputLine(NULL, "誰か呼んでくる？」",
 		   NULL, " Can someone go get him?\"", Line_Normal);
 	ClearMessage();
-	DrawBustshotWithFiltering( 2, "Kei_Komaru#", "maskright", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 10, 0, FALSE );
-	DrawBustshotWithFiltering( 1, "Re_KomaruA1#", "maskright", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 8, 0, FALSE );
-	DrawSceneWithMask( "JYT1", "maskright", 1, 0, 300 );
+	DrawBustshot( 1, "re_si_ko_a1--", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 200, TRUE );
+	DrawBustshot( 3, "kei2_Komaru_0--", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
 
 	OutputLine(NULL, "　そんなやり取りをしていると、松林の方から圭一とレナが戻ってくるのが見えた。",
 		   NULL, "Conveniently, I saw Keiichi and Rena walking back toward us.", Line_Normal);
 	ClearMessage();
-	DrawSceneWithMask( "JY2", "maskleft", 1, 0, 300 );
 
 	PlaySE(4, "S06/06/150602265", 128, 64);
 	OutputLine(NULL, "「…圭ちゃん、どこ行ってたんだよ。",
@@ -1065,7 +1062,8 @@
 		   NULL, " I was worried you'd disappeared too!\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 	DisableWindow();
-	DrawBustshot( 0, "Kei_Nayamu#", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 9, 400, TRUE );
+	FadeAllBustshots( 400, TRUE );
+	DrawBustshot( 2, "kei2_Komaru_0--", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
 	DisplayWindow();
 
 	PlaySE(4, "S06/01/150100255", 128, 64);
@@ -1086,9 +1084,8 @@
 	OutputLine(NULL, "　…私の復讐が全ての敵に下された証なのだから。",
 		   NULL, "That means I took care of all of my enemies.", Line_Normal);
 	ClearMessage();
-
-	DrawBustshotWithFiltering( 2, "Oisi2", "maskright", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 10, 0, FALSE );
-	DrawSceneWithMask( "JY2", "maskright", 1, 0, 300 );
+	FadeAllBustshots( 400, TRUE );
+	DrawBustshot( 3, "oi_si_wa_a1_a", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
 
 	PlaySE(4, "S06/11/150700358", 128, 64);
 	OutputLine(NULL, "「…おんやおやおや…！",
@@ -1109,7 +1106,7 @@
 		   NULL, "It was Ooishi.", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 	DisableWindow();
-	ChangeBustshot( 2, "Oisi4", 200, TRUE );
+	DrawBustshot( 3, "oisi1_4_0--", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
 	DisplayWindow();
 
 	OutputLine(NULL, "　…大石め、さすがに今年の事件は困惑しているに違いない。",
@@ -1163,8 +1160,8 @@
 	OutputLine(NULL, "　大石には、その最期を看取る大任を与えることになるだろう…。",
 		   NULL, "More than likely, I'll have Ooishi witness my final moments.", Line_Normal);
 	ClearMessage();
-	DrawBustshot( 0, "Oisi2", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 9, 0, FALSE );
 	DrawScene( "JY1", 400 );
+	DrawBustshot( 2, "oi_si_wa_a1_a", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
 
 	OutputLine(NULL, "　大石と目が合う。",
 		   NULL, "My eyes and Ooishi's met.", Line_WaitForInput);

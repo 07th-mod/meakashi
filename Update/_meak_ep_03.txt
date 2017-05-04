@@ -14,8 +14,8 @@
 	Wait( 1700 );
 
 	SetValidityOfInput( TRUE );
-	DrawBustshot( 2, "Kei_Def2", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, FALSE );
-	DrawScene( "GK1", 400 );
+	DrawScene( "GK3", 400 );
+	DrawBustshot( 2, "kei1_Def2_0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
 	PlayBGM( 0, "03_cele", 120, 0 );
 	SetSpeedOfMessage( FALSE, 0 );
 
@@ -28,7 +28,7 @@
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
 	DisableWindow();
-	DrawBustshotWithFiltering( 1, "Re_WaraiA1", "maskleft", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 8, 300, TRUE );
+	DrawBustshot( 3, "re1b_waraiB1_0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
 	DisplayWindow();
 
 	PlaySE(4, "S06/02/150200235", 128, 64);
@@ -37,8 +37,7 @@
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
 	DisableWindow();
-	FadeBustshotWithFiltering( 2, "maskleft" , 1, FALSE, 0, 0, 300, TRUE );
-	DrawBustshotWithFiltering( 2, "Me_WinkA1", "maskright", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 10, 300, TRUE );
+	DrawBustshot( 1, "me1a_WinkA1_0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 200, TRUE );
 	DisplayWindow();
 
 	PlaySE(4, "S06/03/150300472", 128, 64);
@@ -52,8 +51,7 @@
 		   NULL, " Rika-chan, bring your desk over.", Line_Normal);
 	ClearMessage();
 
-	DrawBustshotWithFiltering( 1, "Ri_WaraiA1", "maskleft", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 8, 0, FALSE );
-	DrawSceneWithMask( "GK2", "maskleft", 1, 0, 300 );
+	DrawBustshot( 2, "ri1_WaraiA1_0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
 
 	PlaySE(4, "S06/05/150500066", 128, 64);
 	OutputLine(NULL, "「……くっ付けるのですよ。",
@@ -64,7 +62,7 @@
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
 	DisableWindow();
-	DrawBustshotWithFiltering( 2, "Sa_WaraiB1", "maskright", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 10, 300, TRUE );
+	DrawBustshot( 3, "sa1b_WaraiB1_0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
 	DisplayWindow();
 
 	PlaySE(4, "S06/04/150400098", 128, 64);
@@ -78,14 +76,13 @@
 		   NULL, " I won't allow you to have any!!\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
-	DrawBustshotWithFiltering( 0, "Si_AkuwaraiA1", "maskright", 1, 0, 0, FALSE, 0, 0, 0, 0, 0, 9, 0, FALSE );
-	DrawSceneWithMask( "GK3", "maskright", 1, 0, 300 );
+	DrawBustshot( 2, "si3_AkuwaraiA1_0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
 
 	PlaySE(4, "S06/06/150602745", 128, 64);
 	OutputLine(NULL, "「ざぁんねん、そうは行かないです沙都子。",
 		   NULL, "\"Unfortunately, I won't let you do that either, Satoko.", Line_WaitForInput);
 	DisableWindow();
-	ChangeBustshot( 0, "Si_WaraiA1", 200, TRUE );
+	DrawBustshot( 2, "si3_WaraiA1_0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
 	DisplayWindow();
 
 	PlaySE(4, "S06/06/150602746", 128, 64);
@@ -94,8 +91,7 @@
 	ClearMessage();
 
 	DisableWindow();
-	FadeBustshotWithFiltering( 0, "maskright" , 1, FALSE, 0, 0, 300, TRUE );
-	DrawBustshotWithFiltering( 1, "Kei_Warai", "maskleft", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 8, 300, TRUE );
+	DrawBustshot( 1, "kei1_Warai_0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 200, TRUE );
 	DisplayWindow();
 
 	PlaySE(4, "S06/01/150100453", 128, 64);
@@ -104,7 +100,7 @@
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
 	DisableWindow();
-	DrawBustshotWithFiltering( 2, "Sa_HannbesoB1", "maskright", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 10, 300, TRUE );
+	DrawBustshot( 3, "sa1b_HannbesoB1_0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
 	DisplayWindow();
 
 	PlaySE(4, "S06/04/150400101", 128, 64);
@@ -115,14 +111,11 @@
 		   NULL, " Whaah!\"", Line_Normal);
 	ClearMessage();
 
-	DrawBustshotWithFiltering( 1, "Si_WaraiA1", "maskleft", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 8, 0, FALSE );
-	DrawSceneWithMask( "GK1", "maskleft", 1, 0, 300 );
-
 	PlaySE(4, "S06/06/150602747", 128, 64);
 	OutputLine(NULL, "「ほら、そのカボチャ嫌いは駄目です！",
 		   NULL, "\"Don't be so picky about your food!", Line_WaitForInput);
 	DisableWindow();
-	ChangeBustshot( 1, "Si_WinkA1", 200, TRUE );
+	DrawBustshot( 2, "si3_WinkA1_0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
 	DisplayWindow();
 
 	PlaySE(4, "S06/06/150602748", 128, 64);
@@ -132,25 +125,22 @@
 	OutputLine(NULL, "育ち盛りの沙都子は特に栄養に気を遣わないといけないんですよ？",
 		   NULL, " You're still growing, so you need to think about things like that.", Line_WaitForInput);
 	DisableWindow();
-	ChangeBustshot( 1, "Si_TokuiA1", 200, TRUE );
+	DrawBustshot( 2, "si3_TokuiA1_0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
 	DisplayWindow();
 
 	PlaySE(4, "S06/06/150602750", 128, 64);
 	OutputLine(NULL, "　私の目の黒い内は偏食は認めないのでその覚悟でお願いします。",
 		   NULL, " As long as I live, I won't let you have an unbalanced diet.", Line_WaitForInput);
-	DisableWindow();
-	ChangeBustshot( 1, "Si_WinkA1", 200, TRUE );
-	DisplayWindow();
+
+	DrawScene( "gk3", 400 );
+	DrawBustshot( 2, "si3_WinkA1_0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
+
 
 	PlaySE(4, "S06/06/150602751", 128, 64);
 	OutputLine(NULL, "ほらほらみんなもどうぞどうぞ、ホコホコのカボチャって甘くて美味しいんですよー？」",
 		   NULL, " Here guys, have some. Steamed squash is delicious.\"", Line_Normal);
 	ClearMessage();
-
-	DrawSceneWithMask( "GK2", "maskleft", 1, 0, 300 );
-	DisableWindow();
-	DrawBustshotWithFiltering( 2, "Ri_WaraiA1", "maskright", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 10, 300, TRUE );
-	DisplayWindow();
+	DrawBustshot( 3, "ri1_WaraiA1_0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
 
 	PlaySE(4, "S06/05/150500068", 128, 64);
 	OutputLine(NULL, "「……もにゅもにゅ。",
@@ -161,7 +151,7 @@
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
 	DisableWindow();
-	DrawBustshotWithFiltering( 1, "Kei_Warai", "maskleft", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 8, 300, TRUE );
+	DrawBustshot( 1, "kei1_Warai_0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 200, TRUE );
 	DisplayWindow();
 
 	PlaySE(4, "S06/01/150100454", 128, 64);
@@ -176,7 +166,7 @@
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
 	DisableWindow();
-	DrawBustshot( 0, "Sa_OdorokiB1", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 9, 400, TRUE );
+	DrawBustshot( 3, "sa1b_OdorokiB1_0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
 	DisplayWindow();
 
 	PlaySE(4, "S06/04/150400103", 128, 64);
@@ -187,8 +177,7 @@
 		   NULL, " I don't like your tone!!\"", Line_Normal);
 	ClearMessage();
 
-	DrawBustshotWithFiltering( 1, "Me_WinkB2", "maskleft", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 8, 0, FALSE );
-	DrawSceneWithMask( "GK1", "maskleft", 1, 0, 300 );
+	DrawBustshot( 1, "me1b_WinkA1_0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 200, TRUE );
 
 	PlaySE(4, "S06/03/150300475", 128, 64);
 	OutputLine(NULL, "「そら行った行った！",
@@ -199,7 +188,7 @@
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
 	DisableWindow();
-	DrawBustshotWithFiltering( 2, "Re_WaraiB1", "maskright", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 10, 300, TRUE );
+	DrawBustshot( 2, "re1b_waraiB1_0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
 	DisplayWindow();
 
 	PlaySE(4, "S06/02/150200236", 128, 64);
@@ -210,9 +199,8 @@
 		   NULL, " Isn't it good?\"", Line_Normal);
 	ClearMessage();
 
-	DrawSceneWithMask( "GK2", "maskright", 1, 0, 300 );
 	DisableWindow();
-	DrawBustshotWithFiltering( 1, "Sa_AkireruB1", "maskleft", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 8, 300, TRUE );
+	DrawBustshot( 3, "sa1b_AkireruB1_0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
 	DisplayWindow();
 
 	PlaySE(4, "S06/04/150400105", 128, 64);
@@ -226,7 +214,7 @@
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
 	DisableWindow();
-	DrawBustshotWithFiltering( 2, "Si_DefA1", "maskright", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 10, 300, TRUE );
+	DrawBustshot( 2, "si3_DefA1_0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
 	DisplayWindow();
 
 	PlaySE(4, "S06/06/150602752", 128, 64);
@@ -235,9 +223,8 @@
 	PlaySE(4, "S06/06/150602753", 128, 64);
 	OutputLine(NULL, "沙都子がカボチャ嫌いを克服できるように日夜研究してますので。",
 		   NULL, " I've been working hard every day to get you to overcome your dislike of squash.", Line_WaitForInput);
-	DisableWindow();
-	ChangeBustshot( 2, "Si_WinkA1", 200, TRUE );
-	DisplayWindow();
+	DrawScene( "gk3", 400 );
+	DrawBustshot( 1, "si3_WinkA1_0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 200, TRUE );
 
 	PlaySE(4, "S06/06/150602754", 128, 64);
 	OutputLine(NULL, "さて、この調子で今年中に、ナス、",
@@ -255,7 +242,7 @@
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
 	DisableWindow();
-	ChangeBustshot( 1, "Sa_HannbesoA1", 200, TRUE );
+	DrawBustshot( 3, "sa1a_HannbesoA1_0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
 	DisplayWindow();
 
 	PlaySE(4, "S06/04/150400106", 128, 64);
@@ -267,7 +254,7 @@
 	ClearMessage();
 
 	DisableWindow();
-	ChangeBustshot( 2, "Si_WaraiA1", 200, TRUE );
+	DrawBustshot( 1, "si3_WaraiA1_0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 200, TRUE );
 	DisplayWindow();
 
 	PlaySE(4, "S06/06/150602755", 128, 64);
@@ -282,7 +269,7 @@
 	ClearMessage();
 
 	DisableWindow();
-	ChangeBustshot( 1, "Sa_NakuB1", 200, TRUE );
+	DrawBustshot( 3, "sa1b_NakuB1_0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
 	DisplayWindow();
 
 	PlaySE(4, "S06/04/150400108", 128, 64);
@@ -319,6 +306,10 @@
 	StartShakingOfAllObjects( 200, 40, 0, 2, 1*2, TRUE );
 
 	DrawBustshot( 8, "white", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, TRUE );
+	DrawScene( "cg_041", 1000 );
+	SetValidityOfInput( FALSE );
+	Wait( 5000 );
+	SetValidityOfInput( TRUE );
 	ChangeBustshot( 8, "End_1", 800, TRUE );
 	ChangeBustshot( 8, "End_2", 800, TRUE );
 	ChangeBustshot( 8, "End_3", 3000, TRUE );

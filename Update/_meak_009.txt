@@ -26,7 +26,6 @@
 	OutputLine(NULL, "　そんなことはわかっていても、…起き上がる気にはならなかった。",
 		   NULL, "I knew that... but I still didn't feel like getting up.", Line_Normal);
 	ClearMessage();
-	DrawScene( "Si_H1", 400 );
 
 	OutputLine(NULL, "　この無気力な生活を始めて、そろそろ数日になろうとしていた。",
 		   NULL, "It had been several days since I began this empty life.", Line_WaitForInput);
@@ -43,7 +42,6 @@
 	SetValidityOfInput( FALSE );
 	Wait( 1000 );
 	SetValidityOfInput( TRUE );
-	DrawSceneWithMask( "Si_G1", "maskleft", 1, 0, 300 );
 
 	OutputLine(NULL, "　呼び鈴のチャイムがなる。",
 		   NULL, "I heard the doorbell ringing.", Line_Normal);
@@ -79,8 +77,8 @@
 	OutputLine(NULL, "　だが、最近、私が食事を取らず、元気をなくして横になっているばかりだということは知っていた。",
 		   NULL, "He must've known that I hadn't eaten enough and that I'd been feeling down lately.", Line_Normal);
 	ClearMessage();
-	DrawBustshotWithFiltering( 0, "Kasa3", "maskleft", 1, 0, 0, FALSE, 0, 0, 0, 0, 0, 9, 0, FALSE );
-	DrawSceneWithMask( "Si_H3", "maskleft", 1, 0, 300 );
+	DrawSceneWithMask( "Si_g1", "maskleft", 1, 0, 300 );
+	DrawBustshot( 2, "kasa2", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
 
 	PlaySE(4, "S06/15/151500119", 128, 64);
 	OutputLine(NULL, "「……やはり食事を取られていませんでしたか。」",
@@ -99,7 +97,7 @@
 		   NULL, "But when Kasai put the food on the table, my stomach reacted in a very primitive way by making some noise.", Line_Normal);
 	ClearMessage();
 	DisableWindow();
-	ChangeBustshot( 0, "Kasa1", 200, TRUE );
+	DrawBustshot( 2, "kasa1", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
 	DisplayWindow();
 	PlayBGM( 0, "03_cele", 120, 0 );
 
@@ -156,6 +154,7 @@
 		   NULL, "While I nibbled on the food, Kasai read through the magazines I bought.", Line_Normal);
 	ClearMessage();
 	DrawSceneWithMask( "Si_H3", "maskright", 1, 0, 300 );
+	DrawBustshot( 3, "kasa2", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
 
 	PlaySE(4, "S06/06/150600718_1", 128, 64);
 	OutputLine(NULL, "「………葛西は、…。",
@@ -172,9 +171,6 @@
 	OutputLine(NULL, "　…精神的に、自分の方が優位に立っていると思っているだけに、葛西に自分の弱みを見せていいものか迷った。",
 		   NULL, "...Since I've always believed myself to him psychologically, I hesitated to show my weaknesses to him.", Line_Normal);
 	ClearMessage();
-	DisableWindow();
-	DrawBustshotWithFiltering( 2, "Kasa2", "maskright", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 10, 300, TRUE );
-	DisplayWindow();
 
 	PlaySE(4, "S06/15/151500124", 128, 64);
 	OutputLine(NULL, "「そういう悩みも、年頃にしておくのは悪いものじゃありませんよ。」",
@@ -194,7 +190,7 @@
 		   NULL, " about that...?!\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 	DisableWindow();
-	ChangeBustshot( 2, "Kasa1", 200, TRUE );
+	DrawBustshot( 3, "kasa1", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
 	DisplayWindow();
 
 	PlaySE(4, "S06/15/151500125", 128, 64);
@@ -225,7 +221,7 @@
 		   NULL, "Without responding, I threw the last croquette in my mouth.", Line_Normal);
 	ClearMessage();
 	DisableWindow();
-	ChangeBustshot( 2, "Kasa2", 200, TRUE );
+	DrawBustshot( 3, "kasa2", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
 	DisplayWindow();
 
 	PlaySE(4, "S06/15/151500129", 128, 64);
@@ -391,8 +387,8 @@
 	OutputLine(NULL, "　悟史くんを悩ませる二人が丸ごと消えてくれれば、悟史くんは全ての悩みから解放される！",
 		   NULL, "Satoshi-kun will be freed from every source of his worries all at once!", Line_Normal);
 	ClearMessage();
-	DrawBustshotWithFiltering( 0, "Kasa1", "maskup", 1, 0, 0, FALSE, 0, 0, 0, 0, 0, 9, 0, FALSE );
 	DrawSceneWithMask( "Si_H3", "maskup", 1, 0, 300 );
+	DrawBustshot( 3, "kasa1", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
 
 	PlaySE(4, "S06/06/150600734", 128, 64);
 	OutputLine(NULL, "「………葛西。",
@@ -402,7 +398,7 @@
 		   NULL, " do you know if this year's victim has been selected already?\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 	DisableWindow();
-	ChangeBustshot( 0, "Kasa3", 200, TRUE );
+	DrawBustshot( 3, "kasa2", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
 	DisplayWindow();
 
 	PlaySE(4, "S06/15/151500138", 128, 64);
@@ -488,7 +484,7 @@
 		   NULL, " Aren't you going to do something about it?\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 	DisableWindow();
-	ChangeBustshot( 0, "Kasa1", 200, TRUE );
+	DrawBustshot( 3, "kasa1", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
 	DisplayWindow();
 
 	PlaySE(4, "S06/15/151500145", 128, 64);
@@ -552,7 +548,7 @@
 	ClearMessage();
 	PlayBGM( 1, "semi", 120, 0 );
 	DrawScene( "white", 400 );
-	DrawScene( "Sora", 400 );
+	DrawScene( "Sora3", 400 );
 
 	OutputLine(NULL, "　外はセミの声で充満していて、気だるさを誘うだけ。",
 		   NULL, "The cicadas were crying loudly outside. It made me feel hot.", Line_WaitForInput);
@@ -598,7 +594,7 @@
 	FadeOutBGM( 3, 0, FALSE );
 	DrawBustshot( 19, "no_data", 0, 100, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, TRUE );
 
-	DrawScene( "Si_H3", 400 );
+	DrawScene( "si_h2", 400 );
 	PlayBGM( 0, "higurashi", 120, 0 );
 
 	OutputLine(NULL, "　目が覚めたとき、もう葛西の姿はなかった。",

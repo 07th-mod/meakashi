@@ -7,9 +7,9 @@
 	ClearMessage();
 
 	DrawSceneWithMask( "white", "maskleft", 1, 0, 300 );
-	DrawSceneWithMask( "So1", "maskleft", 1, 0, 300 );
+	DrawSceneWithMask( "So1-", "maskleft", 1, 0, 300 );
 	DisableWindow();
-	DrawBustshot( 2, "Ri_WaraiA1#", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
+	DrawBustshot( 3, "ri2_WaraiA1_0-", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
 	DisplayWindow();
 
 	PlaySE(4, "S06/05/150500055", 128, 64);
@@ -42,14 +42,13 @@
 	OutputLine(NULL, "　だが梨花は一升瓶を譲らず、靴を脱いで上がってきた。",
 		   NULL, "But Rika took her shoes off and walked into the house with the bottle in her hands.", Line_Normal);
 	ClearMessage();
-	DrawSceneWithMask( "Rouka1", "maskright", 1, 0, 300 );
 
 	PlaySE(4, "S06/06/150602055", 128, 64);
 	OutputLine(NULL, "「いいよいいよ、私が入れてくるから待ってなよ。」",
 		   NULL, "\"Don't worry, I'll get it for you. Why don't you wait there?\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 	DisableWindow();
-	DrawBustshot( 1, "Ri_KomaruA1#", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 8, 400, TRUE );
+	DrawBustshotWithFiltering( 1, "ri2_KomaruA1_0", "left", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 0, 300, TRUE );
 	DisplayWindow();
 
 	PlaySE(4, "S06/05/150500056", 128, 64);
@@ -83,7 +82,7 @@
 	OutputLine(NULL, "　私は、なら自分でやってごらんと言い、梨花を連れて台所へ向かった。",
 		   NULL, "And so, I brought Rika to the kitchen.", Line_Normal);
 	ClearMessage();
-	DrawSceneWithMask( "Rouka2", "maskright", 1, 0, 300 );
+	DrawSceneWithMask( "ima3", "maskright", 1, 0, 300 );
 
 	OutputLine(NULL, "　廊下をひたひたと歩く。",
 		   NULL, "We walked down the hallway.", Line_Normal);
@@ -101,7 +100,7 @@
 		   NULL, "Rika bumped into me.", Line_Normal);
 	ClearMessage();
 	DisableWindow();
-	DrawBustshotWithFiltering( 0, "Ri_KomaruA1#", "maskright", 1, 0, 0, FALSE, 0, 0, 0, 0, 0, 9, 300, TRUE );
+	DrawBustshot( 2, "ri2_KomaruA1_0_zoom", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
 	DisplayWindow();
 
 	PlaySE(4, "S06/05/150500057", 128, 64);
@@ -186,11 +185,8 @@
 	OutputLine(NULL, "一歩遅れて梨花も急停止。",
 		   NULL, " Rika stopped suddenly too, after taking an extra step.", Line_Normal);
 	ClearMessage();
-	DrawBustshotWithFiltering( 0, "Ri_DefA1#", "maskleft", 1, 0, 0, FALSE, 0, 0, 0, 0, 0, 9, 0, FALSE );
-	DrawSceneWithMask( "Rouka2", "maskleft", 1, 0, 300 );
-	DisableWindow();
-	ChangeBustshot( 0, "Ri_WaraiA1#", 200, TRUE );
-	DisplayWindow();
+	DrawSceneWithMask( "ima3", "maskleft", 1, 0, 300 );
+	DrawBustshot( 2, "ri2_WaraiA1_0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
 
 	OutputLine(NULL, "　振り返ると、梨花もそういう遊びをしているのがバレたと気付いたらしく、にぱーっと悪戯っぽく笑った。",
 		   NULL, "When I turned around, Rika smiled at me.", Line_Normal);
@@ -249,8 +245,8 @@
 	FadeOutBGM( 2, 0, FALSE );
 	FadeOutBGM( 3, 0, FALSE );
 	DrawBustshot( 19, "no_data", 0, 100, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, TRUE );
-	DrawBustshotWithFiltering( 0, "Ri_NiyariA1#", "maskc", 1, 0, 0, FALSE, 0, 0, 0, 0, 0, 9, 0, FALSE );
 	DrawSceneWithMask( "So_D1", "maskc", 1, 0, 300 );
+	DrawBustshot( 2, "ri2_NiyariA1_0_zoom-", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
 
 	OutputLine(NULL, "　私が後を振り返った時、梨花は信じられないくらいに私の目の前にいた。",
 		   NULL, "When I turned around, Rika was very close to me.", Line_Normal);
@@ -311,8 +307,8 @@
 	OutputLine(NULL, "　私は自分が、悪意を持った攻撃を受けたことを認識するまで数秒間、無防備に顔を覆って転げまわっていた。",
 		   NULL, "As I stumbled around, covering my face, I then realized I was attacked.", Line_Normal);
 	ClearMessage();
-	DrawBustshotWithFiltering( 0, "Ri_NiyariA1#", "maskup", 1, 0, 0, FALSE, 0, 0, 0, 0, 0, 9, 0, FALSE );
 	DrawSceneWithMask( "So_D1", "maskup", 1, 0, 300 );
+	DrawBustshot( 2, "ri2_NiyariA1_0_zoom-", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
 	PlaySE( 0, "s_yabaisemi", 128, 64 );
 
 	OutputLine(NULL, "　思い切り強く目蓋を閉じ、涙を絞りつくすようにして目を開いた時、",
@@ -425,7 +421,7 @@
 	OutputLine(NULL, "　そんな無抵抗状態で馬乗りにされている私は、まさに絶体絶命だった。",
 		   NULL, "Rika had the upper hand, my eyes were shut, and I was in real danger.", Line_Normal);
 	ClearMessage();
-	DrawSceneWithMask( "Heya6", "maskup", 7, 0, 300 );
+	DrawSceneWithMask( "jsa7", "maskup", 7, 0, 300 );
 
 	OutputLine(NULL, "　瞬きの隙間から私に圧し掛かっている梨花の顔を見た。",
 		   NULL, "As I tried to blink, I saw Rika's expression.", Line_Normal);
@@ -467,9 +463,9 @@
 	OutputLine(NULL, "　くそくそ！そんな滅茶苦茶な思考こそが混乱だろうが！！",
 		   NULL, "Shit, I'm too much of a mess to even think!", Line_Normal);
 	ClearMessage();
-	DrawFilm( 3, 255, 255, 255, 256, 0, 0, TRUE );
 
 	DrawScene( "So_D1", 400 );
+	DrawBustshot( 2, "ri2_NiyariA1_0_zoom-", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
 
 	OutputLine(NULL, "　もう一度わずかの瞬きから梨花をうかがい見る。",
 		   NULL, "I tried to peek at her face again.", Line_Normal);
@@ -499,10 +495,7 @@
 	OutputLine(NULL, "私の鼻先に催涙スプレーを突き出し、容赦なく噴き付けてきた。",
 		   NULL, " she pointed the spray bottle right at me and let loose with it.", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
-	DrawSprite( 0, "black", NULL, -320, -240, 0, 0, 0, 0, FALSE, FALSE, 0, 0, 40, 400, TRUE );
-	FadeFilm( 0, TRUE );
 	DrawScene( "black", 0 );
-	FadeSprite( 0, 0, TRUE );
 
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
@@ -542,7 +535,7 @@
 		   NULL, " When I felt Rika's weight shift, I escaped.", Line_Normal);
 	ClearMessage();
 	PlaySE( 0, "s_Down", 128, 64 );
-	DrawScene( "So_D1", 400 );
+	DrawScene( "cg_015", 1000 );
 
 	OutputLine(NULL, "　素早く間合いを取り、私はスタンガンを構える。",
 		   NULL, "I then got my stun gun ready.", Line_WaitForInput);
@@ -601,8 +594,6 @@
 	OutputLine(NULL, "結果、古手梨花に致命的な反撃を加えることは充分にあり得る。",
 		   NULL, " and seriously injure Rika.", Line_Normal);
 	ClearMessage();
-	DrawSceneWithMask( "So_D1_nega1", "maskc", 1, 0, 300 );
-
 
 	OutputLine(NULL, "　だが、梨花のこの奇襲は、注射に成功すればそれで充分という考えが見え隠れするのだ。",
 		   NULL, "But Rika's surprise attack told me that just being injected was more than enough.", Line_WaitForInput);
@@ -654,6 +645,7 @@
 	OutputLine(NULL, "そっちから来ないんならこっちから行くぞこらあッ！！！」",
 		   NULL, " If you aren't moving, then I'll come to you!!!\"", Line_Normal);
 	ClearMessage();
+	DrawScene( "black", 400 );
 	PlaySE( 0, "s_furu", 128, 64 );
 
 	OutputLine(NULL, "　足元にあった新聞紙の束を抱え、思い切り投げつけた。",
@@ -663,7 +655,6 @@
 	OutputLine(NULL, "　その束は重ねてあるだけで縛っていなかったので、梨花の眼前でぶわっと広がり、その全身を覆った。",
 		   NULL, "The pile wasn't tied together, so the newspapers flew all over Rika.", Line_Normal);
 	ClearMessage();
-	DrawScene( "black", 400 );
 
 	OutputLine(NULL, "　私が突撃したのは新聞紙の束を投げつけるのとまったく同時。",
 		   NULL, "I jumped at her immediately after.", Line_Normal);
@@ -877,7 +868,6 @@
 	OutputLine(NULL, "ざまぁないったらありゃしない。",
 		   NULL, " That's what you get.", Line_Normal);
 	ClearMessage();
-	DrawScene( "So_D1", 400 );
 
 	PlaySE(4, "S06/06/150602069", 128, 64);
 	OutputLine(NULL, "「あっはっはっはっは！",
@@ -918,6 +908,7 @@
 	OutputLine(NULL, "　くっくっく！！」",
 		   NULL, " Heh heh heh!!\"", Line_Normal);
 	ClearMessage();
+	DrawScene( "black", 400 );
 
 	OutputLine(NULL, "　スタンガンをバチバチ言わせながら、私は、かつて梨花が浮かべたのに負けないくらいの悪意と不敵の眼差しを浮かべ、近付く。",
 		   NULL, "I walked up to Rika, my stun gun making popping sounds.", Line_WaitForInput);
@@ -951,7 +942,8 @@
 		   NULL, " Well, actually, even if you do, you'll go through the same misery anyway, heh heh heh!\"", Line_Normal);
 	ClearMessage();
 	DisableWindow();
-	DrawBustshot( 0, "Ri_NiyariA1#", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 9, 400, TRUE );
+	DrawScene( "So_D1", 400 );
+	DrawBustshot( 2, "ri2_NiyariA1_0-", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
 	DisplayWindow();
 
 	PlaySE(4, "S06/05/150500060", 128, 64);
@@ -982,7 +974,7 @@
 	OutputLine(NULL, "　その豹変はむしろ…どういうわけか…自然で、かえって違和感がないものだった。",
 		   NULL, "That sudden change somehow felt natural.", Line_Normal);
 	ClearMessage();
-	DrawScene( "Heya6", 400 );
+	DrawScene( "jsa7", 400 );
 
 	PlaySE(4, "S06/06/150602087", 128, 64);
 	OutputLine(NULL, "「あんたらの御三家の血塗られた歴史に比べたら、私なんてとてもとても。",
@@ -1452,7 +1444,7 @@
 		   NULL, "I roared again in admiration of the ritual dance of dedication of the head of the Furude family.", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
-
+	DrawScene( "aka2", 400 );
 
 	OutputLine(NULL, "　全身を駆け上る歓喜の感情。血液が沸騰しそうなくらいに暴れて、全身の血管が踊りくねって体中がくすぐったい。",
 		   NULL, "Joy ran through my body, and my blood rushed through my veins.", Line_Normal);
@@ -1607,7 +1599,7 @@
 	OutputLine(NULL, "　私がいい姉だったから、妹のわがままを聞いてあげただけなのにッ！！",
 		   NULL, " I was being a good sister, that was it!!", Line_Normal);
 	ClearMessage();
-	DrawScene( "black", 400 );
+	DrawScene( "aka1", 400 );
 
 	OutputLine(NULL, "　夜が明けた時。",
 		   NULL, "When morning came...", Line_WaitForInput);
@@ -1646,7 +1638,7 @@
 	OutputLine(NULL, "　私が魅音なの、私が魅音なのおおぉおぉ！！！",
 		   NULL, " I'm Mion, I am!!!", Line_Normal);
 	ClearMessage();
-	DrawSceneWithMask( "JSA6", "maskup", 1, 0, 300 );
+	DrawSceneWithMask( "black", "maskup", 1, 0, 300 );
 
 	PlaySE(4, "S06/06/150602101", 128, 64);
 	OutputLine(NULL, "「その時、私ははっきり悟ったよ。",
@@ -1721,20 +1713,23 @@
 	OutputLine(NULL, "そしてあの夜の意味を自分だけ知り、私から奪ったんだ、",
 		   NULL, " And that night, you knew what was going on, and took Mion from me.", Line_ContinueAfterTyping);
 	PlaySE( 0, "s_Down", 128, 64 );
-
+	DrawScene( "aka1", 400 );
+	
 	OutputLineAll(NULL, "", Line_WaitForInput);
 
 	PlaySE(4, "S06/06/150602113", 128, 64);
 	OutputLine(NULL, "魅音を奪ったんだ！！！",
 		   NULL, " You took Mion from me!!!", Line_ContinueAfterTyping);
 	PlaySE( 0, "s_Down", 128, 64 );
-
+	DrawScene( "aka2", 400 );
+	
 	OutputLineAll(NULL, "", Line_WaitForInput);
 
 	PlaySE(4, "S06/06/150602114", 128, 64);
 	OutputLine(NULL, "　魅音を返せッ！！",
 		   NULL, " Give Mion back!!", Line_ContinueAfterTyping);
 	PlaySE( 0, "s_Down", 128, 64 );
+	DrawScene( "aka1", 400 );
 
 	OutputLineAll(NULL, "", Line_WaitForInput);
 
@@ -1742,6 +1737,7 @@
 	OutputLine(NULL, "　私が魅音なんだ、",
 		   NULL, " I'm the one who's Mion.", Line_ContinueAfterTyping);
 	PlaySE( 0, "s_Down", 128, 64 );
+	DrawScene( "aka2", 400 );
 
 	OutputLineAll(NULL, "", Line_WaitForInput);
 
@@ -1749,6 +1745,7 @@
 	OutputLine(NULL, "私が園崎魅音！！",
 		   NULL, " I am Mion Sonozaki!!", Line_ContinueAfterTyping);
 	PlaySE( 0, "s_Down", 128, 64 );
+	DrawScene( "aka1", 400 );
 
 	OutputLineAll(NULL, "", Line_WaitForInput);
 
@@ -1756,6 +1753,7 @@
 	OutputLine(NULL, "　お前は詩音なんだよ詩音！！",
 		   NULL, " You were Shion this whole time!!", Line_ContinueAfterTyping);
 	PlaySE( 0, "s_Down", 128, 64 );
+	DrawScene( "aka2", 400 );
 
 	OutputLineAll(NULL, "", Line_WaitForInput);
 
@@ -1766,6 +1764,7 @@
 	OutputLineAll(NULL, "", Line_Normal);
 
 	ClearMessage();
+	DrawScene( "aka1", 400 );
 
 	OutputLine(NULL, "　吠え猛りながら、岩牢の鉄格子を何度も何度も蹴る！！",
 		   NULL, "I kicked the bars of the cell repeatedly while I roared!!", Line_WaitForInput);
@@ -1786,11 +1785,11 @@
 	OutputLine(NULL, "　鬼なんかなくたって、私は魅音だ、私は魅音でいいんだ、私は園崎魅音なんだ…ッ！！！",
 		   NULL, "Even without that tattoo, I am Mion. That's right, I am Mion Sonozaki!!!", Line_Normal);
 	ClearMessage();
-	DrawScene( "black", 400 );
 
 	OutputLine(NULL, "　私は髪をがばっとまとめると、ポケットから、魅音の髪形の時に使う黄色いゴムバンドで髪を纏め上げる。",
 		   NULL, "I gathered my hair and put it in a ponytail with the yellow band that Mion used all the time.", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+	DrawScene( "black", 400 );
 
 	OutputLine(NULL, "　うなじに髪がかかる感触がなくなり、",
 		   NULL, "Since I didn't feel my hair on my neck,", Line_WaitForInput);
@@ -1813,7 +1812,6 @@
 	OutputLine(NULL, "　二人が同時に存在しているなんてこと、絶対にあってはならない！",
 		   NULL, "There could never be two of either at the same time!", Line_Normal);
 	ClearMessage();
-	DrawScene( "JSA6", 400 );
 
 	PlaySE(4, "S06/06/150602119", 128, 64);
 	OutputLine(NULL, "「髪を解け詩音ッ！！！",
@@ -2116,11 +2114,11 @@
 	OutputLine(NULL, "じゃ。」",
 		   NULL, " See ya.\"", Line_Normal);
 	ClearMessage();
+	DrawScene( "re_tel", 400 );
 
 	OutputLine(NULL, "　チン。",
 		   NULL, "Click.", Line_Normal);
 	ClearMessage();
-	DrawScene( "So_G1", 3000 );
 	SetValidityOfInput( FALSE );
 	Wait( 2000 );
 	SetValidityOfInput( TRUE );

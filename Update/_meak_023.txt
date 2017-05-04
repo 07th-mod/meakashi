@@ -6,7 +6,7 @@
 	FadeOutBGM( 3, 0, FALSE );
 	ClearMessage();
 
-	DrawSceneWithMask( "JSA3", "maskc", 1, 0, 1300 );
+	DrawSceneWithMask( "black", "maskc", 1, 0, 1300 );
 
 	PlaySE(4, "S06/06/150602267", 128, 64);
 	OutputLine(NULL, "「よ。",
@@ -98,7 +98,6 @@
 	OutputLine(NULL, "本当に死体らしくなった。",
 		   NULL, " It looked much more like a corpse like that.", Line_Normal);
 	ClearMessage();
-	DrawSceneWithMask( "JSA2", "maskup", 1, 0, 300 );
 
 	PlaySE(4, "S06/04/150400035", 128, 64);
 	OutputLine(NULL, "「どうしてこんなことをするんですの……詩音さん…！」",
@@ -163,7 +162,7 @@
 	OutputLine(NULL, "　もちろん、喉のばっくり裂けたところも、ちゃんと内側まで見せてやったさ。",
 		   NULL, "Of course, I let her see Rika's neck, too.", Line_Normal);
 	ClearMessage();
-	DrawSceneWithMask( "JSA2", "maskup", 1, 0, 300 );
+	DrawScene( "black", 400 );
 
 	PlaySE(4, "S06/06/150602282", 128, 64);
 	OutputLine(NULL, "「古手梨花は自業自得。",
@@ -211,6 +210,7 @@
 	OutputLine(NULL, "　まさか沙都子も、ここまで単刀直入に言われるとは思わなかったに違いない。",
 		   NULL, "I bet she didn't expect me to state it so openly.", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+	DrawScene( "bg_undergr1", 400 );
 
 	OutputLine(NULL, "　岩牢の方から、鉄格子をガシャガシャ言わせる音が聞こえてきた。",
 		   NULL, "I heard the noise of something hitting iron bars echoing in the huge cave.", Line_WaitForInput);
@@ -360,7 +360,6 @@
 		   NULL, "But the knife kept hitting her bone. It didn't feel like I was cutting any of her flesh.", Line_Normal);
 	ClearMessage();
 	DrawSceneWithMask( "black", "maskright", 1, 0, 300 );
-	DrawSceneWithMask( "JSA6", "maskright", 1, 0, 300 );
 
 	PlaySE(4, "S06/03/150300416", 128, 64);
 	OutputLine(NULL, "「やめて魅音、やめて姉さん…、やめてやめてやめて…！！！」",
@@ -481,8 +480,7 @@
 	OutputLine(NULL, "　その絶叫を掻き消そうと、詩音のごめんなさいごめんなさいの声が大きくなる…。",
 		   NULL, "Shion's voice got louder as if trying to overpower that scream.", Line_Normal);
 	ClearMessage();
-	DrawScene( "white", 10 );
-	DrawScene( "JSA2", 0 );
+	DrawScene( "black", 10 );
 	PlayBGM( 1, "yabaisemi", 120, 0 );
 
 	SetSpeedOfMessage( TRUE, 128 );
@@ -526,10 +524,8 @@
 	OutputLine(NULL, "……ぐぐぐぐぐぐぐっ！！！",
 		   NULL, " I slid it toward her elbow!!!", Line_Normal);
 	ClearMessage();
-	DrawSceneWithMask( "JSA2_mono1", "masktoketu", 1, 0, 500 );
 
-
-	DrawScene( "black", 0 );
+	DrawScene( "ryuuketu1", 0 );
 	FadeFilm( 400, TRUE );
 
 	PlaySE(4, "S06/04/150400045", 128, 64);
@@ -557,6 +553,7 @@
 	OutputLine(NULL, "　顔面に平手を何発もくれて、私の目を見させる。",
 		   NULL, "I slapped her face several times and made her look at me.", Line_Normal);
 	ClearMessage();
+	DrawScene( "black", 1000 );
 
 	PlaySE(4, "S06/06/150602309", 128, 64);
 	OutputLine(NULL, "「あんたは自分の罪が、わかってる？",
@@ -852,7 +849,6 @@
 	OutputLine(NULL, "……そんな、自然な言い方だった。",
 		   NULL, " She spoke so naturally.", Line_Normal);
 	ClearMessage();
-	DrawSceneWithMask( "JSA2", "maskright", 1, 0, 300 );
 
 	PlaySE(4, "S06/06/150602340", 128, 64);
 	OutputLine(NULL, "「………ちょっと、意外だね。",
@@ -1295,6 +1291,7 @@
 	ClearMessage();
 	DrawScene( "white", 3000 );
 	DrawScene( "Sora3", 1000 );
+	DrawBustshot( 2, "sato1_Warai_0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
 
 	OutputLine(NULL, "　その瞳の中には、",
 		   NULL, "Satoshi-kun...", Line_ContinueAfterTyping);
@@ -1305,7 +1302,7 @@
 		   NULL, " was there, in her eyes.", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
-
+	DrawBustshot( 1, "sa2a_WaraiA1_0", -100, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 200, TRUE );
 
 	OutputLine(NULL, "　沙都子は、",
 		   NULL, "Satoko", Line_ContinueAfterTyping);
@@ -1324,6 +1321,9 @@
 	OutputLine(NULL, "　悟史くんのところへ、沙都子が駆け寄る。",
 		   NULL, "Satoko ran up to Satoshi-kun.", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+	FadeAllBustshots( 400, TRUE );
+	DrawBustshot( 2, "sato1_Warai_0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
+	DrawBustshot( 1, "sa2a_WaraiA1_0", -70, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 200, TRUE );
 
 	OutputLine(NULL, "　そして、悟史くんの胸に、飛びついた。",
 		   NULL, "She jumped onto him.", Line_Normal);
@@ -1338,10 +1338,14 @@
 	OutputLine(NULL, "　もう泣いてもいいんだよ。",
 		   NULL, "You can cry now.", Line_Normal);
 	ClearMessage();
+	FadeAllBustshots( 400, TRUE );
+	DrawBustshot( 2, "sato1_Warai_0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
+	DrawBustshot( 1, "sa2a_NakuA1_0", -100, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 200, TRUE );
 
 	OutputLine(NULL, "　……悟史くんがそっと言うと、沙都子は顔をくしゃくしゃにして…号泣した。",
 		   NULL, "Satoshi-kun told Satoko that, and she cried very hard.", Line_Normal);
 	ClearMessage();
+	DrawBustshot( 2, "sato1_Def2_0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
 
 	OutputLine(NULL, "　悟史くんは、泣きじゃくってしがみ付く沙都子の頭を、やさしく…やさしく、撫でていて。",
 		   NULL, "Satoshi-kun rubbed her head so gently.", Line_WaitForInput);
@@ -1383,6 +1387,7 @@
 	OutputLine(NULL, "……今頃そんなむしのいいことを言うなんて………！",
 		   NULL, " just because I saw Satoko and Satoshi-kun together again...!", Line_Normal);
 	ClearMessage();
+	DrawBustshot( 2, "sato1_Def1_0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
 
 	OutputLine(NULL, "　沙都子を抱き続ける悟史くんと、目が合った。",
 		   NULL, "As Satoshi-kun hugged Satoko, his eyes met mine.", Line_Normal);
@@ -1395,6 +1400,7 @@
 	OutputLine(NULL, "　悟史くんが言った。",
 		   NULL, "Satoshi-kun said.", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+	DrawBustshot( 2, "sato1_komaru_0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
 
 	OutputLine(NULL, "　………僕は、君にお願いしたことがあったはずだよ。",
 		   NULL, "I asked you a favor.", Line_Normal);
@@ -1422,6 +1428,7 @@
 	OutputLine(NULL, "…とても悲しそうに見守っていた…。",
 		   NULL, " because I couldn't remember...", Line_Normal);
 	ClearMessage();
+	DrawScene( "aka2", 400 );
 
 	OutputLine(NULL, "　……その悟史くんの寂しい笑顔は、どんな刃よりも鋭く私の胸を裂いていく。",
 		   NULL, "...That sad look tore my heart to shreds.", Line_WaitForInput);
@@ -1812,6 +1819,7 @@
 	OutputLine(NULL, "…鬼だ、って。",
 		   NULL, " nothing but a demon.", Line_Normal);
 	ClearMessage();
+	DrawScene( "aka1", 400 );
 
 	SetSpeedOfMessage( TRUE, 32 );
 	PlaySE(4, "S06/06/150602354", 128, 64);
@@ -1881,7 +1889,6 @@
 	OutputLine(NULL, "　声はすっかり嗄れかけ、声は小さくなっていた。",
 		   NULL, "Her voice was growing hoarse and weak.", Line_Normal);
 	ClearMessage();
-	DrawSceneWithMask( "JSA6", "maskleft", 1, 0, 300 );
 
 	PlaySE(4, "S06/06/150602355", 128, 64);
 	OutputLine(NULL, "「詩音んんん！！！",
@@ -1905,6 +1912,7 @@
 	OutputLine(NULL, "岩牢から詩音が泣く声が聞こえた。",
 		   NULL, " Shion cried in her cell.", Line_Normal);
 	ClearMessage();
+	DrawScene( "aka2", 400 );
 
 	PlaySE(4, "S06/06/150602357", 128, 64);
 	OutputLine(NULL, "「あっはっはっはっはっはっは！！！",
@@ -1974,6 +1982,7 @@
 	SetValidityOfInput( TRUE );
 	FadeOutBGM( 1, 0, FALSE );
 	DrawBustshot( 19, "no_data", 0, 100, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, TRUE );
+	DrawScene( "re_tel", 400 );
 
 	PlaySE(4, "S06/06/150602375", 128, 64);
 	OutputLine(NULL, "「あ、圭ちゃんですか？",
@@ -2095,6 +2104,7 @@
 	OutputLine(NULL, "　まだ……生きてるんだろうか…？」",
 		   NULL, " Do you think... he's still alive...?\"", Line_Normal);
 	ClearMessage();
+	DrawScene( "black", 1000 );
 
 	OutputLine(NULL, "　圭一の言い方には迷いがあった。",
 		   NULL, "Keiichi sounded confused.", Line_WaitForInput);
@@ -2139,6 +2149,7 @@
 	OutputLine(NULL, "……言い訳なんか、しない。",
 		   NULL, " so I didn't come up with an excuse.", Line_Normal);
 	ClearMessage();
+	DrawScene( "re_tel", 400 );
 
 	PlaySE(4, "S06/06/150602387", 128, 64);
 	OutputLine(NULL, "「殺されちゃったんだと思います。」",
@@ -2214,6 +2225,7 @@
 	OutputLine(NULL, "　そ…そんなにあっさりと……殺すはずは………！」",
 		   NULL, " Th-They couldn't... They couldn't kill them so easily......!\"", Line_Normal);
 	ClearMessage();
+	DrawScene( "black", 1000 );
 
 	OutputLine(NULL, "　私の口から、殺したという直接的な言葉を聞かされても、なお圭一は抗った。",
 		   NULL, "Keiichi was still refusing to believe what I said.", Line_WaitForInput);
@@ -3737,11 +3749,11 @@
 	OutputLine(NULL, "け",
 		   NULL, " hee\"", Line_ContinueAfterTyping);
 	}
+	DrawScene( "re_tel", 400 );
 	SetSpeedOfMessage( FALSE, 0 );
 	OutputLine(NULL, "」ガシャン！！",
 		   NULL, " Click!", Line_Normal);
 	ClearMessage();
-	DrawScene( "So_G1", 400 );
 
 	OutputLine(NULL, "　私は奇声をあげて笑いながら、受話器を叩きつけていた。",
 		   NULL, "I screeched and screeched with laughter, then slammed down the phone.", Line_Normal);

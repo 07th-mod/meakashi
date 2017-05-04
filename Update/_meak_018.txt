@@ -12,7 +12,7 @@
 	FadeOutBGM( 3, 0, FALSE );
 	DrawBustshot( 19, "no_data", 0, 100, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, TRUE );
 	PlayBGM( 0, "yoru", 120, 0 );
-	DrawScene( "JSA4", 400 );
+	DrawScene( "bg_undergr1", 400 );
 
 	OutputLine(NULL, "　魅音の言葉が、頭の中にずっと残っていた。",
 		   NULL, "Mion's words were stuck in my head.", Line_WaitForInput);
@@ -88,7 +88,6 @@
 	OutputLine(NULL, "…もう１人の共犯者、前原圭一は今頃どうしているだろう。",
 		   NULL, " I wonder how Keiichi Maebara was doing right now.", Line_Normal);
 	ClearMessage();
-	DrawScene( "JSA6", 400 );
 
 	OutputLine(NULL, "　さっきの岩牢の中にはいなかった。",
 		   NULL, "I didn't see him in any of the cells.", Line_WaitForInput);
@@ -99,7 +98,6 @@
 	OutputLine(NULL, "　……だからといって、今この瞬間にも無事な保証はない。",
 		   NULL, "But that didn't guarantee his safety.", Line_Normal);
 	ClearMessage();
-	DrawScene( "black", 400 );
 
 	OutputLine(NULL, "　鷹野さんたちが「執行」されたのだから。",
 		   NULL, "Takano-san and Tomitake-san had been executed.", Line_WaitForInput);
@@ -174,7 +172,6 @@
 		   NULL, "It'd prove that nothing would happen to me either.", Line_Normal);
 	ClearMessage();
 	DrawScene( "black", 400 );
-	DrawSceneWithMask( "JSA5", "maskright", 1, 0, 300 );
 
 	OutputLine(NULL, "　私の目の前には拘束椅子に縛り付けられた鬼婆が、未だ眠り続けている。",
 		   NULL, "The hag was still sleeping in the wheelchair.", Line_Normal);
@@ -242,7 +239,6 @@
 	OutputLine(NULL, "　……平たく言うと、残酷になれないってことだ。",
 		   NULL, "In other words, she could never be cruel.", Line_Normal);
 	ClearMessage();
-	DrawSceneWithMask( "black", "maskdown", 1, 0, 300 );
 
 	OutputLine(NULL, "　もし鬼婆が私と同じかそれ以上に、１と０な考えをできるなら。",
 		   NULL, "If the hag thought the same way as I do...", Line_WaitForInput);
@@ -256,7 +252,7 @@
 	OutputLine(NULL, "　その陰の面を取り次ぐ人物、Ｘが、…オヤシロさまの祟りを真の意味で司る人物なのだろうか。",
 		   NULL, "The one who took care of problems on the underside, X, was the one who actually governed the curse of Oyashiro-sama.", Line_Normal);
 	ClearMessage();
-	DrawScene( "Heya4", 400 );
+	DrawScene( "heya3-", 400 );
 
 	OutputLine(NULL, "　鬼婆が憂慮すると、Ｘが気を利かせて、…直接か、あるいは間接的に働きかけ、執行する。",
 		   NULL, "If the hag became concerned about something, X would deal with it, either directly or indirectly.", Line_WaitForInput);
@@ -308,7 +304,7 @@
 	ClearMessage();
 
 	DisableWindow();
-	DrawBustshot( 0, "Iri_Def1+", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 9, 400, TRUE );
+	DrawBustshot( 0, "ir_hk_de_a1", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 9, 400, TRUE );
 	DisplayWindow();
 
 	OutputLine(NULL, "　…………入江診療所の所長。",
@@ -327,7 +323,7 @@
 		   NULL, "The villagers liked his mature personality, and really respected him.", Line_Normal);
 	ClearMessage();
 	DisableWindow();
-	ChangeBustshot( 0, "Iri_Majime+", 200, TRUE );
+	ChangeBustshot( 0, "iri2_Majime_0", 200, TRUE );
 	DisplayWindow();
 
 	OutputLine(NULL, "　何しろ、医者の殺人鬼ほど怖いものはない。",
@@ -388,13 +384,16 @@
 	OutputLine(NULL, "　……ダークサイドに関わる人間は、信頼のできる人間だけで固める。",
 		   NULL, "Then she'd only gather trustworthy people to deal with that underside.", Line_Normal);
 	ClearMessage();
-	DrawScene( "Aka2", 400 );
+	DrawBustshot( 1, "ki_Def_0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 200, TRUE );
+	DrawBustshot( 3, "ri_mk_de_a1", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
 
 	PlayBGM( 1, "yabaisemi", 120, 0 );
 
 	OutputLine(NULL, "　…真っ先に思いつくのは、その他の御三家の頭首たちだった。",
 		   NULL, "The first people that came to my mind were the leaders of the Three Families.", Line_Normal);
 	ClearMessage();
+	FadeAllBustshots( 400, TRUE );
+	DrawBustshot( 1, "ki_Def_0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 200, TRUE );
 
 	OutputLine(NULL, "　古手家頭首の梨花ちゃまはさて置き、公由家頭首の村長は確かに考えられる。",
 		   NULL, "Leaving Rika-chama out, the head of the Kimiyoshi family was a strong possibility.", Line_Normal);
@@ -420,7 +419,7 @@
 	OutputLine(NULL, "　二人が内密な話をしているところなど、自然に考えられる…。",
 		   NULL, "I could easily picture them talking privately.", Line_Normal);
 	ClearMessage();
-	DrawScene( "JSA4", 400 );
+	DrawScene( "aka2", 400 );
 
 	OutputLine(NULL, "　オヤシロさまの祟りの執行者。",
 		   NULL, "The one who executed the curse of Oyashiro-sama.", Line_WaitForInput);
@@ -548,7 +547,7 @@
 	ClearMessage();
 
 	DrawSceneWithMask( "black", "maskleft", 1, 0, 300 );
-	DrawSceneWithMask( "JSA5", "maskleft", 1, 0, 300 );
+	DrawSceneWithMask( "bg_undergr1", "maskleft", 1, 0, 300 );
 
 	PlaySE(4, "S06/06/150601521", 128, 64);
 	OutputLine(NULL, "「鬼婆さま、そろそろ目を覚まして下さいません？」",
@@ -586,7 +585,6 @@
 	OutputLine(NULL, "　…………電気的な直感が過ぎる。",
 		   NULL, "Then I noticed something.", Line_Normal);
 	ClearMessage();
-	DrawSceneWithMask( "JSA3", "maskright", 1, 0, 300 );
 
 	OutputLine(NULL, "　私は適当な拷問道具を探した。",
 		   NULL, "I looked for an appropriate torture device.", Line_WaitForInput);
@@ -595,7 +593,6 @@
 	OutputLine(NULL, "　………どれも大掛かりな、大仰そうなもので、手軽ではない。",
 		   NULL, "They were all large-scale, none of them being particularly handy.", Line_Normal);
 	ClearMessage();
-	DrawSceneWithMask( "JSA2", "maskright", 1, 0, 300 );
 
 	OutputLine(NULL, "　その時、座敷の座布団に、ジッポライターが置いてあるのを見つけた。",
 		   NULL, "That's when I saw a cigarette lighter on a cushion in the tatami room.", Line_WaitForInput);
@@ -617,7 +614,6 @@
 	OutputLine(NULL, "　私は火を消すと、そのジッポを持って鬼婆の元へ戻る。",
 		   NULL, "I turned the lighter off and went back to the hag with it.", Line_Normal);
 	ClearMessage();
-	DrawSceneWithMask( "JSA5", "maskleft", 1, 0, 300 );
 
 	PlaySE(4, "S06/06/150601523", 128, 64);
 	OutputLine(NULL, "「見えてます？",
@@ -664,7 +660,6 @@
 	OutputLine(NULL, "　鼻毛を焦がしたらしく、髪が焦げる時の異臭がした。",
 		   NULL, "The flame must have burned her nose hair. It smelled terrible.", Line_Normal);
 	ClearMessage();
-	DrawFilm( 3, 255, 255, 255, 256, 0, 400, TRUE );
 
 	OutputLine(NULL, "　もうこれだけでも確信していたが、",
 		   NULL, "I was already certain...", Line_ContinueAfterTyping);
@@ -702,6 +697,7 @@
 	ClearMessage();
 	FadeOutBGM( 1, 0, FALSE );
 	DrawBustshot( 19, "no_data", 0, 100, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, TRUE );
+	DrawScene( "bg_undergr1", 1000 );
 
 	PlaySE(4, "S06/06/150601530", 128, 64);
 	OutputLine(NULL, "「こいつ…………、",
@@ -728,9 +724,6 @@
 	OutputLine(NULL, "それすらなかった。",
 		   NULL, " But she didn't.", Line_Normal);
 	ClearMessage();
-	FadeFilm( 0, TRUE );
-
-	DrawSceneWithMask( "black", "maskleft", 1, 0, 300 );
 
 	OutputLine(NULL, "　私は拷問部屋の壁にある流しの蛇口をひねり、蛇口につながれたホースの先を鬼婆の顔に向けた。",
 		   NULL, "I turned the sink water on and aimed the end of a hose at the hag's face.", Line_Normal);
@@ -743,6 +736,7 @@
 	OutputLine(NULL, "　鬼婆の顔面を細く鋭い水流が叩くが、やはり何の反応も示さなかった。",
 		   NULL, "The water hit the hag in the face, but there was still no reaction.", Line_Normal);
 	ClearMessage();
+	DrawSceneWithMask( "black", "maskleft", 1, 0, 300 );
 	PlayBGM( 1, "yabaisemi", 120, 0 );
 
 	OutputLine(NULL, "　………ち…。",
@@ -776,7 +770,7 @@
 	OutputLine(NULL, "　ここまで取り返しのつかない暴走をしながらも、命を奪うことまでは考えなかった。",
 		   NULL, "I'd never even thought of killing her.", Line_Normal);
 	ClearMessage();
-	DrawSceneWithMask( "JSA4", "maskright", 1, 0, 300 );
+	DrawSceneWithMask( "bg_undergr1", "maskright", 1, 0, 300 );
 
 	OutputLine(NULL, "　…私は落ち着きなく、うろうろと歩き回る。",
 		   NULL, "I walked around the room restlessly.", Line_Normal);
@@ -878,7 +872,6 @@
 	OutputLine(NULL, "　スタンガンの不意打ちで、綺麗さっぱりに永眠なんて許せなかったのだ。",
 		   NULL, "She didn't deserve an easy death from a stun gun.", Line_Normal);
 	ClearMessage();
-	DrawSceneWithMask( "black", "maskup", 1, 0, 300 );
 
 	OutputLine(NULL, "　私は壁に掛かっていた短い鞭を取る。",
 		   NULL, "I picked up a whip that was hanging on the wall.", Line_WaitForInput);
@@ -1315,6 +1308,7 @@
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
+	DrawScene( "bg_undergr2", 1000 );
 	PlaySE( 0, "s_Z02_Kyousou", 128, 64 );
 
 	OutputLine(NULL, "　何と………岩牢の中には堂々と巨大な穴が口を開けていたからだ。",
@@ -1413,6 +1407,7 @@
 	OutputLine(NULL, "　犠牲者たちの怨念の声を聞きながら、この闇のどこかから枝分かれする秘密のトンネルを探すなど、…正気の沙汰じゃない。",
 		   NULL, "Nobody in their right mind could go down this well to look for a secret tunnel, hearing the voices of the dead all the while.", Line_Normal);
 	ClearMessage();
+	DrawScene( "black", 1000 );
 
 	PlaySE(4, "S06/06/150601556", 128, 64);
 	OutputLine(NULL, "「……魅音はあの井戸、降りたことあるの？」",

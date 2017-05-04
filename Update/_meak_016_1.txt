@@ -95,7 +95,7 @@
 	FadeOutBGM( 3, 0, FALSE );
 	DrawBustshot( 19, "no_data", 0, 100, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, TRUE );
 	PlayBGM( 1, "Suzume", 120, 0 );
-	DrawSceneWithMask( "Si_H1", "maskm1", 1, 0, 3000 );
+	DrawSceneWithMask( "Si_H2", "maskm1", 1, 0, 3000 );
 
 	OutputLine(NULL, "　目が覚めた時。",
 		   NULL, "When I woke up...", Line_WaitForInput);
@@ -132,7 +132,7 @@
 		   NULL, "...I felt Satoshi-kun's presence again... It wasn't a dream after all. I thanked God.", Line_Normal);
 	ClearMessage();
 	DrawScene( "white", 400 );
-	DrawScene( "Sora", 400 );
+	DrawScene( "Sora3", 400 );
 
 	OutputLine(NULL, "　それから、私と悟史くんの不思議な共同生活が始まった。",
 		   NULL, "And so I began my strange life with Satoshi-kun.", Line_Normal);
@@ -324,7 +324,7 @@
 	DrawScene( "white", 1000 );
 	PlayBGM( 0, "Iru", 120, 0 );
 	DrawBustshotWithFiltering( 2, "Kasa1", "maskright", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 10, 0, FALSE );
-	DrawSceneWithMask( "Si_H1", "maskright", 1, 0, 300 );
+	DrawSceneWithMask( "si_g1", "maskright", 1, 0, 300 );
 	SetSpeedOfMessage( FALSE, 0 );
 
 	PlaySE(4, "S06/15/151500200", 128, 64);
@@ -392,7 +392,7 @@
 		   NULL, "\"I'm taking my moped, so you don't have to.\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 	DisableWindow();
-	ChangeBustshot( 2, "Kasa2", 200, TRUE );
+	ChangeBustshot( 2, "Kasa3", 200, TRUE );
 	DisplayWindow();
 
 	PlaySE(4, "S06/15/151500204", 128, 64);

@@ -19,7 +19,7 @@
 	OutputLine(NULL, "　………悟史くんが練習を休むようになって、もう数週間になろうとしている。",
 		   NULL, "...It had been a few weeks since Satoshi-kun stopped showing up for baseball practice.", Line_Normal);
 	ClearMessage();
-	DrawSceneWithMask( "Oki_G1", "maskup", 1, 0, 300 );
+	DrawSceneWithMask( "Oki_G3", "maskup", 1, 0, 300 );
 	SetValidityOfInput( FALSE );
 	Wait( 1000 );
 	SetValidityOfInput( TRUE );
@@ -67,7 +67,7 @@
 		   NULL, " but I shooed them away.", Line_Normal);
 	ClearMessage();
 	DisableWindow();
-	DrawBustshotWithFiltering( 1, "Iri_Def1!", "maskleft", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 8, 300, TRUE );
+	DrawBustshotWithFiltering( 1, "iri3_Def1_0", "maskleft", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 8, 300, TRUE );
 	DisplayWindow();
 
 	PlaySE(4, "S06/10/151000091", 128, 64);
@@ -130,7 +130,7 @@
 		   NULL, " If you really need a manager, look for somebody else.\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 	DisableWindow();
-	ChangeBustshot( 1, "Iri_Def2!", 200, TRUE );
+	ChangeBustshot( 1, "iri3_Def2_0", 200, TRUE );
 	DisplayWindow();
 
 	PlaySE(4, "S06/10/151000097", 128, 64);
@@ -149,7 +149,7 @@
 	OutputLine(NULL, "　踵を返す私に、監督の言葉はもう届いていなかった。",
 		   NULL, "I ignored him and turned around.", Line_Normal);
 	ClearMessage();
-	DrawSceneWithMask( "Oki_G2", "maskright", 1, 0, 300 );
+	DrawSceneWithMask( "black", "maskright", 1, 0, 300 );
 
 	OutputLine(NULL, "　最近は、野球の練習日に合わせて「魅音」の時間をもらえるようになっていたので、お姉と打ち合わせることはほとんどなくなっていた。",
 		   NULL, "I had already set up my schedule with Mion, so I didn't have to ask her every time anymore.", Line_WaitForInput);
@@ -172,7 +172,6 @@
 	OutputLine(NULL, "　……私と連絡を取るのは容易なことじゃない。",
 		   NULL, "...As a result, it hasn't been easy to contact her.", Line_Normal);
 	ClearMessage();
-	DrawScene( "black", 400 );
 
 	OutputLine(NULL, "　お姉と連絡を取る際に連絡員となってくれていた葛西も、私寄りの忠臣ということでマークを受けているらしく、",
 		   NULL, "Kasai, who had been helping me contact her, seemed to also have been marked. People knew he was loyal to me.", Line_WaitForInput);
@@ -195,7 +194,7 @@
 	OutputLine(NULL, "……それは本当に不意で虚を突かれた。",
 		   NULL, " But something surprised me out of the blue.", Line_Normal);
 	ClearMessage();
-	DrawSceneWithMask( "Oki_G1", "maskleft", 1, 0, 300 );
+	DrawSceneWithMask( "Oki_G3", "maskleft", 1, 0, 300 );
 
 	OutputLine(NULL, "　自転車を引っ張り出し、グラウンドを後にしようとした時、…突然声をかけられたのだ。",
 		   NULL, "Somebody called out to me when I was about to leave the field on my bike...", Line_Normal);
@@ -370,8 +369,6 @@
 	OutputLine(NULL, "　私たちはたまたま近くにあった、今では使われていないバスの停留所の待合小屋に入って、雨宿りをすることになった…。",
 		   NULL, "We ended up taking shelter in a small shack in front of a bus stop.", Line_Normal);
 	ClearMessage();
-
-	DrawBustshotWithFiltering( 0, "Re_DefA1", "maskleft", 1, 0, 0, FALSE, 0, 0, 0, 0, 0, 9, 0, FALSE );
 	DrawSceneWithMask( "M_Hi9", "maskleft", 1, 0, 300 );
 
 	PlaySE(4, "S06/02/150200007", 128, 64);
@@ -383,7 +380,6 @@
 	OutputLine(NULL, "「……そうだね。」",
 		   NULL, "\"...Yeah.\"", Line_Normal);
 	ClearMessage();
-	DrawSceneWithMask( "Mo_B1", "maskup", 1, 0, 300 );
 
 	OutputLine(NULL, "　雨がトタンの屋根を叩く音と、屋根からボタボタと水滴が落ちて水溜りを叩く音。",
 		   NULL, "I heard the sound of rain pattering on the rooftop and the raindrops jumping into puddles.", Line_WaitForInput);
@@ -463,7 +459,6 @@
 	OutputLine(NULL, "　…それに、グラウンドを訪れたということは、…チームメイトに聞いて、最近の経緯を多少は知っているからに違いない。",
 		   NULL, "...She must known what was going on, because she knew that I was at the baseball field.", Line_Normal);
 	ClearMessage();
-	DrawBustshot( 0, "Re_nandeA1", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 9, 0, FALSE );
 	DrawScene( "M_Hi9", 400 );
 
 	PlaySE(4, "S06/02/150200010", 128, 64);
@@ -489,9 +484,6 @@
 	OutputLine(NULL, "　…そういう風に聞き取れた。",
 		   NULL, "...That's what it sounded like, at least.", Line_Normal);
 	ClearMessage();
-	DisableWindow();
-	ChangeBustshot( 0, "Re_KomaruA1", 200, TRUE );
-	DisplayWindow();
 
 	PlaySE(4, "S06/02/150200011", 128, 64);
 	OutputLine(NULL, "「………沙都子ちゃんの件で、……だいぶ悩んでるみたいだった。」",
@@ -524,9 +516,6 @@
 	OutputLine(NULL, "…それを思うと、自分の口から出した言葉が白々しくてたまらなかった。",
 		   NULL, " as I knew too well how much of a burden Satoko had become. ", Line_Normal);
 	ClearMessage();
-	DisableWindow();
-	ChangeBustshot( 0, "Re_DefB1", 200, TRUE );
-	DisplayWindow();
 
 	PlaySE(4, "S06/02/150200014", 128, 64);
 	OutputLine(NULL, "「……でも、だからって魅ぃちゃんまで落ち込んじゃったら…かえって悟史くんを追い詰めちゃうように思うかな。……かな。」",
@@ -537,9 +526,6 @@
 	OutputLine(NULL, "「…………………私に追い詰めるつもりなんて、ないよ。」",
 		   NULL, "\".....................I don't want that.\"", Line_Normal);
 	ClearMessage();
-	DisableWindow();
-	ChangeBustshot( 0, "Re_DefA1", 200, TRUE );
-	DisplayWindow();
 
 	PlaySE(4, "S06/02/150200015", 128, 64);
 	OutputLine(NULL, "「それはもちろん知ってるよ。",
@@ -556,9 +542,6 @@
 	OutputLine(NULL, "「………………………。」",
 		   NULL, "\".....................\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
-	DisableWindow();
-	ChangeBustshot( 0, "Re_WaraiA1", 200, TRUE );
-	DisplayWindow();
 
 	PlaySE(4, "S06/02/150200018", 128, 64);
 	OutputLine(NULL, "「魅ぃちゃんは、たとえ嘘でも笑顔が作れる強い人間だって知ってる。",
@@ -602,7 +585,7 @@
 	OutputLine(NULL, "　…だが、それ以外にもかなりしっかりした一面が潜んでいることをうかがわされる…。",
 		   NULL, "...But she seemed to have another, very mature side to her...", Line_Normal);
 	ClearMessage();
-	DrawSceneWithMask( "Mo_B1", "maskup", 1, 0, 300 );
+	DrawSceneWithMask( "M_Hi9", "maskup", 1, 0, 300 );
 
 	PlaySE(4, "S06/02/150200022", 128, 64);
 	OutputLine(NULL, "「……魅ぃちゃんは悟史くんのこと、………好き？」",
@@ -752,11 +735,7 @@
 	OutputLine(NULL, "………沙都子のことなんか、忘れてしまえば…悟史くんはもっともっと…心に負担をかけずに過せるのに。",
 		   NULL, " ...It would be easier for him to just forget about Satoko.", Line_Normal);
 	ClearMessage();
-	DrawScene( "M_Hi9", 0 );
-	DisableWindow();
-	DrawBustshot( 0, "Re_Hi_DefB1", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 9, 200, TRUE );
-
-	DisplayWindow();
+	DrawScene( "cg_002a", 400 );
 	FadeOutBGM( 1, 0, FALSE );
 	DrawBustshot( 19, "no_data", 0, 100, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, TRUE );
 
@@ -769,6 +748,8 @@
 	OutputLine(NULL, "　その時、…私の瞳を覗きこんでいるレナに、…ぎょっとする。",
 		   NULL, "I was startled when I realized Rena was looking straight into my eyes.", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+	ClearMessage();
+	DrawScene( "M_Hi9", 400 );
 
 	OutputLine(NULL, "　レナは変わらぬ微笑を浮かべていたが、…どこか曇った瞳がとても薄気味悪かった。",
 		   NULL, "She was smiling, but... her eyes looked creepy.", Line_WaitForInput);
@@ -779,9 +760,6 @@
 	OutputLine(NULL, "……だがこのレナという子は、…その私の考えを、私がほんの少し瞳を曇らせただけで……見透かしてしまったように見えた。",
 		   NULL, " but she was looking at me as though she figured out that I was blaming Satoko.", Line_Normal);
 	ClearMessage();
-	DisableWindow();
-	ChangeBustshot( 0, "Re_waraiA1", 200, TRUE );
-	DisplayWindow();
 
 	OutputLine(NULL, "　レナは私のそんな恐れにも気づいたのか、にこっと笑ってみせる。",
 		   NULL, "She beamed when she noticed my fear.", Line_WaitForInput);
@@ -821,9 +799,6 @@
 	OutputLine(NULL, "　……つもりだったが、このレナという子には、沈黙すらも答えとして通じてしまうようだった。",
 		   NULL, "...But Rena seemed to know what I was thinking already.", Line_Normal);
 	ClearMessage();
-	DisableWindow();
-	ChangeBustshot( 0, "Re_WaraiB1", 200, TRUE );
-	DisplayWindow();
 
 	PlaySE(4, "S06/02/150200031", 128, 64);
 	OutputLine(NULL, "「あははは、別に魅ぃちゃんがそう思っても、私は軽蔑しないよ。",
@@ -837,9 +812,6 @@
 	OutputLine(NULL, "「………ありがと。」",
 		   NULL, "\"...Thanks.\"", Line_Normal);
 	ClearMessage();
-	DisableWindow();
-	ChangeBustshot( 0, "Re_DefB1", 200, TRUE );
-	DisplayWindow();
 
 	PlaySE(4, "S06/02/150200033", 128, 64);
 	OutputLine(NULL, "「でも、魅ぃちゃんは今までずっと、沙都子ちゃんを励ましてくれてたよね。",
@@ -862,9 +834,6 @@
 	OutputLine(NULL, "唾が吐きたい気分だった。",
 		   NULL, " I felt like spitting on the floor.", Line_Normal);
 	ClearMessage();
-	DisableWindow();
-	ChangeBustshot( 0, "Re_KomaruA1", 200, TRUE );
-	DisplayWindow();
 
 	PlaySE(4, "S06/02/150200035", 128, 64);
 	OutputLine(NULL, "「私たちには、…沙都子ちゃんも悟史くんも。……励ますことしかできない。",
@@ -881,9 +850,6 @@
 	OutputLine(NULL, "……沙都子がもっとしっかりすれば、悟史くんがここまで追い詰められることはない。」",
 		   NULL, " If she were stronger, he wouldn't have to suffer in her place.\"", Line_Normal);
 	ClearMessage();
-	DisableWindow();
-	ChangeBustshot( 0, "Re_WaraiA1", 200, TRUE );
-	DisplayWindow();
 
 	PlaySE(4, "S06/02/150200037", 128, 64);
 	OutputLine(NULL, "「……あはははははは。",
@@ -902,8 +868,6 @@
 	OutputLine(NULL, "　………この不思議な雰囲気の少女が何を考えているのか、…読み取ることは困難だった。",
 		   NULL, "......What was this mysterious girl thinking? ...It was difficult to get a read on her.", Line_Normal);
 	ClearMessage();
-	DrawScene( "black", 400 );
-	DrawScene( "Mo_B1", 400 );
 
 	PlaySE(4, "S06/02/150200039", 128, 64);
 	OutputLine(NULL, "「悟史くんもさ、……ほんの少しはそう思っているとこ、あるかもしれないね。」",
@@ -938,6 +902,7 @@
 		   NULL, "...Because of that, she must've been confident in what she just told me.", Line_Normal);
 	ClearMessage();
 	FadeOutBGM( 1, 0, FALSE );
+	DrawScene( "black", 400 );
 	DrawBustshot( 19, "no_data", 0, 100, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, TRUE );
 
 	PlaySE(4, "S06/06/150600591", 128, 64);
@@ -988,7 +953,6 @@
 	OutputLine(NULL, "…とにかくとにかく、私は直感的にそう思っていた。",
 		   NULL, " but my hunch told me that she was telling the truth.", Line_Normal);
 	ClearMessage();
-	DrawScene( "black", 400 );
 
 	OutputLine(NULL, "　……私は深いため息を漏らさずにはいられなかった。",
 		   NULL, "...I heaved a huge sigh.", Line_WaitForInput);
@@ -1016,7 +980,7 @@
 		   NULL, "She might be capable of something like that.", Line_Normal);
 	ClearMessage();
 	DisableWindow();
-	DrawBustshot( 0, "Re_defA1", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 9, 400, TRUE );
+	DrawBustshot( 2, "Re_DefA1", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
 	DisplayWindow();
 
 	OutputLine(NULL, "　…………わからない。",
@@ -1060,7 +1024,7 @@
 	OutputLine(NULL, "　………もしもこの子の正体に気付いていたら、…私にそれを伝えないわけはない。",
 		   NULL, "...She would've told me if she knew.", Line_Normal);
 	ClearMessage();
-	DrawScene( "Hi9", 400 );
+	DrawScene( "cg_204a", 400 );
 
 	PlaySE(4, "S06/06/150600595", 128, 64);
 	OutputLine(NULL, "「…………レナは、…悟史くんに打ち明けられるくらいに、信頼されてるんだね。",
@@ -1114,9 +1078,7 @@
 		   NULL, "...And got the chills.", Line_Normal);
 	ClearMessage();
 	PlayBGM( 1, "semi_r", 120, 0 );
-	DisableWindow();
-	DrawBustshot( 0, "Re_Hi_DefA1", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 9, 400, TRUE );
-	DisplayWindow();
+	DrawScene( "cg_204b", 400 );
 
 	OutputLine(NULL, "　………笑顔なのに、………見るものを凍えさせずにはいられなくする、",
 		   NULL, "...Though she was smiling... her eyes", Line_ContinueAfterTyping);
@@ -1137,9 +1099,6 @@
 	OutputLine(NULL, "…表情を凍りつかせてしまう。",
 		   NULL, " with my eyes open.", Line_Normal);
 	ClearMessage();
-	DisableWindow();
-	ChangeBustshot( 0, "Re_WaraiB1", 200, TRUE );
-	DisplayWindow();
 
 	PlaySE(4, "S06/02/150200048", 128, 64);
 	OutputLine(NULL, "「……魅ぃちゃんにはない？",
@@ -1161,9 +1120,6 @@
 	OutputLine(NULL, "　……私は彼女が何を言おうとしているのか、それに耳を傾けるのが精一杯だった。",
 		   NULL, "...I tried to figure out what she was saying.", Line_Normal);
 	ClearMessage();
-	DisableWindow();
-	ChangeBustshot( 0, "Re_Hi_DefB1", 200, TRUE );
-	DisplayWindow();
 
 	PlaySE(4, "S06/02/150200051", 128, 64);
 	OutputLine(NULL, "「………魅ぃちゃんは、雛見沢から逃げ出そうとか。",
@@ -1198,9 +1154,6 @@
 	OutputLine(NULL, "…私は地元、…好きだし。」",
 		   NULL, " I love it here.\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
-	DisableWindow();
-	ChangeBustshot( 0, "Re_waraiA1", 200, TRUE );
-	DisplayWindow();
 
 	PlaySE(4, "S06/02/150200054", 128, 64);
 	OutputLine(NULL, "「だよね、だよね。",
@@ -1230,9 +1183,6 @@
 	OutputLine(NULL, "　だから私は、本当のことを答えた。",
 		   NULL, "So I had to tell her the truth.", Line_Normal);
 	ClearMessage();
-	DisableWindow();
-	ChangeBustshot( 0, "Re_Hi_DefA1", 200, TRUE );
-	DisplayWindow();
 
 	PlaySE(4, "S06/02/150200057", 128, 64);
 	OutputLine(NULL, "「そうならば魅ぃちゃんは大丈夫。",
@@ -1367,8 +1317,7 @@
 	OutputLine(NULL, "　…かもしれない。",
 		   NULL, " I'm still afraid of it.", Line_Normal);
 	ClearMessage();
-	DrawBustshot( 0, "Re_waraiA1", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 9, 0, FALSE );
-	DrawScene( "Hi9", 400 );
+	DrawScene( "M_Hi9", 400 );
 
 	PlaySE(4, "S06/06/150600602", 128, 64);
 	OutputLine(NULL, "「…………私は地元、好きだから。",
@@ -1380,9 +1329,6 @@
 	OutputLine(NULL, "…模範的だとすら思ってるけど？」",
 		   NULL, " You could even call me a model villager.\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
-	DisableWindow();
-	ChangeBustshot( 0, "Re_Hi_MuhyouA1", 200, TRUE );
-	DisplayWindow();
 
 	PlaySE(4, "S06/02/150200061", 128, 64);
 	OutputLine(NULL, "「うん。",
@@ -1433,9 +1379,6 @@
 	OutputLine(NULL, "「悟史くんが……家出したがってる…って、…こと？」",
 		   NULL, "\"Are you saying that... he wants to skip town...?\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
-	DisableWindow();
-	ChangeBustshot( 0, "Re_Hi_DefB1", 200, TRUE );
-	DisplayWindow();
 
 	PlaySE(4, "S06/02/150200066", 128, 64);
 	OutputLine(NULL, "「うん。",
@@ -1551,7 +1494,7 @@
 	OutputLine(NULL, "　ただ、…耳を傾けることが許されるだけだ。",
 		   NULL, "I could only feel stunned.", Line_Normal);
 	ClearMessage();
-	DrawScene( "Hi1", 400 );
+	DrawScene( "Hi2", 400 );
 
 	PlaySE(4, "S06/02/150200086", 128, 64);
 	OutputLine(NULL, "「私はね、もともと雛見沢に住んでいたの。",
@@ -1778,7 +1721,7 @@
 	OutputLine(NULL, "　……そしてこのレナという子も、……同じ経験をしたことがある？",
 		   NULL, "......And Rena has experienced that before...?", Line_Normal);
 	ClearMessage();
-	DrawSceneWithMask( "Mo_B1", "maskup", 1, 0, 300 );
+	DrawSceneWithMask( "M_Hi9", "maskup", 1, 0, 300 );
 	FadeOutBGM( 0, 0, FALSE );
 	FadeOutBGM( 2, 0, FALSE );
 	DrawBustshot( 19, "no_data", 0, 100, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, TRUE );
@@ -1867,7 +1810,7 @@
 	ClearMessage();
 	FadeOutBGM( 1, 0, FALSE );
 	DrawBustshot( 19, "no_data", 0, 100, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, TRUE );
-	DrawScene( "Sinario_A", 1000 );
+	DrawScene( "si_h2", 1000 );
 	PlayBGM( 1, "yoru", 120, 0 );
 
 	PlaySE(4, "S06/06/150600607", 128, 64);

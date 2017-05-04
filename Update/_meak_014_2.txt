@@ -6,7 +6,7 @@
 	FadeOutBGM( 3, 0, FALSE );
 	ClearMessage();
 
-	DrawScene( "Sora", 1000 );
+	DrawScene( "Sora3", 1000 );
 	SetValidityOfInput( FALSE );
 	Wait( 4000 );
 	SetValidityOfInput( TRUE );
@@ -14,6 +14,7 @@
 	SetValidityOfInput( FALSE );
 	Wait( 2000 );
 	SetValidityOfInput( TRUE );
+	DrawScene( "Sora4", 1000 );
 	PlayBGM( 0, "yoru", 120, 0 );
 	SetValidityOfInput( FALSE );
 	Wait( 2000 );
@@ -98,10 +99,8 @@
 	OutputLine(NULL, "　扉がゆっくりと開き。",
 		   NULL, "The door slowly opened.", Line_WaitForInput);
 	PlayBGM( 0, "demo_48khz", 120, 0 );
-	DisableWindow();
-	DrawBustshotWithFiltering( 0, "Me_SinmyouA1#", "maskright", 1, 0, 0, FALSE, 0, 0, 0, 0, 0, 9, 300, TRUE );
-	DisplayWindow();
-
+	DrawScene( "black", 400 );
+	
 	OutputLine(NULL, "……私の双子のもう一人、園崎魅音が姿を現した。",
 		   NULL, " ......My alter ego Mion Sonozaki appeared.", Line_Normal);
 	ClearMessage();
@@ -124,6 +123,8 @@
 	OutputLine(NULL, "全然可愛くない部屋で申し訳ないけどね。」",
 		   NULL, " Sorry this room doesn't look very cute.\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+	DrawScene( "si_g1", 400 );
+	DrawBustshot( 2, "me_sinmyoua1#", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
 
 	PlaySE(4, "S06/03/150300229", 128, 64);
 	OutputLine(NULL, "「…落ち着いた雰囲気のとこだね。」",
@@ -189,8 +190,8 @@
 	OutputLine(NULL, "　学園での生活とか、そういうことを色々と。",
 		   NULL, "I talked to her about school and whatnot.", Line_Normal);
 	ClearMessage();
-	DrawBustshotWithFiltering( 2, "Me_DefA1#", "maskleft", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 10, 0, FALSE );
-	DrawSceneWithMask( "Si_H1", "maskleft", 1, 0, 300 );
+	DrawSceneWithMask( "si_g1", "maskleft", 1, 0, 300 );
+	DrawBustshot( 2, "me_defa1#", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
 
 	PlaySE(4, "S06/03/150300235", 128, 64);
 	OutputLine(NULL, "「必要な家具とかがあったら言ってね。",
@@ -214,7 +215,7 @@
 		   NULL, " I don't want to live with him, but he sounds desperate.\"", Line_Normal);
 	ClearMessage();
 	DisableWindow();
-	ChangeBustshot( 2, "Me_WaraiA2#", 200, TRUE );
+	ChangeBustshot( 2, "me_si_wa_a1", 200, TRUE );
 	DisplayWindow();
 
 	PlaySE(4, "S06/03/150300237", 128, 64);
@@ -240,8 +241,8 @@
 	OutputLine(NULL, "　思えば、園崎詩音として生活することを許されてから、お姉とこうして落ち着いて話をするのは初めてだった。",
 		   NULL, "Come to think of it, this was the first time I'd talked to Sis since I was allowed to live as Shion Sonozaki.", Line_Normal);
 	ClearMessage();
-	DrawBustshot( 2, "Me_WaraiA2#", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, FALSE );
 	DrawScene( "black", 1000 );
+	DrawBustshot( 2, "me_si_wa_a1", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
 
 	OutputLine(NULL, "　こうして魅音と話していると、……あの園崎本家での冷酷な次期頭首の顔は重ならない。",
 		   NULL, "She didn't look like how she was at the Sonozaki house that day.", Line_WaitForInput);
@@ -285,9 +286,8 @@
 		   NULL, " I'd have done the same.", Line_Normal);
 	ClearMessage();
 	DisableWindow();
-	DrawBustshot( 2, "Me_YowakiA1#", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, FALSE );
-	DrawScene( "Si_H1", 0 );
-
+	DrawScene( "si_g1", 0 );
+	DrawBustshot( 2, "me_si_yw_a1", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
 	DisplayWindow();
 
 
@@ -354,7 +354,7 @@
 		   NULL, " I won't forgive you for the rest of my life!\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 	DisableWindow();
-	ChangeBustshot( 2, "Me_HauA1#", 200, TRUE );
+	ChangeBustshot( 2, "me2_HauA1_0", 200, TRUE );
 	DisplayWindow();
 
 	PlaySE(4, "S06/03/150300243", 128, 64);
@@ -373,7 +373,7 @@
 		   NULL, " so I'm cutting you off.\"", Line_Normal);
 	ClearMessage();
 	DisableWindow();
-	ChangeBustshot( 2, "Me_SinmyouA1#", 200, TRUE );
+	ChangeBustshot( 2, "me_sinmyoua1#", 200, TRUE );
 	DisplayWindow();
 
 
@@ -492,10 +492,10 @@
 	OutputLine(NULL, "　喉の奥がヒリヒリと絞り上げるように苦しくなる。",
 		   NULL, "I choked on a burning sensation in my throat.", Line_Normal);
 	ClearMessage();
-	DrawSprite( 0, "black", NULL, -320, -240, 0, 0, 0, 0, FALSE, FALSE, 0, 0, 40, 400, TRUE );
 	FadeFilm( 0, TRUE );
 	DrawScene( "black", 0 );
-	FadeSprite( 0, 0, TRUE );
+	DrawScene( "si_g1", 400 );
+	DrawBustshot( 2, "me_si_yw_a1", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
 
 	PlaySE(4, "S06/03/150300252", 128, 64);
 	OutputLine(NULL, "「…………………………………！」",
@@ -530,6 +530,7 @@
 	OutputLine(NULL, "　もう謝らなくていいと釘を刺したはずなのに、魅音は再び謝罪を口にした。",
 		   NULL, "Even though I'd told her not to apologize anymore, Mion apologized.", Line_Normal);
 	ClearMessage();
+	DrawScene( "aka1", 400 );
 
 	OutputLine(NULL, "　……こいつの首根っこを締め上げてやる…。",
 		   NULL, "...I felt like strangling her...", Line_WaitForInput);
@@ -586,6 +587,7 @@
 	OutputLine(NULL, "　…だが、それはもはや私の意思で吐き出されているものではなかった。",
 		   NULL, "...I wasn't speaking by my own will anymore.", Line_Normal);
 	ClearMessage();
+	DrawScene( "aka2", 400 );
 
 	OutputLine(NULL, "　そう、………鬼だ。",
 		   NULL, "It was the demon...... who was controlling me.", Line_WaitForInput);
@@ -695,7 +697,7 @@
 	OutputLine(NULL, "詩音ばっかり…いつも可哀想で……、私たちは同じ双子なのに、…なんで詩音ばっかり…いつも差別されて………ひっく…！」",
 		   NULL, " it's always only you who has to suffer, even though we're twins... hic...!\"", Line_Normal);
 	ClearMessage();
-	DrawSceneWithMask( "Si_H2", "maskup", 1, 0, 300 );
+	DrawSceneWithMask( "aka1", "maskup", 1, 0, 300 );
 
 	OutputLine(NULL, "　私が悟史くんを好きになったように、…魅音が悟史くんを好きだったとしても、何の不思議もない。",
 		   NULL, "It didn't come as a surprise to me that Mion might also have loved Satoshi-kun as I did.", Line_WaitForInput);
@@ -759,8 +761,8 @@
 	OutputLine(NULL, "　……私の中に宿った乱暴な感情は、まるで水に溶けるように…消えていく。",
 		   NULL, "......Her tears dissolved my demon's anger like how the sun melts ice...", Line_Normal);
 	ClearMessage();
-	DrawBustshot( 0, "Me_YowakiA1#", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 9, 0, FALSE );
-	DrawScene( "Si_H1", 400 );
+	DrawBustshot( 0, "me_si_yw_a1", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 9, 0, FALSE );
+	DrawScene( "si_g1", 400 );
 
 	PlaySE(4, "S06/03/150300259", 128, 64);
 	OutputLine(NULL, "「……信じて、…詩音。",
@@ -920,8 +922,8 @@
 	OutputLine(NULL, "　全身の力が抜け、…私は魅音を抱いたまま、床にへたり込んだ。",
 		   NULL, "My body went limp... and I fell to the floor while holding Mion.", Line_Normal);
 	ClearMessage();
-	DrawBustshotWithFiltering( 2, "Me_SinmyouA2#", "maskup", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 10, 0, FALSE );
-	DrawSceneWithMask( "Si_H1", "maskup", 1, 0, 300 );
+	DrawSceneWithMask( "si_g1", "maskup", 1, 0, 300 );
+	DrawBustshot( 2, "me_si_yw_a1", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
 
 	PlaySE(4, "S06/03/150300267", 128, 64);
 	OutputLine(NULL, "「………詩音………大丈夫………？」",
@@ -932,10 +934,6 @@
 	OutputLine(NULL, "「…もう、………大丈夫だよ、……魅音。」",
 		   NULL, "\"...I'm all right now... Mion.\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
-	DisableWindow();
-	ChangeBustshot( 2, "Me_YowakiA2#", 200, TRUE );
-	DisplayWindow();
-
 
 	PlaySE(4, "S06/03/150300268", 128, 64);
 	OutputLine(NULL, "「…………私たちは、…どうして魅音と詩音なんだろうね…。",
@@ -1010,6 +1008,7 @@
 	OutputLine(NULL, "　人と鬼が一緒に暮らすことなんて、…やっぱりできないのだろうか。",
 		   NULL, "Was it impossible for humans to live with demons after all...?", Line_Normal);
 	ClearMessage();
+	DrawScene( "moon", 1000 );
 
 	OutputLine(NULL, "　……できたはずだ。",
 		   NULL, "......It should be possible...", Line_WaitForInput);

@@ -588,8 +588,7 @@
 	OutputLine(NULL, "　学校敷地内のマップ、職員配置、警備体制をチェックするため、クラスメートの奉仕活動や当番も率先して引き受けた。",
 		   NULL, "I took on my classmates' duties in order to understand the layout of the school, and the schedules of the staff and guards.", Line_Normal);
 	ClearMessage();
-	DrawSceneWithMask( "Ga4", "maskleft", 1, 0, 300 );
-
+	
 	OutputLine(NULL, "　…調べてすぐにわかったのだが、各界の要人のご令嬢を預かるこの学校の警備体制は厳重だ。",
 		   NULL, "...I soon found out that the security of the school was immensely tight, because there were many daughters of important people living there.", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -609,7 +608,6 @@
 	OutputLine(NULL, "　だが、むしろそれは…私を大いに燃え上がらせた。",
 		   NULL, "But... that excited me instead.", Line_Normal);
 	ClearMessage();
-	DrawScene( "black", 400 );
 
 	OutputLine(NULL, "　私は頭の中で何度となく監視網をくぐり抜けるシミュレーションを繰り返す。",
 		   NULL, "I simulated how to avoid all the surveillance in my head many times.", Line_WaitForInput);
@@ -974,7 +972,7 @@
 	OutputLine(NULL, "　…この学校にまつわる怪談には、いつも脱走未遂の生徒が絡むからだ。",
 		   NULL, "...You see, all the school's horror stories involved students who attempted escapes.", Line_Normal);
 	ClearMessage();
-	DrawScene( "black", 400 );
+	DrawScene( "ga1", 400 );
 	FadeFilm( 0, TRUE );
 	FadeOutBGM( 0, 0, FALSE );
 	FadeOutBGM( 1, 0, FALSE );
@@ -1007,7 +1005,7 @@
 	OutputLineAll(NULL, "", Line_Normal);
 
 	ClearMessage();
-	DrawSceneWithMask( "Ga3", "maskc", 1, 0, 300 );
+	DrawSceneWithMask( "black", "maskc", 1, 0, 300 );
 
 	OutputLine(NULL, "　外気は鮮烈な匂いがした。",
 		   NULL, "A strong smell was hanging in the air.", Line_WaitForInput);
@@ -1020,7 +1018,6 @@
 	OutputLine(NULL, "　こんな、むわっとするような青臭い匂いを嗅いだことはなかった。",
 		   NULL, "I'd never smelled this strong grassy smell before.", Line_Normal);
 	ClearMessage();
-	DrawScene( "black", 400 );
 
 	OutputLine(NULL, "　何か普段と違う事態が発生している…？",
 		   NULL, "Is there something going on...?", Line_WaitForInput);
@@ -1058,14 +1055,15 @@
 		   NULL, "Even though I pretend to be cool, I'm nothing but a nervous wreck...", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
-
+	
+	ClearMessage();
+	DrawScene( "cg_216", 1000 );
 
 	OutputLine(NULL, "　……落ち着け、自分。",
 		   NULL, "...Calm down...", Line_WaitForInput);
 	OutputLine(NULL, "…落ち着け、詩音…！",
 		   NULL, " Calm down, Shion...!", Line_Normal);
 	ClearMessage();
-	DrawSceneWithMask( "Ga3", "maskc", 1, 0, 300 );
 
 	OutputLine(NULL, "　ここからは頭の中にある地図だけが武器だ。",
 		   NULL, "I can rely only on the map inside my head from this point onward.", Line_WaitForInput);
@@ -1114,6 +1112,9 @@
 	OutputLine(NULL, "　逆に、私がどんないい加減な計画で動いたとしても、運が良ければ何でもＯＫになるということでもある。",
 		   NULL, "On the contrary, I might be able to get away no matter how unwisely I choose to move, if I'm lucky.", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+	
+	ClearMessage();
+	DrawScene( "black", 400 );
 
 	OutputLine(NULL, "　……ちぇ、私は今日まで積み重ねてきた努力なんて、そんな程度のもんだとはね。",
 		   NULL, "......Damn. After all that effort, it just boils down to luck?", Line_WaitForInput);
@@ -1164,7 +1165,7 @@
 	OutputLine(NULL, "…一番うるさいのは虫の声より自分の心音。",
 		   NULL, " ...The loudest sound wasn't the bugs--it was my own heartbeat.", Line_Normal);
 	ClearMessage();
-	DrawScene( "black", 400 );
+	DrawScene( "cg_216", 1000 );
 
 	OutputLine(NULL, "　じゃり。",
 		   NULL, "Crunch.", Line_WaitForInput);
@@ -1173,7 +1174,6 @@
 	OutputLine(NULL, "　…自分の足音すら、やかましくて鼓膜が破れそうだった…。",
 		   NULL, "...Even my own footsteps were so loud they could break my eardrums...", Line_Normal);
 	ClearMessage();
-	DrawSceneWithMask( "Ga3", "maskright", 1, 0, 300 );
 
 	OutputLine(NULL, "　一歩、歩くごとに私の想像力たくましきお頭は、警備員との予期せぬ遭遇を予感させて苛んだ。",
 		   NULL, "With each and every step, my overactive imagination tormented me with premonitions of unexpected run-ins with guards.", Line_WaitForInput);
@@ -1200,6 +1200,9 @@
 	OutputLine(NULL, "　五感を研ぎ澄まし、視界に収まる以上の情報を採取することに努めた。",
 		   NULL, "I tried to extend my senses to get as much information as possible.", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+	
+	ClearMessage();
+	DrawScene( "black", 400 );
 
 	OutputLine(NULL, "　だが、いくら耳を澄ませても、何の気配も感じられなかった。",
 		   NULL, "I didn't sense anyone's presence.", Line_WaitForInput);
@@ -1228,6 +1231,7 @@
 	OutputLine(NULL, "　……これじゃ、足がすくんでいるのと変わらない…。",
 		   NULL, "...It's like I'm constantly fidgeting...", Line_Normal);
 	ClearMessage();
+	DrawScene( "cg_216", 1000 );
 
 	OutputLine(NULL, "　立ち止まるか、走り出すか。",
 		   NULL, "To stop or to run...", Line_WaitForInput);
@@ -1263,7 +1267,6 @@
 		   NULL, "My head was filled with those thoughts as I went through this dangerous territory.", Line_Normal);
 	ClearMessage();
 	DrawSceneWithMask( "black", "maskright", 1, 0, 300 );
-	DrawSceneWithMask( "Ga5", "maskright", 1, 0, 300 );
 
 	OutputLine(NULL, "　やがて、誰の気配も感じず、もちろん誰にも出くわすことがなく、抜け切ったことを知った時。",
 		   NULL, "I succeed in passing through without running into anybody.", Line_WaitForInput);
@@ -1276,6 +1279,9 @@
 	OutputLine(NULL, "　………ネガティブな感情が一気に引っ込む。",
 		   NULL, "......My negative thoughts vanished quickly.", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+	
+	ClearMessage();
+	DrawScene( "cg_216", 1000 );
 
 	OutputLine(NULL, "　……もう一息だ。",
 		   NULL, "......Just a little more to go.", Line_WaitForInput);
@@ -1511,9 +1517,6 @@
 		   NULL, "I jumped out and rushed to the passenger side, then opened the door and got in.", Line_Normal);
 	ClearMessage();
 	DrawSceneWithMask( "Kuruma4", "maskleft", 1, 0, 300 );
-	DisableWindow();
-	DrawBustshotWithFiltering( 2, "Kasa1", "maskright", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 10, 300, TRUE );
-	DisplayWindow();
 
 	PlaySE(4, "S06/15/151500001", 128, 64);
 	OutputLine(NULL, "「お勤めご苦労さまです。",
@@ -1603,7 +1606,7 @@
 	OutputLine(NULL, "　ざまぁ見ろ！",
 		   NULL, " Serves you right!", Line_Normal);
 	ClearMessage();
-	DrawScene( "Kuruma8", 1000 );
+	DrawScene( "Kuruma4", 1000 );
 	PlayBGM( 1, "Mati", 120, 0 );
 
 	OutputLine(NULL, "　欧州の一角なのでは…と勘違いさせられかねないお洒落な雰囲気は、",
@@ -1783,7 +1786,7 @@
 	FadeOutBGM( 0, 0, FALSE );
 	FadeOutBGM( 2, 0, FALSE );
 	DrawBustshot( 19, "no_data", 0, 100, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, TRUE );
-	DrawScene( "Kuruma8", 400 );
+	DrawScene( "Kuruma4", 400 );
 
 	PlaySE(4, "S06/06/150600024", 128, 64);
 	OutputLine(NULL, "「お姉は元気？」",
@@ -2004,7 +2007,7 @@
 	ClearMessage();
 	FadeOutBGM( 1, 0, FALSE );
 	DrawBustshot( 19, "no_data", 0, 100, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, TRUE );
-	DrawSceneWithMask( "Hi6", "maskup", 1, 0, 300 );
+	DrawSceneWithMask( "Hi6-", "maskup", 1, 0, 300 );
 	PlayBGM( 0, "Iru", 120, 0 );
 
 	OutputLine(NULL, "　もっともあの頃の生活を、平凡と言っていいかはわからない。",
@@ -2075,7 +2078,7 @@
 	OutputLine(NULL, "　…顔も知らない仲間たちと共にする連帯感は、今思い出しても、胸が熱くなる。",
 		   NULL, "...I felt united with my fellow members, even though they were strangers to me, and that memory warms my heart.", Line_Normal);
 	ClearMessage();
-	DrawScene( "Ji2", 400 );
+	DrawScene( "Ji2-", 400 );
 
 	OutputLine(NULL, "　そう、あの感じは…祭のお神輿を担いでみんなで村中を練り歩き、汗だくになってへとへとになって。",
 		   NULL, "Yes, the way it felt back then... was like helping everyone to carry a sacred palanquin through the village, getting all sweaty and exhausted together.", Line_WaitForInput);
@@ -2090,7 +2093,7 @@
 	OutputLine(NULL, "　親父のところを出入りしてる若い兄ちゃんたちを連れて、いろんな悪さをしたのがとても懐かしい。",
 		   NULL, "I remember accompanying young men who worked for my dad out to the village to do various bad things.", Line_Normal);
 	ClearMessage();
-	DrawScene( "ke1", 400 );
+	DrawScene( "ke1-", 400 );
 
 	OutputLine(NULL, "　警察にも何度もお世話になったっけな。",
 		   NULL, "I was arrested a few times.", Line_WaitForInput);
@@ -2235,7 +2238,6 @@
 	OutputLine(NULL, "　そうすると葛西もまた、１＋１＝２だってくらい当り前に返してきた。",
 		   NULL, "Kasai, then, also chose to reply straightforwardly.", Line_Normal);
 	ClearMessage();
-	DrawSceneWithMask( "Kuruma4", "maskleft", 1, 0, 300 );
 
 	PlaySE(4, "S06/15/151500043", 128, 64);
 	OutputLine(NULL, "「詩音さんを聖ルチーア学園に入学させる決定は、園崎本家頭首が下したものです。",
@@ -2282,7 +2284,7 @@
 		   NULL, "Worse, the decision to confine me to an academy far away from the Sonozaki family... was made before I was even born.", Line_Normal);
 	ClearMessage();
 	DrawScene( "black", 400 );
-	DrawScene( "Heya3", 400 );
+	DrawScene( "Heya3-", 400 );
 
 	OutputLine(NULL, "　私に与えられた名前は",
 		   NULL, "'Shion'", Line_ContinueAfterTyping);
@@ -2347,7 +2349,6 @@
 	OutputLine(NULL, "　…私はこうして日々を生きて、呼吸をしていられるだけでも、ありがたがらなければいけないってことになる。",
 		   NULL, "...Is that I have to be grateful just to be alive and breathing to this day.", Line_Normal);
 	ClearMessage();
-	DrawScene( "Ima3", 400 );
 
 	OutputLine(NULL, "　実際、産湯に浸かる前に、生まれたばかりの私の首に、鬼婆は実際に手を掛けたらしい。",
 		   NULL, "I heard the hag actually put her hands around my neck right after I was born.", Line_WaitForInput);
@@ -2479,7 +2480,7 @@
 	OutputLine(NULL, "ぱっとした冴えない町だが、私はそんなに嫌いじゃない。",
 		   NULL, " The town isn't very sophisticated, but I kind of like it there.", Line_Normal);
 	ClearMessage();
-	DrawSceneWithMask( "Kuruma5", "maskright", 1, 0, 300 );
+	DrawSceneWithMask( "Kuruma8", "maskright", 1, 0, 300 );
 
 	PlaySE(4, "S06/15/151500047", 128, 64);
 	OutputLine(NULL, "「興宮の町へ帰れば、親族の誰かの目に触れることになります。",
@@ -2673,7 +2674,7 @@
 	OutputLine(NULL, "　でも、母さんの側を離れられなくて、旧友としていつまでも側にいるのではないか、と。",
 		   NULL, "Kasai couldn't leave my mom entirely, so he stayed around as my dad's friend.", Line_Normal);
 	ClearMessage();
-	DrawSceneWithMask( "Kuruma4", "maskleft", 1, 0, 300 );
+	DrawSceneWithMask( "black", "maskleft", 1, 0, 300 );
 	DisableWindow();
 	DrawBustshotWithFiltering( 2, "Kasa1", "maskright", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 10, 300, TRUE );
 	DisplayWindow();

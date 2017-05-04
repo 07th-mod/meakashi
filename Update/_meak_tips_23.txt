@@ -8,9 +8,9 @@
 	ClearMessage();
 
 	PlayBGM( 0, "T1", 120, 0 );
-	DrawBustshotWithFiltering( 1, "Aka_Def", "maskright", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 8, 0, FALSE );
+	DrawBustshotWithFiltering( 1, "aka_Def_0", "maskright", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 8, 0, FALSE );
 	DrawBustshotWithFiltering( 2, "Kasa1", "maskright", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 10, 0, FALSE );
-	DrawScene( "Mati10", 400 );
+	DrawScene( "Mati4", 400 );
 
 	PlaySE(4, "S20/06/440600033", 128, 64);
 	OutputLine(NULL, "「ねぇ、教えてよ母さん。",
@@ -36,6 +36,7 @@
 	OutputLine(NULL, "「へ？　何それぇ？！」",
 		   NULL, "\"Eh? What?!\"", Line_Normal);
 	ClearMessage();
+	DrawBustshot( 1, "aka_Warai_0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 200, TRUE );
 
 	PlaySE(4, "S20/16/442200003", 128, 64);
 	OutputLine(NULL, "「私も当時はだいぶ斜な生き方してて呆れられててね。",
@@ -45,6 +46,9 @@
 	PlaySE(4, "S20/16/442200004", 128, 64);
 	OutputLine(NULL, "そりゃ大喧嘩よ。",
 		   NULL, " so of course she got terribly upset.", Line_WaitForInput);
+
+	DrawBustshot( 1, "aka_Sakebi_0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 200, TRUE );
+
 	PlaySE(4, "S20/16/442200005", 128, 64);
 	OutputLine(NULL, "許婚は頭首が決める、なんて言われて、",
 		   NULL, " She said, 'the head of the family will choose your fiance,'", Line_ContinueAfterTyping);
@@ -56,9 +60,15 @@
 		   NULL, " and I said, 'screw your decisions, you fucking virago!'", Line_WaitForInput);
 	OutputLine(NULL, "　この場で斬り伏せたらあッて大立ち回りよ。",
 		   NULL, " So then we both tried to cut each other down on the spot.", Line_WaitForInput);
+
+	DrawBustshot( 1, "aka_Def_0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 200, TRUE );
+
 	PlaySE(4, "S20/16/442200006", 128, 64);
 	OutputLine(NULL, "互いに板の間の日本刀抜いて、チャンチャンバラバラ。",
 		   NULL, " We unsheathed our katanas in the living room and clashed and slashed and sliced.", Line_WaitForInput);
+
+	DrawBustshot( 1, "aka_Warai_0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 200, TRUE );
+
 	PlaySE(4, "S20/16/442200007", 128, 64);
 	OutputLine(NULL, "あっはっはっは。」",
 		   NULL, " Aha ha ha ha!\"", Line_WaitForInput);
@@ -73,6 +83,7 @@
 	OutputLine(NULL, "　母さんやるねぇ…。」",
 		   NULL, " Way to go, Mom...\"", Line_Normal);
 	ClearMessage();
+	DrawBustshot( 1, "aka_Def_0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 200, TRUE );
 
 	PlaySE(4, "S20/16/442200008", 128, 64);
 	OutputLine(NULL, "「まぁねー。",
@@ -113,6 +124,7 @@
 	OutputLine(NULL, "それで鬼婆と母さんはずーっと仲が悪いわけだね…。」",
 		   NULL, " So, that's why you and the hag have a bad relationship, huh...?\"", Line_Normal);
 	ClearMessage();
+	DrawBustshot( 1, "aka_Warai_0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 200, TRUE );
 
 	PlaySE(4, "S20/16/442200014", 128, 64);
 	OutputLine(NULL, "「あははは、詩音、本当はね？",
@@ -130,6 +142,7 @@
 	OutputLine(NULL, "　うっそだぁ！」",
 		   NULL, " That can't be right!\"", Line_Normal);
 	ClearMessage();
+	DrawBustshot( 1, "aka_Def_0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 200, TRUE );
 
 	PlaySE(4, "S20/16/442200016", 128, 64);
 	OutputLine(NULL, "「鬼婆さまには面倒な世間体があるからね。",
@@ -165,6 +178,7 @@
 	OutputLine(NULL, "　鬼婆は何をやったわけ？」",
 		   NULL, " What did she do?\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+	DrawBustshot( 1, "aka_Warai_0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 200, TRUE );
 
 	PlaySE(4, "S20/16/442200021", 128, 64);
 	OutputLine(NULL, "「さーーーーねーーーーー！",

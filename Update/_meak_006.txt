@@ -17,7 +17,7 @@
 		   NULL, " How are you guys doing in the heat?!\"", Line_Normal);
 	ClearMessage();
 	DisableWindow();
-	DrawBustshotWithFiltering( 2, "Iri_warai!", "maskright", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 10, 300, TRUE );
+	DrawBustshotWithFiltering( 2, "iri3_Warai_0", "maskright", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 10, 300, TRUE );
 	DisplayWindow();
 
 	PlaySE(4, "S06/10/151000001", 128, 64);
@@ -48,14 +48,14 @@
 		   NULL, " And don't treat me as your manager without my permission, please.\"", Line_Normal);
 	ClearMessage();
 	DisableWindow();
-	DrawBustshotWithFiltering( 1, "Sato_Def1!", "maskleft", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 8, 300, TRUE );
+	DrawBustshotWithFiltering( 1, "sato2_Def1_0", "maskleft", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 8, 300, TRUE );
 	DisplayWindow();
 
 	PlaySE(4, "S06/07/151200116", 128, 64);
 	OutputLine(NULL, "「魅音がマネージャーだったら、色々心強いと思うけどね。",
 		   NULL, "\"We'd be a stronger team if you were our manager, Mion.", Line_WaitForInput);
 	DisableWindow();
-	ChangeBustshot( 1, "Sato_Warai!", 200, TRUE );
+	ChangeBustshot( 1, "sato2_Def2_0", 200, TRUE );
 	DisplayWindow();
 
 	PlaySE(4, "S06/07/151200117", 128, 64);
@@ -91,7 +91,7 @@
 		   NULL, " Is his batting average improving?\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 	DisableWindow();
-	ChangeBustshot( 2, "Iri_def2!", 200, TRUE );
+	ChangeBustshot( 2, "iri3_Def2_0", 200, TRUE );
 	DisplayWindow();
 
 	PlaySE(4, "S06/10/151000006", 128, 64);
@@ -119,7 +119,7 @@
 		   NULL, " you're doing great, Satoshi-kun!\"", Line_Normal);
 	ClearMessage();
 	DisableWindow();
-	ChangeBustshot( 1, "Sato_Def2!", 200, TRUE );
+	ChangeBustshot( 1, "sato2_komaru2_0", 200, TRUE );
 	DisplayWindow();
 
 	PlaySE(4, "S06/07/151200119", 128, 64);
@@ -133,7 +133,7 @@
 		   NULL, " I have to be able to hit the ball when it really counts.\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 	DisableWindow();
-	ChangeBustshot( 2, "Iri_Warai!", 200, TRUE );
+	ChangeBustshot( 2, "iri3_Warai_0", 200, TRUE );
 	DisplayWindow();
 
 	PlaySE(4, "S06/10/151000009", 128, 64);
@@ -144,7 +144,7 @@
 		   NULL, " You just continue working on them for now.\"", Line_Normal);
 	ClearMessage();
 	DrawScene( "white", 400 );
-	DrawSceneWithMask( "Oki_G2", "maskright", 1, 0, 300 );
+	DrawSceneWithMask( "Oki_G3", "maskright", 1, 0, 300 );
 	PlayBGM( 1, "semi", 120, 0 );
 
 	OutputLine(NULL, "　監督が合図を送ると、ピッチャーが大きく振りかぶってから白球を放つ。",
@@ -162,7 +162,7 @@
 	Wait( 200 );
 	SetValidityOfInput( TRUE );
 	DrawScene( "white", 10 );
-	DrawScene( "Sora", 400 );
+	DrawScene( "Sora3", 400 );
 
 	OutputLine(NULL, "　パカーーーーン！！",
 		   NULL, "Thwack!!", Line_WaitForInput);
@@ -188,8 +188,8 @@
 	OutputLine(NULL, "　惜しみない拍手を送ると、悟史くんは照れを隠すようにメットを目深に被りなおした。",
 		   NULL, "I clapped, and Satoshi-kun blushed in response. He repositioned his helmet to hide his face.", Line_Normal);
 	ClearMessage();
-	DrawBustshotWithFiltering( 0, "Iri_warai!", "maskup", 1, 0, 0, FALSE, 0, 0, 0, 0, 0, 9, 0, FALSE );
 	DrawSceneWithMask( "Oki_G3", "maskup", 1, 0, 300 );
+	DrawBustshot( 2, "iri3_Warai_0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
 
 	PlaySE(4, "S06/10/151000011", 128, 64);
 	OutputLine(NULL, "「う〜〜ん。",
@@ -218,7 +218,6 @@
 	OutputLine(NULL, "　…冷静そうに見えて、実はとろい悟史くんらしいキャラクターだと思う。",
 		   NULL, "...I think it's a perfect fit for Satoshi-kun's character. He seems calm at first glance, but he's actually slow.", Line_Normal);
 	ClearMessage();
-	DrawSceneWithMask( "Oki_G2", "maskright", 1, 0, 300 );
 	FadeOutBGM( 1, 0, FALSE );
 	DrawBustshot( 19, "no_data", 0, 100, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, TRUE );
 
@@ -233,7 +232,9 @@
 		   NULL, " That's why you were an easy out in the match with the Ukita Jaguars the other day!!\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 	DisableWindow();
-	DrawBustshotWithFiltering( 0, "Sato_Komaru2!", "maskright", 1, 0, 0, FALSE, 0, 0, 0, 0, 0, 9, 300, TRUE );
+	FadeAllBustshots( 400, TRUE );
+	DrawBustshot( 1, "sato2_komaru2_0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 200, TRUE );
+	DrawBustshot( 3, "iri3_Warai_0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
 	DisplayWindow();
 
 	PlaySE(4, "S06/07/151200122", 128, 64);
@@ -244,7 +245,7 @@
 		   NULL, " Shut up. I know that.\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 	DisableWindow();
-	DrawBustshotWithFiltering( 2, "Iri_Def1!", "maskright", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 10, 300, TRUE );
+	DrawBustshot( 3, "iri3_Def2_0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
 	DisplayWindow();
 
 	PlaySE(4, "S06/10/151000013", 128, 64);
@@ -254,7 +255,7 @@
 	OutputLine(NULL, "残念です。」",
 		   NULL, " What a shame...\"", Line_Normal);
 	ClearMessage();
-	DrawScene( "black", 400 );
+	DrawScene( "sora3", 400 );
 
 	OutputLine(NULL, "　ここで一打出れば逆転、悪くても同点延長！",
 		   NULL, "A hit could have put the offense into the lead, or at least given them an extension.", Line_WaitForInput);
@@ -277,8 +278,8 @@
 	OutputLine(NULL, "　ベンチからの代打を出した方がいいという声をねじ伏せ、監督は悟史くんの打順を固持したのだ。",
 		   NULL, "Yet Irie insisted on giving him a chance, in spite of the fact that all the team members had suggested a pinch hitter.", Line_Normal);
 	ClearMessage();
-	DrawBustshotWithFiltering( 2, "Sato_Def1!", "maskup", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 10, 0, FALSE );
-	DrawSceneWithMask( "Oki_G2", "maskup", 1, 0, 300 );
+	DrawSceneWithMask( "Oki_G3", "maskup", 1, 0, 300 );
+	DrawBustshot( 2, "sato2_Def1_0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
 
 	PlaySE(4, "S06/06/150600481", 128, 64);
 	OutputLine(NULL, "「あーも〜〜！",
@@ -294,7 +295,7 @@
 		   NULL, " Why can't you hit the ball in a situation when it really matters?!\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 	DisableWindow();
-	ChangeBustshot( 2, "Sato_Def2!", 200, TRUE );
+	DrawBustshot( 2, "sato2_komaru_0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
 	DisplayWindow();
 
 	PlaySE(4, "S06/07/151200124", 128, 64);
@@ -331,7 +332,9 @@
 		   NULL, " Why are you so weak like that...?!\"", Line_Normal);
 	ClearMessage();
 	DisableWindow();
-	DrawBustshotWithFiltering( 1, "Iri_Def2!", "maskleft", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 8, 300, TRUE );
+	FadeAllBustshots( 400, TRUE );
+	DrawBustshot( 1, "sato2_komaru_0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 200, TRUE );
+	DrawBustshot( 3, "iri3_Def2_0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
 	DisplayWindow();
 
 	PlaySE(4, "S06/10/151000015", 128, 64);
@@ -361,6 +364,7 @@
 	OutputLine(NULL, "　悟史くん〜〜！！」",
 		   NULL, " Satoshi-kun?!\"", Line_Normal);
 	ClearMessage();
+	DrawBustshot( 1, "sato2_komaru2_0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 200, TRUE );
 
 	PlaySE(4, "S06/07/151200133", 128, 64);
 	OutputLine(NULL, "「…むぅ…。",
@@ -369,7 +373,7 @@
 	OutputLine(NULL, "き、聞いてるよ…。",
 		   NULL, " I-I am...", Line_WaitForInput);
 	DisableWindow();
-	ChangeBustshot( 2, "Sato_Warai!", 200, TRUE );
+	DrawBustshot( 1, "sato2_Tukare_0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 200, TRUE );
 	DisplayWindow();
 
 	PlaySE(4, "S06/07/151200135", 128, 64);
@@ -384,6 +388,7 @@
 	OutputLine(NULL, "　それを、",
 		   NULL, " So...", Line_ContinueAfterTyping);
 	PlaySE( 0, "s_boyoon", 128, 64 );
+	DrawBustshot( 1, "sato2_Def2_0_zoom", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 200, TRUE );
 
 	OutputLine(NULL, "…きゃふ！",
 		   NULL, " ...Whoa!", Line_WaitForInput);
@@ -431,7 +436,7 @@
 	OutputLine(NULL, "あはははは。」",
 		   NULL, " Ahahahaha.\"", Line_Normal);
 	ClearMessage();
-	DrawScene( "Sora", 400 );
+	DrawScene( "Sora3", 400 );
 
 	OutputLine(NULL, "　私は真っ赤になりながら、彼に頭を預けているしかない。",
 		   NULL, "I couldn't resist his hand.", Line_WaitForInput);
@@ -446,8 +451,8 @@
 	OutputLine(NULL, "　悟史くんが、がんばってくるよ〜と言い残して走り去った後には、赤面して頭から湯気を昇らせる私が残るのみだ。",
 		   NULL, "Satoshi-kun ran back to the field, leaving me red as a beet.", Line_Normal);
 	ClearMessage();
-	DrawBustshotWithFiltering( 0, "Iri_Def1!", "maskdown", 1, 0, 0, FALSE, 0, 0, 0, 0, 0, 9, 0, FALSE );
 	DrawSceneWithMask( "Oki_G3", "maskdown", 1, 0, 300 );
+	DrawBustshot( 2, "iri3_Def2_0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
 
 	PlaySE(4, "S06/10/151000017", 128, 64);
 	OutputLine(NULL, "「………頭、撫でられるの弱いんですか？」",
@@ -462,7 +467,7 @@
 		   NULL, " If it were you, I'd have to teach you a new martial arts technique.\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 	DisableWindow();
-	ChangeBustshot( 0, "Iri_Warai!", 200, TRUE );
+	DrawBustshot( 2, "iri3_Warai_0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
 	DisplayWindow();
 
 	PlaySE(4, "S06/10/151000018", 128, 64);
@@ -478,7 +483,7 @@
 	OutputLine(NULL, "　今日は出席もいい事ですから、人数を分けて紅白戦をやってみましょう。」",
 		   NULL, " Why don't you split into groups and have a practice match?\"", Line_Normal);
 	ClearMessage();
-	DrawScene( "Oki_G1", 400 );
+	FadeAllBustshots( 400, TRUE );
 
 	OutputLine(NULL, "　雛見沢ファイターズは、野球チームとしてはかなりいい加減な部類に入る。",
 		   NULL, "The Hinamizawa Fighters are sort of a lazy team.", Line_WaitForInput);
@@ -499,7 +504,7 @@
 	OutputLine(NULL, "　ジャンケンと学年でチームが分けられ、すごくいい加減なムードでプレイボールになった。",
 		   NULL, "Our team split into two groups and started a match, retaining their loose atmosphere.", Line_Normal);
 	ClearMessage();
-	DrawScene( "Sora", 400 );
+	DrawScene( "Sora3", 400 );
 
 	PlaySE(4, "S06/06/150600499", 128, 64);
 	OutputLine(NULL, "「じゃ、私ゃ記録でもやるかな。",
@@ -557,7 +562,7 @@
 	OutputLine(NULL, "　やっぱり人間はお天道様の下で活動するようにできてるんだ。",
 		   NULL, "Humans are born to be active under the sun.", Line_Normal);
 	ClearMessage();
-	DrawScene( "Oki_G2", 400 );
+	DrawScene( "Oki_G3", 400 );
 
 	OutputLine(NULL, "　審判は野球好きの保護者のひとりがやってくれることになったので、",
 		   NULL, "One of the parents was acting as umpire today,", Line_WaitForInput);
@@ -588,7 +593,7 @@
 		   NULL, "\"I'm surprised you guys can do well with only a small amount of practice.\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 	DisableWindow();
-	DrawBustshotWithFiltering( 2, "Iri_Def2!", "maskright", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 10, 300, TRUE );
+	DrawBustshot( 2, "iri3_Def2_0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
 	DisplayWindow();
 
 	PlaySE(4, "S06/10/151000024", 128, 64);
@@ -609,9 +614,6 @@
 	OutputLine(NULL, "あちらの監督と対立するの、わかる気がします。」",
 		   NULL, " I can understand why their coach hates you.\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
-	DisableWindow();
-	ChangeBustshot( 2, "Iri_Def1!", 200, TRUE );
-	DisplayWindow();
 
 	PlaySE(4, "S06/10/151000027", 128, 64);
 	OutputLine(NULL, "「タイタンズさんの考えも間違ってませんよ。",
@@ -623,7 +625,7 @@
 	OutputLine(NULL, "勝利至上主義は決して間違いじゃないです。",
 		   NULL, " So prioritizing victory certainly isn't wrong.", Line_WaitForInput);
 	DisableWindow();
-	ChangeBustshot( 2, "Iri_warai!", 200, TRUE );
+	DrawBustshot( 2, "iri3_Warai_0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
 	DisplayWindow();
 
 	PlaySE(4, "S06/10/151000030", 128, 64);
@@ -672,7 +674,7 @@
 		   NULL, "Even though I couldn't put it into words, I knew what made that happen.", Line_Normal);
 	ClearMessage();
 	DrawScene( "white", 10 );
-	DrawScene( "Sora", 400 );
+	DrawScene( "Sora3", 400 );
 
 	PlaySE(4, "S06/06/150600508", 128, 64);
 	OutputLine(NULL, "「ほら〜〜〜紅組さんも頑張って下さい〜〜〜！",
@@ -707,7 +709,7 @@
 		   NULL, "In particular, he had a fascination with maids... but I should talk about that some other time.", Line_Normal);
 	ClearMessage();
 	DrawSceneWithMask( "white", "maskleft", 1, 0, 300 );
-	DrawSceneWithMask( "Oki_G2", "maskleft", 1, 0, 300 );
+	DrawSceneWithMask( "Oki_G3", "maskleft", 1, 0, 300 );
 
 	OutputLine(NULL, "　悟史くんは、球筋をじっくり見定めるように、二球を見送った後、丁寧なバッティングで見事、一塁に出塁して見せた。",
 		   NULL, "Satoshi-kun let the ball pass twice to see its trajectory, then hit it on the third pitch and ran to first base.", Line_Normal);
@@ -721,7 +723,7 @@
 		   NULL, " He's so good when he's relaxed.\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 	DisableWindow();
-	DrawBustshotWithFiltering( 2, "Iri_def2!", "maskright", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 10, 300, TRUE );
+	DrawBustshot( 2, "iri3_Def2_0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
 	DisplayWindow();
 
 	PlaySE(4, "S06/10/151000032", 128, 64);
@@ -762,7 +764,7 @@
 		   NULL, "That's why I didn't understand why he started playing for this team to begin with.", Line_Normal);
 	ClearMessage();
 	DisableWindow();
-	ChangeBustshot( 2, "Iri_Warai!", 200, TRUE );
+	DrawBustshot( 2, "iri3_Warai_0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
 	DisplayWindow();
 
 	PlaySE(4, "S06/10/151000034", 128, 64);
@@ -783,7 +785,7 @@
 	OutputLine(NULL, "　…悟史くんに何かすごい素質があるのを見抜いて？」",
 		   NULL, " ...Did you notice some sort of hidden talent?\"", Line_Normal);
 	ClearMessage();
-	DrawScene( "Sora", 400 );
+	DrawScene( "Sora3", 400 );
 
 	PlaySE(4, "S06/10/151000036", 128, 64);
 	OutputLine(NULL, "「あ、すみません、麦茶を一杯もらってもいいですか。",
@@ -847,14 +849,12 @@
 		   NULL, "Since then, he's been having a tough time at his uncle's home.", Line_Normal);
 	ClearMessage();
 	DrawSceneWithMask( "Oki_G3", "maskup", 1, 0, 300 );
+	DrawBustshot( 2, "iri3_Def2_0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
 
 	PlaySE(4, "S06/06/150600519", 128, 64);
 	OutputLine(NULL, "「……じゃあ監督は、…悟史くんの鬱憤とか、そういうのを解消させてあげようと思って、このチームに？」",
 		   NULL, "\"...So, you invited him so that he could vent?\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
-	DisableWindow();
-	DrawBustshot( 0, "Iri_Def2!", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 9, 400, TRUE );
-	DisplayWindow();
 
 	PlaySE(4, "S06/10/151000039", 128, 64);
 	OutputLine(NULL, "「スポーツはいいですよ。",
@@ -886,7 +886,7 @@
 	ClearMessage();
 	PlayBGM( 0, "demo_48khz", 120, 0 );
 	DisableWindow();
-	ChangeBustshot( 0, "Iri_Def1!", 200, TRUE );
+	DrawBustshot( 2, "iri3_Def1_0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
 	DisplayWindow();
 	FadeOutBGM( 1, 0, FALSE );
 	DrawBustshot( 19, "no_data", 0, 100, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, TRUE );
@@ -899,7 +899,7 @@
 		   NULL, " He had many clinical symptoms, but the causes were unknown.\"", Line_Normal);
 	ClearMessage();
 	DrawScene( "black", 400 );
-	DrawScene( "Ho2_Houjouke", 400 );
+	DrawScene( "Ho1_Houjouke", 400 );
 
 	OutputLine(NULL, "　叔父宅に引き取られてから少しして。",
 		   NULL, "Satoshi-kun often got sick", Line_WaitForInput);
@@ -932,8 +932,8 @@
 	OutputLine(NULL, "　両親の事故のショックも冷めない内にそんなでは……心に負担がかかるのも無理もないことだったろう。",
 		   NULL, "It was natural for him to become sick, because he entered that bad environment right after his parents' deaths.", Line_Normal);
 	ClearMessage();
-	DrawBustshotWithFiltering( 2, "Iri_majime!", "maskup", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 10, 0, FALSE );
 	DrawSceneWithMask( "Oki_G3", "maskup", 1, 0, 300 );
+	DrawBustshot( 2, "iri3_Majime_0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
 
 	PlaySE(4, "S06/10/151000044", 128, 64);
 	OutputLine(NULL, "「北条さんは、感情の爆発が出来ないタイプなんですよ。",
@@ -975,7 +975,7 @@
 		   NULL, "He had to deal with strangers coming into his home multiple times, so he was forced to be mature.", Line_Normal);
 	ClearMessage();
 	DisableWindow();
-	ChangeBustshot( 2, "Iri_Def1!", 200, TRUE );
+	DrawBustshot( 2, "iri3_Def1_0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
 	DisplayWindow();
 
 	PlaySE(4, "S06/10/151000047", 128, 64);
@@ -997,7 +997,7 @@
 		   NULL, "\"......That doesn't sound right.\"", Line_Normal);
 	ClearMessage();
 	DisableWindow();
-	ChangeBustshot( 2, "Iri_Def2!", 200, TRUE );
+	DrawBustshot( 2, "iri3_Def2_0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
 	DisplayWindow();
 
 	PlaySE(4, "S06/10/151000051", 128, 64);
@@ -1022,7 +1022,7 @@
 		   NULL, "And Satoshi-kun would always step in to protect her.", Line_Normal);
 	ClearMessage();
 	DisableWindow();
-	ChangeBustshot( 2, "Iri_majime!", 200, TRUE );
+	DrawBustshot( 2, "iri3_Majime_0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
 	DisplayWindow();
 
 	PlaySE(4, "S06/10/151000053", 128, 64);
@@ -1044,7 +1044,7 @@
 		   NULL, " or something like that.", Line_Normal);
 	ClearMessage();
 	DisableWindow();
-	ChangeBustshot( 2, "Iri_Def1!", 200, TRUE );
+	DrawBustshot( 2, "iri3_Def1_0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
 	DisplayWindow();
 
 	PlaySE(4, "S06/10/151000054", 128, 64);
@@ -1054,7 +1054,7 @@
 	OutputLine(NULL, "…彼と診療の際にいろいろとお話しする内に、少しずつ打ち解けていきましてね。",
 		   NULL, " but after I talked to him at the clinic a few times, he began to open up to me.", Line_WaitForInput);
 	DisableWindow();
-	ChangeBustshot( 2, "Iri_Def2!", 200, TRUE );
+	DrawBustshot( 2, "iri3_Def2_0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
 	DisplayWindow();
 
 	PlaySE(4, "S06/10/151000056", 128, 64);
@@ -1068,7 +1068,7 @@
 		   NULL, " I eased him into it...\"", Line_Normal);
 	ClearMessage();
 	DrawScene( "white", 400 );
-	DrawScene( "Sora", 400 );
+	DrawScene( "Sora3", 400 );
 
 	OutputLine(NULL, "　スポーツは精神的にまいりかけてた悟史くんには、本当にいいものだった。",
 		   NULL, "Sports worked excellently for Satoshi-kun.", Line_WaitForInput);
@@ -1110,15 +1110,15 @@
 	OutputLine(NULL, "ははははははは。」",
 		   NULL, " Hahahahaha.\"", Line_Normal);
 	ClearMessage();
-	DrawBustshotWithFiltering( 0, "Iri_Def1!", "maskup", 1, 0, 0, FALSE, 0, 0, 0, 0, 0, 9, 0, FALSE );
-	DrawSceneWithMask( "Oki_G2", "maskup", 1, 0, 300 );
+	DrawSceneWithMask( "Oki_G3", "maskup", 1, 0, 300 );
+	DrawBustshot( 2, "iri3_Def1_0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
 
 	PlaySE(4, "S06/06/150600533", 128, 64);
 	OutputLine(NULL, "「悟史くんと監督って、仲、いいんですか？」",
 		   NULL, "\"Are you guys close?\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 	DisableWindow();
-	ChangeBustshot( 0, "Iri_Def2!", 200, TRUE );
+	DrawBustshot( 2, "iri3_Def2_0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
 	DisplayWindow();
 
 	PlaySE(4, "S06/10/151000059", 128, 64);
@@ -1139,7 +1139,7 @@
 		   NULL, "While Satoshi-kun and I were friends, we weren't so close that we'd open up to each other like that...", Line_Normal);
 	ClearMessage();
 	DisableWindow();
-	ChangeBustshot( 0, "Iri_Def1!", 200, TRUE );
+	DrawBustshot( 2, "iri3_Def1_0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
 	DisplayWindow();
 
 	PlaySE(4, "S06/10/151000061", 128, 64);
@@ -1162,7 +1162,7 @@
 		   NULL, "Taken aback, I blushed.", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 	DisableWindow();
-	ChangeBustshot( 0, "Iri_Warai!", 200, TRUE );
+	DrawBustshot( 2, "iri3_Warai_0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
 	DisplayWindow();
 
 	OutputLine(NULL, "　監督も一目瞭然で図星がわかったらしく、大笑いしてしまった。",
@@ -1186,7 +1186,7 @@
 		   NULL, "I didn't know what I was saying.", Line_Normal);
 	ClearMessage();
 	DisableWindow();
-	ChangeBustshot( 0, "Iri_majime2!", 200, TRUE );
+	DrawBustshot( 2, "iri3_Majime2_0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
 	DisplayWindow();
 
 	PlaySE(4, "S06/10/151000064", 128, 64);
@@ -1202,15 +1202,16 @@
 		   NULL, "\"............What?\"", Line_Normal);
 	ClearMessage();
 	DrawScene( "white", 10 );
-	DrawScene( "Sora", 400 );
+	DrawScene( "cg_109d", 400 );
 
 	OutputLine(NULL, "　パキーーーーン！",
 		   NULL, "Thwack!", Line_Normal);
 	ClearMessage();
-
+	
 	OutputLine(NULL, "　快音が響き、白球がレフト上空に飛んでいく。",
 		   NULL, "The ball flew to the left.", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+	DrawScene( "sora3", 400 );
 
 	OutputLine(NULL, "　……悟史くんのいい当たりは、快音に反してあっさりのアウトだった。",
 		   NULL, "...But the left fielder managed to catch it.", Line_Normal);
@@ -1321,8 +1322,8 @@
 	OutputLine(NULL, "　……悟史くんという存在を独り占めしていることへの嫉妬だとも、多少は認めながら。",
 		   NULL, "...I felt jealous because she was monopolizing him.", Line_Normal);
 	ClearMessage();
-	DrawBustshotWithFiltering( 2, "Iri_majime2!", "maskup", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 10, 0, FALSE );
 	DrawSceneWithMask( "Oki_G3", "maskup", 1, 0, 300 );
+	DrawBustshot( 2, "iri3_Majime2_0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
 
 	PlaySE(4, "S06/10/151000069", 128, 64);
 	OutputLine(NULL, "「最近、沙都子ちゃんへの叔母さんの苛めがだいぶエスカレートしてるみたいです。",
@@ -1371,7 +1372,7 @@
 		   NULL, " How can we save him this time?\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 	DisableWindow();
-	ChangeBustshot( 2, "Iri_Def2!", 200, TRUE );
+	DrawBustshot( 2, "iri3_Def2_0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
 	DisplayWindow();
 
 	PlaySE(4, "S06/10/151000073", 128, 64);
@@ -1390,7 +1391,7 @@
 		   NULL, "...I couldn't help feeling a bit disappointed about that, because Satoshi-kun put his trust in him.", Line_Normal);
 	ClearMessage();
 	DisableWindow();
-	ChangeBustshot( 2, "Iri_Def1!", 200, TRUE );
+	DrawBustshot( 2, "iri3_Def1_0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
 	DisplayWindow();
 	PlayBGM( 0, "semi", 120, 0 );
 
@@ -1413,7 +1414,7 @@
 		   NULL, " ...How come...?\"", Line_Normal);
 	ClearMessage();
 	DisableWindow();
-	ChangeBustshot( 2, "Iri_Def2!", 200, TRUE );
+	DrawBustshot( 2, "iri3_Def2_0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
 	DisplayWindow();
 
 	PlaySE(4, "S06/10/151000078", 128, 64);
@@ -1543,7 +1544,6 @@
 	OutputLine(NULL, "　……私の口から、ぽつりと漏れた。",
 		   NULL, "...I couldn't help but say it.", Line_Normal);
 	ClearMessage();
-	DrawSceneWithMask( "Oki_G2", "maskright", 1, 0, 300 );
 	FadeOutBGM( 0, 0, FALSE );
 	FadeOutBGM( 2, 0, FALSE );
 	DrawBustshot( 19, "no_data", 0, 100, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, TRUE );
@@ -1557,7 +1557,7 @@
 		   NULL, "It was just a murmur, but Irie had definitely caught it.", Line_Normal);
 	ClearMessage();
 	DisableWindow();
-	DrawBustshotWithFiltering( 2, "Iri_Def1!", "maskright", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 10, 300, TRUE );
+	DrawBustshot( 2, "iri3_Def1_0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
 	DisplayWindow();
 	PlayBGM( 0, "hgrs01", 120, 0 );
 
@@ -1582,7 +1582,7 @@
 		   NULL, " I think Satoko is the cause of everything.\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 	DisableWindow();
-	ChangeBustshot( 2, "Iri_Majime2!", 200, TRUE );
+	DrawBustshot( 2, "iri3_Majime2_0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
 	DisplayWindow();
 
 	PlaySE(4, "S06/10/151000084", 128, 64);
@@ -1674,8 +1674,8 @@
 	OutputLine(NULL, "　沙都子という存在が悟史くんに依存し過ぎているからこそ、…悟史くんが追い詰められることになるのだ。",
 		   NULL, "Because of Satoko... Satoshi-kun had become cornered and stressed.", Line_Normal);
 	ClearMessage();
-	DrawBustshot( 2, "Iri_majime!", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, FALSE );
-	DrawScene( "Oki_G2", 400 );
+	DrawScene( "Oki_G3", 400 );
+	DrawBustshot( 2, "iri3_Majime_0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
 	PlayBGM( 1, "semi", 120, 0 );
 
 	PlaySE(4, "S06/10/151000085", 128, 64);
@@ -1780,7 +1780,7 @@
 	OutputLine(NULL, "　悟史くんとのコミュニケーションだけが、私が生きてる理由だと言い切っていい。",
 		   NULL, "I could even say that he was my reason for living.", Line_Normal);
 	ClearMessage();
-	DrawScene( "Sora", 400 );
+	DrawScene( "Sora3", 400 );
 
 	OutputLine(NULL, "　……そうさ、私はもう悟史くんが好きだ。",
 		   NULL, "......That's right. I was in love with him.", Line_WaitForInput);

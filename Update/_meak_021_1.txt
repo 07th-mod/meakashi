@@ -8,13 +8,14 @@
 
 	DrawScene( "white", 1000 );
 	PlayBGM( 0, "semi", 120, 0 );
-	DrawSceneWithMask( "Sora", "maskm1", 1, 0, 1300 );
+	DrawSceneWithMask( "Sora3", "maskm1", 1, 0, 1300 );
 	SetValidityOfInput( FALSE );
 	Wait( 2000 );
 	SetValidityOfInput( TRUE );
 	DrawSceneWithMask( "white", "maskright", 1, 0, 300 );
-	DrawBustshotWithFiltering( 2, "Re_HauA1", "maskright", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 10, 0, FALSE );
-	DrawSceneWithMask( "Ie1", "maskright", 1, 0, 300 );
+	DrawSceneWithMask( "ie2", "maskright", 1, 0, 300 );
+	DrawBustshot( 1, "kei1_Komaru_0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 200, TRUE );
+	DrawBustshot( 3, "re_se_ko_b2", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
 	SetSpeedOfMessage( FALSE, 0 );
 
 	PlaySE(4, "S06/02/150200189", 128, 64);
@@ -39,7 +40,7 @@
 		   NULL, " ...I'm a little tired.\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 	DisableWindow();
-	DrawBustshotWithFiltering( 1, "Kei_Majime", "maskleft", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 8, 300, TRUE );
+	DrawBustshot( 1, "kei1_Majime_0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 200, TRUE );
 	DisplayWindow();
 
 	PlaySE(4, "S06/01/150100176", 128, 64);
@@ -49,7 +50,7 @@
 	OutputLine(NULL, "　おいおい、…夜更かしにも限度ってもんがあるぞ？！",
 		   NULL, " Hey, now... You can't keep staying up late!", Line_WaitForInput);
 	DisableWindow();
-	ChangeBustshot( 1, "Kei_Warai", 200, TRUE );
+	DrawBustshot( 1, "kei1_Warai_0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 200, TRUE );
 	DisplayWindow();
 
 	PlaySE(4, "S06/01/150100177", 128, 64);
@@ -60,7 +61,7 @@
 		   NULL, " I understand, I've done that before.\"", Line_Normal);
 	ClearMessage();
 	DisableWindow();
-	ChangeBustshot( 2, "Re_BikkuriB1", 200, TRUE );
+	DrawBustshot( 3, "re_se_ko_a2", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
 	DisplayWindow();
 
 	PlaySE(4, "S06/02/150200193", 128, 64);
@@ -76,6 +77,7 @@
 		   NULL, "\"......Nope.\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+	DrawBustshot( 1, "kei1_Komaru_0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 200, TRUE );
 
 
 	OutputLine(NULL, "　昨日はあの後、古手神社で青年団と合流し、手分けしてあちこちを捜し回った。",
@@ -85,7 +87,6 @@
 	OutputLine(NULL, "　何しろ絶対に見つからないわけだから、それを唯一知る私には眠いことこの上ない。",
 		   NULL, "Since I knew there was no way he would be found, it was really boring for me.", Line_Normal);
 	ClearMessage();
-	DrawSceneWithMask( "black", "maskdown", 1, 0, 1300 );
 
 	OutputLine(NULL, "　まぁ、眠さなんて大した辛さじゃない。",
 		   NULL, "Well, just enduring sleepiness wasn't that bad.", Line_WaitForInput);
@@ -104,7 +105,8 @@
 
 	SetValidityOfInput( TRUE );
 	DrawSceneWithMask( "white", "maskright", 1, 0, 300 );
-	DrawSceneWithMask( "GK3", "maskleft", 1, 0, 300 );
+	DrawSceneWithMask( "GK1", "maskleft", 1, 0, 300 );
+	DrawBustshot( 3, "Tie_Niramu", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
 	PlayBGM( 0, "Nazo", 120, 0 );
 	SetSpeedOfMessage( FALSE, 0 );
 
@@ -117,11 +119,13 @@
 	OutputLine(NULL, "　ひとりふたりが挙手して答えたが、全然的外れな内容だったので笑えた。",
 		   NULL, "A couple of people said some things, but they were irrelevant.", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+	DrawScene( "black", 1000 );
 
 	OutputLine(NULL, "　私にとっては、背中が痒くなるだけでしかない村長失踪の話は、お昼になってもずっとクラスメートたちの間で花を咲かせているのだった…。",
 		   NULL, "To me, this issue meant nothing, but it was all my classmates were talking about.", Line_Normal);
 	ClearMessage();
-	DrawSceneWithMask( "GK2", "maskright", 1, 0, 300 );
+	DrawSceneWithMask( "GK3", "maskright", 1, 0, 300 );
+	DrawBustshot( 3, "kei1_Def1_0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
 
 	OutputLine(NULL, "　とりあえず、前原圭一の様子を見る。",
 		   NULL, "I observed Keiichi Maebara.", Line_WaitForInput);
@@ -144,13 +148,13 @@
 	OutputLine(NULL, "　だが、さすがに一夜も経てば冷静さを取り戻している。",
 		   NULL, "But I was sure he'd calmed down after a day.", Line_Normal);
 	ClearMessage();
-	DrawSceneWithMask( "GK3", "maskleft", 1, 0, 300 );
 
 	OutputLine(NULL, "　その時、クラスメートとの悪ふざけなのか、少女の笑い声が耳に入った。",
 		   NULL, "At that time, I heard a little girl's laughter.", Line_Normal);
 	ClearMessage();
 	DisableWindow();
-	DrawBustshot( 0, "Ri_WaraiA1", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 9, 400, TRUE );
+	DrawSceneWithMask( "GK1", "maskleft", 1, 0, 300 );
+	DrawBustshot( 2, "ri1_WaraiA1_0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
 	DisplayWindow();
 
 	OutputLine(NULL, "　古手梨花だ。",
@@ -172,8 +176,8 @@
 	OutputLine(NULL, "　…昨日の役員会に至っては呼ばれてもいないようだった。",
 		   NULL, "She wasn't even invited to last night's meeting.", Line_Normal);
 	ClearMessage();
-	DrawBustshotWithFiltering( 0, "Ri_WaraiA1", "maskdown", 1, 0, 0, FALSE, 0, 0, 0, 0, 0, 9, 0, FALSE );
 	DrawSceneWithMask( "black", "maskdown", 1, 0, 300 );
+	DrawBustshot( 2, "ri1_WaraiA1_0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
 
 	OutputLine(NULL, "　あんな小娘頭首が、御三家の一角として祟りのシステムの一部を担っているとは思い難い…。",
 		   NULL, "It was hard to believe such a little girl was responsible for part of the curse system.", Line_WaitForInput);
@@ -197,7 +201,7 @@
 		   NULL, "Maybe Takano-san had told me that at the library when she was alive.", Line_Normal);
 	ClearMessage();
 	DisableWindow();
-	ChangeBustshot( 0, "Ri_DefA1", 200, TRUE );
+	DrawBustshot( 2, "ri_se_de_a1", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
 	DisplayWindow();
 
 	OutputLine(NULL, "　古手梨花が憂慮すると、妄信する老人たちが気を利かす。",
@@ -248,7 +252,7 @@
 	ClearMessage();
 
 	DrawScene( "white", 400 );
-	DrawSceneWithMask( "Sora", "maskm1", 1, 0, 300 );
+	DrawSceneWithMask( "Sora3", "maskm1", 1, 0, 300 );
 	FadeOutBGM( 0, 0, FALSE );
 	FadeOutBGM( 1, 0, FALSE );
 	FadeOutBGM( 2, 0, FALSE );
@@ -266,6 +270,7 @@
 	SetValidityOfInput( TRUE );
 	PlayBGM( 0, "semi", 120, 0 );
 	DrawSceneWithMask( "GR3", "maskup", 1, 0, 300 );
+	DrawBustshot( 2, "ri_se_de_a1", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
 
 	PlaySE(4, "S06/06/150601985", 128, 64);
 	OutputLine(NULL, "「…………古手家頭首として、今回の件はどこまで知ってるの？」",
@@ -283,9 +288,6 @@
 	OutputLine(NULL, "梨花は理解してくれたかどうかは、表情の読みにくい彼女からは掴みにくい。",
 		   NULL, " instead of as Mion Sonozaki.", Line_Normal);
 	ClearMessage();
-	DisableWindow();
-	DrawBustshotWithFiltering( 2, "Ri_DefA1", "maskright", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 10, 300, TRUE );
-	DisplayWindow();
 
 	PlaySE(4, "S06/05/150500027", 128, 64);
 	OutputLine(NULL, "「……富竹たちのことですか？」",
@@ -304,7 +306,7 @@
 		   NULL, " Although she looked immature, perhaps she truly was the head of the Furude family.", Line_Normal);
 	ClearMessage();
 	DisableWindow();
-	ChangeBustshot( 2, "Ri_KomaruA1", 200, TRUE );
+	DrawBustshot( 2, "ri1_KomaruA1_0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
 	DisplayWindow();
 
 	PlaySE(4, "S06/05/150500028", 128, 64);
@@ -353,7 +355,7 @@
 		   NULL, "That proved she belonged to the underside's network.", Line_Normal);
 	ClearMessage();
 	DisableWindow();
-	ChangeBustshot( 2, "Ri_DefA1", 200, TRUE );
+	DrawBustshot( 2, "ri_se_de_a1", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
 	DisplayWindow();
 
 	PlaySE(4, "S06/05/150500030", 128, 64);
@@ -430,8 +432,7 @@
 		   NULL, "Like father, like daughter...", Line_Normal);
 	ClearMessage();
 
-	DrawBustshot( 0, "Ri_KomaruA1", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 9, 0, FALSE );
-	DrawScene( "GR3", 300 );
+	DrawBustshot( 2, "ri1_FumanA1_0_zoom", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
 
 	OutputLine(NULL, "　私は古手梨花の胸倉を攻撃的に掴み上げる。",
 		   NULL, "I aggressively grabbed Rika Furude by the collar.", Line_Normal);
@@ -479,7 +480,7 @@
 		   NULL, " how serious a crime trespassing in the ritual storehouse is?!\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 	DisableWindow();
-	ChangeBustshot( 0, "Ri_DefA1", 200, TRUE );
+	DrawBustshot( 2, "ri1_DefA1_0_zoom", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
 	DisplayWindow();
 
 	PlaySE(4, "S06/05/150500033", 128, 64);
@@ -498,7 +499,7 @@
 		   NULL, " But those four people brought their filth in there.\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 	DisableWindow();
-	ChangeBustshot( 0, "Ri_KomaruA1", 200, TRUE );
+	DrawBustshot( 2, "ri1_FumanA1_0_zoom", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
 	DisplayWindow();
 
 	PlaySE(4, "S06/05/150500035", 128, 64);
@@ -587,7 +588,7 @@
 		   NULL, " Do you understand?\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 	DisableWindow();
-	ChangeBustshot( 0, "Ri_DefA1", 200, TRUE );
+	DrawBustshot( 2, "ri1_DefA1_0_zoom", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
 	DisplayWindow();
 
 	PlaySE(4, "S06/05/150500040", 128, 64);
@@ -600,7 +601,7 @@
 		   NULL, "\"Huh? What are you saying?\"", Line_Normal);
 	ClearMessage();
 	DisableWindow();
-	ChangeBustshot( 0, "Ri_KomaruA1", 200, TRUE );
+	DrawBustshot( 2, "ri1_FumanA1_0_zoom", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
 	DisplayWindow();
 
 	PlaySE(4, "S06/05/150500041", 128, 64);
@@ -628,7 +629,7 @@
 		   NULL, " That's not for you to decide! That's what Oyashiro-sama decides!!\"", Line_Normal);
 	ClearMessage();
 	DisableWindow();
-	ChangeBustshot( 0, "Ri_DefA1", 200, TRUE );
+	DrawBustshot( 2, "ri1_DefA1_0_zoom", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
 	DisplayWindow();
 
 	PlaySE(4, "S06/05/150500046", 128, 64);
@@ -670,7 +671,7 @@
 		   NULL, " That's why he cursed your father!!\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 	DisableWindow();
-	ChangeBustshot( 0, "Ri_KomaruA1", 200, TRUE );
+	DrawBustshot( 2, "ri1_FumanA1_0_zoom", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
 	DisplayWindow();
 
 	PlaySE(4, "S06/05/150500047", 128, 64);
@@ -751,7 +752,7 @@
 		   NULL, "\"This all happened because you wanted to change the storehouse's lock to something that was easier for you, right?\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 	DisableWindow();
-	DrawBustshotWithFiltering( 2, "Ri_KomaruA1", "maskup", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 10, 1300, TRUE );
+	DrawBustshot( 2, "ri1_FumanA1_0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
 	DisplayWindow();
 
 	PlaySE(4, "S06/05/150500050", 128, 64);
@@ -854,7 +855,7 @@
 	OutputLine(NULL, "　何か言い返したがっている顔だったが、言い返すときっとまた乱暴されると思って口にできない様子だった。",
 		   NULL, "She seemed to want to say something, but she was afraid that I might be rough with her again.", Line_Normal);
 	ClearMessage();
-	DrawSceneWithMask( "Sora", "maskdown", 1, 0, 300 );
+	DrawSceneWithMask( "Sora3", "maskdown", 1, 0, 300 );
 
 	OutputLine(NULL, "　………古手梨花が、本当に鬼婆のように、祟りシステムの司令塔の位置にいるのかは少し疑わしい。",
 		   NULL, "I doubted Rika Furude was actually at the top of the curse system, like the hag was.", Line_WaitForInput);
@@ -939,10 +940,6 @@
 	SetValidityOfInput( FALSE );
 	Wait( 1000 );
 	SetValidityOfInput( TRUE );
-	DrawSceneWithMask( "So4", "maskleft", 1, 0, 300 );
-	SetValidityOfInput( FALSE );
-	Wait( 1000 );
-	SetValidityOfInput( TRUE );
 	DrawSceneWithMask( "So1", "maskleft", 1, 0, 300 );
 	SetValidityOfInput( FALSE );
 	Wait( 1000 );
@@ -1003,7 +1000,7 @@
 	DrawSceneWithMask( "black", "maskdown", 1, 0, 1300 );
 	DrawFilm( 2, 0x99, 0x99, 0x99, 256, 0, 0, TRUE );
 
-	DrawScene( "Heya1", 400 );
+	DrawScene( "jsa7", 400 );
 
 	OutputLine(NULL, "　昨日、話をした時。",
 		   NULL, "When we talked yesterday...", Line_WaitForInput);
@@ -1052,7 +1049,7 @@
 	OutputLine(NULL, "……そういう対比？で言ったはずだ。",
 		   NULL, " That's what he meant.", Line_Normal);
 	ClearMessage();
-	DrawSceneWithMask( "Hi1", "maskup", 1, 0, 1300 );
+	DrawSceneWithMask( "hi2-", "maskup", 1, 0, 1300 );
 
 	OutputLine(NULL, "　つまり、公由たち村の重鎮にとっては、北条家は人間以下の虫けら。",
 		   NULL, "In other words, to the leaders of the village, including Kimiyoshi, members of the Houjou family are more contemptible than insects.", Line_WaitForInput);
@@ -1079,6 +1076,7 @@
 	OutputLine(NULL, "……そういう土壌を作り上げたこと。",
 		   NULL, " that excused murder in that name.", Line_Normal);
 	ClearMessage();
+	FadeFilm( 0, TRUE );
 	DrawScene( "black", 400 );
 
 	OutputLine(NULL, "　だとしたら。",
@@ -1087,17 +1085,21 @@
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
 	DisableWindow();
-	DrawBustshotWithFiltering( 0, "Ta_Def#", "maskup", 1, 0, 0, FALSE, 0, 0, 0, 0, 0, 9, 300, TRUE );
+	DrawBustshot( 1, "tm_si_de_a1", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 200, TRUE );
+	DrawBustshot( 3, "ta_si_de_a1", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
 	DisplayWindow();
 
 	OutputLine(NULL, "　…………今年の犠牲者である鷹野さんたちが、祭具殿侵犯という最大級の罪を犯さなかったら、",
 		   NULL, "If Takano-san and Tomitake-san hadn't committed the serious crime of trespassing in the ritual storehouse,", Line_WaitForInput);
+	DrawScene( "black", 1000 );
+	DrawBustshot( 1, "tetu_1_0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 200, TRUE );
+	DrawBustshot( 3, "sa1a_DefA1_0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
+	
 	OutputLine(NULL, "…今年の祟りは、北条家の最後の生き残り、北条沙都子と、興宮に姿を晦ましてるらしい北条鉄平の２人だったのかもしれない。",
 		   NULL, " then Satoko Houjou, the last survivor of the Houjou family, and Teppei Houjou, who has been hiding in Okinomiya, might have been the victims.", Line_Normal);
 	ClearMessage();
-	DisableWindow();
-	FadeBustshotWithFiltering( 0, "maskright" , 1, FALSE, 0, 0, 300, TRUE );
-	DisplayWindow();
+	DrawScene( "black", 1000 );
+	DrawBustshot( 2, "sa1a_DefA1_0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
 
 	OutputLine(NULL, "　……北条沙都子。",
 		   NULL, "Satoko Houjou.", Line_Normal);
@@ -1120,7 +1122,6 @@
 	OutputLine(NULL, "……悟史くんは叔母殺しにまで駆り立てることはなかった。",
 		   NULL, " Satoshi-kun wouldn't have killed his aunt.", Line_Normal);
 	ClearMessage();
-	FadeFilm( 0, TRUE );
 
 	PlaySE( 0, "s_furu", 128, 64 );
 	SetValidityOfInput( FALSE );
@@ -1155,7 +1156,7 @@
 	OutputLine(NULL, "　そう、北条家の人間なら、誰が犠牲になってもよかったんだ。",
 		   NULL, "It didn't matter which member of the family died.", Line_Normal);
 	ClearMessage();
-	DrawScene( "Ho1_Houjouke", 400 );
+	DrawScene( "Ho1_Houjouke--", 400 );
 
 	OutputLine(NULL, "　意地悪叔母は近所でもとにかく評判が悪かったそうだ。",
 		   NULL, "His aunt had a terrible reputation in the neighborhood.", Line_WaitForInput);
@@ -1178,7 +1179,7 @@
 	OutputLine(NULL, "　それから、その祟りを鎮めるために北条をもう１人。",
 		   NULL, "There needed to be another Houjou to calm the curse.", Line_Normal);
 	ClearMessage();
-	DrawSceneWithMask( "Mati1", "maskleft", 1, 0, 300 );
+	DrawSceneWithMask( "Mati2-", "maskleft", 1, 0, 300 );
 
 	OutputLine(NULL, "　叔父の方は興宮のどこかで愛人と暮らしているという噂だ。",
 		   NULL, "According to a rumor, their uncle was living somewhere in Okinomiya with his lover.", Line_WaitForInput);
@@ -1197,9 +1198,8 @@
 	ClearMessage();
 	DrawSceneWithMask( "black", "maskdown", 1, 0, 300 );
 	DisableWindow();
-	DrawBustshot( 2, "Sa_MuhyouA1", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 1000, FALSE );
-	DrawBustshot( 0, "Sato_Def1", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 9, 1000, TRUE );
-
+	DrawBustshot( 1, "sato1_Def1_0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 200, TRUE );
+	DrawBustshot( 3, "sa1a_MuhyouA1_0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
 	DisplayWindow();
 
 	OutputLine(NULL, "　だったら、腹中に住んでいると言ってもいい悟史くんと沙都子が標的に選ばれる。",
@@ -1251,8 +1251,8 @@
 	SetValidityOfInput( FALSE );
 	Wait( 1500 );
 	SetValidityOfInput( TRUE );
-	DrawBustshot( 0, "Sato_Komaru", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 9, 0, FALSE );
 	DrawScene( "black", 400 );
+	DrawBustshot( 2, "sato1_komaru_0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
 	SetSpeedOfMessage( FALSE, 0 );
 
 	OutputLine(NULL, "　悟史くんは一夜にして、ひとりぼっち。",
@@ -1388,7 +1388,7 @@
 	OutputLine(NULL, "その漏れ出してくる情報の源流や、…さらにその奥に潜んで渦巻くものにまでは至れない。",
 		   NULL, " There's no way for him to find the source of it.", Line_Normal);
 	ClearMessage();
-	DrawScene( "Sora2", 400 );
+	DrawScene( "black", 400 );
 
 	OutputLine(NULL, "　今夜の遅くになったら、また前原圭一に電話をしよう。",
 		   NULL, "I'd call Keiichi Maebara again later tonight.", Line_WaitForInput);
@@ -1544,10 +1544,6 @@
 	Wait( 2000 );
 	SetValidityOfInput( TRUE );
 	DrawSceneWithMask( "black", "maskdown", 1, 0, 1300 );
-	SetValidityOfInput( FALSE );
-	Wait( 1000 );
-	SetValidityOfInput( TRUE );
-	DrawSceneWithMask( "Ima1", "maskleft", 1, 0, 300 );
 	SetSpeedOfMessage( FALSE, 0 );
 
 	OutputLine(NULL, "　外は夕方の空から夜の空に変わろうとしていた。",
