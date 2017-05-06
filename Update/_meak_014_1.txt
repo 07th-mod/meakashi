@@ -544,7 +544,8 @@
 	ClearMessage();
 	DrawBustshotWithFiltering( 0, "oi_si_de_a1", "maskleft", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 10, 0, FALSE );
 	DrawSceneWithMask( "Ke_Ky1", "maskdown", 1, 0, 300 );
-PlaySE(4, "S06/11/150700297", 128, 64);
+
+	PlaySE(4, "s06/11/150700297", 128, 64);
 	OutputLine(NULL, "「…こりゃあ個人的な意見ですよ？",
 		   NULL, "\"...This is just what I personally feel, okay?", Line_WaitForInput);
 	PlaySE(4, "s06/11/150700298", 128, 64);
@@ -1689,7 +1690,6 @@ PlaySE(4, "S06/11/150700297", 128, 64);
 
 	OutputLine(NULL, "　その中で、悟史くんの生死に迫れたなら。",
 		   NULL, "I wanted to know if he was still alive.", Line_WaitForInput);
-	PlaySE(4, "s06/03/150300336", 128, 64);
 	OutputLine(NULL, "……………………。",
 		   NULL, "...............", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -2594,7 +2594,7 @@ PlaySE(4, "S06/11/150700297", 128, 64);
 		   NULL, "\"...You told me", Line_WaitForInput);
 	PlaySE(4, "s06/06/150601239", 128, 64);
 	OutputLine(NULL, "毎年の事件で１人が祟りで死に、１人が生贄にされて失踪すると。」",
-		   NULL, " that one person dies because of the curse and another person is sacrified and disappears, right?\"", Line_WaitForInput);
+		   NULL, " that one person dies because of the curse and another person is sacrificed and disappears, right?\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
