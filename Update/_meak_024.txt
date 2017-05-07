@@ -386,7 +386,7 @@
 	DrawBustshot( 1, "kei1_Ikari1_0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 200, TRUE );
 	DisplayWindow();
 
-	PlaySE(4, "s06/06/150601947", 128, 64);
+	PlaySE(4, "s06/01/150100347", 128, 64);
 	OutputLine(NULL, "「……魅音。",
 		   NULL, "\"...Mion.", Line_WaitForInput);
 	PlaySE(4, "s06/01/150100348", 128, 64);
@@ -462,7 +462,7 @@
 	OutputLine(NULL, "　だからほら。",
 		   NULL, "Look, there.", Line_WaitForInput);
 	OutputLine(NULL, "…あんたらを煙に巻いて誤魔化そうと、鬼が首をもたげてきた…。",
-		   NULL, " The demon is trying to to deceive you...", Line_Normal);
+		   NULL, " The demon is trying to deceive you...", Line_Normal);
 	ClearMessage();
 	DrawScene( "white", 400 );
 	DrawScene( "Heya2", 400 );
@@ -1699,7 +1699,7 @@
 
 	PlaySE(4, "s06/06/150602544", 128, 64);
 	OutputLine(NULL, "客がいなきゃ意味がない。」",
-		   NULL, " It wouldn't make sense if there were no guests.\"", Line_Normal);
+		   NULL, "It wouldn't make sense if there were no guests.\"", Line_Normal);
 	ClearMessage();
 	DrawBustshot( 2, "kei1_Def2_0--", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
 
@@ -1722,7 +1722,7 @@
 	DrawScene( "JSA7", 400 );
 
 	OutputLine(NULL, "　………これが、あのばかで軽薄な前原圭一なの…？",
-		   NULL, "Was this really the superficial Keiichi Maebara I knew?", Line_ContinueAfterTyping);
+		   NULL, "Was this really the superficial Keiichi Maebara I knew? ", Line_ContinueAfterTyping);
 	SetValidityOfInput( FALSE );
 	Wait( 1000 );
 	SetValidityOfInput( TRUE );
@@ -3777,7 +3777,7 @@
 	DrawBustshot( 2, "oryou_Shinken_0+", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
 
 	OutputLine(NULL, "　ダム現場の監督のバラバラ殺人が見つかったとき。",
-		   NULL, "When the dam construction site manger was killed...", Line_WaitForInput);
+		   NULL, "When the dam construction site manager was killed...", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 	DrawBustshot( 2, "oryou_Warai_0+", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
 
