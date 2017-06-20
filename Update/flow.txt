@@ -1,4 +1,4 @@
-﻿
+
 void main()
 {
 	SetValidityOfSaving( FALSE );
@@ -46,7 +46,7 @@ void Title()
 	Wait(1500);
 	//MoveSprite( 10, 0, -100, 0, 0, 0, 5, 0, 1500, TRUE );
 
-	DrawScene("white", 1000);	
+	DrawScene("white", 1000);
 
 	PlayBGM( 2, "higurashi", 128, 0 );
 
@@ -107,7 +107,7 @@ void ChapterPreview()
 	FadeOutBGM( 2, 1000, FALSE );
 
 	DrawScene("black", 1000);
-	
+
 	CallSection("Title");
 }
 
@@ -315,7 +315,7 @@ void Game()
 
 		StoreValueToLocalWork(NewTipsStart, 7);
 		StoreValueToLocalWork(NewTipsCount, 2);
-		
+
 		StoreValueToLocalWork( ChapterNumber, 7 );
 		SavePoint("Ch.7 終わり", "End of Chapter 7");
 
