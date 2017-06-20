@@ -1,4 +1,4 @@
-﻿void main()
+void main()
 {
 	FadeOutBGM( 0, 0, FALSE );
 	FadeOutBGM( 1, 0, FALSE );
@@ -20,20 +20,17 @@
 		   NULL, "June, 1983...", Line_ContinueAfterTyping);
 	FadeOutBGM( 1, 0, FALSE );
 	DrawBustshot( 19, "no_data", 0, 100, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, TRUE );
-	SetValidityOfInput( FALSE );
-	Wait( 2000 );
-	SetValidityOfInput( TRUE );
-	PlayBGM( 1, "type", 120, 0 );
+	OutputLineAll(NULL, "", Line_WaitForInput);
 	OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping);
+
+	PlayBGM( 1, "type", 120, 0 );
 
 
 	OutputLine(NULL, "　ＸＸ県鹿骨市雛見沢村で、連続失踪事件が発生した。",
 		   NULL, "There has been a series of disappearances in Hinamizawa Village, Shishibone City, XX Prefecture.", Line_ContinueAfterTyping);
 	FadeOutBGM( 1, 0, FALSE );
 	DrawBustshot( 19, "no_data", 0, 100, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, TRUE );
-	SetValidityOfInput( FALSE );
-	Wait( 2000 );
-	SetValidityOfInput( TRUE );
+	OutputLineAll(NULL, "", Line_Normal);
 	ClearMessage();
 
 	PlayBGM( 1, "type", 120, 0 );
@@ -42,9 +39,7 @@
 		   NULL, "The suspect is Mion Sonozaki (1X years old).", Line_ContinueAfterTyping);
 	FadeOutBGM( 1, 0, FALSE );
 	DrawBustshot( 19, "no_data", 0, 100, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, TRUE );
-	SetValidityOfInput( FALSE );
-	Wait( 2000 );
-	SetValidityOfInput( TRUE );
+	OutputLineAll(NULL, "", Line_WaitForInput);
 	OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping);
 
 	PlayBGM( 1, "type", 120, 0 );
@@ -53,9 +48,7 @@
 		   NULL, "Allegedly, she abducted five Hinamizawan residents (Oryou Sonozaki, Shion Sonozaki, Kiichirou Kimiyoshi, Rika Furude, and Satoko Houjou) and imprisoned them from June 19th through the 21st...", Line_ContinueAfterTyping);
 	FadeOutBGM( 1, 0, FALSE );
 	DrawBustshot( 19, "no_data", 0, 100, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, TRUE );
-	SetValidityOfInput( FALSE );
-	Wait( 4000 );
-	SetValidityOfInput( TRUE );
+	OutputLineAll(NULL, "", Line_Normal);
 	ClearMessage();
 
 	PlayBGM( 1, "type", 120, 0 );
@@ -64,9 +57,7 @@
 		   NULL, "Preliminary investigations on the incident were delayed at the time due to insufficient evidence, but by chance, the case was solved rather abruptly.", Line_ContinueAfterTyping);
 	FadeOutBGM( 1, 0, FALSE );
 	DrawBustshot( 19, "no_data", 0, 100, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, TRUE );
-	SetValidityOfInput( FALSE );
-	Wait( 2000 );
-	SetValidityOfInput( TRUE );
+	OutputLineAll(NULL, "", Line_WaitForInput);
 	OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping);
 
 	DrawScene( "So1--", 400 );
@@ -76,9 +67,7 @@
 		   NULL, "On the morning of the 22nd, a vehicle patrolling the Sonozaki property heard screams from inside and rushed in as an emergency measure.", Line_ContinueAfterTyping);
 	FadeOutBGM( 1, 0, FALSE );
 	DrawBustshot( 19, "no_data", 0, 100, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, TRUE );
-	SetValidityOfInput( FALSE );
-	Wait( 2000 );
-	SetValidityOfInput( TRUE );
+	OutputLineAll(NULL, "", Line_WaitForInput);
 	OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping);
 
 	DrawScene( "sgtitle990000-", 400 );
@@ -90,18 +79,15 @@
 
 	FadeOutBGM( 1, 0, FALSE );
 	DrawBustshot( 19, "no_data", 0, 100, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, TRUE );
-	SetValidityOfInput( FALSE );
-	Wait( 2000 );
-	SetValidityOfInput( TRUE );
+	OutputLineAll(NULL, "", Line_WaitForInput);
+
 	PlayBGM( 1, "type", 120, 0 );
 
 	OutputLine(NULL, "　容疑者は現場より逃走する。",
 		   NULL, "The suspect fled the scene.", Line_ContinueAfterTyping);
 	FadeOutBGM( 1, 0, FALSE );
 	DrawBustshot( 19, "no_data", 0, 100, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, TRUE );
-	SetValidityOfInput( FALSE );
-	Wait( 4000 );
-	SetValidityOfInput( TRUE );
+	OutputLineAll(NULL, "", Line_Normal);
 	ClearMessage();
 
 	DrawScene( "black", 1000 );
@@ -111,31 +97,25 @@
 		   NULL, "We found hair, pieces of skin, and blood of the four missing people (Oryou Sonozaki, Kiichirou Kimiyoshi, Rika Furude, and Satoko Houjou) in the torture room that was discovered in the basement of the outbuilding on the Sonozaki family property. Supposedly that's where they were killed.", Line_ContinueAfterTyping);
 	FadeOutBGM( 1, 0, FALSE );
 	DrawBustshot( 19, "no_data", 0, 100, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, TRUE );
-	SetValidityOfInput( FALSE );
-	Wait( 2000 );
-	SetValidityOfInput( TRUE );
+	OutputLineAll(NULL, "", Line_WaitForInput);
 	OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping);
 
 	PlayBGM( 1, "type", 120, 0 );
 
 	OutputLine(NULL, "　拷問室内で失踪者たちが拷問を受けたものと断定した。",
 		   NULL, "We concluded that the victims were tortured in that torture room.", Line_ContinueAfterTyping);
-	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
 	FadeOutBGM( 1, 0, FALSE );
 	DrawBustshot( 19, "no_data", 0, 100, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, TRUE );
-	SetValidityOfInput( FALSE );
-	Wait( 2000 );
-	SetValidityOfInput( TRUE );
+	OutputLineAll(NULL, "", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 	PlayBGM( 1, "type", 120, 0 );
 
 	OutputLine(NULL, "　ただし、その遺体は依然、発見されていない。",
 		   NULL, "However, their remains have still not been found.", Line_ContinueAfterTyping);
 	FadeOutBGM( 1, 0, FALSE );
 	DrawBustshot( 19, "no_data", 0, 100, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, TRUE );
-	SetValidityOfInput( FALSE );
-	Wait( 2000 );
-	SetValidityOfInput( TRUE );
+	OutputLineAll(NULL, "", Line_Normal);
 	ClearMessage();
 
 	PlayBGM( 1, "type", 120, 0 );
@@ -144,31 +124,25 @@
 		   NULL, "According to one of her imprisoned classmates' advice, the bodies should be somewhere in the basement of the outbuilding where the torture took place. However, nothing has been uncovered as of yet, including the escape route the suspect took.", Line_ContinueAfterTyping);
 	FadeOutBGM( 1, 0, FALSE );
 	DrawBustshot( 19, "no_data", 0, 100, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, TRUE );
-	SetValidityOfInput( FALSE );
-	Wait( 4000 );
-	SetValidityOfInput( TRUE );
+	OutputLineAll(NULL, "", Line_Normal);
 	ClearMessage();
 
 	PlayBGM( 1, "type", 120, 0 );
 
 	OutputLine(NULL, "　また、ほのめかしたとされる近年の連続怪死事件への関与も捜査が続けられているが、",
 		   NULL, "In addition, investigations continue regarding any possible connection to the series of mysterious deaths in recent years...", Line_ContinueAfterTyping);
-	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
 	FadeOutBGM( 1, 0, FALSE );
 	DrawBustshot( 19, "no_data", 0, 100, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, TRUE );
-	SetValidityOfInput( FALSE );
-	Wait( 2000 );
-	SetValidityOfInput( TRUE );
+	OutputLineAll(NULL, "", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 	PlayBGM( 1, "type", 120, 0 );
 
 	OutputLine(NULL, "　園崎魅音が直接、または間接的に関わったという証拠は発見されていない。",
 		   NULL, "...But no evidence that Mion Sonozaki was involved, either directly or indirectly, has been found.", Line_ContinueAfterTyping);
 	FadeOutBGM( 1, 0, FALSE );
 	DrawBustshot( 19, "no_data", 0, 100, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, TRUE );
-	SetValidityOfInput( FALSE );
-	Wait( 2000 );
-	SetValidityOfInput( TRUE );
+	OutputLineAll(NULL, "", Line_WaitForInput);
 	OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping);
 
 	PlayBGM( 1, "type", 120, 0 );
@@ -177,9 +151,7 @@
 		   NULL, "There are still many unclear points as to the motive behind the incident, and as those of the Sonozaki family and the residents of Hinamizawa have been extremely uncooperative in assisting us, we expect to require a long time to clarify them.", Line_ContinueAfterTyping);
 	FadeOutBGM( 1, 0, FALSE );
 	DrawBustshot( 19, "no_data", 0, 100, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, TRUE );
-	SetValidityOfInput( FALSE );
-	Wait( 4000 );
-	SetValidityOfInput( TRUE );
+	OutputLineAll(NULL, "", Line_Normal);
 	ClearMessage();
 
 	DrawScene( "ke1+", 1000 );
@@ -189,9 +161,7 @@
 		   NULL, "The opinion of a local officer knowledgeable about the region is that this may have been a lynching—an internal form of punishing sacrilegious acts carried out against the beliefs of Hinamizawa Village.", Line_ContinueAfterTyping);
 	FadeOutBGM( 1, 0, FALSE );
 	DrawBustshot( 19, "no_data", 0, 100, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, TRUE );
-	SetValidityOfInput( FALSE );
-	Wait( 2000 );
-	SetValidityOfInput( TRUE );
+	OutputLineAll(NULL, "", Line_WaitForInput);
 	OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping);
 
 	PlayBGM( 1, "type", 120, 0 );
@@ -200,9 +170,7 @@
 		   NULL, "It is clear that these incidents are particularly rooted in this region, and the prefectural police department has ordered a cautious investigation.", Line_ContinueAfterTyping);
 	FadeOutBGM( 1, 0, FALSE );
 	DrawBustshot( 19, "no_data", 0, 100, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, TRUE );
-	SetValidityOfInput( FALSE );
-	Wait( 4000 );
-	SetValidityOfInput( TRUE );
+	OutputLineAll(NULL, "", Line_Normal);
 	ClearMessage();
 
 	DrawScene( "Sinryo_soto5", 1000 );
@@ -212,9 +180,7 @@
 		   NULL, "We anticipated gaining valuable clues from the missing person believed to have been imprisoned for the longest time, Shion Sonozaki—the suspect's younger sister...", Line_ContinueAfterTyping);
 	FadeOutBGM( 1, 0, FALSE );
 	DrawBustshot( 19, "no_data", 0, 100, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, TRUE );
-	SetValidityOfInput( FALSE );
-	Wait( 2000 );
-	SetValidityOfInput( TRUE );
+	OutputLineAll(NULL, "", Line_WaitForInput);
 	OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping);
 
 	PlayBGM( 1, "type", 120, 0 );
@@ -223,9 +189,7 @@
 		   NULL, "However, the incident has left such serious mental aftereffects that she has not been in a state of mind to properly answer any questions about what she knows.", Line_ContinueAfterTyping);
 	FadeOutBGM( 1, 0, FALSE );
 	DrawBustshot( 19, "no_data", 0, 100, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, TRUE );
-	SetValidityOfInput( FALSE );
-	Wait( 2000 );
-	SetValidityOfInput( TRUE );
+	OutputLineAll(NULL, "", Line_WaitForInput);
 	OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping);
 
 	PlayBGM( 1, "type", 120, 0 );
@@ -234,9 +198,7 @@
 		   NULL, "The psychiatrist concluded that she is in a temporary state of shock, but as of today, she has yet to show any improvement.", Line_ContinueAfterTyping);
 	FadeOutBGM( 1, 0, FALSE );
 	DrawBustshot( 19, "no_data", 0, 100, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, TRUE );
-	SetValidityOfInput( FALSE );
-	Wait( 4000 );
-	SetValidityOfInput( TRUE );
+	OutputLineAll(NULL, "", Line_Normal);
 	ClearMessage();
 
 	SetSpeedOfMessage( FALSE, 0 );
