@@ -851,11 +851,12 @@ void main()
 		   NULL, " You don't have any idea what he has to go through to protect you, do you?!!!", Line_ContinueAfterTyping);
 	PlaySE( 0, "s_tataku", 128, 64 );
 
-	OutputLineAll(NULL, "", Line_WaitForInput);
+	OutputLineAll(NULL, " ", Line_ModeSpecific);
 
 	PlaySE(4, "s06/06/150600647", 128, 64);
+	if (AdvMode) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　わかってるの？！",
-		   NULL, " Do you understand that?!", Line_ContinueAfterTyping);
+		   NULL, "Do you understand that?!", Line_ContinueAfterTyping);
 
 	PlaySE( 0, "s_furu", 128, 64 );
 

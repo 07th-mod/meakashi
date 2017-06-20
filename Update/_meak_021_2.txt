@@ -1930,11 +1930,12 @@ void main()
 		   NULL, " But you weren't satisfied with just that. You became even more jealous.", Line_ContinueAfterTyping);
 	PlaySE( 0, "s_Down", 128, 64 );
 
-	OutputLineAll(NULL, "", Line_WaitForInput);
+	OutputLineAll(NULL, " ", Line_ModeSpecific);
 
 	PlaySE(4, "s06/06/150602112", 128, 64);
+	if (AdvMode) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "そしてあの夜の意味を自分だけ知り、私から奪ったんだ、",
-		   NULL, " And that night, you knew what was going on, and took Mion from me.", Line_ContinueAfterTyping);
+		   NULL, "And that night, you knew what was going on, and took Mion from me.", Line_ContinueAfterTyping);
 	PlaySE( 0, "s_Down", 128, 64 );
 	DrawScene( "aka1", 400 );
 
@@ -1978,11 +1979,12 @@ void main()
 	PlaySE( 0, "s_Down", 128, 64 );
 	DrawScene( "aka2", 400 );
 
-	OutputLineAll(NULL, "", Line_WaitForInput);
+	OutputLineAll(NULL, " ", Line_ModeSpecific);
 
 	PlaySE(4, "s06/06/150602118", 128, 64);
+	if (AdvMode) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　魅音を騙るな偽者がああぁ！！！」",
-		   NULL, " Don't call yourself Mion, you impostor!!!\"", Line_ContinueAfterTyping);
+		   NULL, "Don't call yourself Mion, you impostor!!!\"", Line_ContinueAfterTyping);
 	PlaySE( 0, "s_Down", 128, 64 );
 	OutputLineAll(NULL, "", Line_Normal);
 
