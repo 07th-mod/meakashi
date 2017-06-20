@@ -1,5 +1,13 @@
 void main()
 {
+	int AdvMode;
+	AdvMode = 1;
+	int Line_ModeSpecific;
+	if (AdvMode) {
+		Line_ModeSpecific = Line_Normal;
+	} else {
+		Line_ModeSpecific = Line_WaitForInput;
+	}
 	EnableJumpingOfReturnIcon();
 	FadeOutBGM( 0, 0, FALSE );
 	FadeOutBGM( 1, 0, FALSE );
@@ -13,6 +21,7 @@ void main()
 	DrawScene( "Mati4", 400 );
 
 	PlaySE(4, "s20/06/440600033", 128, 64);
+	if (AdvMode) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「ねぇ、教えてよ母さん。",
 		   NULL, "\"Hey, mom. Tell me.", Line_WaitForInput);
 	OutputLine(NULL, "鬼婆とどういう喧嘩をしたわけ？",
@@ -23,22 +32,25 @@ void main()
 	ClearMessage();
 
 	PlaySE(4, "s20/16/442200001", 128, 64);
+	if (AdvMode) { OutputLine("<color=#f5e6d3>茜</color>", NULL, "<color=#f5e6d3>Akane</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「お前も下らないことに興味が尽きないね。",
 		   NULL, "\"You're so nosy about everything...", Line_WaitForInput);
 	OutputLine(NULL, "……ま、そろそろ話してもわからない歳じゃないか。",
 		   NULL, " Well, I guess you're old enough to know.", Line_WaitForInput);
 	PlaySE(4, "s20/16/442200002", 128, 64);
 	OutputLine(NULL, "実はね、父さんと結婚したいって言ったらね、駄目だって言われちゃったのよ。」",
-		   NULL, " She objected when I told her I wanted to marry your father.\"", Line_WaitForInput);
-	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+		   NULL, " She objected when I told her I wanted to marry your father.\"", Line_ModeSpecific);
+	if (AdvMode) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	PlaySE(4, "s20/06/440600035", 128, 64);
+	if (AdvMode) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「へ？　何それぇ？！」",
 		   NULL, "\"Eh? What?!\"", Line_Normal);
 	ClearMessage();
 	DrawBustshot( 1, "aka_Warai_0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 200, TRUE );
 
 	PlaySE(4, "s20/16/442200003", 128, 64);
+	if (AdvMode) { OutputLine("<color=#f5e6d3>茜</color>", NULL, "<color=#f5e6d3>Akane</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「私も当時はだいぶ斜な生き方してて呆れられててね。",
 		   NULL, "\"I was living a very unseemly life back then.", Line_WaitForInput);
 	OutputLine(NULL, "その挙句、連れて来た男が任侠者だったわけでしょ。",
@@ -57,9 +69,10 @@ void main()
 	SetValidityOfInput( TRUE );
 	SetSpeedOfMessage( FALSE, 0 );
 	OutputLine(NULL, "そんなの知ったこっかいこんの糞婆ァ！",
-		   NULL, " and I said, 'screw your decisions, you fucking virago!'", Line_WaitForInput);
+		   NULL, " and I said, 'screw your decisions, you fucking virago!' ", Line_ModeSpecific);
+	if (AdvMode) { OutputLine("<color=#f5e6d3>茜</color>", NULL, "<color=#f5e6d3>Akane</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　この場で斬り伏せたらあッて大立ち回りよ。",
-		   NULL, " So then we both tried to cut each other down on the spot.", Line_WaitForInput);
+		   NULL, "So then we both tried to cut each other down on the spot.", Line_WaitForInput);
 
 	DrawBustshot( 1, "aka_Def_0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 200, TRUE );
 
@@ -71,10 +84,11 @@ void main()
 
 	PlaySE(4, "s20/16/442200007", 128, 64);
 	OutputLine(NULL, "あっはっはっは。」",
-		   NULL, " Aha ha ha ha!\"", Line_WaitForInput);
-	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+		   NULL, " Aha ha ha ha!\"", Line_ModeSpecific);
+	if (AdvMode) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	PlaySE(4, "s20/06/440600036", 128, 64);
+	if (AdvMode) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「ひぇー…！",
 		   NULL, "\"Eeek...!", Line_WaitForInput);
 	OutputLine(NULL, "　鬼婆と殺陣を演じたわけ？！",
@@ -86,6 +100,7 @@ void main()
 	DrawBustshot( 1, "aka_Def_0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 200, TRUE );
 
 	PlaySE(4, "s20/16/442200008", 128, 64);
+	if (AdvMode) { OutputLine("<color=#f5e6d3>茜</color>", NULL, "<color=#f5e6d3>Akane</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「まぁねー。",
 		   NULL, "\"Well,", Line_WaitForInput);
 	OutputLine(NULL, "母さん、こう見えても若い頃は武闘派だしー。",
@@ -95,10 +110,11 @@ void main()
 		   NULL, " Both she and I held high ranks in kendo, so yes, it was quite the show.", Line_WaitForInput);
 	PlaySE(4, "s20/16/442200010", 128, 64);
 	OutputLine(NULL, "周りはオロオロ、あー面白かった。」",
-		   NULL, " Everyone nearby was terrified. Ah, that was fun.\"", Line_WaitForInput);
-	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+		   NULL, " Everyone nearby was terrified. Ah, that was fun.\"", Line_ModeSpecific);
+	if (AdvMode) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	PlaySE(4, "s20/06/440600038", 128, 64);
+	if (AdvMode) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「なるほどねぇ……。",
 		   NULL, "\"I see......", Line_WaitForInput);
 	OutputLine(NULL, "その騒ぎのせいで勘当されたわけ？」",
@@ -106,6 +122,7 @@ void main()
 	ClearMessage();
 
 	PlaySE(4, "s20/16/442200011", 128, 64);
+	if (AdvMode) { OutputLine("<color=#f5e6d3>茜</color>", NULL, "<color=#f5e6d3>Akane</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「そうよ、勘当上等！",
 		   NULL, "\"That's right. I was happy for it!", Line_WaitForInput);
 	OutputLine(NULL, "　遠慮なく勘当もらって父さんと籍を入れたわよ。",
@@ -115,10 +132,11 @@ void main()
 		   NULL, " Well, I was forced to remove my fingernails in atonement, though.", Line_WaitForInput);
 	PlaySE(4, "s20/16/442200013", 128, 64);
 	OutputLine(NULL, "ほら、左手の爪だけ歪でしょ。」",
-		   NULL, " See how the fingernails of my left hand look ugly?\"", Line_WaitForInput);
-	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+		   NULL, " See how the fingernails of my left hand look ugly?\"", Line_ModeSpecific);
+	if (AdvMode) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	PlaySE(4, "s20/06/440600039", 128, 64);
+	if (AdvMode) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「うわぁ……。",
 		   NULL, "\"Wow...", Line_WaitForInput);
 	OutputLine(NULL, "それで鬼婆と母さんはずーっと仲が悪いわけだね…。」",
@@ -127,16 +145,18 @@ void main()
 	DrawBustshot( 1, "aka_Warai_0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 200, TRUE );
 
 	PlaySE(4, "s20/16/442200014", 128, 64);
+	if (AdvMode) { OutputLine("<color=#f5e6d3>茜</color>", NULL, "<color=#f5e6d3>Akane</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「あははは、詩音、本当はね？",
 		   NULL, "\"Ahahaha, you know what, Shion?", Line_WaitForInput);
 	OutputLine(NULL, "　そんなことないの。",
 		   NULL, " That's not actually true.", Line_WaitForInput);
 	PlaySE(4, "s20/16/442200015", 128, 64);
 	OutputLine(NULL, "私と鬼婆さまはちゃんと仲がいいんだよ？」",
-		   NULL, " Our relationship is actually pretty good.\"", Line_WaitForInput);
-	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+		   NULL, " Our relationship is actually pretty good.\"", Line_ModeSpecific);
+	if (AdvMode) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	PlaySE(4, "s20/06/440600040", 128, 64);
+	if (AdvMode) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「…えーーー！？",
 		   NULL, "\"...What?!", Line_WaitForInput);
 	OutputLine(NULL, "　うっそだぁ！」",
@@ -145,6 +165,7 @@ void main()
 	DrawBustshot( 1, "aka_Def_0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 200, TRUE );
 
 	PlaySE(4, "s20/16/442200016", 128, 64);
+	if (AdvMode) { OutputLine("<color=#f5e6d3>茜</color>", NULL, "<color=#f5e6d3>Akane</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「鬼婆さまには面倒な世間体があるからね。",
 		   NULL, "\"She has to maintain the family's reputation,", Line_WaitForInput);
 	OutputLine(NULL, "一度でも勘当した以上、甘くすると示しがつかないし。",
@@ -154,40 +175,45 @@ void main()
 		   NULL, " and accordingly, I lay low at the family councils.", Line_WaitForInput);
 	PlaySE(4, "s20/16/442200018", 128, 64);
 	OutputLine(NULL, "たまーに遊びに行ってのんびりお茶とか飲んでるよ。」",
-		   NULL, " But I visit her every now and then, and we have tea together.\"", Line_WaitForInput);
-	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+		   NULL, " But I visit her every now and then, and we have tea together.\"", Line_ModeSpecific);
+	if (AdvMode) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	PlaySE(4, "s20/06/440600041", 128, 64);
+	if (AdvMode) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「うそだーーーー、信じらんないねぇ…！」",
 		   NULL, "\"I can't believe it...!\"", Line_Normal);
 	ClearMessage();
 
 	PlaySE(4, "s20/16/442200019", 128, 64);
+	if (AdvMode) { OutputLine("<color=#f5e6d3>茜</color>", NULL, "<color=#f5e6d3>Akane</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「実はね、内緒よ？",
 		   NULL, "\"This is just between you and me, okay?", Line_WaitForInput);
 	OutputLine(NULL, "　鬼婆さまもね、その昔、けじめで爪を剥いだことあるんだってよー？",
 		   NULL, " She removed her fingernails in atonement a long time ago herself.", Line_WaitForInput);
 	PlaySE(4, "s20/16/442200020", 128, 64);
 	OutputLine(NULL, "　今度、会ったら左手の爪をよく見てごらん。」",
-		   NULL, " Look carefully at her hand the next time you see her.\"", Line_WaitForInput);
-	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+		   NULL, " Look carefully at her hand the next time you see her.\"", Line_ModeSpecific);
+	if (AdvMode) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	PlaySE(4, "s20/06/440600042", 128, 64);
+	if (AdvMode) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「ひぇー……！",
 		   NULL, "\"Whaaat...?!", Line_WaitForInput);
 	OutputLine(NULL, "　鬼婆は何をやったわけ？」",
-		   NULL, " What did she do?\"", Line_WaitForInput);
-	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+		   NULL, " What did she do?\"", Line_ModeSpecific);
+	if (AdvMode) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 	DrawBustshot( 1, "aka_Warai_0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 200, TRUE );
 
 	PlaySE(4, "s20/16/442200021", 128, 64);
+	if (AdvMode) { OutputLine("<color=#f5e6d3>茜</color>", NULL, "<color=#f5e6d3>Akane</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「さーーーーねーーーーー！",
 		   NULL, "\"Beats me!", Line_WaitForInput);
 	OutputLine(NULL, "　母さんは知ぃらない☆」",
-		   NULL, " I don't have a clue☆!\"", Line_WaitForInput);
-	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+		   NULL, " I don't have a clue☆!\"", Line_ModeSpecific);
+	if (AdvMode) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	PlaySE(4, "s20/06/440600043", 128, 64);
+	if (AdvMode) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「わ、その顔は知ってるなぁ？！",
 		   NULL, "\"Hey, you do so have one! It's all over your face!", Line_WaitForInput);
 	OutputLine(NULL, "　教えてよー！」",

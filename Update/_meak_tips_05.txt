@@ -1,5 +1,13 @@
 void main()
 {
+	int AdvMode;
+	AdvMode = 1;
+	int Line_ModeSpecific;
+	if (AdvMode) {
+		Line_ModeSpecific = Line_Normal;
+	} else {
+		Line_ModeSpecific = Line_WaitForInput;
+	}
 	EnableJumpingOfReturnIcon();
 	FadeOutBGM( 0, 0, FALSE );
 	FadeOutBGM( 1, 0, FALSE );
@@ -10,21 +18,25 @@ void main()
 	PlayBGM( 0, "demo_48khz", 120, 0 );
 	DrawScene( "Nort", 400 );
 
+	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　この時点での悟史くんの様子は本当に気の毒なものだった。",
 		   NULL, "Satoshi-kun looked terrible.", Line_Normal);
 	ClearMessage();
 	PlaySE( 0, "s_page", 128, 64 );
 
+	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　家に帰れば叔母と沙都子の喧嘩・苛めに割って入って精神をすり切らせ。",
-		   NULL, "When he went home, he had to mediate a fight between Satoko and their aunt. He became mentally exhausted.", Line_WaitForInput);
-	OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping);
+		   NULL, "When he went home, he had to mediate a fight between Satoko and their aunt. He became mentally exhausted.", Line_ModeSpecific);
+	if (AdvMode) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
 
+	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　にもかかわらず、毎日バイトに出掛け、肉体までもすり切らせ…。",
-		   NULL, "He went to work every day. He became physically exhausted.", Line_WaitForInput);
-	OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping);
+		   NULL, "He went to work every day. He became physically exhausted.", Line_ModeSpecific);
+	if (AdvMode) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
 
+	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　仲間との接触はほとんどなくなり、学校でも休み時間には、机の上に突っ伏して寝ているか、",
 		   NULL, "He no longer communicated with his classmates. He's either slept on his desk,", Line_WaitForInput);
 	OutputLine(NULL, "どこかに姿をくらましているかのどっちかだったらしい。",
@@ -32,52 +44,62 @@ void main()
 	ClearMessage();
 	PlaySE( 0, "s_page", 128, 64 );
 
+	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　おっとりとしていた、在りし日の悟史くんを思うと、あまりに痛々しい。",
-		   NULL, "He used to be really gentle. It was painful to see him suffering like that.", Line_WaitForInput);
-	OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping);
+		   NULL, "He used to be really gentle. It was painful to see him suffering like that.", Line_ModeSpecific);
+	if (AdvMode) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
 
+	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　そこにさらに「オヤシロさまの祟り」が降りかかってきたのだから、その心労は並大抵ではなかったろう。",
-		   NULL, "On top of all that, he was dealing with the curse of Oyashiro-sama. He must have been completely, totally, and absolutely exhausted.", Line_WaitForInput);
-	OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping);
+		   NULL, "On top of all that, he was dealing with the curse of Oyashiro-sama. He must have been completely, totally, and absolutely exhausted.", Line_ModeSpecific);
+	if (AdvMode) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
 
+	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　オヤシロさまの祟りとは、つまり、悟史くんを今年の犠牲者にしようという連中の「監視」のことに他ならない。",
 		   NULL, "That curse was a form of surveillance by those planning to victimize Satoshi-kun that year.", Line_Normal);
 	ClearMessage();
 	PlaySE( 0, "s_page", 128, 64 );
 
+	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　ならば。",
 		   NULL, "That means", Line_WaitForInput);
 	OutputLine(NULL, "この年の犠牲者となるもうひとり。",
-		   NULL, " that the other victim was in the same situation.", Line_WaitForInput);
-	OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping);
+		   NULL, " that the other victim was in the same situation.", Line_ModeSpecific);
+	if (AdvMode) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
 
+	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　つまり北条の叔母についても監視があったということになる。",
-		   NULL, "Satoshi-kun's aunt had also been watched.", Line_WaitForInput);
-	OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping);
+		   NULL, "Satoshi-kun's aunt had also been watched.", Line_ModeSpecific);
+	if (AdvMode) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
 
+	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　叔母もまた、監視の気配を感じていたのだろうか？",
-		   NULL, "Did she notice any presence?", Line_WaitForInput);
-	OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping);
+		   NULL, "Did she notice any presence?", Line_ModeSpecific);
+	if (AdvMode) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
 
+	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　いや、叔母に限らない。",
-		   NULL, "What about the others?", Line_WaitForInput);
-	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+		   NULL, "What about the others?", Line_ModeSpecific);
+	if (AdvMode) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
+	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　過去の犠牲者たちは皆、そういう監視の目があったのだろうか？",
 		   NULL, "Did the victims of the previous incidents also experience it?", Line_Normal);
 	ClearMessage();
 	PlaySE( 0, "s_page", 128, 64 );
 
+	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　悟史くんの「祟り」が「監視」であったことを立証するためにも、調べた方がいい。",
-		   NULL, "I need to investigate the facts in order to prove the curse on Satoshi-kun was actually just surveillance.", Line_WaitForInput);
-	OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping);
+		   NULL, "I need to investigate the facts in order to prove the curse on Satoshi-kun was actually just surveillance.", Line_ModeSpecific);
+	if (AdvMode) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
 
+	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　「監視」か、",
 		   NULL, "Is it surveillance,", Line_ContinueAfterTyping);
 	SetValidityOfInput( FALSE );

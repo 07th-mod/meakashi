@@ -1,5 +1,13 @@
 void main()
 {
+	int AdvMode;
+	AdvMode = 1;
+	int Line_ModeSpecific;
+	if (AdvMode) {
+		Line_ModeSpecific = Line_Normal;
+	} else {
+		Line_ModeSpecific = Line_WaitForInput;
+	}
 	EnableJumpingOfReturnIcon();
 	FadeOutBGM( 0, 0, FALSE );
 	FadeOutBGM( 1, 0, FALSE );
@@ -11,23 +19,27 @@ void main()
 	DrawScene( "Ke_Ky1", 1000 );
 
 	PlaySE(4, "s20/00/tp1_keijia_10001", 128, 64);
+	if (AdvMode) { OutputLine("<color=#f5e6d3>刑事</color>", NULL, "<color=#f5e6d3>Detective</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「えぇ、葛西氏が踏み込んだ時には室内は無人でベランダへの窓が開きっぱなし。",
 		   NULL, "\"Yes. When Mr. Kasai broke in, the room was empty, and the window leading to the balcony was open.", Line_WaitForInput);
 	OutputLine(NULL, "その時が飛び降り時刻です。",
 		   NULL, " That was when she fell.", Line_WaitForInput);
 	PlaySE(4, "s20/00/tp1_keijia_10002", 128, 64);
 	OutputLine(NULL, "それでその真下の５階エレベーターフロアの屋根に一度落ちて脳震盪。",
-		   NULL, " She hit the elevator housing right beneath, which gave her a concussion.", Line_WaitForInput);
+		   NULL, " She hit the elevator housing right beneath, which gave her a concussion. ", Line_ModeSpecific);
+	if (AdvMode) { OutputLine("<color=#f5e6d3>刑事</color>", NULL, "<color=#f5e6d3>Detective</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "そのしばらく後に横に転がって再落下、死亡。",
-		   NULL, " Then she rolled off the roof and hit the ground, killing her.", Line_WaitForInput);
-	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+		   NULL, "Then she rolled off the roof and hit the ground, killing her.", Line_ModeSpecific);
+	if (AdvMode) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	PlaySE(4, "s20/00/tp1_keijia_10003", 128, 64);
+	if (AdvMode) { OutputLine("<color=#f5e6d3>刑事</color>", NULL, "<color=#f5e6d3>Detective</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　葛西氏が飛び降りを疑って、地上を調べたときに遺体が見つからなかったのは、この時点ではエレベーターフロアの屋根の上で昏倒中だったからです。」",
 		   NULL, "The reason Mr. Kasai didn't find her even though he suspected her suicide is that she was on the elevator housing at that time, unconscious.\"", Line_Normal);
 	ClearMessage();
 
 	PlaySE(4, "s20/00/tp1_keijia_10004", 128, 64);
+	if (AdvMode) { OutputLine("<color=#f5e6d3>刑事</color>", NULL, "<color=#f5e6d3>Detective</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「前原圭一が刺されたのは、ほぼ同じ頃。",
 		   NULL, "\"Keiichi Maebara was stabbed at about the same time.", Line_WaitForInput);
 	OutputLine(NULL, "その頃には園崎詩音はすでに飛び降りていて、屋根の上で脳震盪中…？",
@@ -36,10 +48,11 @@ void main()
 	OutputLine(NULL, "　…違いますねぇ。",
 		   NULL, " I doubt it.", Line_WaitForInput);
 	OutputLine(NULL, "ベランダから抜け出して圭一を刺して。",
-		   NULL, " She must've snuck out of the building, stabbed Keiichi,", Line_WaitForInput);
+		   NULL, " She must've snuck out of the building, stabbed Keiichi, ", Line_ModeSpecific);
 	PlaySE(4, "s20/11/440700239", 128, 64);
+	if (AdvMode) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>Ooishi</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "ベランダへまた戻る時に誤って落下…、じゃないかなぁ？",
-		   NULL, " then accidentally fell when she came back...... Doesn't that sound right?", Line_WaitForInput);
+		   NULL, "then accidentally fell when she came back...... Doesn't that sound right?", Line_WaitForInput);
 	PlaySE(4, "s20/11/440700240", 128, 64);
 	OutputLine(NULL, "　悪いけど、周辺の部屋のベランダとかも調べ直してください。」",
 		   NULL, " Ah, would you look at the neighboring balcony again?\"", Line_Normal);
@@ -48,16 +61,19 @@ void main()
 	DrawBustshot( 2, "kuma_Def_0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
 
 	PlaySE(4, "s20/19/443100053", 128, 64);
+	if (AdvMode) { OutputLine("<color=#8f6d8f>熊谷</color>", NULL, "<color=#8f6d8f>Kumagai</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「大石さーーん、３番にお電話です。」",
-		   NULL, "\"Ooishi-san, you've got a call on line three.\"", Line_WaitForInput);
-	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+		   NULL, "\"Ooishi-san, you've got a call on line three.\"", Line_ModeSpecific);
+	if (AdvMode) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	PlaySE(4, "s20/11/440700241", 128, 64);
+	if (AdvMode) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>Ooishi</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「ハイハイ、どちら様から？」",
-		   NULL, "\"Oh, who is it from?\"", Line_WaitForInput);
-	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+		   NULL, "\"Oh, who is it from?\"", Line_ModeSpecific);
+	if (AdvMode) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	PlaySE(4, "s20/19/443100054", 128, 64);
+	if (AdvMode) { OutputLine("<color=#8f6d8f>熊谷</color>", NULL, "<color=#8f6d8f>Kumagai</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「佐藤と伝えれば分かるとか。",
 		   NULL, "\"Satou, apparently.", Line_WaitForInput);
 	OutputLine(NULL, "合言葉はロンと言えと。」",
@@ -67,6 +83,7 @@ void main()
 	DrawScene( "Denwa", 400 );
 
 	PlaySE(4, "s20/11/440700242", 128, 64);
+	if (AdvMode) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>Ooishi</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「なっはっは！",
 		   NULL, "\"Na ha ha!", Line_WaitForInput);
 	OutputLine(NULL, "　もしもし！",
@@ -79,11 +96,13 @@ void main()
 		   NULL, " You must have some good news.\"", Line_Normal);
 	ClearMessage();
 
+	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "『もしもし…。例の件は旦那の読み通り。』",
 		   NULL, "\"Hello... You were right after all.\"", Line_Normal);
 	ClearMessage();
 
 	PlaySE(4, "s20/11/440700245", 128, 64);
+	if (AdvMode) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>Ooishi</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「ありがとうございます！",
 		   NULL, "\"Thank you!", Line_WaitForInput);
 	OutputLine(NULL, "　今度フラワーロードで一杯おごりますよ。」",
@@ -93,6 +112,7 @@ void main()
 	DrawBustshot( 3, "kuma_Komaru_0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
 
 	PlaySE(4, "s20/19/443100055", 128, 64);
+	if (AdvMode) { OutputLine("<color=#8f6d8f>熊谷</color>", NULL, "<color=#8f6d8f>Kumagai</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「何です、今の電話。",
 		   NULL, "\"What was that call about?", Line_WaitForInput);
 	OutputLine(NULL, "麻雀の誘いですか？」",
@@ -100,6 +120,7 @@ void main()
 	ClearMessage();
 
 	PlaySE(4, "s20/11/440700246", 128, 64);
+	if (AdvMode) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>Ooishi</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「ビンゴ。",
 		   NULL, "\"Bingo.", Line_WaitForInput);
 	OutputLine(NULL, "園崎姉妹は逆なんです。",
@@ -112,9 +133,10 @@ void main()
 		   NULL, " They made a mistake when they were supposed to tattoo the successor.", Line_WaitForInput);
 	PlaySE(4, "s20/11/440700249", 128, 64);
 	OutputLine(NULL, "だからこのノートの魅音と詩音は逆に読むんです。",
-		   NULL, " So, Mion and Shion are swapped around in this notebook.", Line_WaitForInput);
+		   NULL, " So, Mion and Shion are swapped around in this notebook. ", Line_ModeSpecific);
+	if (AdvMode) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>Ooishi</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "それでなら、悟史くんと詩音さん、…いや魅音さん？",
-		   NULL, " So then Satoshi-kun and Shion-san... No, Mion-san?", Line_WaitForInput);
+		   NULL, "So then Satoshi-kun and Shion-san... No, Mion-san?", Line_WaitForInput);
 	PlaySE(4, "s20/11/440700250", 128, 64);
 	OutputLine(NULL, "　ややこしいなぁ！",
 		   NULL, " This is confusing!", Line_WaitForInput);
@@ -125,6 +147,7 @@ void main()
 	DrawBustshot( 3, "kuma_Def_0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
 
 	PlaySE(4, "s20/19/443100056", 128, 64);
+	if (AdvMode) { OutputLine("<color=#8f6d8f>熊谷</color>", NULL, "<color=#8f6d8f>Kumagai</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「ノートって、先日のあの、大石さん宛てと書かれて郵便ポストに投函されてたって言う怪ノートのことですか？",
 		   NULL, "\"Are you talking about the mysterious notebook you received the other day?", Line_WaitForInput);
 	PlaySE(4, "", 128, 64);
@@ -133,16 +156,18 @@ void main()
 	ClearMessage();
 
 	PlaySE(4, "s20/11/440700252", 128, 64);
+	if (AdvMode) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>Ooishi</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「もちろん、名前の入れ替えがわかったところで、撹乱の域を出ませんがねぇ。",
 		   NULL, "\"Even after switching the names, it's still confusing......", Line_WaitForInput);
 	OutputLine(NULL, "……このノート、どこまで信じていいのやら。",
 		   NULL, " I don't know how much of the content I can trust...", Line_WaitForInput);
 	PlaySE(4, "s20/11/440700253", 128, 64);
 	OutputLine(NULL, "…もし本当なら、古手梨花の死の辺りが怪し過ぎるからなぁ…。」",
-		   NULL, " Even if this is true, Rika Furude's death seems very suspicious...\"", Line_WaitForInput);
-	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+		   NULL, " Even if this is true, Rika Furude's death seems very suspicious...\"", Line_ModeSpecific);
+	if (AdvMode) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	PlaySE(4, "s20/19/443100057_01", 128, 64);
+	if (AdvMode) { OutputLine("<color=#8f6d8f>熊谷</color>", NULL, "<color=#8f6d8f>Kumagai</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「…狂人の日記ですよ。",
 		   NULL, "\"...It's the diary of a lunatic.", Line_WaitForInput);
 	OutputLine(NULL, "読んでるとこっちまで狂いそうになります。",
@@ -154,23 +179,26 @@ void main()
 	DrawScene( "Sora3", 1000 );
 
 	PlaySE(4, "s20/11/440700254", 128, 64);
+	if (AdvMode) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>Ooishi</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「…………でも。",
 		   NULL, "\"...Even so...", Line_WaitForInput);
 	OutputLine(NULL, "幸せな日記じゃあないですか。」",
-		   NULL, " this is a happy diary.\"", Line_WaitForInput);
-	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+		   NULL, " this is a happy diary.\"", Line_ModeSpecific);
+	if (AdvMode) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	PlaySE(4, "s20/19/443100059", 128, 64);
+	if (AdvMode) { OutputLine("<color=#8f6d8f>熊谷</color>", NULL, "<color=#8f6d8f>Kumagai</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「しあわせ、",
 		   NULL, "\"A happy diary", Line_ContinueAfterTyping);
 	SetValidityOfInput( FALSE );
 	Wait( 800 );
 	SetValidityOfInput( TRUE );
 	OutputLine(NULL, "……ですか？」",
-		   NULL, "......?\"", Line_WaitForInput);
-	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+		   NULL, "......?\"", Line_ModeSpecific);
+	if (AdvMode) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	PlaySE(4, "s20/11/440700255", 128, 64);
+	if (AdvMode) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>Ooishi</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「この日記だけで、悟史くんって名前、何回くらい出てくると思います？",
 		   NULL, "\"Do you know how many times Satoshi-kun's name appears in this notebook......?", Line_WaitForInput);
 	OutputLine(NULL, "　………詩音さんは本当に悟史くんのことが好きだったんだなぁって。",

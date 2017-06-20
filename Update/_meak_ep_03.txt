@@ -1,5 +1,13 @@
 void main()
 {
+	int AdvMode;
+	AdvMode = 1;
+	int Line_ModeSpecific;
+	if (AdvMode) {
+		Line_ModeSpecific = Line_Normal;
+	} else {
+		Line_ModeSpecific = Line_WaitForInput;
+	}
 	FadeOutBGM( 0, 0, FALSE );
 	FadeOutBGM( 1, 0, FALSE );
 	FadeOutBGM( 2, 0, FALSE );
@@ -20,27 +28,30 @@ void main()
 	SetSpeedOfMessage( FALSE, 0 );
 
 	PlaySE(4, "s06/01/150100451", 128, 64);
+	if (AdvMode) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「よっしゃーお昼だお昼！！",
 		   NULL, "\"All right, it's lunchtime!!", Line_WaitForInput);
 	PlaySE(4, "s06/01/150100452", 128, 64);
 	OutputLine(NULL, "　そらレナ、机をくっ付けろ！」",
-		   NULL, " Hey, Rena, put our desks together!\"", Line_WaitForInput);
-	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+		   NULL, " Hey, Rena, put our desks together!\"", Line_ModeSpecific);
+	if (AdvMode) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	DisableWindow();
 	DrawBustshot( 3, "re1b_waraiB1_0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
 	DisplayWindow();
 
 	PlaySE(4, "s06/02/150200235", 128, 64);
+	if (AdvMode) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「あははは、今日はレナのお弁当はミートボールなんだよー！」",
-		   NULL, "\"Ahahahaha. My lunch has meat balls today!\"", Line_WaitForInput);
-	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+		   NULL, "\"Ahahahaha. My lunch has meat balls today!\"", Line_ModeSpecific);
+	if (AdvMode) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	DisableWindow();
 	DrawBustshot( 1, "me1a_WinkA1_0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 200, TRUE );
 	DisplayWindow();
 
 	PlaySE(4, "s06/03/150300472", 128, 64);
+	if (AdvMode) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「おおーそりゃいいねぇ。",
 		   NULL, "\"Sounds good!", Line_WaitForInput);
 	PlaySE(4, "s06/03/150300473", 128, 64);
@@ -54,18 +65,20 @@ void main()
 	DrawBustshot( 2, "ri1_WaraiA1_0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
 
 	PlaySE(4, "s06/05/150500066", 128, 64);
+	if (AdvMode) { OutputLine("<color=#6972c1>梨花</color>", NULL, "<color=#6972c1>Rika</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「……くっ付けるのですよ。",
 		   NULL, "\"......I'm coming.", Line_WaitForInput);
 	PlaySE(4, "s06/05/150500067", 128, 64);
 	OutputLine(NULL, "ぺたー☆」",
-		   NULL, " Whoosh☆.\"", Line_WaitForInput);
-	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+		   NULL, " Whoosh☆.\"", Line_ModeSpecific);
+	if (AdvMode) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	DisableWindow();
 	DrawBustshot( 3, "sa1b_WaraiB1_0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
 	DisplayWindow();
 
 	PlaySE(4, "s06/04/150400098", 128, 64);
+	if (AdvMode) { OutputLine("<color=#fcdb77>沙都子</color>", NULL, "<color=#fcdb77>Satoko</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「ほっほっほ！",
 		   NULL, "\"Ho ho ho!", Line_WaitForInput);
 	PlaySE(4, "s06/04/150400099", 128, 64);
@@ -73,12 +86,13 @@ void main()
 		   NULL, " Unfortunately, meat balls are my favorite too!", Line_WaitForInput);
 	PlaySE(4, "s06/04/150400100", 128, 64);
 	OutputLine(NULL, "　皆さんに一口でも口に入ると思わないことでしてよー！！」",
-		   NULL, " I won't allow you to have any!!\"", Line_WaitForInput);
-	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+		   NULL, " I won't allow you to have any!!\"", Line_ModeSpecific);
+	if (AdvMode) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	DrawBustshot( 2, "si3_AkuwaraiA1_0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
 
 	PlaySE(4, "s06/06/150602745", 128, 64);
+	if (AdvMode) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「ざぁんねん、そうは行かないです沙都子。",
 		   NULL, "\"Unfortunately, I won't let you do that either, Satoko.", Line_WaitForInput);
 	DisableWindow();
@@ -95,15 +109,17 @@ void main()
 	DisplayWindow();
 
 	PlaySE(4, "s06/01/150100453", 128, 64);
+	if (AdvMode) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「うっわ、そりゃイジメだぞ詩音〜。」",
-		   NULL, "\"Whoa, that's harsh, Shion.\"", Line_WaitForInput);
-	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+		   NULL, "\"Whoa, that's harsh, Shion.\"", Line_ModeSpecific);
+	if (AdvMode) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	DisableWindow();
 	DrawBustshot( 3, "sa1b_HannbesoB1_0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
 	DisplayWindow();
 
 	PlaySE(4, "s06/04/150400101", 128, 64);
+	if (AdvMode) { OutputLine("<color=#fcdb77>沙都子</color>", NULL, "<color=#fcdb77>Satoko</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「ふわぁあぁ………カボチャは嫌ですのーー！！",
 		   NULL, "\"Whaaah...... I hate squash!!", Line_WaitForInput);
 	PlaySE(4, "s06/04/150400102", 128, 64);
@@ -112,6 +128,7 @@ void main()
 	ClearMessage();
 
 	PlaySE(4, "s06/06/150602747", 128, 64);
+	if (AdvMode) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「ほら、そのカボチャ嫌いは駄目です！",
 		   NULL, "\"Don't be so picky about your food!", Line_WaitForInput);
 	DisableWindow();
@@ -130,31 +147,34 @@ void main()
 
 	PlaySE(4, "s06/06/150602750", 128, 64);
 	OutputLine(NULL, "　私の目の黒い内は偏食は認めないのでその覚悟でお願いします。",
-		   NULL, " As long as I live, I won't let you have an unbalanced diet.", Line_WaitForInput);
+		   NULL, " As long as I live, I won't let you have an unbalanced diet. ", Line_ModeSpecific);
 
 	DrawScene( "gk3", 400 );
 	DrawBustshot( 2, "si3_WinkA1_0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
 
 
 	PlaySE(4, "s06/06/150602751", 128, 64);
+	if (AdvMode) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "ほらほらみんなもどうぞどうぞ、ホコホコのカボチャって甘くて美味しいんですよー？」",
-		   NULL, " Here guys, have some. Steamed squash is delicious.\"", Line_Normal);
+		   NULL, "Here guys, have some. Steamed squash is delicious.\"", Line_Normal);
 	ClearMessage();
 	DrawBustshot( 3, "ri1_WaraiA1_0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
 
 	PlaySE(4, "s06/05/150500068", 128, 64);
+	if (AdvMode) { OutputLine("<color=#6972c1>梨花</color>", NULL, "<color=#6972c1>Rika</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「……もにゅもにゅ。",
 		   NULL, "\"......Munch, munch.", Line_WaitForInput);
 	PlaySE(4, "s06/05/150500069", 128, 64);
 	OutputLine(NULL, "沙都子、これなら甘くておいしいのですよ？」",
-		   NULL, " Satoko, it's really sweet.\"", Line_WaitForInput);
-	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+		   NULL, " Satoko, it's really sweet.\"", Line_ModeSpecific);
+	if (AdvMode) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	DisableWindow();
 	DrawBustshot( 1, "kei1_Warai_0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 200, TRUE );
 	DisplayWindow();
 
 	PlaySE(4, "s06/01/150100454", 128, 64);
+	if (AdvMode) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「お、確かにこりゃいけるなぁ。",
 		   NULL, "\"Yeah, it's super good!", Line_WaitForInput);
 	PlaySE(4, "s06/01/150100455", 128, 64);
@@ -162,14 +182,15 @@ void main()
 		   NULL, " The balance of flavors is perfect!", Line_WaitForInput);
 	PlaySE(4, "s06/01/150100456", 128, 64);
 	OutputLine(NULL, "　沙都子、お前は食うなもったいない！！」",
-		   NULL, " Satoko, don't eat this. It's too good for you!!\"", Line_WaitForInput);
-	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+		   NULL, " Satoko, don't eat this. It's too good for you!!\"", Line_ModeSpecific);
+	if (AdvMode) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	DisableWindow();
 	DrawBustshot( 3, "sa1b_OdorokiB1_0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
 	DisplayWindow();
 
 	PlaySE(4, "s06/04/150400103", 128, 64);
+	if (AdvMode) { OutputLine("<color=#fcdb77>沙都子</color>", NULL, "<color=#fcdb77>Satoko</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「な、なんですってええぇえ！！",
 		   NULL, "\"E-Excuse me?!!", Line_WaitForInput);
 	PlaySE(4, "s06/04/150400104", 128, 64);
@@ -180,18 +201,20 @@ void main()
 	DrawBustshot( 1, "me1b_WinkA1_0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 200, TRUE );
 
 	PlaySE(4, "s06/03/150300475", 128, 64);
+	if (AdvMode) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「そら行った行った！",
 		   NULL, "\"Just try one!", Line_WaitForInput);
 	PlaySE(4, "s06/03/150300476", 128, 64);
 	OutputLine(NULL, "　一口にがばっと行ってみなよ！」",
-		   NULL, " Take a bite!\"", Line_WaitForInput);
-	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+		   NULL, " Take a bite!\"", Line_ModeSpecific);
+	if (AdvMode) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	DisableWindow();
 	DrawBustshot( 2, "re1b_waraiB1_0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
 	DisplayWindow();
 
 	PlaySE(4, "s06/02/150200236", 128, 64);
+	if (AdvMode) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「ほらね？",
 		   NULL, "\"See?", Line_WaitForInput);
 	PlaySE(4, "s06/02/150200237", 128, 64);
@@ -204,20 +227,22 @@ void main()
 	DisplayWindow();
 
 	PlaySE(4, "s06/04/150400105", 128, 64);
+	if (AdvMode) { OutputLine("<color=#fcdb77>沙都子</color>", NULL, "<color=#fcdb77>Satoko</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「…………んんんん、",
 		   NULL, "\"......Hmm......", Line_ContinueAfterTyping);
 	SetValidityOfInput( FALSE );
 	Wait( 900 );
 	SetValidityOfInput( TRUE );
 	OutputLine(NULL, "………まぁその、食べれなくもないですわね…。」",
-		   NULL, " well, it isn't so bad...\"", Line_WaitForInput);
-	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+		   NULL, " well, it isn't so bad...\"", Line_ModeSpecific);
+	if (AdvMode) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	DisableWindow();
 	DrawBustshot( 2, "si3_DefA1_0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
 	DisplayWindow();
 
 	PlaySE(4, "s06/06/150602752", 128, 64);
+	if (AdvMode) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「当り前です。",
 		   NULL, "\"Of course it isn't.", Line_WaitForInput);
 	PlaySE(4, "s06/06/150602753", 128, 64);
@@ -238,14 +263,15 @@ void main()
 	Wait( 900 );
 	SetValidityOfInput( TRUE );
 	OutputLine(NULL, "アスパラガスと制覇して行きましょう。」",
-		   NULL, " and asparagus within the year?\"", Line_WaitForInput);
-	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+		   NULL, " and asparagus within the year?\"", Line_ModeSpecific);
+	if (AdvMode) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	DisableWindow();
 	DrawBustshot( 3, "sa1a_HannbesoA1_0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
 	DisplayWindow();
 
 	PlaySE(4, "s06/04/150400106", 128, 64);
+	if (AdvMode) { OutputLine("<color=#fcdb77>沙都子</color>", NULL, "<color=#fcdb77>Satoko</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「冗談はごめんですわーーー！！！",
 		   NULL, "\"Stop joking!!!", Line_WaitForInput);
 	PlaySE(4, "s06/04/150400107", 128, 64);
@@ -258,6 +284,7 @@ void main()
 	DisplayWindow();
 
 	PlaySE(4, "s06/06/150602755", 128, 64);
+	if (AdvMode) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「だぁめです。",
 		   NULL, "\"Come on!", Line_WaitForInput);
 	PlaySE(4, "s06/06/150602756", 128, 64);
@@ -273,6 +300,7 @@ void main()
 	DisplayWindow();
 
 	PlaySE(4, "s06/04/150400108", 128, 64);
+	if (AdvMode) { OutputLine("<color=#fcdb77>沙都子</color>", NULL, "<color=#fcdb77>Satoko</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「ふわああん、詩音さん嫌いーー！！",
 		   NULL, "\"Whaaaah, I hate you, Shion-san!!", Line_WaitForInput);
 	PlaySE(4, "s06/04/150400109", 128, 64);
