@@ -700,29 +700,19 @@ void main()
 
 	PlaySE(4, "s06/01/150100029", 128, 64);
 	OutputLine(NULL, "例えばここに『コスプレＨビデオ』があったとする。",
-		   NULL, " Let's say there's a 'cosplay sex video'.", Line_ContinueAfterTyping);
-	SetValidityOfInput( FALSE );
-	Wait( 400 );
-	SetValidityOfInput( TRUE );
+		   NULL, " Let's say there's a 'cosplay sex video'.", Line_WaitForInput);
+
 	PlaySE(4, "s06/01/150100030", 128, 64);
 	OutputLine(NULL, "コスプレと一言に言ってもその裾野は広すぎる。",
-		   NULL, " The definition of 'cosplay' is too broad.", Line_ContinueAfterTyping);
-	SetValidityOfInput( FALSE );
-	Wait( 400 );
-	SetValidityOfInput( TRUE );
+		   NULL, " The definition of 'cosplay' is too broad.", Line_WaitForInput);
+
 	PlaySE(4, "s06/01/150100031", 128, 64);
 	OutputLine(NULL, "それについて貴様らに講義することは、Ｂ−２９から落下傘で降りてきたヤンキーどもに大和魂を一から説明するより困難この上極まりない！！",
-		   NULL, " To lecture on that subject is as difficult as explaining the spirit of Yamato to yankees parachuting down from B-29s!!", Line_ContinueAfterTyping);
-	SetValidityOfInput( FALSE );
-	Wait( 400 );
-	SetValidityOfInput( TRUE );
+		   NULL, " To lecture on that subject is as difficult as explaining the spirit of Yamato to yankees parachuting down from B-29s!!", Line_WaitForInput);
 
 	PlaySE(4, "s06/01/150100032", 128, 64);
 	OutputLine(NULL, "　だからここでは最も普及していると思われる制服系で説明することとする！！",
-		   NULL, " So, I'll limit the scope to the most popular one, school uniforms!!", Line_ContinueAfterTyping);
-	SetValidityOfInput( FALSE );
-	Wait( 300 );
-	SetValidityOfInput( TRUE );
+		   NULL, " So, I'll limit the scope to the most popular one, school uniforms!!", Line_Normal);
 	ClearMessage();
 
 	PlaySE(4, "s06/01/150100033", 128, 64);
@@ -732,40 +722,27 @@ void main()
 	Wait( 400 );
 	SetValidityOfInput( TRUE );
 	OutputLine(NULL, "答えてみろ！！",
-		   NULL, " Answer me!!!", Line_ContinueAfterTyping);
-	SetValidityOfInput( FALSE );
-	Wait( 400 );
-	SetValidityOfInput( TRUE );
+		   NULL, " Answer me!!!", Line_WaitForInput);
+
 	PlaySE(4, "s06/01/150100034", 128, 64);
 	OutputLine(NULL, "そうだな、制服、体操服、スクール水着だろう。",
-		   NULL, " That's right, regular uniforms, gym uniforms, and school swimsuits.", Line_ContinueAfterTyping);
-	SetValidityOfInput( FALSE );
-	Wait( 500 );
-	SetValidityOfInput( TRUE );
+		   NULL, " That's right, regular uniforms, gym uniforms, and school swimsuits.", Line_WaitForInput);
+
 	PlaySE(4, "s06/01/150100035", 128, 64);
 	OutputLine(NULL, "なおセーラーかブレザーかの好みの違いは制服にカテゴライズするものとする。",
-		   NULL, " Both the sailor style and blazer style are included under regular uniforms, by the way.", Line_ContinueAfterTyping);
-	SetValidityOfInput( FALSE );
-	Wait( 500 );
-	SetValidityOfInput( TRUE );
+		   NULL, " Both the sailor style and blazer style are included under regular uniforms, by the way.", Line_WaitForInput);
+
 	PlaySE(4, "s06/01/150100036", 128, 64);
 	OutputLine(NULL, "勿論、ブルマーかスパッツかの違いも同様！！",
-		   NULL, " Gym shorts and bloomers are likewise!!", Line_ContinueAfterTyping);
-	SetValidityOfInput( FALSE );
-	Wait( 800 );
-	SetValidityOfInput( TRUE );
+		   NULL, " Gym shorts and bloomers are likewise!!", Line_WaitForInput);
+
 	PlaySE(4, "s06/01/150100037", 128, 64);
 	OutputLine(NULL, "　スク水も紺か白かの違いはあれどカテゴリーは同じ扱いだ！！！",
-		   NULL, " And the color preference between white and navy school swimsuits is the same!!!", Line_ContinueAfterTyping);
-	SetValidityOfInput( FALSE );
-	Wait( 600 );
-	SetValidityOfInput( TRUE );
+		   NULL, " And the color preference between white and navy school swimsuits is the same!!!", Line_WaitForInput);
+
 	PlaySE(4, "s06/01/150100038", 128, 64);
 	OutputLine(NULL, "どうだ、これだけでも甘美な響きがするであろう？！！",
-		   NULL, " Well, doesn't this sound exciting already?!!", Line_ContinueAfterTyping);
-	SetValidityOfInput( FALSE );
-	Wait( 500 );
-	SetValidityOfInput( TRUE );
+		   NULL, " Well, doesn't this sound exciting already?!!", Line_Normal);
 	ClearMessage();
 
 	PlaySE(4, "s06/01/150100039", 128, 64);
@@ -775,6 +752,7 @@ void main()
 	Wait( 600 );
 	SetValidityOfInput( TRUE );
 	PlaySE( 0, "s_boyoon", 128, 64 );
+	OutputLineAll(NULL, "", Line_WaitForInput);
 
 	PlaySE(4, "s06/01/150100040", 128, 64);
 	OutputLine(NULL, "おいノッポ！！お前は制服だ！",
@@ -783,6 +761,7 @@ void main()
 	Wait( 500 );
 	SetValidityOfInput( TRUE );
 	PlaySE( 0, "s_cork", 128, 64 );
+	OutputLineAll(NULL, "", Line_WaitForInput);
 
 	PlaySE(4, "s06/01/150100041", 128, 64);
 	OutputLine(NULL, "デブ！お前は体操服、",
@@ -793,10 +772,8 @@ void main()
 	PlaySE( 0, "s_cork", 128, 64 );
 
 	OutputLine(NULL, "そしてチビはスク水だ！！！",
-		   NULL, " And, you, the short one, you take the school swimsuit!!!", Line_ContinueAfterTyping);
-	SetValidityOfInput( FALSE );
-	Wait( 400 );
-	SetValidityOfInput( TRUE );
+		   NULL, " And, you, the short one, you take the school swimsuit!!!", Line_WaitForInput);
+
 	PlaySE(4, "s06/01/150100042", 128, 64);
 	OutputLine(NULL, "頭に思い描け、時間は３秒！！！",
 		   NULL, " Picture the image in your head within three seconds!!!", Line_ContinueAfterTyping);
@@ -804,10 +781,8 @@ void main()
 	Wait( 1000 );
 	SetValidityOfInput( TRUE );
 	OutputLine(NULL, "描けたか？",
-		   NULL, " Are you done?!", Line_ContinueAfterTyping);
-	SetValidityOfInput( FALSE );
-	Wait( 600 );
-	SetValidityOfInput( TRUE );
+		   NULL, " Are you done?!", Line_WaitForInput);
+
 	PlaySE(4, "s06/01/150100043", 128, 64);
 	OutputLine(NULL, "妄想くらい自在に出来ろ、気合が足りんやり直せッ！！！",
 		   NULL, " That's not good enough, do it again!!!", Line_ContinueAfterTyping);
@@ -815,6 +790,7 @@ void main()
 	Wait( 400 );
 	SetValidityOfInput( TRUE );
 	PlaySE( 0, "s_Kyupiin", 128, 64 );
+	OutputLineAll(NULL, "", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
 
@@ -830,23 +806,20 @@ void main()
 	Wait( 600 );
 	SetValidityOfInput( TRUE );
 	OutputLine(NULL, "あると信じろ気合を入れろ！！",
-		   NULL, " Come on!!", Line_ContinueAfterTyping);
-	SetValidityOfInput( FALSE );
-	Wait( 700 );
-	SetValidityOfInput( TRUE );
+		   NULL, " Come on!!", Line_WaitForInput);
+
 	PlaySE(4, "s06/01/150100045", 128, 64);
 	OutputLine(NULL, "返事は押忍かサーイエッサーだ！！！",
 		   NULL, " Say 'yessir' when you got it!!!", Line_ContinueAfterTyping);
 	SetValidityOfInput( FALSE );
 	Wait( 800 );
 	SetValidityOfInput( TRUE );
-	SetSpeedOfMessage( TRUE, 128 );
 	PlaySE( 0, "s_daidageki", 128, 64 );
+	OutputLineAll(NULL, "", Line_WaitForInput);
 
 	PlaySE(4, "s06/01/150100046", 128, 64);
 	OutputLine(NULL, "馬鹿者それでも軍人かッ！！！！",
-		   NULL, " Are you really military men, you maggots?!!", Line_ContinueAfterTyping);
-	SetSpeedOfMessage( FALSE, 0 );
+		   NULL, " Are you really military men, you maggots?!!", Line_WaitForInput);
 	DrawScene( "F_a", 0 );
 	StartShakingOfWindow( 248, 40, 0, 2, 3*2, FALSE );
 	StartShakingOfAllObjects( 248, 40, 0, 2, 3*2, TRUE );
@@ -855,10 +828,8 @@ void main()
 
 	PlaySE(4, "s06/01/150100047", 128, 64);
 	OutputLine(NULL, "　よおし描けたようだな次に進むぞ。",
-		   NULL, " Good, you all seem to have an image in your heads now. Let's move on.", Line_ContinueAfterTyping);
-	SetValidityOfInput( FALSE );
-	Wait( 400 );
-	SetValidityOfInput( TRUE );
+		   NULL, " Good, you all seem to have an image in your heads now. Let's move on.", Line_Normal);
+
 	ClearMessage();
 
 	PlaySE(4, "s06/01/150100048", 128, 64);
