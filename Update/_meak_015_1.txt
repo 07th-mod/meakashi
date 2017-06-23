@@ -776,14 +776,13 @@ void main()
 
 	PlaySE(4, "s06/01/150100042", 128, 64);
 	OutputLine(NULL, "頭に思い描け、時間は３秒！！！",
-		   NULL, " Picture the image in your head within three seconds!!!", Line_ContinueAfterTyping);
+		   NULL, " Picture the image in your head within three seconds!!!", Line_WaitForInput);
+	PlaySE(4, "s06/01/150100043", 128, 64);
+	OutputLine(NULL, "描けたか？",
+		   NULL, " Are you done?!", Line_ContinueAfterTyping);
 	SetValidityOfInput( FALSE );
 	Wait( 1000 );
 	SetValidityOfInput( TRUE );
-	OutputLine(NULL, "描けたか？",
-		   NULL, " Are you done?!", Line_WaitForInput);
-
-	PlaySE(4, "s06/01/150100043", 128, 64);
 	OutputLine(NULL, "妄想くらい自在に出来ろ、気合が足りんやり直せッ！！！",
 		   NULL, " That's not good enough, do it again!!!", Line_ContinueAfterTyping);
 	SetValidityOfInput( FALSE );
@@ -896,12 +895,10 @@ void main()
 		   NULL, " Wait, get back here!!", Line_Normal);
 	ClearMessage();
 
-	PlaySE(4, "s06/01/150100057", 128, 64);
+	//PlaySE(4, "s06/01/150100056", 128, 64);
 	OutputLine(NULL, "　ちなみに最近の東西雪解けに従いロシア系ＡＶが大量に上陸しているな。",
-		   NULL, "As you know, a huge amount of Russian porn vids are going around lately thanks to the end of the Cold War.", Line_ContinueAfterTyping);
-	SetValidityOfInput( FALSE );
-	Wait( 600 );
-	SetValidityOfInput( TRUE );
+		   NULL, "As you know, a huge amount of Russian porn vids are going around lately thanks to the end of the Cold War.", Line_WaitForInput);
+	//PlaySE(4, "s06/01/150100057", 128, 64);
 	OutputLine(NULL, "そんなことも知らんのか愚か者！！",
 		   NULL, " You don't know that? Get out of here!!", Line_ContinueAfterTyping);
 	PlaySE( 0, "s_furu", 128, 64 );
