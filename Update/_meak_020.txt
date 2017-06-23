@@ -2393,12 +2393,15 @@ void main()
 	Wait( 90 );
 	SetValidityOfInput( TRUE );
 	OutputLine(NULL, "が",
-		   NULL, "-kun!", Line_ContinueAfterTyping);
+		   NULL, "-kun! ", Line_ContinueAfterTyping);
 	SetValidityOfInput( FALSE );
 	Wait( 90 );
 	SetValidityOfInput( TRUE );
+
+	if (AdvMode) { ClearMessage(); }
+
 	OutputLine(NULL, "許",
-		   NULL, " What", Line_ContinueAfterTyping);
+		   NULL, "What", Line_ContinueAfterTyping);
 	SetValidityOfInput( FALSE );
 	Wait( 90 );
 	SetValidityOfInput( TRUE );
@@ -3025,12 +3028,9 @@ void main()
 
 	}
 
-	if (AdvMode) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
-
 	SetSpeedOfMessage( TRUE, 128 );
-	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "一体悟史くんに何の罪があったというのかッ！！！」",
-		   NULL, "What kind of crime has he committed?!!!\"", Line_Normal);
+		   NULL, " What kind of crime has he committed?!!!\"", Line_Normal);
 	ClearMessage();
 	SetSpeedOfMessage( FALSE, 0 );
 	FadeOutBGM( 0, 0, FALSE );
@@ -3198,10 +3198,10 @@ void main()
 		   NULL, " ...Remember how I said before that the villagers could be the ones carrying out Oyashiro-sama's curse?", Line_WaitForInput);
 	PlaySE(4, "s06/06/150601868", 128, 64);
 	OutputLine(NULL, "……つまりそういうことなんです。",
-		   NULL, " ...That's what I mean.", Line_WaitForInput);
+		   NULL, " ...That's what I mean. ", Line_ModeSpecific);
 	PlaySE(4, "s06/06/150601869", 128, 64);
 	OutputLine(NULL, "…この雛見沢では、毎年、綿流しの夜に、オヤシロさまの祟りということにして誰かを殺してもいい土壌が、",
-		   NULL, " ...At some point, a tradition was created here in Hinamizawa...", Line_ContinueAfterTyping);
+		   NULL, "...At some point, a tradition was created here in Hinamizawa...", Line_ContinueAfterTyping);
 	SetValidityOfInput( FALSE );
 	Wait( 1000 );
 	SetValidityOfInput( TRUE );
@@ -4213,11 +4213,10 @@ void main()
 	Wait( 1000 );
 	SetValidityOfInput( TRUE );
 	OutputLine(NULL, "わざわざ生かしておくのにどんな理由があるんです？",
-		   NULL, " after going through the trouble of making him disappear? ", Line_ModeSpecific);
+		   NULL, " after going through the trouble of making him disappear?", Line_WaitForInput);
 	PlaySE(4, "s06/06/150601908", 128, 64);
-	if (AdvMode) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　ないんじゃないですか？」",
-		   NULL, "I don't think there's any reason for that.\"", Line_ModeSpecific);
+		   NULL, " I don't think there's any reason for that.\"", Line_ModeSpecific);
 	if (AdvMode) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	PlaySE(4, "s06/18/153300116", 128, 64);
@@ -4243,7 +4242,7 @@ void main()
 	Wait( 900 );
 	SetValidityOfInput( TRUE );
 	OutputLine(NULL, "…………かえって怒っちゃいますよ？」",
-		   NULL, " it's not going to work...... you know that, don't you?\"", Line_Normal);
+		   NULL, " it's not going to work... you know that, don't you?\"", Line_Normal);
 	ClearMessage();
 
 	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }

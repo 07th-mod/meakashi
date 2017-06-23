@@ -198,7 +198,6 @@ void main()
 	SetValidityOfInput( FALSE );
 	Wait( 800 );
 	SetValidityOfInput( TRUE );
-	OutputLineAll(NULL, "", Line_WaitForInput);
 
 	OutputLine(NULL, "　亡霊のくせに…やかましい、",
 		   NULL, " You're just a ghost... so shut up.", Line_ContinueAfterTyping);
@@ -212,14 +211,20 @@ void main()
 	StartShakingOfWindow( 248, 40, 0, 2, 3*2, FALSE );
 	StartShakingOfAllObjects( 248, 40, 0, 2, 3*2, TRUE );
 	PlaySE( 0, "s_glass", 128, 64 );
+	OutputLineAll(NULL, "", Line_ModeSpecific);
+	if (AdvMode) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	PlaySE(4, "s06/03/150300470", 128, 64);
+	if (AdvMode) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「お姉ぇお姉えええぇえ！！」",
 		   NULL, " \"Sis.... Siiissss!!\"", Line_ContinueAfterTyping);
 	StartShakingOfWindow( 248, 40, 0, 0, 3*2, FALSE );
 	StartShakingOfAllObjects( 248, 40, 0, 0, 3*2, TRUE );
+	OutputLineAll(NULL, "", Line_ModeSpecific);
+	if (AdvMode) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	PlaySE(4, "s06/06/150602723", 128, 64);
+	if (AdvMode) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「くそったれがぁあぁ！！",
 		   NULL, "\"You lousy shit!", Line_WaitForInput);
 	PlaySE( 0, "s_furu", 128, 64 );
@@ -234,8 +239,11 @@ void main()
 	SetValidityOfInput( FALSE );
 	Wait( 400 );
 	SetValidityOfInput( TRUE );
+	OutputLineAll(NULL, "", Line_ModeSpecific);
+	if (AdvMode) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	PlaySE(4, "s06/03/150300471", 128, 64);
+	if (AdvMode) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「魅音はずるい、魅音だけずるい、姉妹はいつも一緒、死んでも一緒…！！！",
 		   NULL, " \"It's not fair, it's not fair! You and I should always be together, even after death...!!!", Line_ContinueAfterTyping);
 	SetValidityOfInput( FALSE );
@@ -776,14 +784,20 @@ void main()
 	CallScript( "&toketu" );
 	PlayBGM( 0, "semi_r", 120, 0 );
 
-	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
-	OutputLine(NULL, "　重力がぐるぐる回る中。",
-		   NULL, "While gravity's pull spun around me,", Line_ModeSpecific);
-	if (AdvMode) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+	int AdvMode;
+	AdvMode = 1;
+	int Line_ModeSpecific;
+	if (AdvMode) {
+		Line_ModeSpecific = Line_Normal;
+	} else {
+		Line_ModeSpecific = Line_WaitForInput;
+	}
 
 	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　重力がぐるぐる回る中。",
+		   NULL, "While gravity's pull spun around me,", Line_WaitForInput);
 	OutputLine(NULL, "　私は圭一の腹部をナイフで思い切り突き刺していた。",
-		   NULL, "I realized that I had stabbed him with a knife.", Line_Normal);
+		   NULL, " I realized that I had stabbed him with a knife.", Line_Normal);
 	ClearMessage();
 	DrawScene( "Ma2", 1000 );
 
@@ -795,10 +809,10 @@ void main()
 	Wait( 1000 );
 	SetValidityOfInput( TRUE );
 	OutputLine(NULL, "……けけけ…",
-		   NULL, " heeheehee...", Line_ContinueAfterTyping);
+		   NULL, " hee hee hee...", Line_ContinueAfterTyping);
 	SetSpeedOfMessage( TRUE, 64 );
 	OutputLine(NULL, "けけけけけけけけけけけけけけけけけ",
-		   NULL, " heeheeheeheeheeheeheeheeheeheeheeheeheehee", Line_ContinueAfterTyping);
+		   NULL, " hee hee hee hee hee hee hee hee hee hee hee hee hee hee", Line_ContinueAfterTyping);
 	SetSpeedOfMessage( FALSE, 0 );
 	OutputLine(NULL, "…！",
 		   NULL, "...!", Line_WaitForInput);
@@ -811,7 +825,7 @@ void main()
 	SetSpeedOfMessage( TRUE, 64 );
 	PlaySE(4, "s06/06/150602740", 128, 64);
 	OutputLine(NULL, "　…くけけけけけけけけけけけけけけけけけけ！！！」",
-		   NULL, " ...Huheeheeheeheeheeheeheeheeheeheeheeheeheeheeheeheehee!!!\"", Line_ModeSpecific);
+		   NULL, " ...Hu hee hee hee hee hee hee hee hee hee hee hee hee hee hee hee hee hee!!!\"", Line_ModeSpecific);
 	if (AdvMode) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 	SetSpeedOfMessage( FALSE, 0 );
 	DrawFilm( 2, 0xaa, 0xaa, 0xaa, 256, 0, 1000, TRUE );
@@ -837,8 +851,8 @@ void main()
 	SetSpeedOfMessage( TRUE, 64 );
 	PlaySE(4, "s06/06/150602741", 128, 64);
 	if (AdvMode) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
-	OutputLine(NULL, "「げげげげげげげげげげげげげげげげげげげげげげげげげげげげげ！！",
-		   NULL, "\"Geegeegeegeegeegeegeegeegeegeegeegeegeegeegeegeegeegeegee!!", Line_WaitForInput);
+	OutputLine(NULL, "「げげげげげげげげげげげげげげげげげげ！！",
+		   NULL, "\"Hee hee hee hee hee hee hee hee hee hee hee!!", Line_WaitForInput);
 	SetSpeedOfMessage( FALSE, 0 );
 	PlaySE(4, "s06/06/150602742", 128, 64);
 	OutputLine(NULL, "　出来た、全部出来た！",
@@ -849,7 +863,7 @@ void main()
 	SetSpeedOfMessage( TRUE, 64 );
 	PlaySE(4, "s06/06/150602744", 128, 64);
 	OutputLine(NULL, "　げげげげげげげげげげげげげげげげげげげげげげげげげげげげげげげげげげげ！！」",
-		   NULL, " Geegeegeegeegeegeegeegeegeegeegeegeegeegeegeegeegeegee!!\"", Line_Normal);
+		   NULL, " Hee hee hee hee hee hee hee hee hee hee hee hee hee hee hee hee hee hee!!\"", Line_Normal);
 	ClearMessage();
 	SetSpeedOfMessage( FALSE, 0 );
 	DrawScene( "black", 1000 );
@@ -874,7 +888,7 @@ void main()
 	FadeOutBGM( 3, 0, FALSE );
 	DrawBustshot( 19, "no_data", 0, 100, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, TRUE );
 	SetValidityOfInput( FALSE );
-	Wait( 6000 );
+	Wait( 2000 );
 	SetValidityOfInput( TRUE );
 	PlayBGM( 0, "T2", 120, 0 );
 

@@ -247,13 +247,13 @@ void main()
 		   NULL, "\"Of course it isn't.", Line_WaitForInput);
 	PlaySE(4, "s06/06/150602753", 128, 64);
 	OutputLine(NULL, "沙都子がカボチャ嫌いを克服できるように日夜研究してますので。",
-		   NULL, " I've been working hard every day to get you to overcome your dislike of squash.", Line_WaitForInput);
+		   NULL, " I've been working hard every day to get you to overcome your dislike of squash. ", Line_ModeSpecific);
 	DrawScene( "gk3", 400 );
 	DrawBustshot( 1, "si3_WinkA1_0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 200, TRUE );
 
 	PlaySE(4, "s06/06/150602754", 128, 64);
 	OutputLine(NULL, "さて、この調子で今年中に、ナス、",
-		   NULL, " Okay, now that that's done with, why don't you overcome your fear of eggplants,", Line_ContinueAfterTyping);
+		   NULL, "Okay, now that that's done with, why don't you overcome your fear of eggplants,", Line_ContinueAfterTyping);
 	SetValidityOfInput( FALSE );
 	Wait( 800 );
 	SetValidityOfInput( TRUE );

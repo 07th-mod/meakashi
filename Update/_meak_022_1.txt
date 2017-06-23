@@ -198,15 +198,17 @@ void main()
 		   NULL, "\"...Let's report anything we noticed that seemed strange.", Line_WaitForInput);
 	PlaySE(4, "s06/06/150602173", 128, 64);
 	OutputLine(NULL, "…互いの持つ小さな断片を合わせていけば、…ひょっとすると、鷹野さんたちを殺した、",
-		   NULL, " ...If we connect all the tiny pieces that we have...", Line_WaitForInput);
-	OutputLine(NULL, "…いえ、今年の事件に限らない。",
-		   NULL, " then just maybe we'll find out who killed them...", Line_ContinueAfterTyping);
+		   NULL, " ...If we connect all the tiny pieces that we have...", Line_ContinueAfterTyping);
 	SetValidityOfInput( FALSE );
 	Wait( 1000 );
 	SetValidityOfInput( TRUE );
+	OutputLine(NULL, "…いえ、今年の事件に限らない。",
+		   NULL, " then just maybe we'll find out who killed them... ", Line_ModeSpecific);
+
 	PlaySE(4, "s06/06/150602174", 128, 64);
+	if (AdvMode) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "過去の連続事件を解決するカギが見つかるかもしれません。」",
-		   NULL, " or maybe even the truth behind the incidents of the past few years.\"", Line_ModeSpecific);
+		   NULL, "Or maybe even the truth behind the incidents of the past few years.\"", Line_ModeSpecific);
 	if (AdvMode) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	PlaySE(4, "s06/01/150100192", 128, 64);

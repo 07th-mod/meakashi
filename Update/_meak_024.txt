@@ -646,9 +646,9 @@ void main()
 
 	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　それでも懸命に耳を傾ける二人が可笑しくて、私は人肉缶詰の話から戦時中の残酷な研究の話……、",
-		   NULL, "The way those two listened to me so intensely almost made it fun. I told them that people used to make canned human meat and conducted gruesome research during the war...", Line_WaitForInput);
+		   NULL, "The way those two listened to me so intensely almost made it fun. I told them that people used to make canned human meat and conducted gruesome research during the war... ", Line_ModeSpecific);
 	OutputLine(NULL, "要するに鷹野さんが好きで、私に特に熱っぽく聞かせてくれた辺りをねっちりと聞かせてやった。",
-		   NULL, " Those were things Takano-san told me.", Line_ModeSpecific);
+		   NULL, "Those were things Takano-san told me.", Line_ModeSpecific);
 	if (AdvMode) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
 
@@ -3200,7 +3200,7 @@ void main()
 		   NULL, " Even so, Kei-chan, you are without a doubt the cause.", Line_WaitForInput);
 	PlaySE(4, "s06/06/150602610", 128, 64);
 	OutputLine(NULL, "…………あの時、あんたがさりげなく人形を私にあげていたら、",
-		   NULL, " .........If you had nonchalantly given me the doll that day......", Line_ContinueAfterTyping);
+		   NULL, " .........If you had nonchalantly given me the doll that day...", Line_ContinueAfterTyping);
 	SetValidityOfInput( FALSE );
 	Wait( 800 );
 	SetValidityOfInput( TRUE );
