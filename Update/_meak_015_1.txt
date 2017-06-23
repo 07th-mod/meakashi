@@ -834,7 +834,7 @@ void main()
 
 	PlaySE(4, "s06/01/150100048", 128, 64);
 	OutputLine(NULL, "　それらの萌え衣装が、貴様らの馬鹿げた欲情に従い一糸纏わぬ姿にひん剥かれたと思うがいい、",
-		   NULL, "Imagine that your favorite cosplay is stripped entirely naked because of your stupid desire.", Line_ContinueAfterTyping);
+		   NULL, "Imagine that your favorite cosplay is stripped entirely naked because of your stupid desire.", Line_WaitForInput);
 	PlaySE( 0, "s_Kyupiin", 128, 64 );
 
 	OutputLine(NULL, "だがおいお前らよく考えろ！！！",
@@ -843,7 +843,7 @@ void main()
 	Wait( 600 );
 	SetValidityOfInput( TRUE );
 	OutputLine(NULL, "全部脱いだらもうそりゃコスプレＨじゃないぞッ？！？！",
-		   NULL, " If you take all of their clothes off, that's not cosplay anymore, is it?!", Line_ContinueAfterTyping);
+		   NULL, " If you take all of their clothes off, that's not cosplay anymore, is it?!", Line_WaitForInput);
 	PlaySE( 0, "s_Kyupiin", 128, 64 );
 	SetValidityOfInput( FALSE );
 	Wait( 800 );
@@ -852,13 +852,13 @@ void main()
 	PlaySE( 0, "s_daidageki", 128, 64 );
 
 	OutputLine(NULL, "最近そういう詐欺紛いなＡＶが増えているが実に嘆かわしい！！",
-		   NULL, " That sort of video is rampant lately!! It's just lamentable!", Line_ContinueAfterTyping);
+		   NULL, " That sort of video is rampant lately!! It's just lamentable!", Line_WaitForInput);
 	StartShakingOfWindow( 248, 40, 0, 2, 3*2, FALSE );
 	StartShakingOfAllObjects( 248, 40, 0, 2, 3*2, TRUE );
 
 	SetSpeedOfMessage( FALSE, 0 );
 	OutputLine(NULL, "服を全部剥いだらもうそれは文明人ではない、動物だ！！",
-		   NULL, " Humans without clothes aren't civilized, they're animals!!", Line_ContinueAfterTyping);
+		   NULL, " Humans without clothes aren't civilized, they're animals!!", Line_WaitForInput);
 	SetValidityOfInput( FALSE );
 	Wait( 600 );
 	SetValidityOfInput( TRUE );
@@ -879,10 +879,8 @@ void main()
 	PlaySE( 0, "s_Down", 128, 64 );
 	StartShakingOfWindow( 248, 40, 0, 2, 2*2, FALSE );
 	StartShakingOfAllObjects( 248, 40, 0, 2, 2*2, TRUE );
+	OutputLineAll(NULL, "", Line_WaitForInput);
 
-	SetValidityOfInput( FALSE );
-	Wait( 500 );
-	SetValidityOfInput( TRUE );
 	SetSpeedOfMessage( TRUE, 128 );
 	PlaySE(4, "s06/01/150100054", 128, 64);
 	OutputLine(NULL, "キビダンゴでももらって鬼ヶ島へでも失せろ！！！",
@@ -891,16 +889,11 @@ void main()
 	PlaySE( 0, "s_daidageki", 128, 64 );
 	StartShakingOfWindow( 248, 40, 0, 0, 4*2, FALSE );
 	StartShakingOfAllObjects( 248, 40, 0, 0, 4*2, TRUE );
+	OutputLineAll(NULL, "", Line_WaitForInput);
 
-	SetValidityOfInput( FALSE );
-	Wait( 600 );
-	SetValidityOfInput( TRUE );
 	PlaySE(4, "s06/01/150100055", 128, 64);
 	OutputLine(NULL, "ゲットバックヒアー！！",
-		   NULL, " Wait, get back here!!", Line_ContinueAfterTyping);
-	SetValidityOfInput( FALSE );
-	Wait( 500 );
-	SetValidityOfInput( TRUE );
+		   NULL, " Wait, get back here!!", Line_Normal);
 	ClearMessage();
 
 	PlaySE(4, "s06/01/150100057", 128, 64);
@@ -918,6 +911,7 @@ void main()
 	PlaySE( 0, "s_Down", 128, 64 );
 	StartShakingOfWindow( 248, 40, 0, 0, 3*2, FALSE );
 	StartShakingOfAllObjects( 248, 40, 0, 0, 3*2, TRUE );
+	OutputLineAll(NULL, "", Line_WaitForInput);
 
 	OutputLine(NULL, "制服系とロシア系を組み合わせたロシア美少女女子高生などという、ゲッター２が抜けて三神合体できないような水と油な組み合わせが出ているようだが、本官は断じて認めたりはしないぞッ！！！",
 		   NULL, " I heard that a style called 'beautiful Russian school girl' (which is a combination of the Japanese uniform fetish and some Russian thing) is emerging, but I'll never accept that!!!", Line_ContinueAfterTyping);
@@ -933,6 +927,7 @@ void main()
 	Wait( 150 );
 	SetValidityOfInput( TRUE );
 	PlaySE( 0, "s_furu", 128, 64 );
+	OutputLineAll(NULL, "", Line_WaitForInput);
 
 	SetSpeedOfMessage( TRUE, 128 );
 	PlaySE(4, "s06/01/150100059", 128, 64);
@@ -942,16 +937,14 @@ void main()
 	DrawScene( "F_a", 0 );
 	StartShakingOfWindow( 248, 40, 0, 2, 4*2, FALSE );
 	StartShakingOfAllObjects( 248, 40, 0, 2, 4*2, TRUE );
+	OutputLineAll(NULL, "", Line_WaitForInput);
 	DrawScene( "Mati4", 0 );
 	DrawBustshot( 2, "kei2_Ikari2_0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
 
 	SetSpeedOfMessage( FALSE, 0 );
 	PlaySE(4, "s06/01/150100060", 128, 64);
 	OutputLine(NULL, "毛唐に日本の和の心など分かりはしない！！！",
-		   NULL, " Those stupid barbarians will never understand the Japanese spirit!!!", Line_ContinueAfterTyping);
-	SetValidityOfInput( FALSE );
-	Wait( 600 );
-	SetValidityOfInput( TRUE );
+		   NULL, " Those stupid barbarians will never understand the Japanese spirit!!!", Line_WaitForInput);
 	PlaySE(4, "s06/01/150100061", 128, 64);
 	OutputLine(NULL, "貴様ら聞いているのか、",
 		   NULL, " Are you listening?!", Line_ContinueAfterTyping);
@@ -963,25 +956,17 @@ void main()
 	PlaySE( 0, "s_Down", 128, 64 );
 	StartShakingOfWindow( 248, 40, 0, 0, 2*2, FALSE );
 	StartShakingOfAllObjects( 248, 40, 0, 0, 2*2, TRUE );
+	OutputLineAll(NULL, "", Line_WaitForInput);
 
 	PlaySE(4, "s06/01/150100062", 128, 64);
 	OutputLine(NULL, "歯を食いしばれ、今日は徹底的にしごく！！！",
-		   NULL, " Clench your teeth, I'll train you 'til you drop!!!", Line_ContinueAfterTyping);
-	SetValidityOfInput( FALSE );
-	Wait( 500 );
-	SetValidityOfInput( TRUE );
+		   NULL, " Clench your teeth, I'll train you 'til you drop!!!", Line_WaitForInput);
 	PlaySE(4, "s06/01/150100063", 128, 64);
 	OutputLine(NULL, "貴様らが自分の妄想でご飯三杯行けるまで今日は寝られないと思ええ！！！",
-		   NULL, " I won't let you sleep until you are capable of perfecting your imagination skills!!!", Line_ContinueAfterTyping);
-	SetValidityOfInput( FALSE );
-	Wait( 500 );
-	SetValidityOfInput( TRUE );
+		   NULL, " I won't let you sleep until you are capable of perfecting your imagination skills!!!", Line_WaitForInput);
 	PlaySE(4, "s06/01/150100064", 128, 64);
 	OutputLine(NULL, "はいいぃいい指導指導指導ぉおおッ！！！！」",
-		   NULL, " Here comes my whip!!!\" ", Line_ContinueAfterTyping);
-	SetValidityOfInput( FALSE );
-	Wait( 500 );
-	SetValidityOfInput( TRUE );
+		   NULL, " Here comes my whip!!!\" ", Line_Normal);
 	ClearMessage();
 
 	PlaySE( 0, "s_furu", 128, 64 );
