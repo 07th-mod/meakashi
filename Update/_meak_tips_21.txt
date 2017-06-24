@@ -110,10 +110,11 @@ void main()
 
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
-	OutputLine(NULL, "　　　　　　　　　　　昭和５８年６月※※日",
-		   NULL, "1983-06-01T11:00:00.000Z", Line_ContinueAfterTyping);
-	OutputLine(NULL, "　　　　　　　　　　　　　　　　　園崎魅音",
-		   NULL, "                                                    Mion Sonozaki", Line_Normal);
+	OutputLine(NULL, "昭和５８年６月※※日",
+		   NULL, "June, 1983", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+	OutputLine(NULL, "園崎魅音",
+		   NULL, "Mion Sonozaki", Line_Normal);
 	ClearMessage();
 	SetSpeedOfMessage( FALSE, 0 );
 	Wait( 1000 );
