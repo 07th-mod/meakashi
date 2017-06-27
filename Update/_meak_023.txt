@@ -664,7 +664,7 @@ void main()
 	PlaySE( 0, "s_tataku", 128, 64 );
 
 	PlaySE(4, "s06/04/150400048", 128, 64);
-	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (AdvMode) { OutputLine("<color=#fcdb77>沙都子</color>", NULL, "<color=#fcdb77>Satoko</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「ぐぎゃあああぁあ……ッ！！！！」",
 		   NULL, "\"Gyaahhhhh!!!!\"", Line_Normal);
 	ClearMessage();
@@ -767,7 +767,7 @@ void main()
 	ClearMessage();
 
 	PlaySE(4, "s06/04/150400049", 128, 64);
-	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (AdvMode) { OutputLine("<color=#fcdb77>沙都子</color>", NULL, "<color=#fcdb77>Satoko</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「…………ッ、",
 		   NULL, "\"......!", Line_ContinueAfterTyping);
 	SetValidityOfInput( FALSE );
@@ -793,7 +793,7 @@ void main()
 	if (AdvMode) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	PlaySE(4, "s06/04/150400051", 128, 64);
-	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (AdvMode) { OutputLine("<color=#fcdb77>沙都子</color>", NULL, "<color=#fcdb77>Satoko</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「………………ぎゅ、",
 		   NULL, "\".........Gyah!", Line_ContinueAfterTyping);
 	SetValidityOfInput( FALSE );
@@ -2677,14 +2677,14 @@ void main()
 		   NULL, "\"Listen.", Line_WaitForInput);
 	PlaySE(4, "s06/06/150602406", 128, 64);
 	OutputLine(NULL, "…オヤシロさまの祟りなんて非現実的なものは初めから存在しません。",
-		   NULL, " ...Oyashiro-sama's curse never existed. It's too unrealistic.", Line_WaitForInput);
+		   NULL, " ...Oyashiro-sama's curse never existed. It's too unrealistic. ", Line_ModeSpecific);
 	PlaySE(4, "s06/06/150602407", 128, 64);
-	OutputLine(NULL, "圭ちゃんの言うとおり、村の何者かが、オヤシロさまの祟りというもっともらしい大義名分を利用して、",
-		   NULL, " Just like you said, someone in the village is using the guise of Oyashiro-sama's curse ", Line_ModeSpecific);
-	PlaySE(4, "s06/06/150602408", 128, 64);
 	if (AdvMode) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "圭ちゃんの言うとおり、村の何者かが、オヤシロさまの祟りというもっともらしい大義名分を利用して、",
+		   NULL, "Just like you said, someone in the village is using the guise of Oyashiro-sama's curse", Line_WaitForInput);
+	PlaySE(4, "s06/06/150602408", 128, 64);
 	OutputLine(NULL, "綿流しの度に殺しと失踪を繰り返しているんです！！！",
-		   NULL, "as a justification for continuing these murders and disappearances every Watanagashi!!!", Line_WaitForInput);
+		   NULL, " as a justification for continuing these murders and disappearances every Watanagashi!!!", Line_WaitForInput);
 	PlaySE(4, "s06/06/150602409", 128, 64);
 	OutputLine(NULL, "　…ヤツらは狡猾でした。",
 		   NULL, " ...They were cunning. ", Line_ModeSpecific);
