@@ -784,15 +784,6 @@ void main()
 	CallScript( "&toketu" );
 	PlayBGM( 0, "semi_r", 120, 0 );
 
-	int AdvMode;
-	AdvMode = 1;
-	int Line_ModeSpecific;
-	if (AdvMode) {
-		Line_ModeSpecific = Line_Normal;
-	} else {
-		Line_ModeSpecific = Line_WaitForInput;
-	}
-
 	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　重力がぐるぐる回る中。",
 		   NULL, "While gravity's pull spun around me,", Line_WaitForInput);
