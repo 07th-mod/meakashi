@@ -382,7 +382,6 @@ void main()
 	SetValidityOfInput( FALSE );
 	Wait( 1000 );
 	SetValidityOfInput( TRUE );
-	PlaySE(4, "s06/03/150300002", 128, 64);
 	OutputLine(NULL, "………その声は！！",
 		   NULL, "That voice!!", Line_WaitForInput);
 	PlaySE(4, "s06/03/150300003", 128, 64);
@@ -477,7 +476,7 @@ void main()
 	PlayBGM( 0, "mion", 120, 0 );
 
 	PlaySE(4, "s06/03/150300009", 128, 64);
-	PlaySE(4, "s06/06/150600097", 128, 64);
+	PlaySE(5, "s06/06/150600097", 128, 64);
 	if (AdvMode) { OutputLine("<color=#5ec69a>魅音</color>＆<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Mion</color> & <color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「「ぷ。",
 		   NULL, "\"Pff...", Line_ContinueAfterTyping);

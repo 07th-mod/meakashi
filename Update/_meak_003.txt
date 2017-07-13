@@ -522,10 +522,7 @@ void main()
 	PlaySE(4, "s06/03/150300070", 128, 64);
 	if (AdvMode) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　雛見沢全体が結束しなくちゃならない時に、模範となるべき御三家の人間が、自分から和を乱すのは……、",
-		   NULL, "That was a time when all of Hinamizawa needed to be united, so having one of the families, who are supposed to serve as examples, disturb that harmony was...", Line_ContinueAfterTyping);
-	SetValidityOfInput( FALSE );
-	Wait( 1500 );
-	SetValidityOfInput( TRUE );
+		   NULL, "That was a time when all of Hinamizawa needed to be united, so having one of the families, who are supposed to serve as examples, disturb that harmony was...", Line_WaitForInput);
 	PlaySE(4, "s06/03/150300071", 128, 64);
 	OutputLine(NULL, "それがオトナと呼べるかどうかは、",
 		   NULL, " I don't know if that should be called mature. ", Line_ModeSpecific);

@@ -787,8 +787,7 @@ void main()
 		   NULL, "\"......He has nothing to do with that...", Line_WaitForInput);
 	PlaySE(4, "s06/06/150600918", 128, 64);
 	OutputLine(NULL, "悟史くんの親は分かるとしても、悟史くん個人には何の責任もな…、」",
-		   NULL, " I understand that his parents were ostracized, but he shouldn't be...\" ", Line_ContinueAfterTyping);
-	Wait( 800 );
+		   NULL, " I understand that his parents were ostracized, but he shouldn't be...\" ", Line_ModeSpecific);
 	FadeOutBGM( 0, 0, FALSE );
 	FadeOutBGM( 1, 0, FALSE );
 	FadeOutBGM( 2, 0, FALSE );
@@ -1114,8 +1113,7 @@ void main()
 		   NULL, " Why me?!", Line_WaitForInput);
 	PlaySE(4, "s06/06/150600948", 128, 64);
 	OutputLine(NULL, "　私が何でそんな馬鹿な、」",
-		   NULL, " That's ridiculous...\"", Line_ContinueAfterTyping);
-	Wait( 1000 );
+		   NULL, " That's ridiculous...\"", Line_ModeSpecific);
 	DisableWindow();
 	DrawBustshot( 2, "me1a_MajimeA1_0_zoom--", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
 	DisplayWindow();
@@ -1178,8 +1176,7 @@ void main()
 		   NULL, " So what?!", Line_WaitForInput);
 	PlaySE(4, "s06/06/150600954", 128, 64);
 	OutputLine(NULL, "　私はそんなの全然興味な、」",
-		   NULL, " I don't give a fuck about...\"", Line_ContinueAfterTyping);
-	Wait( 900 );
+		   NULL, " I don't give a fuck about...\"", Line_ModeSpecific);
 	DisableWindow();
 	DrawBustshot( 2, "me1a_IkariA1_0_zoom--", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
 	DisplayWindow();
