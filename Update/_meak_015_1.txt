@@ -764,9 +764,7 @@ void main()
 	OutputLine(NULL, "「ぷげッ！！」",
 		   NULL, "\"Wuff!!\"", Line_ContinueAfterTyping);
 	PlaySE( 0, "s_Down", 128, 64 );
-	SetValidityOfInput( FALSE );
-	Wait( 200 );
-	SetValidityOfInput( TRUE );
+	OutputLineAll(NULL, "", Line_ModeSpecific);
 	if (AdvMode) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
@@ -775,9 +773,7 @@ void main()
 	OutputLine(NULL, "「おげ！！！」",
 		   NULL, "\"Orgh!!!\"", Line_ContinueAfterTyping);
 	PlaySE( 0, "s_Down", 128, 64 );
-	SetValidityOfInput( FALSE );
-	Wait( 200 );
-	SetValidityOfInput( TRUE );
+	OutputLineAll(NULL, "", Line_ModeSpecific);
 	if (AdvMode) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
