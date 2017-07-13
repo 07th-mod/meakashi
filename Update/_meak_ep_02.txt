@@ -160,10 +160,6 @@ void main()
 		   NULL, "\"Shut up, Shion!!", Line_ContinueAfterTyping);
 	StartShakingOfWindow( 241, 40, 0, 2, 4*2, FALSE );
 	StartShakingOfAllObjects( 241, 40, 0, 2, 4*2, TRUE );
-
-	SetValidityOfInput( FALSE );
-	Wait( 800 );
-	SetValidityOfInput( TRUE );
 	OutputLineAll(NULL, "", Line_WaitForInput);
 
 	OutputLine(NULL, "　亡霊のくせに…やかましい、",
@@ -184,22 +180,19 @@ void main()
 		   NULL, " \"Sis.... Siiissss!!\"", Line_ContinueAfterTyping);
 	StartShakingOfWindow( 248, 40, 0, 0, 3*2, FALSE );
 	StartShakingOfAllObjects( 248, 40, 0, 0, 3*2, TRUE );
+	OutputLineAll(NULL, "", Line_WaitForInput);
 
 	PlaySE(4, "s06/06/150602723", 128, 64);
 	OutputLine(NULL, "「くそったれがぁあぁ！！",
-		   NULL, "\"You lousy shit!", Line_WaitForInput);
+		   NULL, "\"You lousy shit!", Line_ContinueAfterTyping);
 	PlaySE( 0, "s_furu", 128, 64 );
-	SetValidityOfInput( FALSE );
-	Wait( 100 );
-	SetValidityOfInput( TRUE );
+	OutputLineAll(NULL, "", Line_WaitForInput);
 
 	PlaySE(4, "s06/06/150602724", 128, 64);
 	OutputLine(NULL, "　消え失せやがれえぇ！！！」",
 		   NULL, " Fuck off!!!\"", Line_ContinueAfterTyping);
 	PlaySE( 0, "s_tataku", 128, 64 );
-	SetValidityOfInput( FALSE );
-	Wait( 400 );
-	SetValidityOfInput( TRUE );
+	OutputLineAll(NULL, "", Line_WaitForInput);
 
 	PlaySE(4, "s06/03/150300471", 128, 64);
 	OutputLine(NULL, "「魅音はずるい、魅音だけずるい、姉妹はいつも一緒、死んでも一緒…！！！",

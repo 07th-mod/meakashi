@@ -523,13 +523,12 @@ void main()
 	DrawScene( "ryuuketu1", 0 );
 	FadeFilm( 400, TRUE );
 
-	PlaySE(4, "s06/04/150400045", 128, 64);
+	PlaySE(4, "s06/04/150400046", 128, 64);
 	OutputLine(NULL, "「ぎぃああやああああおああぉおああがああが…、",
 		   NULL, "\"Gyaahhhhhhh...", Line_ContinueAfterTyping);
 	SetValidityOfInput( FALSE );
 	Wait( 800 );
 	SetValidityOfInput( TRUE );
-	PlaySE(4, "s06/04/150400046", 128, 64);
 	OutputLine(NULL, "…ぎゃああああ！！！」",
 		   NULL, " gyahhhhh!!!\"", Line_Normal);
 	ClearMessage();
@@ -2769,10 +2768,7 @@ void main()
 
 	PlaySE(4, "s06/06/150602441", 128, 64);
 	OutputLine(NULL, "「……………えっと、………実は会合に出…、」",
-		   NULL, "\".........Umm...... Actually, with the meeting, I...\"", Line_ContinueAfterTyping);
-	SetValidityOfInput( FALSE );
-	Wait( 600 );
-	SetValidityOfInput( TRUE );
+		   NULL, "\".........Umm...... Actually, with the meeting, I...\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
 
