@@ -1,13 +1,5 @@
 void main()
 {
-	int AdvMode;
-	AdvMode = 1;
-	int Line_ModeSpecific;
-	if (AdvMode) {
-		Line_ModeSpecific = Line_Normal;
-	} else {
-		Line_ModeSpecific = Line_WaitForInput;
-	}
 	EnableJumpingOfReturnIcon();
 	FadeOutBGM( 0, 0, FALSE );
 	FadeOutBGM( 1, 0, FALSE );
@@ -18,55 +10,55 @@ void main()
 	PlayBGM( 0, "Nazo", 120, 0 );
 	DrawSceneWithMask( "JY1", "maskup", 1, 0, 1300 );
 
-	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　その後、私は公由村長の行方を捜す青年団に合流した。",
-		   NULL, "After that, I joined the youth group in the search for Kimiyoshi.", Line_ModeSpecific);
-	if (AdvMode) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
+		   NULL, "After that, I joined the youth group in the search for Kimiyoshi.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
 
-	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　町会の連絡網にそって、訪ねていないか電話し、回覧板区分ごとに手分けして捜した。",
 		   NULL, "I went down the town council's phone directory and called to see if he had visited, then had the group split according to the circular notice divisions and sent them to search the town.", Line_Normal);
 	ClearMessage();
 	DrawSceneWithMask( "black", "maskright", 1, 0, 300 );
 	DrawSceneWithMask( "M_Y1", "maskright", 1, 0, 300 );
 
-	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　誰もが、いくら捜しても見つからないだろうと、薄々気付いているようだった。",
-		   NULL, "Everybody seemed to be assuming they wouldn't find him.", Line_ModeSpecific);
-	if (AdvMode) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
+		   NULL, "Everybody seemed to be assuming they wouldn't find him.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
 
-	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　だが、薄々どころか、絶対見つからないと知っている私にはとにかく辛いものだった。",
 		   NULL, "But since I knew they definitely never would, it was just bothersome to me.", Line_Normal);
 	ClearMessage();
 	DrawSceneWithMask( "black", "maskright", 1, 0, 300 );
 	DrawSceneWithMask( "M_Y6", "maskright", 1, 0, 300 );
 
-	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　午前０時を回っても、まだあそこは見てない、一応あそこも行ってみようと皆、精力的だ。",
-		   NULL, "Even after midnight, they were all still enthusiastically looking for him.", Line_ModeSpecific);
-	if (AdvMode) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
+		   NULL, "Even after midnight, they were all still enthusiastically looking for him.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
 
-	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　私は大あくびをしながら耐えるしかなかった。",
 		   NULL, "I bore the sleepiness while yawning.", Line_Normal);
 	ClearMessage();
 
-	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　その内、誰かが噂した。",
 		   NULL, "Then I heard somebody whisper.", Line_Normal);
 	ClearMessage();
 
-	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　去年、……北条悟史くんがいなくなった時も、こんな風に青年団で捜したな、と。",
-		   NULL, "\"Last year...... we did the same thing when Satoshi Houjou-kun went missing.\"", Line_ModeSpecific);
-	if (AdvMode) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
+		   NULL, "\"Last year...... we did the same thing when Satoshi Houjou-kun went missing.\"", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
 
-	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　…青年団での捜索なんて、今年が茶番であるように、",
 		   NULL, "...The youth group was looking for someone who would never be found...", Line_ContinueAfterTyping);
 	SetValidityOfInput( FALSE );
@@ -76,70 +68,70 @@ void main()
 		   NULL, " just like last year.", Line_Normal);
 	ClearMessage();
 
-	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　私が、絶対に見つかることのない公由を知っていて、こうして欠伸交じりにせせら笑っているように。",
-		   NULL, "I was yawning because I knew this.", Line_ModeSpecific);
-	if (AdvMode) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
+		   NULL, "I was yawning because I knew this.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
 
-	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　去年の何者かも、絶対に見つかることのない悟史くんを知っていて、私のように欠伸交じりにせせら笑っていたのだ。",
 		   NULL, "Last year, there must also have been some people who were yawning... and grinning on the inside.", Line_Normal);
 	ClearMessage();
 	DrawSceneWithMask( "M_Y4", "maskleft", 1, 0, 300 );
 
-	PlaySE(4, "s20/00/villa44001", 128, 64);
-	if (AdvMode) { OutputLine("<color=#f5e6d3>村人</color>", NULL, "<color=#f5e6d3>Villager</color>", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>村人</color>", NULL, "<color=#f5e6d3>Villager</color>", NULL, Line_ContinueAfterTyping); }
+	PlayVoice(4, "s20/00/villa44001", 128);
 	OutputLine(NULL, "「……去年の捜索って、何時に終わりにしましたっけ？」",
-		   NULL, "\"......When did we stop searching last year, do you remember?\"", Line_ModeSpecific);
-	if (AdvMode) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+		   NULL, "\"......When did we stop searching last year, do you remember?\"", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
-	PlaySE(4, "s20/00/villb44001", 128, 64);
-	if (AdvMode) { OutputLine("<color=#f5e6d3>村人</color>", NULL, "<color=#f5e6d3>Villager</color>", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>村人</color>", NULL, "<color=#f5e6d3>Villager</color>", NULL, Line_ContinueAfterTyping); }
+	PlayVoice(4, "s20/00/villb44001", 128);
 	OutputLine(NULL, "「ん？",
 		   NULL, "\"Hmm?", Line_WaitForInput);
 	OutputLine(NULL, "　北条んとこの悟史ん時かい？",
 		   NULL, " When Satoshi Houjou-kun was missing?", Line_WaitForInput);
-	PlaySE(4, "s20/00/villb44002", 128, 64);
+	PlayVoice(4, "s20/00/villb44002", 128);
 	OutputLine(NULL, "　ありゃあ何時だったっけ？」",
-		   NULL, " Oh, what time was it?\"", Line_ModeSpecific);
-	if (AdvMode) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+		   NULL, " Oh, what time was it?\"", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
-	PlaySE(4, "s20/00/elda44001", 128, 64);
-	if (AdvMode) { OutputLine("<color=#f5e6d3>長老</color>", NULL, "<color=#f5e6d3>Elder</color>", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>長老</color>", NULL, "<color=#f5e6d3>Elder</color>", NULL, Line_ContinueAfterTyping); }
+	PlayVoice(4, "s20/00/elda44001", 128);
 	OutputLine(NULL, "「午前の０時過ぎくらいには解散したような気がするなぁ。」",
 		   NULL, "\"I guess that was around midnight.\"", Line_Normal);
 	ClearMessage();
 
-	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　時計は、もう午前の２時を回ろうとしていた。",
 		   NULL, "It was already two in the morning.", Line_Normal);
 	ClearMessage();
 
-	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　公由を捜すためにはこれだけの時間を割くのに、…悟史くんにはまったく割かない。",
 		   NULL, "Although they spent this much time searching for Kimiyoshi... they didn't do the same when Satoshi-kun went missing.", Line_Normal);
 	ClearMessage();
 	PlayBGM( 1, "yabaisemi", 120, 0 );
 
-	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　そう、絶対見つからないと知っているやつらが、居たからだ。",
-		   NULL, "After all, some people knew they wouldn't find him.", Line_ModeSpecific);
-	if (AdvMode) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
+		   NULL, "After all, some people knew they wouldn't find him.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
 
-	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　そいつらはきっと眠かった。",
-		   NULL, "They must've been sleepy.", Line_ModeSpecific);
-	if (AdvMode) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+		   NULL, "They must've been sleepy.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
-	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　だからもう諦めて警察に任せよう、なんて言い出したに違いないのだ。",
-		   NULL, "They must've said they should leave it to the police.", Line_ModeSpecific);
-	if (AdvMode) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
+		   NULL, "They must've said they should leave it to the police.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
 
-	if (AdvMode) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　くそ…くそ…、その言ったやつを殺してやりたい……。",
 		   NULL, " Shit... shit... I want to kill the people who said that...", Line_Normal);
 	ClearMessage();
