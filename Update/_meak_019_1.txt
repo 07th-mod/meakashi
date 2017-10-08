@@ -643,10 +643,10 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "s06/06/150601648", 128);
 	OutputLine(NULL, "「……んーー、",
-		   NULL, "\"Mm...", Line_ContinueAfterTyping);
-	SetValidityOfInput( FALSE );
+		   NULL, "\"Mm...", Line_Continue);
+	// (backup) SetValidityOfInput( FALSE );
 	Wait( 800 );
-	SetValidityOfInput( TRUE );
+	// (backup) SetValidityOfInput( TRUE );
 	OutputLine(NULL, "……うん。",
 		   NULL, " ...yeah.", Line_WaitForInput);
 	PlayVoice(4, "s06/06/150601649", 128);
@@ -832,15 +832,15 @@ void main()
 		   NULL, "\"Hahahahahaha...", Line_WaitForInput);
 	PlayVoice(4, "s06/06/150601668", 128);
 	OutputLine(NULL, "…ちぇ……、",
-		   NULL, " Shit...", Line_ContinueAfterTyping);
-	SetValidityOfInput( FALSE );
+		   NULL, " Shit...", Line_Continue);
+	// (backup) SetValidityOfInput( FALSE );
 	Wait( 1000 );
-	SetValidityOfInput( TRUE );
+	// (backup) SetValidityOfInput( TRUE );
 	OutputLine(NULL, "…まいった、",
-		   NULL, " ...damn", Line_ContinueAfterTyping);
-	SetValidityOfInput( FALSE );
+		   NULL, " ...damn", Line_Continue);
+	// (backup) SetValidityOfInput( FALSE );
 	Wait( 800 );
-	SetValidityOfInput( TRUE );
+	// (backup) SetValidityOfInput( TRUE );
 	OutputLine(NULL, "…なぁ。」",
 		   NULL, " it...\"", Line_Normal);
 	ClearMessage();
@@ -2166,10 +2166,10 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>沁子</color>", NULL, "<color=#f5e6d3>Shimiko</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "s06/00/shinko15002", 128);
 	OutputLine(NULL, "「……ぁ…あぁ………、",
-		   NULL, "\"Ah.........", Line_ContinueAfterTyping);
-	SetValidityOfInput( FALSE );
+		   NULL, "\"Ah.........", Line_Continue);
+	// (backup) SetValidityOfInput( FALSE );
 	Wait( 1000 );
-	SetValidityOfInput( TRUE );
+	// (backup) SetValidityOfInput( TRUE );
 	OutputLine(NULL, "……そうですか……。」",
 		   NULL, " I see......\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }

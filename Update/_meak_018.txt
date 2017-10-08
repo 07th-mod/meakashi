@@ -700,7 +700,7 @@ void main()
 	ClearMessage();
 
 	PlayVoice(4, "s06/06/150601523", 128);
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_Continue); }
 	OutputLine(NULL, "「見えてます？",
 		   NULL, "\"Can you see it?", Line_WaitForInput);
 	PlayVoice(4, "s06/06/150601524", 128);
@@ -717,7 +717,7 @@ void main()
 	ClearMessage();
 
 	PlayVoice(4, "s06/06/150601526", 128);
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_Continue); }
 	OutputLine(NULL, "「今からこれであなたの鼻を焼きます。",
 		   NULL, "\"I'm going to burn your nose now.", Line_WaitForInput);
 	PlayVoice(4, "s06/06/150601527", 128);
@@ -799,10 +799,10 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "s06/06/150601530", 128);
 	OutputLine(NULL, "「こいつ…………、",
-		   NULL, "\"Did she......", Line_ContinueAfterTyping);
-	SetValidityOfInput( FALSE );
+		   NULL, "\"Did she......", Line_Continue);
+	// (backup) SetValidityOfInput( FALSE );
 	Wait( 1200 );
-	SetValidityOfInput( TRUE );
+	// (backup) SetValidityOfInput( TRUE );
 	OutputLine(NULL, "…………スタンガンで、…死んだ…？」",
 		   NULL, " ......die from the stun gun?\"", Line_Normal);
 	ClearMessage();
@@ -1109,10 +1109,10 @@ void main()
 		   NULL, "\"Hah, hah... hah...", Line_WaitForInput);
 	PlayVoice(4, "s06/06/150601532", 128);
 	OutputLine(NULL, "………………思い知ったか、",
-		   NULL, " ......You deserve this,", Line_ContinueAfterTyping);
-	SetValidityOfInput( FALSE );
+		   NULL, " ......You deserve this,", Line_Continue);
+	// (backup) SetValidityOfInput( FALSE );
 	Wait( 1000 );
-	SetValidityOfInput( TRUE );
+	// (backup) SetValidityOfInput( TRUE );
 	OutputLine(NULL, "………鬼婆…。」",
 		   NULL, " you fucking demon-hag...\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -1410,7 +1410,7 @@ void main()
 	ClearMessage();
 
 	PlayVoice(4, "s06/06/150601550", 128);
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_Continue); }
 	OutputLine(NULL, "「さっきの音は聞こえてなかった？",
 		   NULL, "\"Did you hear some noise earlier?", Line_WaitForInput);
 	PlayVoice(4, "s06/06/150601551", 128);
@@ -1430,7 +1430,7 @@ void main()
 	ClearMessage();
 
 	PlayVoice(4, "s06/06/150601552", 128);
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_Continue); }
 	OutputLine(NULL, "「大丈夫。",
 		   NULL, "\"Don't worry,", Line_WaitForInput);
 	PlayVoice(4, "s06/06/150601553", 128);
@@ -1646,16 +1646,16 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "s06/03/150300391", 128);
 	OutputLine(NULL, "「し、…詩音、",
-		   NULL, "\"Sh-Shion...", Line_ContinueAfterTyping);
-	SetValidityOfInput( FALSE );
+		   NULL, "\"Sh-Shion...", Line_Continue);
+	// (backup) SetValidityOfInput( FALSE );
 	Wait( 1000 );
-	SetValidityOfInput( TRUE );
+	// (backup) SetValidityOfInput( TRUE );
 	OutputLine(NULL, "……婆っちゃを落す気ッ？！」",
 		   NULL, " are you going to push Granny down the well?!\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	PlayVoice(4, "s06/06/150601559", 128);
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_Continue); }
 	OutputLine(NULL, "「落すんじゃないよ、捨てるんだよ。",
 		   NULL, "\"No, I'm not. I'm just dumping her body.", Line_WaitForInput);
 	PlayVoice(4, "s06/06/150601560", 128);
@@ -1670,7 +1670,7 @@ void main()
 	ClearMessage();
 
 	PlayVoice(4, "s06/06/150601561", 128);
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_Continue); }
 	OutputLine(NULL, "「さっきの拷問で死んだんじゃないよ。",
 		   NULL, "\"Rest assured, I didn't torture her to death.", Line_WaitForInput);
 	PlayVoice(4, "s06/06/150601562", 128);
@@ -2037,37 +2037,37 @@ void main()
 		   NULL, "...You know what I mean?", Line_WaitForInput);
 	PlayVoice(4, "s06/06/150601608", 128);
 	OutputLine(NULL, "　…くすくすくすくすくす………、",
-		   NULL, " Hee hee hee hee...", Line_ContinueAfterTyping);
-	SetValidityOfInput( FALSE );
+		   NULL, " Hee hee hee hee...", Line_Continue);
+	// (backup) SetValidityOfInput( FALSE );
 	Wait( 1500 );
-	SetValidityOfInput( TRUE );
+	// (backup) SetValidityOfInput( TRUE );
 	SetSpeedOfMessage( TRUE, 16 );
 	OutputLine(NULL, "あははははは、",
-		   NULL, " Ahahahaha...", Line_ContinueAfterTyping);
-	SetValidityOfInput( FALSE );
+		   NULL, " Ahahahaha...", Line_Continue);
+	// (backup) SetValidityOfInput( FALSE );
 	Wait( 1000 );
-	SetValidityOfInput( TRUE );
+	// (backup) SetValidityOfInput( TRUE );
 	SetSpeedOfMessage( TRUE, 128 );
 	OutputLine(NULL, "あっ",
-		   NULL, " A", Line_ContinueAfterTyping);
-	SetValidityOfInput( FALSE );
+		   NULL, " A", Line_Continue);
+	// (backup) SetValidityOfInput( FALSE );
 	Wait( 200 );
-	SetValidityOfInput( TRUE );
+	// (backup) SetValidityOfInput( TRUE );
 	OutputLine(NULL, "はっ",
-		   NULL, " ha", Line_ContinueAfterTyping);
-	SetValidityOfInput( FALSE );
+		   NULL, " ha", Line_Continue);
+	// (backup) SetValidityOfInput( FALSE );
 	Wait( 200 );
-	SetValidityOfInput( TRUE );
+	// (backup) SetValidityOfInput( TRUE );
 	OutputLine(NULL, "はっ",
-		   NULL, " ha", Line_ContinueAfterTyping);
-	SetValidityOfInput( FALSE );
+		   NULL, " ha", Line_Continue);
+	// (backup) SetValidityOfInput( FALSE );
 	Wait( 200 );
-	SetValidityOfInput( TRUE );
+	// (backup) SetValidityOfInput( TRUE );
 	OutputLine(NULL, "はっ",
-		   NULL, " ha", Line_ContinueAfterTyping);
-	SetValidityOfInput( FALSE );
+		   NULL, " ha", Line_Continue);
+	// (backup) SetValidityOfInput( FALSE );
 	Wait( 200 );
-	SetValidityOfInput( TRUE );
+	// (backup) SetValidityOfInput( TRUE );
 	SetSpeedOfMessage( TRUE, 32 );
 	OutputLine(NULL, "ははははははっはっはっはッ！！！」",
 		   NULL, " hahaha ha ha ha!!!\"", Line_Normal);

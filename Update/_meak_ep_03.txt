@@ -221,10 +221,10 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#fcdb77>沙都子</color>", NULL, "<color=#fcdb77>Satoko</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "s06/04/150400105", 128);
 	OutputLine(NULL, "「…………んんんん、",
-		   NULL, "\"......Hmm......", Line_ContinueAfterTyping);
-	SetValidityOfInput( FALSE );
+		   NULL, "\"......Hmm......", Line_Continue);
+	// (backup) SetValidityOfInput( FALSE );
 	Wait( 900 );
-	SetValidityOfInput( TRUE );
+	// (backup) SetValidityOfInput( TRUE );
 	OutputLine(NULL, "………まぁその、食べれなくもないですわね…。」",
 		   NULL, " well, it isn't so bad...\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -245,15 +245,15 @@ void main()
 
 	PlayVoice(4, "s06/06/150602754", 128);
 	OutputLine(NULL, "さて、この調子で今年中に、ナス、",
-		   NULL, "Okay, now that that's done with, why don't you overcome your fear of eggplants,", Line_ContinueAfterTyping);
-	SetValidityOfInput( FALSE );
+		   NULL, "Okay, now that that's done with, why don't you overcome your fear of eggplants,", Line_Continue);
+	// (backup) SetValidityOfInput( FALSE );
 	Wait( 800 );
-	SetValidityOfInput( TRUE );
+	// (backup) SetValidityOfInput( TRUE );
 	OutputLine(NULL, "ピーマン、",
-		   NULL, " green peppers,", Line_ContinueAfterTyping);
-	SetValidityOfInput( FALSE );
+		   NULL, " green peppers,", Line_Continue);
+	// (backup) SetValidityOfInput( FALSE );
 	Wait( 900 );
-	SetValidityOfInput( TRUE );
+	// (backup) SetValidityOfInput( TRUE );
 	OutputLine(NULL, "アスパラガスと制覇して行きましょう。」",
 		   NULL, " and asparagus within the year?\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }

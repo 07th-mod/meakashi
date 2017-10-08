@@ -909,7 +909,7 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "s06/06/150600405", 128);
 	OutputLine(NULL, "「それは調理塩。",
-		   NULL, "\"That's cooking salt.", Line_ContinueAfterTyping);
+		   NULL, "\"That's cooking salt.", Line_Continue);
 	StartShakingOfWindow( 248, 40, 0, 2, 3*2, FALSE );
 	StartShakingOfAllObjects( 248, 40, 0, 2, 3*2, TRUE );
 
@@ -989,7 +989,7 @@ void main()
 		   NULL, " Is this it?", Line_WaitForInput);
 	PlayVoice(4, "s06/07/151200082", 128);
 	OutputLine(NULL, "　ひょいひょい。」",
-		   NULL, " In it goes.\"", Line_ContinueAfterTyping);
+		   NULL, " In it goes.\"", Line_Continue);
 	PlaySE( 0, "s_Down", 100, 64 );
 	StartShakingOfWindow( 248, 40, 0, 2, 3*2, FALSE );
 	StartShakingOfAllObjects( 248, 40, 0, 2, 3*2, TRUE );
@@ -1134,10 +1134,10 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#ffdc6f>悟史</color>", NULL, "<color=#ffdc6f>Satoshi</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "s06/07/151200090", 128);
 	OutputLine(NULL, "「…むぅ〜〜〜………、",
-		   NULL, "\"...Mmph....", Line_ContinueAfterTyping);
-	SetValidityOfInput( FALSE );
+		   NULL, "\"...Mmph....", Line_Continue);
+	// (backup) SetValidityOfInput( FALSE );
 	Wait( 1000 );
-	SetValidityOfInput( TRUE );
+	// (backup) SetValidityOfInput( TRUE );
 	OutputLine(NULL, "みんな僕を追い抜いて、勝手に料金を入れてるかな…。」",
 		   NULL, " No, everyone walks by me and pays their own fare...\"", Line_Normal);
 	ClearMessage();

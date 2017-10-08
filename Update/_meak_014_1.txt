@@ -125,10 +125,10 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "s06/06/150601138", 128);
 	OutputLine(NULL, "「はい？？",
-		   NULL, "\"What??", Line_ContinueAfterTyping);
-	SetValidityOfInput( FALSE );
+		   NULL, "\"What??", Line_Continue);
+	// (backup) SetValidityOfInput( FALSE );
 	Wait( 800 );
-	SetValidityOfInput( TRUE );
+	// (backup) SetValidityOfInput( TRUE );
 	OutputLine(NULL, "………異常者？",
 		   NULL, " ...A lunatic?", Line_WaitForInput);
 	PlayVoice(4, "s06/06/150601139", 128);
@@ -634,10 +634,10 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>Ooishi</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "s06/11/150700300", 128);
 	OutputLine(NULL, "「何かの偶然による壮大な勘違いか、もしくは、",
-		   NULL, "\"It might be either a big misunderstanding caused by a chain of coincidences, or...", Line_ContinueAfterTyping);
-	SetValidityOfInput( FALSE );
+		   NULL, "\"It might be either a big misunderstanding caused by a chain of coincidences, or...", Line_Continue);
+	// (backup) SetValidityOfInput( FALSE );
 	Wait( 1000 );
-	SetValidityOfInput( TRUE );
+	// (backup) SetValidityOfInput( TRUE );
 	OutputLine(NULL, "…………………ねぇ？",
 		   NULL, " ...you know?", Line_WaitForInput);
 	DisableWindow();
@@ -1586,10 +1586,10 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　こう考えると、１年目から順に、「敵」",
 		   NULL, "Looking at these incidents, I realized that the 'curse' was performed based on the degree of hostility:", Line_WaitForInput);
-	PlaySE(4, "", 128, 64);
+	PlayVoice(4, "", 128);
 	OutputLine(NULL, "「裏切り者」",
 		   NULL, " enemy,", Line_WaitForInput);
-	PlaySE(4, "", 128, 64);
+	PlayVoice(4, "", 128);
 	OutputLine(NULL, "「非協力者」",
 		   NULL, " traitor,", Line_WaitForInput);
 	OutputLine(NULL, "と、その敵対度に応じて順番に「祟り」が執行されていることに気付く。",
@@ -2739,7 +2739,7 @@ void main()
 	DisplayWindow();
 
 	PlayVoice(4, "s06/09/150900051", 128);
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_Continue); }
 	OutputLine(NULL, "「ありがとう。",
 		   NULL, "\"Thanks.", Line_WaitForInput);
 	PlayVoice(4, "s06/09/150900052", 128);
@@ -2755,14 +2755,14 @@ void main()
 	OutputLine(NULL, "私たちが６月のお祭りだと思っている綿流しだって、本来はちょっと早い夏祭りなんかでは断じてない。",
 		   NULL, " The festival we hold in June isn't just an early summer festival. ", GetGlobalFlag(GLinemodeSp));
 	PlayVoice(4, "s06/09/150900056", 128);
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_Continue); }
 	OutputLine(NULL, "本来は犠牲者をさらい、食べるために行なう食人の宴だった。",
 		   NULL, "It used to be a banquet in which the villagers chased after a sacrifice and ate them...", Line_WaitForInput);
 	PlayVoice(4, "s06/09/150900057", 128);
 	OutputLine(NULL, "…彼らはね、犠牲者を拘束台に縛りつけ、お魚をおろす時みたいに、ハラワタを引きずり出してそれを川に投げ捨てたとされている。",
 		   NULL, " They bound the sacrifice to a table, gutted them, and dumped the organs into a river. ", GetGlobalFlag(GLinemodeSp));
 	PlayVoice(4, "s06/09/150900058", 128);
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_Continue); }
 	OutputLine(NULL, "ほら、魚のハラワタって、ワタって言うじゃない？",
 		   NULL, "'Wata' can mean 'cotton', but it also means 'organs'.", Line_WaitForInput);
 	PlayVoice(4, "s06/09/150900059", 128);
@@ -2771,13 +2771,13 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	PlayVoice(4, "s06/06/150601234", 128);
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_Continue); }
 	OutputLine(NULL, "「ワタ、流し…。」",
 		   NULL, "\"Organ drifting... Watanagashi...\"", Line_Normal);
 	ClearMessage();
 
 	PlayVoice(4, "s06/09/150900060", 128);
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_Continue); }
 	OutputLine(NULL, "「そうよ。",
 		   NULL, "\"Indeed.", Line_WaitForInput);
 	PlayVoice(4, "s06/09/150900061", 128);

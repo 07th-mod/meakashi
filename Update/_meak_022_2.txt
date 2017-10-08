@@ -534,21 +534,21 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "s06/01/150100251", 128);
 	OutputLine(NULL, "「…梨花ちゃんも",
-		   NULL, "\"...Rika-chan", Line_ContinueAfterTyping);
-	SetValidityOfInput( FALSE );
+		   NULL, "\"...Rika-chan", Line_Continue);
+	// (backup) SetValidityOfInput( FALSE );
 	Wait( 400 );
-	SetValidityOfInput( TRUE );
+	// (backup) SetValidityOfInput( TRUE );
 
 	SetSpeedOfMessage( TRUE, 16 );
 	OutputLine(NULL, "…………",
-		   NULL, "......", Line_ContinueAfterTyping);
+		   NULL, "......", Line_Continue);
 	SetSpeedOfMessage( FALSE, 0 );
 
 	OutputLine(NULL, "沙都子も、",
-		   NULL, " and Satoko-chan...", Line_ContinueAfterTyping);
-	SetValidityOfInput( FALSE );
+		   NULL, " and Satoko-chan...", Line_Continue);
+	// (backup) SetValidityOfInput( FALSE );
 	Wait( 800 );
-	SetValidityOfInput( TRUE );
+	// (backup) SetValidityOfInput( TRUE );
 
 	OutputLine(NULL, "……大変なんだな。」",
 		   NULL, " they have it hard, huh.\"", Line_Normal);
@@ -571,20 +571,20 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "s06/01/150100253", 128);
 	OutputLine(NULL, "「…魅音、",
-		   NULL, "\"...Mion...", Line_ContinueAfterTyping);
-	SetValidityOfInput( FALSE );
+		   NULL, "\"...Mion...", Line_Continue);
+	// (backup) SetValidityOfInput( FALSE );
 	Wait( 800 );
-	SetValidityOfInput( TRUE );
+	// (backup) SetValidityOfInput( TRUE );
 	OutputLine(NULL, "…お前、",
-		   NULL, " what...", Line_ContinueAfterTyping);
-	SetValidityOfInput( FALSE );
+		   NULL, " what...", Line_Continue);
+	// (backup) SetValidityOfInput( FALSE );
 	Wait( 700 );
-	SetValidityOfInput( TRUE );
+	// (backup) SetValidityOfInput( TRUE );
 	OutputLine(NULL, "今、",
-		   NULL, " did you", Line_ContinueAfterTyping);
-	SetValidityOfInput( FALSE );
+		   NULL, " did you", Line_Continue);
+	// (backup) SetValidityOfInput( FALSE );
 	Wait( 700 );
-	SetValidityOfInput( TRUE );
+	// (backup) SetValidityOfInput( TRUE );
 	OutputLine(NULL, "…何て言った？」",
 		   NULL, " just say?\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -1060,10 +1060,10 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>村人</color>", NULL, "<color=#f5e6d3>Villager</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "s06/00/villc15001", 128);
 	OutputLine(NULL, "「自転車で遊びに行ったなら、",
-		   NULL, "\"If they left on their bikes,", Line_ContinueAfterTyping);
-	SetValidityOfInput( FALSE );
+		   NULL, "\"If they left on their bikes,", Line_Continue);
+	// (backup) SetValidityOfInput( FALSE );
 	Wait( 800 );
-	SetValidityOfInput( TRUE );
+	// (backup) SetValidityOfInput( TRUE );
 	OutputLine(NULL, "…遠くかも知れんなぁ…。",
 		   NULL, " they could have gone pretty far...", Line_WaitForInput);
 	PlayVoice(4, "s06/00/villc15002", 128);

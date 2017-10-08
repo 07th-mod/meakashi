@@ -436,10 +436,10 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "s06/06/150601022", 128);
 	OutputLine(NULL, "「…………………悟史くんは、",
-		   NULL, "\".........How's Satoshi-kun", Line_ContinueAfterTyping);
-	SetValidityOfInput( FALSE );
+		   NULL, "\".........How's Satoshi-kun", Line_Continue);
+	// (backup) SetValidityOfInput( FALSE );
 	Wait( 1000 );
-	SetValidityOfInput( TRUE );
+	// (backup) SetValidityOfInput( TRUE );
 	OutputLine(NULL, "……どうなったの……？」",
 		   NULL, " doing......?\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -494,11 +494,11 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "s06/06/150601025", 128);
 	OutputLine(NULL, "「……………………………",
-		   NULL, "\".....................", Line_ContinueAfterTyping);
+		   NULL, "\".....................", Line_Continue);
 	SetSpeedOfMessage( FALSE, 0 );
-	SetValidityOfInput( FALSE );
+	// (backup) SetValidityOfInput( FALSE );
 	Wait( 800 );
-	SetValidityOfInput( TRUE );
+	// (backup) SetValidityOfInput( TRUE );
 	OutputLine(NULL, "何それ。」",
 		   NULL, "What?\"", Line_Normal);
 	ClearMessage();

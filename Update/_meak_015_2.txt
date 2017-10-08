@@ -653,10 +653,10 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "s06/06/150601387", 128);
 	OutputLine(NULL, "「悟史くん……………、",
-		   NULL, "\"Satoshi-kun.........", Line_ContinueAfterTyping);
-	SetValidityOfInput( FALSE );
+		   NULL, "\"Satoshi-kun.........", Line_Continue);
+	// (backup) SetValidityOfInput( FALSE );
 	Wait( 800 );
-	SetValidityOfInput( TRUE );
+	// (backup) SetValidityOfInput( TRUE );
 	OutputLine(NULL, "……悟史くん…………。」",
 		   NULL, " ...Satoshi-kun...\"", Line_Normal);
 	ClearMessage();

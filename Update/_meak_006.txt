@@ -421,7 +421,7 @@ void main()
 		   NULL, "\"What aren't you sure about? We're talking about you!", Line_WaitForInput);
 	PlayVoice(4, "s06/06/150600493", 128);
 	OutputLine(NULL, "　それを、",
-		   NULL, " So...", Line_ContinueAfterTyping);
+		   NULL, " So...", Line_Continue);
 	PlaySE( 0, "s_boyoon", 128, 64 );
 	DrawBustshot( 1, "sato2_Def2_0_zoom", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 21, 200, TRUE );
 
@@ -1384,10 +1384,10 @@ void main()
 		   NULL, "\"So,", Line_WaitForInput);
 	PlayVoice(4, "s06/06/150600540", 128);
 	OutputLine(NULL, "それを庇う悟史くんも、………ぼろぼろになっている、",
-		   NULL, " Satoshi-kun is also worn out...", Line_ContinueAfterTyping);
-	SetValidityOfInput( FALSE );
+		   NULL, " Satoshi-kun is also worn out...", Line_Continue);
+	// (backup) SetValidityOfInput( FALSE );
 	Wait( 1000 );
-	SetValidityOfInput( TRUE );
+	// (backup) SetValidityOfInput( TRUE );
 	OutputLine(NULL, "ということですね？」",
 		   NULL, " from covering for Satoko, isn't he?\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
@@ -1745,10 +1745,10 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#c89a80>入江</color>", NULL, "<color=#c89a80>Irie</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "s06/10/151000083", 128);
 	OutputLine(NULL, "「………それは、",
-		   NULL, "\"...What...", Line_ContinueAfterTyping);
-	SetValidityOfInput( FALSE );
+		   NULL, "\"...What...", Line_Continue);
+	// (backup) SetValidityOfInput( FALSE );
 	Wait( 1000 );
-	SetValidityOfInput( TRUE );
+	// (backup) SetValidityOfInput( TRUE );
 	OutputLine(NULL, "………どういう意味ですか、園崎さん？」",
 		   NULL, " ...do you mean, Sonozaki-san?\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -1771,10 +1771,10 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#c89a80>入江</color>", NULL, "<color=#c89a80>Irie</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "s06/10/151000084", 128);
 	OutputLine(NULL, "「…………ん、",
-		   NULL, "\".........Nn......", Line_ContinueAfterTyping);
-	SetValidityOfInput( FALSE );
+		   NULL, "\".........Nn......", Line_Continue);
+	// (backup) SetValidityOfInput( FALSE );
 	Wait( 1000 );
-	SetValidityOfInput( TRUE );
+	// (backup) SetValidityOfInput( TRUE );
 	OutputLine(NULL, "………そんなことは……、」",
 		   NULL, " I don't know about that...\"", Line_Normal);
 	ClearMessage();

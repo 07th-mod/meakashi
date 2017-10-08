@@ -93,15 +93,15 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "s06/03/150300175", 128);
 	OutputLine(NULL, "「ぇ、",
-		   NULL, "\"Eh,", Line_ContinueAfterTyping);
-	SetValidityOfInput( FALSE );
+		   NULL, "\"Eh,", Line_Continue);
+	// (backup) SetValidityOfInput( FALSE );
 	Wait( 1000 );
-	SetValidityOfInput( TRUE );
+	// (backup) SetValidityOfInput( TRUE );
 	OutputLine(NULL, "あ、",
-		   NULL, " umm...", Line_ContinueAfterTyping);
-	SetValidityOfInput( FALSE );
+		   NULL, " umm...", Line_Continue);
+	// (backup) SetValidityOfInput( FALSE );
 	Wait( 800 );
-	SetValidityOfInput( TRUE );
+	// (backup) SetValidityOfInput( TRUE );
 	OutputLine(NULL, "……ん、どうだろ…。」",
 		   NULL, " I don't know.\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -1085,10 +1085,10 @@ void main()
 		   NULL, "\"Yeah...", Line_WaitForInput);
 	PlayVoice(4, "s06/07/151200305", 128);
 	OutputLine(NULL, "…お給料がもらえるのはもうすぐなんだけどね、",
-		   NULL, " I'll get paid soon, too...", Line_ContinueAfterTyping);
-	SetValidityOfInput( FALSE );
+		   NULL, " I'll get paid soon, too...", Line_Continue);
+	// (backup) SetValidityOfInput( FALSE );
 	Wait( 1000 );
-	SetValidityOfInput( TRUE );
+	// (backup) SetValidityOfInput( TRUE );
 	OutputLine(NULL, "…これで安心できる。」",
 		   NULL, " I feel relieved now.\"", Line_Normal);
 	ClearMessage();

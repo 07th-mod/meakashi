@@ -55,10 +55,10 @@ void main()
 
 	PlayVoice(4, "s20/16/442200005", 128);
 	OutputLine(NULL, "許婚は頭首が決める、なんて言われて、",
-		   NULL, " She said, 'the head of the family will choose your fiance,'", Line_ContinueAfterTyping);
-	SetValidityOfInput( FALSE );
+		   NULL, " She said, 'the head of the family will choose your fiance,'", Line_Continue);
+	// (backup) SetValidityOfInput( FALSE );
 	Wait( 1000 );
-	SetValidityOfInput( TRUE );
+	// (backup) SetValidityOfInput( TRUE );
 	SetSpeedOfMessage( FALSE, 0 );
 	OutputLine(NULL, "そんなの知ったこっかいこんの糞婆ァ！",
 		   NULL, " and I said, 'screw your decisions, you fucking virago!' ", GetGlobalFlag(GLinemodeSp));

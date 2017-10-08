@@ -492,7 +492,7 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "s06/03/150300251", 128);
 	OutputLine(NULL, "「悟史くん、………どこに行ったんだろうね。」",
-		   NULL, "\"I wonder where... Satoshi-kun disappeared to, though...\"", Line_ContinueAfterTyping);
+		   NULL, "\"I wonder where... Satoshi-kun disappeared to, though...\"", Line_Continue);
 	DrawFilm( 3, 255, 255, 255, 256, 0, 1000, TRUE );
 	OutputLineAll(NULL, "", Line_Normal);
 

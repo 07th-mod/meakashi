@@ -158,7 +158,7 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>不良</color>", NULL, "<color=#f5e6d3>Delinquent</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "s06/00/huryoa15001", 128);
 	OutputLine(NULL, "「んだてめンなろぉおおぉおおおッ！！",
-		   NULL, "\"Dafuq're ye, bitch?!!", Line_ContinueAfterTyping);
+		   NULL, "\"Dafuq're ye, bitch?!!", Line_Continue);
 	SetSpeedOfMessage( FALSE, 0 );
 	StartShakingOfWindow( 248, 40, 0, 0, 3*2, FALSE );
 	StartShakingOfAllObjects( 248, 40, 0, 0, 3*2, TRUE );
@@ -353,7 +353,7 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>不良</color>", NULL, "<color=#f5e6d3>Delinquent</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "s06/00/huryoa15006", 128);
 	OutputLine(NULL, "「ううらぁ！！",
-		   NULL, "\"Huuuh!!", Line_ContinueAfterTyping);
+		   NULL, "\"Huuuh!!", Line_Continue);
 	SetSpeedOfMessage( FALSE, 0 );
 	StartShakingOfWindow( 248, 40, 0, 2, 4*2, FALSE );
 	StartShakingOfAllObjects( 248, 40, 0, 2, 4*2, TRUE );
@@ -564,18 +564,18 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "s06/06/150600316", 128);
 	OutputLine(NULL, "「……もぅ…許して、",
-		   NULL, "\"...Please...", Line_ContinueAfterTyping);
-	SetValidityOfInput( FALSE );
+		   NULL, "\"...Please...", Line_Continue);
+	// (backup) SetValidityOfInput( FALSE );
 	Wait( 800 );
-	SetValidityOfInput( TRUE );
+	// (backup) SetValidityOfInput( TRUE );
 	OutputLine(NULL, "…ください。",
 		   NULL, " ...forgive me...", Line_WaitForInput);
 	PlayVoice(4, "s06/06/150600317", 128);
 	OutputLine(NULL, "……っく、",
-		   NULL, " hic...", Line_ContinueAfterTyping);
-	SetValidityOfInput( FALSE );
+		   NULL, " hic...", Line_Continue);
+	// (backup) SetValidityOfInput( FALSE );
 	Wait( 1000 );
-	SetValidityOfInput( TRUE );
+	// (backup) SetValidityOfInput( TRUE );
 	OutputLine(NULL, "……えっく。",
 		   NULL, " ...hic...", Line_WaitForInput);
 	PlayVoice(4, "s06/06/150600318", 128);
@@ -1114,10 +1114,10 @@ void main()
 		   NULL, " Like I said, I was acting!", Line_WaitForInput);
 	PlayVoice(4, "s06/06/150600335", 128);
 	OutputLine(NULL, "　さっきから人の話、ちゃんと聞いて、",
-		   NULL, " Weren't you listening at all", Line_ContinueAfterTyping);
-	SetValidityOfInput( FALSE );
+		   NULL, " Weren't you listening at all", Line_Continue);
+	// (backup) SetValidityOfInput( FALSE );
 	Wait( 1000 );
-	SetValidityOfInput( TRUE );
+	// (backup) SetValidityOfInput( TRUE );
 	OutputLine(NULL, "…………………。」",
 		   NULL, ".....................\"", Line_Normal);
 	ClearMessage();
@@ -1400,11 +1400,11 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "s06/03/150300103", 128);
 	OutputLine(NULL, "「普段はしっかり者？",
-		   NULL, "\"His little sister", Line_ContinueAfterTyping);
-	SetValidityOfInput( FALSE );
+		   NULL, "\"His little sister", Line_Continue);
+	// (backup) SetValidityOfInput( FALSE );
 	Wait( 1000 );
-	SetValidityOfInput( TRUE );
-	PlaySE(4, "", 128, 64);
+	// (backup) SetValidityOfInput( TRUE );
+	PlayVoice(4, "", 128);
 	OutputLine(NULL, "…の妹にいろいろと尻を叩かれてるなぁ、あははは。」",
 		   NULL, " is always kicking his butt. Ahahaha.\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -1635,10 +1635,10 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "s06/03/150300117", 128);
 	OutputLine(NULL, "「……ん、",
-		   NULL, "\"...Hmm", Line_ContinueAfterTyping);
-	SetValidityOfInput( FALSE );
+		   NULL, "\"...Hmm", Line_Continue);
+	// (backup) SetValidityOfInput( FALSE );
 	Wait( 1000 );
-	SetValidityOfInput( TRUE );
+	// (backup) SetValidityOfInput( TRUE );
 	OutputLine(NULL, "………えっと…。",
 		   NULL, "... well...", Line_WaitForInput);
 	PlayVoice(4, "s06/03/150300118", 128);

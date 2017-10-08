@@ -1508,10 +1508,10 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#76523d>葛西</color>", NULL, "<color=#76523d>Kasai</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "s06/15/151500105", 128);
 	OutputLine(NULL, "「…食事が終わってからの方がいいかと思ってましたが、",
-		   NULL, "\"I thought I should wait until we finished, but...", Line_ContinueAfterTyping);
-	SetValidityOfInput( FALSE );
+		   NULL, "\"I thought I should wait until we finished, but...", Line_Continue);
+	// (backup) SetValidityOfInput( FALSE );
 	Wait( 1000 );
-	SetValidityOfInput( TRUE );
+	// (backup) SetValidityOfInput( TRUE );
 	OutputLine(NULL, "…食べながらにしますか？」",
 		   NULL, " would you mind if I talked while eating?\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }

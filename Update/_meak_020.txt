@@ -569,13 +569,13 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	SetSpeedOfMessage( TRUE, 128 );
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>年寄りたち</color>", NULL, "<color=#f5e6d3>Old people</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "s06/00/elda15001", 128);
 	PlayVoice(5, "s06/00/00014239", 128);
 	PlayVoice(6, "s06/00/00014241", 128);
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>年寄りたち</color>", NULL, "<color=#f5e6d3>Old people</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(7, "s06/00/00014240", 128);
 	OutputLine(NULL, "「なんちゅーーーことをッ！！」",
-		   NULL, "\"How dare they!!\"", Line_ContinueAfterTyping);
+		   NULL, "\"How dare they!!\"", Line_Continue);
 	SetSpeedOfMessage( FALSE, 0 );
 	StartShakingOfWindow( 248, 40, 0, 2, 4*2, FALSE );
 	StartShakingOfAllObjects( 248, 40, 0, 2, 4*2, TRUE );
@@ -877,10 +877,10 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "s06/06/150601778", 128);
 	OutputLine(NULL, "まだ祟りは免れていますが、",
-		   NULL, "The curse has yet to fall upon them...", Line_ContinueAfterTyping);
-	SetValidityOfInput( FALSE );
+		   NULL, "The curse has yet to fall upon them...", Line_Continue);
+	// (backup) SetValidityOfInput( FALSE );
 	Wait( 1000 );
-	SetValidityOfInput( TRUE );
+	// (backup) SetValidityOfInput( TRUE );
 	OutputLine(NULL, "………何のけじめもなく、許されることはありません。」",
 		   NULL, " but there will be some kind of punishment.\"", Line_Normal);
 	ClearMessage();
@@ -1033,10 +1033,10 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "s06/06/150601783", 128);
 	OutputLine(NULL, "「………………、",
-		   NULL, "\"......", Line_ContinueAfterTyping);
-	SetValidityOfInput( FALSE );
+		   NULL, "\"......", Line_Continue);
+	// (backup) SetValidityOfInput( FALSE );
 	Wait( 1000 );
-	SetValidityOfInput( TRUE );
+	// (backup) SetValidityOfInput( TRUE );
 	OutputLine(NULL, "………………まだです。」",
 		   NULL, ".........Not yet.\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -1798,28 +1798,28 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "s06/06/150601827", 128);
 	OutputLine(NULL, "「ほら、……爪を３枚、",
-		   NULL, "\"Remember? Three nails.", Line_ContinueAfterTyping);
-	SetValidityOfInput( FALSE );
+		   NULL, "\"Remember? Three nails.", Line_Continue);
+	// (backup) SetValidityOfInput( FALSE );
 	Wait( 1000 );
-	SetValidityOfInput( TRUE );
+	// (backup) SetValidityOfInput( TRUE );
 	OutputLine(NULL, "…剥いだじゃないですか…。",
 		   NULL, " She removed three of her nails.", Line_WaitForInput);
 	PlayVoice(4, "s06/06/150601828", 128);
 	OutputLine(NULL, "葛西さん、",
-		   NULL, " Kasai-san,", Line_ContinueAfterTyping);
-	SetValidityOfInput( FALSE );
+		   NULL, " Kasai-san,", Line_Continue);
+	// (backup) SetValidityOfInput( FALSE );
 	Wait( 800 );
-	SetValidityOfInput( TRUE );
+	// (backup) SetValidityOfInput( TRUE );
 	OutputLine(NULL, "義郎叔父さん、",
-		   NULL, " Uncle Yoshiroh,", Line_ContinueAfterTyping);
-	SetValidityOfInput( FALSE );
+		   NULL, " Uncle Yoshiroh,", Line_Continue);
+	// (backup) SetValidityOfInput( FALSE );
 	Wait( 800 );
-	SetValidityOfInput( TRUE );
+	// (backup) SetValidityOfInput( TRUE );
 	OutputLine(NULL, "…それから、悟史くんで、",
-		   NULL, " and then Satoshi-kun", Line_ContinueAfterTyping);
-	SetValidityOfInput( FALSE );
+		   NULL, " and then Satoshi-kun", Line_Continue);
+	// (backup) SetValidityOfInput( FALSE );
 	Wait( 800 );
-	SetValidityOfInput( TRUE );
+	// (backup) SetValidityOfInput( TRUE );
 	OutputLine(NULL, "……３人分、",
 		   NULL, "...three people.", Line_WaitForInput);
 	PlayVoice(4, "s06/06/150601829", 128);
@@ -1872,10 +1872,10 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f3ceb3>喜一郎</color>", NULL, "<color=#f3ceb3>Kiichiro</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "s06/18/153300097", 128);
 	OutputLine(NULL, "「………葛西さん、",
-		   NULL, "\"Kasai-san,", Line_ContinueAfterTyping);
-	SetValidityOfInput( FALSE );
+		   NULL, "\"Kasai-san,", Line_Continue);
+	// (backup) SetValidityOfInput( FALSE );
 	Wait( 800 );
-	SetValidityOfInput( TRUE );
+	// (backup) SetValidityOfInput( TRUE );
 	OutputLine(NULL, "義郎さん、",
 		   NULL, " Yoshiroh-san...", Line_WaitForInput);
 	FadeOutBGM( 0, 0, FALSE );
@@ -2177,842 +2177,842 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "s06/06/150601851", 128);
 	OutputLine(NULL, "　そ",
-		   NULL, "And", Line_ContinueAfterTyping);
-	SetValidityOfInput( FALSE );
+		   NULL, "And", Line_Continue);
+	// (backup) SetValidityOfInput( FALSE );
 	Wait( 90 );
-	SetValidityOfInput( TRUE );
+	// (backup) SetValidityOfInput( TRUE );
 	OutputLine(NULL, "し",
-		   NULL, " you", Line_ContinueAfterTyping);
-	SetValidityOfInput( FALSE );
+		   NULL, " you", Line_Continue);
+	// (backup) SetValidityOfInput( FALSE );
 	Wait( 90 );
-	SetValidityOfInput( TRUE );
+	// (backup) SetValidityOfInput( TRUE );
 	OutputLine(NULL, "て",
-		   NULL, " all", Line_ContinueAfterTyping);
-	SetValidityOfInput( FALSE );
+		   NULL, " all", Line_Continue);
+	// (backup) SetValidityOfInput( FALSE );
 	Wait( 90 );
-	SetValidityOfInput( TRUE );
+	// (backup) SetValidityOfInput( TRUE );
 	OutputLine(NULL, "あ",
-		   NULL, " be", Line_ContinueAfterTyping);
-	SetValidityOfInput( FALSE );
+		   NULL, " be", Line_Continue);
+	// (backup) SetValidityOfInput( FALSE );
 	Wait( 90 );
-	SetValidityOfInput( TRUE );
+	// (backup) SetValidityOfInput( TRUE );
 	OutputLine(NULL, "な",
-		   NULL, "lieved", Line_ContinueAfterTyping);
-	SetValidityOfInput( FALSE );
+		   NULL, "lieved", Line_Continue);
+	// (backup) SetValidityOfInput( FALSE );
 	Wait( 90 );
-	SetValidityOfInput( TRUE );
+	// (backup) SetValidityOfInput( TRUE );
 	OutputLine(NULL, "た",
-		   NULL, " in", Line_ContinueAfterTyping);
-	SetValidityOfInput( FALSE );
+		   NULL, " in", Line_Continue);
+	// (backup) SetValidityOfInput( FALSE );
 	Wait( 90 );
-	SetValidityOfInput( TRUE );
+	// (backup) SetValidityOfInput( TRUE );
 	OutputLine(NULL, "は",
-		   NULL, " that", Line_ContinueAfterTyping);
-	SetValidityOfInput( FALSE );
+		   NULL, " that", Line_Continue);
+	// (backup) SetValidityOfInput( FALSE );
 	Wait( 90 );
-	SetValidityOfInput( TRUE );
+	// (backup) SetValidityOfInput( TRUE );
 	OutputLine(NULL, "そ",
-		   NULL, " idea.", Line_ContinueAfterTyping);
-	SetValidityOfInput( FALSE );
+		   NULL, " idea.", Line_Continue);
+	// (backup) SetValidityOfInput( FALSE );
 	Wait( 90 );
-	SetValidityOfInput( TRUE );
+	// (backup) SetValidityOfInput( TRUE );
 	OutputLine(NULL, "の",
-		   NULL, " You", Line_ContinueAfterTyping);
-	SetValidityOfInput( FALSE );
+		   NULL, " You", Line_Continue);
+	// (backup) SetValidityOfInput( FALSE );
 	Wait( 90 );
-	SetValidityOfInput( TRUE );
+	// (backup) SetValidityOfInput( TRUE );
 	OutputLine(NULL, "蔓",
-		   NULL, " couldn't", Line_ContinueAfterTyping);
-	SetValidityOfInput( FALSE );
+		   NULL, " couldn't", Line_Continue);
+	// (backup) SetValidityOfInput( FALSE );
 	Wait( 90 );
-	SetValidityOfInput( TRUE );
+	// (backup) SetValidityOfInput( TRUE );
 	OutputLine(NULL, "延",
-		   NULL, " even", Line_ContinueAfterTyping);
-	SetValidityOfInput( FALSE );
+		   NULL, " even", Line_Continue);
+	// (backup) SetValidityOfInput( FALSE );
 	Wait( 90 );
-	SetValidityOfInput( TRUE );
+	// (backup) SetValidityOfInput( TRUE );
 	OutputLine(NULL, "で",
-		   NULL, " think", Line_ContinueAfterTyping);
-	SetValidityOfInput( FALSE );
+		   NULL, " think", Line_Continue);
+	// (backup) SetValidityOfInput( FALSE );
 	Wait( 90 );
-	SetValidityOfInput( TRUE );
+	// (backup) SetValidityOfInput( TRUE );
 	OutputLine(NULL, "燻",
-		   NULL, " straight", Line_ContinueAfterTyping);
-	SetValidityOfInput( FALSE );
+		   NULL, " straight", Line_Continue);
+	// (backup) SetValidityOfInput( FALSE );
 	Wait( 90 );
-	SetValidityOfInput( TRUE );
+	// (backup) SetValidityOfInput( TRUE );
 	OutputLine(NULL, "さ",
-		   NULL, " any", Line_ContinueAfterTyping);
-	SetValidityOfInput( FALSE );
+		   NULL, " any", Line_Continue);
+	// (backup) SetValidityOfInput( FALSE );
 	Wait( 90 );
-	SetValidityOfInput( TRUE );
+	// (backup) SetValidityOfInput( TRUE );
 	OutputLine(NULL, "れ",
-		   NULL, " more.", Line_ContinueAfterTyping);
-	SetValidityOfInput( FALSE );
+		   NULL, " more.", Line_Continue);
+	// (backup) SetValidityOfInput( FALSE );
 	Wait( 90 );
-	SetValidityOfInput( TRUE );
+	// (backup) SetValidityOfInput( TRUE );
 	OutputLine(NULL, "た",
-		   NULL, " I", Line_ContinueAfterTyping);
-	SetValidityOfInput( FALSE );
+		   NULL, " I", Line_Continue);
+	// (backup) SetValidityOfInput( FALSE );
 	Wait( 90 );
-	SetValidityOfInput( TRUE );
+	// (backup) SetValidityOfInput( TRUE );
 	OutputLine(NULL, "穢",
-		   NULL, " can't", Line_ContinueAfterTyping);
-	SetValidityOfInput( FALSE );
+		   NULL, " can't", Line_Continue);
+	// (backup) SetValidityOfInput( FALSE );
 	Wait( 90 );
-	SetValidityOfInput( TRUE );
+	// (backup) SetValidityOfInput( TRUE );
 	OutputLine(NULL, "れ",
-		   NULL, " for", Line_ContinueAfterTyping);
-	SetValidityOfInput( FALSE );
+		   NULL, " for", Line_Continue);
+	// (backup) SetValidityOfInput( FALSE );
 	Wait( 90 );
-	SetValidityOfInput( TRUE );
+	// (backup) SetValidityOfInput( TRUE );
 	OutputLine(NULL, "た",
-		   NULL, "give", Line_ContinueAfterTyping);
-	SetValidityOfInput( FALSE );
+		   NULL, "give", Line_Continue);
+	// (backup) SetValidityOfInput( FALSE );
 	Wait( 90 );
-	SetValidityOfInput( TRUE );
+	// (backup) SetValidityOfInput( TRUE );
 	OutputLine(NULL, "思",
-		   NULL, " you.", Line_ContinueAfterTyping);
-	SetValidityOfInput( FALSE );
+		   NULL, " you.", Line_Continue);
+	// (backup) SetValidityOfInput( FALSE );
 	Wait( 90 );
-	SetValidityOfInput( TRUE );
+	// (backup) SetValidityOfInput( TRUE );
 	OutputLine(NULL, "考に",
-		   NULL, " I", Line_ContinueAfterTyping);
-	SetValidityOfInput( FALSE );
+		   NULL, " I", Line_Continue);
+	// (backup) SetValidityOfInput( FALSE );
 	Wait( 90 );
-	SetValidityOfInput( TRUE );
+	// (backup) SetValidityOfInput( TRUE );
 	OutputLine(NULL, "汚",
-		   NULL, " can't", Line_ContinueAfterTyping);
-	SetValidityOfInput( FALSE );
+		   NULL, " can't", Line_Continue);
+	// (backup) SetValidityOfInput( FALSE );
 	Wait( 90 );
-	SetValidityOfInput( TRUE );
+	// (backup) SetValidityOfInput( TRUE );
 	OutputLine(NULL, "染",
-		   NULL, " let", Line_ContinueAfterTyping);
-	SetValidityOfInput( FALSE );
+		   NULL, " let", Line_Continue);
+	// (backup) SetValidityOfInput( FALSE );
 	Wait( 90 );
-	SetValidityOfInput( TRUE );
+	// (backup) SetValidityOfInput( TRUE );
 	OutputLine(NULL, "さ",
-		   NULL, " some", Line_ContinueAfterTyping);
-	SetValidityOfInput( FALSE );
+		   NULL, " some", Line_Continue);
+	// (backup) SetValidityOfInput( FALSE );
 	Wait( 90 );
-	SetValidityOfInput( TRUE );
+	// (backup) SetValidityOfInput( TRUE );
 	OutputLine(NULL, "れ",
-		   NULL, "one", Line_ContinueAfterTyping);
-	SetValidityOfInput( FALSE );
+		   NULL, "one", Line_Continue);
+	// (backup) SetValidityOfInput( FALSE );
 	Wait( 90 );
-	SetValidityOfInput( TRUE );
+	// (backup) SetValidityOfInput( TRUE );
 	OutputLine(NULL, "迷",
-		   NULL, " like", Line_ContinueAfterTyping);
-	SetValidityOfInput( FALSE );
+		   NULL, " like", Line_Continue);
+	// (backup) SetValidityOfInput( FALSE );
 	Wait( 90 );
-	SetValidityOfInput( TRUE );
+	// (backup) SetValidityOfInput( TRUE );
 	OutputLine(NULL, "信",
-		   NULL, " you", Line_ContinueAfterTyping);
-	SetValidityOfInput( FALSE );
+		   NULL, " you", Line_Continue);
+	// (backup) SetValidityOfInput( FALSE );
 	Wait( 90 );
-	SetValidityOfInput( TRUE );
+	// (backup) SetValidityOfInput( TRUE );
 	OutputLine(NULL, "妄",
-		   NULL, " exist.", Line_ContinueAfterTyping);
-	SetValidityOfInput( FALSE );
+		   NULL, " exist.", Line_Continue);
+	// (backup) SetValidityOfInput( FALSE );
 	Wait( 90 );
-	SetValidityOfInput( TRUE );
+	// (backup) SetValidityOfInput( TRUE );
 	OutputLine(NULL, "信",
-		   NULL, " Peo", Line_ContinueAfterTyping);
-	SetValidityOfInput( FALSE );
+		   NULL, " Peo", Line_Continue);
+	// (backup) SetValidityOfInput( FALSE );
 	Wait( 90 );
-	SetValidityOfInput( TRUE );
+	// (backup) SetValidityOfInput( TRUE );
 	OutputLine(NULL, "許",
-		   NULL, "ple", Line_ContinueAfterTyping);
-	SetValidityOfInput( FALSE );
+		   NULL, "ple", Line_Continue);
+	// (backup) SetValidityOfInput( FALSE );
 	Wait( 90 );
-	SetValidityOfInput( TRUE );
+	// (backup) SetValidityOfInput( TRUE );
 	OutputLine(NULL, "せ",
-		   NULL, " like", Line_ContinueAfterTyping);
-	SetValidityOfInput( FALSE );
+		   NULL, " like", Line_Continue);
+	// (backup) SetValidityOfInput( FALSE );
 	Wait( 90 );
-	SetValidityOfInput( TRUE );
+	// (backup) SetValidityOfInput( TRUE );
 	OutputLine(NULL, "な",
-		   NULL, " you", Line_ContinueAfterTyping);
-	SetValidityOfInput( FALSE );
+		   NULL, " you", Line_Continue);
+	// (backup) SetValidityOfInput( FALSE );
 	Wait( 90 );
-	SetValidityOfInput( TRUE );
+	// (backup) SetValidityOfInput( TRUE );
 	OutputLine(NULL, "い",
-		   NULL, " cor", Line_ContinueAfterTyping);
-	SetValidityOfInput( FALSE );
+		   NULL, " cor", Line_Continue);
+	// (backup) SetValidityOfInput( FALSE );
 	Wait( 90 );
-	SetValidityOfInput( TRUE );
+	// (backup) SetValidityOfInput( TRUE );
 	OutputLine(NULL, "お",
-		   NULL, "nered", Line_ContinueAfterTyping);
-	SetValidityOfInput( FALSE );
+		   NULL, "nered", Line_Continue);
+	// (backup) SetValidityOfInput( FALSE );
 	Wait( 90 );
-	SetValidityOfInput( TRUE );
+	// (backup) SetValidityOfInput( TRUE );
 	OutputLine(NULL, "前",
-		   NULL, " Satoshi", Line_ContinueAfterTyping);
-	SetValidityOfInput( FALSE );
+		   NULL, " Satoshi", Line_Continue);
+	// (backup) SetValidityOfInput( FALSE );
 	Wait( 90 );
-	SetValidityOfInput( TRUE );
+	// (backup) SetValidityOfInput( TRUE );
 	OutputLine(NULL, "の",
-		   NULL, "-kun", Line_ContinueAfterTyping);
-	SetValidityOfInput( FALSE );
+		   NULL, "-kun", Line_Continue);
+	// (backup) SetValidityOfInput( FALSE );
 	Wait( 90 );
-	SetValidityOfInput( TRUE );
+	// (backup) SetValidityOfInput( TRUE );
 	OutputLine(NULL, "よ",
-		   NULL, " and", Line_ContinueAfterTyping);
-	SetValidityOfInput( FALSE );
+		   NULL, " and", Line_Continue);
+	// (backup) SetValidityOfInput( FALSE );
 	Wait( 90 );
-	SetValidityOfInput( TRUE );
+	// (backup) SetValidityOfInput( TRUE );
 	OutputLine(NULL, "う",
-		   NULL, " his", Line_ContinueAfterTyping);
-	SetValidityOfInput( FALSE );
+		   NULL, " his", Line_Continue);
+	// (backup) SetValidityOfInput( FALSE );
 	Wait( 90 );
-	SetValidityOfInput( TRUE );
+	// (backup) SetValidityOfInput( TRUE );
 	OutputLine(NULL, "な",
-		   NULL, " family.", Line_ContinueAfterTyping);
-	SetValidityOfInput( FALSE );
+		   NULL, " family.", Line_Continue);
+	// (backup) SetValidityOfInput( FALSE );
 	Wait( 90 );
-	SetValidityOfInput( TRUE );
+	// (backup) SetValidityOfInput( TRUE );
 	OutputLine(NULL, "存",
-		   NULL, " Poor", Line_ContinueAfterTyping);
-	SetValidityOfInput( FALSE );
+		   NULL, " Poor", Line_Continue);
+	// (backup) SetValidityOfInput( FALSE );
 	Wait( 90 );
-	SetValidityOfInput( TRUE );
+	// (backup) SetValidityOfInput( TRUE );
 	OutputLine(NULL, "在",
-		   NULL, " Satoshi", Line_ContinueAfterTyping);
-	SetValidityOfInput( FALSE );
+		   NULL, " Satoshi", Line_Continue);
+	// (backup) SetValidityOfInput( FALSE );
 	Wait( 90 );
-	SetValidityOfInput( TRUE );
+	// (backup) SetValidityOfInput( TRUE );
 	OutputLine(NULL, "が",
-		   NULL, "-kun! ", Line_ContinueAfterTyping);
-	SetValidityOfInput( FALSE );
+		   NULL, "-kun! ", Line_Continue);
+	// (backup) SetValidityOfInput( FALSE );
 	Wait( 90 );
-	SetValidityOfInput( TRUE );
+	// (backup) SetValidityOfInput( TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); }
 
 	OutputLine(NULL, "許",
-		   NULL, "What", Line_ContinueAfterTyping);
-	SetValidityOfInput( FALSE );
+		   NULL, "What", Line_Continue);
+	// (backup) SetValidityOfInput( FALSE );
 	Wait( 90 );
-	SetValidityOfInput( TRUE );
+	// (backup) SetValidityOfInput( TRUE );
 	OutputLine(NULL, "せ",
-		   NULL, " has", Line_ContinueAfterTyping);
-	SetValidityOfInput( FALSE );
+		   NULL, " has", Line_Continue);
+	// (backup) SetValidityOfInput( FALSE );
 	Wait( 90 );
-	SetValidityOfInput( TRUE );
+	// (backup) SetValidityOfInput( TRUE );
 	OutputLine(NULL, "な",
-		   NULL, " he", Line_ContinueAfterTyping);
-	SetValidityOfInput( FALSE );
+		   NULL, " he", Line_Continue);
+	// (backup) SetValidityOfInput( FALSE );
 	Wait( 90 );
-	SetValidityOfInput( TRUE );
+	// (backup) SetValidityOfInput( TRUE );
 	OutputLine(NULL, "い",
-		   NULL, " done?", Line_ContinueAfterTyping);
-	SetValidityOfInput( FALSE );
+		   NULL, " done?", Line_Continue);
+	// (backup) SetValidityOfInput( FALSE );
 	Wait( 90 );
-	SetValidityOfInput( TRUE );
+	// (backup) SetValidityOfInput( TRUE );
 	OutputLine(NULL, "お",
-		   NULL, " He", Line_ContinueAfterTyping);
-	SetValidityOfInput( FALSE );
+		   NULL, " He", Line_Continue);
+	// (backup) SetValidityOfInput( FALSE );
 	Wait( 90 );
-	SetValidityOfInput( TRUE );
+	// (backup) SetValidityOfInput( TRUE );
 	OutputLine(NULL, "前",
-		   NULL, " hasn't", Line_ContinueAfterTyping);
-	SetValidityOfInput( FALSE );
+		   NULL, " hasn't", Line_Continue);
+	// (backup) SetValidityOfInput( FALSE );
 	Wait( 90 );
-	SetValidityOfInput( TRUE );
+	// (backup) SetValidityOfInput( TRUE );
 	OutputLine(NULL, "の",
-		   NULL, " done", Line_ContinueAfterTyping);
-	SetValidityOfInput( FALSE );
+		   NULL, " done", Line_Continue);
+	// (backup) SetValidityOfInput( FALSE );
 	Wait( 90 );
-	SetValidityOfInput( TRUE );
+	// (backup) SetValidityOfInput( TRUE );
 	OutputLine(NULL, "よ",
-		   NULL, " any", Line_ContinueAfterTyping);
-	SetValidityOfInput( FALSE );
+		   NULL, " any", Line_Continue);
+	// (backup) SetValidityOfInput( FALSE );
 	Wait( 90 );
-	SetValidityOfInput( TRUE );
+	// (backup) SetValidityOfInput( TRUE );
 	OutputLine(NULL, "う",
-		   NULL, "thing!", Line_ContinueAfterTyping);
-	SetValidityOfInput( FALSE );
+		   NULL, "thing!", Line_Continue);
+	// (backup) SetValidityOfInput( FALSE );
 	Wait( 90 );
-	SetValidityOfInput( TRUE );
+	// (backup) SetValidityOfInput( TRUE );
 	OutputLine(NULL, "な",
-		   NULL, " He", Line_ContinueAfterTyping);
-	SetValidityOfInput( FALSE );
+		   NULL, " He", Line_Continue);
+	// (backup) SetValidityOfInput( FALSE );
 	Wait( 90 );
-	SetValidityOfInput( TRUE );
+	// (backup) SetValidityOfInput( TRUE );
 	OutputLine(NULL, "や",
-		   NULL, " was", Line_ContinueAfterTyping);
-	SetValidityOfInput( FALSE );
+		   NULL, " was", Line_Continue);
+	// (backup) SetValidityOfInput( FALSE );
 	Wait( 90 );
-	SetValidityOfInput( TRUE );
+	// (backup) SetValidityOfInput( TRUE );
 	OutputLine(NULL, "つ",
-		   NULL, " a", Line_ContinueAfterTyping);
-	SetValidityOfInput( FALSE );
+		   NULL, " a", Line_Continue);
+	// (backup) SetValidityOfInput( FALSE );
 	Wait( 90 );
-	SetValidityOfInput( TRUE );
+	// (backup) SetValidityOfInput( TRUE );
 	OutputLine(NULL, "が",
-		   NULL, " Hou", Line_ContinueAfterTyping);
-	SetValidityOfInput( FALSE );
+		   NULL, " Hou", Line_Continue);
+	// (backup) SetValidityOfInput( FALSE );
 	Wait( 90 );
-	SetValidityOfInput( TRUE );
+	// (backup) SetValidityOfInput( TRUE );
 	OutputLine(NULL, "悟",
-		   NULL, "jou,", Line_ContinueAfterTyping);
-	SetValidityOfInput( FALSE );
+		   NULL, "jou,", Line_Continue);
+	// (backup) SetValidityOfInput( FALSE );
 	Wait( 90 );
-	SetValidityOfInput( TRUE );
+	// (backup) SetValidityOfInput( TRUE );
 	OutputLine(NULL, "史",
-		   NULL, " that's", Line_ContinueAfterTyping);
-	SetValidityOfInput( FALSE );
+		   NULL, " that's", Line_Continue);
+	// (backup) SetValidityOfInput( FALSE );
 	Wait( 90 );
-	SetValidityOfInput( TRUE );
+	// (backup) SetValidityOfInput( TRUE );
 	OutputLine(NULL, "く",
-		   NULL, " all!", Line_ContinueAfterTyping);
-	SetValidityOfInput( FALSE );
+		   NULL, " all!", Line_Continue);
+	// (backup) SetValidityOfInput( FALSE );
 	Wait( 90 );
-	SetValidityOfInput( TRUE );
+	// (backup) SetValidityOfInput( TRUE );
 	OutputLine(NULL, "ん",
-		   NULL, " What", Line_ContinueAfterTyping);
-	SetValidityOfInput( FALSE );
+		   NULL, " What", Line_Continue);
+	// (backup) SetValidityOfInput( FALSE );
 	Wait( 90 );
-	SetValidityOfInput( TRUE );
+	// (backup) SetValidityOfInput( TRUE );
 	OutputLine(NULL, "た",
-		   NULL, " kind", Line_ContinueAfterTyping);
-	SetValidityOfInput( FALSE );
+		   NULL, " kind", Line_Continue);
+	// (backup) SetValidityOfInput( FALSE );
 	Wait( 90 );
-	SetValidityOfInput( TRUE );
+	// (backup) SetValidityOfInput( TRUE );
 	OutputLine(NULL, "ち",
-		   NULL, " of", Line_ContinueAfterTyping);
-	SetValidityOfInput( FALSE );
+		   NULL, " of", Line_Continue);
+	// (backup) SetValidityOfInput( FALSE );
 	Wait( 90 );
-	SetValidityOfInput( TRUE );
+	// (backup) SetValidityOfInput( TRUE );
 	OutputLine(NULL, "一",
-		   NULL, " a", Line_ContinueAfterTyping);
+		   NULL, " a", Line_Continue);
 
-	SetValidityOfInput( FALSE );
+	// (backup) SetValidityOfInput( FALSE );
 	Wait( 90 );
-	SetValidityOfInput( TRUE );
+	// (backup) SetValidityOfInput( TRUE );
 	OutputLine(NULL, "家",
-		   NULL, " crime", Line_ContinueAfterTyping);
-	SetValidityOfInput( FALSE );
+		   NULL, " crime", Line_Continue);
+	// (backup) SetValidityOfInput( FALSE );
 	Wait( 90 );
-	SetValidityOfInput( TRUE );
+	// (backup) SetValidityOfInput( TRUE );
 	OutputLine(NULL, "を",
-		   NULL, " is", Line_ContinueAfterTyping);
-	SetValidityOfInput( FALSE );
+		   NULL, " is", Line_Continue);
+	// (backup) SetValidityOfInput( FALSE );
 	Wait( 90 );
-	SetValidityOfInput( TRUE );
+	// (backup) SetValidityOfInput( TRUE );
 	OutputLine(NULL, "追",
-		   NULL, " that?", Line_ContinueAfterTyping);
-	SetValidityOfInput( FALSE );
+		   NULL, " that?", Line_Continue);
+	// (backup) SetValidityOfInput( FALSE );
 	Wait( 90 );
-	SetValidityOfInput( TRUE );
+	// (backup) SetValidityOfInput( TRUE );
 	OutputLine(NULL, "い",
-		   NULL, " Why", Line_ContinueAfterTyping);
-	SetValidityOfInput( FALSE );
+		   NULL, " Why", Line_Continue);
+	// (backup) SetValidityOfInput( FALSE );
 	Wait( 90 );
-	SetValidityOfInput( TRUE );
+	// (backup) SetValidityOfInput( TRUE );
 	OutputLine(NULL, "詰",
-		   NULL, " did", Line_ContinueAfterTyping);
-	SetValidityOfInput( FALSE );
+		   NULL, " did", Line_Continue);
+	// (backup) SetValidityOfInput( FALSE );
 	Wait( 90 );
-	SetValidityOfInput( TRUE );
+	// (backup) SetValidityOfInput( TRUE );
 	OutputLine(NULL, "め",
-		   NULL, " the", Line_ContinueAfterTyping);
-	SetValidityOfInput( FALSE );
+		   NULL, " the", Line_Continue);
+	// (backup) SetValidityOfInput( FALSE );
 	Wait( 90 );
-	SetValidityOfInput( TRUE );
+	// (backup) SetValidityOfInput( TRUE );
 	OutputLine(NULL, "て",
-		   NULL, " curse", Line_ContinueAfterTyping);
-	SetValidityOfInput( FALSE );
+		   NULL, " curse", Line_Continue);
+	// (backup) SetValidityOfInput( FALSE );
 	Wait( 90 );
-	SetValidityOfInput( TRUE );
+	// (backup) SetValidityOfInput( TRUE );
 	OutputLine(NULL, "追",
-		   NULL, " fall", Line_ContinueAfterTyping);
-	SetValidityOfInput( FALSE );
+		   NULL, " fall", Line_Continue);
+	// (backup) SetValidityOfInput( FALSE );
 	Wait( 90 );
-	SetValidityOfInput( TRUE );
+	// (backup) SetValidityOfInput( TRUE );
 	OutputLine(NULL, "い",
-		   NULL, " upon", Line_ContinueAfterTyping);
-	SetValidityOfInput( FALSE );
+		   NULL, " upon", Line_Continue);
+	// (backup) SetValidityOfInput( FALSE );
 	Wait( 90 );
-	SetValidityOfInput( TRUE );
+	// (backup) SetValidityOfInput( TRUE );
 	OutputLine(NULL, "詰",
-		   NULL, " him?", Line_ContinueAfterTyping);
+		   NULL, " him?", Line_Continue);
 
 	if(GetGlobalFlag(GLanguage) == 0)
 	{
-	SetValidityOfInput( FALSE );
+	// (backup) SetValidityOfInput( FALSE );
 	Wait( 90 );
-	SetValidityOfInput( TRUE );
+	// (backup) SetValidityOfInput( TRUE );
 	OutputLine(NULL, "め",
-		   NULL, " Why?", Line_ContinueAfterTyping);
-	SetValidityOfInput( FALSE );
+		   NULL, " Why?", Line_Continue);
+	// (backup) SetValidityOfInput( FALSE );
 	Wait( 90 );
-	SetValidityOfInput( TRUE );
+	// (backup) SetValidityOfInput( TRUE );
 	OutputLine(NULL, "て",
-		   NULL, " Why?", Line_ContinueAfterTyping);
-	SetValidityOfInput( FALSE );
+		   NULL, " Why?", Line_Continue);
+	// (backup) SetValidityOfInput( FALSE );
 	Wait( 90 );
-	SetValidityOfInput( TRUE );
+	// (backup) SetValidityOfInput( TRUE );
 	OutputLine(NULL, "あ",
-		   NULL, " Why?", Line_ContinueAfterTyping);
-	SetValidityOfInput( FALSE );
+		   NULL, " Why?", Line_Continue);
+	// (backup) SetValidityOfInput( FALSE );
 	Wait( 90 );
-	SetValidityOfInput( TRUE );
+	// (backup) SetValidityOfInput( TRUE );
 	OutputLine(NULL, "ん",
-		   NULL, " Why?", Line_ContinueAfterTyping);
-	SetValidityOfInput( FALSE );
+		   NULL, " Why?", Line_Continue);
+	// (backup) SetValidityOfInput( FALSE );
 	Wait( 90 );
-	SetValidityOfInput( TRUE );
+	// (backup) SetValidityOfInput( TRUE );
 	OutputLine(NULL, "な",
-		   NULL, " Why?", Line_ContinueAfterTyping);
-	SetValidityOfInput( FALSE );
+		   NULL, " Why?", Line_Continue);
+	// (backup) SetValidityOfInput( FALSE );
 	Wait( 90 );
-	SetValidityOfInput( TRUE );
+	// (backup) SetValidityOfInput( TRUE );
 	OutputLine(NULL, "に",
-		   NULL, " Why?", Line_ContinueAfterTyping);
-	SetValidityOfInput( FALSE );
+		   NULL, " Why?", Line_Continue);
+	// (backup) SetValidityOfInput( FALSE );
 	Wait( 90 );
-	SetValidityOfInput( TRUE );
+	// (backup) SetValidityOfInput( TRUE );
 	OutputLine(NULL, "も",
-		   NULL, " Why?", Line_ContinueAfterTyping);
-	SetValidityOfInput( FALSE );
+		   NULL, " Why?", Line_Continue);
+	// (backup) SetValidityOfInput( FALSE );
 	Wait( 90 );
-	SetValidityOfInput( TRUE );
+	// (backup) SetValidityOfInput( TRUE );
 	OutputLine(NULL, "す",
-		   NULL, " Why?", Line_ContinueAfterTyping);
-	SetValidityOfInput( FALSE );
+		   NULL, " Why?", Line_Continue);
+	// (backup) SetValidityOfInput( FALSE );
 	Wait( 90 );
-	SetValidityOfInput( TRUE );
+	// (backup) SetValidityOfInput( TRUE );
 	OutputLine(NULL, "り",
-		   NULL, " Why?", Line_ContinueAfterTyping);
-	SetValidityOfInput( FALSE );
+		   NULL, " Why?", Line_Continue);
+	// (backup) SetValidityOfInput( FALSE );
 	Wait( 90 );
-	SetValidityOfInput( TRUE );
+	// (backup) SetValidityOfInput( TRUE );
 	OutputLine(NULL, "減",
-		   NULL, " Why?", Line_ContinueAfterTyping);
-	SetValidityOfInput( FALSE );
+		   NULL, " Why?", Line_Continue);
+	// (backup) SetValidityOfInput( FALSE );
 	Wait( 90 );
-	SetValidityOfInput( TRUE );
+	// (backup) SetValidityOfInput( TRUE );
 	OutputLine(NULL, "ら",
-		   NULL, " Why?", Line_ContinueAfterTyping);
-	SetValidityOfInput( FALSE );
+		   NULL, " Why?", Line_Continue);
+	// (backup) SetValidityOfInput( FALSE );
 	Wait( 90 );
-	SetValidityOfInput( TRUE );
+	// (backup) SetValidityOfInput( TRUE );
 	OutputLine(NULL, "し",
-		   NULL, " Why?", Line_ContinueAfterTyping);
-	SetValidityOfInput( FALSE );
+		   NULL, " Why?", Line_Continue);
+	// (backup) SetValidityOfInput( FALSE );
 	Wait( 90 );
-	SetValidityOfInput( TRUE );
+	// (backup) SetValidityOfInput( TRUE );
 	OutputLine(NULL, "て",
-		   NULL, " Why?", Line_ContinueAfterTyping);
-	SetValidityOfInput( FALSE );
+		   NULL, " Why?", Line_Continue);
+	// (backup) SetValidityOfInput( FALSE );
 	Wait( 90 );
-	SetValidityOfInput( TRUE );
+	// (backup) SetValidityOfInput( TRUE );
 	OutputLine(NULL, "悟",
-		   NULL, " Why?", Line_ContinueAfterTyping);
-	SetValidityOfInput( FALSE );
+		   NULL, " Why?", Line_Continue);
+	// (backup) SetValidityOfInput( FALSE );
 	Wait( 90 );
-	SetValidityOfInput( TRUE );
+	// (backup) SetValidityOfInput( TRUE );
 	OutputLine(NULL, "史",
-		   NULL, " Why?", Line_ContinueAfterTyping);
-	SetValidityOfInput( FALSE );
+		   NULL, " Why?", Line_Continue);
+	// (backup) SetValidityOfInput( FALSE );
 	Wait( 90 );
-	SetValidityOfInput( TRUE );
+	// (backup) SetValidityOfInput( TRUE );
 	OutputLine(NULL, "く",
-		   NULL, " Why?", Line_ContinueAfterTyping);
-	SetValidityOfInput( FALSE );
+		   NULL, " Why?", Line_Continue);
+	// (backup) SetValidityOfInput( FALSE );
 	Wait( 90 );
-	SetValidityOfInput( TRUE );
+	// (backup) SetValidityOfInput( TRUE );
 	OutputLine(NULL, "ん",
-		   NULL, " Why?", Line_ContinueAfterTyping);
-	SetValidityOfInput( FALSE );
+		   NULL, " Why?", Line_Continue);
+	// (backup) SetValidityOfInput( FALSE );
 	Wait( 90 );
-	SetValidityOfInput( TRUE );
+	// (backup) SetValidityOfInput( TRUE );
 	OutputLine(NULL, "が",
-		   NULL, " Why?", Line_ContinueAfterTyping);
-	SetValidityOfInput( FALSE );
+		   NULL, " Why?", Line_Continue);
+	// (backup) SetValidityOfInput( FALSE );
 	Wait( 90 );
-	SetValidityOfInput( TRUE );
+	// (backup) SetValidityOfInput( TRUE );
 	OutputLine(NULL, "可",
-		   NULL, " Why?", Line_ContinueAfterTyping);
-	SetValidityOfInput( FALSE );
+		   NULL, " Why?", Line_Continue);
+	// (backup) SetValidityOfInput( FALSE );
 	Wait( 90 );
-	SetValidityOfInput( TRUE );
+	// (backup) SetValidityOfInput( TRUE );
 	OutputLine(NULL, "哀",
-		   NULL, " Why?", Line_ContinueAfterTyping);
-	SetValidityOfInput( FALSE );
+		   NULL, " Why?", Line_Continue);
+	// (backup) SetValidityOfInput( FALSE );
 	Wait( 90 );
-	SetValidityOfInput( TRUE );
+	// (backup) SetValidityOfInput( TRUE );
 	OutputLine(NULL, "想",
-		   NULL, " Why?", Line_ContinueAfterTyping);
-	SetValidityOfInput( FALSE );
+		   NULL, " Why?", Line_Continue);
+	// (backup) SetValidityOfInput( FALSE );
 	Wait( 90 );
-	SetValidityOfInput( TRUE );
+	// (backup) SetValidityOfInput( TRUE );
 	OutputLine(NULL, "本",
-		   NULL, " Why?", Line_ContinueAfterTyping);
-	SetValidityOfInput( FALSE );
+		   NULL, " Why?", Line_Continue);
+	// (backup) SetValidityOfInput( FALSE );
 	Wait( 90 );
-	SetValidityOfInput( TRUE );
+	// (backup) SetValidityOfInput( TRUE );
 	OutputLine(NULL, "当",
-		   NULL, " Why?", Line_ContinueAfterTyping);
-	SetValidityOfInput( FALSE );
+		   NULL, " Why?", Line_Continue);
+	// (backup) SetValidityOfInput( FALSE );
 	Wait( 90 );
-	SetValidityOfInput( TRUE );
+	// (backup) SetValidityOfInput( TRUE );
 	OutputLine(NULL, "に",
-		   NULL, " Why?", Line_ContinueAfterTyping);
-	SetValidityOfInput( FALSE );
+		   NULL, " Why?", Line_Continue);
+	// (backup) SetValidityOfInput( FALSE );
 	Wait( 90 );
-	SetValidityOfInput( TRUE );
+	// (backup) SetValidityOfInput( TRUE );
 	OutputLine(NULL, "可",
-		   NULL, " Why?", Line_ContinueAfterTyping);
-	SetValidityOfInput( FALSE );
+		   NULL, " Why?", Line_Continue);
+	// (backup) SetValidityOfInput( FALSE );
 	Wait( 90 );
-	SetValidityOfInput( TRUE );
+	// (backup) SetValidityOfInput( TRUE );
 	OutputLine(NULL, "哀",
-		   NULL, " Why?", Line_ContinueAfterTyping);
-	SetValidityOfInput( FALSE );
+		   NULL, " Why?", Line_Continue);
+	// (backup) SetValidityOfInput( FALSE );
 	Wait( 90 );
-	SetValidityOfInput( TRUE );
+	// (backup) SetValidityOfInput( TRUE );
 	OutputLine(NULL, "想",
-		   NULL, " Why?", Line_ContinueAfterTyping);
-	SetValidityOfInput( FALSE );
+		   NULL, " Why?", Line_Continue);
+	// (backup) SetValidityOfInput( FALSE );
 	Wait( 90 );
-	SetValidityOfInput( TRUE );
+	// (backup) SetValidityOfInput( TRUE );
 	OutputLine(NULL, "彼",
-		   NULL, " Why?", Line_ContinueAfterTyping);
-	SetValidityOfInput( FALSE );
+		   NULL, " Why?", Line_Continue);
+	// (backup) SetValidityOfInput( FALSE );
 	Wait( 90 );
-	SetValidityOfInput( TRUE );
+	// (backup) SetValidityOfInput( TRUE );
 	OutputLine(NULL, "が",
-		   NULL, " Why?", Line_ContinueAfterTyping);
-	SetValidityOfInput( FALSE );
+		   NULL, " Why?", Line_Continue);
+	// (backup) SetValidityOfInput( FALSE );
 	Wait( 90 );
-	SetValidityOfInput( TRUE );
+	// (backup) SetValidityOfInput( TRUE );
 	OutputLine(NULL, "何",
-		   NULL, " Why?", Line_ContinueAfterTyping);
-	SetValidityOfInput( FALSE );
+		   NULL, " Why?", Line_Continue);
+	// (backup) SetValidityOfInput( FALSE );
 	Wait( 90 );
-	SetValidityOfInput( TRUE );
+	// (backup) SetValidityOfInput( TRUE );
 	OutputLine(NULL, "を",
-		   NULL, " Why?", Line_ContinueAfterTyping);
-	SetValidityOfInput( FALSE );
+		   NULL, " Why?", Line_Continue);
+	// (backup) SetValidityOfInput( FALSE );
 	Wait( 90 );
-	SetValidityOfInput( TRUE );
+	// (backup) SetValidityOfInput( TRUE );
 	OutputLine(NULL, "し",
-		   NULL, " Why?", Line_ContinueAfterTyping);
-	SetValidityOfInput( FALSE );
+		   NULL, " Why?", Line_Continue);
+	// (backup) SetValidityOfInput( FALSE );
 	Wait( 90 );
-	SetValidityOfInput( TRUE );
+	// (backup) SetValidityOfInput( TRUE );
 	OutputLine(NULL, "た",
-		   NULL, " Why?", Line_ContinueAfterTyping);
-	SetValidityOfInput( FALSE );
+		   NULL, " Why?", Line_Continue);
+	// (backup) SetValidityOfInput( FALSE );
 	Wait( 90 );
-	SetValidityOfInput( TRUE );
+	// (backup) SetValidityOfInput( TRUE );
 	OutputLine(NULL, "の",
-		   NULL, " Why?", Line_ContinueAfterTyping);
-	SetValidityOfInput( FALSE );
+		   NULL, " Why?", Line_Continue);
+	// (backup) SetValidityOfInput( FALSE );
 	Wait( 90 );
-	SetValidityOfInput( TRUE );
+	// (backup) SetValidityOfInput( TRUE );
 	OutputLine(NULL, "？",
-		   NULL, " Why?", Line_ContinueAfterTyping);
-	SetValidityOfInput( FALSE );
+		   NULL, " Why?", Line_Continue);
+	// (backup) SetValidityOfInput( FALSE );
 	Wait( 90 );
-	SetValidityOfInput( TRUE );
+	// (backup) SetValidityOfInput( TRUE );
 	OutputLine(NULL, "何",
-		   NULL, " Why?", Line_ContinueAfterTyping);
-	SetValidityOfInput( FALSE );
+		   NULL, " Why?", Line_Continue);
+	// (backup) SetValidityOfInput( FALSE );
 	Wait( 90 );
-	SetValidityOfInput( TRUE );
+	// (backup) SetValidityOfInput( TRUE );
 	OutputLine(NULL, "も",
-		   NULL, " Why?", Line_ContinueAfterTyping);
-	SetValidityOfInput( FALSE );
+		   NULL, " Why?", Line_Continue);
+	// (backup) SetValidityOfInput( FALSE );
 	Wait( 90 );
-	SetValidityOfInput( TRUE );
+	// (backup) SetValidityOfInput( TRUE );
 	OutputLine(NULL, "し",
-		   NULL, " Why?", Line_ContinueAfterTyping);
-	SetValidityOfInput( FALSE );
+		   NULL, " Why?", Line_Continue);
+	// (backup) SetValidityOfInput( FALSE );
 	Wait( 90 );
-	SetValidityOfInput( TRUE );
+	// (backup) SetValidityOfInput( TRUE );
 	OutputLine(NULL, "て",
-		   NULL, " Why?", Line_ContinueAfterTyping);
-	SetValidityOfInput( FALSE );
+		   NULL, " Why?", Line_Continue);
+	// (backup) SetValidityOfInput( FALSE );
 	Wait( 90 );
-	SetValidityOfInput( TRUE );
+	// (backup) SetValidityOfInput( TRUE );
 	OutputLine(NULL, "な",
-		   NULL, " Why?", Line_ContinueAfterTyping);
-	SetValidityOfInput( FALSE );
+		   NULL, " Why?", Line_Continue);
+	// (backup) SetValidityOfInput( FALSE );
 	Wait( 90 );
-	SetValidityOfInput( TRUE );
+	// (backup) SetValidityOfInput( TRUE );
 	OutputLine(NULL, "い",
-		   NULL, " Why?", Line_ContinueAfterTyping);
-	SetValidityOfInput( FALSE );
+		   NULL, " Why?", Line_Continue);
+	// (backup) SetValidityOfInput( FALSE );
 	Wait( 90 );
-	SetValidityOfInput( TRUE );
+	// (backup) SetValidityOfInput( TRUE );
 	OutputLine(NULL, "何",
-		   NULL, " Why?", Line_ContinueAfterTyping);
-	SetValidityOfInput( FALSE );
+		   NULL, " Why?", Line_Continue);
+	// (backup) SetValidityOfInput( FALSE );
 	Wait( 90 );
-	SetValidityOfInput( TRUE );
+	// (backup) SetValidityOfInput( TRUE );
 	OutputLine(NULL, "も",
-		   NULL, " Why?", Line_ContinueAfterTyping);
-	SetValidityOfInput( FALSE );
+		   NULL, " Why?", Line_Continue);
+	// (backup) SetValidityOfInput( FALSE );
 	Wait( 90 );
-	SetValidityOfInput( TRUE );
+	// (backup) SetValidityOfInput( TRUE );
 	OutputLine(NULL, "や",
-		   NULL, " Why?", Line_ContinueAfterTyping);
-	SetValidityOfInput( FALSE );
+		   NULL, " Why?", Line_Continue);
+	// (backup) SetValidityOfInput( FALSE );
 	Wait( 90 );
-	SetValidityOfInput( TRUE );
+	// (backup) SetValidityOfInput( TRUE );
 	OutputLine(NULL, "っ",
-		   NULL, " Why?", Line_ContinueAfterTyping);
-	SetValidityOfInput( FALSE );
+		   NULL, " Why?", Line_Continue);
+	// (backup) SetValidityOfInput( FALSE );
 	Wait( 90 );
-	SetValidityOfInput( TRUE );
+	// (backup) SetValidityOfInput( TRUE );
 	OutputLine(NULL, "て",
-		   NULL, " Why?", Line_ContinueAfterTyping);
-	SetValidityOfInput( FALSE );
+		   NULL, " Why?", Line_Continue);
+	// (backup) SetValidityOfInput( FALSE );
 	Wait( 90 );
-	SetValidityOfInput( TRUE );
+	// (backup) SetValidityOfInput( TRUE );
 	OutputLine(NULL, "な",
-		   NULL, " Why?", Line_ContinueAfterTyping);
-	SetValidityOfInput( FALSE );
+		   NULL, " Why?", Line_Continue);
+	// (backup) SetValidityOfInput( FALSE );
 	Wait( 90 );
-	SetValidityOfInput( TRUE );
+	// (backup) SetValidityOfInput( TRUE );
 	OutputLine(NULL, "い",
-		   NULL, " Why?", Line_ContinueAfterTyping);
-	SetValidityOfInput( FALSE );
+		   NULL, " Why?", Line_Continue);
+	// (backup) SetValidityOfInput( FALSE );
 	Wait( 90 );
-	SetValidityOfInput( TRUE );
+	// (backup) SetValidityOfInput( TRUE );
 	OutputLine(NULL, "た",
-		   NULL, " Why?", Line_ContinueAfterTyping);
-	SetValidityOfInput( FALSE );
+		   NULL, " Why?", Line_Continue);
+	// (backup) SetValidityOfInput( FALSE );
 	Wait( 90 );
-	SetValidityOfInput( TRUE );
+	// (backup) SetValidityOfInput( TRUE );
 	OutputLine(NULL, "だ",
-		   NULL, " Why?", Line_ContinueAfterTyping);
-	SetValidityOfInput( FALSE );
+		   NULL, " Why?", Line_Continue);
+	// (backup) SetValidityOfInput( FALSE );
 	Wait( 90 );
-	SetValidityOfInput( TRUE );
+	// (backup) SetValidityOfInput( TRUE );
 	OutputLine(NULL, "北",
-		   NULL, " Why?", Line_ContinueAfterTyping);
-	SetValidityOfInput( FALSE );
+		   NULL, " Why?", Line_Continue);
+	// (backup) SetValidityOfInput( FALSE );
 	Wait( 90 );
-	SetValidityOfInput( TRUE );
+	// (backup) SetValidityOfInput( TRUE );
 	OutputLine(NULL, "条",
-		   NULL, " Why?", Line_ContinueAfterTyping);
-	SetValidityOfInput( FALSE );
+		   NULL, " Why?", Line_Continue);
+	// (backup) SetValidityOfInput( FALSE );
 	Wait( 90 );
-	SetValidityOfInput( TRUE );
+	// (backup) SetValidityOfInput( TRUE );
 	OutputLine(NULL, "で",
-		   NULL, " Why?", Line_ContinueAfterTyping);
-	SetValidityOfInput( FALSE );
+		   NULL, " Why?", Line_Continue);
+	// (backup) SetValidityOfInput( FALSE );
 	Wait( 90 );
-	SetValidityOfInput( TRUE );
+	// (backup) SetValidityOfInput( TRUE );
 	OutputLine(NULL, "あ",
-		   NULL, " Why?", Line_ContinueAfterTyping);
-	SetValidityOfInput( FALSE );
+		   NULL, " Why?", Line_Continue);
+	// (backup) SetValidityOfInput( FALSE );
 	Wait( 90 );
-	SetValidityOfInput( TRUE );
+	// (backup) SetValidityOfInput( TRUE );
 	OutputLine(NULL, "っ",
-		   NULL, " Why?", Line_ContinueAfterTyping);
-	SetValidityOfInput( FALSE );
+		   NULL, " Why?", Line_Continue);
+	// (backup) SetValidityOfInput( FALSE );
 	Wait( 90 );
-	SetValidityOfInput( TRUE );
+	// (backup) SetValidityOfInput( TRUE );
 	OutputLine(NULL, "た",
-		   NULL, " Why?", Line_ContinueAfterTyping);
-	SetValidityOfInput( FALSE );
+		   NULL, " Why?", Line_Continue);
+	// (backup) SetValidityOfInput( FALSE );
 	Wait( 90 );
-	SetValidityOfInput( TRUE );
+	// (backup) SetValidityOfInput( TRUE );
 	OutputLine(NULL, "だ",
-		   NULL, " Why?", Line_ContinueAfterTyping);
-	SetValidityOfInput( FALSE );
+		   NULL, " Why?", Line_Continue);
+	// (backup) SetValidityOfInput( FALSE );
 	Wait( 90 );
-	SetValidityOfInput( TRUE );
+	// (backup) SetValidityOfInput( TRUE );
 	OutputLine(NULL, "け",
-		   NULL, " Why?", Line_ContinueAfterTyping);
-	SetValidityOfInput( FALSE );
+		   NULL, " Why?", Line_Continue);
+	// (backup) SetValidityOfInput( FALSE );
 	Wait( 90 );
-	SetValidityOfInput( TRUE );
+	// (backup) SetValidityOfInput( TRUE );
 	OutputLine(NULL, "そ",
-		   NULL, " Why?", Line_ContinueAfterTyping);
-	SetValidityOfInput( FALSE );
+		   NULL, " Why?", Line_Continue);
+	// (backup) SetValidityOfInput( FALSE );
 	Wait( 90 );
-	SetValidityOfInput( TRUE );
+	// (backup) SetValidityOfInput( TRUE );
 	OutputLine(NULL, "れ",
-		   NULL, " Why?", Line_ContinueAfterTyping);
-	SetValidityOfInput( FALSE );
+		   NULL, " Why?", Line_Continue);
+	// (backup) SetValidityOfInput( FALSE );
 	Wait( 90 );
-	SetValidityOfInput( TRUE );
+	// (backup) SetValidityOfInput( TRUE );
 	OutputLine(NULL, "に",
-		   NULL, " Why?", Line_ContinueAfterTyping);
-	SetValidityOfInput( FALSE );
+		   NULL, " Why?", Line_Continue);
+	// (backup) SetValidityOfInput( FALSE );
 	Wait( 90 );
-	SetValidityOfInput( TRUE );
+	// (backup) SetValidityOfInput( TRUE );
 	OutputLine(NULL, "ど",
-		   NULL, " Why?", Line_ContinueAfterTyping);
-	SetValidityOfInput( FALSE );
+		   NULL, " Why?", Line_Continue);
+	// (backup) SetValidityOfInput( FALSE );
 	Wait( 90 );
-	SetValidityOfInput( TRUE );
+	// (backup) SetValidityOfInput( TRUE );
 	OutputLine(NULL, "ん",
-		   NULL, " Why?", Line_ContinueAfterTyping);
-	SetValidityOfInput( FALSE );
+		   NULL, " Why?", Line_Continue);
+	// (backup) SetValidityOfInput( FALSE );
 	Wait( 90 );
-	SetValidityOfInput( TRUE );
+	// (backup) SetValidityOfInput( TRUE );
 	OutputLine(NULL, "な",
-		   NULL, " Why?", Line_ContinueAfterTyping);
-	SetValidityOfInput( FALSE );
+		   NULL, " Why?", Line_Continue);
+	// (backup) SetValidityOfInput( FALSE );
 	Wait( 90 );
-	SetValidityOfInput( TRUE );
+	// (backup) SetValidityOfInput( TRUE );
 	OutputLine(NULL, "罪",
-		   NULL, " Why?", Line_ContinueAfterTyping);
-	SetValidityOfInput( FALSE );
+		   NULL, " Why?", Line_Continue);
+	// (backup) SetValidityOfInput( FALSE );
 	Wait( 90 );
-	SetValidityOfInput( TRUE );
+	// (backup) SetValidityOfInput( TRUE );
 	OutputLine(NULL, "が",
-		   NULL, " Why?", Line_ContinueAfterTyping);
-	SetValidityOfInput( FALSE );
+		   NULL, " Why?", Line_Continue);
+	// (backup) SetValidityOfInput( FALSE );
 	Wait( 90 );
-	SetValidityOfInput( TRUE );
+	// (backup) SetValidityOfInput( TRUE );
 	OutputLine(NULL, "罰",
-		   NULL, " Why?", Line_ContinueAfterTyping);
-	SetValidityOfInput( FALSE );
+		   NULL, " Why?", Line_Continue);
+	// (backup) SetValidityOfInput( FALSE );
 	Wait( 90 );
-	SetValidityOfInput( TRUE );
+	// (backup) SetValidityOfInput( TRUE );
 	OutputLine(NULL, "が",
-		   NULL, " Why?", Line_ContinueAfterTyping);
-	SetValidityOfInput( FALSE );
+		   NULL, " Why?", Line_Continue);
+	// (backup) SetValidityOfInput( FALSE );
 	Wait( 90 );
-	SetValidityOfInput( TRUE );
+	// (backup) SetValidityOfInput( TRUE );
 	OutputLine(NULL, "祟",
-		   NULL, " Why?", Line_ContinueAfterTyping);
-	SetValidityOfInput( FALSE );
+		   NULL, " Why?", Line_Continue);
+	// (backup) SetValidityOfInput( FALSE );
 	Wait( 90 );
-	SetValidityOfInput( TRUE );
+	// (backup) SetValidityOfInput( TRUE );
 	OutputLine(NULL, "り",
-		   NULL, " Why?", Line_ContinueAfterTyping);
-	SetValidityOfInput( FALSE );
+		   NULL, " Why?", Line_Continue);
+	// (backup) SetValidityOfInput( FALSE );
 	Wait( 90 );
-	SetValidityOfInput( TRUE );
+	// (backup) SetValidityOfInput( TRUE );
 	OutputLine(NULL, "が",
-		   NULL, " Why?", Line_ContinueAfterTyping);
-	SetValidityOfInput( FALSE );
+		   NULL, " Why?", Line_Continue);
+	// (backup) SetValidityOfInput( FALSE );
 	Wait( 90 );
-	SetValidityOfInput( TRUE );
+	// (backup) SetValidityOfInput( TRUE );
 	OutputLine(NULL, "呪",
-		   NULL, " Why?", Line_ContinueAfterTyping);
-	SetValidityOfInput( FALSE );
+		   NULL, " Why?", Line_Continue);
+	// (backup) SetValidityOfInput( FALSE );
 	Wait( 90 );
-	SetValidityOfInput( TRUE );
+	// (backup) SetValidityOfInput( TRUE );
 	OutputLine(NULL, "い",
-		   NULL, " Why?", Line_ContinueAfterTyping);
-	SetValidityOfInput( FALSE );
+		   NULL, " Why?", Line_Continue);
+	// (backup) SetValidityOfInput( FALSE );
 	Wait( 90 );
-	SetValidityOfInput( TRUE );
+	// (backup) SetValidityOfInput( TRUE );
 	OutputLine(NULL, "が",
-		   NULL, " Why?", Line_ContinueAfterTyping);
-	SetValidityOfInput( FALSE );
+		   NULL, " Why?", Line_Continue);
+	// (backup) SetValidityOfInput( FALSE );
 	Wait( 90 );
-	SetValidityOfInput( TRUE );
+	// (backup) SetValidityOfInput( TRUE );
 	OutputLine(NULL, "ど",
-		   NULL, " Why?", Line_ContinueAfterTyping);
-	SetValidityOfInput( FALSE );
+		   NULL, " Why?", Line_Continue);
+	// (backup) SetValidityOfInput( FALSE );
 	Wait( 90 );
-	SetValidityOfInput( TRUE );
+	// (backup) SetValidityOfInput( TRUE );
 	OutputLine(NULL, "う",
-		   NULL, " Why?", Line_ContinueAfterTyping);
-	SetValidityOfInput( FALSE );
+		   NULL, " Why?", Line_Continue);
+	// (backup) SetValidityOfInput( FALSE );
 	Wait( 90 );
-	SetValidityOfInput( TRUE );
+	// (backup) SetValidityOfInput( TRUE );
 	OutputLine(NULL, "し",
-		   NULL, " Why?", Line_ContinueAfterTyping);
-	SetValidityOfInput( FALSE );
+		   NULL, " Why?", Line_Continue);
+	// (backup) SetValidityOfInput( FALSE );
 	Wait( 90 );
-	SetValidityOfInput( TRUE );
+	// (backup) SetValidityOfInput( TRUE );
 	OutputLine(NULL, "て",
-		   NULL, " Why?", Line_ContinueAfterTyping);
-	SetValidityOfInput( FALSE );
+		   NULL, " Why?", Line_Continue);
+	// (backup) SetValidityOfInput( FALSE );
 	Wait( 90 );
-	SetValidityOfInput( TRUE );
+	// (backup) SetValidityOfInput( TRUE );
 	OutputLine(NULL, "降",
-		   NULL, " Why?", Line_ContinueAfterTyping);
-	SetValidityOfInput( FALSE );
+		   NULL, " Why?", Line_Continue);
+	// (backup) SetValidityOfInput( FALSE );
 	Wait( 90 );
-	SetValidityOfInput( TRUE );
+	// (backup) SetValidityOfInput( TRUE );
 	OutputLine(NULL, "り",
-		   NULL, " Why?", Line_ContinueAfterTyping);
-	SetValidityOfInput( FALSE );
+		   NULL, " Why?", Line_Continue);
+	// (backup) SetValidityOfInput( FALSE );
 	Wait( 90 );
-	SetValidityOfInput( TRUE );
+	// (backup) SetValidityOfInput( TRUE );
 	OutputLine(NULL, "か",
-		   NULL, " Why?", Line_ContinueAfterTyping);
-	SetValidityOfInput( FALSE );
+		   NULL, " Why?", Line_Continue);
+	// (backup) SetValidityOfInput( FALSE );
 	Wait( 90 );
-	SetValidityOfInput( TRUE );
+	// (backup) SetValidityOfInput( TRUE );
 	OutputLine(NULL, "か",
-		   NULL, " Why?", Line_ContinueAfterTyping);
-	SetValidityOfInput( FALSE );
+		   NULL, " Why?", Line_Continue);
+	// (backup) SetValidityOfInput( FALSE );
 	Wait( 90 );
-	SetValidityOfInput( TRUE );
+	// (backup) SetValidityOfInput( TRUE );
 	OutputLine(NULL, "ら",
-		   NULL, " Why?", Line_ContinueAfterTyping);
-	SetValidityOfInput( FALSE );
+		   NULL, " Why?", Line_Continue);
+	// (backup) SetValidityOfInput( FALSE );
 	Wait( 90 );
-	SetValidityOfInput( TRUE );
+	// (backup) SetValidityOfInput( TRUE );
 	OutputLine(NULL, "ね",
-		   NULL, " Why?", Line_ContinueAfterTyping);
-	SetValidityOfInput( FALSE );
+		   NULL, " Why?", Line_Continue);
+	// (backup) SetValidityOfInput( FALSE );
 	Wait( 90 );
-	SetValidityOfInput( TRUE );
+	// (backup) SetValidityOfInput( TRUE );
 	OutputLine(NULL, "ば",
-		   NULL, " Why?", Line_ContinueAfterTyping);
-	SetValidityOfInput( FALSE );
+		   NULL, " Why?", Line_Continue);
+	// (backup) SetValidityOfInput( FALSE );
 	Wait( 90 );
-	SetValidityOfInput( TRUE );
+	// (backup) SetValidityOfInput( TRUE );
 	OutputLine(NULL, "な",
-		   NULL, " Why?", Line_ContinueAfterTyping);
-	SetValidityOfInput( FALSE );
+		   NULL, " Why?", Line_Continue);
+	// (backup) SetValidityOfInput( FALSE );
 	Wait( 90 );
-	SetValidityOfInput( TRUE );
+	// (backup) SetValidityOfInput( TRUE );
 	OutputLine(NULL, "ら",
-		   NULL, " Why?", Line_ContinueAfterTyping);
-	SetValidityOfInput( FALSE );
+		   NULL, " Why?", Line_Continue);
+	// (backup) SetValidityOfInput( FALSE );
 	Wait( 90 );
-	SetValidityOfInput( TRUE );
+	// (backup) SetValidityOfInput( TRUE );
 	OutputLine(NULL, "な",
-		   NULL, " Why?", Line_ContinueAfterTyping);
-	SetValidityOfInput( FALSE );
+		   NULL, " Why?", Line_Continue);
+	// (backup) SetValidityOfInput( FALSE );
 	Wait( 90 );
-	SetValidityOfInput( TRUE );
+	// (backup) SetValidityOfInput( TRUE );
 	OutputLine(NULL, "か",
-		   NULL, " Why?", Line_ContinueAfterTyping);
-	SetValidityOfInput( FALSE );
+		   NULL, " Why?", Line_Continue);
+	// (backup) SetValidityOfInput( FALSE );
 	Wait( 90 );
-	SetValidityOfInput( TRUE );
+	// (backup) SetValidityOfInput( TRUE );
 	OutputLine(NULL, "っ",
-		   NULL, " Why?", Line_ContinueAfterTyping);
-	SetValidityOfInput( FALSE );
+		   NULL, " Why?", Line_Continue);
+	// (backup) SetValidityOfInput( FALSE );
 	Wait( 90 );
-	SetValidityOfInput( TRUE );
+	// (backup) SetValidityOfInput( TRUE );
 	OutputLine(NULL, "た",
-		   NULL, " Why?", Line_ContinueAfterTyping);
-	SetValidityOfInput( FALSE );
+		   NULL, " Why?", Line_Continue);
+	// (backup) SetValidityOfInput( FALSE );
 	Wait( 90 );
-	SetValidityOfInput( TRUE );
+	// (backup) SetValidityOfInput( TRUE );
 	OutputLine(NULL, "の",
-		   NULL, " Why?", Line_ContinueAfterTyping);
-	SetValidityOfInput( FALSE );
+		   NULL, " Why?", Line_Continue);
+	// (backup) SetValidityOfInput( FALSE );
 	Wait( 90 );
-	SetValidityOfInput( TRUE );
+	// (backup) SetValidityOfInput( TRUE );
 	OutputLine(NULL, "か",
-		   NULL, " Why?", Line_ContinueAfterTyping);
-	SetValidityOfInput( FALSE );
+		   NULL, " Why?", Line_Continue);
+	// (backup) SetValidityOfInput( FALSE );
 	Wait( 90 );
-	SetValidityOfInput( TRUE );
+	// (backup) SetValidityOfInput( TRUE );
 	OutputLine(NULL, "、",
-		   NULL, " Why?", Line_ContinueAfterTyping);
-	SetValidityOfInput( FALSE );
+		   NULL, " Why?", Line_Continue);
+	// (backup) SetValidityOfInput( FALSE );
 	Wait( 90 );
-	SetValidityOfInput( TRUE );
+	// (backup) SetValidityOfInput( TRUE );
 
 
 	}
@@ -3190,10 +3190,10 @@ void main()
 		   NULL, " ...That's what I mean. ", GetGlobalFlag(GLinemodeSp));
 	PlayVoice(4, "s06/06/150601869", 128);
 	OutputLine(NULL, "…この雛見沢では、毎年、綿流しの夜に、オヤシロさまの祟りということにして誰かを殺してもいい土壌が、",
-		   NULL, "...At some point, a tradition was created here in Hinamizawa...", Line_ContinueAfterTyping);
-	SetValidityOfInput( FALSE );
+		   NULL, "...At some point, a tradition was created here in Hinamizawa...", Line_Continue);
+	// (backup) SetValidityOfInput( FALSE );
 	Wait( 1000 );
-	SetValidityOfInput( TRUE );
+	// (backup) SetValidityOfInput( TRUE );
 	OutputLine(NULL, "……いつの間にか作り上げられているんです。」",
 		   NULL, " where every year, you're allowed to kill someone on the night of Watanagashi.\"", Line_Normal);
 	ClearMessage();
@@ -3779,10 +3779,10 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "s06/06/150601873", 128);
 	OutputLine(NULL, "「こっちでも心当たりにいろいろと問い合わせましたけど、",
-		   NULL, "\"We've called a few places too, but", Line_ContinueAfterTyping);
-	SetValidityOfInput( FALSE );
+		   NULL, "\"We've called a few places too, but", Line_Continue);
+	// (backup) SetValidityOfInput( FALSE );
 	Wait( 1000 );
-	SetValidityOfInput( TRUE );
+	// (backup) SetValidityOfInput( TRUE );
 	OutputLine(NULL, "…全然。」",
 		   NULL, " nothing.\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -3961,7 +3961,7 @@ void main()
 	ClearMessage();
 
 	PlayVoice(4, "s06/06/150601889", 128);
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_Continue); }
 	OutputLine(NULL, "「鎖、少し長くしてあげましょうか？",
 		   NULL, "\"Is the chain too short?", Line_WaitForInput);
 	PlayVoice(4, "s06/06/150601890", 128);
@@ -4161,15 +4161,15 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f3ceb3>喜一郎</color>", NULL, "<color=#f3ceb3>Kiichiro</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "s06/18/153300115", 128);
 	OutputLine(NULL, "「…………警察が、",
-		   NULL, "\"...The police...", Line_ContinueAfterTyping);
-	SetValidityOfInput( FALSE );
+		   NULL, "\"...The police...", Line_Continue);
+	// (backup) SetValidityOfInput( FALSE );
 	Wait( 700 );
-	SetValidityOfInput( TRUE );
+	// (backup) SetValidityOfInput( TRUE );
 	OutputLine(NULL, "………東京で姿を見た、",
-		   NULL, " have seen him in Tokyo...", Line_ContinueAfterTyping);
-	SetValidityOfInput( FALSE );
+		   NULL, " have seen him in Tokyo...", Line_Continue);
+	// (backup) SetValidityOfInput( FALSE );
 	Wait( 800 );
-	SetValidityOfInput( TRUE );
+	// (backup) SetValidityOfInput( TRUE );
 	OutputLine(NULL, "……というようなのを聞いた覚えが…。」",
 		   NULL, " or something like that...\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
@@ -4197,10 +4197,10 @@ void main()
 		   NULL, "\"...Hey, head of the Kimiyoshi family...", Line_WaitForInput);
 	PlayVoice(4, "s06/06/150601907", 128);
 	OutputLine(NULL, "　呪われた一族、北条家の人間を、わざわざ失踪なんていう凝った消し方をしていて、",
-		   NULL, " What would be the point in letting one of the cursed family members live", Line_ContinueAfterTyping);
-	SetValidityOfInput( FALSE );
+		   NULL, " What would be the point in letting one of the cursed family members live", Line_Continue);
+	// (backup) SetValidityOfInput( FALSE );
 	Wait( 1000 );
-	SetValidityOfInput( TRUE );
+	// (backup) SetValidityOfInput( TRUE );
 	OutputLine(NULL, "わざわざ生かしておくのにどんな理由があるんです？",
 		   NULL, " after going through the trouble of making him disappear?", Line_WaitForInput);
 	PlayVoice(4, "s06/06/150601908", 128);
@@ -4226,10 +4226,10 @@ void main()
 		   NULL, " ...Uncle?", Line_WaitForInput);
 	PlayVoice(4, "s06/06/150601912", 128);
 	OutputLine(NULL, "　私の機嫌を取ろうとしていい加減なことを言ったなら、",
-		   NULL, " If you're just saying that to make me happy,", Line_ContinueAfterTyping);
-	SetValidityOfInput( FALSE );
+		   NULL, " If you're just saying that to make me happy,", Line_Continue);
+	// (backup) SetValidityOfInput( FALSE );
 	Wait( 900 );
-	SetValidityOfInput( TRUE );
+	// (backup) SetValidityOfInput( TRUE );
 	OutputLine(NULL, "…………かえって怒っちゃいますよ？」",
 		   NULL, " it's not going to work... you know that, don't you?\"", Line_Normal);
 	ClearMessage();
@@ -4260,15 +4260,15 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f3ceb3>喜一郎</color>", NULL, "<color=#f3ceb3>Kiichiro</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "s06/18/153300119", 128);
 	OutputLine(NULL, "「わ、",
-		   NULL, "\"I-", Line_ContinueAfterTyping);
-	SetValidityOfInput( FALSE );
+		   NULL, "\"I-", Line_Continue);
+	// (backup) SetValidityOfInput( FALSE );
 	Wait( 600 );
-	SetValidityOfInput( TRUE );
+	// (backup) SetValidityOfInput( TRUE );
 	OutputLine(NULL, "……わかってる、",
-		   NULL, "I know... I know that.", Line_ContinueAfterTyping);
-	SetValidityOfInput( FALSE );
+		   NULL, "I know... I know that.", Line_Continue);
+	// (backup) SetValidityOfInput( FALSE );
 	Wait( 1000 );
-	SetValidityOfInput( TRUE );
+	// (backup) SetValidityOfInput( TRUE );
 	OutputLine(NULL, "…ちゃんと真面目に考えるから…！」",
 		   NULL, " I'll answer you...!\"", Line_Normal);
 	ClearMessage();
@@ -4299,20 +4299,20 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f3ceb3>喜一郎</color>", NULL, "<color=#f3ceb3>Kiichiro</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "s06/18/153300120", 128);
 	OutputLine(NULL, "「………………………生きてると考えるのは",
-		   NULL, "\"I... think...", Line_ContinueAfterTyping);
-	SetValidityOfInput( FALSE );
+		   NULL, "\"I... think...", Line_Continue);
+	// (backup) SetValidityOfInput( FALSE );
 	Wait( 300 );
-	SetValidityOfInput( TRUE );
+	// (backup) SetValidityOfInput( TRUE );
 	OutputLine(NULL, "…",
-		   NULL, "...", Line_ContinueAfterTyping);
-	SetValidityOfInput( FALSE );
+		   NULL, "...", Line_Continue);
+	// (backup) SetValidityOfInput( FALSE );
 	Wait( 300 );
-	SetValidityOfInput( TRUE );
+	// (backup) SetValidityOfInput( TRUE );
 	OutputLine(NULL, "…",
-		   NULL, "...", Line_ContinueAfterTyping);
-	SetValidityOfInput( FALSE );
+		   NULL, "...", Line_Continue);
+	// (backup) SetValidityOfInput( FALSE );
 	Wait( 300 );
-	SetValidityOfInput( TRUE );
+	// (backup) SetValidityOfInput( TRUE );
 	OutputLine(NULL, "難しいんじゃないかと思う…。」",
 		   NULL, " you shouldn't think he is alive...\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -4347,13 +4347,13 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	PlayVoice(4, "s06/18/153300121", 128);
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_Continue); }
 	OutputLine(NULL, "「…………でも、…それの犯人は確か、麻薬中毒の危ない奴だと聞いたよ。」",
 		   NULL, "\"......Well... I heard that the culprit was some kind of drug addict.\"", Line_Normal);
 	ClearMessage();
 
 	PlayVoice(4, "s06/06/150601924", 128);
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_Continue); }
 	OutputLine(NULL, "「あれ、どう思います？",
 		   NULL, "\"What do you think about that?", Line_WaitForInput);
 	PlayVoice(4, "s06/06/150601925", 128);
@@ -4454,15 +4454,15 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f3ceb3>喜一郎</color>", NULL, "<color=#f3ceb3>Kiichiro</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "s06/18/153300131", 128);
 	OutputLine(NULL, "「………詩音ちゃんだって、",
-		   NULL, "\"...I'm sure you've heard quite a few rumors", Line_ContinueAfterTyping);
-	SetValidityOfInput( FALSE );
+		   NULL, "\"...I'm sure you've heard quite a few rumors", Line_Continue);
+	// (backup) SetValidityOfInput( FALSE );
 	Wait( 800 );
-	SetValidityOfInput( TRUE );
+	// (backup) SetValidityOfInput( TRUE );
 	OutputLine(NULL, "…色々とダム戦争の頃から噂は聞いてるだろうし、",
-		   NULL, " during the dam conflict.", Line_ContinueAfterTyping);
-	SetValidityOfInput( FALSE );
+		   NULL, " during the dam conflict.", Line_Continue);
+	// (backup) SetValidityOfInput( FALSE );
 	Wait( 1000 );
-	SetValidityOfInput( TRUE );
+	// (backup) SetValidityOfInput( TRUE );
 	OutputLine(NULL, "中には実際に、直接聞いたものもあるんじゃないかい…？」",
 		   NULL, " Didn't you also hear things directly?\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -4538,18 +4538,18 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f3ceb3>喜一郎</color>", NULL, "<color=#f3ceb3>Kiichiro</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "s06/18/153300134", 128);
 	OutputLine(NULL, "「…………あれは、",
-		   NULL, "\"That was", Line_ContinueAfterTyping);
-	SetValidityOfInput( FALSE );
+		   NULL, "\"That was", Line_Continue);
+	// (backup) SetValidityOfInput( FALSE );
 	Wait( 1000 );
-	SetValidityOfInput( TRUE );
+	// (backup) SetValidityOfInput( TRUE );
 	OutputLine(NULL, "…お魎さんの指図によるものだよ…。",
 		   NULL, " at Oryou-san's command...", Line_WaitForInput);
 	PlayVoice(4, "s06/18/153300135", 128);
 	OutputLine(NULL, "……ダム工事の中止の約束が取り付けられたんで、孫を釈放したっていうのは、",
-		   NULL, " The Minister promised to stop the dam construction, and the grandson was released.", Line_ContinueAfterTyping);
-	SetValidityOfInput( FALSE );
+		   NULL, " The Minister promised to stop the dam construction, and the grandson was released.", Line_Continue);
+	// (backup) SetValidityOfInput( FALSE );
 	Wait( 1000 );
-	SetValidityOfInput( TRUE );
+	// (backup) SetValidityOfInput( TRUE );
 	OutputLine(NULL, "………おじいちゃんたち、旧同盟の幹部ならみんな知ってる。」",
 		   NULL, " ......All the top people in the ex-Guardians know that.\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -4973,10 +4973,10 @@ void main()
 		   NULL, "\"...To live.", Line_WaitForInput);
 	PlayVoice(4, "s06/06/150601946", 128);
 	OutputLine(NULL, "…………生きるよ…………、",
-		   NULL, " I will... live.", Line_ContinueAfterTyping);
-	SetValidityOfInput( FALSE );
+		   NULL, " I will... live.", Line_Continue);
+	// (backup) SetValidityOfInput( FALSE );
 	Wait( 1000 );
-	SetValidityOfInput( TRUE );
+	// (backup) SetValidityOfInput( TRUE );
 	OutputLine(NULL, "…生きる。」",
 		   NULL, " I will live.\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -5024,10 +5024,10 @@ void main()
 		   NULL, "\"Mion.", Line_WaitForInput);
 	PlayVoice(4, "s06/06/150601948", 128);
 	OutputLine(NULL, "……悟史くん、",
-		   NULL, " Satoshi-kun...", Line_ContinueAfterTyping);
-	SetValidityOfInput( FALSE );
+		   NULL, " Satoshi-kun...", Line_Continue);
+	// (backup) SetValidityOfInput( FALSE );
 	Wait( 800 );
-	SetValidityOfInput( TRUE );
+	// (backup) SetValidityOfInput( TRUE );
 	OutputLine(NULL, "………見つけた…。",
 		   NULL, " I found him...", Line_WaitForInput);
 	PlayVoice(4, "s06/06/150601949", 128);
@@ -5041,10 +5041,10 @@ void main()
 		   NULL, "\"...I think so...", Line_WaitForInput);
 	PlayVoice(4, "s06/03/150300400", 128);
 	OutputLine(NULL, "…………そこしか、",
-		   NULL, " I can't think of", Line_ContinueAfterTyping);
-	SetValidityOfInput( FALSE );
+		   NULL, " I can't think of", Line_Continue);
+	// (backup) SetValidityOfInput( FALSE );
 	Wait( 1000 );
-	SetValidityOfInput( TRUE );
+	// (backup) SetValidityOfInput( TRUE );
 	OutputLine(NULL, "……ないもん。」",
 		   NULL, " anywhere else he'd be.\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -5234,7 +5234,7 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "s06/06/150601955", 128);
 	OutputLine(NULL, "「うわああああああぁああぁあぁああぁあ！！",
-		   NULL, "\"Whaaaahhhhhhh!!", Line_ContinueAfterTyping);
+		   NULL, "\"Whaaaahhhhhhh!!", Line_Continue);
 	StartShakingOfWindow( 248, 40, 0, 2, 4*2, FALSE );
 	StartShakingOfAllObjects( 248, 40, 0, 2, 4*2, TRUE );
 

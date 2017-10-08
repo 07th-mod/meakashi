@@ -209,10 +209,10 @@ void main()
 		   NULL, "\"...!", Line_WaitForInput);
 	PlayVoice(4, "s06/06/150600720", 128);
 	OutputLine(NULL, "　葛西、あんた…、",
-		   NULL, " Hey, do you know", Line_ContinueAfterTyping);
-	SetValidityOfInput( FALSE );
+		   NULL, " Hey, do you know", Line_Continue);
+	// (backup) SetValidityOfInput( FALSE );
 	Wait( 1000 );
-	SetValidityOfInput( TRUE );
+	// (backup) SetValidityOfInput( TRUE );
 	OutputLine(NULL, "全部知ってる…？！」",
 		   NULL, " about that...?!\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -861,10 +861,10 @@ void main()
 		   NULL, " He's been extremely stressed these days...", Line_WaitForInput);
 	PlayVoice(4, "s06/03/150300160", 128);
 	OutputLine(NULL, "………私の声はもう届かないみたいだけど、",
-		   NULL, " I don't think he'll listen to me anymore, but", Line_ContinueAfterTyping);
-	SetValidityOfInput( FALSE );
+		   NULL, " I don't think he'll listen to me anymore, but", Line_Continue);
+	// (backup) SetValidityOfInput( FALSE );
 	Wait( 1000 );
-	SetValidityOfInput( TRUE );
+	// (backup) SetValidityOfInput( TRUE );
 	OutputLine(NULL, "……詩音の声なら、…ひょっとすると届くかもしれないって、……何の根拠もなく、思ってる。」",
 		   NULL, " I think he'll listen to you.\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
@@ -950,15 +950,15 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "s06/06/150600758", 128);
 	OutputLine(NULL, "「あ、……の、",
-		   NULL, "\"Uh...", Line_ContinueAfterTyping);
-	SetValidityOfInput( FALSE );
+		   NULL, "\"Uh...", Line_Continue);
+	// (backup) SetValidityOfInput( FALSE );
 	Wait( 900 );
-	SetValidityOfInput( TRUE );
+	// (backup) SetValidityOfInput( TRUE );
 	OutputLine(NULL, "…………悟史くん",
-		   NULL, " is that you,", Line_ContinueAfterTyping);
-	SetValidityOfInput( FALSE );
+		   NULL, " is that you,", Line_Continue);
+	// (backup) SetValidityOfInput( FALSE );
 	Wait( 900 );
-	SetValidityOfInput( TRUE );
+	// (backup) SetValidityOfInput( TRUE );
 	OutputLine(NULL, "………ですよね？」",
 		   NULL, " Satoshi-kun...?\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -1023,10 +1023,10 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#ffdc6f>悟史</color>", NULL, "<color=#ffdc6f>Satoshi</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "s06/07/151200192", 128);
 	OutputLine(NULL, "「…………………先日は、",
-		   NULL, "\"...I'm truly sorry", Line_ContinueAfterTyping);
-	SetValidityOfInput( FALSE );
+		   NULL, "\"...I'm truly sorry", Line_Continue);
+	// (backup) SetValidityOfInput( FALSE );
 	Wait( 1000 );
-	SetValidityOfInput( TRUE );
+	// (backup) SetValidityOfInput( TRUE );
 	OutputLine(NULL, "………ごめん。」",
 		   NULL, " for what happened the other day.\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -1034,20 +1034,20 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "s06/06/150600761", 128);
 	OutputLine(NULL, "「ぁ、",
-		   NULL, "\"Uh...", Line_ContinueAfterTyping);
-	SetValidityOfInput( FALSE );
+		   NULL, "\"Uh...", Line_Continue);
+	// (backup) SetValidityOfInput( FALSE );
 	Wait( 600 );
-	SetValidityOfInput( TRUE );
+	// (backup) SetValidityOfInput( TRUE );
 	OutputLine(NULL, "…ぅ…、",
-		   NULL, " hmm...", Line_ContinueAfterTyping);
-	SetValidityOfInput( FALSE );
+		   NULL, " hmm...", Line_Continue);
+	// (backup) SetValidityOfInput( FALSE );
 	Wait( 600 );
-	SetValidityOfInput( TRUE );
+	// (backup) SetValidityOfInput( TRUE );
 	OutputLine(NULL, "わ、私こそ、",
-		   NULL, " I'm...", Line_ContinueAfterTyping);
-	SetValidityOfInput( FALSE );
+		   NULL, " I'm...", Line_Continue);
+	// (backup) SetValidityOfInput( FALSE );
 	Wait( 1000 );
-	SetValidityOfInput( TRUE );
+	// (backup) SetValidityOfInput( TRUE );
 	OutputLine(NULL, "………ごめんなさいです…！」",
 		   NULL, " sorry too...!\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -1142,10 +1142,10 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#ffdc6f>悟史</color>", NULL, "<color=#ffdc6f>Satoshi</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "s06/07/151200201", 128);
 	OutputLine(NULL, "「僕より、…………沙都子の方が、",
-		   NULL, "\"Satoko...", Line_ContinueAfterTyping);
-	SetValidityOfInput( FALSE );
+		   NULL, "\"Satoko...", Line_Continue);
+	// (backup) SetValidityOfInput( FALSE );
 	Wait( 800 );
-	SetValidityOfInput( TRUE );
+	// (backup) SetValidityOfInput( TRUE );
 	OutputLine(NULL, "…辛い。」",
 		   NULL, " has it far worse than me.\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -1263,13 +1263,13 @@ void main()
 		   NULL, "\"...Satoko can't take it anymore...", Line_WaitForInput);
 	PlayVoice(4, "s06/07/151200207", 128);
 	OutputLine(NULL, "……だから…、",
-		   NULL, " so...", Line_ContinueAfterTyping);
-	SetValidityOfInput( FALSE );
+		   NULL, " so...", Line_Continue);
+	// (backup) SetValidityOfInput( FALSE );
 	Wait( 1500 );
-	SetValidityOfInput( TRUE );
+	// (backup) SetValidityOfInput( TRUE );
 	SetSpeedOfMessage( TRUE, 16 );
 	OutputLine(NULL, "………………。",
-		   NULL, "..................", Line_ContinueAfterTyping);
+		   NULL, "..................", Line_Continue);
 	SetSpeedOfMessage( FALSE, 0 );
 	OutputLine(NULL, "」",
 		   NULL, "\"", GetGlobalFlag(GLinemodeSp));
@@ -1570,10 +1570,10 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#ffdc6f>悟史</color>", NULL, "<color=#ffdc6f>Satoshi</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "s06/07/151200229", 128);
 	OutputLine(NULL, "「………ん、",
-		   NULL, "\"...Um", Line_ContinueAfterTyping);
-	SetValidityOfInput( FALSE );
+		   NULL, "\"...Um", Line_Continue);
+	// (backup) SetValidityOfInput( FALSE );
 	Wait( 1000 );
-	SetValidityOfInput( TRUE );
+	// (backup) SetValidityOfInput( TRUE );
 	OutputLine(NULL, "………ほら、",
 		   NULL, "...", Line_WaitForInput);
 	FadeOutBGM( 0, 0, FALSE );
@@ -1584,10 +1584,10 @@ void main()
 
 	PlayVoice(4, "s06/07/151200230", 128);
 	OutputLine(NULL, "………オヤシロさまの、",
-		   NULL, " ...in Oyashiro-sama's", Line_ContinueAfterTyping);
-	SetValidityOfInput( FALSE );
+		   NULL, " ...in Oyashiro-sama's", Line_Continue);
+	// (backup) SetValidityOfInput( FALSE );
 	Wait( 1000 );
-	SetValidityOfInput( TRUE );
+	// (backup) SetValidityOfInput( TRUE );
 	OutputLine(NULL, "祟り。」",
 		   NULL, " curse.\"", Line_Normal);
 	ClearMessage();
@@ -1911,10 +1911,10 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#ffdc6f>悟史</color>", NULL, "<color=#ffdc6f>Satoshi</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "s06/07/151200251", 128);
 	OutputLine(NULL, "「沙都子のこと、",
-		   NULL, "\"I'll leave...", Line_ContinueAfterTyping);
-	SetValidityOfInput( FALSE );
+		   NULL, "\"I'll leave...", Line_Continue);
+	// (backup) SetValidityOfInput( FALSE );
 	Wait( 1100 );
-	SetValidityOfInput( TRUE );
+	// (backup) SetValidityOfInput( TRUE );
 	FadeOutBGM( 0, 0, FALSE );
 	FadeOutBGM( 1, 0, FALSE );
 	FadeOutBGM( 2, 0, FALSE );

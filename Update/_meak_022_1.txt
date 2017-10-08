@@ -63,10 +63,10 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "s06/01/150100183", 128);
 	OutputLine(NULL, "「………も、",
-		   NULL, "\"H-", Line_ContinueAfterTyping);
-	SetValidityOfInput( FALSE );
+		   NULL, "\"H-", Line_Continue);
+	// (backup) SetValidityOfInput( FALSE );
 	Wait( 800 );
-	SetValidityOfInput( TRUE );
+	// (backup) SetValidityOfInput( TRUE );
 	OutputLine(NULL, "……もしもし。",
 		   NULL, "Hello...?", Line_WaitForInput);
 	PlayVoice(4, "s06/01/150100184", 128);
@@ -97,10 +97,10 @@ void main()
 		   NULL, "\"Shion!", Line_WaitForInput);
 	PlayVoice(4, "s06/01/150100187", 128);
 	OutputLine(NULL, "……その、",
-		   NULL, " Umm...", Line_ContinueAfterTyping);
-	SetValidityOfInput( FALSE );
+		   NULL, " Umm...", Line_Continue);
+	// (backup) SetValidityOfInput( FALSE );
 	Wait( 600 );
-	SetValidityOfInput( TRUE );
+	// (backup) SetValidityOfInput( TRUE );
 	OutputLine(NULL, "……昨夜は……すまなかった。",
 		   NULL, " ...Sorry about... last night.", Line_WaitForInput);
 	PlayVoice(4, "s06/01/150100188", 128);
@@ -190,10 +190,10 @@ void main()
 		   NULL, "\"...Let's report anything we noticed that seemed strange.", Line_WaitForInput);
 	PlayVoice(4, "s06/06/150602173", 128);
 	OutputLine(NULL, "…互いの持つ小さな断片を合わせていけば、…ひょっとすると、鷹野さんたちを殺した、",
-		   NULL, " ...If we connect all the tiny pieces that we have...", Line_ContinueAfterTyping);
-	SetValidityOfInput( FALSE );
+		   NULL, " ...If we connect all the tiny pieces that we have...", Line_Continue);
+	// (backup) SetValidityOfInput( FALSE );
 	Wait( 1000 );
-	SetValidityOfInput( TRUE );
+	// (backup) SetValidityOfInput( TRUE );
 	OutputLine(NULL, "…いえ、今年の事件に限らない。",
 		   NULL, " then just maybe we'll find out who killed them... ", GetGlobalFlag(GLinemodeSp));
 
@@ -338,10 +338,10 @@ void main()
 		   NULL, "\"You mean the mayor...?", Line_WaitForInput);
 	PlayVoice(4, "s06/01/150100198", 128);
 	OutputLine(NULL, "　…何だ、詩音、",
-		   NULL, " Wait, Shion...", Line_ContinueAfterTyping);
-	SetValidityOfInput( FALSE );
+		   NULL, " Wait, Shion...", Line_Continue);
+	// (backup) SetValidityOfInput( FALSE );
 	Wait( 800 );
-	SetValidityOfInput( TRUE );
+	// (backup) SetValidityOfInput( TRUE );
 	OutputLine(NULL, "…聞いてないのか？」",
 		   NULL, " you haven't heard?\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -349,10 +349,10 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "s06/06/150602183", 128);
 	OutputLine(NULL, "「何も知らないです！",
-		   NULL, "\"I don't know anything!", Line_ContinueAfterTyping);
-	SetValidityOfInput( FALSE );
+		   NULL, "\"I don't know anything!", Line_Continue);
+	// (backup) SetValidityOfInput( FALSE );
 	Wait( 600 );
-	SetValidityOfInput( TRUE );
+	// (backup) SetValidityOfInput( TRUE );
 	OutputLine(NULL, "……お父さんが電話でそう話してるのを、また盗み聞いただけですから。」",
 		   NULL, " ...I just overheard my father talking about it on the phone again.\"", Line_Normal);
 	ClearMessage();
@@ -377,7 +377,7 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "s06/06/150602184", 128);
 	OutputLine(NULL, "「な、なんでそんな大事な話を先にしてくれなかったんですかッ！！！！！」",
-		   NULL, "\"Wh-Why didn't you tell me something that important right away???!!\"", Line_ContinueAfterTyping);
+		   NULL, "\"Wh-Why didn't you tell me something that important right away???!!\"", Line_Continue);
 	StartShakingOfWindow( 248, 40, 0, 2, 4*2, FALSE );
 	StartShakingOfAllObjects( 248, 40, 0, 2, 4*2, TRUE );
 	OutputLineAll(NULL, "", Line_Normal);
@@ -387,10 +387,10 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "s06/01/150100203", 128);
 	OutputLine(NULL, "「わ、悪ぃ…、",
-		   NULL, "\"S-Sorry...", Line_ContinueAfterTyping);
-	SetValidityOfInput( FALSE );
+		   NULL, "\"S-Sorry...", Line_Continue);
+	// (backup) SetValidityOfInput( FALSE );
 	Wait( 600 );
-	SetValidityOfInput( TRUE );
+	// (backup) SetValidityOfInput( TRUE );
 	OutputLine(NULL, "…もう知ってると思ってたんだよ…。",
 		   NULL, " I thought you already knew...", Line_WaitForInput);
 	PlayVoice(4, "s06/01/150100204", 128);
@@ -401,15 +401,15 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "s06/06/150602185", 128);
 	OutputLine(NULL, "「…………………………………圭ちゃん、",
-		   NULL, "\"............Kei-chan...", Line_ContinueAfterTyping);
-	SetValidityOfInput( FALSE );
+		   NULL, "\"............Kei-chan...", Line_Continue);
+	// (backup) SetValidityOfInput( FALSE );
 	Wait( 1000 );
-	SetValidityOfInput( TRUE );
+	// (backup) SetValidityOfInput( TRUE );
 	OutputLine(NULL, "……私、",
-		   NULL, " ...What...", Line_ContinueAfterTyping);
-	SetValidityOfInput( FALSE );
+		   NULL, " ...What...", Line_Continue);
+	// (backup) SetValidityOfInput( FALSE );
 	Wait( 800 );
-	SetValidityOfInput( TRUE );
+	// (backup) SetValidityOfInput( TRUE );
 	OutputLine(NULL, "……………どうしよう……。」",
 		   NULL, " ......What should I do...?\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -450,16 +450,16 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "s06/06/150602189", 128);
 	OutputLine(NULL, "「私、",
-		   NULL, "\"I...", Line_ContinueAfterTyping);
+		   NULL, "\"I...", Line_Continue);
 	SetSpeedOfMessage( TRUE, 16 );
 	OutputLine(NULL, "…………",
-		   NULL, "......", Line_ContinueAfterTyping);
+		   NULL, "......", Line_Continue);
 	SetSpeedOfMessage( FALSE, 0 );
 	OutputLine(NULL, "公由のお爺ちゃんに",
-		   NULL, " Uncle Kimiyoshi, I...", Line_ContinueAfterTyping);
-	SetValidityOfInput( FALSE );
+		   NULL, " Uncle Kimiyoshi, I...", Line_Continue);
+	// (backup) SetValidityOfInput( FALSE );
 	Wait( 1000 );
-	SetValidityOfInput( TRUE );
+	// (backup) SetValidityOfInput( TRUE );
 	OutputLine(NULL, "……打ち明けたんです。」",
 		   NULL, " ...I told him everything.\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -572,15 +572,15 @@ void main()
 		   NULL, " ...He smiled, then told me that if I was remorseful about it, there was no way I'd be demoned away...", Line_WaitForInput);
 	PlayVoice(4, "s06/06/150602205", 128);
 	OutputLine(NULL, "…本当に",
-		   NULL, " ...He was really...", Line_ContinueAfterTyping);
-	SetValidityOfInput( FALSE );
+		   NULL, " ...He was really...", Line_Continue);
+	// (backup) SetValidityOfInput( FALSE );
 	Wait( 800 );
-	SetValidityOfInput( TRUE );
+	// (backup) SetValidityOfInput( TRUE );
 	OutputLine(NULL, "……笑いながら……任せなさい…って………。",
-		   NULL, " ...smiling... ...and he told me to leave it to... him...", Line_ContinueAfterTyping);
-	SetValidityOfInput( FALSE );
+		   NULL, " ...smiling... ...and he told me to leave it to... him...", Line_Continue);
+	// (backup) SetValidityOfInput( FALSE );
 	Wait( 1200 );
-	SetValidityOfInput( TRUE );
+	// (backup) SetValidityOfInput( TRUE );
 	OutputLine(NULL, "……ぅぅ…ッ！！」",
 		   NULL, " ...ngh...!!\"", Line_Normal);
 	ClearMessage();
@@ -723,18 +723,18 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "s06/06/150602220", 128);
 	OutputLine(NULL, "　打ち明けたから",
-		   NULL, "He got killed...", Line_ContinueAfterTyping);
+		   NULL, "He got killed...", Line_Continue);
 	SetSpeedOfMessage( TRUE, 16 );
 	OutputLine(NULL, "……",
-		   NULL, "...", Line_ContinueAfterTyping);
+		   NULL, "...", Line_Continue);
 	SetSpeedOfMessage( FALSE, 0 );
-	SetValidityOfInput( FALSE );
+	// (backup) SetValidityOfInput( FALSE );
 	Wait( 600 );
-	SetValidityOfInput( TRUE );
+	// (backup) SetValidityOfInput( TRUE );
 	SetSpeedOfMessage( TRUE, 128 );
 
 	OutputLine(NULL, "殺されてしまったッ！",
-		   NULL, " because I confessed to him!!!!", Line_ContinueAfterTyping);
+		   NULL, " because I confessed to him!!!!", Line_Continue);
 	StartShakingOfWindow( 248, 40, 0, 2, 3*2, FALSE );
 	StartShakingOfAllObjects( 248, 40, 0, 2, 3*2, TRUE );
 
@@ -889,28 +889,28 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "s06/01/150100228", 128);
 	OutputLine(NULL, "「お、…俺も",
-		   NULL, "\"I... I, well...", Line_ContinueAfterTyping);
-	SetValidityOfInput( FALSE );
+		   NULL, "\"I... I, well...", Line_Continue);
+	// (backup) SetValidityOfInput( FALSE );
 	Wait( 800 );
-	SetValidityOfInput( TRUE );
+	// (backup) SetValidityOfInput( TRUE );
 	OutputLine(NULL, "……実は…、",
-		   NULL, " ...The truth is...", Line_ContinueAfterTyping);
-	SetValidityOfInput( FALSE );
+		   NULL, " ...The truth is...", Line_Continue);
+	// (backup) SetValidityOfInput( FALSE );
 	Wait( 800 );
-	SetValidityOfInput( TRUE );
+	// (backup) SetValidityOfInput( TRUE );
 	OutputLine(NULL, "…う、",
-		   NULL, " ...I...", Line_ContinueAfterTyping);
-	SetValidityOfInput( FALSE );
+		   NULL, " ...I...", Line_Continue);
+	// (backup) SetValidityOfInput( FALSE );
 	Wait( 900 );
-	SetValidityOfInput( TRUE );
+	// (backup) SetValidityOfInput( TRUE );
 	OutputLine(NULL, "…打ち明けたんだ。",
 		   NULL, " ...I told her about it.", Line_WaitForInput);
 	PlayVoice(4, "s06/01/150100229", 128);
 	OutputLine(NULL, "…梨花ちゃんに、",
-		   NULL, " ...I told Rika-chan...", Line_ContinueAfterTyping);
-	SetValidityOfInput( FALSE );
+		   NULL, " ...I told Rika-chan...", Line_Continue);
+	// (backup) SetValidityOfInput( FALSE );
 	Wait( 1000 );
-	SetValidityOfInput( TRUE );
+	// (backup) SetValidityOfInput( TRUE );
 	OutputLine(NULL, "……今日ッ！！」",
 		   NULL, " ...today!!\"", Line_Normal);
 	ClearMessage();

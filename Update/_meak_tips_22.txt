@@ -142,7 +142,7 @@ void main()
 	PlayVoice(4, "s20/19/443100056", 128);
 	OutputLine(NULL, "「ノートって、先日のあの、大石さん宛てと書かれて郵便ポストに投函されてたって言う怪ノートのことですか？",
 		   NULL, "\"Are you talking about the mysterious notebook you received the other day?", Line_WaitForInput);
-	PlaySE(4, "", 128, 64);
+	PlayVoice(4, "", 128);
 	OutputLine(NULL, "　中身はめちゃくちゃで捜査撹乱の恐れありって言いませんでしたっけ？」",
 		   NULL, " Didn't you say it was all mumbo jumbo that could possibly confuse the case?\"", Line_Normal);
 	ClearMessage();
@@ -181,10 +181,10 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#8f6d8f>熊谷</color>", NULL, "<color=#8f6d8f>Kumagai</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "s20/19/443100059", 128);
 	OutputLine(NULL, "「しあわせ、",
-		   NULL, "\"A happy diary", Line_ContinueAfterTyping);
-	SetValidityOfInput( FALSE );
+		   NULL, "\"A happy diary", Line_Continue);
+	// (backup) SetValidityOfInput( FALSE );
 	Wait( 800 );
-	SetValidityOfInput( TRUE );
+	// (backup) SetValidityOfInput( TRUE );
 	OutputLine(NULL, "……ですか？」",
 		   NULL, "......?\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }

@@ -928,44 +928,44 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#6972c1>梨花</color>", NULL, "<color=#6972c1>Rika</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "s06/05/150500059", 128);
 	OutputLine(NULL, "「………ぅうぅ、",
-		   NULL, "\"Ooh", Line_ContinueAfterTyping);
-	SetValidityOfInput( FALSE );
+		   NULL, "\"Ooh", Line_Continue);
+	// (backup) SetValidityOfInput( FALSE );
 	Wait( 800 );
-	SetValidityOfInput( TRUE );
+	// (backup) SetValidityOfInput( TRUE );
 	OutputLine(NULL, "………っは、はぁ",
-		   NULL, " hah, hah...", Line_ContinueAfterTyping);
-	SetValidityOfInput( FALSE );
+		   NULL, " hah, hah...", Line_Continue);
+	// (backup) SetValidityOfInput( FALSE );
 	Wait( 800 );
-	SetValidityOfInput( TRUE );
+	// (backup) SetValidityOfInput( TRUE );
 	SetSpeedOfMessage( TRUE, 16 );
 	OutputLine(NULL, "…………",
-		   NULL, ".........", Line_ContinueAfterTyping);
+		   NULL, ".........", Line_Continue);
 	SetSpeedOfMessage( FALSE, 0 );
 	OutputLine(NULL, "あぅうぅ……、",
-		   NULL, " Ahoo, ahooo...", Line_ContinueAfterTyping);
-	SetValidityOfInput( FALSE );
+		   NULL, " Ahoo, ahooo...", Line_Continue);
+	// (backup) SetValidityOfInput( FALSE );
 	Wait( 800 );
-	SetValidityOfInput( TRUE );
+	// (backup) SetValidityOfInput( TRUE );
 	OutputLine(NULL, "……はにゅぅー…",
-		   NULL, " Hanyuuu...", Line_ContinueAfterTyping);
-	SetValidityOfInput( FALSE );
+		   NULL, " Hanyuuu...", Line_Continue);
+	// (backup) SetValidityOfInput( FALSE );
 	Wait( 400 );
-	SetValidityOfInput( TRUE );
+	// (backup) SetValidityOfInput( TRUE );
 	OutputLine(NULL, "はにゅーー…………ッ、",
-		   NULL, " Hanyuuu...", Line_ContinueAfterTyping);
-	SetValidityOfInput( FALSE );
+		   NULL, " Hanyuuu...", Line_Continue);
+	// (backup) SetValidityOfInput( FALSE );
 	Wait( 800 );
-	SetValidityOfInput( TRUE );
+	// (backup) SetValidityOfInput( TRUE );
 	OutputLine(NULL, "……がふ、",
-		   NULL, " cough", Line_ContinueAfterTyping);
-	SetValidityOfInput( FALSE );
+		   NULL, " cough", Line_Continue);
+	// (backup) SetValidityOfInput( FALSE );
 	Wait( 800 );
-	SetValidityOfInput( TRUE );
+	// (backup) SetValidityOfInput( TRUE );
 	OutputLine(NULL, "………げほ！",
-		   NULL, " cough!", Line_ContinueAfterTyping);
-	SetValidityOfInput( FALSE );
+		   NULL, " cough!", Line_Continue);
+	// (backup) SetValidityOfInput( FALSE );
 	Wait( 500 );
-	SetValidityOfInput( TRUE );
+	// (backup) SetValidityOfInput( TRUE );
 	OutputLine(NULL, "　げほ！！」",
 		   NULL, " Cough!!\"", Line_Normal);
 	ClearMessage();
@@ -1898,28 +1898,28 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "s06/06/150602108", 128);
 	OutputLine(NULL, "「はッどうだかぁ？！",
-		   NULL, "\"Oh, sure!!", Line_ContinueAfterTyping);
+		   NULL, "\"Oh, sure!!", Line_Continue);
 	PlaySE( 0, "s_Down", 128, 64 );
 
 	OutputLineAll(NULL, "", Line_WaitForInput);
 
 	PlayVoice(4, "s06/06/150602109", 128);
 	OutputLine(NULL, "　あんたはいつも妬んでたじゃない、魅音ばかりいい目にあってずるいって！！",
-		   NULL, " You were always jealous of me. Always looking at me with those foxy eyes!!", Line_ContinueAfterTyping);
+		   NULL, " You were always jealous of me. Always looking at me with those foxy eyes!!", Line_Continue);
 	PlaySE( 0, "s_Down", 128, 64 );
 
 	OutputLineAll(NULL, "", Line_WaitForInput);
 
 	PlayVoice(4, "s06/06/150602110", 128);
 	OutputLine(NULL, "　だから私が気を利かせてたまに入れ替わってあげてたんじゃない！！",
-		   NULL, " That was why I switched with you every once in a while!!", Line_ContinueAfterTyping);
+		   NULL, " That was why I switched with you every once in a while!!", Line_Continue);
 	PlaySE( 0, "s_Down", 128, 64 );
 
 	OutputLineAll(NULL, "", Line_WaitForInput);
 
 	PlayVoice(4, "s06/06/150602111", 128);
 	OutputLine(NULL, "　あんたはそれに満足していなかった、より一層妬んでいったんだ。",
-		   NULL, " But you weren't satisfied with just that. You became even more jealous.", Line_ContinueAfterTyping);
+		   NULL, " But you weren't satisfied with just that. You became even more jealous.", Line_Continue);
 	PlaySE( 0, "s_Down", 128, 64 );
 
 	OutputLineAll(NULL, " ", GetGlobalFlag(GLinemodeSp));
@@ -1927,7 +1927,7 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "s06/06/150602112", 128);
 	OutputLine(NULL, "そしてあの夜の意味を自分だけ知り、私から奪ったんだ、",
-		   NULL, "And that night, you knew what was going on, and took Mion from me.", Line_ContinueAfterTyping);
+		   NULL, "And that night, you knew what was going on, and took Mion from me.", Line_Continue);
 	PlaySE( 0, "s_Down", 128, 64 );
 	DrawScene( "aka1", 400 );
 
@@ -1935,7 +1935,7 @@ void main()
 
 	PlayVoice(4, "s06/06/150602113", 128);
 	OutputLine(NULL, "魅音を奪ったんだ！！！",
-		   NULL, " You took Mion from me!!!", Line_ContinueAfterTyping);
+		   NULL, " You took Mion from me!!!", Line_Continue);
 	PlaySE( 0, "s_Down", 128, 64 );
 	DrawScene( "aka2", 400 );
 
@@ -1943,7 +1943,7 @@ void main()
 
 	PlayVoice(4, "s06/06/150602114", 128);
 	OutputLine(NULL, "　魅音を返せッ！！",
-		   NULL, " Give Mion back!!", Line_ContinueAfterTyping);
+		   NULL, " Give Mion back!!", Line_Continue);
 	PlaySE( 0, "s_Down", 128, 64 );
 	DrawScene( "aka1", 400 );
 
@@ -1951,7 +1951,7 @@ void main()
 
 	PlayVoice(4, "s06/06/150602115", 128);
 	OutputLine(NULL, "　私が魅音なんだ、",
-		   NULL, " I'm the one who's Mion.", Line_ContinueAfterTyping);
+		   NULL, " I'm the one who's Mion.", Line_Continue);
 	PlaySE( 0, "s_Down", 128, 64 );
 	DrawScene( "aka2", 400 );
 
@@ -1959,7 +1959,7 @@ void main()
 
 	PlayVoice(4, "s06/06/150602116", 128);
 	OutputLine(NULL, "私が園崎魅音！！",
-		   NULL, " I am Mion Sonozaki!!", Line_ContinueAfterTyping);
+		   NULL, " I am Mion Sonozaki!!", Line_Continue);
 	PlaySE( 0, "s_Down", 128, 64 );
 	DrawScene( "aka1", 400 );
 
@@ -1967,7 +1967,7 @@ void main()
 
 	PlayVoice(4, "s06/06/150602117", 128);
 	OutputLine(NULL, "　お前は詩音なんだよ詩音！！",
-		   NULL, " You were Shion this whole time!!", Line_ContinueAfterTyping);
+		   NULL, " You were Shion this whole time!!", Line_Continue);
 	PlaySE( 0, "s_Down", 128, 64 );
 	DrawScene( "aka2", 400 );
 
@@ -1976,7 +1976,7 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "s06/06/150602118", 128);
 	OutputLine(NULL, "　魅音を騙るな偽者がああぁ！！！」",
-		   NULL, "Don't call yourself Mion, you impostor!!!\"", Line_ContinueAfterTyping);
+		   NULL, "Don't call yourself Mion, you impostor!!!\"", Line_Continue);
 	PlaySE( 0, "s_Down", 128, 64 );
 	OutputLineAll(NULL, "", Line_Normal);
 
@@ -2165,19 +2165,19 @@ void main()
 		   NULL, " Starting today, I'm going to think of the best, most gruesome way to kill you!!", Line_WaitForInput);
 	PlayVoice(4, "s06/06/150602140", 128);
 	OutputLine(NULL, "　詩音は私がそれを思いつくまでのわずかな日々を、",
-		   NULL, " Shion, you better spend every minute", Line_ContinueAfterTyping);
-	SetValidityOfInput( FALSE );
+		   NULL, " Shion, you better spend every minute", Line_Continue);
+	// (backup) SetValidityOfInput( FALSE );
 	Wait( 1000 );
-	SetValidityOfInput( TRUE );
+	// (backup) SetValidityOfInput( TRUE );
 	OutputLine(NULL, "いつ殺されるのか、",
-		   NULL, " fearing", Line_ContinueAfterTyping);
-	SetValidityOfInput( FALSE );
+		   NULL, " fearing", Line_Continue);
+	// (backup) SetValidityOfInput( FALSE );
 	Wait( 1000 );
-	SetValidityOfInput( TRUE );
+	// (backup) SetValidityOfInput( TRUE );
 	OutputLine(NULL, "どう殺されるのかに怯えながら過すがいい！！！",
 		   NULL, " what's coming to you!!! ", GetGlobalFlag(GLinemodeSp));
 	PlayVoice(4, "s06/06/150602141", 128);
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_Continue); }
 	OutputLine(NULL, "　簡単には殺さない、惨たらしく殺す！！！",
 		   NULL, "I won't just kill you. I'll make sure your death is long and miserable!!!", Line_WaitForInput);
 	PlayVoice(4, "s06/06/150602142", 128);

@@ -2158,20 +2158,20 @@ void main()
 		   NULL, "\"Takano-san, you're researching whether those customs survived into the present.", Line_WaitForInput);
 	PlayVoice(4, "s06/06/150601441", 128);
 	OutputLine(NULL, "…そうでしたよね？」",
-		   NULL, " ...You are, right?\" ", Line_ContinueAfterTyping);
+		   NULL, " ...You are, right?\" ", Line_Continue);
 
-	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_Continue); }
 
 	SetSpeedOfMessage( TRUE, 128 );
 
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_Continue); }
 	OutputLine(NULL, "ダン、",
-		   NULL, "Thump.", Line_ContinueAfterTyping);
+		   NULL, "Thump.", Line_Continue);
 	StartShakingOfWindow( 248, 40, 0, 2, 2*2, FALSE );
 	StartShakingOfAllObjects( 248, 40, 0, 2, 2*2, TRUE );
 
 	OutputLine(NULL, "ダン。",
-		   NULL, " Thump.", Line_ContinueAfterTyping);
+		   NULL, " Thump.", Line_Continue);
 	SetSpeedOfMessage( FALSE, 0 );
 	StartShakingOfWindow( 248, 40, 0, 2, 2*2, FALSE );
 	StartShakingOfAllObjects( 248, 40, 0, 2, 2*2, TRUE );
@@ -2298,18 +2298,18 @@ void main()
 		   NULL, " It was around the end of the Meiji Era.", Line_WaitForInput);
 	PlayVoice(4, "s06/09/150900151", 128);
 	OutputLine(NULL, "…鬼ヶ淵村で身元不明の惨殺死体が発見されたんですって。」",
-		   NULL, " ...They discovered an unknown, mangled corpse, the victim of a murder, in Onigafuchi Village.\"", Line_ContinueAfterTyping);
+		   NULL, " ...They discovered an unknown, mangled corpse, the victim of a murder, in Onigafuchi Village.\"", Line_Continue);
 	SetSpeedOfMessage( TRUE, 128 );
-	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_Continue); }
 
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_Continue); }
 	OutputLine(NULL, "ダン、",
-		   NULL, "Thump.", Line_ContinueAfterTyping);
+		   NULL, "Thump.", Line_Continue);
 	StartShakingOfWindow( 248, 40, 0, 2, 2*2, FALSE );
 	StartShakingOfAllObjects( 248, 40, 0, 2, 2*2, TRUE );
 
 	OutputLine(NULL, "ダンダンダンダン！！",
-		   NULL, " Thump-thump-thump-thump!!", Line_ContinueAfterTyping);
+		   NULL, " Thump-thump-thump-thump!!", Line_Continue);
 	StartShakingOfWindow( 248, 40, 0, 2, 6*2, FALSE );
 	StartShakingOfAllObjects( 248, 40, 0, 2, 6*2, TRUE );
 	SetSpeedOfMessage( FALSE, 0 );
@@ -2320,10 +2320,10 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f6d9a8>鷹野</color>", NULL, "<color=#f6d9a8>Takano</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "s06/09/150900152", 128);
 	OutputLine(NULL, "「…カクモ無惨且ツ残虐非道ヲ………。」",
-		   NULL, "\"...Never before has there been a corpse treated with such cruelty and inhumanity...\"", Line_ContinueAfterTyping);
+		   NULL, "\"...Never before has there been a corpse treated with such cruelty and inhumanity...\"", Line_Continue);
 	SetSpeedOfMessage( TRUE, 128 );
 	OutputLine(NULL, "ダンダンダン！",
-		   NULL, " Thump-thump-thump!", Line_ContinueAfterTyping);
+		   NULL, " Thump-thump-thump!", Line_Continue);
 	SetSpeedOfMessage( FALSE, 0 );
 	StartShakingOfWindow( 248, 40, 0, 2, 6*2, FALSE );
 	StartShakingOfAllObjects( 248, 40, 0, 2, 6*2, TRUE );
@@ -2409,10 +2409,10 @@ void main()
 		   NULL, "\"I'll pass on that.", Line_WaitForInput);
 	PlayVoice(4, "s06/08/150800021", 128);
 	OutputLine(NULL, "…あははは…、",
-		   NULL, " Ahahaha...", Line_ContinueAfterTyping);
-	SetValidityOfInput( FALSE );
+		   NULL, " Ahahaha...", Line_Continue);
+	// (backup) SetValidityOfInput( FALSE );
 	Wait( 800 );
-	SetValidityOfInput( TRUE );
+	// (backup) SetValidityOfInput( TRUE );
 	OutputLine(NULL, "生来ね、こういうのは苦手なんだ。」",
 		   NULL, " I'm bad with this sort of thing by nature.\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }

@@ -224,10 +224,10 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>不良</color>", NULL, "<color=#f5e6d3>Delinquent</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "s06/00/huryoa15013", 128);
 	OutputLine(NULL, "「んだてめンなろぉおおぉおおおッ！！",
-		   NULL, "\"Dafuq're ye, bitch?!!", Line_ContinueAfterTyping);
-	SetValidityOfInput( FALSE );
+		   NULL, "\"Dafuq're ye, bitch?!!", Line_Continue);
+	// (backup) SetValidityOfInput( FALSE );
 	Wait( 1000 );
-	SetValidityOfInput( TRUE );
+	// (backup) SetValidityOfInput( TRUE );
 	OutputLine(NULL, "　すったるぁ、おるぁあッ！！」",
 		   NULL, " Whatcha think yer doin'?! Huhh?!\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -396,10 +396,10 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "s06/01/150100003", 128);
 	OutputLine(NULL, "「あぁ…いやその、",
-		   NULL, "\"Ah... well...", Line_ContinueAfterTyping);
-	SetValidityOfInput( FALSE );
+		   NULL, "\"Ah... well...", Line_Continue);
+	// (backup) SetValidityOfInput( FALSE );
 	Wait( 800 );
-	SetValidityOfInput( TRUE );
+	// (backup) SetValidityOfInput( TRUE );
 	OutputLine(NULL, "…もう泣いてるんだから、それくらいで勘弁してあげてもいいんじゃないかなぁあぁ…なんて…。」",
 		   NULL, " I just thought you might want to let her go because she's crying... so...\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -593,7 +593,7 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "s06/01/150100013", 128);
 	OutputLine(NULL, "「このボケナスどもがああああぁああぁあ！！！！」",
-		   NULL, "\"You stupid fuuucks!!!!\"", Line_ContinueAfterTyping);
+		   NULL, "\"You stupid fuuucks!!!!\"", Line_Continue);
 	SetSpeedOfMessage( FALSE, 0 );
 	PlaySE( 0, "s_daidageki", 128, 64 );
 	StartShakingOfWindow( 248, 40, 0, 2, 5*2, FALSE );
@@ -634,7 +634,7 @@ void main()
 
 	PlayVoice(4, "s06/00/huryoa15024", 128);
 	OutputLine(NULL, "　ぐほあッ？！」",
-		   NULL, " Huuuhh?!\"", Line_ContinueAfterTyping);
+		   NULL, " Huuuhh?!\"", Line_Continue);
 	StartShakingOfWindow( 248, 40, 0, 2, 3*2, FALSE );
 	StartShakingOfAllObjects( 248, 40, 0, 2, 3*2, TRUE );
 	OutputLineAll(NULL, "", GetGlobalFlag(GLinemodeSp));
@@ -669,7 +669,7 @@ void main()
 	SetSpeedOfMessage( TRUE, 128 );
 	PlayVoice(4, "s06/01/150100019", 128);
 	OutputLine(NULL, "　絶対絶対これは萌え業界の鉄則だあああぁあああ！！！",
-		   NULL, " That is the ironclad rule!!!", Line_ContinueAfterTyping);
+		   NULL, " That is the ironclad rule!!!", Line_Continue);
 	SetSpeedOfMessage( FALSE, 0 );
 	PlaySE( 0, "s_daidageki", 128, 64 );
 	DrawScene( "F_b", 0 );
@@ -697,7 +697,7 @@ void main()
 	SetSpeedOfMessage( TRUE, 128 );
 	PlayVoice(4, "s06/01/150100023", 128);
 	OutputLine(NULL, "つまりヒトは衣服があって初めてヒトなのだ！！！",
-		   NULL, " Human beings without clothes are just animals!!!", Line_ContinueAfterTyping);
+		   NULL, " Human beings without clothes are just animals!!!", Line_Continue);
 	SetSpeedOfMessage( FALSE, 0 );
 	PlaySE( 0, "s_Kyupiin", 128, 64 );
 	OutputLineAll(NULL, "", GetGlobalFlag(GLinemodeSp));
@@ -754,7 +754,7 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>不良</color>", NULL, "<color=#f5e6d3>Delinquent</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "s06/00/huryoa15025", 128);
 	OutputLine(NULL, "「ぷげッ！！」",
-		   NULL, "\"Wuff!!\"", Line_ContinueAfterTyping);
+		   NULL, "\"Wuff!!\"", Line_Continue);
 	PlaySE( 0, "s_Down", 128, 64 );
 	OutputLineAll(NULL, "", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -763,7 +763,7 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>不良</color>", NULL, "<color=#f5e6d3>Delinquent</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "s06/00/huryob15011", 128);
 	OutputLine(NULL, "「おげ！！！」",
-		   NULL, "\"Orgh!!!\"", Line_ContinueAfterTyping);
+		   NULL, "\"Orgh!!!\"", Line_Continue);
 	PlaySE( 0, "s_Down", 128, 64 );
 	OutputLineAll(NULL, "", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -772,7 +772,7 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>不良</color>", NULL, "<color=#f5e6d3>Delinquent</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "s06/00/huryoc15011", 128);
 	OutputLine(NULL, "「ぐはあ！！！」",
-		   NULL, "\"Ghaaa!!!\"", Line_ContinueAfterTyping);
+		   NULL, "\"Ghaaa!!!\"", Line_Continue);
 	PlaySE( 0, "s_Down", 128, 64 );
 	OutputLineAll(NULL, "", Line_Normal);
 
@@ -805,10 +805,10 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "s06/01/150100033", 128);
 	OutputLine(NULL, "　制服系の御三家と言えば何か！！！",
-		   NULL, "What are the three most prominent divisions in the larger category of school uniforms?!!!", Line_ContinueAfterTyping);
-	SetValidityOfInput( FALSE );
+		   NULL, "What are the three most prominent divisions in the larger category of school uniforms?!!!", Line_Continue);
+	// (backup) SetValidityOfInput( FALSE );
 	Wait( 400 );
-	SetValidityOfInput( TRUE );
+	// (backup) SetValidityOfInput( TRUE );
 	OutputLine(NULL, "答えてみろ！！",
 		   NULL, " Answer me!!!", Line_WaitForInput);
 
@@ -838,28 +838,28 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "s06/01/150100039", 128);
 	OutputLine(NULL, "　ではお前ら３人がこれらの内の一つずつが好みであったと仮定しよう！！",
-		   NULL, "Let's say each of you has a preference in one of these three divisions!!", Line_ContinueAfterTyping);
-	SetValidityOfInput( FALSE );
+		   NULL, "Let's say each of you has a preference in one of these three divisions!!", Line_Continue);
+	// (backup) SetValidityOfInput( FALSE );
 	Wait( 600 );
-	SetValidityOfInput( TRUE );
+	// (backup) SetValidityOfInput( TRUE );
 	PlaySE( 0, "s_boyoon", 128, 64 );
 	OutputLineAll(NULL, "", Line_WaitForInput);
 
 	PlayVoice(4, "s06/01/150100040", 128);
 	OutputLine(NULL, "おいノッポ！！お前は制服だ！",
-		   NULL, " Hey you, tall one!! You take the regular uniform!", Line_ContinueAfterTyping);
-	SetValidityOfInput( FALSE );
+		   NULL, " Hey you, tall one!! You take the regular uniform!", Line_Continue);
+	// (backup) SetValidityOfInput( FALSE );
 	Wait( 500 );
-	SetValidityOfInput( TRUE );
+	// (backup) SetValidityOfInput( TRUE );
 	PlaySE( 0, "s_cork", 128, 64 );
 	OutputLineAll(NULL, "", Line_WaitForInput);
 
 	PlayVoice(4, "s06/01/150100041", 128);
 	OutputLine(NULL, "デブ！お前は体操服、",
-		   NULL, " Fat one! You take the gym uniform.", Line_ContinueAfterTyping);
-	SetValidityOfInput( FALSE );
+		   NULL, " Fat one! You take the gym uniform.", Line_Continue);
+	// (backup) SetValidityOfInput( FALSE );
 	Wait( 400 );
-	SetValidityOfInput( TRUE );
+	// (backup) SetValidityOfInput( TRUE );
 	PlaySE( 0, "s_cork", 128, 64 );
 
 	OutputLine(NULL, "そしてチビはスク水だ！！！",
@@ -871,15 +871,15 @@ void main()
 		   NULL, "Picture the image in your head within three seconds!!!", Line_WaitForInput);
 	PlayVoice(4, "s06/01/150100043", 128);
 	OutputLine(NULL, "描けたか？",
-		   NULL, " Are you done?!", Line_ContinueAfterTyping);
-	SetValidityOfInput( FALSE );
+		   NULL, " Are you done?!", Line_Continue);
+	// (backup) SetValidityOfInput( FALSE );
 	Wait( 1000 );
-	SetValidityOfInput( TRUE );
+	// (backup) SetValidityOfInput( TRUE );
 	OutputLine(NULL, "妄想くらい自在に出来ろ、気合が足りんやり直せッ！！！",
-		   NULL, " That's not good enough, do it again!!!", Line_ContinueAfterTyping);
-	SetValidityOfInput( FALSE );
+		   NULL, " That's not good enough, do it again!!!", Line_Continue);
+	// (backup) SetValidityOfInput( FALSE );
 	Wait( 400 );
-	SetValidityOfInput( TRUE );
+	// (backup) SetValidityOfInput( TRUE );
 	PlaySE( 0, "s_Kyupiin", 128, 64 );
 	OutputLineAll(NULL, "", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -888,24 +888,24 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "s06/01/150100044", 128);
 	OutputLine(NULL, "ではお前らの望む衣装が登場するＨビデオがここにあるぞ、",
-		   NULL, "Let's say there's a porn video of your favorite cosplay.", Line_ContinueAfterTyping);
-	SetValidityOfInput( FALSE );
+		   NULL, "Let's say there's a porn video of your favorite cosplay.", Line_Continue);
+	// (backup) SetValidityOfInput( FALSE );
 	Wait( 600 );
-	SetValidityOfInput( TRUE );
+	// (backup) SetValidityOfInput( TRUE );
 	OutputLine(NULL, "あると思え、",
-		   NULL, " Use your imagination.", Line_ContinueAfterTyping);
-	SetValidityOfInput( FALSE );
+		   NULL, " Use your imagination.", Line_Continue);
+	// (backup) SetValidityOfInput( FALSE );
 	Wait( 600 );
-	SetValidityOfInput( TRUE );
+	// (backup) SetValidityOfInput( TRUE );
 	OutputLine(NULL, "あると信じろ気合を入れろ！！",
 		   NULL, " Come on!!", Line_WaitForInput);
 
 	PlayVoice(4, "s06/01/150100045", 128);
 	OutputLine(NULL, "返事は押忍かサーイエッサーだ！！！",
-		   NULL, " Say 'yessir' when you got it!!!", Line_ContinueAfterTyping);
-	SetValidityOfInput( FALSE );
+		   NULL, " Say 'yessir' when you got it!!!", Line_Continue);
+	// (backup) SetValidityOfInput( FALSE );
 	Wait( 800 );
-	SetValidityOfInput( TRUE );
+	// (backup) SetValidityOfInput( TRUE );
 	PlaySE( 0, "s_daidageki", 128, 64 );
 	OutputLineAll(NULL, "", Line_WaitForInput);
 
@@ -980,7 +980,7 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "s06/01/150100054", 128);
 	OutputLine(NULL, "キビダンゴでももらって鬼ヶ島へでも失せろ！！！",
-		   NULL, "Pack your bags and get out!!!", Line_ContinueAfterTyping);
+		   NULL, "Pack your bags and get out!!!", Line_Continue);
 	SetSpeedOfMessage( FALSE, 0 );
 	PlaySE( 0, "s_daidageki", 128, 64 );
 	StartShakingOfWindow( 248, 40, 0, 0, 4*2, FALSE );
@@ -1029,7 +1029,7 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "s06/01/150100059", 128);
 	OutputLine(NULL, "制服は日本の文化だ芸術だ！！！",
-		   NULL, "School uniforms are part of Japanese culture and art!!!", Line_ContinueAfterTyping);
+		   NULL, "School uniforms are part of Japanese culture and art!!!", Line_Continue);
 	PlaySE( 0, "s_Kyupiin", 128, 64 );
 	DrawScene( "F_a", 0 );
 	StartShakingOfWindow( 248, 40, 0, 2, 4*2, FALSE );
@@ -1044,12 +1044,12 @@ void main()
 		   NULL, " Those stupid barbarians will never understand the Japanese spirit!!!", Line_WaitForInput);
 	PlayVoice(4, "s06/01/150100061", 128);
 	OutputLine(NULL, "貴様ら聞いているのか、",
-		   NULL, " Are you listening?!", Line_ContinueAfterTyping);
-	SetValidityOfInput( FALSE );
+		   NULL, " Are you listening?!", Line_Continue);
+	// (backup) SetValidityOfInput( FALSE );
 	Wait( 800 );
-	SetValidityOfInput( TRUE );
+	// (backup) SetValidityOfInput( TRUE );
 	OutputLine(NULL, "軟弱スルメどもがああぁ！！！",
-		   NULL, " You pathetic squid!!!", Line_ContinueAfterTyping);
+		   NULL, " You pathetic squid!!!", Line_Continue);
 	PlaySE( 0, "s_Down", 128, 64 );
 	StartShakingOfWindow( 248, 40, 0, 0, 2*2, FALSE );
 	StartShakingOfAllObjects( 248, 40, 0, 0, 2*2, TRUE );
@@ -1168,10 +1168,10 @@ void main()
 		   NULL, " It seems my personal aura has grown more powerful.", Line_WaitForInput);
 	PlayVoice(4, "s06/01/150100067", 128);
 	OutputLine(NULL, "今に監督の固有結界『メイドインヘヴン』に太刀打ちできるくらいに磨きをかけてやるぜ！",
-		   NULL, " If this keeps up, I'll soon surpass even Coach's 'Maid in Heaven' Reality Marble!", Line_ContinueAfterTyping);
-	SetValidityOfInput( FALSE );
+		   NULL, " If this keeps up, I'll soon surpass even Coach's 'Maid in Heaven' Reality Marble!", Line_Continue);
+	// (backup) SetValidityOfInput( FALSE );
 	Wait( 1200 );
-	SetValidityOfInput( TRUE );
+	// (backup) SetValidityOfInput( TRUE );
 	OutputLine(NULL, "………と、そんなことはいいや。",
 		   NULL, " ...Anyway,", Line_WaitForInput);
 	PlayVoice(4, "s06/01/150100068", 128);
