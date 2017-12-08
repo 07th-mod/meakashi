@@ -8,7 +8,7 @@ void main()
 	ClearMessage();
 
 	PlayBGM( 0, "higurashi", 120, 0 );
-	DrawScene( "Nort", 1000 );
+	DrawScene( "nort", 1000 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　鷹野三四とは、その後しばらく交流があった。",
@@ -82,7 +82,7 @@ void main()
 		   NULL, "She believes that they are operating behind the scenes in order to revive the dignity of the Onigafuchi people, which was lost during the Meiji Era.", Line_Normal);
 	ClearMessage();
 	PlaySE( 0, "s_page", 128, 64 );
-	DrawSceneWithMask( "Nort", "maskright", 7, 0, 300 );
+	DrawSceneWithMask( "nort", "maskright", 7, 0, 300 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　三四さんの話はスケールが大きく、全体で見ると、なるほどなと思う面もある。",

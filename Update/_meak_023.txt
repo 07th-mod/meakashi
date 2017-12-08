@@ -303,19 +303,19 @@ void main()
 		   NULL, "Before even finishing my sentence, I stabbed Satoko's right arm.", Line_Normal);
 	ClearMessage();
 	PlaySE( 0, "Thisikuki", 128, 64 );
-	DrawScene( "Toketu1a", 0 );
+	DrawScene( "toketu1a", 0 );
 
 	SetValidityOfInput( FALSE );
 	Wait( 500 );
 	SetValidityOfInput( TRUE );
 	PlaySE( 0, "Thisikuki", 128, 64 );
-	DrawScene( "Toketu1b", 0 );
+	DrawScene( "toketu1b", 0 );
 
 	SetValidityOfInput( FALSE );
 	Wait( 500 );
 	SetValidityOfInput( TRUE );
 	PlaySE( 0, "Thisikuki", 128, 64 );
-	DrawScene( "Toketu1c", 0 );
+	DrawScene( "toketu1c", 0 );
 
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
