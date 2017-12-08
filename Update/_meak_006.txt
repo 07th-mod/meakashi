@@ -10,62 +10,62 @@ void main()
 	PlayBGM( 0, "Cafe", 120, 0 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "s06/06/150600463", 128);
+	ModPlayVoiceLS(4, 6, "s06/06/150600463", 128);
 	OutputLine(NULL, "「こんにちや〜〜！！",
 		   NULL, "\"Hey there!!", Line_WaitForInput);
-	PlayVoice(4, "s06/06/150600464", 128);
+	ModPlayVoiceLS(4, 6, "s06/06/150600464", 128);
 	OutputLine(NULL, "　今日もお暑いのにご精が出ますことで〜〜！」",
 		   NULL, " How are you guys doing in the heat?!\"", Line_Normal);
 	ClearMessage();
 	DisableWindow();
-	DrawBustshotWithFiltering( 2, "iri3_Warai_0", "maskright", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 10, 300, TRUE );
+	ModDrawCharacterWithFiltering(2, 10, "iri3_Warai_0", "maskright", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 10, 300, TRUE );
 	DisplayWindow();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#c89a80>入江</color>", NULL, "<color=#c89a80>Irie</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "s06/10/151000001", 128);
+	ModPlayVoiceLS(4, 10, "s06/10/151000001", 128);
 	OutputLine(NULL, "「お、魅音さんじゃないですかぁ。",
 		   NULL, "\"Oh, Mion-san.", Line_WaitForInput);
-	PlayVoice(4, "s06/10/151000002", 128);
+	ModPlayVoiceLS(4, 10, "s06/10/151000002", 128);
 	OutputLine(NULL, "こんにちはぁ。",
 		   NULL, " We're doing good.", Line_WaitForInput);
-	PlayVoice(4, "s06/10/151000003", 128);
+	ModPlayVoiceLS(4, 10, "s06/10/151000003", 128);
 	OutputLine(NULL, "あれ、それは差し入れですか？",
 		   NULL, " Is that our refreshment?", Line_WaitForInput);
-	PlayVoice(4, "s06/10/151000004", 128);
+	ModPlayVoiceLS(4, 10, "s06/10/151000004", 128);
 	OutputLine(NULL, "　ありがたいなぁ☆",
 		   NULL, " Thanks a bunch.", Line_WaitForInput);
-	PlayVoice(4, "s06/10/151000005", 128);
+	ModPlayVoiceLS(4, 10, "s06/10/151000005", 128);
 	OutputLine(NULL, "　さすがは我がチームのマネージャ〜！」",
 		   NULL, " You're such a great manager!\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "s06/06/150600465", 128);
+	ModPlayVoiceLS(4, 6, "s06/06/150600465", 128);
 	OutputLine(NULL, "「まー、気が向いたからです。",
 		   NULL, "\"I just felt like coming here.", Line_WaitForInput);
-	PlayVoice(4, "s06/06/150600466", 128);
+	ModPlayVoiceLS(4, 6, "s06/06/150600466", 128);
 	OutputLine(NULL, "別に監督に差し入れたくて買って来たわけじゃないので、そこんとこよろしくお願いします。",
 		   NULL, " I didn't bring this for you, by the way.", Line_WaitForInput);
-	PlayVoice(4, "s06/06/150600467", 128);
+	ModPlayVoiceLS(4, 6, "s06/06/150600467", 128);
 	OutputLine(NULL, "あと、さり気なく人を勝手にマネージャーに組み込まないように。」",
 		   NULL, " And don't treat me as your manager without my permission, please.\"", Line_Normal);
 	ClearMessage();
 	DisableWindow();
-	DrawBustshotWithFiltering( 1, "sato2_Def1_0", "maskleft", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 8, 300, TRUE );
+	ModDrawCharacterWithFiltering(1, 7, "sato2_Def1_0", "maskleft", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 8, 300, TRUE );
 	DisplayWindow();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#ffdc6f>悟史</color>", NULL, "<color=#ffdc6f>Satoshi</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "s06/07/151200116", 128);
+	ModPlayVoiceLS(4, 7, "s06/07/151200116", 128);
 	OutputLine(NULL, "「魅音がマネージャーだったら、色々心強いと思うけどね。",
 		   NULL, "\"We'd be a stronger team if you were our manager, Mion.", Line_WaitForInput);
 	DisableWindow();
 	ChangeBustshot( 1, "sato2_Def2_0", 200, TRUE );
 	DisplayWindow();
 
-	PlayVoice(4, "s06/07/151200117", 128);
+	ModPlayVoiceLS(4, 7, "s06/07/151200117", 128);
 	OutputLine(NULL, "……やってよ、魅音。",
 		   NULL, " ...Why don't you apply?", Line_WaitForInput);
-	PlayVoice(4, "s06/07/151200118", 128);
+	ModPlayVoiceLS(4, 7, "s06/07/151200118", 128);
 	OutputLine(NULL, "マネージャー。」",
 		   NULL, " As manager, I mean.\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -87,13 +87,13 @@ void main()
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "s06/06/150600468", 128);
+	ModPlayVoiceLS(4, 6, "s06/06/150600468", 128);
 	OutputLine(NULL, "「まー、本当に気が向いたら、その時はやりますんで。",
 		   NULL, "\"Well, if I feel like it.", Line_WaitForInput);
-	PlayVoice(4, "s06/06/150600469", 128);
+	ModPlayVoiceLS(4, 6, "s06/06/150600469", 128);
 	OutputLine(NULL, "で、どうです？",
 		   NULL, " Anyway, how's Satoshi-kun doing, Coach?", Line_WaitForInput);
-	PlayVoice(4, "s06/06/150600470", 128);
+	ModPlayVoiceLS(4, 6, "s06/06/150600470", 128);
 	OutputLine(NULL, "　悟史くんの打率はどんな感じです？」",
 		   NULL, " Is his batting average improving?\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -102,28 +102,28 @@ void main()
 	DisplayWindow();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#c89a80>入江</color>", NULL, "<color=#c89a80>Irie</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "s06/10/151000006", 128);
+	ModPlayVoiceLS(4, 10, "s06/10/151000006", 128);
 	OutputLine(NULL, "「えぇえぇ、頑張ってますよ",
 		   NULL, "\"Yes, yes. He's doing fine.", Line_WaitForInput);
-	PlayVoice(4, "s06/10/151000007", 128);
+	ModPlayVoiceLS(4, 10, "s06/10/151000007", 128);
 	OutputLine(NULL, "。彼の打率ですか？　う〜〜ん、そうですねぇ。",
 		   NULL, " His batting average is...... well,", Line_WaitForInput);
-	PlayVoice(4, "s06/10/151000008", 128);
+	ModPlayVoiceLS(4, 10, "s06/10/151000008", 128);
 	OutputLine(NULL, "セブンスマートでお煎餅の袋をどれでも３つ買うとですね、」",
 		   NULL, " if you buy three packs of rice crackers at Sevens Mart...\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "s06/06/150600471", 128);
+	ModPlayVoiceLS(4, 6, "s06/06/150600471", 128);
 	OutputLine(NULL, "「あっははははは！",
 		   NULL, "\"Aha hahaha!", Line_WaitForInput);
-	PlayVoice(4, "s06/06/150600472", 128);
+	ModPlayVoiceLS(4, 6, "s06/06/150600472", 128);
 	OutputLine(NULL, "　それってつまり３割ってことですか。",
 		   NULL, " Does that mean it's thirty percent?", Line_WaitForInput);
-	PlayVoice(4, "s06/06/150600473", 128);
+	ModPlayVoiceLS(4, 6, "s06/06/150600473", 128);
 	OutputLine(NULL, "…へ〜、三割打者！",
 		   NULL, " ...Wow,", Line_WaitForInput);
-	PlayVoice(4, "s06/06/150600474", 128);
+	ModPlayVoiceLS(4, 6, "s06/06/150600474", 128);
 	OutputLine(NULL, "　悟史くんって結構な高打率打者じゃないの〜！」",
 		   NULL, " you're doing great, Satoshi-kun!\"", Line_Normal);
 	ClearMessage();
@@ -132,13 +132,13 @@ void main()
 	DisplayWindow();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#ffdc6f>悟史</color>", NULL, "<color=#ffdc6f>Satoshi</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "s06/07/151200119", 128);
+	ModPlayVoiceLS(4, 7, "s06/07/151200119", 128);
 	OutputLine(NULL, "「……むぅ。",
 		   NULL, "\"...Mmph.", Line_WaitForInput);
-	PlayVoice(4, "s06/07/151200120", 128);
+	ModPlayVoiceLS(4, 7, "s06/07/151200120", 128);
 	OutputLine(NULL, "打率は数字じゃないよ魅音。",
 		   NULL, " It's not just about the number, Mion.", Line_WaitForInput);
-	PlayVoice(4, "s06/07/151200121", 128);
+	ModPlayVoiceLS(4, 7, "s06/07/151200121", 128);
 	OutputLine(NULL, "ここ一番で打てなきゃ意味はないんだからさ。」",
 		   NULL, " I have to be able to hit the ball when it really counts.\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -147,10 +147,10 @@ void main()
 	DisplayWindow();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#c89a80>入江</color>", NULL, "<color=#c89a80>Irie</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "s06/10/151000009", 128);
+	ModPlayVoiceLS(4, 10, "s06/10/151000009", 128);
 	OutputLine(NULL, "「悟史くんは自分で自分の弱点をよくわかっているようですね。",
 		   NULL, "\"It's good that you're aware of your weaknesses, Satoshi-kun.", Line_WaitForInput);
-	PlayVoice(4, "s06/10/151000010", 128);
+	ModPlayVoiceLS(4, 10, "s06/10/151000010", 128);
 	OutputLine(NULL, "そこまでわかっているなら、後は練習あるのみですよ。」",
 		   NULL, " You just continue working on them for now.\"", Line_Normal);
 	ClearMessage();
@@ -188,13 +188,13 @@ void main()
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "s06/06/150600475", 128);
+	ModPlayVoiceLS(4, 6, "s06/06/150600475", 128);
 	OutputLine(NULL, "「おお〜〜〜。",
 		   NULL, "\"Wow!", Line_WaitForInput);
-	PlayVoice(4, "s06/06/150600476", 128);
+	ModPlayVoiceLS(4, 6, "s06/06/150600476", 128);
 	OutputLine(NULL, "やっる〜〜！",
 		   NULL, " That's great!", Line_WaitForInput);
-	PlayVoice(4, "s06/06/150600477", 128);
+	ModPlayVoiceLS(4, 6, "s06/06/150600477", 128);
 	OutputLine(NULL, "　ぱちぱちぱちぱち！」",
 		   NULL, " Good job, Satoshi-kun!\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -204,13 +204,13 @@ void main()
 		   NULL, "I clapped, and Satoshi-kun blushed in response. He repositioned his helmet to hide his face.", Line_Normal);
 	ClearMessage();
 	DrawSceneWithMask( "Oki_G3", "maskup", 1, 0, 300 );
-	DrawBustshot( 2, "iri3_Warai_0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
+	ModDrawCharacter(2, 10, "iri3_Warai_0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#c89a80>入江</color>", NULL, "<color=#c89a80>Irie</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "s06/10/151000011", 128);
+	ModPlayVoiceLS(4, 10, "s06/10/151000011", 128);
 	OutputLine(NULL, "「う〜〜ん。",
 		   NULL, "\"Well,", Line_WaitForInput);
-	PlayVoice(4, "s06/10/151000012", 128);
+	ModPlayVoiceLS(4, 10, "s06/10/151000012", 128);
 	OutputLine(NULL, "フリーバッティングや、試合が平坦な時はかなり落ち着いたいいバッティングを見せてくれるんですけどね〜。」",
 		   NULL, " he's good in practice and when the game is slow...\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -240,42 +240,42 @@ void main()
 		   NULL, "...I think it's a perfect fit for Satoshi-kun's character. He seems calm at first glance, but he's actually slow.", Line_Normal);
 	ClearMessage();
 	FadeOutBGM( 1, 0, FALSE );
-	DrawBustshot( 19, "no_data", 0, 100, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, TRUE );
+	ModDrawCharacter(19, 0, "no_data", 0, 100, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "s06/06/150600478", 128);
+	ModPlayVoiceLS(4, 6, "s06/06/150600478", 128);
 	OutputLine(NULL, "「スコアボードとか、そういう数字上ではかなりの高アベレージヒッターなのにねぇ。",
 		   NULL, "\"Numerically speaking, you're a great player...", Line_WaitForInput);
-	PlayVoice(4, "s06/06/150600479", 128);
+	ModPlayVoiceLS(4, 6, "s06/06/150600479", 128);
 	OutputLine(NULL, "…本番に弱いってのは致命的かも。",
 		   NULL, " But you need to be able to hit the ball even when things get serious.", Line_WaitForInput);
-	PlayVoice(4, "s06/06/150600480", 128);
+	ModPlayVoiceLS(4, 6, "s06/06/150600480", 128);
 	OutputLine(NULL, "そんなことだから、こないだの宇喜田ジャガーとの試合でもここ一番で凡退するんですよ〜！！」",
 		   NULL, " That's why you were an easy out in the match with the Ukita Jaguars the other day!!\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 	DisableWindow();
 	FadeAllBustshots( 400, TRUE );
-	DrawBustshot( 1, "sato2_komaru2_0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 200, TRUE );
-	DrawBustshot( 3, "iri3_Warai_0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
+	ModDrawCharacter(1, 7, "sato2_komaru2_0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 200, TRUE );
+	ModDrawCharacter(3, 10, "iri3_Warai_0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
 	DisplayWindow();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#ffdc6f>悟史</color>", NULL, "<color=#ffdc6f>Satoshi</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "s06/07/151200122", 128);
+	ModPlayVoiceLS(4, 7, "s06/07/151200122", 128);
 	OutputLine(NULL, "「……むぅ…。",
 		   NULL, "\"......Mmph...", Line_WaitForInput);
-	PlayVoice(4, "s06/07/151200123", 128);
+	ModPlayVoiceLS(4, 7, "s06/07/151200123", 128);
 	OutputLine(NULL, "うるさいなぁ、気にしてるんだから黙っててくれよぉ。」",
 		   NULL, " Shut up. I know that.\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 	DisableWindow();
-	DrawBustshot( 3, "iri3_Def2_0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
+	ModDrawCharacter(3, 10, "iri3_Def2_0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
 	DisplayWindow();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#c89a80>入江</color>", NULL, "<color=#c89a80>Irie</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "s06/10/151000013", 128);
+	ModPlayVoiceLS(4, 10, "s06/10/151000013", 128);
 	OutputLine(NULL, "「あそこで打てれば、…かなり美味しい見せ場だったんですけどねぇ…。",
 		   NULL, "\"If he'd been able to hit the ball then, he would have been a hero...", Line_WaitForInput);
-	PlayVoice(4, "s06/10/151000014", 128);
+	ModPlayVoiceLS(4, 10, "s06/10/151000014", 128);
 	OutputLine(NULL, "残念です。」",
 		   NULL, " What a shame...\"", Line_Normal);
 	ClearMessage();
@@ -305,129 +305,129 @@ void main()
 		   NULL, "Yet Irie insisted on giving him a chance, in spite of the fact that all the team members had suggested a pinch hitter.", Line_Normal);
 	ClearMessage();
 	DrawSceneWithMask( "Oki_G3", "maskup", 1, 0, 300 );
-	DrawBustshot( 2, "sato2_Def1_0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
+	ModDrawCharacter(2, 7, "sato2_Def1_0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "s06/06/150600481", 128);
+	ModPlayVoiceLS(4, 6, "s06/06/150600481", 128);
 	OutputLine(NULL, "「あーも〜〜！",
 		   NULL, "\"Ahh!", Line_WaitForInput);
-	PlayVoice(4, "s06/06/150600482", 128);
+	ModPlayVoiceLS(4, 6, "s06/06/150600482", 128);
 	OutputLine(NULL, "　あそこで打てれば完璧なのになぁ！！",
 		   NULL, " It would've been perfect if you could have hit it!!", Line_WaitForInput);
-	PlayVoice(4, "s06/06/150600483", 128);
+	ModPlayVoiceLS(4, 6, "s06/06/150600483", 128);
 	OutputLine(NULL, "　どうして駄目なんですか？！",
 		   NULL, " Why didn't you?!", Line_WaitForInput);
-	PlayVoice(4, "s06/06/150600484", 128);
+	ModPlayVoiceLS(4, 6, "s06/06/150600484", 128);
 	OutputLine(NULL, "　どーしてあーゆう時に打てないんですかぁ！！」",
 		   NULL, " Why can't you hit the ball in a situation when it really matters?!\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 	DisableWindow();
-	DrawBustshot( 2, "sato2_komaru_0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
+	ModDrawCharacter(2, 7, "sato2_komaru_0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
 	DisplayWindow();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#ffdc6f>悟史</color>", NULL, "<color=#ffdc6f>Satoshi</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "s06/07/151200124", 128);
+	ModPlayVoiceLS(4, 7, "s06/07/151200124", 128);
 	OutputLine(NULL, "「仕方ないよ…。",
 		   NULL, "\"There was nothing I could do...", Line_WaitForInput);
-	PlayVoice(4, "s06/07/151200125", 128);
+	ModPlayVoiceLS(4, 7, "s06/07/151200125", 128);
 	OutputLine(NULL, "僕がああいう時、弱いの、本当だし…。",
 		   NULL, " I know I'm weak in a situation like that...", Line_WaitForInput);
-	PlayVoice(4, "s06/07/151200126", 128);
+	ModPlayVoiceLS(4, 7, "s06/07/151200126", 128);
 	OutputLine(NULL, "僕だって、代打を出してくれた方が試合に勝てるかなって思ったし…。」",
 		   NULL, " I thought a pinch hitter was a better idea too...\"", Line_Normal);
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "s06/06/150600485", 128);
+	ModPlayVoiceLS(4, 6, "s06/06/150600485", 128);
 	OutputLine(NULL, "「試合に勝つかじゃなくて、悟史くんが勝つかどうかが問題なんです！！",
 		   NULL, "\"It's not about the match, it's about you, Satoshi-kun!!", Line_WaitForInput);
-	PlayVoice(4, "s06/06/150600486", 128);
+	ModPlayVoiceLS(4, 6, "s06/06/150600486", 128);
 	OutputLine(NULL, "　あ〜〜も〜〜！",
 		   NULL, " Arrgh!!", Line_WaitForInput);
-	PlayVoice(4, "s06/06/150600487", 128);
+	ModPlayVoiceLS(4, 6, "s06/06/150600487", 128);
 	OutputLine(NULL, "　何で当の本人にここまで闘争心がないのかなぁ！！",
 		   NULL, " You need to be more aggressive!!", Line_WaitForInput);
-	PlayVoice(4, "s06/06/150600488", 128);
+	ModPlayVoiceLS(4, 6, "s06/06/150600488", 128);
 	OutputLine(NULL, "　普通は逆でしょ？！",
 		   NULL, " Shouldn't you have thought the opposite way? ", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "s06/06/150600489", 128);
+	ModPlayVoiceLS(4, 6, "s06/06/150600489", 128);
 	OutputLine(NULL, "　代打に代えられそうなところを、ここは俺に打たせて下さいって食って掛かるとこでしょ？！",
 		   NULL, "Shouldn't you have insisted that you'd come up to bat, no matter what everybody else said?!", Line_WaitForInput);
-	PlayVoice(4, "s06/06/150600490", 128);
+	ModPlayVoiceLS(4, 6, "s06/06/150600490", 128);
 	OutputLine(NULL, "　自分から代打を出してほしいなんて言い出すなんて、あ〜〜も〜〜〜！！",
 		   NULL, " I can't believe you wanted to give away the chance to some pinch hitter!!", Line_WaitForInput);
-	PlayVoice(4, "s06/06/150600491", 128);
+	ModPlayVoiceLS(4, 6, "s06/06/150600491", 128);
 	OutputLine(NULL, "　なんでここまで闘争心がないのかなぁ…！」",
 		   NULL, " Why are you so weak like that...?!\"", Line_Normal);
 	ClearMessage();
 	DisableWindow();
 	FadeAllBustshots( 400, TRUE );
-	DrawBustshot( 1, "sato2_komaru_0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 200, TRUE );
-	DrawBustshot( 3, "iri3_Def2_0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
+	ModDrawCharacter(1, 7, "sato2_komaru_0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 200, TRUE );
+	ModDrawCharacter(3, 10, "iri3_Def2_0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
 	DisplayWindow();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#c89a80>入江</color>", NULL, "<color=#c89a80>Irie</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "s06/10/151000015", 128);
+	ModPlayVoiceLS(4, 10, "s06/10/151000015", 128);
 	OutputLine(NULL, "「それは私も普段から言ってるんですけどねぇ〜。",
 		   NULL, "\"That's what I'm always telling him...", Line_WaitForInput);
-	PlayVoice(4, "s06/10/151000016", 128);
+	ModPlayVoiceLS(4, 10, "s06/10/151000016", 128);
 	OutputLine(NULL, "まぁ、その辺が悟史くんのいい所ではあるんですが、ねぇ…。」",
 		   NULL, " I know that's one of his good points, too. But, uh......\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "s06/06/150600491_1", 128);
+	ModPlayVoiceLS(4, 6, "s06/06/150600491_1", 128);
 	OutputLine(NULL, "「普段は紳士でも、試合には鬼になる！！",
 		   NULL, "\"You can be a gentleman at other times, but when playing games, you should be a demon!!", Line_WaitForInput);
-	PlayVoice(4, "s06/06/150600491_2", 128);
+	ModPlayVoiceLS(4, 6, "s06/06/150600491_2", 128);
 	OutputLine(NULL, "　男にゃそういう二面性があっても私ゃいいと思います！！",
 		   NULL, " I think all men should have those two sides to them!!", Line_WaitForInput);
-	PlayVoice(4, "s06/06/150600491_3", 128);
+	ModPlayVoiceLS(4, 6, "s06/06/150600491_3", 128);
 	OutputLine(NULL, "　とにかく悟史くんには鬼がない！",
 		   NULL, " You need to let your demon out, Satoshi-kun!! ", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "s06/06/150600491_4", 128);
+	ModPlayVoiceLS(4, 6, "s06/06/150600491_4", 128);
 	OutputLine(NULL, "　仮にも雛見沢の人間なんだから、たまにゃご先祖の鬼の血を思い出して下さいよねぇ！",
 		   NULL, "You're native to Hinamizawa, so never forget that you have the demon's blood running through your veins!!", Line_WaitForInput);
-	PlayVoice(4, "s06/06/150600491_5", 128);
+	ModPlayVoiceLS(4, 6, "s06/06/150600491_5", 128);
 	OutputLine(NULL, "　って、聞いてます？！",
 		   NULL, " Are you listening?!", Line_WaitForInput);
-	PlayVoice(4, "s06/06/150600491_6", 128);
+	ModPlayVoiceLS(4, 6, "s06/06/150600491_6", 128);
 	OutputLine(NULL, "　悟史くん〜〜！！」",
 		   NULL, " Satoshi-kun?!\"", Line_Normal);
 	ClearMessage();
-	DrawBustshot( 1, "sato2_komaru2_0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 200, TRUE );
+	ModDrawCharacter(1, 7, "sato2_komaru2_0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 200, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#ffdc6f>悟史</color>", NULL, "<color=#ffdc6f>Satoshi</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "s06/07/151200133", 128);
+	ModPlayVoiceLS(4, 7, "s06/07/151200133", 128);
 	OutputLine(NULL, "「…むぅ…。",
 		   NULL, "\"...Mmph...", Line_WaitForInput);
-	PlayVoice(4, "s06/07/151200134", 128);
+	ModPlayVoiceLS(4, 7, "s06/07/151200134", 128);
 	OutputLine(NULL, "き、聞いてるよ…。",
 		   NULL, " I-I am...", Line_WaitForInput);
 	DisableWindow();
-	DrawBustshot( 1, "sato2_Tukare_0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 200, TRUE );
+	ModDrawCharacter(1, 7, "sato2_Tukare_0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 200, TRUE );
 	DisplayWindow();
 
-	PlayVoice(4, "s06/07/151200135", 128);
+	ModPlayVoiceLS(4, 7, "s06/07/151200135", 128);
 	OutputLine(NULL, "よくわかんないけど、その、」",
 		   NULL, " I'm not sure, but...\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "s06/06/150600492", 128);
+	ModPlayVoiceLS(4, 6, "s06/06/150600492", 128);
 	OutputLine(NULL, "「わかんないけどって、悟史くんの話をしてるんですよ〜？！",
 		   NULL, "\"What aren't you sure about? We're talking about you!", Line_WaitForInput);
-	PlayVoice(4, "s06/06/150600493", 128);
+	ModPlayVoiceLS(4, 6, "s06/06/150600493", 128);
 	OutputLine(NULL, "　それを、",
 		   NULL, " So...", Line_Continue);
 	PlaySE( 0, "s_boyoon", 128, 64 );
-	DrawBustshot( 1, "sato2_Def2_0_zoom", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 21, 200, TRUE );
+	ModDrawCharacter(1, 7, "sato2_Def2_0_zoom", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 21, 200, TRUE );
 
 	OutputLine(NULL, "…きゃふ！",
 		   NULL, " ...Whoa!", Line_WaitForInput);
-	PlayVoice(4, "s06/06/150600494", 128);
+	ModPlayVoiceLS(4, 6, "s06/06/150600494", 128);
 	OutputLine(NULL, "…………………わぅ…。」",
 		   NULL, " .........Ahh...\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -445,34 +445,34 @@ void main()
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#ffdc6f>悟史</color>", NULL, "<color=#ffdc6f>Satoshi</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "s06/07/151200136", 128);
+	ModPlayVoiceLS(4, 7, "s06/07/151200136", 128);
 	OutputLine(NULL, "「魅音は、僕のためを思って言ってくれてるんだよね。",
 		   NULL, "\"You're giving me advice, right?", Line_WaitForInput);
-	PlayVoice(4, "s06/07/151200137", 128);
+	ModPlayVoiceLS(4, 7, "s06/07/151200137", 128);
 	OutputLine(NULL, "…ありがと。",
 		   NULL, " Thanks.", Line_WaitForInput);
-	PlayVoice(4, "s06/07/151200138", 128);
+	ModPlayVoiceLS(4, 7, "s06/07/151200138", 128);
 	OutputLine(NULL, "僕はがんばる。」",
 		   NULL, " I'll do my best.\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "s06/06/150600495", 128);
+	ModPlayVoiceLS(4, 6, "s06/06/150600495", 128);
 	OutputLine(NULL, "「………ささ、…悟史くん。",
 		   NULL, "\"......H-Hey...", Line_WaitForInput);
-	PlayVoice(4, "s06/06/150600496", 128);
+	ModPlayVoiceLS(4, 6, "s06/06/150600496", 128);
 	OutputLine(NULL, "あの、そゆことして……誤魔化さないでください…。」",
 		   NULL, " don't you try to fool me...\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#ffdc6f>悟史</color>", NULL, "<color=#ffdc6f>Satoshi</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "s06/07/151200139", 128);
+	ModPlayVoiceLS(4, 7, "s06/07/151200139", 128);
 	OutputLine(NULL, "「誤魔化してなんかないよ。",
 		   NULL, "\"I'm not.", Line_WaitForInput);
-	PlayVoice(4, "s06/07/151200140", 128);
+	ModPlayVoiceLS(4, 7, "s06/07/151200140", 128);
 	OutputLine(NULL, "うれしいだけだよ。",
 		   NULL, " I'm just happy that you care about me.", Line_WaitForInput);
-	PlayVoice(4, "s06/07/151200141", 128);
+	ModPlayVoiceLS(4, 7, "s06/07/151200141", 128);
 	OutputLine(NULL, "あはははは。」",
 		   NULL, " Ahahahaha.\"", Line_Normal);
 	ClearMessage();
@@ -494,37 +494,37 @@ void main()
 		   NULL, "Satoshi-kun ran back to the field, leaving me red as a beet.", Line_Normal);
 	ClearMessage();
 	DrawSceneWithMask( "Oki_G3", "maskdown", 1, 0, 300 );
-	DrawBustshot( 2, "iri3_Def2_0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
+	ModDrawCharacter(2, 10, "iri3_Def2_0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#c89a80>入江</color>", NULL, "<color=#c89a80>Irie</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "s06/10/151000017", 128);
+	ModPlayVoiceLS(4, 10, "s06/10/151000017", 128);
 	OutputLine(NULL, "「………頭、撫でられるの弱いんですか？」",
 		   NULL, "\"...Do you feel good when you have your head stroked?\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "s06/06/150600497", 128);
+	ModPlayVoiceLS(4, 6, "s06/06/150600497", 128);
 	OutputLine(NULL, "「…撫でる人によります。",
 		   NULL, "\"...Depends.", Line_WaitForInput);
-	PlayVoice(4, "s06/06/150600498", 128);
+	ModPlayVoiceLS(4, 6, "s06/06/150600498", 128);
 	OutputLine(NULL, "監督が撫でてきたら関節極めますんで、覚悟の方よろしくです。」",
 		   NULL, " If it were you, I'd have to teach you a new martial arts technique.\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 	DisableWindow();
-	DrawBustshot( 2, "iri3_Warai_0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
+	ModDrawCharacter(2, 10, "iri3_Warai_0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
 	DisplayWindow();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#c89a80>入江</color>", NULL, "<color=#c89a80>Irie</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "s06/10/151000018", 128);
+	ModPlayVoiceLS(4, 10, "s06/10/151000018", 128);
 	OutputLine(NULL, "「え〜〜〜、もぅずるいなぁ。",
 		   NULL, "\"Ah, what a shame!", Line_WaitForInput);
-	PlayVoice(4, "s06/10/151000019", 128);
+	ModPlayVoiceLS(4, 10, "s06/10/151000019", 128);
 	OutputLine(NULL, "あっはっはっは…。",
 		   NULL, " Aha ha ha ha...", Line_WaitForInput);
-	PlayVoice(4, "s06/10/151000020", 128);
+	ModPlayVoiceLS(4, 10, "s06/10/151000020", 128);
 	OutputLine(NULL, "じゃあ全員集合〜〜！！",
 		   NULL, " All right, everyone, gather around!!", Line_WaitForInput);
-	PlayVoice(4, "s06/10/151000021", 128);
+	ModPlayVoiceLS(4, 10, "s06/10/151000021", 128);
 	OutputLine(NULL, "　今日は出席もいい事ですから、人数を分けて紅白戦をやってみましょう。」",
 		   NULL, " Why don't you split into groups and have a practice match?\"", Line_Normal);
 	ClearMessage();
@@ -555,19 +555,19 @@ void main()
 	DrawScene( "Sora3", 400 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "s06/06/150600499", 128);
+	ModPlayVoiceLS(4, 6, "s06/06/150600499", 128);
 	OutputLine(NULL, "「じゃ、私ゃ記録でもやるかな。",
 		   NULL, "\"I'll keep track of the score.", Line_WaitForInput);
-	PlayVoice(4, "s06/06/150600500", 128);
+	ModPlayVoiceLS(4, 6, "s06/06/150600500", 128);
 	OutputLine(NULL, "監督、どっかに鉛筆ないですか？」",
 		   NULL, " Coach, do you have a pencil?\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#c89a80>入江</color>", NULL, "<color=#c89a80>Irie</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "s06/10/151000022", 128);
+	ModPlayVoiceLS(4, 10, "s06/10/151000022", 128);
 	OutputLine(NULL, "「いっつもすみませんねぇ。",
 		   NULL, "\"Thanks for helping out.", Line_WaitForInput);
-	PlayVoice(4, "s06/10/151000023", 128);
+	ModPlayVoiceLS(4, 10, "s06/10/151000023", 128);
 	OutputLine(NULL, "ハイこれ、お願いしますね。」",
 		   NULL, " Here.\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -583,25 +583,25 @@ void main()
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "s06/06/150600501", 128);
+	ModPlayVoiceLS(4, 6, "s06/06/150600501", 128);
 	OutputLine(NULL, "「がんばって〜〜悟史く〜〜ん！！",
 		   NULL, "\"Show me what you got, Satoshi-kun!!", Line_WaitForInput);
-	PlayVoice(4, "s06/06/150600502", 128);
+	ModPlayVoiceLS(4, 6, "s06/06/150600502", 128);
 	OutputLine(NULL, "　あぁ、あんまり応援するとまた打てなくなっちゃいますね。",
 		   NULL, " Oh, maybe it'll be too much pressure if I cheer for you too excessively.", Line_WaitForInput);
-	PlayVoice(4, "s06/06/150600503", 128);
+	ModPlayVoiceLS(4, 6, "s06/06/150600503", 128);
 	OutputLine(NULL, "ほどほどに頑張れ〜〜！」",
 		   NULL, " Just do okay then!\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#ffdc6f>悟史</color>", NULL, "<color=#ffdc6f>Satoshi</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "s06/07/151200142", 128);
+	ModPlayVoiceLS(4, 7, "s06/07/151200142", 128);
 	OutputLine(NULL, "「…むぅ、…それはそれでひどいなぁ…！」",
 		   NULL, "\"...Mmph... That doesn't sound very encouraging either...!\"", Line_Normal);
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "s06/06/150600504", 128);
+	ModPlayVoiceLS(4, 6, "s06/06/150600504", 128);
 	OutputLine(NULL, "「あははははは！　がんばれ〜〜〜！！」",
 		   NULL, "\"Ahahahaha! Do your best!!\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -651,54 +651,54 @@ void main()
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "s06/06/150600505", 128);
+	ModPlayVoiceLS(4, 6, "s06/06/150600505", 128);
 	OutputLine(NULL, "「それでも、あの程度の練習量で、みんなこれだけの動きができるんだから驚きですよね。」",
 		   NULL, "\"I'm surprised you guys can do well with only a small amount of practice.\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 	DisableWindow();
-	DrawBustshot( 2, "iri3_Def2_0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
+	ModDrawCharacter(2, 10, "iri3_Def2_0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
 	DisplayWindow();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#c89a80>入江</color>", NULL, "<color=#c89a80>Irie</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "s06/10/151000024", 128);
+	ModPlayVoiceLS(4, 10, "s06/10/151000024", 128);
 	OutputLine(NULL, "「雛見沢の子は、みんな普段から元気に遊びまわってますからね。",
 		   NULL, "\"Kids in Hinamizawa romp around every day,", Line_WaitForInput);
-	PlayVoice(4, "s06/10/151000025", 128);
+	ModPlayVoiceLS(4, 10, "s06/10/151000025", 128);
 	OutputLine(NULL, "運動量は町の子とは比べ物にならないんですよ。",
 		   NULL, " so the amount of exercise they get surpasses that of the city kids.", Line_WaitForInput);
-	PlayVoice(4, "s06/10/151000026", 128);
+	ModPlayVoiceLS(4, 10, "s06/10/151000026", 128);
 	OutputLine(NULL, "変なフォームで固めてしまうより、遊び感覚の方が伸びるんです。」",
 		   NULL, " Besides, too much training is not always effective.\"", Line_Normal);
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "s06/06/150600506", 128);
+	ModPlayVoiceLS(4, 6, "s06/06/150600506", 128);
 	OutputLine(NULL, "「…おー、見事に興宮タイタンズとは正反対の考え方ですねぇ。",
 		   NULL, "\"...Wow, you think completely differently from the Okinomiya Titans.", Line_WaitForInput);
-	PlayVoice(4, "s06/06/150600507", 128);
+	ModPlayVoiceLS(4, 6, "s06/06/150600507", 128);
 	OutputLine(NULL, "あちらの監督と対立するの、わかる気がします。」",
 		   NULL, " I can understand why their coach hates you.\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#c89a80>入江</color>", NULL, "<color=#c89a80>Irie</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "s06/10/151000027", 128);
+	ModPlayVoiceLS(4, 10, "s06/10/151000027", 128);
 	OutputLine(NULL, "「タイタンズさんの考えも間違ってませんよ。",
 		   NULL, "\"It's not about being right.", Line_WaitForInput);
-	PlayVoice(4, "s06/10/151000028", 128);
+	ModPlayVoiceLS(4, 10, "s06/10/151000028", 128);
 	OutputLine(NULL, "試合は勝つためにするものですからね。",
 		   NULL, " Matches exist for someone to win, after all.", Line_WaitForInput);
-	PlayVoice(4, "s06/10/151000029", 128);
+	ModPlayVoiceLS(4, 10, "s06/10/151000029", 128);
 	OutputLine(NULL, "勝利至上主義は決して間違いじゃないです。",
 		   NULL, " So prioritizing victory certainly isn't wrong.", Line_WaitForInput);
 	DisableWindow();
-	DrawBustshot( 2, "iri3_Warai_0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
+	ModDrawCharacter(2, 10, "iri3_Warai_0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
 	DisplayWindow();
 
-	PlayVoice(4, "s06/10/151000030", 128);
+	ModPlayVoiceLS(4, 10, "s06/10/151000030", 128);
 	OutputLine(NULL, "みんなで団結して共通の目標を目指すのは、とても素敵なことだと思いますからね。",
 		   NULL, " I think it's admirable to aim for victory together... ", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#c89a80>入江</color>", NULL, "<color=#c89a80>Irie</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "s06/10/151000031", 128);
+	ModPlayVoiceLS(4, 10, "s06/10/151000031", 128);
 	OutputLine(NULL, "……まぁ、ウチは、その目標がたまたま勝利じゃないってだけのことです。」",
 		   NULL, "but the goal of our team doesn't happen to be victory, that's all.\"", Line_Normal);
 	ClearMessage();
@@ -748,13 +748,13 @@ void main()
 	DrawScene( "Sora3", 400 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "s06/06/150600508", 128);
+	ModPlayVoiceLS(4, 6, "s06/06/150600508", 128);
 	OutputLine(NULL, "「ほら〜〜〜紅組さんも頑張って下さい〜〜〜！",
 		   NULL, "\"Hey, Team One, no slacking!", Line_WaitForInput);
-	PlayVoice(4, "s06/06/150600509", 128);
+	ModPlayVoiceLS(4, 6, "s06/06/150600509", 128);
 	OutputLine(NULL, "　２点差なんかひっくり返せちゃいますよ〜〜！",
 		   NULL, " You can make up the two-point difference pretty easily!", Line_WaitForInput);
-	PlayVoice(4, "s06/06/150600510", 128);
+	ModPlayVoiceLS(4, 6, "s06/06/150600510", 128);
 	OutputLine(NULL, "　白組も油断なくしっかり〜〜〜！」",
 		   NULL, " Team Two, no slacking either!\"", Line_Normal);
 	ClearMessage();
@@ -792,31 +792,31 @@ void main()
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "s06/06/150600511", 128);
+	ModPlayVoiceLS(4, 6, "s06/06/150600511", 128);
 	OutputLine(NULL, "「お、悟史くん、打った打った。",
 		   NULL, "\"Oh, he did it.", Line_WaitForInput);
-	PlayVoice(4, "s06/06/150600512", 128);
+	ModPlayVoiceLS(4, 6, "s06/06/150600512", 128);
 	OutputLine(NULL, "落ち着いてればさすがですよね。」",
 		   NULL, " He's so good when he's relaxed.\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 	DisableWindow();
-	DrawBustshot( 2, "iri3_Def2_0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
+	ModDrawCharacter(2, 10, "iri3_Def2_0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
 	DisplayWindow();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#c89a80>入江</color>", NULL, "<color=#c89a80>Irie</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "s06/10/151000032", 128);
+	ModPlayVoiceLS(4, 10, "s06/10/151000032", 128);
 	OutputLine(NULL, "「最初はちょっと素振りしただけで、すぐバテてたんですけどね。",
 		   NULL, "\"In the beginning he used to get tired very easily.", Line_WaitForInput);
-	PlayVoice(4, "s06/10/151000033", 128);
+	ModPlayVoiceLS(4, 10, "s06/10/151000033", 128);
 	OutputLine(NULL, "はははは、それを思えば、本当に上達したものです。」",
 		   NULL, " Hahahaha. He's improved quite a lot since then.\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "s06/06/150600513", 128);
+	ModPlayVoiceLS(4, 6, "s06/06/150600513", 128);
 	OutputLine(NULL, "「……悟史くんって、文系って感じの人ですよね。",
 		   NULL, "\"......He really does look kind of like a bookworm.", Line_WaitForInput);
-	PlayVoice(4, "s06/06/150600514", 128);
+	ModPlayVoiceLS(4, 6, "s06/06/150600514", 128);
 	OutputLine(NULL, "よくその彼が、野球をやろうなんて思ったものですね。」",
 		   NULL, " I wonder why he started playing baseball in the first place...\"", Line_Normal);
 	ClearMessage();
@@ -845,36 +845,36 @@ void main()
 		   NULL, "That's why I didn't understand why he started playing for this team to begin with.", Line_Normal);
 	ClearMessage();
 	DisableWindow();
-	DrawBustshot( 2, "iri3_Warai_0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
+	ModDrawCharacter(2, 10, "iri3_Warai_0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
 	DisplayWindow();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#c89a80>入江</color>", NULL, "<color=#c89a80>Irie</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "s06/10/151000034", 128);
+	ModPlayVoiceLS(4, 10, "s06/10/151000034", 128);
 	OutputLine(NULL, "「あはははははは。",
 		   NULL, "\"Ahahahahaha.", Line_WaitForInput);
-	PlayVoice(4, "s06/10/151000035", 128);
+	ModPlayVoiceLS(4, 10, "s06/10/151000035", 128);
 	OutputLine(NULL, "それはですね、私が北条さんをこのチームに誘ったからなんです。」",
 		   NULL, " That's because I invited him.\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "s06/06/150600515", 128);
+	ModPlayVoiceLS(4, 6, "s06/06/150600515", 128);
 	OutputLine(NULL, "「へー。",
 		   NULL, "\"Is that so?", Line_WaitForInput);
-	PlayVoice(4, "s06/06/150600516", 128);
+	ModPlayVoiceLS(4, 6, "s06/06/150600516", 128);
 	OutputLine(NULL, "監督が自らスカウトしたんですか？",
 		   NULL, " You recruited him?", Line_WaitForInput);
-	PlayVoice(4, "s06/06/150600517", 128);
+	ModPlayVoiceLS(4, 6, "s06/06/150600517", 128);
 	OutputLine(NULL, "　…悟史くんに何かすごい素質があるのを見抜いて？」",
 		   NULL, " ...Did you notice some sort of hidden talent?\"", Line_Normal);
 	ClearMessage();
 	DrawScene( "Sora3", 400 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#c89a80>入江</color>", NULL, "<color=#c89a80>Irie</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "s06/10/151000036", 128);
+	ModPlayVoiceLS(4, 10, "s06/10/151000036", 128);
 	OutputLine(NULL, "「あ、すみません、麦茶を一杯もらってもいいですか。",
 		   NULL, "\"Uh, excuse me. Can I have a cup of barley tea?", Line_WaitForInput);
-	PlayVoice(4, "s06/10/151000037", 128);
+	ModPlayVoiceLS(4, 10, "s06/10/151000037", 128);
 	OutputLine(NULL, "……あ〜、どうも。」",
 		   NULL, " ......Ah, thank you.\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -896,7 +896,7 @@ void main()
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "s06/06/150600518", 128);
+	ModPlayVoiceLS(4, 6, "s06/06/150600518", 128);
 	OutputLine(NULL, "「…何か訳ありなんですか？」",
 		   NULL, "\"...Is there a particular reason?\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -907,10 +907,10 @@ void main()
 	ClearMessage();
 	FadeOutBGM( 0, 0, FALSE );
 	FadeOutBGM( 2, 0, FALSE );
-	DrawBustshot( 19, "no_data", 0, 100, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, TRUE );
+	ModDrawCharacter(19, 0, "no_data", 0, 100, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#c89a80>入江</color>", NULL, "<color=#c89a80>Irie</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "s06/10/151000038", 128);
+	ModPlayVoiceLS(4, 10, "s06/10/151000038", 128);
 	OutputLine(NULL, "「……園崎さんなら、あるいは想像がつくんじゃないかと。」",
 		   NULL, "\"...I think you might be able to guess.\"", Line_Normal);
 	ClearMessage();
@@ -942,31 +942,31 @@ void main()
 		   NULL, "Since then, he's been having a tough time at his uncle's home.", Line_Normal);
 	ClearMessage();
 	DrawSceneWithMask( "Oki_G3", "maskup", 1, 0, 300 );
-	DrawBustshot( 2, "iri3_Def2_0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
+	ModDrawCharacter(2, 10, "iri3_Def2_0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "s06/06/150600519", 128);
+	ModPlayVoiceLS(4, 6, "s06/06/150600519", 128);
 	OutputLine(NULL, "「……じゃあ監督は、…悟史くんの鬱憤とか、そういうのを解消させてあげようと思って、このチームに？」",
 		   NULL, "\"...So, you invited him so that he could vent?\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#c89a80>入江</color>", NULL, "<color=#c89a80>Irie</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "s06/10/151000039", 128);
+	ModPlayVoiceLS(4, 10, "s06/10/151000039", 128);
 	OutputLine(NULL, "「スポーツはいいですよ。",
 		   NULL, "\"Sports are great.", Line_WaitForInput);
-	PlayVoice(4, "s06/10/151000040", 128);
+	ModPlayVoiceLS(4, 10, "s06/10/151000040", 128);
 	OutputLine(NULL, "ほどよく体を動かして汗をかくことはストレスの発散になります。",
 		   NULL, " You can free yourself through exercise.", Line_WaitForInput);
-	PlayVoice(4, "s06/10/151000041", 128);
+	ModPlayVoiceLS(4, 10, "s06/10/151000041", 128);
 	OutputLine(NULL, "また、熱中することによって、わずかな間でも家庭のことを忘れられるなら、それは充分な気分転換になりますしね。」",
 		   NULL, " I thought that as long as he concentrated on something else, he could forget about his troubles at home.\"", Line_Normal);
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "s06/06/150600520", 128);
+	ModPlayVoiceLS(4, 6, "s06/06/150600520", 128);
 	OutputLine(NULL, "「……あの、…ほら、悟史くんって、ぼんやりしてるというか、のほほんとしてるというか、そういう所あるじゃないですか？",
 		   NULL, "\"...Er... you know he's usually sort of a daydreamer... zoning out all the time...", Line_WaitForInput);
-	PlayVoice(4, "s06/06/150600521", 128);
+	ModPlayVoiceLS(4, 6, "s06/06/150600521", 128);
 	OutputLine(NULL, "　……やっぱり、相当ストレス、あるんですか…？」",
 		   NULL, " Is he still stressed...?\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
@@ -983,16 +983,16 @@ void main()
 	ClearMessage();
 	PlayBGM( 0, "demo_48khz", 120, 0 );
 	DisableWindow();
-	DrawBustshot( 2, "iri3_Def1_0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
+	ModDrawCharacter(2, 10, "iri3_Def1_0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
 	DisplayWindow();
 	FadeOutBGM( 1, 0, FALSE );
-	DrawBustshot( 19, "no_data", 0, 100, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, TRUE );
+	ModDrawCharacter(19, 0, "no_data", 0, 100, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#c89a80>入江</color>", NULL, "<color=#c89a80>Irie</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "s06/10/151000042", 128);
+	ModPlayVoiceLS(4, 10, "s06/10/151000042", 128);
 	OutputLine(NULL, "「叔父さんに引き取られて少ししてから、悟史くんがだいぶ体調を崩しましてね。",
 		   NULL, "\"Satoshi-kun got really sick after his uncle took him into his custody.", Line_WaitForInput);
-	PlayVoice(4, "s06/10/151000043", 128);
+	ModPlayVoiceLS(4, 10, "s06/10/151000043", 128);
 	OutputLine(NULL, "いろんな症状を訴えるんですが、いくら調べても原因がはっきりしないんですよ。」",
 		   NULL, " He had many clinical symptoms, but the causes were unknown.\"", Line_Normal);
 	ClearMessage();
@@ -1035,34 +1035,34 @@ void main()
 		   NULL, "It was natural for him to become sick, because he entered that bad environment right after his parents' deaths.", Line_Normal);
 	ClearMessage();
 	DrawSceneWithMask( "Oki_G3", "maskup", 1, 0, 300 );
-	DrawBustshot( 2, "iri3_Majime_0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
+	ModDrawCharacter(2, 10, "iri3_Majime_0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#c89a80>入江</color>", NULL, "<color=#c89a80>Irie</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "s06/10/151000044", 128);
+	ModPlayVoiceLS(4, 10, "s06/10/151000044", 128);
 	OutputLine(NULL, "「北条さんは、感情の爆発が出来ないタイプなんですよ。",
 		   NULL, "\"Houjou-san cannot express himself freely.", Line_WaitForInput);
-	PlayVoice(4, "s06/10/151000045", 128);
+	ModPlayVoiceLS(4, 10, "s06/10/151000045", 128);
 	OutputLine(NULL, "泣いたりとか怒ったりとか、そういう感情が人一倍苦手なんです。」",
 		   NULL, " Whether it's crying or simply being agitated, he's not good at handling those emotions.\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "s06/06/150600522", 128);
+	ModPlayVoiceLS(4, 6, "s06/06/150600522", 128);
 	OutputLine(NULL, "「……確かに、悟史くんが泣いたりとか怒ったりってのは、あまり想像つかないですね。」",
 		   NULL, "\"...That's true. I can't imagine him being angry or crying...\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#c89a80>入江</color>", NULL, "<color=#c89a80>Irie</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "s06/10/151000046", 128);
+	ModPlayVoiceLS(4, 10, "s06/10/151000046", 128);
 	OutputLine(NULL, "「…北条さんのお母さんが再婚を重ねてるのはご存知で？」",
 		   NULL, "\"...Did you know Houjou-san's mother had been married a few times already?\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "s06/06/150600523", 128);
+	ModPlayVoiceLS(4, 6, "s06/06/150600523", 128);
 	OutputLine(NULL, "「……まぁ。",
 		   NULL, "\"...Yeah,", Line_WaitForInput);
-	PlayVoice(4, "s06/06/150600524", 128);
+	ModPlayVoiceLS(4, 6, "s06/06/150600524", 128);
 	OutputLine(NULL, "少しは。」",
 		   NULL, " I know a little bit about that.\"", Line_Normal);
 	ClearMessage();
@@ -1083,39 +1083,39 @@ void main()
 		   NULL, "He had to deal with strangers coming into his home multiple times, so he was forced to be mature.", Line_Normal);
 	ClearMessage();
 	DisableWindow();
-	DrawBustshot( 2, "iri3_Def1_0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
+	ModDrawCharacter(2, 10, "iri3_Def1_0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
 	DisplayWindow();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#c89a80>入江</color>", NULL, "<color=#c89a80>Irie</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "s06/10/151000047", 128);
+	ModPlayVoiceLS(4, 10, "s06/10/151000047", 128);
 	OutputLine(NULL, "「悟史くんは、精神的に早熟なんです。",
 		   NULL, "\"Satoshi-kun is mentally underdeveloped.", Line_WaitForInput);
-	PlayVoice(4, "s06/10/151000048", 128);
+	ModPlayVoiceLS(4, 10, "s06/10/151000048", 128);
 	OutputLine(NULL, "本人は自覚していないでしょうがね。",
 		   NULL, " He isn't aware of it himself, though...", Line_WaitForInput);
-	PlayVoice(4, "s06/10/151000049", 128);
+	ModPlayVoiceLS(4, 10, "s06/10/151000049", 128);
 	OutputLine(NULL, "…泣いたり笑ったり、駄々をこねたり。",
 		   NULL, " He didn't have enough time to cry, laugh, and throw tantrums in his childhood... ", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#c89a80>入江</color>", NULL, "<color=#c89a80>Irie</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "s06/10/151000050", 128);
+	ModPlayVoiceLS(4, 10, "s06/10/151000050", 128);
 	OutputLine(NULL, "そういう時代をあっという間に卒業させられて、大人になっちゃったんです。」",
 		   NULL, "He was forced to become a grownup in just a short time.\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "s06/06/150600525", 128);
+	ModPlayVoiceLS(4, 6, "s06/06/150600525", 128);
 	OutputLine(NULL, "「……監督の言い方だと、大人ってのが必ずしもいいようには聞こえないですね。」",
 		   NULL, "\"......That doesn't sound right.\"", Line_Normal);
 	ClearMessage();
 	DisableWindow();
-	DrawBustshot( 2, "iri3_Def2_0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
+	ModDrawCharacter(2, 10, "iri3_Def2_0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
 	DisplayWindow();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#c89a80>入江</color>", NULL, "<color=#c89a80>Irie</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "s06/10/151000051", 128);
+	ModPlayVoiceLS(4, 10, "s06/10/151000051", 128);
 	OutputLine(NULL, "「子どもは子どもらしく過すことで、成長していくように出来ているんです。",
 		   NULL, "\"Children have to behave like children in order to grow...", Line_WaitForInput);
-	PlayVoice(4, "s06/10/151000052", 128);
+	ModPlayVoiceLS(4, 10, "s06/10/151000052", 128);
 	OutputLine(NULL, "それを無理に大人にしたら、…やっぱりいい事はないですよ。」",
 		   NULL, " There's nothing positive about being forced to become an adult.\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -1137,11 +1137,11 @@ void main()
 		   NULL, "And Satoshi-kun would always step in to protect her.", Line_Normal);
 	ClearMessage();
 	DisableWindow();
-	DrawBustshot( 2, "iri3_Majime_0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
+	ModDrawCharacter(2, 10, "iri3_Majime_0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
 	DisplayWindow();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#c89a80>入江</color>", NULL, "<color=#c89a80>Irie</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "s06/10/151000053", 128);
+	ModPlayVoiceLS(4, 10, "s06/10/151000053", 128);
 	OutputLine(NULL, "「……だから悟史くんの体に変調が出たのは、そういうことに体が耐えかねたＳＯＳじゃないかって思ったんです。」",
 		   NULL, "\"......I thought his physical symptoms came from the stress. His body was trying to warn him.\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
@@ -1161,28 +1161,28 @@ void main()
 		   NULL, " or something like that.", Line_Normal);
 	ClearMessage();
 	DisableWindow();
-	DrawBustshot( 2, "iri3_Def1_0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
+	ModDrawCharacter(2, 10, "iri3_Def1_0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
 	DisplayWindow();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#c89a80>入江</color>", NULL, "<color=#c89a80>Irie</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "s06/10/151000054", 128);
+	ModPlayVoiceLS(4, 10, "s06/10/151000054", 128);
 	OutputLine(NULL, "「初めは渋ってましたけどね。",
 		   NULL, "\"He hesitated at first...", Line_WaitForInput);
-	PlayVoice(4, "s06/10/151000055", 128);
+	ModPlayVoiceLS(4, 10, "s06/10/151000055", 128);
 	OutputLine(NULL, "…彼と診療の際にいろいろとお話しする内に、少しずつ打ち解けていきましてね。",
 		   NULL, " but after I talked to him at the clinic a few times, he began to open up to me.", Line_WaitForInput);
 	DisableWindow();
-	DrawBustshot( 2, "iri3_Def2_0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
+	ModDrawCharacter(2, 10, "iri3_Def2_0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
 	DisplayWindow();
 
-	PlayVoice(4, "s06/10/151000056", 128);
+	ModPlayVoiceLS(4, 10, "s06/10/151000056", 128);
 	OutputLine(NULL, "……ちょっと見学だけにでも来て見るといい。",
 		   NULL, " ...First I invited him to come see the practice...", Line_WaitForInput);
-	PlayVoice(4, "s06/10/151000057", 128);
+	ModPlayVoiceLS(4, 10, "s06/10/151000057", 128);
 	OutputLine(NULL, "ちょっとバットを持ってみるといい。",
 		   NULL, " then I suggested he try batting... ", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#c89a80>入江</color>", NULL, "<color=#c89a80>Irie</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "s06/10/151000058", 128);
+	ModPlayVoiceLS(4, 10, "s06/10/151000058", 128);
 	OutputLine(NULL, "……なぁんて感じで、少しずつ誘っていったんですよ。」",
 		   NULL, "I eased him into it...\"", Line_Normal);
 	ClearMessage();
@@ -1208,48 +1208,48 @@ void main()
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "s06/06/150600526", 128);
+	ModPlayVoiceLS(4, 6, "s06/06/150600526", 128);
 	OutputLine(NULL, "「…あー、なんかわかるなぁ。",
 		   NULL, "\"...Ah, I can imagine that.", Line_WaitForInput);
-	PlayVoice(4, "s06/06/150600527", 128);
+	ModPlayVoiceLS(4, 6, "s06/06/150600527", 128);
 	OutputLine(NULL, "悟史くんって、コツコツタイプですからね。",
 		   NULL, " He likes to read,", Line_WaitForInput);
-	PlayVoice(4, "s06/06/150600528", 128);
+	ModPlayVoiceLS(4, 6, "s06/06/150600528", 128);
 	OutputLine(NULL, "Ｈｏｗｔｏベースボールなんて本を、しおり挟みながら読んでる風景が想像できます。」",
 		   NULL, " so he must have read a book titled 'How to Play Baseball' or something like that.\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#c89a80>入江</color>", NULL, "<color=#c89a80>Irie</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "s06/10/151000058_1", 128);
+	ModPlayVoiceLS(4, 10, "s06/10/151000058_1", 128);
 	OutputLine(NULL, "「それで、あれよあれよと言う間に三割打者なんです。",
 		   NULL, "\"He's become a good batter very quickly.", Line_WaitForInput);
-	PlayVoice(4, "s06/10/151000058_2", 128);
+	ModPlayVoiceLS(4, 10, "s06/10/151000058_2", 128);
 	OutputLine(NULL, "本当によくがんばりました。",
 		   NULL, " He's put forth a lot of effort...", Line_WaitForInput);
-	PlayVoice(4, "s06/10/151000058_3", 128);
+	ModPlayVoiceLS(4, 10, "s06/10/151000058_3", 128);
 	OutputLine(NULL, "……これで、ピンチの時にも打てれば完璧なんですけどねぇ。",
 		   NULL, " Though I wish he could actually hit when it comes down to the wire too...", Line_WaitForInput);
-	PlayVoice(4, "s06/10/151000058_4", 128);
+	ModPlayVoiceLS(4, 10, "s06/10/151000058_4", 128);
 	OutputLine(NULL, "ははははははは。」",
 		   NULL, " Hahahahaha.\"", Line_Normal);
 	ClearMessage();
 	DrawSceneWithMask( "Oki_G3", "maskup", 1, 0, 300 );
-	DrawBustshot( 2, "iri3_Def1_0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
+	ModDrawCharacter(2, 10, "iri3_Def1_0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "s06/06/150600533", 128);
+	ModPlayVoiceLS(4, 6, "s06/06/150600533", 128);
 	OutputLine(NULL, "「悟史くんと監督って、仲、いいんですか？」",
 		   NULL, "\"Are you guys close?\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 	DisableWindow();
-	DrawBustshot( 2, "iri3_Def2_0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
+	ModDrawCharacter(2, 10, "iri3_Def2_0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
 	DisplayWindow();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#c89a80>入江</color>", NULL, "<color=#c89a80>Irie</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "s06/10/151000059", 128);
+	ModPlayVoiceLS(4, 10, "s06/10/151000059", 128);
 	OutputLine(NULL, "「悪くはないと思ってますよ。",
 		   NULL, "\"I think so...", Line_WaitForInput);
-	PlayVoice(4, "s06/10/151000060", 128);
+	ModPlayVoiceLS(4, 10, "s06/10/151000060", 128);
 	OutputLine(NULL, "……悩みとか、そういうのを打ち明けてくれたということは、私を信頼してくれたからだと思ってます。」",
 		   NULL, " He talks to me about his problems, so I guess that's a sign of trust.\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -1265,23 +1265,23 @@ void main()
 		   NULL, "While Satoshi-kun and I were friends, we weren't so close that we'd open up to each other like that...", Line_Normal);
 	ClearMessage();
 	DisableWindow();
-	DrawBustshot( 2, "iri3_Def1_0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
+	ModDrawCharacter(2, 10, "iri3_Def1_0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
 	DisplayWindow();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#c89a80>入江</color>", NULL, "<color=#c89a80>Irie</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "s06/10/151000061", 128);
+	ModPlayVoiceLS(4, 10, "s06/10/151000061", 128);
 	OutputLine(NULL, "「………あれ。",
 		   NULL, "\"...Oh,", Line_WaitForInput);
-	PlayVoice(4, "s06/10/151000062", 128);
+	ModPlayVoiceLS(4, 10, "s06/10/151000062", 128);
 	OutputLine(NULL, "嫉妬してます？」",
 		   NULL, " are you jealous?\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "s06/06/150600534", 128);
+	ModPlayVoiceLS(4, 6, "s06/06/150600534", 128);
 	OutputLine(NULL, "「ふぇ？！",
 		   NULL, "\"Ehh?!", Line_WaitForInput);
-	PlayVoice(4, "s06/06/150600535", 128);
+	ModPlayVoiceLS(4, 6, "s06/06/150600535", 128);
 	OutputLine(NULL, "　ななな、………何に？！」",
 		   NULL, " ...About what?!\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -1291,7 +1291,7 @@ void main()
 		   NULL, "Taken aback, I blushed.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 	DisableWindow();
-	DrawBustshot( 2, "iri3_Warai_0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
+	ModDrawCharacter(2, 10, "iri3_Warai_0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
 	DisplayWindow();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -1300,16 +1300,16 @@ void main()
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#c89a80>入江</color>", NULL, "<color=#c89a80>Irie</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "s06/10/151000063", 128);
+	ModPlayVoiceLS(4, 10, "s06/10/151000063", 128);
 	OutputLine(NULL, "「……園崎さんも、悟史くんの相談相手になってあげてください。」",
 		   NULL, "\"......Please stay as his good friend.\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "s06/06/150600536", 128);
+	ModPlayVoiceLS(4, 6, "s06/06/150600536", 128);
 	OutputLine(NULL, "「ま、まぁ……あはははは、なれるなら、なれたらいいかなぁ…、なんて…！",
 		   NULL, "\"W-Well, yeah... ahahahaha. I'm trying...", Line_WaitForInput);
-	PlayVoice(4, "s06/06/150600537", 128);
+	ModPlayVoiceLS(4, 6, "s06/06/150600537", 128);
 	OutputLine(NULL, "　たはは…。」",
 		   NULL, " hahaha...\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -1319,20 +1319,20 @@ void main()
 		   NULL, "I didn't know what I was saying.", Line_Normal);
 	ClearMessage();
 	DisableWindow();
-	DrawBustshot( 2, "iri3_Majime2_0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
+	ModDrawCharacter(2, 10, "iri3_Majime2_0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
 	DisplayWindow();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#c89a80>入江</color>", NULL, "<color=#c89a80>Irie</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "s06/10/151000064", 128);
+	ModPlayVoiceLS(4, 10, "s06/10/151000064", 128);
 	OutputLine(NULL, "「………北条さんですね。",
 		   NULL, "\"...You know, regarding Houjou-san...", Line_WaitForInput);
-	PlayVoice(4, "s06/10/151000065", 128);
+	ModPlayVoiceLS(4, 10, "s06/10/151000065", 128);
 	OutputLine(NULL, "…最近、また少し体調を崩してるみたいなんです。」",
 		   NULL, " He seems a little sick again lately.\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "s06/06/150600538", 128);
+	ModPlayVoiceLS(4, 6, "s06/06/150600538", 128);
 	OutputLine(NULL, "「……………え？」",
 		   NULL, "\"............What?\"", Line_Normal);
 	ClearMessage();
@@ -1367,22 +1367,22 @@ void main()
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#c89a80>入江</color>", NULL, "<color=#c89a80>Irie</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "s06/10/151000066", 128);
+	ModPlayVoiceLS(4, 10, "s06/10/151000066", 128);
 	OutputLine(NULL, "「叔母さんがかなり大人げない苛め方をしているらしいんです。",
 		   NULL, "\"Their aunt is bullying Satoko-chan in a terrible way...", Line_WaitForInput);
-	PlayVoice(4, "s06/10/151000067", 128);
+	ModPlayVoiceLS(4, 10, "s06/10/151000067", 128);
 	OutputLine(NULL, "……沙都子ちゃん、…本当に可哀想なくらいに、ぼろぼろになって。",
 		   NULL, " She's become worn out after all that,", Line_WaitForInput);
-	PlayVoice(4, "s06/10/151000068", 128);
+	ModPlayVoiceLS(4, 10, "s06/10/151000068", 128);
 	OutputLine(NULL, "なにしろ聞いた話では、」",
 		   NULL, " and...\"", Line_Normal);
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "s06/06/150600539", 128);
+	ModPlayVoiceLS(4, 6, "s06/06/150600539", 128);
 	OutputLine(NULL, "「で。",
 		   NULL, "\"So,", Line_WaitForInput);
-	PlayVoice(4, "s06/06/150600540", 128);
+	ModPlayVoiceLS(4, 6, "s06/06/150600540", 128);
 	OutputLine(NULL, "それを庇う悟史くんも、………ぼろぼろになっている、",
 		   NULL, " Satoshi-kun is also worn out...", Line_Continue);
 	// (backup) SetValidityOfInput( FALSE );
@@ -1474,13 +1474,13 @@ void main()
 		   NULL, "...I felt jealous because she was monopolizing him.", Line_Normal);
 	ClearMessage();
 	DrawSceneWithMask( "Oki_G3", "maskup", 1, 0, 300 );
-	DrawBustshot( 2, "iri3_Majime2_0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
+	ModDrawCharacter(2, 10, "iri3_Majime2_0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#c89a80>入江</color>", NULL, "<color=#c89a80>Irie</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "s06/10/151000069", 128);
+	ModPlayVoiceLS(4, 10, "s06/10/151000069", 128);
 	OutputLine(NULL, "「最近、沙都子ちゃんへの叔母さんの苛めがだいぶエスカレートしてるみたいです。",
 		   NULL, "\"It seems that their aunt has been tyrannizing Satoko-chan even more lately...", Line_WaitForInput);
-	PlayVoice(4, "s06/10/151000070", 128);
+	ModPlayVoiceLS(4, 10, "s06/10/151000070", 128);
 	OutputLine(NULL, "…悟史くんの体調不良も、それに比例しているんでしょうね…。」",
 		   NULL, " That must be what's causing Satoshi-kun's sickness.\"", Line_Normal);
 	ClearMessage();
@@ -1507,37 +1507,37 @@ void main()
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "s06/06/150600541", 128);
+	ModPlayVoiceLS(4, 6, "s06/06/150600541", 128);
 	OutputLine(NULL, "「…監督はストレスに押し潰されそうな悟史くんを救うため、野球に誘ったんですよね？」",
 		   NULL, "\"...So, you invited him to join the team to relieve his stress, didn't you?\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#c89a80>入江</color>", NULL, "<color=#c89a80>Irie</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "s06/10/151000071", 128);
+	ModPlayVoiceLS(4, 10, "s06/10/151000071", 128);
 	OutputLine(NULL, "「えぇ。",
 		   NULL, "\"Yes,", Line_WaitForInput);
-	PlayVoice(4, "s06/10/151000072", 128);
+	ModPlayVoiceLS(4, 10, "s06/10/151000072", 128);
 	OutputLine(NULL, "そのつもりでした。」",
 		   NULL, " that's right.\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "s06/06/150600542", 128);
+	ModPlayVoiceLS(4, 6, "s06/06/150600542", 128);
 	OutputLine(NULL, "「………こうして野球をやっている今。",
 		   NULL, "\"...But he looks stressed again now.", Line_WaitForInput);
-	PlayVoice(4, "s06/06/150600543", 128);
+	ModPlayVoiceLS(4, 6, "s06/06/150600543", 128);
 	OutputLine(NULL, "またストレスに押し潰されそうになっている悟史くんに、…今度は何を誘えばいいんですか？」",
 		   NULL, " How can we save him this time?\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 	DisableWindow();
-	DrawBustshot( 2, "iri3_Def2_0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
+	ModDrawCharacter(2, 10, "iri3_Def2_0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
 	DisplayWindow();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#c89a80>入江</color>", NULL, "<color=#c89a80>Irie</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "s06/10/151000073", 128);
+	ModPlayVoiceLS(4, 10, "s06/10/151000073", 128);
 	OutputLine(NULL, "「…………………ははは。",
 		   NULL, "\"..................Hahaha.", Line_WaitForInput);
-	PlayVoice(4, "s06/10/151000074", 128);
+	ModPlayVoiceLS(4, 10, "s06/10/151000074", 128);
 	OutputLine(NULL, "どうすればいいんでしょうねぇ…。」",
 		   NULL, " I don't know...\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -1552,59 +1552,59 @@ void main()
 		   NULL, "...I couldn't help feeling a bit disappointed about that, because Satoshi-kun put his trust in him.", Line_Normal);
 	ClearMessage();
 	DisableWindow();
-	DrawBustshot( 2, "iri3_Def1_0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
+	ModDrawCharacter(2, 10, "iri3_Def1_0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
 	DisplayWindow();
 	PlayBGM( 0, "semi", 120, 0 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#c89a80>入江</color>", NULL, "<color=#c89a80>Irie</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "s06/10/151000075", 128);
+	ModPlayVoiceLS(4, 10, "s06/10/151000075", 128);
 	OutputLine(NULL, "「内緒にしてくださいよ？",
 		   NULL, "\"Just between you and me......", Line_WaitForInput);
-	PlayVoice(4, "s06/10/151000076", 128);
+	ModPlayVoiceLS(4, 10, "s06/10/151000076", 128);
 	OutputLine(NULL, "　………実はですね、悟史くん。",
 		   NULL, " Satoshi-kun recently told me", Line_WaitForInput);
-	PlayVoice(4, "s06/10/151000077", 128);
+	ModPlayVoiceLS(4, 10, "s06/10/151000077", 128);
 	OutputLine(NULL, "…………チームを抜けたいって、…そう漏らすんですよ最近。」",
 		   NULL, " that he wanted to leave the team.\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "s06/06/150600544", 128);
+	ModPlayVoiceLS(4, 6, "s06/06/150600544", 128);
 	OutputLine(NULL, "「え？",
 		   NULL, "\"Eh?", Line_WaitForInput);
-	PlayVoice(4, "s06/06/150600545", 128);
+	ModPlayVoiceLS(4, 6, "s06/06/150600545", 128);
 	OutputLine(NULL, "　………ど、……どうして………。」",
 		   NULL, " ...How come...?\"", Line_Normal);
 	ClearMessage();
 	DisableWindow();
-	DrawBustshot( 2, "iri3_Def2_0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
+	ModDrawCharacter(2, 10, "iri3_Def2_0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
 	DisplayWindow();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#c89a80>入江</color>", NULL, "<color=#c89a80>Irie</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "s06/10/151000078", 128);
+	ModPlayVoiceLS(4, 10, "s06/10/151000078", 128);
 	OutputLine(NULL, "「疲れるから、だそうです。",
 		   NULL, "\"He claimed he was tired of it...", Line_WaitForInput);
-	PlayVoice(4, "s06/10/151000079", 128);
+	ModPlayVoiceLS(4, 10, "s06/10/151000079", 128);
 	OutputLine(NULL, "……というのは表向き。",
 		   NULL, " That's what he said,", Line_WaitForInput);
-	PlayVoice(4, "s06/10/151000080", 128);
+	ModPlayVoiceLS(4, 10, "s06/10/151000080", 128);
 	OutputLine(NULL, "……沙都子ちゃんと一緒にいる時間を増やしてあげるためじゃないかと思ってます。",
 		   NULL, " but I believe he actually wants to spend more time with Satoko-chan.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#c89a80>入江</color>", NULL, "<color=#c89a80>Irie</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "s06/10/151000081", 128);
+	ModPlayVoiceLS(4, 10, "s06/10/151000081", 128);
 	OutputLine(NULL, "　悟史くんは、野球をしている間、沙都子ちゃんが叔母さんに苛められているかもしれない。",
 		   NULL, "He thinks that Satoko-chan might end up being tortured while he's at practice.", Line_WaitForInput);
-	PlayVoice(4, "s06/10/151000082", 128);
+	ModPlayVoiceLS(4, 10, "s06/10/151000082", 128);
 	OutputLine(NULL, "その時、沙都子ちゃんの側にいられないことが…兄として辛いと、そう思っているのかもしれません。」",
 		   NULL, " I think he's concerned about that.\"", Line_Normal);
 	ClearMessage();
 	DrawScene( "black", 400 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "s06/06/150600546", 128);
+	ModPlayVoiceLS(4, 6, "s06/06/150600546", 128);
 	OutputLine(NULL, "「……………………………………。」",
 		   NULL, "\".....................\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -1725,10 +1725,10 @@ void main()
 	ClearMessage();
 	FadeOutBGM( 0, 0, FALSE );
 	FadeOutBGM( 2, 0, FALSE );
-	DrawBustshot( 19, "no_data", 0, 100, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, TRUE );
+	ModDrawCharacter(19, 0, "no_data", 0, 100, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "s06/06/150600547", 128);
+	ModPlayVoiceLS(4, 6, "s06/06/150600547", 128);
 	OutputLine(NULL, "「…………悟史くんをどうこうするってより、沙都子をどうこうする方が先決では？」",
 		   NULL, "\"...Shouldn't we do something about Satoko instead?\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -1738,12 +1738,12 @@ void main()
 		   NULL, "It was just a murmur, but Irie had definitely caught it.", Line_Normal);
 	ClearMessage();
 	DisableWindow();
-	DrawBustshot( 2, "iri3_Def1_0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
+	ModDrawCharacter(2, 10, "iri3_Def1_0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
 	DisplayWindow();
 	PlayBGM( 0, "hgrs01", 120, 0 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#c89a80>入江</color>", NULL, "<color=#c89a80>Irie</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "s06/10/151000083", 128);
+	ModPlayVoiceLS(4, 10, "s06/10/151000083", 128);
 	OutputLine(NULL, "「………それは、",
 		   NULL, "\"...What...", Line_Continue);
 	// (backup) SetValidityOfInput( FALSE );
@@ -1754,22 +1754,22 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "s06/06/150600548", 128);
+	ModPlayVoiceLS(4, 6, "s06/06/150600548", 128);
 	OutputLine(NULL, "「別に、難しい話じゃないです。",
 		   NULL, "\"It's not that complicated...", Line_WaitForInput);
-	PlayVoice(4, "s06/06/150600549", 128);
+	ModPlayVoiceLS(4, 6, "s06/06/150600549", 128);
 	OutputLine(NULL, "…沙都子がしっかりしてくれれば、悟史くんに迷惑をかけることもない。",
 		   NULL, " If Satoko were stronger, Satoshi-kun wouldn't have to deal with stress.", Line_WaitForInput);
-	PlayVoice(4, "s06/06/150600550", 128);
+	ModPlayVoiceLS(4, 6, "s06/06/150600550", 128);
 	OutputLine(NULL, "沙都子がそもそもの原因である、ってことが言いたいだけです。」",
 		   NULL, " I think Satoko is the cause of everything.\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 	DisableWindow();
-	DrawBustshot( 2, "iri3_Majime2_0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
+	ModDrawCharacter(2, 10, "iri3_Majime2_0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
 	DisplayWindow();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#c89a80>入江</color>", NULL, "<color=#c89a80>Irie</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "s06/10/151000084", 128);
+	ModPlayVoiceLS(4, 10, "s06/10/151000084", 128);
 	OutputLine(NULL, "「…………ん、",
 		   NULL, "\".........Nn......", Line_Continue);
 	// (backup) SetValidityOfInput( FALSE );
@@ -1780,13 +1780,13 @@ void main()
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "s06/06/150600551", 128);
+	ModPlayVoiceLS(4, 6, "s06/06/150600551", 128);
 	OutputLine(NULL, "「でしょ？",
 		   NULL, "\"Yes, you do.", Line_WaitForInput);
-	PlayVoice(4, "s06/06/150600552", 128);
+	ModPlayVoiceLS(4, 6, "s06/06/150600552", 128);
 	OutputLine(NULL, "　だって、沙都子がトラブるから、悟史くんはそのトラブルに介入して矢面に立たなければならないんでしょ？",
 		   NULL, " If she didn't cause any trouble, he wouldn't have to step in, would he?", Line_WaitForInput);
-	PlayVoice(4, "s06/06/150600553", 128);
+	ModPlayVoiceLS(4, 6, "s06/06/150600553", 128);
 	OutputLine(NULL, "　で、その結果、本当は買わなくて済んだ叔母のケンカまで買ってるわけでしょ？」",
 		   NULL, " He wouldn't have to take over in the fight between Satoko and her aunt, right?\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
@@ -1865,27 +1865,27 @@ void main()
 		   NULL, "Because of Satoko... Satoshi-kun had become cornered and stressed.", Line_Normal);
 	ClearMessage();
 	DrawScene( "Oki_G3", 400 );
-	DrawBustshot( 2, "iri3_Majime_0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
+	ModDrawCharacter(2, 10, "iri3_Majime_0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
 	PlayBGM( 1, "semi", 120, 0 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#c89a80>入江</color>", NULL, "<color=#c89a80>Irie</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "s06/10/151000085", 128);
+	ModPlayVoiceLS(4, 10, "s06/10/151000085", 128);
 	OutputLine(NULL, "「園崎さん、…あなたがそんな言い方をする人だったとは驚きです。",
 		   NULL, "\"I'm surprised to hear this from you, Sonozaki-san...", Line_WaitForInput);
-	PlayVoice(4, "s06/10/151000086", 128);
+	ModPlayVoiceLS(4, 10, "s06/10/151000086", 128);
 	OutputLine(NULL, "……あなたは沙都子ちゃんのお友達でしょう？",
 		   NULL, " I thought you were Satoko-chan's friend, her classmate,", Line_WaitForInput);
-	PlayVoice(4, "s06/10/151000087", 128);
+	ModPlayVoiceLS(4, 10, "s06/10/151000087", 128);
 	OutputLine(NULL, "　お姉さん的な立場でしょう？",
 		   NULL, " a big sister kind of figure...", Line_WaitForInput);
-	PlayVoice(4, "s06/10/151000088", 128);
+	ModPlayVoiceLS(4, 10, "s06/10/151000088", 128);
 	OutputLine(NULL, "　……普段も学校で、沙都子ちゃんを慰めたり、励ましたりしているものだと思っていました。",
 		   NULL, " I thought you'd always be on her side.", Line_WaitForInput);
-	PlayVoice(4, "s06/10/151000089", 128);
+	ModPlayVoiceLS(4, 10, "s06/10/151000089", 128);
 	OutputLine(NULL, "…………なのに、…そんな言い方をするなんて。",
 		   NULL, " ...But what you've said is... ", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#c89a80>入江</color>", NULL, "<color=#c89a80>Irie</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "s06/10/151000090", 128);
+	ModPlayVoiceLS(4, 10, "s06/10/151000090", 128);
 	OutputLine(NULL, "………………正直、驚いています。」",
 		   NULL, "surprising to me.\"", Line_Normal);
 	ClearMessage();
@@ -1950,7 +1950,7 @@ void main()
 		   NULL, "..................I'd totally messed up.", Line_Normal);
 	ClearMessage();
 	FadeOutBGM( 1, 0, FALSE );
-	DrawBustshot( 19, "no_data", 0, 100, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, TRUE );
+	ModDrawCharacter(19, 0, "no_data", 0, 100, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　だが、………私はおかしいことを言ったつもりはない。",
@@ -2053,10 +2053,10 @@ void main()
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "s06/06/150600554", 128);
+	ModPlayVoiceLS(4, 6, "s06/06/150600554", 128);
 	OutputLine(NULL, "「……落ち着け……。",
 		   NULL, "\"...Calm down...", Line_WaitForInput);
-	PlayVoice(4, "s06/06/150600555", 128);
+	ModPlayVoiceLS(4, 6, "s06/06/150600555", 128);
 	OutputLine(NULL, "……………私…。」",
 		   NULL, " Shion......\"", Line_Normal);
 	ClearMessage();
@@ -2127,10 +2127,10 @@ void main()
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>審判</color>", NULL, "<color=#f5e6d3>Referee</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "s06/00/judge15001", 128);
+	ModPlayVoiceLS(4, 0, "s06/00/judge15001", 128);
 	OutputLine(NULL, "「ゲームセット！",
 		   NULL, "\"Game set!", Line_WaitForInput);
-	PlayVoice(4, "s06/00/judge15002", 128);
+	ModPlayVoiceLS(4, 0, "s06/00/judge15002", 128);
 	OutputLine(NULL, "　試合終了〜〜〜！！！！」",
 		   NULL, " And match!!!!\"", Line_Normal);
 	ClearMessage();
@@ -2141,5 +2141,5 @@ void main()
 	FadeOutBGM( 1, 0, FALSE );
 	FadeOutBGM( 2, 0, FALSE );
 	FadeOutBGM( 3, 0, FALSE );
-	DrawBustshot( 19, "no_data", 0, 100, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, TRUE );
+	ModDrawCharacter(19, 0, "no_data", 0, 100, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, TRUE );
 }

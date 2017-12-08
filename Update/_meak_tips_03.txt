@@ -49,12 +49,12 @@ void main()
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#ffdc6f>悟史</color>", NULL, "<color=#ffdc6f>Satoshi</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "s20/07/443300006", 128);
+	ModPlayVoiceLS(4, 7, "s20/07/443300006", 128);
 	OutputLine(NULL, "「ほら、沙都子。",
 		   NULL, "\"Here, Satoko.", Line_WaitForInput);
 	OutputLine(NULL, "…布団が敷けたよ？",
 		   NULL, " Your futon is ready,", Line_WaitForInput);
-	PlayVoice(4, "s20/07/443300007", 128);
+	ModPlayVoiceLS(4, 7, "s20/07/443300007", 128);
 	OutputLine(NULL, "　布団に入りな。」",
 		   NULL, " so get in, okay?\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }

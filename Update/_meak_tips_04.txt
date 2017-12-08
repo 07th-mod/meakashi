@@ -19,7 +19,7 @@ void main()
 	DrawFilm( 2, 0x88, 0x88, 0x88, 256, 0, 0, TRUE );
 
 	DisableWindow();
-	DrawBustshot( 2, "Re_DefA1", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
+	ModDrawCharacter(2, 2, "Re_DefA1", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
 	DisplayWindow();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }

@@ -16,7 +16,7 @@ void main()
 	ClearMessage();
 	PlaySE( 0, "s_page", 128, 64 );
 	DrawSceneWithMask( "black", "maskright", 7, 0, 300 );
-	DrawBustshotWithFiltering( 0, "ta_si_de_a1", "maskright", 7, 0, 0, FALSE, 0, 0, 0, 0, 0, 9, 0, FALSE );
+	ModDrawCharacterWithFiltering(0, 9, "ta_si_de_a1", "maskright", 7, 0, 0, FALSE, 0, 0, 0, 0, 0, 9, 0, FALSE );
 	DrawSceneWithMask( "Tosyo8", "maskright", 7, 0, 300 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
