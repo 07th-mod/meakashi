@@ -8,7 +8,7 @@ void main()
 	ClearMessage();
 
 	PlayBGM( 0, "Nazo", 120, 0 );
-	DrawScene( "nort", 1000 );
+	DrawScene("background/nort", 1000 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　大石の言う、沙都子の面倒を見るからと園崎家が言い含め、悟史くんを雛見沢から放逐した……というのは、",
@@ -22,7 +22,7 @@ void main()
 	OutputLine(NULL, "　だが、後になって考え直して見ると、それは私が馬鹿にするほどズレた話でもない。",
 		   NULL, "But thinking about it now, it doesn't seem too far-fetched.", Line_Normal);
 	ClearMessage();
-	DrawScene( "black", 400 );
+	DrawScene("black", 400 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　だって、北条沙都子は、ひとりになったあと、古手梨花と生活を共にしているのだ。",
@@ -51,7 +51,7 @@ void main()
 	OutputLine(NULL, "事実上、北条沙都子は御三家の保護下に入っていた。",
 		   NULL, " but Satoko Houjou is in the custody of the Three Families now.", Line_Normal);
 	ClearMessage();
-	DrawScene( "nort", 400 );
+	DrawScene("background/nort", 400 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　ダム戦争中、鬼ヶ淵死守同盟からあれほどまでに攻撃をされた北条家の生き残りが、御三家に保護されているなんて。",
@@ -70,5 +70,5 @@ void main()
 		   NULL, "Why was she spared, even though Satoshi-kun wasn't?", Line_Normal);
 	ClearMessage();
 	Wait( 1000 );
-	DrawScene( "black", 1000 );
+	DrawScene("black", 1000 );
 }

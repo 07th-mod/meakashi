@@ -8,7 +8,7 @@ void main()
 	ClearMessage();
 
 	PlayBGM( 0, "getting_mad", 120, 0 );
-	DrawScene( "nort", 400 );
+	DrawScene("background/nort", 400 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　鬼婆が即死していたのは、本当に計算外だった。",
@@ -95,5 +95,5 @@ void main()
 		   NULL, "Considering that, the fact that the hag died before I could interrogate her is a huge loss...", Line_Normal);
 	ClearMessage();
 	Wait( 1000 );
-	DrawScene( "black", 1000 );
+	DrawScene("black", 1000 );
 }

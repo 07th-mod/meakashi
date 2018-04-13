@@ -10,67 +10,67 @@ void main()
 	Wait( 2000 );
 	SetValidityOfInput( TRUE );
 	FadeOutBGM( 1, 0, FALSE );
-	ModDrawCharacter(19, 0, "no_data", 0, 100, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, TRUE );
+	ModDrawCharacter(19, 0, "transparent", "0", 0, 100, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, TRUE );
 	SetValidityOfInput( FALSE );
 	Wait( 2000 );
 	SetValidityOfInput( TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 3, "s06/03/150300056", 128);
+	ModPlayVoiceLS(4, 3, "s06/03/150300056", 128, TRUE);
 	OutputLine(NULL, "「うん。",
 		   NULL, "\"Mm.", Line_WaitForInput);
-	ModPlayVoiceLS(4, 3, "s06/03/150300057", 128);
+	ModPlayVoiceLS(4, 3, "s06/03/150300057", 128, TRUE);
 	OutputLine(NULL, "奇病ってのは尾ひれだと思うけどね。",
 		   NULL, " I don't think the bit about the illness is true,", Line_WaitForInput);
-	ModPlayVoiceLS(4, 3, "s06/03/150300058", 128);
+	ModPlayVoiceLS(4, 3, "s06/03/150300058", 128, TRUE);
 	OutputLine(NULL, "急死したってのは本当。",
 		   NULL, " but his death was very sudden.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 3, "s06/03/150300059", 128);
+	ModPlayVoiceLS(4, 3, "s06/03/150300059", 128, TRUE);
 	OutputLine(NULL, "　神主さんは綿流しの準備で大変だったと思うし、あの頃は少し体調を崩してたみたいだからね。",
 		   NULL, "The priest was busy preparing for the festival and he'd gotten sick around that time,", Line_WaitForInput);
-	ModPlayVoiceLS(4, 3, "s06/03/150300060", 128);
+	ModPlayVoiceLS(4, 3, "s06/03/150300060", 128, TRUE);
 	OutputLine(NULL, "急性心不全とかそうゆう感じの、よくあるヤツだったんだと私は思ってるけどね。」",
 		   NULL, " so I guess he died of a heart attack or something.\"", Line_Normal);
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 6, "s06/06/150600206", 128);
+	ModPlayVoiceLS(4, 6, "s06/06/150600206", 128, TRUE);
 	OutputLine(NULL, "「でも綿流しの日にってのが異常でしょ。",
 		   NULL, "\"But it's just crazy that somebody died on the day of Watanagashi again.", Line_WaitForInput);
-	ModPlayVoiceLS(4, 6, "s06/06/150600207", 128);
+	ModPlayVoiceLS(4, 6, "s06/06/150600207", 128, TRUE);
 	OutputLine(NULL, "それも三年連続で。",
 		   NULL, " It's the third time in a row.", Line_WaitForInput);
-	ModPlayVoiceLS(4, 6, "s06/06/150600208", 128);
+	ModPlayVoiceLS(4, 6, "s06/06/150600208", 128, TRUE);
 	OutputLine(NULL, "普通に考えたら、人の死がこうも同じ日に重なるなんてことは考えられない。」",
 		   NULL, " It's unbelievable that so many people have died on the exact same day.\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 3, "s06/03/150300061", 128);
+	ModPlayVoiceLS(4, 3, "s06/03/150300061", 128, TRUE);
 	OutputLine(NULL, "「警察も検死したみたいだけど、その後、特に騒がなかったってことは、死因に不審な点はなかったってことじゃないの？",
 		   NULL, "\"The coroner didn't find anything unusual about the cause of death, so nobody suspected that anything was wrong...", Line_WaitForInput);
-	ModPlayVoiceLS(4, 3, "s06/03/150300062", 128);
+	ModPlayVoiceLS(4, 3, "s06/03/150300062", 128, TRUE);
 	OutputLine(NULL, "　……まぁでも、詩音の言う通り、人の死が三年も続いて綿流しの日に重なると、やっぱり普通じゃないって思うね。」",
 		   NULL, " But you're right that the whole situation is abnormal.\"", Line_Normal);
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 6, "s06/06/150600209", 128);
+	ModPlayVoiceLS(4, 6, "s06/06/150600209", 128, TRUE);
 	OutputLine(NULL, "「それに、さっきお姉も言った通り、オヤシロさまに祟られそうな人ばかり怪死する。",
 		   NULL, "\"Only the people who were likely to be cursed died on the day of the festival.", Line_WaitForInput);
-	ModPlayVoiceLS(4, 6, "s06/06/150600210", 128);
+	ModPlayVoiceLS(4, 6, "s06/06/150600210", 128, TRUE);
 	OutputLine(NULL, "これは絶対に何かあります。",
 		   NULL, " There must be something behind this.", Line_WaitForInput);
-	ModPlayVoiceLS(4, 6, "s06/06/150600211", 128);
+	ModPlayVoiceLS(4, 6, "s06/06/150600211", 128, TRUE);
 	OutputLine(NULL, "祟りでも陰謀でも、とにかく絶対裏に何か因果関係がある。」",
 		   NULL, " Whether it's a conspiracy or a curse, there has to be.\"", Line_Normal);
 	ClearMessage();
-	DrawScene( "black", 400 );
+	DrawScene("black", 400 );
 	PlayBGM( 1, "Mati", 120, 0 );
-	DrawSceneWithMask( "Tosyo1", "maskright", 1, 0, 300 );
+	DrawSceneWithMask("background/tosyo1", "maskright", 1, 0, 300 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　魅音とは興宮駅に近い図書館で落ち合う事にした。",
@@ -81,8 +81,8 @@ void main()
 	OutputLine(NULL, "　…魅音を信用しないわけじゃないが、私の住んでいる場所をわざわざ知らせる必要はない。",
 		   NULL, "...It's not that I don't trust Mion, but I don't want to let her know where I live.", Line_Normal);
 	ClearMessage();
-	DrawSceneWithMask( "white", "maskright", 1, 0, 300 );
-	DrawSceneWithMask( "Tosyo8", "maskright", 1, 0, 300 );
+	DrawSceneWithMask("white", "maskright", 1, 0, 300 );
+	DrawSceneWithMask("background/tosyo2", "maskright", 1, 0, 300 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　この、賑わいのない図書館は、町の人間もそんなには使わないし、ましてや雛見沢の人間はさらに使わない。",
@@ -115,7 +115,7 @@ void main()
 	OutputLine(NULL, "　…私はそういう様々な変化を魅音から聞き出し、空白の一年を取り戻そうとしていた。",
 		   NULL, "...I asked Mion about those changes in detail, in order to fill in the gaps.", Line_Normal);
 	ClearMessage();
-	DrawSceneWithMask( "black", "maskdown", 1, 0, 300 );
+	DrawSceneWithMask("black", "maskdown", 1, 0, 300 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　そして…たくさんの話をする内に、さっきバイトの打合せに言った時、叔父さんに最後にされた話…。",
@@ -128,7 +128,7 @@ void main()
 		   NULL, "About Oyashiro-sama's curse.", Line_Normal);
 	ClearMessage();
 	FadeOutBGM( 1, 0, FALSE );
-	ModDrawCharacter(19, 0, "no_data", 0, 100, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, TRUE );
+	ModDrawCharacter(19, 0, "transparent", "0", 0, 100, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, TRUE );
 	PlayBGM( 0, "Nazo", 120, 0 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -140,20 +140,20 @@ void main()
 	OutputLine(NULL, "　祟りはすでに二年連続で起きていた。",
 		   NULL, "The curse had already struck twice.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
-	DrawScene( "ryuuketu1", 200 );
+	DrawScene("background/ryuuketu1", 200 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　一年目の現場監督バラバラ殺人も結構インパクトがあった。",
 		   NULL, "The dismemberment murder on the first year left quite an impact.", Line_Normal);
 	ClearMessage();
-	DrawScene( "black", 400 );
+	DrawScene("black", 400 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　そして翌年。",
 		   NULL, "And the year after--", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
-	DrawScene( "ji2++", 400 );
+	DrawScene("ji2++", 400 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　ダム計画の凍結が発表され、勝利に沸き返る雛見沢で迎えた綿流しの祭の日に、",
@@ -167,7 +167,7 @@ void main()
 	OutputLine(NULL, "　これも…相当のインパクトがあった。",
 		   NULL, "This one also left quite the impact.", Line_Normal);
 	ClearMessage();
-	DrawScene( "Ji2+", 400 );
+	DrawScene("ji2+", 400 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　雛見沢を穢すダム現場の監督に天誅が下り、そして次に村の裏切り者に天誅が下る。",
@@ -187,7 +187,7 @@ void main()
 	OutputLine(NULL, "　という、そういうムードだった。",
 		   NULL, " people were far more likely to believe it was a curse.", Line_Normal);
 	ClearMessage();
-	DrawScene( "black", 400 );
+	DrawScene("black", 400 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　私が知るのはここまで。",
@@ -235,33 +235,33 @@ void main()
 	OutputLine(NULL, "雛見沢の村人たちから、あまりいい目で見られてなかった事実があると、…その信憑性はますます高まった。",
 		   NULL, " the fact that people in Hinamizawa didn't care for him much... added even more credibility to the idea.", Line_Normal);
 	ClearMessage();
-	DrawSceneWithMask( "Tosyo8", "maskright", 1, 0, 300 );
-	ModDrawCharacter(2, 3, "me_defa1#", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
+	DrawSceneWithMask("background/tosyo2", "maskright", 1, 0, 300 );
+	ModDrawCharacter(2, 3, "sprite/normal/me2_def_a1_", "2", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 6, "s06/06/150600212", 128);
+	ModPlayVoiceLS(4, 6, "s06/06/150600212", 128, TRUE);
 	OutputLine(NULL, "「神主は確か……嫌われてませんでした？",
 		   NULL, "\"Wasn't the priest... hated by a few?", Line_WaitForInput);
-	ModPlayVoiceLS(4, 6, "s06/06/150600213", 128);
+	ModPlayVoiceLS(4, 6, "s06/06/150600213", 128, TRUE);
 	OutputLine(NULL, "　同盟の役員から。」",
 		   NULL, " Especially by the committee members?\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 3, "s06/03/150300063", 128);
+	ModPlayVoiceLS(4, 3, "s06/03/150300063", 128, TRUE);
 	OutputLine(NULL, "「うん。",
 		   NULL, "\"Yeah.", Line_WaitForInput);
-	ModPlayVoiceLS(4, 3, "s06/03/150300064", 128);
+	ModPlayVoiceLS(4, 3, "s06/03/150300064", 128, TRUE);
 	OutputLine(NULL, "日和見主義なんじゃないかって叩かれてたね。",
 		   NULL, " They criticized him for being a fence-sitter.", Line_WaitForInput);
-	ModPlayVoiceLS(4, 3, "s06/03/150300065", 128);
+	ModPlayVoiceLS(4, 3, "s06/03/150300065", 128, TRUE);
 	OutputLine(NULL, "戦争末期は、同盟内でも過激な理論がまかり通ってたから。",
 		   NULL, " Toward the end of the dam conflict, the protesters were all taking aggressive stances,", Line_WaitForInput);
-	ModPlayVoiceLS(4, 3, "s06/03/150300066", 128);
+	ModPlayVoiceLS(4, 3, "s06/03/150300066", 128, TRUE);
 	OutputLine(NULL, "神主さんの穏健な態度はそういう人たちにとって、気に食わないものだったと思うね。」",
 		   NULL, " so they didn't like how soft he was being.\"", Line_Normal);
 	ClearMessage();
-	DrawScene( "Ji5", 400 );
+	DrawScene("background/ji1", 400 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　神主は顔は厳めしいし、言葉遣いもどことなく硬くて、確かにぱっと見、おっかなそうな人だった。",
@@ -290,7 +290,7 @@ void main()
 	OutputLine(NULL, "ダム戦争勃発と同時に結成された反ダム抵抗組織、鬼ヶ淵死守同盟の事務所所在地になった途端に、その雰囲気をがらりと変えることになる…。",
 		   NULL, " changed completely when the dam war broke out and it became the headquarters for the Onigafuchi Guardians.", Line_Normal);
 	ClearMessage();
-	DrawScene( "Ji2", 400 );
+	DrawScene("background/ji2", 400 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　そもそもダム戦争以前は、オヤシロさまはそんなに祭られていなかった。",
@@ -331,7 +331,7 @@ void main()
 	OutputLine(NULL, "　だからこそ、時代の移り変わりと共に廃れた思想だった。",
 		   NULL, "So this doctrine was abandoned over time.", Line_Normal);
 	ClearMessage();
-	DrawSceneWithMask( "Hi2", "maskleft", 1, 0, 300 );
+	DrawSceneWithMask("background/hi1", "maskleft", 1, 0, 300 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　だが、その思想はしっかりと残っていて、ダム計画に対抗するために郷土は団結せよというナショナリズムの煽りに掘り起こされる形で、復活してきたのだ。",
@@ -372,7 +372,7 @@ void main()
 	OutputLine(NULL, "前にも述べた通り、子どもたちにとってはあれは戦争というよりは戦争ごっこで、村全体が一丸となるお祭のようなものだったのだ。",
 		   NULL, " but like I said before, for us kids it felt less like a war and more like a village-wide festival.", Line_Normal);
 	ClearMessage();
-	DrawScene( "Ho1_Houjouke", 400 );
+	DrawScene("background/ho1", 400 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　………だが、お祭とは言っても、異論を唱える者についてはその扱いは冷淡だった。",
@@ -424,10 +424,10 @@ void main()
 	OutputLine(NULL, "神主だった。",
 		   NULL, " the priest.", Line_Normal);
 	ClearMessage();
-	DrawScene( "black", 400 );
+	DrawScene("black", 400 );
 	FadeFilm( 0, TRUE );
 
-	DrawSceneWithMask( "ji5", "maskright", 1, 0, 300 );
+	DrawSceneWithMask("background/ji1", "maskright", 1, 0, 300 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　神主は、反ダムに異論は唱えなかったものの、",
@@ -459,11 +459,11 @@ void main()
 	OutputLine(NULL, "今にきっとオヤシロさまのバチが当たる…、と噂し合っていた……。",
 		   NULL, " that Oyashiro-sama's curse would soon strike him down... along with other rumors...", Line_Normal);
 	ClearMessage();
-	DrawSceneWithMask( "Tosyo8", "maskup", 1, 0, 300 );
-	ModDrawCharacter(2, 3, "me_defa1#", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
+	DrawSceneWithMask("background/tosyo2", "maskup", 1, 0, 300 );
+	ModDrawCharacter(2, 3, "sprite/normal/me2_def_a1_", "2", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 6, "s06/06/150600214", 128);
+	ModPlayVoiceLS(4, 6, "s06/06/150600214", 128, TRUE);
 	OutputLine(NULL, "「今にして考えると、神主さんって結構オトナだったのかもね、って思いません？」",
 		   NULL, "\"Don't you think the priest was more mature than those around him?\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
@@ -483,7 +483,7 @@ void main()
 	FadeOutBGM( 1, 0, FALSE );
 	FadeOutBGM( 2, 0, FALSE );
 	FadeOutBGM( 3, 0, FALSE );
-	ModDrawCharacter(19, 0, "no_data", 0, 100, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, TRUE );
+	ModDrawCharacter(19, 0, "transparent", "0", 0, 100, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　……だから、魅音が苦笑いしながら、…私の意見に同調しなかった時、",
@@ -496,26 +496,26 @@ void main()
 	ClearMessage();
 	PlayBGM( 0, "higurashi", 120, 0 );
 	DisableWindow();
-	ModDrawCharacterWithFiltering(0, 3, "me_sinmyoua1#", "maskright", 1, 0, 0, FALSE, 0, 0, 0, 0, 0, 9, 300, TRUE );
+	ModDrawCharacterWithFiltering(0, 3, "sprite/normal/me2_sinmyou_a1_", "0", "maskright", 1, 0, 0, FALSE, 0, 0, 0, 0, 0, 9, 300, TRUE );
 	DisplayWindow();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 3, "s06/03/150300067", 128);
+	ModPlayVoiceLS(4, 3, "s06/03/150300067", 128, TRUE);
 	OutputLine(NULL, "「…うーん…。",
 		   NULL, "\"...Hmm...", Line_WaitForInput);
-	ModPlayVoiceLS(4, 3, "s06/03/150300068", 128);
+	ModPlayVoiceLS(4, 3, "s06/03/150300068", 128, TRUE);
 	OutputLine(NULL, "本当に大人だったら、あそこは周りに合わせて協調すべきところだったと思うね。",
 		   NULL, " If he were really mature, I think he would have cooperated with the others. He should have appeased them.", Line_WaitForInput);
-	ModPlayVoiceLS(4, 3, "s06/03/150300069", 128);
+	ModPlayVoiceLS(4, 3, "s06/03/150300069", 128, TRUE);
 	OutputLine(NULL, "古手のおじさんは単に神社の神主だっただけじゃなく、仮にも御三家のひとつ、古手家の長だったんだからさ…。",
 		   NULL, " He wasn't just the head priest, he was also the head of the Furude family...", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 3, "s06/03/150300070", 128);
+	ModPlayVoiceLS(4, 3, "s06/03/150300070", 128, TRUE);
 	OutputLine(NULL, "　雛見沢全体が結束しなくちゃならない時に、模範となるべき御三家の人間が、自分から和を乱すのは……、",
 		   NULL, "That was a time when all of Hinamizawa needed to be united, so having one of the families, who are supposed to serve as examples, disturb that harmony was...", Line_WaitForInput);
-	ModPlayVoiceLS(4, 3, "s06/03/150300071", 128);
+	ModPlayVoiceLS(4, 3, "s06/03/150300071", 128, TRUE);
 	OutputLine(NULL, "それがオトナと呼べるかどうかは、",
 		   NULL, " I don't know if that should be called mature. ", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
@@ -534,10 +534,10 @@ void main()
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 6, "s06/06/150600215", 128);
+	ModPlayVoiceLS(4, 6, "s06/06/150600215", 128, TRUE);
 	OutputLine(NULL, "「……………………。",
 		   NULL, "\"...............", Line_WaitForInput);
-	ModPlayVoiceLS(4, 6, "s06/06/150600216", 128);
+	ModPlayVoiceLS(4, 6, "s06/06/150600216", 128, TRUE);
 	OutputLine(NULL, "………………ふぅん。」",
 		   NULL, "Uh-huh.\"", Line_Normal);
 	ClearMessage();
@@ -569,17 +569,17 @@ void main()
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 6, "s06/06/150600217", 128);
+	ModPlayVoiceLS(4, 6, "s06/06/150600217", 128, TRUE);
 	OutputLine(NULL, "「お姉の言う協調って言葉が、何だか好きじゃないんですけど。",
 		   NULL, "\"I don't really like that word you used, 'appease'.", Line_WaitForInput);
-	ModPlayVoiceLS(4, 6, "s06/06/150600218", 128);
+	ModPlayVoiceLS(4, 6, "s06/06/150600218", 128, TRUE);
 	OutputLine(NULL, "つまりそれって何？",
 		   NULL, " What are you trying to say?", Line_WaitForInput);
-	ModPlayVoiceLS(4, 6, "s06/06/150600219", 128);
+	ModPlayVoiceLS(4, 6, "s06/06/150600219", 128, TRUE);
 	OutputLine(NULL, "　村全体を考えて、神主さんは自分の考えを隠しているべきだったって、そういう話？",
 		   NULL, " Are you saying the priest should have thought of the village as a whole and kept his opinions a secret? ", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 6, "s06/06/150600220", 128);
+	ModPlayVoiceLS(4, 6, "s06/06/150600220", 128, TRUE);
 	OutputLine(NULL, "　要するに全体主義の中で個を主張するなと、そういう話？」",
 		   NULL, "Meaning people shouldn't assert the self before the whole?\"", Line_Normal);
 	ClearMessage();
@@ -588,10 +588,10 @@ void main()
 	DisplayWindow();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 3, "s06/03/150300072", 128);
+	ModPlayVoiceLS(4, 3, "s06/03/150300072", 128, TRUE);
 	OutputLine(NULL, "「…べ、別にそこまでは言わないけど…。",
 		   NULL, "\"...I-I'm not going that far...", Line_WaitForInput);
-	ModPlayVoiceLS(4, 3, "s06/03/150300073", 128);
+	ModPlayVoiceLS(4, 3, "s06/03/150300073", 128, TRUE);
 	OutputLine(NULL, "ただその、…やっぱり御三家の長のひとりなんだから、もう少し言動は慎重にしてもよかったんじゃないかって、…そういうことだよ。」",
 		   NULL, " It's just... I thought that, as a member of the Three Families, he should have acted more carefully... That's what I mean...\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -605,7 +605,7 @@ void main()
 	OutputLine(NULL, "　私は自分の言い方がきつい口調になっていたことに気付く。",
 		   NULL, "I realized I was speaking a bit too harshly.", Line_Normal);
 	ClearMessage();
-	DrawScene( "black", 400 );
+	DrawScene("black", 400 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　…魅音の言う話の方が、多分私たちの尺度でいうところのオトナの意見に違いなかった。",
@@ -682,14 +682,14 @@ void main()
 	OutputLine(NULL, "　この一年ちょっとの間に、魅音は…こんなにも「次期頭首」になっていたのだ。",
 		   NULL, "Mion has become very like a successor since I've been gone.", Line_Normal);
 	ClearMessage();
-	DrawSceneWithMask( "Tosyo8", "maskup", 1, 0, 300 );
-	ModDrawCharacter(2, 3, "me_defa1#", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
+	DrawSceneWithMask("background/tosyo2", "maskup", 1, 0, 300 );
+	ModDrawCharacter(2, 3, "sprite/normal/me2_def_a1_", "2", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 6, "s06/06/150600221", 128);
+	ModPlayVoiceLS(4, 6, "s06/06/150600221", 128, TRUE);
 	OutputLine(NULL, "「……ふぅん。",
 		   NULL, "\"...Uh-huh.", Line_WaitForInput);
-	ModPlayVoiceLS(4, 6, "s06/06/150600222", 128);
+	ModPlayVoiceLS(4, 6, "s06/06/150600222", 128, TRUE);
 	OutputLine(NULL, "お姉もいつの間に大人になっちゃいましたね。」",
 		   NULL, " You sound like a grownup now.\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -699,26 +699,26 @@ void main()
 		   NULL, "She seemed to get what I was implying.", Line_Normal);
 	ClearMessage();
 	DisableWindow();
-	ModDrawCharacter(2, 3, "me_sinmyoua1#", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
+	ModDrawCharacter(2, 3, "sprite/normal/me2_sinmyou_a1_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
 	DisplayWindow();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 3, "s06/03/150300074", 128);
+	ModPlayVoiceLS(4, 3, "s06/03/150300074", 128, TRUE);
 	OutputLine(NULL, "「…やっぱり、私も婆っちゃみたいな考え方になっちゃってきたかな…？」",
 		   NULL, "\"...Am I thinking like Granny now...?\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 6, "s06/06/150600223", 128);
+	ModPlayVoiceLS(4, 6, "s06/06/150600223", 128, TRUE);
 	OutputLine(NULL, "「いいじゃないですかー。",
 		   NULL, "\"That's good.", Line_WaitForInput);
-	ModPlayVoiceLS(4, 6, "s06/06/150600224", 128);
+	ModPlayVoiceLS(4, 6, "s06/06/150600224", 128, TRUE);
 	OutputLine(NULL, "お姉は次期頭首なんだから。",
 		   NULL, " You're the successor.", Line_WaitForInput);
-	ModPlayVoiceLS(4, 6, "s06/06/150600225", 128);
+	ModPlayVoiceLS(4, 6, "s06/06/150600225", 128, TRUE);
 	OutputLine(NULL, "いつまでも下々と同じ考え方じゃまずいでしょ。",
 		   NULL, " You shouldn't think like the rest.", Line_WaitForInput);
-	ModPlayVoiceLS(4, 6, "s06/06/150600226", 128);
+	ModPlayVoiceLS(4, 6, "s06/06/150600226", 128, TRUE);
 	OutputLine(NULL, "さっすが帝王学を学んだだけのことはある。」",
 		   NULL, " You've definitely learned the art of ruling.\"", Line_Normal);
 	ClearMessage();
@@ -727,29 +727,29 @@ void main()
 	DisplayWindow();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 3, "s06/03/150300075", 128);
+	ModPlayVoiceLS(4, 3, "s06/03/150300075", 128, TRUE);
 	OutputLine(NULL, "「そんなの学んでないよ。",
 		   NULL, "\"I never learned anything like that.", Line_WaitForInput);
-	ModPlayVoiceLS(4, 3, "s06/03/150300076", 128);
+	ModPlayVoiceLS(4, 3, "s06/03/150300076", 128, TRUE);
 	OutputLine(NULL, "どうやれば婆っちゃのふりができるかって、それだけだよ…。",
 		   NULL, " I'm just trying to act like her...", Line_WaitForInput);
 	DisableWindow();
 	ChangeBustshot( 2, "Me_AkuwaraiA1#", 200, TRUE );
 	DisplayWindow();
 
-	ModPlayVoiceLS(4, 3, "s06/03/150300077", 128);
+	ModPlayVoiceLS(4, 3, "s06/03/150300077", 128, TRUE);
 	OutputLine(NULL, "詩音にだって簡単にできるよ。」",
 		   NULL, " You can do it easily, too.\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 6, "s06/06/150600227", 128);
+	ModPlayVoiceLS(4, 6, "s06/06/150600227", 128, TRUE);
 	OutputLine(NULL, "「あははははは、そんなのやりたくないです。",
 		   NULL, "\"Aha ha ha ha. I don't want to.", Line_WaitForInput);
-	ModPlayVoiceLS(4, 6, "s06/06/150600228", 128);
+	ModPlayVoiceLS(4, 6, "s06/06/150600228", 128, TRUE);
 	OutputLine(NULL, "鬼婆のお守りは魅音のお役目。",
 		   NULL, " It's your role.", Line_WaitForInput);
-	ModPlayVoiceLS(4, 6, "s06/06/150600229", 128);
+	ModPlayVoiceLS(4, 6, "s06/06/150600229", 128, TRUE);
 	OutputLine(NULL, "ま、疲れない程度にほどほどに頑張りなさいませ。」",
 		   NULL, " Well, don't try too hard or you'll tire yourself out.\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -768,29 +768,29 @@ void main()
 	OutputLine(NULL, "　私は少し表情を和らげた。",
 		   NULL, "I smiled gently back at her.", Line_Normal);
 	ClearMessage();
-	DrawScene( "black", 1000 );
+	DrawScene("black", 1000 );
 	PlayBGM( 0, "demo_48khz", 120, 0 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 6, "s06/06/150600230", 128);
+	ModPlayVoiceLS(4, 6, "s06/06/150600230", 128, TRUE);
 	OutputLine(NULL, "「お姉。",
 		   NULL, "\"Sis......", Line_WaitForInput);
-	ModPlayVoiceLS(4, 6, "s06/06/150600231", 128);
+	ModPlayVoiceLS(4, 6, "s06/06/150600231", 128, TRUE);
 	OutputLine(NULL, "……………うぅん、魅音。」",
 		   NULL, " I mean, Mion.\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 3, "s06/03/150300078", 128);
+	ModPlayVoiceLS(4, 3, "s06/03/150300078", 128, TRUE);
 	OutputLine(NULL, "「…な、………何？」",
 		   NULL, "\"...What? ...What is it?\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 6, "s06/06/150600232", 128);
+	ModPlayVoiceLS(4, 6, "s06/06/150600232", 128, TRUE);
 	OutputLine(NULL, "「確かに私たちの別離はいつも穏便じゃなかった。",
 		   NULL, "\"Our separation has always been tough.", Line_WaitForInput);
-	ModPlayVoiceLS(4, 6, "s06/06/150600233", 128);
+	ModPlayVoiceLS(4, 6, "s06/06/150600233", 128, TRUE);
 	OutputLine(NULL, "名前を引き離され、住まいを引き離され、…そして体を引き離された時も、いつもね。」",
 		   NULL, " Our names, the places where we live, and... our bodies.\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
@@ -804,24 +804,24 @@ void main()
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 6, "s06/06/150600233_1", 128);
+	ModPlayVoiceLS(4, 6, "s06/06/150600233_1", 128, TRUE);
 	OutputLine(NULL, "「…あんたは私が、その辺りで逆恨みしてるんじゃないかって思ってるかもしれない。",
 		   NULL, "\"...Maybe you think I'm jealous of that,", Line_WaitForInput);
-	ModPlayVoiceLS(4, 6, "s06/06/150600233_2", 128);
+	ModPlayVoiceLS(4, 6, "s06/06/150600233_2", 128, TRUE);
 	OutputLine(NULL, "でもそれは、誤解。",
 		   NULL, " but I'm not.", Line_WaitForInput);
-	ModPlayVoiceLS(4, 6, "s06/06/150600233_3", 128);
+	ModPlayVoiceLS(4, 6, "s06/06/150600233_3", 128, TRUE);
 	OutputLine(NULL, "そりゃ確かに確執はあったよ？",
 		   NULL, " We used to have some disagreements,", Line_WaitForInput);
-	ModPlayVoiceLS(4, 6, "s06/06/150600233_4", 128);
+	ModPlayVoiceLS(4, 6, "s06/06/150600233_4", 128, TRUE);
 	OutputLine(NULL, "　でもそんなのは時間で流れる程度のもの。",
 		   NULL, " but they were always small and forgettable.", Line_WaitForInput);
-	ModPlayVoiceLS(4, 6, "s06/06/150600233_5", 128);
+	ModPlayVoiceLS(4, 6, "s06/06/150600233_5", 128, TRUE);
 	OutputLine(NULL, "あんたが引け目を感じるようなことは、何もない。」",
 		   NULL, " You don't have to feel sorry for anything.\"", Line_Normal);
 	ClearMessage();
-	DrawScene( "black", 400 );
-	DrawScene( "Sora3", 400 );
+	DrawScene("black", 400 );
+	DrawScene("background/sora", 400 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　私たちは母の胎内を出る瞬間まで限りなく公平だった。",
@@ -845,7 +845,7 @@ void main()
 	OutputLine(NULL, "　だが、そんなことが禍根で、いつまでも私たち姉妹が心をすれ違わせる必要はないのだ。",
 		   NULL, "But we don't have to start a disagreement over it.", Line_Normal);
 	ClearMessage();
-	DrawScene( "black", 400 );
+	DrawScene("black", 400 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　魅音は私の言いたいことは辛うじて理解できたようだった。",
@@ -921,14 +921,14 @@ void main()
 	OutputLine(NULL, "　魅音は、次期頭首という分けて口に入れられない飴玉を、…口に入れていいものか、ずっと私の表情を窺いながら今日まで過して来たに違いないのだ。",
 		   NULL, "Mion must have been hesitating to put the candy of the successor in her mouth and was waiting to see if I was okay with that.", Line_Normal);
 	ClearMessage();
-	DrawScene( "Tosyo8", 400 );
-	ModDrawCharacter(2, 3, "me_haua1#_zoom", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
+	DrawScene("background/tosyo2", 400 );
+	ModDrawCharacter(2, 3, "portrait/normal/me2_hau_a1_", "2", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 6, "s06/06/150600234", 128);
+	ModPlayVoiceLS(4, 6, "s06/06/150600234", 128, TRUE);
 	OutputLine(NULL, "「がんばれ、…魅音。",
 		   NULL, "\"Do your best, Mion...", Line_WaitForInput);
-	ModPlayVoiceLS(4, 6, "s06/06/150600235", 128);
+	ModPlayVoiceLS(4, 6, "s06/06/150600235", 128, TRUE);
 	OutputLine(NULL, "私も詩音をがんばる。」",
 		   NULL, " I'll do my best as Shion, too.\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -979,41 +979,41 @@ void main()
 		   NULL, " We can communicate by touch, just like this.", Line_Normal);
 	ClearMessage();
 	DisableWindow();
-	ModDrawCharacter(2, 3, "me_sinmyoua1#_zoom", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
+	ModDrawCharacter(2, 3, "portrait/normal/me2_sinmyou_a1_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
 	DisplayWindow();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 3, "s06/03/150300084", 128);
+	ModPlayVoiceLS(4, 3, "s06/03/150300084", 128, TRUE);
 	OutputLine(NULL, "「…………うん。",
 		   NULL, "\"...Okay...", Line_WaitForInput);
-	ModPlayVoiceLS(4, 3, "s06/03/150300085", 128);
+	ModPlayVoiceLS(4, 3, "s06/03/150300085", 128, TRUE);
 	OutputLine(NULL, "………ありがと。",
 		   NULL, " Thanks,", Line_WaitForInput);
-	ModPlayVoiceLS(4, 3, "s06/03/150300086", 128);
+	ModPlayVoiceLS(4, 3, "s06/03/150300086", 128, TRUE);
 	OutputLine(NULL, "詩音。」",
 		   NULL, " Shion.\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 6, "s06/06/150600236", 128);
+	ModPlayVoiceLS(4, 6, "s06/06/150600236", 128, TRUE);
 	OutputLine(NULL, "「がんばろ、魅音。",
 		   NULL, "\"No worries, Mion.", Line_WaitForInput);
-	ModPlayVoiceLS(4, 6, "s06/06/150600237", 128);
+	ModPlayVoiceLS(4, 6, "s06/06/150600237", 128, TRUE);
 	OutputLine(NULL, "困ったことがあったらいつでも相談して。",
 		   NULL, " Let's talk to each other whenever we want to,", Line_WaitForInput);
-	ModPlayVoiceLS(4, 6, "s06/06/150600238", 128);
+	ModPlayVoiceLS(4, 6, "s06/06/150600238", 128, TRUE);
 	OutputLine(NULL, "私たちはいつだってそうやって来た。",
 		   NULL, " like we've always been.", Line_WaitForInput);
-	ModPlayVoiceLS(4, 6, "s06/06/150600239", 128);
+	ModPlayVoiceLS(4, 6, "s06/06/150600239", 128, TRUE);
 	OutputLine(NULL, "それはこれからも何も変わらないよ。」",
 		   NULL, " That'll never change, okay?\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 3, "s06/03/150300087", 128);
+	ModPlayVoiceLS(4, 3, "s06/03/150300087", 128, TRUE);
 	OutputLine(NULL, "「……うん。",
 		   NULL, "\"......Okay.", Line_WaitForInput);
-	ModPlayVoiceLS(4, 3, "s06/03/150300088", 128);
+	ModPlayVoiceLS(4, 3, "s06/03/150300088", 128, TRUE);
 	OutputLine(NULL, "……うん。」",
 		   NULL, " ......Okay.\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -1022,19 +1022,19 @@ void main()
 	OutputLine(NULL, "　魅音は額で私の拳をぐいぐいと押しながら、俯きがちに頷き続けていた…。",
 		   NULL, "Mion kept nodding, with her forehead against my fist...", Line_Normal);
 	ClearMessage();
-	DrawSceneWithMask( "black", "maskright", 1, 0, 1300 );
+	DrawSceneWithMask("black", "maskright", 1, 0, 1300 );
 	SetValidityOfInput( FALSE );
 	Wait( 1000 );
 	SetValidityOfInput( TRUE );
 	FadeOutBGM( 0, 0, FALSE );
 	FadeOutBGM( 2, 0, FALSE );
-	ModDrawCharacter(19, 0, "no_data", 0, 100, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, TRUE );
+	ModDrawCharacter(19, 0, "transparent", "0", 0, 100, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, TRUE );
 	SetValidityOfInput( FALSE );
 	Wait( 2000 );
 	SetValidityOfInput( TRUE );
 	PlayBGM( 0, "z2_hig2", 120, 0 );
-	DrawScene( "white", 1000 );
-	DrawScene( "Mati3", 1000 );
+	DrawScene("white", 1000 );
+	DrawScene("background/mati3", 1000 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　魅音とは、夕方を待たずに別れた。",
@@ -1061,11 +1061,11 @@ void main()
 	OutputLine(NULL, "　互いに会えなかった一年という空白期間のお陰だったのかもしれない。",
 		   NULL, "Maybe it's because we hadn't seen each other for over a year.", Line_Normal);
 	ClearMessage();
-	DrawScene( "white", 400 );
-	DrawSceneWithMask( "Sora3", "maskm1", 1, 0, 300 );
+	DrawScene("white", 400 );
+	DrawSceneWithMask("background/sora", "maskm1", 1, 0, 300 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 6, "s06/06/150600240", 128);
+	ModPlayVoiceLS(4, 6, "s06/06/150600240", 128, TRUE);
 	OutputLine(NULL, "「…………ふー。」",
 		   NULL, "\"......Whew.\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -1113,13 +1113,13 @@ void main()
 	OutputLine(NULL, "　…でも自分が自分で選び取った人生なのだ。",
 		   NULL, "...But this is what I chose.", Line_Normal);
 	ClearMessage();
-	DrawSceneWithMask( "Mati3", "maskup", 1, 0, 300 );
+	DrawSceneWithMask("background/mati3", "maskup", 1, 0, 300 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 6, "s06/06/150600241", 128);
+	ModPlayVoiceLS(4, 6, "s06/06/150600241", 128, TRUE);
 	OutputLine(NULL, "「あっは！",
 		   NULL, "\"Aha!", Line_WaitForInput);
-	ModPlayVoiceLS(4, 6, "s06/06/150600242", 128);
+	ModPlayVoiceLS(4, 6, "s06/06/150600242", 128, TRUE);
 	OutputLine(NULL, "　…なぁんだ、私だって大人な考え方、できるじゃない。」",
 		   NULL, " ...I can think maturely, too!\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -1169,7 +1169,7 @@ void main()
 	OutputLine(NULL, "　夕方前の、ちょっと涼しくなりかけた風がとても心地よかった。",
 		   NULL, "The cool breeze in the late afternoon felt nice on my skin.", Line_Normal);
 	ClearMessage();
-	DrawScene( "black", 1000 );
+	DrawScene("black", 1000 );
 
 	SetValidityOfInput( FALSE );
 	Wait( 2000 );
@@ -1178,7 +1178,7 @@ void main()
 	SetValidityOfInput( FALSE );
 	Wait( 1000 );
 	SetValidityOfInput( TRUE );
-	DrawScene( "black", 400 );
+	DrawScene("black", 400 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　買ってきたものを袋から出して冷蔵庫にしまっている時、葛西がやってきた。",
@@ -1186,10 +1186,10 @@ void main()
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 6, "s06/06/150600242_1", 128);
+	ModPlayVoiceLS(4, 6, "s06/06/150600242_1", 128, TRUE);
 	OutputLine(NULL, "「あー、待って待って。",
 		   NULL, "\"Ah, wait a sec.", Line_WaitForInput);
-	ModPlayVoiceLS(4, 6, "s06/06/150600242_2", 128);
+	ModPlayVoiceLS(4, 6, "s06/06/150600242_2", 128, TRUE);
 	OutputLine(NULL, "今、カギ開けます。」",
 		   NULL, " I'm coming.\"", Line_Normal);
 	ClearMessage();
@@ -1197,35 +1197,35 @@ void main()
 	SetValidityOfInput( FALSE );
 	Wait( 1500 );
 	SetValidityOfInput( TRUE );
-	DrawSceneWithMask( "Si_G1", "maskright", 1, 0, 300 );
-	ModDrawCharacter(2, 15, "kasa1", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
+	DrawSceneWithMask("background/si_g1", "maskright", 1, 0, 300 );
+	ModDrawCharacter(2, 15, "sprite/normal/kasa_1_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#76523d>葛西</color>", NULL, "<color=#76523d>Kasai</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 15, "s06/15/151500090", 128);
+	ModPlayVoiceLS(4, 15, "s06/15/151500090", 128, TRUE);
 	OutputLine(NULL, "「…お買い物の帰りですか？",
 		   NULL, "\"...Did you go grocery shopping?", Line_WaitForInput);
-	ModPlayVoiceLS(4, 15, "s06/15/151500091", 128);
+	ModPlayVoiceLS(4, 15, "s06/15/151500091", 128, TRUE);
 	OutputLine(NULL, "　お疲れさまです。」",
 		   NULL, " You must be tired.\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 6, "s06/06/150600243", 128);
+	ModPlayVoiceLS(4, 6, "s06/06/150600243", 128, TRUE);
 	OutputLine(NULL, "「買い物程度で疲れてちゃたまんないよ、あははは。",
 		   NULL, "\"I don't get tired from grocery shopping. Ahahaha.", Line_WaitForInput);
-	ModPlayVoiceLS(4, 6, "s06/06/150600244", 128);
+	ModPlayVoiceLS(4, 6, "s06/06/150600244", 128, TRUE);
 	OutputLine(NULL, "あ、葛西も食べてく？",
 		   NULL, " Oh, do you want dinner?", Line_WaitForInput);
-	ModPlayVoiceLS(4, 6, "s06/06/150600245", 128);
+	ModPlayVoiceLS(4, 6, "s06/06/150600245", 128, TRUE);
 	OutputLine(NULL, "　一人者にはスーパーの野菜の単位は大き過ぎだしね。」",
 		   NULL, " I bought enough for you, too.\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#76523d>葛西</color>", NULL, "<color=#76523d>Kasai</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 15, "s06/15/151500092", 128);
+	ModPlayVoiceLS(4, 15, "s06/15/151500092", 128, TRUE);
 	OutputLine(NULL, "「よろしいんですか？",
 		   NULL, "\"Is that alright?", Line_WaitForInput);
-	ModPlayVoiceLS(4, 15, "s06/15/151500093", 128);
+	ModPlayVoiceLS(4, 15, "s06/15/151500093", 128, TRUE);
 	OutputLine(NULL, "　…ご厄介になってもいいものでしたら、ぜひ。」",
 		   NULL, " ...If you say so, I'd be happy to.\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -1236,22 +1236,22 @@ void main()
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 6, "s06/06/150600246", 128);
+	ModPlayVoiceLS(4, 6, "s06/06/150600246", 128, TRUE);
 	OutputLine(NULL, "「ちぇー。",
 		   NULL, "\"Humph.", Line_WaitForInput);
-	ModPlayVoiceLS(4, 6, "s06/06/150600247", 128);
+	ModPlayVoiceLS(4, 6, "s06/06/150600247", 128, TRUE);
 	OutputLine(NULL, "その顔は全然、信じてないなぁ？",
 		   NULL, " You don't look like you believe in my cooking skills.", Line_WaitForInput);
-	ModPlayVoiceLS(4, 6, "s06/06/150600248", 128);
+	ModPlayVoiceLS(4, 6, "s06/06/150600248", 128, TRUE);
 	OutputLine(NULL, "　見てろぉ〜！」",
 		   NULL, " You'll pay for that later!\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#76523d>葛西</color>", NULL, "<color=#76523d>Kasai</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 15, "s06/15/151500094", 128);
+	ModPlayVoiceLS(4, 15, "s06/15/151500094", 128, TRUE);
 	OutputLine(NULL, "「これらは冷蔵庫でいいんですか？",
 		   NULL, "\"Are you putting these in the refrigerator?", Line_WaitForInput);
-	ModPlayVoiceLS(4, 15, "s06/15/151500095", 128);
+	ModPlayVoiceLS(4, 15, "s06/15/151500095", 128, TRUE);
 	OutputLine(NULL, "　入れておきますよ。」",
 		   NULL, " I'll do it.\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -1259,13 +1259,13 @@ void main()
 	FadeAllBustshots( 400, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 6, "s06/06/150600249", 128);
+	ModPlayVoiceLS(4, 6, "s06/06/150600249", 128, TRUE);
 	OutputLine(NULL, "「あ、悪いね。",
 		   NULL, "\"Oh, thanks...", Line_WaitForInput);
-	ModPlayVoiceLS(4, 6, "s06/06/150600250", 128);
+	ModPlayVoiceLS(4, 6, "s06/06/150600250", 128, TRUE);
 	OutputLine(NULL, "…二人分だとお米はこのくらいかな。",
 		   NULL, " Is this amount of rice enough for two?", Line_WaitForInput);
-	ModPlayVoiceLS(4, 6, "s06/06/150600251", 128);
+	ModPlayVoiceLS(4, 6, "s06/06/150600251", 128, TRUE);
 	OutputLine(NULL, "よっこらしょっと。」",
 		   NULL, " Here I go.\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -1281,10 +1281,10 @@ void main()
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#76523d>葛西</color>", NULL, "<color=#76523d>Kasai</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 15, "s06/15/151500096", 128);
+	ModPlayVoiceLS(4, 15, "s06/15/151500096", 128, TRUE);
 	OutputLine(NULL, "「……詩音さん。",
 		   NULL, "\"...Shion-san,", Line_WaitForInput);
-	ModPlayVoiceLS(4, 15, "s06/15/151500097", 128);
+	ModPlayVoiceLS(4, 15, "s06/15/151500097", 128, TRUE);
 	OutputLine(NULL, "相変わらず缶詰はダメなんですか？」",
 		   NULL, " do you still hate canned food?\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -1297,46 +1297,46 @@ void main()
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#76523d>葛西</color>", NULL, "<color=#76523d>Kasai</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 15, "s06/15/151500098", 128);
+	ModPlayVoiceLS(4, 15, "s06/15/151500098", 128, TRUE);
 	OutputLine(NULL, "「缶詰を避けての買い物はいろいろ大変でしょう。」",
 		   NULL, "\"It must be hard to avoid it.\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 6, "s06/06/150600252", 128);
+	ModPlayVoiceLS(4, 6, "s06/06/150600252", 128, TRUE);
 	OutputLine(NULL, "「ん〜〜〜…。",
 		   NULL, "\"Hmmm...", Line_WaitForInput);
-	ModPlayVoiceLS(4, 6, "s06/06/150600253", 128);
+	ModPlayVoiceLS(4, 6, "s06/06/150600253", 128, TRUE);
 	OutputLine(NULL, "理屈じゃわかってんだけどねぇ。",
 		   NULL, " I know it's illogical...", Line_WaitForInput);
-	ModPlayVoiceLS(4, 6, "s06/06/150600254", 128);
+	ModPlayVoiceLS(4, 6, "s06/06/150600254", 128, TRUE);
 	OutputLine(NULL, "…無理強いされりゃ、食べないこともないけど。",
 		   NULL, " Maybe I could eat it if somebody forced me to...", Line_WaitForInput);
-	ModPlayVoiceLS(4, 6, "s06/06/150600255", 128);
+	ModPlayVoiceLS(4, 6, "s06/06/150600255", 128, TRUE);
 	OutputLine(NULL, "……うぅん、それでも私ゃやっぱりパスだな…。」",
 		   NULL, " No, on second thought, I definitely couldn't...\"", Line_Normal);
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#76523d>葛西</color>", NULL, "<color=#76523d>Kasai</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 15, "s06/15/151500099", 128);
+	ModPlayVoiceLS(4, 15, "s06/15/151500099", 128, TRUE);
 	OutputLine(NULL, "「悪かったと思ってます。",
 		   NULL, "\"I feel really sorry.", Line_WaitForInput);
-	ModPlayVoiceLS(4, 15, "s06/15/151500100", 128);
+	ModPlayVoiceLS(4, 15, "s06/15/151500100", 128, TRUE);
 	OutputLine(NULL, "少しふざけすぎたと思ってますよ。",
 		   NULL, " I know I was out of line then.", Line_WaitForInput);
-	ModPlayVoiceLS(4, 15, "s06/15/151500101", 128);
+	ModPlayVoiceLS(4, 15, "s06/15/151500101", 128, TRUE);
 	OutputLine(NULL, "だからそろそろ、あんな下らない話、忘れて下さってもいいのに。」",
 		   NULL, " Please forget about that story.\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 6, "s06/06/150600256", 128);
+	ModPlayVoiceLS(4, 6, "s06/06/150600256", 128, TRUE);
 	OutputLine(NULL, "「あ〜〜もぅ、うっさいなぁ！",
 		   NULL, "\"Ahh, shut up!", Line_WaitForInput);
-	ModPlayVoiceLS(4, 6, "s06/06/150600257", 128);
+	ModPlayVoiceLS(4, 6, "s06/06/150600257", 128, TRUE);
 	OutputLine(NULL, "　男が厨房にちゃらちゃら出入りしない！",
 		   NULL, " Men shouldn't hang around in the kitchen!", Line_WaitForInput);
-	ModPlayVoiceLS(4, 6, "s06/06/150600258", 128);
+	ModPlayVoiceLS(4, 6, "s06/06/150600258", 128, TRUE);
 	OutputLine(NULL, "　テレビでも見てて大人しくしててよー。」",
 		   NULL, " Go watch TV or something.\"", Line_Normal);
 	ClearMessage();
@@ -1345,7 +1345,7 @@ void main()
 	OutputLine(NULL, "　葛西は小さく笑うと、それ以上ちょっかいは出さず、大人しく引っ込んでくれた。",
 		   NULL, "Kasai chuckled and left.", Line_Normal);
 	ClearMessage();
-	DrawSceneWithMask( "black", "maskdown", 1, 0, 300 );
+	DrawSceneWithMask("black", "maskdown", 1, 0, 300 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　自分でも馬鹿だなぁと思うのだが。",
@@ -1370,7 +1370,7 @@ void main()
 		   NULL, "......Kasai told me a horror story when I was little.", Line_Normal);
 	ClearMessage();
 	DrawFilm( 2, 0xaa, 0xaa, 0xaa, 256, 0, 0, TRUE );
-	DrawScene( "Tennai1", 400 );
+	DrawScene("background/tennai1", 400 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　…ほら、都市伝説なんかによくあるじゃない。",
@@ -1416,7 +1416,7 @@ void main()
 	OutputLine(NULL, "　……好きでないなら、無理をすることもないと、今ではごく当り前のように缶詰を避けて生活している。",
 		   NULL, "...Since I don't like it, I don't force myself and I now live my life naturally avoiding canned food.", Line_Normal);
 	ClearMessage();
-	DrawScene( "black", 400 );
+	DrawScene("black", 400 );
 	FadeFilm( 0, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -1440,57 +1440,57 @@ void main()
 	OutputLine(NULL, "あはははははははは。",
 		   NULL, " Ahahahahaha.", Line_Normal);
 	ClearMessage();
-	DrawSceneWithMask( "Si_G1", "maskright", 1, 0, 300 );
+	DrawSceneWithMask("background/si_g1", "maskright", 1, 0, 300 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 6, "s06/06/150600259", 128);
+	ModPlayVoiceLS(4, 6, "s06/06/150600259", 128, TRUE);
 	OutputLine(NULL, "「葛西〜、机の上の新聞どけて〜。」",
 		   NULL, "\"Kasai, set the table, would you?\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 	DisableWindow();
-	ModDrawCharacter(2, 15, "kasa2", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
+	ModDrawCharacter(2, 15, "sprite/normal/kasa_2_", "2", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
 	DisplayWindow();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#76523d>葛西</color>", NULL, "<color=#76523d>Kasai</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 15, "s06/15/151500102", 128);
+	ModPlayVoiceLS(4, 15, "s06/15/151500102", 128, TRUE);
 	OutputLine(NULL, "「いい匂いですね。",
 		   NULL, "\"It smells good.", Line_WaitForInput);
-	ModPlayVoiceLS(4, 15, "s06/15/151500103", 128);
+	ModPlayVoiceLS(4, 15, "s06/15/151500103", 128, TRUE);
 	OutputLine(NULL, "ご馳走になります。」",
 		   NULL, " Thank you for doing this.\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 6, "s06/06/150600260", 128);
+	ModPlayVoiceLS(4, 6, "s06/06/150600260", 128, TRUE);
 	OutputLine(NULL, "「量が足りないと思ったら、あとは勝手に牛丼屋にでも行くことー。",
 		   NULL, "\"If this isn't enough food, you can go to a beef bowl place later or something.", Line_WaitForInput);
-	ModPlayVoiceLS(4, 6, "s06/06/150600261", 128);
+	ModPlayVoiceLS(4, 6, "s06/06/150600261", 128, TRUE);
 	OutputLine(NULL, "あ、テレビは切らないで。",
 		   NULL, " And don't turn off the TV.", Line_WaitForInput);
-	ModPlayVoiceLS(4, 6, "s06/06/150600262", 128);
+	ModPlayVoiceLS(4, 6, "s06/06/150600262", 128, TRUE);
 	OutputLine(NULL, "私ゃ静かな食卓ってヤツが苦手だから。」",
 		   NULL, " I hate having dinner in silence.\"", Line_Normal);
 	ClearMessage();
-	DrawSceneWithMask( "black", "maskdown", 1, 0, 300 );
-	DrawScene( "Si_H2", 400 );
+	DrawSceneWithMask("black", "maskdown", 1, 0, 300 );
+	DrawScene("background/si_h2", 400 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#76523d>葛西</color>", NULL, "<color=#76523d>Kasai</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 15, "s06/15/151500104", 128);
+	ModPlayVoiceLS(4, 15, "s06/15/151500104", 128, TRUE);
 	OutputLine(NULL, "「では、いただきます。」",
 		   NULL, "\"Thank you for the meal.\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 	FadeOutBGM( 0, 0, FALSE );
 	FadeOutBGM( 2, 0, FALSE );
-	ModDrawCharacter(19, 0, "no_data", 0, 100, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, TRUE );
+	ModDrawCharacter(19, 0, "transparent", "0", 0, 100, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 6, "s06/06/150600263", 128);
+	ModPlayVoiceLS(4, 6, "s06/06/150600263", 128, TRUE);
 	OutputLine(NULL, "「で？",
 		   NULL, "\"So,", Line_WaitForInput);
-	ModPlayVoiceLS(4, 6, "s06/06/150600264", 128);
+	ModPlayVoiceLS(4, 6, "s06/06/150600264", 128, TRUE);
 	OutputLine(NULL, "　葛西、何の用だったの？",
 		   NULL, " what is it, Kasai?", Line_WaitForInput);
-	ModPlayVoiceLS(4, 6, "s06/06/150600265", 128);
+	ModPlayVoiceLS(4, 6, "s06/06/150600265", 128, TRUE);
 	OutputLine(NULL, "　何か用事があって来たんでしょ。」",
 		   NULL, " You came here for something, didn't you?\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -1506,7 +1506,7 @@ void main()
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#76523d>葛西</color>", NULL, "<color=#76523d>Kasai</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 15, "s06/15/151500105", 128);
+	ModPlayVoiceLS(4, 15, "s06/15/151500105", 128, TRUE);
 	OutputLine(NULL, "「…食事が終わってからの方がいいかと思ってましたが、",
 		   NULL, "\"I thought I should wait until we finished, but...", Line_Continue);
 	// (backup) SetValidityOfInput( FALSE );
@@ -1517,44 +1517,44 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 6, "s06/06/150600266", 128);
+	ModPlayVoiceLS(4, 6, "s06/06/150600266", 128, TRUE);
 	OutputLine(NULL, "「葛西が来た時点で、ずーっと何の用か気になってるから。",
 		   NULL, "\"It's been bugging me since you got here.", Line_WaitForInput);
-	ModPlayVoiceLS(4, 6, "s06/06/150600267", 128);
+	ModPlayVoiceLS(4, 6, "s06/06/150600267", 128, TRUE);
 	OutputLine(NULL, "先に言ってくれた方がゴハンの通りがよくていいかもです。」",
 		   NULL, " It'd be much easier for me to eat if you started talking now.\"", Line_Normal);
 	ClearMessage();
 	PlayBGM( 0, "yoru", 120, 0 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#76523d>葛西</color>", NULL, "<color=#76523d>Kasai</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 15, "s06/15/151500106", 128);
+	ModPlayVoiceLS(4, 15, "s06/15/151500106", 128, TRUE);
 	OutputLine(NULL, "「自宅に学園から電話が今日、ありました。」",
 		   NULL, "\"We received a phone call from the school today.\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 6, "s06/06/150600268", 128);
+	ModPlayVoiceLS(4, 6, "s06/06/150600268", 128, TRUE);
 	OutputLine(NULL, "「今日？",
 		   NULL, "\"Today?", Line_WaitForInput);
-	ModPlayVoiceLS(4, 6, "s06/06/150600269", 128);
+	ModPlayVoiceLS(4, 6, "s06/06/150600269", 128, TRUE);
 	OutputLine(NULL, "　あっははは、そりゃ遅いね。",
 		   NULL, " Aha ha, that's late.", Line_WaitForInput);
-	ModPlayVoiceLS(4, 6, "s06/06/150600270", 128);
+	ModPlayVoiceLS(4, 6, "s06/06/150600270", 128, TRUE);
 	OutputLine(NULL, "よーっぽっど表沙汰にしたくなかったと見えるなぁ。",
 		   NULL, " Sounds like they didn't want to make it public.", Line_WaitForInput);
-	ModPlayVoiceLS(4, 6, "s06/06/150600271", 128);
+	ModPlayVoiceLS(4, 6, "s06/06/150600271", 128, TRUE);
 	OutputLine(NULL, "あっはははは。",
 		   NULL, " Aha haha...", Line_WaitForInput);
-	ModPlayVoiceLS(4, 6, "s06/06/150600272", 128);
+	ModPlayVoiceLS(4, 6, "s06/06/150600272", 128, TRUE);
 	OutputLine(NULL, "…で、どうなったの？」",
 		   NULL, " So, what happened?\"", Line_Normal);
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#76523d>葛西</color>", NULL, "<color=#76523d>Kasai</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 15, "s06/15/151500107", 128);
+	ModPlayVoiceLS(4, 15, "s06/15/151500107", 128, TRUE);
 	OutputLine(NULL, "「電話は茜さんが取りました。",
 		   NULL, "\"Akane-san took the call.", Line_WaitForInput);
-	ModPlayVoiceLS(4, 15, "s06/15/151500108", 128);
+	ModPlayVoiceLS(4, 15, "s06/15/151500108", 128, TRUE);
 	OutputLine(NULL, "親父さんには後で折を見て話すそうです。」",
 		   NULL, " She said she was going to tell your father when the time is right.\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
@@ -1568,10 +1568,10 @@ void main()
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 6, "s06/06/150600273", 128);
+	ModPlayVoiceLS(4, 6, "s06/06/150600273", 128, TRUE);
 	OutputLine(NULL, "「で？",
 		   NULL, "\"So?", Line_WaitForInput);
-	ModPlayVoiceLS(4, 6, "s06/06/150600274", 128);
+	ModPlayVoiceLS(4, 6, "s06/06/150600274", 128, TRUE);
 	OutputLine(NULL, "　母さんなんか言ってた？」",
 		   NULL, " What did she say?\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
@@ -1588,129 +1588,129 @@ void main()
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#76523d>葛西</color>", NULL, "<color=#76523d>Kasai</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 15, "s06/15/151500109", 128);
+	ModPlayVoiceLS(4, 15, "s06/15/151500109", 128, TRUE);
 	OutputLine(NULL, "「仕方のないヤツだ、と漏らしておりました。",
 		   NULL, "\"Other than calling you a brat...", Line_WaitForInput);
-	ModPlayVoiceLS(4, 15, "s06/15/151500110", 128);
+	ModPlayVoiceLS(4, 15, "s06/15/151500110", 128, TRUE);
 	OutputLine(NULL, "…こういう結果も、決して予想外ではなかったような顔つきでしたね。」",
 		   NULL, " She didn't seem surprised by this outcome.\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 6, "s06/06/150600275", 128);
+	ModPlayVoiceLS(4, 6, "s06/06/150600275", 128, TRUE);
 	OutputLine(NULL, "「……ふーん。",
 		   NULL, "\"...I see.", Line_WaitForInput);
-	ModPlayVoiceLS(4, 6, "s06/06/150600276", 128);
+	ModPlayVoiceLS(4, 6, "s06/06/150600276", 128, TRUE);
 	OutputLine(NULL, "親父にはまだ知らせてないんだ？」",
 		   NULL, " So she hasn't told Dad yet?\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#76523d>葛西</color>", NULL, "<color=#76523d>Kasai</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 15, "s06/15/151500111", 128);
+	ModPlayVoiceLS(4, 15, "s06/15/151500111", 128, TRUE);
 	OutputLine(NULL, "「茜さんなりにタイミングを計っているんでしょう。",
 		   NULL, "\"She's probably waiting for the right moment.", Line_WaitForInput);
-	ModPlayVoiceLS(4, 15, "s06/15/151500112", 128);
+	ModPlayVoiceLS(4, 15, "s06/15/151500112", 128, TRUE);
 	OutputLine(NULL, "多分、二三日中には話すものと思います。」",
 		   NULL, " I think she's going to in a couple of days.\"", Line_Normal);
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 6, "s06/06/150600277", 128);
+	ModPlayVoiceLS(4, 6, "s06/06/150600277", 128, TRUE);
 	OutputLine(NULL, "「……親父は鬼婆寄りだからなぁ。",
 		   NULL, "\"......Humm, dad is on the hag's side,", Line_WaitForInput);
-	ModPlayVoiceLS(4, 6, "s06/06/150600278", 128);
+	ModPlayVoiceLS(4, 6, "s06/06/150600278", 128, TRUE);
 	OutputLine(NULL, "耳に入れば自動的に鬼婆にも伝えるだろうな。",
 		   NULL, " so he'll definitely talk to her if he hears about it.", Line_WaitForInput);
-	ModPlayVoiceLS(4, 6, "s06/06/150600279", 128);
+	ModPlayVoiceLS(4, 6, "s06/06/150600279", 128, TRUE);
 	OutputLine(NULL, "で、鬼婆の耳に入れば、見つけ次第、即刻ここへ連れて来い。",
 		   NULL, " Then she'll have her men bring me to her", Line_WaitForInput);
-	ModPlayVoiceLS(4, 6, "s06/06/150600280", 128);
+	ModPlayVoiceLS(4, 6, "s06/06/150600280", 128, TRUE);
 	OutputLine(NULL, "申し開きの如何によっては、指の一本や二本…ってことになるだろうねぇ。",
 		   NULL, " and depending on my explanation, make me offer a finger or two...", Line_WaitForInput);
-	ModPlayVoiceLS(4, 6, "s06/06/150600281", 128);
+	ModPlayVoiceLS(4, 6, "s06/06/150600281", 128, TRUE);
 	OutputLine(NULL, "…おっかないこって。",
 		   NULL, " Scary! ", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 6, "s06/06/150600282", 128);
+	ModPlayVoiceLS(4, 6, "s06/06/150600282", 128, TRUE);
 	OutputLine(NULL, "あははは！」",
 		   NULL, "Aha ha ha!\"", Line_Normal);
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#76523d>葛西</color>", NULL, "<color=#76523d>Kasai</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 15, "s06/15/151500113", 128);
+	ModPlayVoiceLS(4, 15, "s06/15/151500113", 128, TRUE);
 	OutputLine(NULL, "「笑い事で済めばいいんですがねぇ。",
 		   NULL, "\"I wish you could laugh it off,", Line_WaitForInput);
-	ModPlayVoiceLS(4, 15, "s06/15/151500114", 128);
+	ModPlayVoiceLS(4, 15, "s06/15/151500114", 128, TRUE);
 	OutputLine(NULL, "…詩音さんの指だけじゃ済まないかもしれないってとこだけ、よくお願いしますよ？",
 		   NULL, " but... please remember you're not the only one who...", Line_WaitForInput);
-	ModPlayVoiceLS(4, 15, "s06/15/151500115", 128);
+	ModPlayVoiceLS(4, 15, "s06/15/151500115", 128, TRUE);
 	OutputLine(NULL, "　…あちちちち…。」",
 		   NULL, " Ouch...\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 6, "s06/06/150600283", 128);
+	ModPlayVoiceLS(4, 6, "s06/06/150600283", 128, TRUE);
 	OutputLine(NULL, "「あっはははは！",
 		   NULL, "\"Aha ha ha ha!", Line_WaitForInput);
-	ModPlayVoiceLS(4, 6, "s06/06/150600284", 128);
+	ModPlayVoiceLS(4, 6, "s06/06/150600284", 128, TRUE);
 	OutputLine(NULL, "　がっつくからだよー。",
 		   NULL, " You're eating too fast!", Line_WaitForInput);
-	ModPlayVoiceLS(4, 6, "s06/06/150600285", 128);
+	ModPlayVoiceLS(4, 6, "s06/06/150600285", 128, TRUE);
 	OutputLine(NULL, "あ、ちなみに味噌汁もご飯も作りすぎてるから、御代わりは強制ね？",
 		   NULL, " Uh, I cooked too much rice and miso soup, so you'll have to have another round.", Line_WaitForInput);
-	ModPlayVoiceLS(4, 6, "s06/06/150600286", 128);
+	ModPlayVoiceLS(4, 6, "s06/06/150600286", 128, TRUE);
 	OutputLine(NULL, "　三杯は絶対食べること！」",
 		   NULL, " At least three helpings, all right?!\"", Line_Normal);
 	ClearMessage();
-	DrawScene( "black", 400 );
+	DrawScene("black", 400 );
 	FadeOutBGM( 0, 0, FALSE );
 	FadeOutBGM( 1, 0, FALSE );
 	FadeOutBGM( 2, 0, FALSE );
 	FadeOutBGM( 3, 0, FALSE );
-	ModDrawCharacter(19, 0, "no_data", 0, 100, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, TRUE );
+	ModDrawCharacter(19, 0, "transparent", "0", 0, 100, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　その数日後、魅音から、鬼婆の耳に私の脱走の話が及んだことが伝えられた。",
 		   NULL, "A few days later, Mion told me that the hag had heard about my escape.", Line_Normal);
 	ClearMessage();
 	PlayBGM( 0, "higurashi", 120, 0 );
-	DrawScene( "Sora2", 1000 );
+	DrawScene("background/sora2", 1000 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 6, "s06/06/150600287", 128);
+	ModPlayVoiceLS(4, 6, "s06/06/150600287", 128, TRUE);
 	OutputLine(NULL, "「で？",
 		   NULL, "\"So?", Line_WaitForInput);
-	ModPlayVoiceLS(4, 6, "s06/06/150600288", 128);
+	ModPlayVoiceLS(4, 6, "s06/06/150600288", 128, TRUE);
 	OutputLine(NULL, "　鬼婆はどんな感じだった？」",
 		   NULL, " How did she take it?\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 3, "s06/03/150300089", 128);
+	ModPlayVoiceLS(4, 3, "s06/03/150300089", 128, TRUE);
 	OutputLine(NULL, "「婆っちゃはカンカンでさ。",
 		   NULL, "\"She was furious.", Line_WaitForInput);
-	ModPlayVoiceLS(4, 3, "s06/03/150300090", 128);
+	ModPlayVoiceLS(4, 3, "s06/03/150300090", 128, TRUE);
 	OutputLine(NULL, "もしも興宮界隈に帰ってきてるなら、即刻見つけ次第、自分の前に引っ立てろってさ。」",
 		   NULL, " She said that if you were in Okinomiya, she'd get you right away.\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 6, "s06/06/150600289", 128);
+	ModPlayVoiceLS(4, 6, "s06/06/150600289", 128, TRUE);
 	OutputLine(NULL, "「おーコワ。",
 		   NULL, "\"Scary.", Line_WaitForInput);
-	ModPlayVoiceLS(4, 6, "s06/06/150600290", 128);
+	ModPlayVoiceLS(4, 6, "s06/06/150600290", 128, TRUE);
 	OutputLine(NULL, "で？",
 		   NULL, " And?", Line_WaitForInput);
-	ModPlayVoiceLS(4, 6, "s06/06/150600291", 128);
+	ModPlayVoiceLS(4, 6, "s06/06/150600291", 128, TRUE);
 	OutputLine(NULL, "　実際に親父とかの動向は？」",
 		   NULL, " Is Dad doing anything?\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 3, "s06/03/150300091", 128);
+	ModPlayVoiceLS(4, 3, "s06/03/150300091", 128, TRUE);
 	OutputLine(NULL, "「近々の親族会議で、詩音をかくまってないか問い質すみたいだね。",
 		   NULL, "\"They'll hold a family council soon to see if any of the family members are hiding you.", Line_WaitForInput);
-	ModPlayVoiceLS(4, 3, "s06/03/150300092", 128);
+	ModPlayVoiceLS(4, 3, "s06/03/150300092", 128, TRUE);
 	OutputLine(NULL, "でも、若いのに町中を捜させるとか、そういう真似はしないみたいだよ。」",
 		   NULL, " It doesn't look like she'll have the greenhorns search for you all over town, though.\"", Line_Normal);
 	ClearMessage();
@@ -1732,7 +1732,7 @@ void main()
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 6, "s06/06/150600292", 128);
+	ModPlayVoiceLS(4, 6, "s06/06/150600292", 128, TRUE);
 	OutputLine(NULL, "「……母さんがずいぶん暗躍してくれたみたいだね。」",
 		   NULL, "\"......Seems like Mom did a lot to help me.\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -1772,43 +1772,43 @@ void main()
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 3, "s06/03/150300093", 128);
+	ModPlayVoiceLS(4, 3, "s06/03/150300093", 128, TRUE);
 	OutputLine(NULL, "「親父、最初はすっごくカンカンだったらしいよ？",
 		   NULL, "\"Dad was flaring up at first,", Line_WaitForInput);
-	ModPlayVoiceLS(4, 3, "s06/03/150300094", 128);
+	ModPlayVoiceLS(4, 3, "s06/03/150300094", 128, TRUE);
 	OutputLine(NULL, "　母さんがだいぶなだめたらしい。",
 		   NULL, " but Mom pacified him...", Line_WaitForInput);
-	ModPlayVoiceLS(4, 3, "s06/03/150300095", 128);
+	ModPlayVoiceLS(4, 3, "s06/03/150300095", 128, TRUE);
 	OutputLine(NULL, "…何のかんの言っても、親父は最後には母さんには勝てないからね。」",
 		   NULL, " He can't win against her, after all.\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 6, "s06/06/150600293", 128);
+	ModPlayVoiceLS(4, 6, "s06/06/150600293", 128, TRUE);
 	OutputLine(NULL, "「ＯＫ、ありがと。",
 		   NULL, "\"Okay, thanks.", Line_WaitForInput);
-	ModPlayVoiceLS(4, 6, "s06/06/150600294", 128);
+	ModPlayVoiceLS(4, 6, "s06/06/150600294", 128, TRUE);
 	OutputLine(NULL, "また何かあったら教えてね。",
 		   NULL, " Let me know if something comes up...", Line_WaitForInput);
-	ModPlayVoiceLS(4, 6, "s06/06/150600295", 128);
+	ModPlayVoiceLS(4, 6, "s06/06/150600295", 128, TRUE);
 	OutputLine(NULL, "……本当の本当にヤバくなったら、私もこの町を離れるつもりだから。",
 		   NULL, " If things really go bad, I'm ready to leave town.", Line_WaitForInput);
-	ModPlayVoiceLS(4, 6, "s06/06/150600296", 128);
+	ModPlayVoiceLS(4, 6, "s06/06/150600296", 128, TRUE);
 	OutputLine(NULL, "葛西とか義郎叔父さんとか…それに母さんとか、世話になった人の顔は潰せないからね。」",
 		   NULL, " I can't let Kasai, Uncle Yoshiroh... or Mom lose face.\"", Line_Normal);
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 3, "s06/03/150300096", 128);
+	ModPlayVoiceLS(4, 3, "s06/03/150300096", 128, TRUE);
 	OutputLine(NULL, "「…………………………………。」",
 		   NULL, "\".....................\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 6, "s06/06/150600297", 128);
+	ModPlayVoiceLS(4, 6, "s06/06/150600297", 128, TRUE);
 	OutputLine(NULL, "「…お姉、あんたが今、何を考えてるかわかりますよ。",
 		   NULL, "\"...Sis, I know what you're thinking.", Line_WaitForInput);
-	ModPlayVoiceLS(4, 6, "s06/06/150600298", 128);
+	ModPlayVoiceLS(4, 6, "s06/06/150600298", 128, TRUE);
 	OutputLine(NULL, "どうして同じ血を分けた姉妹なのに、詩音だけこんな隠れるように生活しなきゃならないのか…でしょ？」",
 		   NULL, " You're asking yourself why only I have to go through this, even though we're twins, aren't you?\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -1819,28 +1819,28 @@ void main()
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 3, "s06/03/150300097", 128);
+	ModPlayVoiceLS(4, 3, "s06/03/150300097", 128, TRUE);
 	OutputLine(NULL, "「詩音だけ…こんな窮屈な思いをするのはフェアじゃないよ…。",
 		   NULL, "\"It isn't fair that only you have to live like this...", Line_WaitForInput);
-	ModPlayVoiceLS(4, 3, "s06/03/150300098", 128);
+	ModPlayVoiceLS(4, 3, "s06/03/150300098", 128, TRUE);
 	OutputLine(NULL, "絶対。」",
 		   NULL, " It's absolutely not.\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 6, "s06/06/150600299", 128);
+	ModPlayVoiceLS(4, 6, "s06/06/150600299", 128, TRUE);
 	OutputLine(NULL, "「…ありがと。",
 		   NULL, "\"...Thanks.", Line_WaitForInput);
-	ModPlayVoiceLS(4, 6, "s06/06/150600300", 128);
+	ModPlayVoiceLS(4, 6, "s06/06/150600300", 128, TRUE);
 	OutputLine(NULL, "気持ちだけでもうれしいです、お姉。」",
 		   NULL, " I appreciate your feelings.\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 3, "s06/03/150300099", 128);
+	ModPlayVoiceLS(4, 3, "s06/03/150300099", 128, TRUE);
 	OutputLine(NULL, "「……表に出たい時とか、あったら相談して。",
 		   NULL, "\"...Tell me when you want to go out.", Line_WaitForInput);
-	ModPlayVoiceLS(4, 3, "s06/03/150300100", 128);
+	ModPlayVoiceLS(4, 3, "s06/03/150300100", 128, TRUE);
 	OutputLine(NULL, "詩音がいつでも魅音になれるよう、協力するからさ…。」",
 		   NULL, " I'll arrange my plans so that I can trade places with you...\"", Line_Normal);
 	ClearMessage();
@@ -1869,24 +1869,24 @@ void main()
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 6, "s06/06/150600301", 128);
+	ModPlayVoiceLS(4, 6, "s06/06/150600301", 128, TRUE);
 	OutputLine(NULL, "「ありがと。",
 		   NULL, "\"Thanks...", Line_WaitForInput);
-	ModPlayVoiceLS(4, 6, "s06/06/150600302", 128);
+	ModPlayVoiceLS(4, 6, "s06/06/150600302", 128, TRUE);
 	OutputLine(NULL, "……実はそれが一番ありがたいです。",
 		   NULL, " That's really nice of you.", Line_WaitForInput);
-	ModPlayVoiceLS(4, 6, "s06/06/150600303", 128);
+	ModPlayVoiceLS(4, 6, "s06/06/150600303", 128, TRUE);
 	OutputLine(NULL, "じゃ、切りますね。",
 		   NULL, " Okay, I'm hanging up now.", Line_WaitForInput);
-	ModPlayVoiceLS(4, 3, "s06/03/150300100_1", 128);
+	ModPlayVoiceLS(4, 3, "s06/03/150300100_1", 128, TRUE);
 	OutputLine(NULL, "じゃあね、またね。」",
 		   NULL, " Talk to you later.\"", Line_Normal);
 	ClearMessage();
 
 	CallScript( "&eyeCamp" );
 	SetValidityOfSkipping( FALSE );
-	DrawSceneWithMask( "GetTIP_meak003", "mask1900", 7, 0, 400 );
+	DrawSceneWithMask("tips/gettip_meak003", "mask1900", 7, 0, 400 );
 	Wait( 5000 );
-	DrawSceneWithMask( "black", "mask1900", 7, 0, 400 );
+	DrawSceneWithMask("black", "mask1900", 7, 0, 400 );
 	SetValidityOfSkipping( TRUE );
 }

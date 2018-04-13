@@ -8,7 +8,7 @@ void main()
 	ClearMessage();
 
 	PlayBGM( 0, "yoru", 120, 0 );
-	DrawScene( "Ho_R1", 400 );
+	DrawScene("background/ho_r1", 400 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　沙都子は、僕の背中に隠れて泣いていた。",
@@ -32,7 +32,7 @@ void main()
 		   NULL, " She vomited out a series of screams one last time, then finally called it quits.", Line_Normal);
 	ClearMessage();
 	DisableWindow();
-	ModDrawCharacter(1, 4, "sa_muhyoua1#", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 8, 400, TRUE );
+	ModDrawCharacter(1, 4, "sprite/normal/sa2b_muhyou_b1_", "0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 8, 400, TRUE );
 	DisplayWindow();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -52,7 +52,7 @@ void main()
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#ffdc6f>悟史</color>", NULL, "<color=#ffdc6f>Satoshi</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 7, "s20/07/443300001", 128);
+	ModPlayVoiceLS(4, 7, "s20/07/443300001", 128, TRUE);
 	OutputLine(NULL, "「………終わったよ。",
 		   NULL, "\"......It's over,", Line_WaitForInput);
 	OutputLine(NULL, "…沙都子。」",
@@ -78,7 +78,7 @@ void main()
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#fcdb77>沙都子</color>", NULL, "<color=#fcdb77>Satoko</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 4, "s20/04/440400089", 128);
+	ModPlayVoiceLS(4, 4, "s20/04/440400089", 128, TRUE);
 	OutputLine(NULL, "「……………………。」",
 		   NULL, "\"..................\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
@@ -110,12 +110,12 @@ void main()
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#ffdc6f>悟史</color>", NULL, "<color=#ffdc6f>Satoshi</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 7, "s20/07/443300002", 128);
+	ModPlayVoiceLS(4, 7, "s20/07/443300002", 128, TRUE);
 	OutputLine(NULL, "「……もう、叔母さんの小言は終わったよ？",
 		   NULL, "\"......She's done with her scolding...", Line_WaitForInput);
 	OutputLine(NULL, "……だから、ね。",
 		   NULL, " So let's go to sleep,", Line_WaitForInput);
-	ModPlayVoiceLS(4, 7, "s20/07/443300003", 128);
+	ModPlayVoiceLS(4, 7, "s20/07/443300003", 128, TRUE);
 	OutputLine(NULL, "…寝よう？」",
 		   NULL, " all right?\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -146,12 +146,12 @@ void main()
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#ffdc6f>悟史</color>", NULL, "<color=#ffdc6f>Satoshi</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 7, "s20/07/443300004", 128);
+	ModPlayVoiceLS(4, 7, "s20/07/443300004", 128, TRUE);
 	OutputLine(NULL, "「さぁ。",
 		   NULL, "\"Here...", Line_WaitForInput);
 	OutputLine(NULL, "…歯を磨いて、それから布団を敷こ。",
 		   NULL, " Go brush your teeth, make your bed...", Line_WaitForInput);
-	ModPlayVoiceLS(4, 7, "s20/07/443300005", 128);
+	ModPlayVoiceLS(4, 7, "s20/07/443300005", 128, TRUE);
 	OutputLine(NULL, "…そしてぐっすり休も…。」",
 		   NULL, " and go to sleep...\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -163,7 +163,7 @@ void main()
 	OutputLine(NULL, "　沙都子は弱々しいながらも、笑顔を見せて頷き返してくれた。",
 		   NULL, "Satoko smiled faintly and nodded.", Line_Normal);
 	ClearMessage();
-	DrawSceneWithMask( "black", "maskleft", 1, 0, 300 );
+	DrawSceneWithMask("black", "maskleft", 1, 0, 300 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　頭がくらくらする。",
@@ -207,5 +207,5 @@ void main()
 		   NULL, "Why did my aunt start screaming today......?", Line_Normal);
 	ClearMessage();
 	Wait( 1000 );
-	DrawScene( "black", 1000 );
+	DrawScene("black", 1000 );
 }

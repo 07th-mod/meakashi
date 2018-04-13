@@ -8,7 +8,7 @@ void main()
 	ClearMessage();
 
 	PlayBGM( 0, "hig_sample_kyouki", 120, 0 );
-	DrawScene( "nort", 400 );
+	DrawScene("background/nort", 400 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　この時の祭具殿侵入が、結局、鷹野さんたちの祟られる理由となった。",
@@ -21,7 +21,7 @@ void main()
 		   NULL, "I don't know how the villagers found out about it.", Line_Normal);
 	ClearMessage();
 	PlaySE( 0, "s_page", 128, 64 );
-	DrawSceneWithMask( "black", "maskright", 7, 0, 300 );
+	DrawSceneWithMask("black", "maskright", 7, 0, 300 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　最初に思いつくのは、何者かに目撃されていたこと。",
@@ -70,5 +70,5 @@ void main()
 		   NULL, "But if so, who would have been the victim if nobody broke into the ritual storehouse?", Line_Normal);
 	ClearMessage();
 	Wait( 1000 );
-	DrawScene( "black", 1000 );
+	DrawScene("black", 1000 );
 }

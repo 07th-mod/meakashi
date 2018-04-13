@@ -8,7 +8,7 @@ void main()
 	ClearMessage();
 
 	PlayBGM( 0, "yoru", 120, 0 );
-	DrawScene( "nort", 1000 );
+	DrawScene("background/nort", 1000 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　５年目の祟り以降、もっとも電話が多かったのは、やはり側近の公由家頭首だった。",
@@ -50,7 +50,7 @@ void main()
 	OutputLine(NULL, "　そして鬼婆の要請があれば、それらを黙らせたり、煽り立てたり、捻じ曲げたりできるようだった。",
 		   NULL, "He silences, stirs, and distorts that information at her request.", Line_Normal);
 	ClearMessage();
-	DrawScene( "black", 400 );
+	DrawScene("black", 400 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　ちなみに私の忠臣、葛西は父親と旧知の間柄。",
@@ -99,5 +99,5 @@ void main()
 		   NULL, "It's possible that a 'curse execution team' exists under the hag's direct control. People just aren't aware of it...", Line_Normal);
 	ClearMessage();
 	Wait( 1000 );
-	DrawScene( "black", 1000 );
+	DrawScene("black", 1000 );
 }

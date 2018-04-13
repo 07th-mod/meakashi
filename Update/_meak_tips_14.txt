@@ -8,7 +8,7 @@ void main()
 	ClearMessage();
 
 	PlayBGM( 0, "depressive paranoia", 120, 0 );
-	DrawScene( "JYSA1", 1000 );
+	DrawScene("background/jsa1", 1000 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　祭具殿の不可侵性は、オヤシロさま崇拝の中でも群を抜く。",
@@ -44,7 +44,7 @@ void main()
 		   NULL, "Takano-san's theory says that Watanagashi was once a public execution, performed to stabilize the reign of the Three Families, rather than a purely religious ritual.", Line_Normal);
 	ClearMessage();
 	PlaySE( 0, "s_page", 128, 64 );
-	DrawScene( "JYSA1--", 1000 );
+	DrawScene("background/jysa1", 1000 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　だとするなら、そもそも神聖視という呼び方が間違っている。",
@@ -83,5 +83,5 @@ void main()
 		   NULL, " That was the true emotion ruling over this village...", Line_Normal);
 	ClearMessage();
 	Wait( 1000 );
-	DrawScene( "black", 1000 );
+	DrawScene("black", 1000 );
 }

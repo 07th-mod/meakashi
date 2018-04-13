@@ -8,18 +8,18 @@ void main()
 	ClearMessage();
 
 	PlayBGM( 0, "getting_mad", 120, 0 );
-	DrawScene( "nort", 400 );
+	DrawScene("background/nort", 400 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　ここで、あの奇怪な少女との雨の中の会話を考察してみよう。",
 		   NULL, "Why don't I relate my encounter with that creepy girl in the rain?", Line_Normal);
 	ClearMessage();
 	PlaySE( 0, "s_page", 128, 64 );
-	DrawScene( "black", 0 );
+	DrawScene("black", 0 );
 	DrawFilm( 2, 0x88, 0x88, 0x88, 256, 0, 0, TRUE );
 
 	DisableWindow();
-	ModDrawCharacter(2, 2, "Re_DefA1", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
+	ModDrawCharacter(2, 2, "sprite/normal/re2a_def_a1_", "2", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
 	DisplayWindow();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -106,7 +106,7 @@ void main()
 		   NULL, "She said that Satoshi-kun was also experiencing Oyashiro-sama's curse.", Line_Normal);
 	ClearMessage();
 	PlaySE( 0, "s_page", 128, 64 );
-	DrawScene( "black", 400 );
+	DrawScene("black", 400 );
 	FadeFilm( 0, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -120,7 +120,7 @@ void main()
 		   NULL, "He was surprised to learn that Rena had the same experience before.", Line_Normal);
 	ClearMessage();
 	PlaySE( 0, "s_page", 128, 64 );
-	DrawSceneWithMask( "Hi2", "maskup", 1, 0, 300 );
+	DrawSceneWithMask("background/hi1", "maskup", 1, 0, 300 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　オヤシロさまの祟りとは…？",
@@ -160,7 +160,7 @@ void main()
 		   NULL, "Judging from what Rena said, it seems that Satoshi-kun had been put on surveillance since long before Watanagashi.", Line_Normal);
 	ClearMessage();
 	PlaySE( 0, "s_page", 128, 64 );
-	DrawScene( "Aka2", 400 );
+	DrawScene("background/aka2", 400 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　だとすると。",
@@ -215,5 +215,5 @@ void main()
 		   NULL, "...I guess she still knows something I don't...", Line_Normal);
 	ClearMessage();
 	Wait( 1000 );
-	DrawScene( "black", 1000 );
+	DrawScene("black", 1000 );
 }

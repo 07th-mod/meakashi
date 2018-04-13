@@ -14,9 +14,9 @@ void main()
 	FadeOutBGM( 3, 0, FALSE );
 	ClearMessage();
 
-	DrawScene( "black", 1000 );
+	DrawScene("black", 1000 );
 	SetSpeedOfMessage( FALSE, 0 );
-	DrawScene( "ke_shiryou1_02", 1000 );
+	DrawScene("background/ke_shiryou1_02", 1000 );
 	PlayBGM( 0, "Iru", 120, 0 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -300,10 +300,10 @@ void main()
 	SetSpeedOfMessage( FALSE, 0 );
 
 	CallScript( "&eye" );
-	DrawScene( "black", 3000 );
+	DrawScene("black", 3000 );
 	SetSpeedOfMessage( FALSE, 0 );
 	FadeOutBGM( 1, 0, FALSE );
-	ModDrawCharacter(19, 0, "no_data", 0, 100, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, TRUE );
+	ModDrawCharacter(19, 0, "transparent", "0", 0, 100, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, TRUE );
 
 	GetAchievement("HIGURASHI_STORY_EP05_OMAKE");
 }

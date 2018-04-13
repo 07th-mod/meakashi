@@ -8,7 +8,7 @@ void main()
 	ClearMessage();
 
 	PlayBGM( 0, "yoru", 120, 0 );
-	DrawScene( "Ho_R1", 400 );
+	DrawScene("background/ho_r1", 400 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　ようやく叔母のヒステリックな小言が終わった。",
@@ -25,8 +25,8 @@ void main()
 	OutputLine(NULL, "　きっかけがなんだったかは思い出せないし、どんなきっかけだったにせよ、内容は途中で二転三転する。どうだっていい。",
 		   NULL, "I can't remember what set her off. Whatever it was, she changed subjects constantly anyway. It didn't matter.", Line_Normal);
 	ClearMessage();
-	DrawSceneWithMask( "black", "maskdown", 1, 0, 300 );
-	DrawScene( "Moon", 400 );
+	DrawSceneWithMask("black", "maskdown", 1, 0, 300 );
+	DrawScene("background/moon", 400 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　またしても、２４時を過ぎていた。",
@@ -49,12 +49,12 @@ void main()
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#ffdc6f>悟史</color>", NULL, "<color=#ffdc6f>Satoshi</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 7, "s20/07/443300006", 128);
+	ModPlayVoiceLS(4, 7, "s20/07/443300006", 128, TRUE);
 	OutputLine(NULL, "「ほら、沙都子。",
 		   NULL, "\"Here, Satoko.", Line_WaitForInput);
 	OutputLine(NULL, "…布団が敷けたよ？",
 		   NULL, " Your futon is ready,", Line_WaitForInput);
-	ModPlayVoiceLS(4, 7, "s20/07/443300007", 128);
+	ModPlayVoiceLS(4, 7, "s20/07/443300007", 128, TRUE);
 	OutputLine(NULL, "　布団に入りな。」",
 		   NULL, " so get in, okay?\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -105,7 +105,7 @@ void main()
 	OutputLine(NULL, "　叔母は指摘事項がすぐに直っていないととても怒る。",
 		   NULL, "My aunt will get mad if everything isn't done the way she wants.", Line_Normal);
 	ClearMessage();
-	DrawScene( "black", 400 );
+	DrawScene("black", 400 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　あぁ、あと何だっけ。",
@@ -166,5 +166,5 @@ void main()
 		   NULL, "It was pathetic that I felt that way.", Line_Normal);
 	ClearMessage();
 	Wait( 1000 );
-	DrawScene( "black", 1000 );
+	DrawScene("black", 1000 );
 }

@@ -8,7 +8,7 @@ void main()
 	ClearMessage();
 
 	PlayBGM( 0, "z2_hig1", 120, 0 );
-	DrawScene( "nort", 1000 );
+	DrawScene("background/nort", 1000 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　悟史くんが東京へ行った、という怪情報の裏付けは全く取れない。",
@@ -20,8 +20,8 @@ void main()
 	OutputLine(NULL, "　そもそも情報の発端はこうだ。",
 		   NULL, "It started as follows.", Line_Normal);
 	ClearMessage();
-	DrawScene( "black", 1000 );
-	DrawSceneWithMask( "Eki2", "maskup", 1, 0, 1300 );
+	DrawScene("black", 1000 );
+	DrawSceneWithMask("background/eki", "maskup", 1, 0, 1300 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　名古屋駅の遺失物窓口に若者が訪れて、自分の財布が届けられてないかと騒いだのだ。",
@@ -59,12 +59,12 @@ void main()
 	OutputLine(NULL, "　……それだけのこと。",
 		   NULL, "...That was all.", Line_Normal);
 	ClearMessage();
-	DrawScene( "black", 400 );
+	DrawScene("black", 400 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　その北条を名乗った男の申告する特徴の財布は、遺失物窓口には届いていなかった。",
 		   NULL, "The wallet of the man named Houjou was never reported as found to the lost and found office.", Line_Normal);
 	ClearMessage();
 	Wait( 1000 );
-	DrawScene( "black", 1000 );
+	DrawScene("black", 1000 );
 }

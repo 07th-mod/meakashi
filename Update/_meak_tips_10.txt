@@ -8,16 +8,16 @@ void main()
 	ClearMessage();
 
 	PlayBGM( 0, "higurashi", 120, 0 );
-	DrawScene( "nort", 1000 );
+	DrawScene("background/nort", 1000 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　鷹野三四とは、その後しばらく交流があった。",
 		   NULL, "I saw Miyo Takano a few times after that.", Line_Normal);
 	ClearMessage();
 	PlaySE( 0, "s_page", 128, 64 );
-	DrawSceneWithMask( "black", "maskright", 7, 0, 300 );
-	ModDrawCharacterWithFiltering(0, 9, "ta_si_de_a1", "maskright", 7, 0, 0, FALSE, 0, 0, 0, 0, 0, 9, 0, FALSE );
-	DrawSceneWithMask( "Tosyo8", "maskright", 7, 0, 300 );
+	DrawSceneWithMask("black", "maskright", 7, 0, 300 );
+	ModDrawCharacterWithFiltering(0, 9, "sprite/normal/ta1_def_", "0", "maskright", 7, 0, 0, FALSE, 0, 0, 0, 0, 0, 9, 0, FALSE );
+	DrawSceneWithMask("background/tosyo2", "maskright", 7, 0, 300 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　彼女の本質は、猟奇趣味と、それに負けないくらいの偏執的な好奇心だった。",
@@ -41,7 +41,7 @@ void main()
 		   NULL, " I might start believing that Satoshi-kun disappeared because of the curse.", Line_Normal);
 	ClearMessage();
 	PlaySE( 0, "s_page", 128, 64 );
-	DrawSceneWithMask( "black", "maskright", 7, 0, 300 );
+	DrawSceneWithMask("black", "maskright", 7, 0, 300 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　彼女の話す雛見沢村の暗部の話は、興味深い話ばかりだった。",
@@ -67,7 +67,7 @@ void main()
 		   NULL, "In other words, she believes that the curse is performed by religious fanatics.", Line_Normal);
 	ClearMessage();
 	PlaySE( 0, "s_page", 128, 64 );
-	DrawSceneWithMask( "Hi2", "maskright", 7, 0, 300 );
+	DrawSceneWithMask("background/hi1", "maskright", 7, 0, 300 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　彼女の独自の説によるならば、雛見沢村には信仰を中心とした一派があり、",
@@ -82,7 +82,7 @@ void main()
 		   NULL, "She believes that they are operating behind the scenes in order to revive the dignity of the Onigafuchi people, which was lost during the Meiji Era.", Line_Normal);
 	ClearMessage();
 	PlaySE( 0, "s_page", 128, 64 );
-	DrawSceneWithMask( "nort", "maskright", 7, 0, 300 );
+	DrawSceneWithMask("background/nort", "maskright", 7, 0, 300 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　三四さんの話はスケールが大きく、全体で見ると、なるほどなと思う面もある。",
@@ -100,5 +100,5 @@ void main()
 		   NULL, "Her theories are just too broad.", Line_Normal);
 	ClearMessage();
 	Wait( 1000 );
-	DrawScene( "black", 1000 );
+	DrawScene("black", 1000 );
 }

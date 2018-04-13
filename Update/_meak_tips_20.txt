@@ -8,7 +8,7 @@ void main()
 	ClearMessage();
 
 	PlayBGM( 0, "z2_hig1", 120, 0 );
-	DrawScene( "nort", 1000 );
+	DrawScene("background/nort", 1000 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　私の復讐劇は、この時点では、祟りシステムの破壊で成立すると考えられていた。",
@@ -43,7 +43,7 @@ void main()
 		   NULL, "In fact, it's me who's being attacked. Rika Furude attacked me.", Line_Normal);
 	ClearMessage();
 	PlaySE( 0, "s_page", 128, 64 );
-	DrawSceneWithMask( "black", "maskright", 7, 0, 300 );
+	DrawSceneWithMask("black", "maskright", 7, 0, 300 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　私が暴いたとおりなら、圭一という名の祭具殿侵犯者は非常に魅力的なエサのはず。",
@@ -199,7 +199,7 @@ void main()
 		   NULL, "I don't understand who the enemy is, or how Satoshi-kun was made to disappear.", Line_Normal);
 	ClearMessage();
 	PlaySE( 0, "s_page", 128, 64 );
-	DrawScene( "nort", 200 );
+	DrawScene("background/nort", 200 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　鬼婆は雛見沢の闇をどこまで知っていたのか。",
@@ -257,5 +257,5 @@ void main()
 		   NULL, "(The whole page is blacked out with scribbles.)", Line_Normal);
 	ClearMessage();
 	Wait( 1000 );
-	DrawScene( "black", 1000 );
+	DrawScene("black", 1000 );
 }

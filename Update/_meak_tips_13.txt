@@ -8,7 +8,7 @@ void main()
 	ClearMessage();
 
 	PlayBGM( 0, "z2_hig1", 120, 0 );
-	DrawScene( "So_K1", 1000 );
+	DrawScene("background/so_k1", 1000 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　私が地下拷問室と呼んでいたあの場所は、正しくは地下祭具殿と呼ばれているらしい。",
@@ -46,7 +46,7 @@ void main()
 		   NULL, "Takano-san's theory is correct.", Line_Normal);
 	ClearMessage();
 	PlaySE( 0, "s_page", 128, 64 );
-	DrawSceneWithMask( "black", "maskright", 7, 0, 300 );
+	DrawSceneWithMask("black", "maskright", 7, 0, 300 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　そして象徴的な祭具殿と違い、園崎本家の地下祭具殿は確かに常時使用可能な状態で維持されていた。",
@@ -77,5 +77,5 @@ void main()
 		   NULL, "I should remain armed with the knowledge that occult events are still secretly being performed in this cursed village...", Line_Normal);
 	ClearMessage();
 	Wait( 1000 );
-	DrawScene( "black", 1000 );
+	DrawScene("black", 1000 );
 }

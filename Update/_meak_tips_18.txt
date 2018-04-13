@@ -8,7 +8,7 @@ void main()
 	ClearMessage();
 
 	PlayBGM( 0, "Nazo", 120, 0 );
-	DrawSceneWithMask( "JY1", "maskup", 1, 0, 1300 );
+	DrawSceneWithMask("background/jy1", "maskup", 1, 0, 1300 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　その後、私は公由村長の行方を捜す青年団に合流した。",
@@ -20,8 +20,8 @@ void main()
 	OutputLine(NULL, "　町会の連絡網にそって、訪ねていないか電話し、回覧板区分ごとに手分けして捜した。",
 		   NULL, "I went down the town council's phone directory and called to see if he had visited, then had the group split according to the circular notice divisions and sent them to search the town.", Line_Normal);
 	ClearMessage();
-	DrawSceneWithMask( "black", "maskright", 1, 0, 300 );
-	DrawSceneWithMask( "M_Y1", "maskright", 1, 0, 300 );
+	DrawSceneWithMask("black", "maskright", 1, 0, 300 );
+	DrawSceneWithMask("background/m_y7", "maskright", 1, 0, 300 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　誰もが、いくら捜しても見つからないだろうと、薄々気付いているようだった。",
@@ -33,8 +33,8 @@ void main()
 	OutputLine(NULL, "　だが、薄々どころか、絶対見つからないと知っている私にはとにかく辛いものだった。",
 		   NULL, "But since I knew they definitely never would, it was just bothersome to me.", Line_Normal);
 	ClearMessage();
-	DrawSceneWithMask( "black", "maskright", 1, 0, 300 );
-	DrawSceneWithMask( "M_Y6", "maskright", 1, 0, 300 );
+	DrawSceneWithMask("black", "maskright", 1, 0, 300 );
+	DrawSceneWithMask("background/m_y1", "maskright", 1, 0, 300 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　午前０時を回っても、まだあそこは見てない、一応あそこも行ってみようと皆、精力的だ。",
@@ -78,27 +78,27 @@ void main()
 	OutputLine(NULL, "　去年の何者かも、絶対に見つかることのない悟史くんを知っていて、私のように欠伸交じりにせせら笑っていたのだ。",
 		   NULL, "Last year, there must also have been some people who were yawning... and grinning on the inside.", Line_Normal);
 	ClearMessage();
-	DrawSceneWithMask( "M_Y4", "maskleft", 1, 0, 300 );
+	DrawSceneWithMask("background/m_y4", "maskleft", 1, 0, 300 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>村人</color>", NULL, "<color=#f5e6d3>Villager</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 0, "s20/00/villa44001", 128);
+	ModPlayVoiceLS(4, 0, "s20/00/villa44001", 128, TRUE);
 	OutputLine(NULL, "「……去年の捜索って、何時に終わりにしましたっけ？」",
 		   NULL, "\"......When did we stop searching last year, do you remember?\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>村人</color>", NULL, "<color=#f5e6d3>Villager</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 0, "s20/00/villb44001", 128);
+	ModPlayVoiceLS(4, 0, "s20/00/villb44001", 128, TRUE);
 	OutputLine(NULL, "「ん？",
 		   NULL, "\"Hmm?", Line_WaitForInput);
 	OutputLine(NULL, "　北条んとこの悟史ん時かい？",
 		   NULL, " When Satoshi Houjou-kun was missing?", Line_WaitForInput);
-	ModPlayVoiceLS(4, 0, "s20/00/villb44002", 128);
+	ModPlayVoiceLS(4, 0, "s20/00/villb44002", 128, TRUE);
 	OutputLine(NULL, "　ありゃあ何時だったっけ？」",
 		   NULL, " Oh, what time was it?\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>長老</color>", NULL, "<color=#f5e6d3>Elder</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 0, "s20/00/elda44001", 128);
+	ModPlayVoiceLS(4, 0, "s20/00/elda44001", 128, TRUE);
 	OutputLine(NULL, "「午前の０時過ぎくらいには解散したような気がするなぁ。」",
 		   NULL, "\"I guess that was around midnight.\"", Line_Normal);
 	ClearMessage();
@@ -136,5 +136,5 @@ void main()
 		   NULL, " Shit... shit... I want to kill the people who said that...", Line_Normal);
 	ClearMessage();
 	Wait( 1000 );
-	DrawScene( "black", 1000 );
+	DrawScene("black", 1000 );
 }

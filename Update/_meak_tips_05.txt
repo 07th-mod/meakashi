@@ -8,7 +8,7 @@ void main()
 	ClearMessage();
 
 	PlayBGM( 0, "demo_48khz", 120, 0 );
-	DrawScene( "nort", 400 );
+	DrawScene("background/nort", 400 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　この時点での悟史くんの様子は本当に気の毒なものだった。",
@@ -112,5 +112,5 @@ void main()
 	ClearMessage();
 	PlaySE( 0, "s_page", 128, 64 );
 	Wait( 1000 );
-	DrawScene( "black", 1000 );
+	DrawScene("black", 1000 );
 }

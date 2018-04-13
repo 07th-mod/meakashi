@@ -18,13 +18,13 @@ void BrandLogo()
 
 	SetGlobalFlag(GFlag_FirstPlay, 1);
 
-	DrawBG( "07thlogo", 1000, TRUE );
+	DrawBG("07thlogo", 1000, TRUE );
 	Wait( 2000 );
-	DrawSceneWithMask( "mangagamer", "logomask", 0, 0, 1000 );
+	DrawSceneWithMask("mangagamer", "logomask", 0, 0, 1000 );
 
 	Wait( 2000 );
 
-	DrawSceneWithMask( "black", "logomask", 0, 0, 1000 );
+	DrawSceneWithMask("black", "logomask", 0, 0, 1000 );
 }
 
 void Title()
@@ -50,7 +50,7 @@ void Title()
 
 	PlayBGM( 2, "higurashi", 128, 0 );
 
-	DrawScene("SGTitle990000", 1500);
+	DrawScene("background/so2", 1500);
 
 	Wait(1000);
 
@@ -80,15 +80,15 @@ void ChapterPreview()
 {
 	PlayBGM( 2, "lsys13", 128, 0 );
 
-	DrawSceneWithMask( "black", "mask2", 0, 0, 1000 );
+	DrawSceneWithMask("black", "mask2", 0, 0, 1000 );
 
 	Wait(1000);
 
-	DrawScene("scenario_a", 1000);
+	DrawScene("background/moon_01", 1000);
 
-	DrawSceneWithMask( "scenario_b", "mask6", 0, 0, 1000 );
+	DrawSceneWithMask("scenario_b", "mask6", 0, 0, 1000 );
 
-	DrawSceneWithMask( "scenario_c", "mask5", 0, 0, 1000 );
+	DrawSceneWithMask("scenario_c", "mask5", 0, 0, 1000 );
 
 	//DrawScene("scenario_c", 500);
 
@@ -99,7 +99,7 @@ void ChapterPreview()
 		StopBGM( 2 );
 		PlaySE( 1, "wa_037", 128, 64 );
 
-		DrawScene( "black", 1000 );
+		DrawScene("black", 1000 );
 
 		JumpSection("Game");
 	}
@@ -180,7 +180,7 @@ void Game()
 	SetValidityOfInput( TRUE );
 
 
-	DrawScene( "black", 1000 );
+	DrawScene("black", 1000 );
 
 	if(LoadValueFromLocalWork(s_jump) <= 1)
 	{
