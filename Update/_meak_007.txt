@@ -319,10 +319,16 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "s06/06/150600565", 128);
 	OutputLine(NULL, "「うん。」",
-		   NULL, "\"Yeah...\"", Line_WaitForInput);
+		   NULL, "\"Yeah...\"", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "s06/02/150200003", 128);
 	OutputLine(NULL, "「………気分が優れないの？」",
-		   NULL, "\"Are you not feeling well?\"", Line_WaitForInput);
+		   NULL, "\"Are you not feeling well?\"", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "s06/06/150600566", 128);
 	OutputLine(NULL, "「悪いね。」",
 		   NULL, "\"Sorry.\"", GetGlobalFlag(GLinemodeSp));
