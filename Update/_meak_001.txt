@@ -2315,7 +2315,7 @@ void main()
 	ClearMessage();
 	FadeOutBGM( 1, 0, FALSE );
 	ModDrawCharacter(19, 0, "transparent", "0", 0, 100, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, TRUE );
-	DrawSceneWithMask("hi6-", "maskup", 1, 0, 300 );
+	DrawSceneWithMask("background/flashback/mati2", "maskup", 1, 0, 300 );
 	PlayBGM( 0, "Iru", 120, 0 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -2398,7 +2398,7 @@ void main()
 	OutputLine(NULL, "　…顔も知らない仲間たちと共にする連帯感は、今思い出しても、胸が熱くなる。",
 		   NULL, "...I felt united with my fellow members, even though they were strangers to me, and that memory warms my heart.", Line_Normal);
 	ClearMessage();
-	DrawScene("ji2-", 400 );
+	DrawScene("background/flashback/ji2", 400 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　そう、あの感じは…祭のお神輿を担いでみんなで村中を練り歩き、汗だくになってへとへとになって。",
@@ -2417,7 +2417,7 @@ void main()
 	OutputLine(NULL, "　親父のところを出入りしてる若い兄ちゃんたちを連れて、いろんな悪さをしたのがとても懐かしい。",
 		   NULL, "I remember accompanying young men who worked for my dad out to the village to do various bad things.", Line_Normal);
 	ClearMessage();
-	DrawScene("ke1-", 400 );
+	DrawScene("background/flashback/ke1", 400 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　警察にも何度もお世話になったっけな。",
@@ -2634,7 +2634,7 @@ void main()
 		   NULL, "Worse, the decision to confine me to an academy far away from the Sonozaki family... was made before I was even born.", Line_Normal);
 	ClearMessage();
 	DrawScene("black", 400 );
-	DrawScene("heya3-", 400 );
+	DrawScene("background/flashback/ima3", 400 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　私に与えられた名前は",
@@ -3349,15 +3349,15 @@ void main()
 	ModDrawCharacter(19, 0, "transparent", "0", 0, 100, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, TRUE );
 	PlayBGM( 0, "T1", 120, 0 );
 	SetValidityOfInput( FALSE );
-	DrawScene("mea_t1", 1000 );
+	DrawScene("prologue/mea_t1", 1000 );
 	Wait( 11000 );
-	DrawScene("mea_t2", 1000 );
+	DrawScene("prologue/mea_t2", 1000 );
 	Wait( 11000 );
-	DrawScene("mea_t3", 1000 );
+	DrawScene("prologue/mea_t3", 1000 );
 	Wait( 11000 );
-	DrawScene("mea_t4", 1000 );
+	DrawScene("prologue/mea_t4", 1000 );
 	Wait( 11000 );
-	DrawScene("mea_t5", 1000 );
+	DrawScene("prologue/mea_t5", 1000 );
 	Wait( 11000 );
 	DrawScene("black", 3000 );
 	SetValidityOfInput( TRUE );

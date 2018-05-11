@@ -1435,7 +1435,7 @@ void main()
 	OutputLine(NULL, "　ダム戦争時の遺恨というラインからこれらをなぞると、それらは簡単にまとめられた。",
 		   NULL, "If I considered that each case arose from the grudge over the dam conflict, it's quite simple.", Line_Normal);
 	ClearMessage();
-	DrawScene("damu2", 200 );
+	DrawScene("background/greyscale/damu2", 200 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　まず１年目。",
@@ -1470,7 +1470,7 @@ void main()
 		   NULL, "It's apparent that the target was selected based on the villagers' preference.", Line_Normal);
 	ClearMessage();
 	DrawSceneWithMask("black", "maskleft", 7, 0, 300 );
-	DrawSceneWithMask("ji2++", "maskleft", 7, 0, 300 );
+	DrawSceneWithMask("background/greyscale/kawa1", "maskleft", 7, 0, 300 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　次に２年目。",
@@ -1537,7 +1537,7 @@ void main()
 	OutputLine(NULL, "　だが、実際にはもう１年清算が続いた。",
 		   NULL, "Yet those incidents were followed by another one.", Line_Normal);
 	ClearMessage();
-	DrawSceneWithMask("ji2+", "maskleft", 7, 0, 300 );
+	DrawSceneWithMask("background/greyscale/ji2", "maskleft", 7, 0, 300 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　そして３年目。",
@@ -1650,7 +1650,7 @@ void main()
 	OutputLine(NULL, "　４番目の序列として、妥当に思える。",
 		   NULL, "It comes naturally as a fourth target.", Line_Normal);
 	ClearMessage();
-	DrawSceneWithMask("hi2-", "maskleft", 7, 0, 300 );
+	DrawSceneWithMask("background/greyscale/hi1", "maskleft", 7, 0, 300 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　村の守り神であるオヤシロさまを祀る祭りの当日に、ダム戦争の戦犯たちを年々「祟殺し」ていく。",
@@ -1748,7 +1748,7 @@ void main()
 	OutputLine(NULL, "　そして、その何者かと接点を持つ悟史くんは……消された？",
 		   NULL, "And Satoshi-kun was eliminated because of his connection with them...?", Line_Normal);
 	ClearMessage();
-	DrawSceneWithMask("damu2", "maskleft", 7, 0, 300 );
+	DrawSceneWithMask("background/greyscale/damu2", "maskleft", 7, 0, 300 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　そうやって考えると、殺人事件という意味では性格の似る１年目の現場監督殺しにも共通する。",
@@ -2607,7 +2607,7 @@ void main()
 		   NULL, " the man-eating demons, huh?", Line_Normal);
 	ClearMessage();
 	DrawScene("black", 400 );
-	DrawScene("hi3", 400 );
+	DrawScene("background/greyscale/oni1", 400 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　雛見沢村に伝わるおとぎ話だ。",

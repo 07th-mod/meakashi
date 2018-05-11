@@ -39,7 +39,7 @@ void Title()
 
 	//DrawSprite( 10, "Logo", NULL, 0, 0, 0, 0, 0, 0, 0, TRUE, TRUE, 0, 0, 10, 1500, FALSE );
 
-	DrawSprite( 10, "Logo", NULL, 0, 0, 0, 0, 0, 0, FALSE, FALSE, 0, 0, 10, 0, FALSE );
+	DrawSprite( 10, "logo", NULL, 0, 0, 0, 0, 0, 0, FALSE, FALSE, 0, 0, 10, 0, FALSE );
 
 	DrawSceneWithMask("black", "maskc", 0, 0, 1000);
 
@@ -54,13 +54,11 @@ void Title()
 
 	Wait(1000);
 
-	DrawSpriteWithFiltering( 10, "SGTitle900200", "maskleft", 0, 0, 0, TRUE, TRUE, 0, 0, 10, 1500, TRUE );
+	DrawSpriteWithFiltering( 10, "sgtitle900200", "maskleft", 0, 0, 0, TRUE, TRUE, 0, 0, 10, 1500, TRUE );
 
 	DrawSprite( 12, "titlelogo", NULL, 0, 0, 0, 0, 0, 0, FALSE, FALSE, 0, 0, 12, 1000, TRUE );
 
 	Wait(1000);
-
-	//
 
 	//DrawBG( "bg_216", 0, TRUE );
 
@@ -84,7 +82,7 @@ void ChapterPreview()
 
 	Wait(1000);
 
-	DrawScene("background/moon_01", 1000);
+	DrawScene("scenario_a", 1000);
 
 	DrawSceneWithMask("scenario_b", "mask6", 0, 0, 1000 );
 

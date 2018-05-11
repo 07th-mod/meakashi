@@ -658,7 +658,7 @@ void main()
 	OutputLine(NULL, "……拷問具たちであることを理解している…。",
 		   NULL, " torture devices from Hell...", Line_Normal);
 	ClearMessage();
-	DrawSceneWithMask("js7", "maskleft", 1, 0, 300 );
+	DrawSceneWithMask("background/js7", "maskleft", 1, 0, 300 );
 	ModDrawCharacter(2, 17, "portrait/night/oryou_def_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#d7e6de>お魎</color>", NULL, "<color=#d7e6de>Oryou</color>", NULL, Line_ContinueAfterTyping); }
@@ -770,7 +770,7 @@ void main()
 	OutputLine(NULL, "　でもそれは……悟史くんの両親のことであって、その息子である悟史くんに問われる非ではないと思っていたからだ。",
 		   NULL, "But I didn't think that Satoshi-kun was also burdened with that responsibility.", Line_Normal);
 	ClearMessage();
-	DrawScene("js7", 400 );
+	DrawScene("background/js7", 400 );
 	ModDrawCharacter(2, 17, "portrait/night/oryou_def_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
@@ -846,7 +846,7 @@ void main()
 	FadeOutBGM( 2, 0, FALSE );
 	FadeOutBGM( 3, 0, FALSE );
 	ModDrawCharacter(19, 0, "transparent", "0", 0, 100, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, TRUE );
-	DrawSceneWithMask("js7", "maskup", 1, 0, 300 );
+	DrawSceneWithMask("background/js7", "maskup", 1, 0, 300 );
 	ModDrawCharacter(2, 17, "portrait/night/oryou_def_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
 	PlayBGM( 0, "hgrs01", 120, 0 );
 
@@ -1057,7 +1057,7 @@ void main()
 		   NULL, "Then, she slowly walked in my direction.", Line_Normal);
 	ClearMessage();
 	DisableWindow();
-	DrawScene("js7", 400 );
+	DrawScene("background/js7", 400 );
 	ModDrawCharacter(2, 3, "portrait/night/me1a_majime_a1_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
 	DisplayWindow();
 
@@ -1393,7 +1393,7 @@ void main()
 		   NULL, " Please forgive them!", Line_Normal);
 	ClearMessage();
 	DisableWindow();
-	DrawScene("js7", 400 );
+	DrawScene("background/js7_01", 400 );
 	ModDrawCharacter(2, 3, "portrait/night/me1a_majime_a1_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
 	DisplayWindow();
 
@@ -1518,7 +1518,7 @@ void main()
 	OutputLine(NULL, "　…そして、私の前に机を運び、その器具をそこに載せる。",
 		   NULL, "...then set a table in front of me and put the device on top of it.", Line_Normal);
 	ClearMessage();
-	DrawSceneWithMask("js7", "maskright", 1, 0, 300 );
+	DrawSceneWithMask("background/js7_01", "maskright", 1, 0, 300 );
 	ModDrawCharacter(2, 3, "portrait/night/me1a_majime_a1_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }

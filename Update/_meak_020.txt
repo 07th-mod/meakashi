@@ -3197,7 +3197,7 @@ void main()
 	OutputLine(NULL, "……いつの間にか作り上げられているんです。」",
 		   NULL, " where every year, you're allowed to kill someone on the night of Watanagashi.\"", Line_Normal);
 	ClearMessage();
-	DrawScene("hi2-", 1000 );
+	DrawScene("background/greyscale/hi1", 1000 );
 	PlayBGM( 1, "yabaisemi", 120, 0 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -3245,7 +3245,7 @@ void main()
 	OutputLine(NULL, "　そう、それはお魎が作り出した園崎本家の、磨ぎ汁のような霧で隠した命令システムそのもの。",
 		   NULL, "That was the system of vague commands used in the Sonozaki family, created by its head, Oryou.", Line_Normal);
 	ClearMessage();
-	DrawScene("heya3", 400 );
+	DrawScene("background/greyscale/ima3", 400 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　園崎本家における命令系統の特筆すべき点は、命令者と執行者の両点が、線で結ばれていないところにある。",
@@ -3296,7 +3296,7 @@ void main()
 	OutputLine(NULL, "　でも、結果的にお魎の思い通りの結果になったことはわかるし、そのために尽力した人間が身内の誰かだということはおぼろげに分かっている。",
 		   NULL, "But they all knew things would conclude just as Oryou wanted, and they could assume it was one of their own who did it for her.", Line_Normal);
 	ClearMessage();
-	DrawScene("hi2-", 400 );
+	DrawScene("background/greyscale/hi1", 400 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　この消極的な協力システムは綿密で、村ぐるみと呼べるほど広大で、そしてその結束はダム戦争で鍛錬され、この上なく強固だ。",
@@ -3353,7 +3353,7 @@ void main()
 		   NULL, "The first element was a 'region of solidarity'.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
-	DrawScene("hi2-", 400 );
+	DrawScene("background/greyscale/hi1", 400 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　それは長い排他的な歴史を持つ雛見沢では自然に生まれた。",
@@ -3408,7 +3408,7 @@ void main()
 	OutputLine(NULL, "　園崎お魎はダム戦争中、結束を容易にするため、常に敵をわかりやすく設定した。",
 		   NULL, "During the dam conflict, Oryou Sonozaki made the identity of the enemy very clear to everyone.", Line_Normal);
 	ClearMessage();
-	DrawSceneWithMask("damu2", "maskup", 1, 0, 300 );
+	DrawSceneWithMask("background/greyscale/damu2", "maskup", 1, 0, 300 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　ダム建設反対、政府は敵だ。",
@@ -3596,7 +3596,7 @@ void main()
 	OutputLine(NULL, "　……雑草の根を、途中で千切れないように、深く深く丹念に執念深く掘り起こすようなものだった。",
 		   NULL, "It was like pulling a weed while being very careful not to break its roots.", Line_Normal);
 	ClearMessage();
-	DrawSceneWithMask("js4-", "maskdown", 1, 0, 300 );
+	DrawSceneWithMask("background/greyscale/js4_01", "maskdown", 1, 0, 300 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　役員会の席上で私は、前原圭一も祭具殿を侵したひとりと発言した。",
@@ -4467,7 +4467,7 @@ void main()
 		   NULL, " Didn't you also hear things directly?\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 	DrawScene("black", 400 );
-	DrawScene("heya3-", 400 );
+	DrawScene("background/flashback/ima3", 400 );
 	if (GetGlobalFlag(GADVMode) == 0) { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
@@ -4480,7 +4480,7 @@ void main()
 		   NULL, " or, \"can we set up a checkpoint to blockade their construction vehicles?\"", Line_Normal);
 	ClearMessage();
 	DrawSceneWithMask("black", "maskleft", 1, 0, 300 );
-	DrawSceneWithMask("js4--", "maskleft", 1, 0, 300 );
+	DrawSceneWithMask("background/flashback/js4_01", "maskleft", 1, 0, 300 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　そして、その結果、警察に捕まった仲間たちを釈放したり、あるいはアリバイを作ったり、証拠を崩したり捏造したり。",

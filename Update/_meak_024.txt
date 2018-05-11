@@ -4160,7 +4160,7 @@ void main()
 	OutputLine(NULL, "　それは、にわかには信じ難いことだった。",
 		   NULL, "What she said was something hard to believe.", Line_Normal);
 	ClearMessage();
-	DrawScene("heya3-", 1000 );
+	DrawScene("background/flashback/ima3", 1000 );
 	ModDrawCharacter(2, 17, "sprite/flashback/oryou_shinken_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -4207,7 +4207,7 @@ void main()
 		   NULL, " It was a hoax by the Sonozaki family head...", Line_Normal);
 	ClearMessage();
 	DrawScene("black", 400 );
-	DrawScene("so1+", 1000 );
+	DrawScene("background/flashback/so1", 1000 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　園崎家にとって都合のいい偶然が起こると、あたかも自分の差し金で事態が好転したように振舞う、ブラフ。",
@@ -4225,7 +4225,7 @@ void main()
 		   NULL, "Therefore, people thought of the Sonozaki family as one that had deep connections in the underworld, and that they were capable of producing any sort of conspiracy.", Line_Normal);
 	ClearMessage();
 	DrawScene("black", 400 );
-	DrawSceneWithMask("damu2+", "maskup", 1, 0, 300 );
+	DrawSceneWithMask("background/flashback/damu2", "maskup", 1, 0, 300 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　ダム戦争中からそうだった。",
@@ -4245,7 +4245,7 @@ void main()
 		   NULL, "When the relatives saw that, they became fearful of Oryou's power.", Line_Normal);
 	ClearMessage();
 	DrawScene("black", 400 );
-	DrawScene("heya3-", 1000 );
+	DrawScene("background/flashback/ima3", 1000 );
 	ModDrawCharacter(2, 17, "sprite/flashback/oryou_shinken_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -4372,7 +4372,7 @@ void main()
 		   NULL, "Even if the hag had forgiven him personally, as long as he was the object of the curse, the executioner would follow him forever.", Line_Normal);
 	ClearMessage();
 	DrawSceneWithMask("black", "maskdown", 1, 0, 300 );
-	DrawScene("ima1+", 400 );
+	DrawScene("background/flashback/ima1", 400 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 3, "ps3/s06/03/150300458", 128, TRUE);

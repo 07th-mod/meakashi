@@ -384,7 +384,7 @@ void main()
 		   NULL, " It's probably Takano-san.\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 	if (GetGlobalFlag(GADVMode) == 0) { ClearMessage(); }
-	DrawSceneWithMask("jsa7_nega", "mask2", 1, 0, 2000 );
+	DrawSceneWithMask("background/negative/jsa7", "mask2", 1, 0, 2000 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　心臓が止まりそうになる。",
@@ -2378,7 +2378,7 @@ void main()
 		   NULL, "But... to the elderly people of Hinamizawa, it's something more serious...!\"", Line_Normal);
 	ClearMessage();
 	DrawScene("black", 400 );
-	DrawScene("ji2-", 400 );
+	DrawScene("background/flashback/ji2", 400 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　魅音は、村の老人たちがいかにオヤシロさまを妄信し、祭り事をどれだけ神聖視しているかを話した。",

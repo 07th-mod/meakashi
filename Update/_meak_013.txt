@@ -54,7 +54,7 @@ void main()
 	OutputLine(NULL, "　それから、すぐに興宮の整形外科に車で連れて行かれた。",
 		   NULL, "I was taken to a hospital in Okinomiya.", Line_Normal);
 	ClearMessage();
-	DrawSceneWithMask("kuruma5-", "maskleft", 1, 0, 300 );
+	DrawSceneWithMask("background/flashback/kuruma5", "maskleft", 1, 0, 300 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　病院までの道中の揺れがとにかく辛かった。",
@@ -78,7 +78,7 @@ void main()
 	OutputLine(NULL, "…水も飲まずに、痛みがぶり返す度に頭痛薬を唾で飲み込んで耐えた。",
 		   NULL, " I swallowed the pills without water.", Line_Normal);
 	ClearMessage();
-	DrawSceneWithMask("sinryo_matiai2-", "maskleft", 1, 0, 300 );
+	DrawSceneWithMask("background/flashback/sinryou_matiai1", "maskleft", 1, 0, 300 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　…病院で治療を受け、待合室で呆然としていた時。",
@@ -1984,9 +1984,9 @@ void main()
 	OutputLine(NULL, "じゃあそのぬいぐるみを持ってどうして帰らなかったんですか？」",
 		   NULL, " then why didn't he come home with it?\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
-	PlayBGM( 1, "kaze", 120, 0 ); //should be kaze sound
+	PlayBGM( 1, "kaze", 120, 0 );
 
-	DrawSceneWithMask("ke_s2-", "maskc", 0, 0, 300 );
+	DrawSceneWithMask("background/ke_s2", "maskc", 0, 0, 300 );
 
 	if (GetGlobalFlag(GADVMode) == 0) { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
