@@ -2453,7 +2453,7 @@ void main()
 		   NULL, "\"Oh?", Line_WaitForInput);
 	ModPlayVoiceLS(4, 8, "ps3/s06/08/150800023", 128, TRUE);
 	OutputLine(NULL, "　圭一くんも出るかい？」",
-		   NULL, " Keiichi-kun, are you leaving too?\"\"", GetGlobalFlag(GLinemodeSp));
+		   NULL, " Keiichi-kun, are you leaving too?\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 	DisableWindow();
 	ModDrawCharacter(1, 1, "sprite/night/kei2_def1_", "0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 200, TRUE );
