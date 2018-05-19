@@ -59,7 +59,7 @@ void main()
 	OutputLine(NULL, "「魅音がマネージャーだったら、色々心強いと思うけどね。",
 		   NULL, "\"We'd be a stronger team if you were our manager, Mion.", Line_WaitForInput);
 	DisableWindow();
-	ChangeBustshot( 1, "sato2_Def2_0", 200, TRUE );
+	ModDrawCharacter(1, 7, "sprite/normal/sato2_def2_", "0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 8, 200, TRUE );
 	DisplayWindow();
 
 	ModPlayVoiceLS(4, 7, "ps3/s06/07/151200117", 128, TRUE);
@@ -98,7 +98,7 @@ void main()
 		   NULL, " Is his batting average improving?\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 	DisableWindow();
-	ChangeBustshot( 2, "iri3_Def2_0", 200, TRUE );
+	ModDrawCharacter(2, 10, "sprite/normal/iri3_def2_", "2", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );
 	DisplayWindow();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#c89a80>入江</color>", NULL, "<color=#c89a80>Irie</color>", NULL, Line_ContinueAfterTyping); }
@@ -128,7 +128,7 @@ void main()
 		   NULL, " you're doing great, Satoshi-kun!\"", Line_Normal);
 	ClearMessage();
 	DisableWindow();
-	ChangeBustshot( 1, "sato2_komaru2_0", 200, TRUE );
+	ModDrawCharacter(1, 7, "sprite/normal/sato2_komaru2_", "0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 8, 200, TRUE );
 	DisplayWindow();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#ffdc6f>悟史</color>", NULL, "<color=#ffdc6f>Satoshi</color>", NULL, Line_ContinueAfterTyping); }
@@ -143,7 +143,7 @@ void main()
 		   NULL, " I have to be able to hit the ball when it really counts.\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 	DisableWindow();
-	ChangeBustshot( 2, "iri3_Warai_0", 200, TRUE );
+	ModDrawCharacter(2, 10, "sprite/normal/iri3_warai_", "2", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );
 	DisplayWindow();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#c89a80>入江</color>", NULL, "<color=#c89a80>Irie</color>", NULL, Line_ContinueAfterTyping); }
