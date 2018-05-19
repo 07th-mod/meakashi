@@ -1406,7 +1406,7 @@ void main()
 	OutputLine(NULL, "魅ぃちゃんに悪気はなかった。",
 		   NULL, " Mii-chan doesn't have any bad intentions.", Line_WaitForInput);
 	DisableWindow();
-	ChangeBustshot( 2, "re_se_de_b1", 200, TRUE );
+	ModDrawCharacter(2, 2, "sprite/normal/re1b_def_b1_", "2", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );
 	DisplayWindow();
 
 	ModPlayVoiceLS(4, 2, "s06/02/150200130", 128, TRUE);
@@ -1417,7 +1417,7 @@ void main()
 		   NULL, " ...Okay?\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 	DisableWindow();
-	ChangeBustshot( 1, "sato1_komaru_0", 200, TRUE );
+	ModDrawCharacter(1, 7, "sprite/normal/sato1_komaru_", "0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 8, 200, TRUE );
 	DisplayWindow();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#ffdc6f>悟史</color>", NULL, "<color=#ffdc6f>Satoshi</color>", NULL, Line_ContinueAfterTyping); }
@@ -1431,7 +1431,7 @@ void main()
 		   NULL, "Satoshi-kun looked like he wanted to say something back, but he chose not to.", Line_Normal);
 	ClearMessage();
 	DisableWindow();
-	ChangeBustshot( 2, "re_se_ik_a1", 200, TRUE );
+	ModDrawCharacter(2, 2, "sprite/normal/re1a_okoru_a1_", "0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );
 	DisplayWindow();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }

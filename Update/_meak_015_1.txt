@@ -1198,7 +1198,7 @@ void main()
 		   NULL, "...But Satoshi-kun isn't a pervert like him!", Line_Normal);
 	ClearMessage();
 	DisableWindow();
-	ChangeBustshot( 2, "kei2_Warai_0_zoom", 200, TRUE );
+	ModDrawCharacter(2, 1, "portrait/normal/kei2_warai_", "2", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );
 	DisplayWindow();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
@@ -1238,7 +1238,7 @@ void main()
 		   NULL, " until his hand touched my head...", Line_Normal);
 	ClearMessage();
 	DisableWindow();
-	ChangeBustshot( 2, "kei2_Def1_0_zoom", 200, TRUE );
+	ModDrawCharacter(2, 1, "portrait/normal/kei2_def1_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );
 	DisplayWindow();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
@@ -1372,7 +1372,7 @@ void main()
 	OutputLine(NULL, "　悟史くんなら遠慮する。",
 		   NULL, "Satoshi-kun would refuse out of modesty.", Line_WaitForInput);
 	DisableWindow();
-	ChangeBustshot( 0, "kei2_Warai_0_zoom", 200, TRUE );
+	ModDrawCharacter(0, 1, "portrait/normal/kei2_warai_", "2", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 9, 200, TRUE );
 	DisplayWindow();
 
 	OutputLine(NULL, "だけど、前原圭一は二つ返事でＯＫと返した。",
@@ -1466,7 +1466,7 @@ void main()
 	OutputLine(NULL, "「あはははははは…、そうだねー！",
 		   NULL, "\"Ahahahaha... Let's see...", Line_WaitForInput);
 	DisableWindow();
-	ChangeBustshot( 0, "me_si_wi_a1", 200, TRUE );
+	ModDrawCharacter(0, 3, "sprite/normal/me2_wink_a1_", "1", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 9, 200, TRUE );
 	DisplayWindow();
 
 
@@ -1913,7 +1913,7 @@ void main()
 		   NULL, " Maybe I should try that on Kei-chan myself......\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 	DisableWindow();
-	ChangeBustshot( 0, "me_odorokia1#", 200, TRUE );
+	ModDrawCharacter(0, 3, "sprite/normal/me2_odoroki_a1_", "1", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 9, 200, TRUE );
 	DisplayWindow();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
@@ -1940,7 +1940,7 @@ void main()
 		   NULL, " Hey, Sis, why don't we have a competition over him?\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 	DisableWindow();
-	ChangeBustshot( 0, "me_si_bi_a2", 200, TRUE );
+	ModDrawCharacter(0, 3, "sprite/normal/me2_odoroki_a1_", "1", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 9, 200, TRUE );
 	DisplayWindow();
 
 

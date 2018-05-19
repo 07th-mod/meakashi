@@ -584,7 +584,7 @@ void main()
 		   NULL, "Meaning people shouldn't assert the self before the whole?\"", Line_Normal);
 	ClearMessage();
 	DisableWindow();
-	ChangeBustshot( 0, "Me_TohohoA2#", 200, TRUE );
+	ModDrawCharacter(0, 3, "sprite/normal/me2_tohoho_a1_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 9, 200, TRUE );
 	DisplayWindow();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
@@ -723,7 +723,7 @@ void main()
 		   NULL, " You've definitely learned the art of ruling.\"", Line_Normal);
 	ClearMessage();
 	DisableWindow();
-	ChangeBustshot( 2, "me_odorokia1#", 200, TRUE );
+	ModDrawCharacter(2, 3, "sprite/normal/me2_odoroki_a1_", "1", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );
 	DisplayWindow();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
@@ -734,7 +734,7 @@ void main()
 	OutputLine(NULL, "どうやれば婆っちゃのふりができるかって、それだけだよ…。",
 		   NULL, " I'm just trying to act like her...", Line_WaitForInput);
 	DisableWindow();
-	ChangeBustshot( 2, "Me_AkuwaraiA1#", 200, TRUE );
+	ModDrawCharacter(2, 3, "sprite/normal/me2_akuwarai_a1_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );
 	DisplayWindow();
 
 	ModPlayVoiceLS(4, 3, "s06/03/150300077", 128, TRUE);
