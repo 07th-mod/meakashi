@@ -1,0 +1,54 @@
+void main()
+{
+}
+
+void dialog000()
+{
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 6, "ps3/s06/06/150600028", 128, TRUE);
+	OutputLine(NULL, "「そ。",
+		   NULL, "\"Yeah...", Line_WaitForInput);
+	ModPlayVoiceLS(4, 6, "ps3/s06/06/150600029", 128, TRUE);
+	OutputLine(NULL, "……あの鬼婆と朝から晩まで顔を合わせてりゃ、少しは変わるでしょ。」",
+		   NULL, " I think she has to have changed if she's living so closely with the hag.\"", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+}
+
+void dialog001()
+{
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#76523d>葛西</color>", NULL, "<color=#76523d>Kasai</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 15, "ps3/s06/15/151500043", 128, TRUE);
+	OutputLine(NULL, "「詩音さんを聖ルチーア学園に入学させる決定は、園崎本家頭首が下したものです。",
+		   NULL, "\"It was the family head who decided on your enrollment in St. Lucia,", Line_WaitForInput);
+	ModPlayVoiceLS(4, 15, "ps3/s06/15/151500044", 128, TRUE);
+	OutputLine(NULL, "…詩音さんはその学園を抜け出した。",
+		   NULL, " and you ran away from there...", Line_WaitForInput);
+	ModPlayVoiceLS(4, 15, "ps3/s06/15/151500045", 128, TRUE);
+	OutputLine(NULL, "…どういうことか、お分かりですね。」",
+		   NULL, " You do understand the situation you're in?\"", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+}
+
+void dialog002()
+{
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#76523d>葛西</color>", NULL, "<color=#76523d>Kasai</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 15, "ps3/s06/15/151500054", 128, TRUE);
+	OutputLine(NULL, "「その時は詩音さんも、簀巻きにされて鬼ヶ淵沼に放り込まれるくらいの覚悟をして下さいよ？",
+		   NULL, "\"You should look forward to being rolled up in a futon mat and thrown into the Onigafuchi Swamp, in that case.", Line_WaitForInput);
+	ModPlayVoiceLS(4, 15, "ps3/s06/15/151500055", 128, TRUE);
+	OutputLine(NULL, "　あぁ、あるいは本家離れの拷問部屋送りかも。」",
+		   NULL, " Ah, maybe they'll send you to the torture room in the garden.\"", Line_Normal);
+	ClearMessage();
+}
+
+void dialog003()
+{
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 6, "ps3/s06/06/150600068", 128, TRUE);
+	OutputLine(NULL, "「鬼婆はとっくに更年期障害で、正常な思考なんか出来なくなってんの！",
+		   NULL, "\"She couldn't make the right decision because she was suffering from menopause!", Line_WaitForInput);
+	ModPlayVoiceLS(4, 6, "ps3/s06/06/150600069", 128, TRUE);
+	OutputLine(NULL, "　あのダム戦争の興奮で、頭がイカれちゃって、まだその時の興奮が抜け切ってないんじゃないかな。ったく！」",
+		   NULL, " All the fuss surrounding the dam protest drove her nuts!\"", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+}
