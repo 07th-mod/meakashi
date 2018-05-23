@@ -2081,14 +2081,10 @@ void main()
 		   NULL, " I only see her when I bring your father to the family councils.\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 6, "ps3/s06/06/150600025", 128, TRUE);
-	OutputLine(NULL, "「そっか、お姉はもう実家じゃないんだったね。",
-		   NULL, "\"That's right, she doesn't live in our parents' home anymore.", Line_WaitForInput);
-	ModPlayVoiceLS(4, 6, "ps3/s06/06/150600026", 128, TRUE);
-	OutputLine(NULL, "雛見沢の鬼婆のとこだっけ？」",
-		   NULL, " She's living with the hag in Hinamizawa now, isn't she?\"", GetGlobalFlag(GLinemodeSp));
-	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+	//VoiceMatching
+	if(GetGlobalFlag(GCensor) >= 2){ModCallScriptSection("_zmeak_001_vm0x_n01","dialog000");}
+	if(GetGlobalFlag(GCensor) <= 1){ModCallScriptSection("_zmeak_001_vm00_n01","dialog000");}
+	//VoiceMatchingEnd
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#76523d>葛西</color>", NULL, "<color=#76523d>Kasai</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 15, "ps3/s06/15/151500022", 128, TRUE);
@@ -2135,8 +2131,8 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	//VoiceMatching
-	if(GetGlobalFlag(GCensor) >= 2){ModCallScriptSection("_zmeak_001_vm0x_n01","dialog000");}
-	if(GetGlobalFlag(GCensor) <= 1){ModCallScriptSection("_zmeak_001_vm00_n01","dialog000");}
+	if(GetGlobalFlag(GCensor) >= 2){ModCallScriptSection("_zmeak_001_vm0x_n01","dialog001");}
+	if(GetGlobalFlag(GCensor) <= 1){ModCallScriptSection("_zmeak_001_vm00_n01","dialog001");}
 	//VoiceMatchingEnd
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -2583,8 +2579,8 @@ void main()
 	ClearMessage();
 
 	//VoiceMatching
-	if(GetGlobalFlag(GCensor) >= 2){ModCallScriptSection("_zmeak_001_vm0x_n01","dialog001");}
-	if(GetGlobalFlag(GCensor) <= 1){ModCallScriptSection("_zmeak_001_vm00_n01","dialog001");}
+	if(GetGlobalFlag(GCensor) >= 2){ModCallScriptSection("_zmeak_001_vm0x_n01","dialog002");}
+	if(GetGlobalFlag(GCensor) <= 1){ModCallScriptSection("_zmeak_001_vm00_n01","dialog002");}
 	//VoiceMatchingEnd
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
@@ -2862,14 +2858,10 @@ void main()
 		   NULL, " and then they'll report you to the main house.\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 6, "ps3/s06/06/150600044", 128, TRUE);
-	OutputLine(NULL, "「鬼婆の耳に入ったらどうなるか、ってことー？",
-		   NULL, "\"Are you worried the hag will hear about me?", Line_WaitForInput);
-	ModPlayVoiceLS(4, 6, "ps3/s06/06/150600045", 128, TRUE);
-	OutputLine(NULL, "　………たはは、まぁ、そりゃあヤバイことにはなるかもね。」",
-		   NULL, " ......Ha ha ha, that might be a problem.\"", GetGlobalFlag(GLinemodeSp));
-	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+	//VoiceMatching
+	if(GetGlobalFlag(GCensor) >= 2){ModCallScriptSection("_zmeak_001_vm0x_n01","dialog003");}
+	if(GetGlobalFlag(GCensor) <= 1){ModCallScriptSection("_zmeak_001_vm00_n01","dialog003");}
+	//VoiceMatchingEnd
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#76523d>葛西</color>", NULL, "<color=#76523d>Kasai</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 15, "ps3/s06/15/151500049", 128, TRUE);
@@ -2926,8 +2918,8 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	//VoiceMatching
-	if(GetGlobalFlag(GCensor) >= 5){ModCallScriptSection("_zmeak_001_vm0x_n01","dialog002");}
-	if(GetGlobalFlag(GCensor) <= 4){ModCallScriptSection("_zmeak_001_vm00_n01","dialog002");}
+	if(GetGlobalFlag(GCensor) >= 5){ModCallScriptSection("_zmeak_001_vm0x_n01","dialog004");}
+	if(GetGlobalFlag(GCensor) <= 4){ModCallScriptSection("_zmeak_001_vm00_n01","dialog004");}
 	//VoiceMatchingEnd
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -3236,8 +3228,8 @@ void main()
 	ClearMessage();
 
 	//VoiceMatching
-	if(GetGlobalFlag(GCensor) >= 3){ModCallScriptSection("_zmeak_001_vm0x_n01","dialog003");}
-	if(GetGlobalFlag(GCensor) <= 2){ModCallScriptSection("_zmeak_001_vm00_n01","dialog003");}
+	if(GetGlobalFlag(GCensor) >= 3){ModCallScriptSection("_zmeak_001_vm0x_n01","dialog005");}
+	if(GetGlobalFlag(GCensor) <= 2){ModCallScriptSection("_zmeak_001_vm00_n01","dialog005");}
 	//VoiceMatchingEnd
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }

@@ -5,6 +5,18 @@ void main()
 void dialog000()
 {
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 6, "ps3/s06/06/150600025", 128, TRUE);
+	OutputLine(NULL, "「そっか、お姉はもう実家じゃないんだったね。",
+		   NULL, "\"That's right, she doesn't live in our parents' home anymore.", Line_WaitForInput);
+	ModPlayVoiceLS(4, 6, "ps3/s06/06/150600026", 128, TRUE);
+	OutputLine(NULL, "雛見沢のバァさんのとこだっけ？」",
+		   NULL, " She's living with the old lady in Hinamizawa now, isn't she?\"", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+}
+
+void dialog001()
+{
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 6, "ps3/s06/06/150600028", 128, TRUE);
 	OutputLine(NULL, "「そ。",
 		   NULL, "\"Yeah...", Line_WaitForInput);
@@ -14,7 +26,7 @@ void dialog000()
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 }
 
-void dialog001()
+void dialog002()
 {
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#76523d>葛西</color>", NULL, "<color=#76523d>Kasai</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 15, "ps3/s06/15/151500043", 128, TRUE);
@@ -29,7 +41,19 @@ void dialog001()
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 }
 
-void dialog002()
+void dialog003()
+{
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 6, "ps3/s06/06/150600044", 128, TRUE);
+	OutputLine(NULL, "「バァさんの耳に入ったらどうなるか、ってことー？",
+		   NULL, "\"Are you worried the old lady will hear about me?", Line_WaitForInput);
+	ModPlayVoiceLS(4, 6, "ps3/s06/06/150600045", 128, TRUE);
+	OutputLine(NULL, "　………たはは、まぁ、そりゃあヤバイことにはなるかもね。」",
+		   NULL, " ......Ha ha ha, that might be a problem.\"", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+}
+
+void dialog004()
 {
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#76523d>葛西</color>", NULL, "<color=#76523d>Kasai</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 15, "ps3/s06/15/151500054", 128, TRUE);
@@ -41,7 +65,7 @@ void dialog002()
 	ClearMessage();
 }
 
-void dialog003()
+void dialog005()
 {
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 6, "ps3/s06/06/150600068", 128, TRUE);
