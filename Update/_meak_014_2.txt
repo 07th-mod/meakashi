@@ -649,7 +649,7 @@ void main()
 	OutputLine(NULL, "「嘘だ嘘だ嘘だ。",
 		   NULL, "\"That's a lie...", Line_WaitForInput);
 	ModPlayVoiceLS(4, 6, "ps3/s06/06/150601282", 128, TRUE);
-	OutputLine(NULL, "……じゃあ本当にオヤシロさまの祟りで『鬼隠し』にあったとでも言うつもりなのか。",
+	OutputLine(NULL, "……じゃあ本当にオヤシロさまの祟りで「鬼隠し」にあったとでも言うつもりなのか。",
 		   NULL, " Are you saying that Oyashiro-sama's curse demoned him away?", Line_WaitForInput);
 	ModPlayVoiceLS(4, 6, "ps3/s06/06/150601283", 128, TRUE);
 	OutputLine(NULL, "祟りなんてあるもんか、祟りなんてあるもんか。」",
@@ -685,7 +685,7 @@ void main()
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 6, "ps3/s06/06/150601284", 128, TRUE);
-	OutputLine(NULL, "「お前たちが悟史くんを『鬼隠し』にしたんだ…。",
+	OutputLine(NULL, "「お前たちが悟史くんを「鬼隠し」にしたんだ…。",
 		   NULL, "\"You guys demoned Satoshi-kun away...!", Line_WaitForInput);
 	ModPlayVoiceLS(4, 6, "ps3/s06/06/150601285", 128, TRUE);
 	OutputLine(NULL, "お前たち園崎本家が、お前たちがお前たちが！！",
@@ -959,7 +959,7 @@ void main()
 	DrawScene("background/aka1", 400 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
-	OutputLine(NULL, "　祟リデモナク、園崎本家デモナイナラ、ジャア誰ガ悟史クンヲ『鬼隠シ』ニシタッテ言ウンダイ？",
+	OutputLine(NULL, "　祟リデモナク、園崎本家デモナイナラ、ジャア誰ガ悟史クンヲ「鬼隠シ」ニシタッテ言ウンダイ？",
 		   NULL, "<i>If it wasn't the curse or the Sonozaki family, who demoned him away...?</i>", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 

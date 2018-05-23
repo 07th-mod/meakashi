@@ -541,7 +541,7 @@ void main()
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 6, "ps3/s06/06/150600744", 128, TRUE);
-	OutputLine(NULL, "「……葛西、私は『憂慮』したよ？",
+	OutputLine(NULL, "「……葛西、私は「憂慮」したよ？",
 		   NULL, "\"......Hey, Kasai, I just <i>thought</i> of that.", Line_WaitForInput);
 	ModPlayVoiceLS(4, 6, "ps3/s06/06/150600745", 128, TRUE);
 	OutputLine(NULL, "　気を利かせてくれるとうれしいんですけど。」",
@@ -943,7 +943,7 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
-	OutputLine(NULL, "　…自分が名乗れば、また不機嫌な彼に戻ってしまうのではないかと思い、……しばらくの間、息を飲み込むばかりで、名乗ることもできなかった…。",
+	OutputLine(NULL, "　…自分が名乗れば、また不機嫌な彼に戻ってしまうのではないかと思い、……しばらくの間、息をのみ込むばかりで、名乗ることもできなかった…。",
 		   NULL, "...I was scared that he might become sulky again if I mentioned my name... I couldn't open my mouth for a while.", Line_Normal);
 	ClearMessage();
 
