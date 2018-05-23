@@ -101,9 +101,11 @@ void main()
 	Wait( 2000 );
 	SetValidityOfInput( TRUE );
 
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 6, "ps3/s06/06/150600001", 128, TRUE);
 	OutputLine(NULL, "「………………………。",
 		   NULL, "\"......", Line_WaitForInput);
+	ModPlayVoiceLS(4, 6, "ps3/s06/06/150600002", 128, TRUE);
 	OutputLine(NULL, "……………………うっそ……。」",
 		   NULL, "............No way...\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
