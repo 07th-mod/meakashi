@@ -1,0 +1,45 @@
+void main()
+{
+}
+
+void dialog000()
+{
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 3, "ps3/s06/03/150300002", 128, TRUE);
+	OutputLine(NULL, "「そ、",
+		   NULL, "\"Th-", Line_Continue);
+	// (backup) SetValidityOfInput( FALSE );
+	Wait( 1000 );
+	// (backup) SetValidityOfInput( TRUE );
+	OutputLine(NULL, "………その声は！！",
+		   NULL, "That voice!!", Line_WaitForInput);
+	ModPlayVoiceLS(4, 3, "ps3/s06/03/150300003", 128, TRUE);
+	OutputLine(NULL, "　でもそんなはずは…！",
+		   NULL, " But that can't be true...!", Line_WaitForInput);
+	ModPlayVoiceLS(4, 3, "ps3/s06/03/150300004", 128, TRUE);
+	OutputLine(NULL, "　詩音の寮は私用電話禁止だったはず…！！",
+		   NULL, " Shion's dorm doesn't allow private calls...!", Line_WaitForInput);
+	ModPlayVoiceLS(4, 3, "ps3/s06/03/150300005", 128, TRUE);
+	OutputLine(NULL, "　そんなはずはない……！」",
+		   NULL, " You can't be her...!\"", Line_Normal);
+	ClearMessage();
+}
+
+void dialog001()
+{
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 6, "ps3/s06/06/150600198_1", 128, TRUE);
+	OutputLine(NULL, "「叔父さん、私を見てまだ小さい子供って言うのなら、",
+		   NULL, "\"Hey, if you think I still look like a small child,", Line_Continue);
+	// (backup) SetValidityOfInput( FALSE );
+	Wait( 3000 );
+	// (backup) SetValidityOfInput( TRUE );
+	OutputLine(NULL, "眼科行くか、",
+		   NULL, " you should see an eye doctor.", Line_Continue);
+	// (backup) SetValidityOfInput( FALSE );
+	Wait( 800 );
+	// (backup) SetValidityOfInput( TRUE );
+	OutputLine(NULL, "回し蹴り食らうかのどちらかを選んでもらうことになるんですけど。」",
+		   NULL, " Either that, or accept a roundhouse kick from me.\"", Line_Normal);
+	ClearMessage();
+}

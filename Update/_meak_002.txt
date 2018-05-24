@@ -370,25 +370,10 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 	PlayBGM( 0, "semi_r", 120, 0 );
 
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 3, "ps3/s06/03/150300002", 128, TRUE);
-	OutputLine(NULL, "「そ、",
-		   NULL, "\"Th-", Line_Continue);
-	// (backup) SetValidityOfInput( FALSE );
-	Wait( 1000 );
-	// (backup) SetValidityOfInput( TRUE );
-	OutputLine(NULL, "………その声は！！",
-		   NULL, "That voice!!", Line_WaitForInput);
-	ModPlayVoiceLS(4, 3, "ps3/s06/03/150300003", 128, TRUE);
-	OutputLine(NULL, "　でもそんなはずは…！",
-		   NULL, " But that can't be true...!", Line_WaitForInput);
-	ModPlayVoiceLS(4, 3, "ps3/s06/03/150300004", 128, TRUE);
-	OutputLine(NULL, "　詩音は聖ルチーア学園に幽閉されてるはず…！！",
-		   NULL, " Shion's still supposed to be confined to St. Lucia's...!", Line_WaitForInput);
-	ModPlayVoiceLS(4, 3, "ps3/s06/03/150300005", 128, TRUE);
-	OutputLine(NULL, "　そんなはずはない……！」",
-		   NULL, " You can't be her...!\"", Line_Normal);
-	ClearMessage();
+	//VoiceMatching
+	if(GetGlobalFlag(GCensor) >= 2){ModCallScriptSection("_zmeak_002_vm0x_n01","dialog000");}
+	if(GetGlobalFlag(GCensor) <= 1){ModCallScriptSection("_zmeak_002_vm00_n01","dialog000");}
+	//VoiceMatchingEnd
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 6, "ps3/s06/06/150600090", 128, TRUE);
@@ -1764,21 +1749,11 @@ void main()
 		   NULL, "\"...Well... I think you're mature enough now.\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 6, "ps3/s06/06/150600198_1", 128, TRUE);
-	OutputLine(NULL, "「叔父さん、私の体のラインが未だ幼児体型に見えるってんなら、",
-		   NULL, "\"Hey, if you think my body looks underdeveloped,", Line_Continue);
-	// (backup) SetValidityOfInput( FALSE );
-	Wait( 800 );
-	// (backup) SetValidityOfInput( TRUE );
-	OutputLine(NULL, "目医者行くか、",
-		   NULL, " you should see an eye doctor.", Line_Continue);
-	// (backup) SetValidityOfInput( FALSE );
-	Wait( 1000 );
-	// (backup) SetValidityOfInput( TRUE );
-	OutputLine(NULL, "ロリコンって呼ばれたいかのどちらかを選んでもらうことになるんですけど。」",
-		   NULL, " Either that, or you're a pedo.\"", Line_Normal);
-	ClearMessage();
+	//VoiceMatching
+	if(GetGlobalFlag(GCensor) >= 4){ModCallScriptSection("_zmeak_002_vm0x_n01","dialog001");}
+	if(GetGlobalFlag(GCensor) <= 3){ModCallScriptSection("_zmeak_002_vm00_n01","dialog001");}
+	//VoiceMatchingEnd
+
 	FadeOutBGM( 0, 0, FALSE );
 	FadeOutBGM( 1, 0, FALSE );
 	FadeOutBGM( 2, 0, FALSE );
