@@ -317,10 +317,13 @@ void main()
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 3, "ps3/s06/03/150300001", 128, TRUE);
-	OutputLine(NULL, "「………もしもし。",
-		   NULL, "\"...Hello.", Line_WaitForInput);
+	OutputLine(NULL, "「………もしもし。」",
+		   NULL, "\"...Hello.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#76523d>葛西</color>", NULL, "<color=#76523d>Kasai</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 15, "ps3/s06/15/151500078", 128, TRUE);
-	OutputLine(NULL, "おはようございます。",
+	OutputLine(NULL, "「おはようございます。",
 		   NULL, " Good morning.", Line_WaitForInput);
 	ModPlayVoiceLS(4, 15, "ps3/s06/15/151500079", 128, TRUE);
 	OutputLine(NULL, "………魅音さんですか？",
