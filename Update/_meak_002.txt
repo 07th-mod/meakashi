@@ -304,7 +304,7 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
-	OutputLine(NULL, "　本家に見つからないように生活した私が、真っ先にかける電話が本家なのだから、何ともおかしな話だろう。",
+	OutputLine(NULL, "　本家に見つからないように生活しなければならない私が、真っ先にかける電話が本家なのだから、何ともおかしな話だろう。",
 		   NULL, "It's funny to me that we're calling the main house, even though that's the place I most want to avoid at the moment.", Line_Normal);
 	ClearMessage();
 	DrawSceneWithMask("black", "maskleft", 1, 0, 300 );
@@ -407,12 +407,12 @@ void main()
 	OutputLine(NULL, "「…あんた、",
 		   NULL, "\"...Did you...", Line_Continue);
 	// (backup) SetValidityOfInput( FALSE );
-	Wait( 800 );
+	Wait( 500 );
 	// (backup) SetValidityOfInput( TRUE );
 	OutputLine(NULL, "……学園、",
 		   NULL, " sneak out", Line_Continue);
 	// (backup) SetValidityOfInput( FALSE );
-	Wait( 1000 );
+	Wait( 500 );
 	// (backup) SetValidityOfInput( TRUE );
 	OutputLine(NULL, "抜け出したの？！",
 		   NULL, " of the school?!", Line_WaitForInput);
