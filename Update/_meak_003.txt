@@ -1876,11 +1876,14 @@ void main()
 	OutputLine(NULL, "……実はそれが一番ありがたいです。",
 		   NULL, " That's really nice of you.", Line_WaitForInput);
 	ModPlayVoiceLS(4, 6, "ps3/s06/06/150600303", 128, TRUE);
-	OutputLine(NULL, "じゃ、切りますね。",
-		   NULL, " Okay, I'm hanging up now.", Line_WaitForInput);
+	OutputLine(NULL, "じゃ、切りますね。」",
+		   NULL, " Okay, I'm hanging up now.\"", Line_Normal);
+	ClearMessage();
+
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 3, "ps3/s06/03/150300100_1", 128, TRUE);
-	OutputLine(NULL, "じゃあね、またね。」",
-		   NULL, " Talk to you later.\"", Line_Normal);
+	OutputLine(NULL, "「じゃあね、またね。」",
+		   NULL, "\"Talk to you later.\"", Line_Normal);
 	ClearMessage();
 
 	CallScript( "&eyeCamp" );
