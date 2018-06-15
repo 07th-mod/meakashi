@@ -50,7 +50,7 @@ void main()
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 3, "ps3/s06/03/150300061", 128, TRUE);
-	OutputLine(NULL, "「警察も検死したみたいだけど、その後、特に騒がなかったってことは、死因に不審な点はなかったってことじゃないの？",
+	OutputLine(NULL, "「警察も検死したみたいだけど、その後に、特に騒がなかったってことは、死因に不審な点はなかったってことじゃないの？",
 		   NULL, "\"The coroner didn't find anything unusual about the cause of death, so nobody suspected that anything was wrong...", Line_WaitForInput);
 	ModPlayVoiceLS(4, 3, "ps3/s06/03/150300062", 128, TRUE);
 	OutputLine(NULL, "　……まぁでも、詩音の言う通り、人の死が三年も続いて綿流しの日に重なると、やっぱり普通じゃないって思うね。」",
@@ -118,7 +118,7 @@ void main()
 	DrawSceneWithMask("black", "maskdown", 1, 0, 300 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
-	OutputLine(NULL, "　そして…たくさんの話をする内に、さっきバイトの打合せに言った時、叔父さんに最後にされた話…。",
+	OutputLine(NULL, "　そして…たくさんの話をする内に、さっきバイトの打合せに行った時、叔父さんに最後にされた話…。",
 		   NULL, "While talking about various things, I brought up what Uncle Yoshiroh had told me...", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
