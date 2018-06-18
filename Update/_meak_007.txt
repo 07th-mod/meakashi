@@ -1807,15 +1807,18 @@ void main()
 	OutputLine(NULL, "　それだけのお金があったら、",
 		   NULL, "Think about it like this.", Line_Continue);
 	// (backup) SetValidityOfInput( FALSE );
-	Wait( 800 );
+	Wait( 1200 );
 	// (backup) SetValidityOfInput( TRUE );
 	OutputLine(NULL, "………後先を考えなくていいなら、",
 		   NULL, " If he had that amount of money,", Line_Continue);
 	// (backup) SetValidityOfInput( FALSE );
-	Wait( 800 );
+	Wait( 2500 );
 	// (backup) SetValidityOfInput( TRUE );
 	OutputLine(NULL, "……どこか遠くへ逃げ出す充分な費用になりうるんだよ。",
-		   NULL, " that'd be enough for him to run away somewhere far from here.", Line_WaitForInput);
+		   NULL, " that'd be enough for him to run away somewhere far from here.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 2, "ps3/s06/02/150200106", 128, TRUE);
 	OutputLine(NULL, "悟史くんは……無意識の内にね、…そのお金で沙都子ちゃんに誕生日プレゼントを買うんじゃなく。",
 		   NULL, " He unconsciously started to think about that,", Line_WaitForInput);
