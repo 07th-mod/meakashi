@@ -1,0 +1,12 @@
+void main()
+{
+}
+
+void dialog000()
+{
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 6, "ps3/s06/06/150600693", 128, TRUE);
+	OutputLine(NULL, "「……………なんで、……鬼婆は悟史くんの一家を苛めようって言い出したわけ…？！」",
+		   NULL, "\"...Why... did the hag decide to persecute the Houjou family...?\"", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+}

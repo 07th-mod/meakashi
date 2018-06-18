@@ -1,0 +1,55 @@
+void main()
+{
+}
+
+void dialog000()
+{
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 6, "ps3/s06/06/150600227", 128, TRUE);
+	OutputLine(NULL, "「あははははは、そんなのやりたくないです。",
+		   NULL, "\"Aha ha ha ha. I don't want to.", Line_WaitForInput);
+	ModPlayVoiceLS(4, 6, "ps3/s06/06/150600228", 128, TRUE);
+	OutputLine(NULL, "バァさんのお守りは魅音のお役目。",
+		   NULL, " It's your role.", Line_WaitForInput);
+	ModPlayVoiceLS(4, 6, "ps3/s06/06/150600229", 128, TRUE);
+	OutputLine(NULL, "ま、疲れない程度にほどほどに頑張りなさいませ。」",
+		   NULL, " Well, don't try too hard or you'll tire yourself out.\"", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+}
+
+void dialog001()
+{
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 6, "ps3/s06/06/150600277", 128, TRUE);
+	OutputLine(NULL, "「……親父はバァさん寄りだからなぁ。",
+		   NULL, "\"......Humm, dad is on grandma's side,", Line_WaitForInput);
+	ModPlayVoiceLS(4, 6, "ps3/s06/06/150600278", 128, TRUE);
+	OutputLine(NULL, "耳に入れば自動的にあいつにも伝えるだろうな。",
+		   NULL, " so he'll definitely talk to her if he hears about it.", Line_WaitForInput);
+	ModPlayVoiceLS(4, 6, "ps3/s06/06/150600279", 128, TRUE);
+	OutputLine(NULL, "で、伝わったら、見つけ次第、即刻ここへ連れて来い。",
+		   NULL, " Then she'll have her men bring me to her", Line_WaitForInput);
+	ModPlayVoiceLS(4, 6, "ps3/s06/06/150600280", 128, TRUE);
+	OutputLine(NULL, "申し開きの如何によっては、指の一本や二本…ってことになるだろうねぇ。",
+		   NULL, " and depending on my explanation, make me offer a finger or two...", Line_WaitForInput);
+	ModPlayVoiceLS(4, 6, "ps3/s06/06/150600281", 128, TRUE);
+	OutputLine(NULL, "…おっかないこって。",
+		   NULL, " Scary! ", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 6, "ps3/s06/06/150600282", 128, TRUE);
+	OutputLine(NULL, "あははは！」",
+		   NULL, "Aha ha ha!\"", Line_Normal);
+	ClearMessage();
+}
+
+void dialog002()
+{
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 6, "ps3/s06/06/150600287", 128, TRUE);
+	OutputLine(NULL, "「で？",
+		   NULL, "\"So?", Line_WaitForInput);
+	ModPlayVoiceLS(4, 6, "ps3/s06/06/150600288", 128, TRUE);
+	OutputLine(NULL, "　バァさんはどんな感じだった？」",
+		   NULL, " How did she take it?\"", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+}

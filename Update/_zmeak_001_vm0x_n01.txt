@@ -10,7 +10,7 @@ void dialog000()
 		   NULL, "\"That's right, she doesn't live in our parents' home anymore.", Line_WaitForInput);
 	ModPlayVoiceLS(4, 6, "ps3/s06/06/150600026", 128, TRUE);
 	OutputLine(NULL, "雛見沢のバァさんのとこだっけ？」",
-		   NULL, " She's living with the old lady in Hinamizawa now, isn't she?\"", GetGlobalFlag(GLinemodeSp));
+		   NULL, " She's living with grandma in Hinamizawa now, isn't she?\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 }
 
@@ -22,7 +22,7 @@ void dialog001()
 		   NULL, "\"Yeah...", Line_WaitForInput);
 	ModPlayVoiceLS(4, 6, "ps3/s06/06/150600029", 128, TRUE);
 	OutputLine(NULL, "……あのバァさんと朝から晩まで顔を合わせてりゃ、少しは変わるでしょ。」",
-		   NULL, " I think she has to have changed if she's living so closely with the old lady.\"", GetGlobalFlag(GLinemodeSp));
+		   NULL, " I think she has to have changed if she's living so closely with grandma.\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 }
 
@@ -39,6 +39,12 @@ void dialog002()
 	OutputLine(NULL, "…どういうことか、お分かりですね。」",
 		   NULL, " You do understand the situation you're in?\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 6, "ps3/s06/06/150600041", 128, TRUE);
+	OutputLine(NULL, "「バァさんの決めた学校が私に合わなかったってだけでしょ。」",
+		   NULL, "\"The school grandma chose didn't fit me, that's all.\"", Line_Normal);
+	ClearMessage();
 }
 
 void dialog003()
@@ -46,7 +52,7 @@ void dialog003()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 6, "ps3/s06/06/150600044", 128, TRUE);
 	OutputLine(NULL, "「バァさんの耳に入ったらどうなるか、ってことー？",
-		   NULL, "\"Are you worried the old lady will hear about me?", Line_WaitForInput);
+		   NULL, "\"Are you worried that grandma will hear about me?", Line_WaitForInput);
 	ModPlayVoiceLS(4, 6, "ps3/s06/06/150600045", 128, TRUE);
 	OutputLine(NULL, "　………たはは、まぁ、そりゃあヤバイことにはなるかもね。」",
 		   NULL, " ......Ha ha ha, that might be a problem.\"", GetGlobalFlag(GLinemodeSp));

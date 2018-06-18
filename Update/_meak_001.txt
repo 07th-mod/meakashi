@@ -2583,12 +2583,6 @@ void main()
 	if(GetGlobalFlag(GCensor) <= 1){ModCallScriptSection("_zmeak_001_vm00_n01","dialog002");}
 	//VoiceMatchingEnd
 
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 6, "ps3/s06/06/150600041", 128, TRUE);
-	OutputLine(NULL, "「鬼婆の決めた学校が私に合わなかったってだけでしょ。」",
-		   NULL, "\"The school the hag chose didn't fit me, that's all.\"", Line_Normal);
-	ClearMessage();
-
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#76523d>葛西</color>", NULL, "<color=#76523d>Kasai</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 15, "ps3/s06/15/151500046", 128, TRUE);
 	OutputLine(NULL, "「…詩音さん。」",
