@@ -1,0 +1,96 @@
+void main()
+{
+}
+
+void dialog000()
+{
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 6, "ps3/s06/06/150600715", 128, TRUE);
+	OutputLine(NULL, "「最近は鬼婆がマークしてるんじゃなかったの？",
+		   NULL, "\"I thought you were marked by the hag.", Line_WaitForInput);
+	ModPlayVoiceLS(4, 6, "ps3/s06/06/150600716", 128, TRUE);
+	OutputLine(NULL, "　私のとこなんかに来て大丈夫なわけ？」",
+		   NULL, " Is it okay for you to be here?\"", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+}
+
+void dialog001()
+{
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#76523d>葛西</color>", NULL, "<color=#76523d>Kasai</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 15, "ps3/s06/15/151500131", 128, TRUE);
+	OutputLine(NULL, "「北条鉄平が家を出たらしいです。",
+		   NULL, "\"It seems that Teppei Houjou fled the premises.", Line_WaitForInput);
+	ModPlayVoiceLS(4, 15, "ps3/s06/15/151500132", 128, TRUE);
+	OutputLine(NULL, "興宮に愛人がいまして、そこへ転げ込んだようです。」",
+		   NULL, " He seems to be staying at his mistress's place in Okinomiya.\"", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 6, "ps3/s06/06/150600725", 128, TRUE);
+	OutputLine(NULL, "「鉄平？",
+		   NULL, "\"Teppei?", Line_WaitForInput);
+	ModPlayVoiceLS(4, 6, "ps3/s06/06/150600726", 128, TRUE);
+	OutputLine(NULL, "　誰？",
+		   NULL, " Who's that?", Line_WaitForInput);
+	ModPlayVoiceLS(4, 6, "ps3/s06/06/150600727", 128, TRUE);
+	OutputLine(NULL, "　……あぁ、悟史くんの叔父か。」",
+		   NULL, " ......Oh, Satoshi-kun's uncle, huh?\"", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#76523d>葛西</color>", NULL, "<color=#76523d>Kasai</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 15, "ps3/s06/15/151500133", 128, TRUE);
+	OutputLine(NULL, "「家には叔母の北条玉枝と北条悟史、沙都子の３人となりました。",
+		   NULL, "\"Their aunt - Tamae Houjou, Satoshi, and Satoko are the only ones living in the house now.", Line_WaitForInput);
+	ModPlayVoiceLS(4, 15, "ps3/s06/15/151500134", 128, TRUE);
+	OutputLine(NULL, "玉枝は鉄平が愛人の下へ逃げたのだと気付き、大層機嫌を悪くしたらしいですね。」",
+		   NULL, " Ever since Tamae learned that Teppei had fled to his mistress, she's been in a foul mood.\"", Line_Normal);
+	ClearMessage();
+
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 6, "ps3/s06/06/150600728", 128, TRUE);
+	OutputLine(NULL, "「ってことはあれだ。",
+		   NULL, "\"So that must mean...", Line_WaitForInput);
+	ModPlayVoiceLS(4, 6, "ps3/s06/06/150600729", 128, TRUE);
+	OutputLine(NULL, "ますます叔母の沙都子苛めが加速して、悟史くんもそれのとばっちりでますますに苦労してるってことか。」",
+		   NULL, " that the aunt is being even nastier to Satoko, and Satoshi-kun is taking even more indirect blows.\" ", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#76523d>葛西</color>", NULL, "<color=#76523d>Kasai</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 15, "ps3/s06/15/151500135", 128, TRUE);
+	OutputLine(NULL, "「悟史くんの方はわかりませんが、沙都子さんの方は近所でも噂になるくらいに、惨めな目に遭っているようです。」",
+		   NULL, "\"I don't know about Satoshi-kun, but I heard that Satoko-san looks very miserable. The neighbors are spreading rumors about her.\"", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+}
+
+void dialog002()
+{
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 6, "ps3/s06/06/150600736", 128, TRUE);
+	OutputLine(NULL, "「決めるのは鬼婆？",
+		   NULL, "\"Does the hag make the decision?", Line_WaitForInput);
+	ModPlayVoiceLS(4, 6, "ps3/s06/06/150600737", 128, TRUE);
+	OutputLine(NULL, "　…ならお姉は明日の犠牲者をもう知ってるってことになるな。",
+		   NULL, " If so, Sis should know about it by now.", Line_WaitForInput);
+	ModPlayVoiceLS(4, 6, "ps3/s06/06/150600738", 128, TRUE);
+	OutputLine(NULL, "どうなの葛西。",
+		   NULL, " Kasai,", Line_WaitForInput);
+	ModPlayVoiceLS(4, 6, "ps3/s06/06/150600739", 128, TRUE);
+	OutputLine(NULL, "何か聞かされてる？」",
+		   NULL, " do you know anything?\"", Line_Normal);
+	ClearMessage();
+}
+
+void dialog003()
+{
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#ffdc6f>悟史</color>", NULL, "<color=#ffdc6f>Satoshi</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 7, "ps3/s06/07/151200203", 128, TRUE);
+	OutputLine(NULL, "「……………あんなに、…ぼろぼろになるまで虐め抜かれて。",
+		   NULL, "\"...She was tortured until she was literally torn up...", Line_WaitForInput);
+	ModPlayVoiceLS(4, 7, "ps3/s06/07/151200204", 128, TRUE);
+	OutputLine(NULL, "……みんな、…見捨てた。",
+		   NULL, " And everybody abandoned her...", Line_WaitForInput);
+	ModPlayVoiceLS(4, 7, "ps3/s06/07/151200205", 128, TRUE);
+	OutputLine(NULL, "沙都子を、見捨てた…。」",
+		   NULL, " Everybody did.\"", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+}
