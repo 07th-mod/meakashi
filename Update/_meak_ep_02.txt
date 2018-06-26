@@ -1322,7 +1322,7 @@ void main()
 
 	DrawScene("white", 3000 );
 
-
+	PlayBGM( 0, "song_you", 120, 0 );
 	SetValidityOfInput( FALSE );
 	Wait( 3000 );
 
@@ -1330,8 +1330,6 @@ void main()
 	SetValidityOfInput( FALSE );
 	SetValidityOfUserEffectSpeed( FALSE );
 	CallScript( "&endroll_sion" );
-	FadeOutBGM( 0, 0, FALSE );
-	PlayBGM( 0, "you_nonloop", 120, 0 );
 	CallScript( "&endroll_staff5" );
 	SetValidityOfInput( TRUE );
 	SetValidityOfSkipping( TRUE );
