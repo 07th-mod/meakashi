@@ -371,10 +371,10 @@ void main()
 	OutputLine(NULL, "「秘匿捜査指定だってのに、どこの誰が漏らしてるやら。",
 		   NULL, "\"It's a highly classified case, but you already have this information.", Line_WaitForInput);
 	ModPlayVoiceLS(4, 11, "ps3/s06/11/150700262", 128, TRUE);
-	OutputLine(NULL, "…やれやれ",
+	OutputLine(NULL, "…やれやれ。",
 		   NULL, " I wonder who leaked it.", Line_WaitForInput);
 	ModPlayVoiceLS(4, 11, "ps3/s06/11/150700263", 128, TRUE);
-	OutputLine(NULL, "。ウチの防諜も問題があるなぁ。」",
+	OutputLine(NULL, "ウチの防諜も問題があるなぁ。」",
 		   NULL, " Looks like we need to review our security precautions.\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
