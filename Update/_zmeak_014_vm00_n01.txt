@@ -1,0 +1,104 @@
+void main()
+{
+}
+
+void dialog000()
+{
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>Ooishi</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 11, "ps3/s06/11/150700275", 128, TRUE);
+	OutputLine(NULL, "「ヤク中の頭がトンチンカンな野郎でしてね。",
+		   NULL, "\"He's a crazy dopehead.", Line_WaitForInput);
+	ModPlayVoiceLS(4, 11, "ps3/s06/11/150700276", 128, TRUE);
+	OutputLine(NULL, "シャバに戻る度にヤクに手を出しては捕まるの繰り返しだそうです。",
+		   NULL, " He's been in and out of prison for drug abuse.", Line_WaitForInput);
+	ModPlayVoiceLS(4, 11, "ps3/s06/11/150700277", 128, TRUE);
+	OutputLine(NULL, "雛見沢村連続怪事件が面白そうだったんで、４年目の祟りは自分が下してみたくなった…とか何とか。」",
+		   NULL, " His statement says that he was interested in the series of mysterious deaths and wanted to imitate them.\"", Line_Normal);
+	ClearMessage();
+}
+
+void dialog001()
+{
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>Ooishi</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 11, "ps3/s06/11/150700287", 128, TRUE);
+	OutputLine(NULL, "「実はね、そのトンチンカン。",
+		   NULL, "\"As a matter of fact,", Line_WaitForInput);
+	ModPlayVoiceLS(4, 11, "ps3/s06/11/150700288", 128, TRUE);
+	OutputLine(NULL, "とっくに亡くなってるんですよ。",
+		   NULL, " the dopehead was already dead", Line_WaitForInput);
+	ModPlayVoiceLS(4, 11, "ps3/s06/11/150700289", 128, TRUE);
+	OutputLine(NULL, "うちに連絡があった時にはすでに。」",
+		   NULL, " by the time I got their call.\"", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+}
+
+void dialog002()
+{
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>Ooishi</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 11, "ps3/s06/11/150700294", 128, TRUE);
+	OutputLine(NULL, "「だから充分に納得するまで調べられたわけじゃありません。",
+		   NULL, "\"So, the investigation hadn't been done that thoroughly...", Line_WaitForInput);
+	ModPlayVoiceLS(4, 11, "ps3/s06/11/150700295", 128, TRUE);
+	OutputLine(NULL, "……私は納得できないんですがね、…上の方は充分に納得しちゃったようでした。",
+		   NULL, " But although I'm not convinced, my superiors are.", Line_WaitForInput);
+	ModPlayVoiceLS(4, 11, "ps3/s06/11/150700296", 128, TRUE);
+	OutputLine(NULL, "どうもそのトンチンカンが主婦殺しの犯人ってことで決着しそうな流れです。」",
+		   NULL, " I think with that, the case will be closed.\"", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+}
+
+void dialog003()
+{
+	ModPlayVoiceLS(4, 11, "ps3/s06/11/150700299", 128, TRUE);
+	OutputLine(NULL, "…………私ゃ、このトンチンカンは何かの間違いだと思ってます。」",
+		   NULL, " ...I believe that this lunatic is some kind of mistake.\"", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+}
+
+void dialog004()
+{
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 6, "ps3/s06/06/150601162", 128, TRUE);
+	OutputLine(NULL, "「…………叔母殺しの犯人はそのヤク中単独犯で、悟史くんの失踪とは無関係。",
+		   NULL, "\"...What if the murder actually was done by that lunatic and Satoshi-kun's disappearance has nothing to do with it...? ", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 6, "ps3/s06/06/150601163", 128, TRUE);
+	OutputLine(NULL, "……悟史くん失踪は、私と悟史くんの仲を裂くために、園崎本家がやったもの。",
+		   NULL, "In other words, what if Satoshi-kun disappeared because the Sonozaki family didn't like my relationship with him,", Line_WaitForInput);
+	ModPlayVoiceLS(4, 6, "ps3/s06/06/150601164", 128, TRUE);
+	OutputLine(NULL, "叔母殺しとは無関係、という考え方は…？」",
+		   NULL, " and he has nothing to do with the murder...?\"", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
+}
+
+void dialog005()
+{
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>Ooishi</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 11, "ps3/s06/11/150700323", 128, TRUE);
+	OutputLine(NULL, "「……詩音さん。",
+		   NULL, "\"...Shion-san...", Line_WaitForInput);
+	ModPlayVoiceLS(4, 11, "ps3/s06/11/150700324", 128, TRUE);
+	OutputLine(NULL, "………このまま行くと、主婦殺しの犯人はすでに死んでるトンチンカンってことで確定すると思います。",
+		   NULL, " I think if we leave things as they are, they'll conclude that the lunatic committed the murder.", Line_WaitForInput);
+	ModPlayVoiceLS(4, 11, "ps3/s06/11/150700325", 128, TRUE);
+	OutputLine(NULL, "そうなると、悟史くんの扱いは単なる家出人になります。",
+		   NULL, " If that happens, Satoshi-kun's disappearance will be treated as just another runaway minor. ", GetGlobalFlag(GLinemodeSp));
+	DisableWindow();
+	ModDrawCharacter(2, 11, "sprite/normal/oisi1_4_", "2", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );
+	DisplayWindow();
+}
+
+void dialog006()
+{
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 6, "ps3/s06/06/150601183", 128, TRUE);
+	OutputLine(NULL, "「い、いえ。",
+		   NULL, "\"N-No,", Line_WaitForInput);
+	ModPlayVoiceLS(4, 6, "ps3/s06/06/150601184", 128, TRUE);
+	OutputLine(NULL, "びっくりしただけです。",
+		   NULL, " I was just a bit surprised...", Line_WaitForInput);
+	ModPlayVoiceLS(4, 6, "ps3/s06/06/150601185", 128, TRUE);
+	OutputLine(NULL, "…こちらこそ素っ頓狂な声を出してすみませんでした。」",
+		   NULL, " Sorry about that.\"", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
+}
