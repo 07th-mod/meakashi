@@ -424,10 +424,10 @@ void main()
 		   NULL, "...I had a vague idea of what was in the back of them.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
-	OutputLine(NULL, "　秘密の地下の入口があり、園崎家に刃向かう者を苛め殺すための拷問室があると言われている。",
-		   NULL, "I'd heard there was a hidden entrance to the underground torture room, where they used to punish the enemies of the family.", Line_Normal);
-	ClearMessage();
+	//VoiceMatching
+	if(GetGlobalFlag(GCensor) >= 5){ModCallScriptSection("_zmeak_012_vm0x_n01","dialog000");}
+	if(GetGlobalFlag(GCensor) <= 4){ModCallScriptSection("_zmeak_012_vm00_n01","dialog000");}
+	//VoiceMatchingEnd
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　園崎本家にまつわる黒い噂の数々を知れば知るほど、その噂は信憑性を増していく。",
@@ -462,11 +462,10 @@ void main()
 	ModDrawCharacter(19, 0, "transparent", "0", 0, 100, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, TRUE );
 	PlayBGM( 0, "semi_r", 120, 0 );
 
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 6, "ps3/s06/06/150600916", 128, TRUE);
-	OutputLine(NULL, "「……これが噂の、地下拷問室ってやつですね？」",
-		   NULL, "\"...So, this is the underground torture room, huh?\"", GetGlobalFlag(GLinemodeSp));
-	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+	//VoiceMatching
+	if(GetGlobalFlag(GCensor) >= 5){ModCallScriptSection("_zmeak_012_vm0x_n01","dialog001");}
+	if(GetGlobalFlag(GCensor) <= 4){ModCallScriptSection("_zmeak_012_vm00_n01","dialog001");}
+	//VoiceMatchingEnd
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　自分で口に出してみて驚く。",
@@ -869,13 +868,10 @@ void main()
 		   NULL, " Who the hell do you think you're talking to?!!\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 6, "ps3/s06/06/150600921", 128, TRUE);
-	OutputLine(NULL, "「やかましいッ、終いまで聞きなよ鬼婆ッ！！！！」",
-		   NULL, "\"Shut the fuck up!! Let me finish!!!\"", GetGlobalFlag(GLinemodeSp));
-	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
-	if (GetGlobalFlag(GADVMode) == 0) { ClearMessage(); }
-	ModDrawCharacter(2, 17, "portrait/night/oryou_def_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
+	//VoiceMatching
+	if(GetGlobalFlag(GCensor) >= 2){ModCallScriptSection("_zmeak_012_vm0x_n01","dialog001");}
+	if(GetGlobalFlag(GCensor) <= 1){ModCallScriptSection("_zmeak_012_vm00_n01","dialog001");}
+	//VoiceMatchingEnd
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　私は鬼婆の怒鳴りすら一喝し、声を張り上げた。",
