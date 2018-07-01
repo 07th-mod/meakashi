@@ -678,10 +678,10 @@ void main()
 	OutputLine(NULL, "「残念ながら、現場検証では犯人を特定できるような痕跡は何一つ発見できませんでした。",
 		   NULL, "\"Unfortunately, we couldn't find anything to prove he was at the crime scene.", Line_WaitForInput);
 	ModPlayVoiceLS(4, 11, "ps3/s06/11/150700304", 128, TRUE);
-	OutputLine(NULL, "悟史くんが失踪した後、家宅捜査の許可が下りましてね。",
+	OutputLine(NULL, "悟史くんが失踪した後、家宅捜索の許可が下りましてね。",
 		   NULL, " We obtained a warrant to search his house after he disappeared,", Line_WaitForInput);
 	ModPlayVoiceLS(4, 11, "ps3/s06/11/150700305", 128, TRUE);
-	OutputLine(NULL, "家を改めさせてもらいましたが、それでも手掛りはゼロ。」",
+	OutputLine(NULL, "家を改めさせてももらいましたが、それでも手掛りはゼロ。」",
 		   NULL, " but we still found nothing.\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
@@ -2934,7 +2934,7 @@ void main()
 	OutputLine(NULL, "…オヤシロさまの祟りとは、簡単に言えばオヤシロさまの怒りのこと。",
 		   NULL, " Oyashiro-sama's curse is simply Oyashiro-sama's anger.", Line_WaitForInput);
 	ModPlayVoiceLS(4, 9, "ps3/s06/09/150900070", 128, TRUE);
-	OutputLine(NULL, "オヤシロさまが怒ったから、バチとして祟りが起こる。",
+	OutputLine(NULL, "オヤシロさまが怒ったら、バチとして祟りが起こる。",
 		   NULL, " In other words, the curse is caused by Oyashiro-sama's anger, ", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f6d9a8>鷹野</color>", NULL, "<color=#f6d9a8>Takano</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 9, "ps3/s06/09/150900071", 128, TRUE);
