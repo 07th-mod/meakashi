@@ -741,96 +741,10 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 1, "ps3/s06/01/150100044", 128, TRUE);
-	OutputLine(NULL, "ではお前らの望む衣装が登場するＨビデオがここにあるぞ、",
-		   NULL, "Let's say there's a porn video of your favorite cosplay.", Line_Continue);
-	// (backup) SetValidityOfInput( FALSE );
-	Wait( 600 );
-	// (backup) SetValidityOfInput( TRUE );
-	OutputLine(NULL, "あると思え、",
-		   NULL, " Use your imagination.", Line_Continue);
-	// (backup) SetValidityOfInput( FALSE );
-	Wait( 600 );
-	// (backup) SetValidityOfInput( TRUE );
-	OutputLine(NULL, "あると信じろ気合を入れろ！！",
-		   NULL, " Come on!!", Line_WaitForInput);
-
-	ModPlayVoiceLS(4, 1, "ps3/s06/01/150100045", 128, TRUE);
-	OutputLine(NULL, "返事は押忍かサーイエッサーだ！！！",
-		   NULL, " Say 'yessir' when you got it!!!", Line_Continue);
-	// (backup) SetValidityOfInput( FALSE );
-	Wait( 800 );
-	// (backup) SetValidityOfInput( TRUE );
-	PlaySE( 0, "s_daidageki", 128, 64 );
-	OutputLineAll(NULL, "", Line_WaitForInput);
-
-	ModPlayVoiceLS(4, 1, "ps3/s06/01/150100046", 128, TRUE);
-	OutputLine(NULL, "馬鹿者それでも軍人かッ！！！！",
-		   NULL, " Are you really military men, you maggots?!! ", GetGlobalFlag(GLinemodeSp));
-	DrawScene("background/furiker_a", 0 );
-	StartShakingOfWindow( 248, 40, 0, 2, 3*2, FALSE );
-	StartShakingOfAllObjects( 248, 40, 0, 2, 3*2, TRUE );
-	DrawScene("background/mati4", 0 );
-	ModDrawCharacter(2, 1, "sprite/normal/kei2_ikari2_", "1", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
-
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 1, "ps3/s06/01/150100047", 128, TRUE);
-	OutputLine(NULL, "　よおし描けたようだな次に進むぞ。",
-		   NULL, "Good, you all seem to have an image in your heads now. Let's move on.", Line_Normal);
-
-	ClearMessage();
-
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 1, "ps3/s06/01/150100048", 128, TRUE);
-	OutputLine(NULL, "　それらの萌え衣装が、貴様らの馬鹿げた欲情に従い一糸纏わぬ姿にひん剥かれたと思うがいい、",
-		   NULL, "Imagine that your favorite cosplay is stripped entirely naked because of your stupid desire.", Line_WaitForInput);
-	PlaySE( 0, "s_Kyupiin", 128, 64 );
-
-	OutputLine(NULL, "だがおいお前らよく考えろ！！！",
-		   NULL, " Now, think!!!", Line_ContinueAfterTyping);
-	SetValidityOfInput( FALSE );
-	Wait( 600 );
-	SetValidityOfInput( TRUE );
-	OutputLine(NULL, "全部脱いだらもうそりゃコスプレＨじゃないぞッ？！？！",
-		   NULL, " If you take all of their clothes off, that's not cosplay anymore, is it?! ", GetGlobalFlag(GLinemodeSp));
-	PlaySE( 0, "s_Kyupiin", 128, 64 );
-	SetValidityOfInput( FALSE );
-	Wait( 800 );
-	SetValidityOfInput( TRUE );
-	SetSpeedOfMessage( TRUE, 128 );
-	PlaySE( 0, "s_daidageki", 128, 64 );
-
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
-	OutputLine(NULL, "最近そういう詐欺紛いなＡＶが増えているが実に嘆かわしい！！",
-		   NULL, "That sort of video is rampant lately!! It's just lamentable!", Line_WaitForInput);
-	StartShakingOfWindow( 248, 40, 0, 2, 3*2, FALSE );
-	StartShakingOfAllObjects( 248, 40, 0, 2, 3*2, TRUE );
-
-	SetSpeedOfMessage( FALSE, 0 );
-	OutputLine(NULL, "服を全部剥いだらもうそれは文明人ではない、動物だ！！",
-		   NULL, " Humans without clothes aren't civilized, they're animals!!", Line_WaitForInput);
-	SetValidityOfInput( FALSE );
-	Wait( 600 );
-	SetValidityOfInput( TRUE );
-	OutputLine(NULL, "全裸にしか欲情できない貴様らは犬、",
-		   NULL, " If only naked girls excited you, you'd be a pack of dogs.", Line_ContinueAfterTyping);
-	PlaySE( 0, "s_Down", 128, 64 );
-	StartShakingOfWindow( 248, 40, 0, 2, 2*2, FALSE );
-	StartShakingOfAllObjects( 248, 40, 0, 2, 2*2, TRUE );
-
-	OutputLine(NULL, "猿、",
-		   NULL, " Monkeys.", Line_ContinueAfterTyping);
-	PlaySE( 0, "s_Down", 128, 64 );
-	StartShakingOfWindow( 248, 40, 0, 0, 2*2, FALSE );
-	StartShakingOfAllObjects( 248, 40, 0, 0, 2*2, TRUE );
-
-	OutputLine(NULL, "雉だ！！",
-		   NULL, " Or pheasants!", Line_ContinueAfterTyping);
-	PlaySE( 0, "s_Down", 128, 64 );
-	StartShakingOfWindow( 248, 40, 0, 2, 2*2, FALSE );
-	StartShakingOfAllObjects( 248, 40, 0, 2, 2*2, TRUE );
-	OutputLineAll(NULL, " ", GetGlobalFlag(GLinemodeSp));
+	//VoiceMatching
+	if(GetGlobalFlag(GCensor) >= 4){ModCallScriptSection("_zmeak_015_1_vm0x_n01","dialog006");}
+	if(GetGlobalFlag(GCensor) <= 3){ModCallScriptSection("_zmeak_015_1_vm00_n01","dialog006");}
+	//VoiceMatchingEnd
 
 	SetSpeedOfMessage( TRUE, 128 );
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
@@ -848,38 +762,10 @@ void main()
 		   NULL, " Wait, get back here!!", Line_Normal);
 	ClearMessage();
 
-	//PlaySE(4, "s06/01/150100056", 128, 64);
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
-	OutputLine(NULL, "　ちなみに最近の東西雪解けに従いロシア系ＡＶが大量に上陸しているな。",
-		   NULL, "As you know, a huge amount of Russian porn vids are going around lately thanks to the end of the Cold War.", Line_WaitForInput);
-	//PlaySE(4, "s06/01/150100057", 128, 64);
-	OutputLine(NULL, "そんなことも知らんのか愚か者！！",
-		   NULL, " You don't know that? Get out of here!!", Line_ContinueAfterTyping);
-	PlaySE( 0, "s_furu", 128, 64 );
-	SetValidityOfInput( FALSE );
-	Wait( 200 );
-	SetValidityOfInput( TRUE );
-	PlaySE( 0, "s_Down", 128, 64 );
-	StartShakingOfWindow( 248, 40, 0, 0, 3*2, FALSE );
-	StartShakingOfAllObjects( 248, 40, 0, 0, 3*2, TRUE );
-	OutputLineAll(NULL, " ", GetGlobalFlag(GLinemodeSp));
-
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
-	OutputLine(NULL, "制服系とロシア系を組み合わせたロシア美少女女子高生などという、ゲッター２が抜けて三神合体できないような水と油な組み合わせが出ているようだが、本官は断じて認めたりはしないぞッ！！！",
-		   NULL, "I heard that a style called 'beautiful Russian school girl' (which is a combination of the Japanese uniform fetish and some Russian thing) is emerging, but I'll never accept that!!!", Line_ContinueAfterTyping);
-	SetValidityOfInput( FALSE );
-	Wait( 800 );
-	SetValidityOfInput( TRUE );
-	PlaySE( 0, "s_furu", 128, 64 );
-	SetValidityOfInput( FALSE );
-	Wait( 150 );
-	SetValidityOfInput( TRUE );
-	PlaySE( 0, "s_furu", 128, 64 );
-	SetValidityOfInput( FALSE );
-	Wait( 150 );
-	SetValidityOfInput( TRUE );
-	PlaySE( 0, "s_furu", 128, 64 );
-	OutputLineAll(NULL, " ", GetGlobalFlag(GLinemodeSp));
+	//VoiceMatching
+	if(GetGlobalFlag(GCensor) >= 4){ModCallScriptSection("_zmeak_015_1_vm0x_n01","dialog007");}
+	if(GetGlobalFlag(GCensor) <= 3){ModCallScriptSection("_zmeak_015_1_vm00_n01","dialog007");}
+	//VoiceMatchingEnd
 
 	SetSpeedOfMessage( TRUE, 128 );
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
