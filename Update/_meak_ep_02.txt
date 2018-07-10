@@ -1319,10 +1319,9 @@ void main()
 	DrawScene("white", 10 );
 	DrawSceneWithMask("red", "masktoketu", 1, 0, 200 );
 
-
+	FadeOutBGM( 0, 1000 , TRUE );
 	DrawScene("white", 3000 );
-
-	PlayBGM( 0, "song_you", 120, 0 );
+	PlayBGM( 0, "hm05_20", 120, 0 );
 	SetValidityOfInput( FALSE );
 	Wait( 3000 );
 
@@ -1330,6 +1329,9 @@ void main()
 	SetValidityOfInput( FALSE );
 	SetValidityOfUserEffectSpeed( FALSE );
 	CallScript( "&endroll_sion" );
+
+	PlayBGM( 0, "song_you", 120, 0 );
+
 	CallScript( "&endroll_staff5" );
 	SetValidityOfInput( TRUE );
 	SetValidityOfSkipping( TRUE );
