@@ -1,0 +1,34 @@
+void main()
+{
+}
+
+void dialog000()
+{
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 6, "ps3/s06/06/150601392", 128, TRUE);
+	OutputLine(NULL, "「スクーターで行くからいいや。」",
+		   NULL, "\"I'm taking my scooter, so you don't have to.\"", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+	DisableWindow();
+	ModDrawCharacter(2, 15, "sprite/normal/kasa_3_", "0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );
+	DisplayWindow();
+
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#76523d>葛西</color>", NULL, "<color=#76523d>Kasai</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 15, "ps3/s06/15/151500204", 128, TRUE);
+	OutputLine(NULL, "「それはいけません。",
+		   NULL, "\"That won't do.", Line_WaitForInput);
+	ModPlayVoiceLS(4, 15, "ps3/s06/15/151500205", 128, TRUE);
+	OutputLine(NULL, "帰りに本家に寄られて親類の宴会に加わられるんでしょう？",
+		   NULL, " Aren't you going to the family party afterwards?", Line_WaitForInput);
+	ModPlayVoiceLS(4, 15, "ps3/s06/15/151500206", 128, TRUE);
+	OutputLine(NULL, "　居眠り運転などさせられません。」",
+		   NULL, " I can't let you drive half asleep.\"", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　車と違ってスクーターじゃ、居眠り運転なんて器用なことできないって。",
+		   NULL, "There's no way you can fall asleep on a scooter like behind the wheel of a car.", Line_WaitForInput);
+	OutputLine(NULL, "ま、いいか。",
+		   NULL, " Ah, whatever.", Line_Normal);
+	ClearMessage();
+}

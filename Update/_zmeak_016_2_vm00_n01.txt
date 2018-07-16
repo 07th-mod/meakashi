@@ -1,0 +1,12 @@
+void main()
+{
+}
+
+void dialog000()
+{
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 6, "ps3/s06/06/150601424", 128, TRUE);
+	OutputLine(NULL, "「……え、……ピッキング、…ですか。」",
+		   NULL, "\"......Oh, are you... good at lock-picking...?\"", Line_Normal);
+	ClearMessage();
+}
