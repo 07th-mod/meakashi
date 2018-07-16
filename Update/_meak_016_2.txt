@@ -2299,7 +2299,10 @@ void main()
 	OutputLine(NULL, "…鬼ヶ淵村で身元不明の惨殺死体が発見されたんですって。」",
 		   NULL, " ...They discovered an unknown, mangled corpse, the victim of a murder, in Onigafuchi Village.\"", Line_Continue);
 	SetSpeedOfMessage( TRUE, 128 );
+	WaitToFinishVoicePlaying( 4 );
+	Wait( 800 );
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_Continue); }
+
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_Continue); }
 	OutputLine(NULL, "ダン、",
