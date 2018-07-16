@@ -343,3 +343,35 @@ void dialog007()
 	PlaySE( 0, "s_furu", 128, 64 );
 	OutputLineAll(NULL, " ", GetGlobalFlag(GLinemodeSp));
 }
+
+void dialog008()
+{
+	SetSpeedOfMessage( FALSE, 0 );
+	ModPlayVoiceLS(4, 1, "ps3/s06/01/150100060", 128, TRUE);
+	OutputLine(NULL, "毛唐に日本の和の心など分かりはしない！！！",
+		   NULL, " Those stupid barbarians will never understand the Japanese spirit!!!", Line_WaitForInput);
+	ModPlayVoiceLS(4, 1, "ps3/s06/01/150100061", 128, TRUE);
+	OutputLine(NULL, "貴様ら聞いているのか、",
+		   NULL, " Are you listening?!", Line_Continue);
+	// (backup) SetValidityOfInput( FALSE );
+	Wait( 800 );
+	// (backup) SetValidityOfInput( TRUE );
+	OutputLine(NULL, "軟弱スルメどもがああぁ！！！",
+		   NULL, " You pathetic squid!!!", Line_Continue);
+	PlaySE( 0, "s_Down", 128, 64 );
+	StartShakingOfWindow( 248, 40, 0, 0, 2*2, FALSE );
+	StartShakingOfAllObjects( 248, 40, 0, 0, 2*2, TRUE );
+	OutputLineAll(NULL, " ", GetGlobalFlag(GLinemodeSp));
+
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 1, "ps3/s06/01/150100062", 128, TRUE);
+	OutputLine(NULL, "歯を食いしばれ、今日は徹底的にしごく！！！",
+		   NULL, "Clench your teeth, I'll train you 'til you drop!!!", Line_WaitForInput);
+	ModPlayVoiceLS(4, 1, "ps3/s06/01/150100063", 128, TRUE);
+	OutputLine(NULL, "貴様らが自分の妄想でご飯三杯行けるまで今日は寝られないと思ええ！！！",
+		   NULL, " I won't let you sleep until you are capable of perfecting your imagination skills!!!", Line_WaitForInput);
+	ModPlayVoiceLS(4, 1, "ps3/s06/01/150100064", 128, TRUE);
+	OutputLine(NULL, "はいいぃいい指導指導指導ぉおおッ！！！！」",
+		   NULL, " Here comes my whip!!!\" ", Line_Normal);
+	ClearMessage();
+}
