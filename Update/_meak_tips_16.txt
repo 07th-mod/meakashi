@@ -36,7 +36,7 @@ void main()
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　縦割りゆえに横の連絡がない。",
-		   NULL, "These ministries don't communicate with one another.", Line_ContinueAfterTyping);
+		   NULL, "These ministries don't communicate with one another.", Line_WaitForInput);
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
