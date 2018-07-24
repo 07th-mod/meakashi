@@ -1,0 +1,54 @@
+void main()
+{
+}
+
+void dialog000()
+{
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　私は少し急いで飲みすぎたせいか、畳の上でぐったりとしていた。",
+		   NULL, "Maybe I drank too much. I was lying on the tatami floor.", Line_Normal);
+	ClearMessage();
+	DisableWindow();
+	DrawSceneWithMask("background/ima1", "maskright", 1, 0, 300 );
+	ModDrawCharacter(1, 15, "sprite/normal/kasa_3_", "0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 200, TRUE );
+	DisplayWindow();
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　葛西が、車に乗れますか？",
+		   NULL, "Kasai asked me if I could get in the car,", Line_WaitForInput);
+	OutputLine(NULL, "と聞いてきたので、乗ったら吐くと言い返してやった。",
+		   NULL, " so I told him I'd barf if I got in now.", Line_Normal);
+	ClearMessage();
+}
+
+void dialog001()
+{
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　せっかくアルコールで誤魔化した、あの祭具殿での薄気味悪さが…再び戻ってくるのを感じた。",
+		   NULL, "I felt the eerieness of the ritual storehouse coming back to me... despite drinking it away with alcohol earlier.", Line_Normal);
+	ClearMessage();
+}
+
+void dialog002()
+{
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　…だが、酔っ払っていて、寝る身支度なんてしないで布団に潜り込んだから。",
+		   NULL, "But since I was too drunk to get ready for bed, I still had it on me.", Line_Normal);
+	ClearMessage();
+	DrawScene("background/rouka1_02", 400 );
+}
+
+void dialog003()
+{
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 6, "ps3/s06/06/150601468", 128, TRUE);
+	OutputLine(NULL, "「富竹さんの、自分で自分の喉を引き裂いたってのは何？",
+		   NULL, "\"What about the way Tomitake-san died? He clawed out his own throat, right?", Line_WaitForInput);
+	ModPlayVoiceLS(4, 6, "ps3/s06/06/150601469", 128, TRUE);
+	OutputLine(NULL, "　狂気に駆り立てるような怪しいお薬でも注射したの？",
+		   NULL, " Did you give him a shot of some kind?", Line_WaitForInput);
+	ModPlayVoiceLS(4, 6, "ps3/s06/06/150601470", 128, TRUE);
+	OutputLine(NULL, "　それとも、そういう死に方に見せるような拷問道具でもあるわけ？」",
+		   NULL, " Or is there a torture device that did that to him?\"", Line_Normal);
+	ClearMessage();
+}
