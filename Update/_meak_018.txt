@@ -43,29 +43,10 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
 
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
-	OutputLine(NULL, "　…私は気持ちよく酔っ払ってしまって、……ここに泊まってしまったが、",
-		   NULL, "I got drunk, fell asleep, and decided to stay overnight.", Line_WaitForInput);
-	OutputLine(NULL, "それが本当にお酒によるものなのか、",
-		   NULL, " Was that because of the alcohol,", Line_WaitForInput);
-	OutputLine(NULL, "……何か睡眠薬が混入されていたのか分からない。",
-		   NULL, " or did someone put a drug in my drink?", Line_Normal);
-	ClearMessage();
-
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
-	OutputLine(NULL, "　………確かに、私ともあろうものが、酔い潰れて、よりにもよって鬼婆の家に泊まり込むなどちょっと考え難い。",
-		   NULL, "It's not like me to get drunk and spend a night at the hag's house.", Line_Normal);
-	ClearMessage();
-
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
-	OutputLine(NULL, "　祭具殿で気味の悪いことがあって、…それを忘れるために馬鹿騒ぎしてお酒を飲んで。",
-		   NULL, "I wanted to forget about what happened in that eerie storehouse, so I drank too much.", GetGlobalFlag(GLinemodeSp));
-	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
-
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
-	OutputLine(NULL, "　………それにしたって、悪酔いし過ぎだった。",
-		   NULL, "But it really was strange for me to get that drunk.", GetGlobalFlag(GLinemodeSp));
-	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
+	//VoiceMatching
+	if(GetGlobalFlag(GCensor) >= 3){ModCallScriptSection("_zmeak_018_vm0x_n01","dialog000");}
+	if(GetGlobalFlag(GCensor) <= 2){ModCallScriptSection("_zmeak_018_vm00_n01","dialog000");}
+	//VoiceMatchingEnd
 
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }

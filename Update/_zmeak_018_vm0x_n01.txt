@@ -1,0 +1,30 @@
+void main()
+{
+}
+
+void dialog000()
+{
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　…私は気持ちよく眠りこけてしまって、……ここに泊まってしまったが、",
+		   NULL, "I got fell comfortably asleep, and ended up staying overnight.", Line_WaitForInput);
+	OutputLine(NULL, "それが本当に疲れだけによるものなのか、",
+		   NULL, " Was that just because I was tired,", Line_WaitForInput);
+	OutputLine(NULL, "……何か料理に睡眠薬が混入されていたのか分からない。",
+		   NULL, " or did someone put a drug in my food?", Line_Normal);
+	ClearMessage();
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　………確かに、私ともあろうものが、疲れと眠気でバタンキューして、よりにもよって祖母の家に泊まり込むなどちょっと考え難い。",
+		   NULL, "It's not like me to fall straight into a deep sleep and spend a night at grandma's house.", Line_Normal);
+	ClearMessage();
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　祭具殿で気味の悪いことがあって、…それを忘れるために馬鹿騒ぎして。",
+		   NULL, "I wanted to forget about what happened in that eerie storehouse, so I got a little carried away.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　………それにしたって、話がうますぎだった。",
+		   NULL, "But it feels like more than a conincidence.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
+}
