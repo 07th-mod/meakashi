@@ -2145,17 +2145,10 @@ void main()
 		   NULL, " I don't have anything to do with it.\"", Line_Normal);
 	ClearMessage();
 
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 6, "ps3/s06/06/150601490", 128, TRUE);
-	OutputLine(NULL, "「でも、鬼婆の独断だとしたって。",
-		   NULL, "\"But even if she decides by herself,", Line_WaitForInput);
-	ModPlayVoiceLS(4, 6, "ps3/s06/06/150601491", 128, TRUE);
-	OutputLine(NULL, "鬼婆はあんたを介してやり取りしてるわけでしょ？",
-		   NULL, " the hag uses you to take care of various things, doesn't she?", Line_WaitForInput);
-	ModPlayVoiceLS(4, 6, "ps3/s06/06/150601492", 128, TRUE);
-	OutputLine(NULL, "　そのあんたが何も知らないなんてあるはず、」",
-		   NULL, " And you're telling me you don't know anything?\"", GetGlobalFlag(GLinemodeSp));
-	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+	//VoiceMatching
+	if(GetGlobalFlag(GCensor) >= 2){ModCallScriptSection("_zmeak_017_vm0x_n01","dialog004");}
+	if(GetGlobalFlag(GCensor) <= 1){ModCallScriptSection("_zmeak_017_vm00_n01","dialog004");}
+	//VoiceMatchingEnd
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 3, "ps3/s06/03/150300366", 128, TRUE);
