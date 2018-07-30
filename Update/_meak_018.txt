@@ -602,11 +602,10 @@ void main()
 	DrawSceneWithMask("black", "maskleft", 1, 0, 300 );
 	DrawSceneWithMask("background/so_chikafuroa", "maskleft", 1, 0, 300 );
 
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 6, "ps3/s06/06/150601521", 128, TRUE);
-	OutputLine(NULL, "「鬼婆さま、そろそろ目を覚まして下さいません？」",
-		   NULL, "\"Why don't you wake up, Empress of Hags?\"", GetGlobalFlag(GLinemodeSp));
-	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
+	//VoiceMatching
+	if(GetGlobalFlag(GCensor) >= 2){ModCallScriptSection("_zmeak_018_vm0x_n01","dialog001");}
+	if(GetGlobalFlag(GCensor) <= 1){ModCallScriptSection("_zmeak_018_vm00_n01","dialog001");}
+	//VoiceMatchingEnd
 
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -1084,19 +1083,10 @@ void main()
 		   NULL, "I brushed it off violently.", Line_Normal);
 	ClearMessage();
 
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 6, "ps3/s06/06/150601531", 128, TRUE);
-	OutputLine(NULL, "「……はぁ………はぁ……。",
-		   NULL, "\"Hah, hah... hah...", Line_WaitForInput);
-	ModPlayVoiceLS(4, 6, "ps3/s06/06/150601532", 128, TRUE);
-	OutputLine(NULL, "………………思い知ったか、",
-		   NULL, " ......You deserve this,", Line_Continue);
-	// (backup) SetValidityOfInput( FALSE );
-	Wait( 1000 );
-	// (backup) SetValidityOfInput( TRUE );
-	OutputLine(NULL, "………鬼婆…。」",
-		   NULL, " you fucking demon-hag...\"", GetGlobalFlag(GLinemodeSp));
-	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+	//VoiceMatching
+	if(GetGlobalFlag(GCensor) >= 2){ModCallScriptSection("_zmeak_018_vm0x_n01","dialog002");}
+	if(GetGlobalFlag(GCensor) <= 1){ModCallScriptSection("_zmeak_018_vm00_n01","dialog002");}
+	//VoiceMatchingEnd
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　私は両手を膝に付きながら、ぜいぜいと荒い息を漏らす。",
@@ -1390,40 +1380,10 @@ void main()
 		   NULL, "\"...............\"", Line_Normal);
 	ClearMessage();
 
-	ModPlayVoiceLS(4, 6, "ps2/06/150601550", 128, TRUE);
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_Continue); }
-	OutputLine(NULL, "「さっきの音は聞こえてなかった？",
-		   NULL, "\"Did you hear some noise earlier?", Line_WaitForInput);
-	ModPlayVoiceLS(4, 6, "ps2/06/150601551", 128, TRUE);
-	OutputLine(NULL, "　鬼婆を鞭で叩く音。」",
-		   NULL, " That was me whipping the hag.\"", GetGlobalFlag(GLinemodeSp));
-	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
-
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 3, "ps3/s06/03/150300385", 128, TRUE);
-	OutputLine(NULL, "「………………。」",
-		   NULL, "\"............\"", GetGlobalFlag(GLinemodeSp));
-	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
-
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
-	OutputLine(NULL, "　魅音は答えないが、唇をぎゅっと噛むのが分かった。",
-		   NULL, "Mion didn't reply, but I saw her bite her lip.", Line_Normal);
-	ClearMessage();
-
-	ModPlayVoiceLS(4, 6, "ps2/06/150601552", 128, TRUE);
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_Continue); }
-	OutputLine(NULL, "「大丈夫。",
-		   NULL, "\"Don't worry,", Line_WaitForInput);
-	ModPlayVoiceLS(4, 6, "ps2/06/150601553", 128, TRUE);
-	OutputLine(NULL, "あんたは叩かない。",
-		   NULL, " I won't whip you.", Line_WaitForInput);
-	ModPlayVoiceLS(4, 6, "ps2/06/150601554", 128, TRUE);
-	OutputLine(NULL, "でもね、あんたが不愉快だと、鬼婆をもっと叩くかもしれない。",
-		   NULL, " But if you don't cooperate, I might punish her some more.", Line_WaitForInput);
-	ModPlayVoiceLS(4, 6, "ps2/06/150601555", 128, TRUE);
-	OutputLine(NULL, "今度は鞭なんかじゃなくて、」",
-		   NULL, " Next time I won't use a whip.\"", GetGlobalFlag(GLinemodeSp));
-	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+	//VoiceMatching
+	if(GetGlobalFlag(GCensor) >= 2){ModCallScriptSection("_zmeak_018_vm0x_n01","dialog003");}
+	if(GetGlobalFlag(GCensor) <= 1){ModCallScriptSection("_zmeak_018_vm00_n01","dialog003");}
+	//VoiceMatchingEnd
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 3, "ps3/s06/03/150300387", 128, TRUE);
@@ -1605,14 +1565,10 @@ void main()
 		   NULL, "\"I've never even wanted to...\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 6, "ps3/s06/06/150601557", 128, TRUE);
-	OutputLine(NULL, "「あはは、それに関しては著しく同感。",
-		   NULL, "\"Ahaha, I feel the same way.", Line_WaitForInput);
-	ModPlayVoiceLS(4, 6, "ps2/06/150601558", 128, TRUE);
-	OutputLine(NULL, "この拷問室の犠牲者たちが放り込まれた井戸になんか、好きこのんで降りたくはないもんね。」",
-		   NULL, " Why would I go down the well where they tossed the victims of this torture room?\"", Line_Normal);
-	ClearMessage();
+	//VoiceMatching
+	if(GetGlobalFlag(GCensor) >= 3){ModCallScriptSection("_zmeak_018_vm0x_n01","dialog004");}
+	if(GetGlobalFlag(GCensor) <= 2){ModCallScriptSection("_zmeak_018_vm00_n01","dialog004");}
+	//VoiceMatchingEnd
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　私は拷問室に戻り、鬼婆の車椅子を押しながら大空洞に戻る。",
@@ -1670,17 +1626,10 @@ void main()
 		   NULL, "\"How could you...?\"", Line_Normal);
 	ClearMessage();
 
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 6, "ps3/s06/06/150601564", 128, TRUE);
-	OutputLine(NULL, "「何なら、死後の鬼婆の世話もする？",
-		   NULL, "\"Hey, do you want to take care of her even now that she's dead?", Line_WaitForInput);
-	ModPlayVoiceLS(4, 6, "ps3/s06/06/150601565", 128, TRUE);
-	OutputLine(NULL, "　湧いてくるウジを箸で摘んで捨てるとかやってみる？",
-		   NULL, " Maybe you can use chopsticks to pick maggots off her body.", Line_WaitForInput);
-	ModPlayVoiceLS(4, 6, "ps3/s06/06/150601566", 128, TRUE);
-	OutputLine(NULL, "　ん？！」",
-		   NULL, " Huh?!\"", GetGlobalFlag(GLinemodeSp));
-	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+	//VoiceMatching
+	if(GetGlobalFlag(GCensor) >= 4){ModCallScriptSection("_zmeak_018_vm0x_n01","dialog005");}
+	if(GetGlobalFlag(GCensor) <= 3){ModCallScriptSection("_zmeak_018_vm00_n01","dialog005");}
+	//VoiceMatchingEnd
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　魅音は両耳を覆うと、聞きたくないとでも言うように、首をぶるぶると振った。",
@@ -1710,7 +1659,7 @@ void main()
 
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
-	OutputLine(NULL, "　…詩音はしばらくの沈黙の後、言った。",
+	OutputLine(NULL, "　…魅音はしばらくの沈黙の後、言った。",
 		   NULL, "Nobody said anything for a while, but the silence was soon broken.", Line_Normal);
 	ClearMessage();
 
@@ -1747,23 +1696,10 @@ void main()
 		   NULL, "\"........................\"", Line_Normal);
 	ClearMessage();
 
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 6, "ps3/s06/06/150601572", 128, TRUE);
-	OutputLine(NULL, "「……ねぇ魅音。",
-		   NULL, "\"Hey, Mion...", Line_WaitForInput);
-	ModPlayVoiceLS(4, 6, "ps3/s06/06/150601573", 128, TRUE);
-	OutputLine(NULL, "………今こうして思い返すと、私はやっぱり鬼婆を殺すだけの理由があったように思うの。",
-		   NULL, " Now that I think about it...... I did have a reason to kill the hag.", Line_WaitForInput);
-	ModPlayVoiceLS(4, 6, "ps3/s06/06/150601574", 128, TRUE);
-	OutputLine(NULL, "なぜか分かる？",
-		   NULL, " Do you know what it was?", Line_WaitForInput);
-	ModPlayVoiceLS(4, 6, "ps3/s06/06/150601575", 128, TRUE);
-	OutputLine(NULL, "　……単に悟史くんを殺した張本人だからってだけじゃないよ。",
-		   NULL, " ...It wasn't just because she killed Satoshi-kun.", Line_WaitForInput);
-	ModPlayVoiceLS(4, 6, "ps3/s06/06/150601576", 128, TRUE);
-	OutputLine(NULL, "それは嘘を吐いたから！！」",
-		   NULL, " It's because she lied!!\"", GetGlobalFlag(GLinemodeSp));
-	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+	//VoiceMatching
+	if(GetGlobalFlag(GCensor) >= 2){ModCallScriptSection("_zmeak_018_vm0x_n01","dialog006");}
+	if(GetGlobalFlag(GCensor) <= 1){ModCallScriptSection("_zmeak_018_vm00_n01","dialog006");}
+	//VoiceMatchingEnd
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　鬼婆のぼさぼさ頭を私は平手で叩いた。",
@@ -1918,20 +1854,10 @@ void main()
 		   NULL, "I felt like I used up all of the air in my lungs.", Line_Normal);
 	ClearMessage();
 
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 6, "ps3/s06/06/150601591", 128, TRUE);
-	OutputLine(NULL, "「……あんたが何も知らないのは本当だと思う。",
-		   NULL, "\"I believe you don't know anything.", Line_WaitForInput);
-	ModPlayVoiceLS(4, 6, "ps3/s06/06/150601592", 128, TRUE);
-	OutputLine(NULL, "あんた自身、鬼婆に真の意味で信頼を得ていたかは怪しいからね。",
-		   NULL, " You aren't even sure if the hag actually trusted you.", Line_WaitForInput);
-	ModPlayVoiceLS(4, 6, "ps3/s06/06/150601593", 128, TRUE);
-	OutputLine(NULL, "………でも、鬼婆が本当に私のけじめで悟史くんを許したかは分からないよ。",
-		   NULL, " But... I don't know if she forgave Satoshi-kun because of what I did.", Line_WaitForInput);
-	ModPlayVoiceLS(4, 6, "ps3/s06/06/150601594", 128, TRUE);
-	OutputLine(NULL, "甘ちゃんなあんたに、本当のところを打ち明けるわけもない。」",
-		   NULL, " She wouldn't have told you the truth.\"", GetGlobalFlag(GLinemodeSp));
-	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
+	//VoiceMatching
+	if(GetGlobalFlag(GCensor) >= 2){ModCallScriptSection("_zmeak_018_vm0x_n01","dialog007");}
+	if(GetGlobalFlag(GCensor) <= 1){ModCallScriptSection("_zmeak_018_vm00_n01","dialog007");}
+	//VoiceMatchingEnd
 
 	PlayBGM( 3, "semi", 120, 0 );
 
