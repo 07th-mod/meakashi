@@ -1523,16 +1523,16 @@ void main()
 		   NULL, "\"...What is... this...?\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
-	ModPlayVoiceLS(4, 3, "ps2/03/150300213", 128, TRUE);
+	ModPlayVoiceLS(4, 3, "ps2/03/150300213", 240, TRUE);
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_Continue); }
 	OutputLine(NULL, "「……爪を剥ぐための道具です。",
 		   NULL, "\"...It's a tool for removing fingernails.", Line_WaitForInput);
-	ModPlayVoiceLS(4, 3, "ps2/03/150300214", 128, TRUE);
+	ModPlayVoiceLS(4, 3, "ps2/03/150300214", 240, TRUE);
 	OutputLine(NULL, "使い方はわかります？」",
 		   NULL, " Do you know how to use it...?\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
-	ModPlayVoiceLS(4, 6, "ps2/06/150600967", 128, TRUE);
+	ModPlayVoiceLS(4, 6, "ps2/06/150600967", 240, TRUE);
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_Continue); }
 	OutputLine(NULL, "「わ、……………わかるわけ……ないでしょ…………。」",
 		   NULL, "\"N-No way...\"", GetGlobalFlag(GLinemodeSp));
@@ -1845,7 +1845,7 @@ void main()
 	ClearMessage();
 	DrawScene("black", 400 );
 
-	ModPlayVoiceLS(4, 6, "ps2/06/150600975", 128, TRUE);
+	ModPlayVoiceLS(4, 6, "ps2/06/150600975", 240, TRUE);
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_Continue); }
 	OutputLine(NULL, "「はぁ……はぁ……はあ……はぁ！」",
 		   NULL, "\"Huff... huff... huff... huff!\"", Line_Normal);
@@ -1871,7 +1871,7 @@ void main()
 		   NULL, "...Would they tell him to remove his fingernails in exchange for forgiving me?", Line_Normal);
 	ClearMessage();
 
-	ModPlayVoiceLS(4, 6, "ps2/06/150600976", 128, TRUE);
+	ModPlayVoiceLS(4, 6, "ps2/06/150600976", 240, TRUE);
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_Continue); }
 	OutputLine(NULL, "「……はぁ……はぁ……はぁ……はあ…はぁ！」",
 		   NULL, "\"...Huff... huff... huff... huff... huff!\"", Line_Normal);
@@ -1942,7 +1942,7 @@ void main()
 		   NULL, "So... So I just needed to bear the pain...", Line_Normal);
 	ClearMessage();
 
-	ModPlayVoiceLS(4, 6, "ps2/06/150600977", 128, TRUE);
+	ModPlayVoiceLS(4, 6, "ps2/06/150600977", 240, TRUE);
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_Continue); }
 	OutputLine(NULL, "「はぁ、……あぁ、………あう、……あぁ……！」",
 		   NULL, "\"Hah... ahh... oww... ahh...!\"", GetGlobalFlag(GLinemodeSp));
@@ -2062,7 +2062,7 @@ void main()
 	PlaySE( 0, "s_tataku", 128, 64 );
 	DrawScene("background/aka1", 10 );
 
-	ModPlayVoiceLS(4, 6, "ps2/06/150600982", 128, TRUE);
+	ModPlayVoiceLS(4, 6, "ps2/06/150600982", 240, TRUE);
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_Continue); }
 	OutputLine(NULL, "「……………ッッ！！！！」",
 		   NULL, "\".........Tcch!!!!\"", Line_Normal);
@@ -2078,7 +2078,7 @@ void main()
 		   NULL, "A moment later, the pain pulsated with my heartbeat.", Line_Normal);
 	ClearMessage();
 
-	ModPlayVoiceLS(4, 6, "ps2/06/150600983", 128, TRUE);
+	ModPlayVoiceLS(4, 6, "ps2/06/150600983", 240, TRUE);
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_Continue); }
 	OutputLine(NULL, "「……ぅううぅううぅ、……うううぅううぅううぅう！！！」",
 		   NULL, "\"......Ooooohhhh...... oooohhhhh!!!\"", Line_Normal);
@@ -2186,10 +2186,10 @@ void main()
 	ModPlayVoiceLS(4, 6, "ps3/s06/06/150600984", 128, TRUE);
 	OutputLine(NULL, "「………魅音、………これで、…許して…………。",
 		   NULL, "\"...Mion... look, isn't this enough...?", Line_WaitForInput);
-	ModPlayVoiceLS(4, 6, "ps2/06/150600985", 128, TRUE);
+	ModPlayVoiceLS(4, 6, "ps2/06/150600985", 240, TRUE);
 	OutputLine(NULL, "あのね、…あのね、……これ、…本当に痛いの……、すごく痛いんだよ……。",
 		   NULL, " It really hurts, you know that?", Line_WaitForInput);
-	ModPlayVoiceLS(4, 6, "ps2/06/150600986", 128, TRUE);
+	ModPlayVoiceLS(4, 6, "ps2/06/150600986", 240, TRUE);
 	OutputLine(NULL, "ほら、…私の顔を見れば…わかるよね……？",
 		   NULL, " You see that in my eyes, don't you?", Line_WaitForInput);
 	ModPlayVoiceLS(4, 6, "ps3/s06/06/150600987", 128, TRUE);
@@ -2202,11 +2202,11 @@ void main()
 		   NULL, "Mion answered, still wearing a cold look.", Line_Normal);
 	ClearMessage();
 
-	ModPlayVoiceLS(4, 3, "ps2/03/150300222", 128, TRUE);
+	ModPlayVoiceLS(4, 3, "ps2/03/150300222", 240, TRUE);
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_Continue); }
 	OutputLine(NULL, "「…………詩音。",
 		   NULL, "\"...You can't keep going...?", Line_WaitForInput);
-	ModPlayVoiceLS(4, 3, "ps2/03/150300223", 128, TRUE);
+	ModPlayVoiceLS(4, 3, "ps2/03/150300223", 240, TRUE);
 	OutputLine(NULL, "………もう、……無理？」",
 		   NULL, " Shion?\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -2227,20 +2227,20 @@ void main()
 		   NULL, "I knew that... I really did know!", Line_Normal);
 	ClearMessage();
 
-	ModPlayVoiceLS(4, 6, "ps2/06/150600988", 128, TRUE);
+	ModPlayVoiceLS(4, 6, "ps2/06/150600988", 240, TRUE);
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_Continue); }
 	OutputLine(NULL, "「や、…やれるよッ！！！",
 		   NULL, "\"I... I'll do it!!!", Line_WaitForInput);
-	ModPlayVoiceLS(4, 6, "ps2/06/150600989", 128, TRUE);
+	ModPlayVoiceLS(4, 6, "ps2/06/150600989", 240, TRUE);
 	OutputLine(NULL, "　こんなの全然楽勝だって……！！",
 		   NULL, " This is easy...!!", Line_WaitForInput);
-	ModPlayVoiceLS(4, 6, "ps2/06/150600990", 128, TRUE);
+	ModPlayVoiceLS(4, 6, "ps2/06/150600990", 240, TRUE);
 	OutputLine(NULL, "　このサディスト共がぁ！！",
 		   NULL, " You sadists!!", Line_WaitForInput);
-	ModPlayVoiceLS(4, 6, "ps2/06/150600991", 128, TRUE);
+	ModPlayVoiceLS(4, 6, "ps2/06/150600991", 240, TRUE);
 	OutputLine(NULL, "　はあ、…はぁ！！",
 		   NULL, " Hah... hah!!", Line_WaitForInput);
-	ModPlayVoiceLS(4, 6, "ps2/06/150600992", 128, TRUE);
+	ModPlayVoiceLS(4, 6, "ps2/06/150600992", 240, TRUE);
 	OutputLine(NULL, "　こんなの怖くない、こんなの痛くない…、",
 		   NULL, " This doesn't scare me, this doesn't hurt...", Line_Continue);
 	// (backup) SetValidityOfInput( FALSE );
@@ -2309,13 +2309,13 @@ void main()
 		   NULL, " Again......?!", Line_Normal);
 	ClearMessage();
 
-	ModPlayVoiceLS(4, 3, "ps2/03/150300224", 128, TRUE);
+	ModPlayVoiceLS(4, 3, "ps2/03/150300224", 240, TRUE);
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_Continue); }
 	OutputLine(NULL, "「………………詩音…？」",
 		   NULL, "\".........Shion?\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
-	ModPlayVoiceLS(4, 6, "ps2/06/150600993", 128, TRUE);
+	ModPlayVoiceLS(4, 6, "ps2/06/150600993", 240, TRUE);
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_Continue); }
 	OutputLine(NULL, "「やだ、…………ぇぐ、………やだぁああぁあぁあ！！！」",
 		   NULL, "\"No... hikk... I don't want to do it!!!\"", GetGlobalFlag(GLinemodeSp));
@@ -2330,23 +2330,23 @@ void main()
 	ClearMessage();
 	DrawScene("background/aka2", 400 );
 
-	ModPlayVoiceLS(4, 6, "ps2/06/150600994", 128, TRUE);
+	ModPlayVoiceLS(4, 6, "ps2/06/150600994", 240, TRUE);
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_Continue); }
 	OutputLine(NULL, "「もうやだやだ！！",
 		   NULL, "\"I can't take it anymore!!", Line_WaitForInput);
-	ModPlayVoiceLS(4, 6, "ps2/06/150600995", 128, TRUE);
+	ModPlayVoiceLS(4, 6, "ps2/06/150600995", 240, TRUE);
 	OutputLine(NULL, "　もう無理なの本当に痛いの…！！",
 		   NULL, " It's too painful...!!", Line_WaitForInput);
-	ModPlayVoiceLS(4, 6, "ps2/06/150600996", 128, TRUE);
+	ModPlayVoiceLS(4, 6, "ps2/06/150600996", 240, TRUE);
 	OutputLine(NULL, "　もう許して、本当に許してよぉ！！",
 		   NULL, " Forgive me, please!!", Line_WaitForInput);
-	ModPlayVoiceLS(4, 6, "ps2/06/150600997", 128, TRUE);
+	ModPlayVoiceLS(4, 6, "ps2/06/150600997", 240, TRUE);
 	OutputLine(NULL, "　ごめんなさいごめんなさい、謝りますから許してください！！",
 		   NULL, " I'm sorry. I apologize!!", Line_WaitForInput);
-	ModPlayVoiceLS(4, 6, "ps2/06/150600998", 128, TRUE);
+	ModPlayVoiceLS(4, 6, "ps2/06/150600998", 240, TRUE);
 	OutputLine(NULL, "　ごめんなさいごめんなさい、ごめんなさいごめんなさい！！",
 		   NULL, " I'm sorry, I'm sorry,", Line_WaitForInput);
-	ModPlayVoiceLS(4, 6, "ps2/06/150600999", 128, TRUE);
+	ModPlayVoiceLS(4, 6, "ps2/06/150600999", 240, TRUE);
 	OutputLine(NULL, "　ごめんなさいごめんなさいごめんなさい！！」",
 		   NULL, " I'm sorry, I'm sorry, I'm sorry!!\"", Line_Normal);
 	ClearMessage();
@@ -2396,10 +2396,10 @@ void main()
 	ModPlayVoiceLS(4, 6, "ps3/s06/06/150601001", 128, TRUE);
 	OutputLine(NULL, "　本当に無理、本当に痛いの…、痛いのぉおお！！",
 		   NULL, " I can't do this!! It really hurts! It really does!!", Line_WaitForInput);
-	ModPlayVoiceLS(4, 6, "ps2/06/150601002", 128, TRUE);
+	ModPlayVoiceLS(4, 6, "ps2/06/150601002", 240, TRUE);
 	OutputLine(NULL, "　うっく、……えぐ、……わああぁああああぁあぁああああああぁああ！！",
 		   NULL, " Hic... ooh... waaaahhhh!!", Line_WaitForInput);
-	ModPlayVoiceLS(4, 6, "ps2/06/150601003", 128, TRUE);
+	ModPlayVoiceLS(4, 6, "ps2/06/150601003", 240, TRUE);
 	OutputLine(NULL, "　うわあああぁああぁあぁああぁあぁあぁ！！」",
 		   NULL, " Ahhhhhh!!\"", Line_Normal);
 	ClearMessage();
@@ -2429,11 +2429,11 @@ void main()
 		   NULL, "One of them pinned me in a nelson hold, restricting my movement.", Line_Normal);
 	ClearMessage();
 
-	ModPlayVoiceLS(4, 6, "ps2/06/150601004", 128, TRUE);
+	ModPlayVoiceLS(4, 6, "ps2/06/150601004", 240, TRUE);
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_Continue); }
 	OutputLine(NULL, "「やや、やめてよやめてよ！！",
 		   NULL, "\"No, stop it!", Line_WaitForInput);
-	ModPlayVoiceLS(4, 6, "ps2/06/150601005", 128, TRUE);
+	ModPlayVoiceLS(4, 6, "ps2/06/150601005", 240, TRUE);
 	OutputLine(NULL, "　いやぁ嫌あああぁああぁああ！！！」",
 		   NULL, " Noooooo!!!\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -2459,14 +2459,14 @@ void main()
 		   NULL, "...He... put the metal beak between my ring finger and its fingernail......", Line_Normal);
 	ClearMessage();
 
-	ModPlayVoiceLS(4, 6, "ps2/06/150601006", 128, TRUE);
+	ModPlayVoiceLS(4, 6, "ps2/06/150601006", 240, TRUE);
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_Continue); }
 	OutputLine(NULL, "「やああぁあぁあぁあ！！！",
 		   NULL, "\"Noooooo!!!", Line_WaitForInput);
-	ModPlayVoiceLS(4, 6, "ps2/06/150601007", 128, TRUE);
+	ModPlayVoiceLS(4, 6, "ps2/06/150601007", 240, TRUE);
 	OutputLine(NULL, "　助けて、おかあさん……おかあさああぁあん！！",
 		   NULL, " Mom, help me... Mooooomm!!", Line_WaitForInput);
-	ModPlayVoiceLS(4, 6, "ps2/06/150601008", 128, TRUE);
+	ModPlayVoiceLS(4, 6, "ps2/06/150601008", 240, TRUE);
 	OutputLine(NULL, "　あああああああぁああぁああぁああああああ！！！」",
 		   NULL, " Ahhhhhhhhh!!!\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }

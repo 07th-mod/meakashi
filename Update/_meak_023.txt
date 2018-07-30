@@ -71,14 +71,14 @@ void main()
 		   NULL, " There was no response.", Line_Normal);
 	ClearMessage();
 
-	ModPlayVoiceLS(4, 6, "ps2/06/150602270", 128, TRUE);
+	ModPlayVoiceLS(4, 6, "ps2/06/150602270", 240, TRUE);
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_Continue); }
 	OutputLine(NULL, "「公由のおじいちゃん？",
 		   NULL, "\"Uncle Kimiyoshi?", Line_WaitForInput);
-	ModPlayVoiceLS(4, 6, "ps2/06/150602271", 128, TRUE);
+	ModPlayVoiceLS(4, 6, "ps2/06/150602271", 240, TRUE);
 	OutputLine(NULL, "　生きてるなら正直に生きてるって言って下さいよ？",
 		   NULL, " If you're alive, you better tell me, okay?", Line_WaitForInput);
-	ModPlayVoiceLS(4, 6, "ps2/06/150602272", 128, TRUE);
+	ModPlayVoiceLS(4, 6, "ps2/06/150602272", 240, TRUE);
 	OutputLine(NULL, "　死体のふりして逃げ出そうなんて通用しないから。」",
 		   NULL, " You can't fool me.\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -366,7 +366,7 @@ void main()
 	ClearMessage();
 	PlaySE( 0, "s_furu", 128, 64 );
 
-	ModPlayVoiceLS(4, 4, "ps2/04/150400042", 128, TRUE);
+	ModPlayVoiceLS(4, 4, "ps2/04/150400042", 240, TRUE);
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_Continue); }
 	OutputLine(NULL, "「…ぐうう！！",
 		   NULL, "\"Ooo!!", Line_Continue);
@@ -376,7 +376,7 @@ void main()
 
 	PlaySE( 0, "s_furu", 128, 64 );
 
-	ModPlayVoiceLS(4, 4, "ps2/04/150400043", 128, TRUE);
+	ModPlayVoiceLS(4, 4, "ps2/04/150400043", 240, TRUE);
 	OutputLine(NULL, "　ふぎゃッ！！",
 		   NULL, " Gyahh!!", Line_Continue);
 	PlaySE( 1, "Thisikuki", 128, 64 );
@@ -385,7 +385,7 @@ void main()
 
 	PlaySE( 0, "s_furu", 128, 64 );
 
-	ModPlayVoiceLS(4, 4, "ps2/04/150400044", 128, TRUE);
+	ModPlayVoiceLS(4, 4, "ps2/04/150400044", 240, TRUE);
 	OutputLine(NULL, "　…ッが！！」",
 		   NULL, " Guhhh!!\"", Line_Continue);
 	PlaySE( 1, "Thisikuki", 128, 64 );
@@ -586,7 +586,7 @@ void main()
 	DrawScene("background/ryuuketu1", 0 );
 	FadeFilm( 400, TRUE );
 
-	ModPlayVoiceLS(4, 4, "ps2/04/150400046", 128, TRUE);
+	ModPlayVoiceLS(4, 4, "ps2/04/150400046", 240, TRUE);
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_Continue); }
 	OutputLine(NULL, "「ぎぃああやああああおああぉおああがああが…、",
 		   NULL, "\"Gyaahhhhhhh...", Line_Continue);
@@ -655,7 +655,7 @@ void main()
 	PlaySE( 0, "s_tataku", 128, 64 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#fcdb77>沙都子</color>", NULL, "<color=#fcdb77>Satoko</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 4, "ps2/04/150400048", 128, TRUE);
+	ModPlayVoiceLS(4, 4, "ps2/04/150400048", 240, TRUE);
 	OutputLine(NULL, "「ぐぎゃあああぁあ……ッ！！！！」",
 		   NULL, "\"Gyaahhhhh!!!!\"", Line_Normal);
 	ClearMessage();
@@ -758,7 +758,7 @@ void main()
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#fcdb77>沙都子</color>", NULL, "<color=#fcdb77>Satoko</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 4, "ps2/04/150400049", 128, TRUE);
+	ModPlayVoiceLS(4, 4, "ps2/04/150400049", 240, TRUE);
 	OutputLine(NULL, "「…………ッ、",
 		   NULL, "\"......!", Line_Continue);
 	// (backup) SetValidityOfInput( FALSE );
@@ -766,25 +766,25 @@ void main()
 	// (backup) SetValidityOfInput( TRUE );
 	OutputLine(NULL, "……………ふぐ…！！",
 		   NULL, " Gouhhh", Line_WaitForInput);
-	ModPlayVoiceLS(4, 4, "ps2/04/150400050", 128, TRUE);
+	ModPlayVoiceLS(4, 4, "ps2/04/150400050", 240, TRUE);
 	OutputLine(NULL, "　…………………………。」",
 		   NULL, "...............!!\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
-	ModPlayVoiceLS(4, 6, "ps2/06/150602331", 128, TRUE);
+	ModPlayVoiceLS(4, 6, "ps2/06/150602331", 240, TRUE);
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_Continue); }
 	OutputLine(NULL, "「……どうしたよ。",
 		   NULL, "\"What's this?", Line_WaitForInput);
-	ModPlayVoiceLS(4, 6, "ps2/06/150602332", 128, TRUE);
+	ModPlayVoiceLS(4, 6, "ps2/06/150602332", 240, TRUE);
 	OutputLine(NULL, "右腕はもう感覚がない？",
 		   NULL, " You don't feel anything in your right arm anymore?", Line_WaitForInput);
-	ModPlayVoiceLS(4, 6, "ps2/06/150602333", 128, TRUE);
+	ModPlayVoiceLS(4, 6, "ps2/06/150602333", 240, TRUE);
 	OutputLine(NULL, "　じゃあ左腕にするか。」",
 		   NULL, " Okay, then let's use your left.\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#fcdb77>沙都子</color>", NULL, "<color=#fcdb77>Satoko</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 4, "ps2/04/150400051", 128, TRUE);
+	ModPlayVoiceLS(4, 4, "ps2/04/150400051", 240, TRUE);
 	OutputLine(NULL, "「………………ぎゅ、",
 		   NULL, "\".........Gyah!", Line_Continue);
 	// (backup) SetValidityOfInput( FALSE );
@@ -792,7 +792,7 @@ void main()
 	// (backup) SetValidityOfInput( TRUE );
 	OutputLine(NULL, "…………………かッ！！",
 		   NULL, " ......Ahhh", Line_WaitForInput);
-	ModPlayVoiceLS(4, 4, "ps2/04/150400052", 128, TRUE);
+	ModPlayVoiceLS(4, 4, "ps2/04/150400052", 240, TRUE);
 	OutputLine(NULL, "　……………。」",
 		   NULL, "...............!!\"", Line_Normal);
 	ClearMessage();
@@ -1209,23 +1209,23 @@ void main()
 	ClearMessage();
 	DrawScene("background/ryuuketu1", 1000 );
 
-	ModPlayVoiceLS(4, 6, "ps2/06/150602345", 128, TRUE);
+	ModPlayVoiceLS(4, 6, "ps2/06/150602345", 240, TRUE);
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_Continue); }
 	OutputLine(NULL, "「はあ、はあ！",
 		   NULL, "\"Hah, hah!", Line_WaitForInput);
-	ModPlayVoiceLS(4, 6, "ps2/06/150602346", 128, TRUE);
+	ModPlayVoiceLS(4, 6, "ps2/06/150602346", 240, TRUE);
 	OutputLine(NULL, "　はぁ！",
 		   NULL, " Hah!", Line_WaitForInput);
-	ModPlayVoiceLS(4, 6, "ps2/06/150602347", 128, TRUE);
+	ModPlayVoiceLS(4, 6, "ps2/06/150602347", 240, TRUE);
 	OutputLine(NULL, "　はあ！",
 		   NULL, " Hah!", Line_WaitForInput);
-	ModPlayVoiceLS(4, 6, "ps2/06/150602348", 128, TRUE);
+	ModPlayVoiceLS(4, 6, "ps2/06/150602348", 240, TRUE);
 	OutputLine(NULL, "　…はあ！",
 		   NULL, " ...Hah!", Line_WaitForInput);
-	ModPlayVoiceLS(4, 6, "ps2/06/150602349", 128, TRUE);
+	ModPlayVoiceLS(4, 6, "ps2/06/150602349", 240, TRUE);
 	OutputLine(NULL, "　はあ！！",
 		   NULL, " Hah!!", Line_WaitForInput);
-	ModPlayVoiceLS(4, 6, "ps2/06/150602350", 128, TRUE);
+	ModPlayVoiceLS(4, 6, "ps2/06/150602350", 240, TRUE);
 	OutputLine(NULL, "　…………はあ！」",
 		   NULL, " ......Hah!\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -2125,7 +2125,7 @@ void main()
 	ModPlayVoiceLS(4, 6, "ps3/s06/06/150602358", 128, TRUE);
 	OutputLine(NULL, "　鬼ってのも悪くないねぇ！！",
 		   NULL, " Being a demon isn't that bad, huh?", Line_WaitForInput);
-	ModPlayVoiceLS(4, 6, "ps2/06/150602359", 128, TRUE);
+	ModPlayVoiceLS(4, 6, "ps2/06/150602359", 240, TRUE);
 	OutputLine(NULL, "　人が泣いたり、叫んだりするのを見るのがこんなにも楽しいものだなんて知らなかったよ。",
 		   NULL, " I never knew how fun it would be to see other people cry and scream.", Line_WaitForInput);
 	ModPlayVoiceLS(4, 6, "ps3/s06/06/150602360", 128, TRUE);
@@ -2144,7 +2144,7 @@ void main()
 	ModPlayVoiceLS(4, 6, "ps3/s06/06/150602364", 128, TRUE);
 	OutputLine(NULL, "あんたを殺すために今があるんだもの、私はそのためにいる。",
 		   NULL, " That's why I'm here, after all.", Line_WaitForInput);
-	ModPlayVoiceLS(4, 6, "ps2/06/150602365", 128, TRUE);
+	ModPlayVoiceLS(4, 6, "ps2/06/150602365", 240, TRUE);
 	OutputLine(NULL, "人を嘆かせて泣き声をすするのが私の、鬼の愉悦だもんね！",
 		   NULL, " Demons are pleased when they see people cry and grieve, see?", Line_Normal);
 	ClearMessage();
@@ -2156,10 +2156,10 @@ void main()
 	ModPlayVoiceLS(4, 6, "ps3/s06/06/150602367", 128, TRUE);
 	OutputLine(NULL, "よし、あんたの前で圭ちゃんを引き裂いてあげるよ！！",
 		   NULL, " Okay, I'll rip Kei-chan apart before your eyes!!", Line_WaitForInput);
-	ModPlayVoiceLS(4, 6, "ps2/06/150602368", 128, TRUE);
+	ModPlayVoiceLS(4, 6, "ps2/06/150602368", 240, TRUE);
 	OutputLine(NULL, "　これは極め付けだね！！",
 		   NULL, " What a great idea!!", Line_WaitForInput);
-	ModPlayVoiceLS(4, 6, "ps2/06/150602369", 128, TRUE);
+	ModPlayVoiceLS(4, 6, "ps2/06/150602369", 240, TRUE);
 	OutputLine(NULL, "　その後にあんたを殺し、私も殺そう。",
 		   NULL, " I'll kill you, and then myself after that.", Line_WaitForInput);
 	ModPlayVoiceLS(4, 6, "ps3/s06/06/150602370", 128, TRUE);
