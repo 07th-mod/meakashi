@@ -1,0 +1,24 @@
+void main()
+{
+}
+
+void dialog000()
+{
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 1, "ps3/s06/01/150100137", 128, TRUE);
+	OutputLine(NULL, "「ん？",
+		   NULL, "\"Mm?", Line_WaitForInput);
+	ModPlayVoiceLS(4, 1, "ps3/s06/01/150100138", 128, TRUE);
+	OutputLine(NULL, "　少しふらふらしてないか？",
+		   NULL, " You're a little unsteady.", Line_WaitForInput);
+	ModPlayVoiceLS(4, 1, "ps3/s06/01/150100139", 128, TRUE);
+	OutputLine(NULL, "　お前も昨夜は寝不足だろ。",
+		   NULL, " You didn't get much sleep last night either, did you?", Line_WaitForInput);
+	ModPlayVoiceLS(4, 1, "ps3/s06/01/150100140", 128, TRUE);
+	OutputLine(NULL, "隠しても無駄だぞー。",
+		   NULL, " Don't try to hide it!", Line_WaitForInput);
+	ModPlayVoiceLS(4, 1, "ps3/s06/01/150100141", 128, TRUE);
+	OutputLine(NULL, "で、学校を早退したに違いない。」",
+		   NULL, " You definitely went home from school early.\"", Line_Normal);
+	ClearMessage();
+}

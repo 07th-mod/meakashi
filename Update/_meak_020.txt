@@ -4352,17 +4352,10 @@ void main()
 		   NULL, "\"......Well... I heard that the culprit was some kind of drug addict.\"", Line_Normal);
 	ClearMessage();
 
-	ModPlayVoiceLS(4, 6, "ps2/06/150601924", 240, TRUE);
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_Continue); }
-	OutputLine(NULL, "「あれ、どう思います？",
-		   NULL, "\"What do you think about that?", Line_WaitForInput);
-	ModPlayVoiceLS(4, 6, "ps3/s06/06/150601925", 128, TRUE);
-	OutputLine(NULL, "　……私は、…あはは、私がこういうのも変だけど、悟史くんが叔母殺しの犯人だって信じてるですよ。",
-		   NULL, " I... ahahaha, maybe I shouldn't say this, but I believe Satoshi-kun is the culprit.", Line_WaitForInput);
-	ModPlayVoiceLS(4, 6, "ps3/s06/06/150601926", 128, TRUE);
-	OutputLine(NULL, "あいつは、例えば鬼婆辺りに買収されて仕立て上げられた身代わりじゃないかと思うんですけど。」",
-		   NULL, " The drug addict was probably a decoy the hag arranged.\"", GetGlobalFlag(GLinemodeSp));
-	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+	//VoiceMatching
+	if(GetGlobalFlag(GCensor) >= 2){ModCallScriptSection("_zmeak_020_vm0x_n01","dialog000");}
+	if(GetGlobalFlag(GCensor) <= 1){ModCallScriptSection("_zmeak_020_vm00_n01","dialog000");}
+	//VoiceMatchingEnd
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f3ceb3>喜一郎</color>", NULL, "<color=#f3ceb3>Kiichiro</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 18, "ps3/s06/18/153300122", 128, TRUE);
@@ -4442,14 +4435,10 @@ void main()
 		   NULL, " is Oryou-san.\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 6, "ps3/s06/06/150601930", 128, TRUE);
-	OutputLine(NULL, "「…鬼婆が裏の世界で相当の力を持ってる、というのは私も知ってはいますけど…。",
-		   NULL, "\"...I knew the hag was very powerful in the underside of Hinamizawa,", Line_WaitForInput);
-	ModPlayVoiceLS(4, 6, "ps3/s06/06/150601931", 128, TRUE);
-	OutputLine(NULL, "そんなにもあったんですね。」",
-		   NULL, " but I never knew she was that powerful...\"", Line_Normal);
-	ClearMessage();
+	//VoiceMatching
+	if(GetGlobalFlag(GCensor) >= 2){ModCallScriptSection("_zmeak_020_vm0x_n01","dialog001");}
+	if(GetGlobalFlag(GCensor) <= 1){ModCallScriptSection("_zmeak_020_vm00_n01","dialog001");}
+	//VoiceMatchingEnd
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f3ceb3>喜一郎</color>", NULL, "<color=#f3ceb3>Kiichiro</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 18, "ps3/s06/18/153300131", 128, TRUE);
@@ -4554,20 +4543,10 @@ void main()
 		   NULL, " ......All the top people in the ex-Guardians know that.\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 6, "ps3/s06/06/150601934", 128, TRUE);
-	OutputLine(NULL, "「……ふぅん。",
-		   NULL, "\"...Hmmm.", Line_WaitForInput);
-	ModPlayVoiceLS(4, 6, "ps3/s06/06/150601935", 128, TRUE);
-	OutputLine(NULL, "……身近に居すぎて私がよくわかってなかっただけで。",
-		   NULL, " I guess I was right in the middle of it when it was happening, but I didn't notice.", Line_WaitForInput);
-	ModPlayVoiceLS(4, 6, "ps3/s06/06/150601936", 128, TRUE);
-	OutputLine(NULL, "………やっぱり鬼婆や御三家や、旧同盟って大したもんだったんですね。",
-		   NULL, " The hag, the Three Families, and the ex-Guardians are truly magnificent, huh?", Line_WaitForInput);
-	ModPlayVoiceLS(4, 6, "ps3/s06/06/150601937", 128, TRUE);
-	OutputLine(NULL, "…怖い怖い。」",
-		   NULL, " How terrifying...\"", Line_Normal);
-	ClearMessage();
+	//VoiceMatching
+	if(GetGlobalFlag(GCensor) >= 2){ModCallScriptSection("_zmeak_020_vm0x_n01","dialog002");}
+	if(GetGlobalFlag(GCensor) <= 1){ModCallScriptSection("_zmeak_020_vm00_n01","dialog002");}
+	//VoiceMatchingEnd
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　…私は公由が、自分の置かれた状況を理解して、私の質問にちゃんと答えてくれてることに、ほんの少し機嫌を良くもしたが。",
@@ -5066,14 +5045,10 @@ void main()
 		   NULL, "\".........No.\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 6, "ps3/s06/06/150601951", 128, TRUE);
-	OutputLine(NULL, "「もし居合わせたら。",
-		   NULL, "\"If you were there...", Line_WaitForInput);
-	ModPlayVoiceLS(4, 6, "ps3/s06/06/150601952", 128, TRUE);
-	OutputLine(NULL, "……悟史くんを許してもらえるよう、鬼婆に意見してくれたかな………。」",
-		   NULL, " Would you have begged the hag to forgive him?\"", GetGlobalFlag(GLinemodeSp));
-	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+	//VoiceMatching
+	if(GetGlobalFlag(GCensor) >= 2){ModCallScriptSection("_zmeak_020_vm0x_n01","dialog003");}
+	if(GetGlobalFlag(GCensor) <= 1){ModCallScriptSection("_zmeak_020_vm00_n01","dialog003");}
+	//VoiceMatchingEnd
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 3, "ps3/s06/03/150300402", 128, TRUE);

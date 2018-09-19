@@ -29,23 +29,10 @@ void main()
 	ModDrawCharacter(2, 1, "sprite/normal/kei2_warai_", "2", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
 	DisplayWindow();
 
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 1, "ps3/s06/01/150100137", 128, TRUE);
-	OutputLine(NULL, "「ん？",
-		   NULL, "\"Mm?", Line_WaitForInput);
-	ModPlayVoiceLS(4, 1, "ps3/s06/01/150100138", 128, TRUE);
-	OutputLine(NULL, "　少しふらふらしてないか？",
-		   NULL, " You're a little unsteady.", Line_WaitForInput);
-	ModPlayVoiceLS(4, 1, "ps3/s06/01/150100139", 128, TRUE);
-	OutputLine(NULL, "　お前も昨夜は飲んだだろ。",
-		   NULL, " You were drinking last night too, weren't you?", Line_WaitForInput);
-	ModPlayVoiceLS(4, 1, "ps3/s06/01/150100140", 128, TRUE);
-	OutputLine(NULL, "隠しても無駄だぞー。",
-		   NULL, " Don't try to hide it!", Line_WaitForInput);
-	ModPlayVoiceLS(4, 1, "ps3/s06/01/150100141", 128, TRUE);
-	OutputLine(NULL, "で、学校を早退したに違いない。」",
-		   NULL, " You definitely went home from school early.\"", Line_Normal);
-	ClearMessage();
+	//VoiceMatching
+	if(GetGlobalFlag(GCensor) >= 2){ModCallScriptSection("_zmeak_019_2_vm0x_n01","dialog000");}
+	if(GetGlobalFlag(GCensor) <= 1){ModCallScriptSection("_zmeak_019_2_vm00_n01","dialog000");}
+	//VoiceMatchingEnd
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 6, "ps3/s06/06/150601740", 128, TRUE);
