@@ -286,7 +286,7 @@ void main()
 	OutputLine(NULL, "健ちゃんも座ったままでいいよ。",
 		   NULL, " Ken-chan, you stay seated, too.", Line_WaitForInput);
 	ModPlayVoiceLS(4, 18, "ps2/18/153300033", 240, TRUE);
-	OutputLine(NULL, "…今日は平日の夕方にお集まりいただきまして、誠にありがとうございます。",
+	OutputLine(NULL, "…今日は平日の夕方にお集まりいただきまして、誠にありがとうございました。",
 		   NULL, " Thank you all for coming today.", Line_WaitForInput);
 	ModPlayVoiceLS(4, 18, "ps3/s06/18/153300034", 128, TRUE);
 	OutputLine(NULL, "また、昨日は綿流しを本当にお疲れ様でございました。",
@@ -1378,7 +1378,7 @@ void main()
 	ModPlayVoiceLS(4, 18, "ps3/s06/18/153300058", 128, TRUE);
 	OutputLine(NULL, "「………魅音ちゃん。",
 		   NULL, "\"Mion-chan...", Line_WaitForInput);
-	ModPlayVoiceLS(4, 18, "ps3/s06/18/153300059", 128, TRUE);
+	ModPlayVoiceLS(4, 18, "ps2/18/153300059", 128, TRUE);
 	OutputLine(NULL, "率直なところ、お魎さんは詩音ちゃんのこと、どうするって言ってるんだい？」",
 		   NULL, " Tell me, what is Oryou-san going to do with Shion-chan?\"", Line_Normal);
 	ClearMessage();
@@ -1750,7 +1750,7 @@ void main()
 	ModPlayVoiceLS(4, 18, "ps2/18/153300083", 240, TRUE);
 	OutputLine(NULL, "村を丸ごと売ろうとした売国奴同然のやつらだ。",
 		   NULL, " They were traitors who tried to sell out the whole village.", Line_WaitForInput);
-	ModPlayVoiceLS(4, 18, "ps3/s06/18/153300084", 128, TRUE);
+	ModPlayVoiceLS(4, 18, "ps2/18/153300084", 128, TRUE);
 	OutputLine(NULL, "そういうやつらなら鬼隠しだってあり得るだろうけど、そりゃ北条家だからの話だよ。」",
 		   NULL, " Of course he got demoned away. He was a Houjou, after all.\"", Line_Normal);
 	ClearMessage();
@@ -2126,7 +2126,7 @@ void main()
 	OutputLine(NULL, "　北条家にはオヤシロさまの祟りがいずれ下る。",
 		   NULL, " The curse of Oyashiro-sama falling upon the Houjou family...", Line_WaitForInput);
 	ModPlayVoiceLS(4, 18, "ps3/s06/18/153300105", 128, TRUE);
-	OutputLine(NULL, "そういう話をおぼろげにしたことはあっても、…そんなはっきりとしたことを言及したことは一度もないし、誰もしていないよ…。」",
+	OutputLine(NULL, "そういう話をおぼろげにしたことはあっても、…そんなにはっきりとしたことを言及したことは一度もないし、誰もしていないよ…。」",
 		   NULL, " I do remember talking about something like that, but we never decided that, nobody did...\"", Line_Normal);
 	ClearMessage();
 
@@ -5311,9 +5311,10 @@ void main()
 	ModPlayVoiceLS(4, 6, "ps3/s06/06/150601978", 128, TRUE);
 	OutputLine(NULL, "　私があんたに貸してあげるようになっただけで、本当は私のだったじゃないッ！！",
 		   NULL, " I just let you be Mion, remember? It was mine!!", Line_WaitForInput);
-	OutputLine(NULL, "　返せ！！",
-		   NULL, " Give it back to me!!", Line_WaitForInput);
 	ModPlayVoiceLS(4, 6, "ps3/s06/06/150601979", 128, TRUE);
+	OutputLine(NULL, "　返せ！！",
+		   NULL, " Give it back to me!!", Line_Continue);
+	Wait( 400 );
 	OutputLine(NULL, "　私の魅音を返せッ！！！",
 		   NULL, " Give me my name back!!! ", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
