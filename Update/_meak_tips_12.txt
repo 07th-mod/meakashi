@@ -10,14 +10,10 @@ void main()
 	PlayBGM( 0, "03_cele", 120, 0 );
 	DrawScene("background/nort", 1000 );
 
-	if (GetGlobalFlag(GADVMode)) {
-		OutputLineAll("", NULL, Line_ContinueAfterTyping);
-		OutputLine(NULL, "　昭和５７年のオヤシロさまの祟りの渦中にある時は、私は新しい情報に一喜一憂し、その度に自分の頭の中の仮説をひっくり返した。",
-			   NULL, "<size=-2>During the upheaval surrounding Oyashiro-sama's curse in 1982, I was pulled this way and that by new leads on Satoshi-kun's disappearance. Every time I found information that looked promising, I kept changing my theories.", GetGlobalFlag(GLinemodeSp));
-	} else {
-		OutputLine(NULL, "　昭和５７年のオヤシロさまの祟りの渦中にある時は、私は新しい情報に一喜一憂し、その度に自分の頭の中の仮説をひっくり返した。",
-			   NULL, "During the upheaval surrounding Oyashiro-sama's curse in 1982, I was pulled this way and that by new leads on Satoshi-kun's disappearance. Every time I found information that looked promising, I kept changing my theories.", GetGlobalFlag(GLinemodeSp));
-	}
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine(NULL, "", NULL, "<size=-2>", Line_Continue); }
+	OutputLine(NULL, "　昭和５７年のオヤシロさまの祟りの渦中にある時は、私は新しい情報に一喜一憂し、その度に自分の頭の中の仮説をひっくり返した。",
+		   NULL, "During the upheaval surrounding Oyashiro-sama's curse in 1982, I was pulled this way and that by new leads on Satoshi-kun's disappearance. Every time I found information that looked promising, I kept changing my theories.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
 	DrawBustshot(9, "notebook/nort_mono1", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
