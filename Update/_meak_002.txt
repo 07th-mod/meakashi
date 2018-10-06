@@ -318,13 +318,13 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 3, "ps3/s06/03/150300001", 128, TRUE);
 	OutputLine(NULL, "「………もしもし。」",
-		   NULL, "\"...Hello.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "\"...Hello.\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#76523d>葛西</color>", NULL, "<color=#76523d>Kasai</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 15, "ps3/s06/15/151500078", 128, TRUE);
 	OutputLine(NULL, "「おはようございます。",
-		   NULL, " Good morning.", Line_WaitForInput);
+		   NULL, "\"Good morning.", Line_WaitForInput);
 	ModPlayVoiceLS(4, 15, "ps3/s06/15/151500079", 128, TRUE);
 	OutputLine(NULL, "………魅音さんですか？",
 		   NULL, " ......Is this Mion-san?", Line_WaitForInput);
@@ -1093,7 +1093,7 @@ void main()
 	PlayBGM( 0, "Cafe", 120, 0 );
 	SetSpeedOfMessage( FALSE, 0 );
 
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>義郎</color>", NULL, "<color=#f5e6d3>Yoshio</color>", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>義郎</color>", NULL, "<color=#f5e6d3>Yoshiroh</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 0, "ps3/s06/00/152900001", 128, TRUE);
 	OutputLine(NULL, "「あぁあぁ、任せとけよ。",
 		   NULL, "\"All right. No problem.", Line_WaitForInput);
@@ -1125,7 +1125,7 @@ void main()
 		   NULL, "He seemed glad that I turned to him first.", Line_Normal);
 	ClearMessage();
 
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>義郎</color>", NULL, "<color=#f5e6d3>Yoshio</color>", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>義郎</color>", NULL, "<color=#f5e6d3>Yoshiroh</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 0, "ps3/s06/00/152900003", 128, TRUE);
 	OutputLine(NULL, "「いいんだよ。",
 		   NULL, "\"I'd be happy to help", Line_WaitForInput);
@@ -1179,7 +1179,7 @@ void main()
 	ClearMessage();
 	DrawSceneWithMask("background/res4", "maskright", 1, 0, 300 );
 
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>義郎</color>", NULL, "<color=#f5e6d3>Yoshio</color>", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>義郎</color>", NULL, "<color=#f5e6d3>Yoshiroh</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 0, "ps3/s06/00/152900006", 128, TRUE);
 	OutputLine(NULL, "「………で、詩音ちゃんはどのくらい働けるんだい？」",
 		   NULL, "\"...So, how much can you work?\"", GetGlobalFlag(GLinemodeSp));
@@ -1194,7 +1194,7 @@ void main()
 		   NULL, " I hope I can get in when I want to.\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>義郎</color>", NULL, "<color=#f5e6d3>Yoshio</color>", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>義郎</color>", NULL, "<color=#f5e6d3>Yoshiroh</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 0, "ps3/s06/00/152900007", 128, TRUE);
 	OutputLine(NULL, "「おいおい〜、そんなムシのいいこと言うヤツ、面接じゃ会ったことないぜー？",
 		   NULL, "\"Hey, that sounds a little irresponsible...", Line_WaitForInput);
@@ -1251,7 +1251,7 @@ void main()
 		   NULL, " It's fine as long as I can make enough to support myself.\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>義郎</color>", NULL, "<color=#f5e6d3>Yoshio</color>", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>義郎</color>", NULL, "<color=#f5e6d3>Yoshiroh</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 0, "ps3/s06/00/152900009", 128, TRUE);
 	OutputLine(NULL, "「じゃあ、そうゆうことで頼むぜ。",
 		   NULL, "\"Sure, sure.", Line_WaitForInput);
@@ -1272,7 +1272,7 @@ void main()
 		   NULL, " Thanks for hiring me!\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>義郎</color>", NULL, "<color=#f5e6d3>Yoshio</color>", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>義郎</color>", NULL, "<color=#f5e6d3>Yoshiroh</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 0, "ps3/s06/00/152900012", 128, TRUE);
 	OutputLine(NULL, "「こちらこそ、どうぞよろしく。",
 		   NULL, "\"Good, you get it!", Line_WaitForInput);
@@ -1339,7 +1339,7 @@ void main()
 		   NULL, "I won't be able to act like Mion unless I can fill in the gap of information left in the past two years.", Line_Normal);
 	ClearMessage();
 
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>義郎</color>", NULL, "<color=#f5e6d3>Yoshio</color>", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>義郎</color>", NULL, "<color=#f5e6d3>Yoshiroh</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 0, "ps3/s06/00/152900014", 128, TRUE);
 	OutputLine(NULL, "「そんなに大きく変わったことはないな。",
 		   NULL, "\"There haven't been many big changes.", Line_WaitForInput);
@@ -1357,7 +1357,7 @@ void main()
 		   NULL, " There was still a bit of tension then.\"", Line_Normal);
 	ClearMessage();
 
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>義郎</color>", NULL, "<color=#f5e6d3>Yoshio</color>", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>義郎</color>", NULL, "<color=#f5e6d3>Yoshiroh</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 0, "ps3/s06/00/152900016", 128, TRUE);
 	OutputLine(NULL, "「中止発表のあとの一年くらいは同盟も、計画は凍結されただけで中止になったわけじゃないって言って神経質になってたんだけどな。",
 		   NULL, "\"Even after they shut down construction, things were still tense because the project wasn't entirely canceled,", Line_WaitForInput);
@@ -1367,7 +1367,7 @@ void main()
 	ModPlayVoiceLS(4, 0, "ps3/s06/00/152900018", 128, TRUE);
 	OutputLine(NULL, "雛見沢の境内で大式典だった。",
 		   NULL, " There was a big ceremony held at the shrine. ", GetGlobalFlag(GLinemodeSp));
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>義郎</color>", NULL, "<color=#f5e6d3>Yoshio</color>", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>義郎</color>", NULL, "<color=#f5e6d3>Yoshiroh</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 0, "ps3/s06/00/152900019", 128, TRUE);
 	OutputLine(NULL, "それでダム戦争は本当に終わりだな。」",
 		   NULL, "That's when the dam conflict officially ended.\"", GetGlobalFlag(GLinemodeSp));
@@ -1382,14 +1382,14 @@ void main()
 		   NULL, " Is everybody slacking now that the conflict is over?\"", Line_Normal);
 	ClearMessage();
 
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>義郎</color>", NULL, "<color=#f5e6d3>Yoshio</color>", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>義郎</color>", NULL, "<color=#f5e6d3>Yoshiroh</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 0, "ps3/s06/00/152900020", 128, TRUE);
 	OutputLine(NULL, "「わっはっはっは！",
 		   NULL, "\"Wa ha ha ha!", Line_WaitForInput);
 	ModPlayVoiceLS(4, 0, "ps3/s06/00/152900021", 128, TRUE);
 	OutputLine(NULL, "　詩音ちゃんなんかはダム戦争は、戦争ごっこみたいで楽しかったんじゃないか？",
 		   NULL, " I guess you all had fun playing at war back then during the dam protests, didn't you? ", GetGlobalFlag(GLinemodeSp));
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>義郎</color>", NULL, "<color=#f5e6d3>Yoshio</color>", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>義郎</color>", NULL, "<color=#f5e6d3>Yoshiroh</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 0, "ps3/s06/00/152900022", 128, TRUE);
 	OutputLine(NULL, "　子どもたちが警察のお世話になる度に、引き取りにいっていろいろ苛められた大人の身にもなってくれよ。」",
 		   NULL, "Try to imagine how much suffering the adults went through every time they had to come pick up their kids from the police station.\"", GetGlobalFlag(GLinemodeSp));
@@ -1432,7 +1432,7 @@ void main()
 		   NULL, "Did they finally catch him?\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>義郎</color>", NULL, "<color=#f5e6d3>Yoshio</color>", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>義郎</color>", NULL, "<color=#f5e6d3>Yoshiroh</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 0, "ps3/s06/00/152900023", 128, TRUE);
 	OutputLine(NULL, "「あー……、確か主犯がまだ捕まってねえんだよなぁ。",
 		   NULL, "\"Ah... come to think of it...", Line_WaitForInput);
@@ -1453,7 +1453,7 @@ void main()
 		   NULL, " ...That was pretty scary for us kids.\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>義郎</color>", NULL, "<color=#f5e6d3>Yoshio</color>", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>義郎</color>", NULL, "<color=#f5e6d3>Yoshiroh</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 0, "ps3/s06/00/152900025", 128, TRUE);
 	OutputLine(NULL, "「あぁあぁ、オヤシロさまの祟りねぇ。",
 		   NULL, "\"Yeah, yeah, Oyashiro-sama's curse.", Line_WaitForInput);
@@ -1668,7 +1668,7 @@ void main()
 	ClearMessage();
 	DrawSceneWithMask("background/res5", "maskup", 1, 0, 300 );
 
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>義郎</color>", NULL, "<color=#f5e6d3>Yoshio</color>", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>義郎</color>", NULL, "<color=#f5e6d3>Yoshiroh</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 0, "ps3/s06/00/152900027", 128, TRUE);
 	OutputLine(NULL, "「でさ、その翌年にも起こったんだよな。」",
 		   NULL, "\"Yeah, it happened again the year after.\"", GetGlobalFlag(GLinemodeSp));
@@ -1683,7 +1683,7 @@ void main()
 		   NULL, " I still believe in Oyashiro-sama's power.\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>義郎</color>", NULL, "<color=#f5e6d3>Yoshio</color>", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>義郎</color>", NULL, "<color=#f5e6d3>Yoshiroh</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 0, "ps3/s06/00/152900028", 128, TRUE);
 	OutputLine(NULL, "「詩音ちゃん、二年なんてもんじゃないよ、",
 		   NULL, "\"Shion-chan, what are you saying?", Line_Continue);
@@ -1706,7 +1706,7 @@ void main()
 		   NULL, " About what?\"", Line_Normal);
 	ClearMessage();
 
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>義郎</color>", NULL, "<color=#f5e6d3>Yoshio</color>", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>義郎</color>", NULL, "<color=#f5e6d3>Yoshiroh</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 0, "ps3/s06/00/152900029", 128, TRUE);
 	OutputLine(NULL, "「………そっか。",
 		   NULL, "\"...Oh, right.", Line_WaitForInput);
@@ -1743,7 +1743,7 @@ void main()
 		   NULL, " You can't leave me hanging like that.\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>義郎</color>", NULL, "<color=#f5e6d3>Yoshio</color>", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>義郎</color>", NULL, "<color=#f5e6d3>Yoshiroh</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 0, "ps3/s06/00/152900032", 128, TRUE);
 	OutputLine(NULL, "「…………まぁ、詩音ちゃんももう小さい子じゃないもんな。」",
 		   NULL, "\"...Well... I think you're mature enough now.\"", GetGlobalFlag(GLinemodeSp));
@@ -1760,7 +1760,7 @@ void main()
 	FadeOutBGM( 3, 0, FALSE );
 	ModDrawCharacter(19, 0, "transparent", "0", 0, 100, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, TRUE );
 
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>義郎</color>", NULL, "<color=#f5e6d3>Yoshio</color>", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>義郎</color>", NULL, "<color=#f5e6d3>Yoshiroh</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 0, "ps3/s06/00/152900034", 128, TRUE);
 	OutputLine(NULL, "「……あー、もぅ、わかったよ。",
 		   NULL, "\"......Ah, humph, okay,", Line_WaitForInput);
@@ -1838,7 +1838,7 @@ void main()
 	DrawScene("background/res4", 400 );
 	PlayBGM( 0, "getting_mad", 120, 0 );
 
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>義郎</color>", NULL, "<color=#f5e6d3>Yoshio</color>", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>義郎</color>", NULL, "<color=#f5e6d3>Yoshiroh</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 0, "ps3/s06/00/152900037", 128, TRUE);
 	OutputLine(NULL, "「えっとなぁ…。",
 		   NULL, "\"Hmm...", Line_WaitForInput);
@@ -1868,7 +1868,7 @@ void main()
 		   NULL, " Three years in a row?!\"", Line_Normal);
 	ClearMessage();
 
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>義郎</color>", NULL, "<color=#f5e6d3>Yoshio</color>", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>義郎</color>", NULL, "<color=#f5e6d3>Yoshiroh</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 0, "ps3/s06/00/152900041", 128, TRUE);
 	OutputLine(NULL, "「そうなんだよ。",
 		   NULL, "\"That's right.", Line_WaitForInput);
@@ -1884,7 +1884,7 @@ void main()
 	ModPlayVoiceLS(4, 0, "ps2/00/152900045", 240, TRUE);
 	OutputLine(NULL, "聞いた話じゃ原因不明の奇病で急死したとかしないとか！",
 		   NULL, " They said that the cause of death was an unknown illness. ", GetGlobalFlag(GLinemodeSp));
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>義郎</color>", NULL, "<color=#f5e6d3>Yoshio</color>", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>義郎</color>", NULL, "<color=#f5e6d3>Yoshiroh</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 0, "ps3/s06/00/152900046", 128, TRUE);
 	OutputLine(NULL, "　それもまたしても綿流しの夜に。",
 		   NULL, "And the same night, his wife threw herself into the swamp...", Line_WaitForInput);

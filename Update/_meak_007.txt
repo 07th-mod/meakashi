@@ -246,7 +246,7 @@ void main()
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　…だが、私を魅ぃちゃんと呼んでくれたのは本当に幸いだった。",
-		   NULL, "...Luckily, she called me 'Mii-chan'.", Line_WaitForInput);
+		   NULL, "...Luckily, she called me 'Mii-chan.'", Line_WaitForInput);
 	OutputLine(NULL, "…魅音を魅ぃちゃんと呼ぶ人間はひとりしか知らされていないからだ。",
 		   NULL, " There's only one person who refers to Mion that way, as far as I know.", Line_Normal);
 	ClearMessage();
@@ -1551,7 +1551,7 @@ void main()
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　…だが、それでも悟史くんは雛見沢に住まい続けている。",
-		   NULL, "He still lived in Hinamizawa.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "he still lived in Hinamizawa.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -1602,10 +1602,10 @@ void main()
 		   NULL, "...You feel like someone is watching you from a distance... and it follows you... Then it watches from right behind you...", Line_Normal);
 	ClearMessage();
 
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
-	OutputLine(NULL, "　……やがて足音は常に、自分とずれてひとつ余計に聞こえるようになるの。",
-		   NULL, "...After that, you start hearing an extra footstep.", Line_WaitForInput);
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 2, "ps3/s06/02/150200071", 128, TRUE);
+	OutputLine(NULL, "　……やがて足音は常に、自分とずれてひとつ余計に聞こえるようになるの。",
+		   NULL, "...After that, you start hearing an extra footstep.", Line_Continue);
 	OutputLine(NULL, "それらは初めの内は、お外でだけだけど。",
 		   NULL, " It only happens outside at first...", Line_WaitForInput);
 	ModPlayVoiceLS(4, 2, "ps3/s06/02/150200072", 128, TRUE);

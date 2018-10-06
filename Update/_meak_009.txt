@@ -1098,14 +1098,14 @@ void main()
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 6, "ps3/s06/06/150600771", 128, TRUE);
-	OutputLine(NULL, "「……………………。」",
-		   NULL, "\".....................\"", GetGlobalFlag(GLinemodeSp));
+	OutputLine(NULL, "「……………………。",
+		   NULL, "\".....................", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 6, "ps3/s06/06/150600772", 128, TRUE);
-	OutputLine(NULL, "「…沙都子、……大変なことになっていますね…。",
-		   NULL, "\"...Seems like it...", Line_WaitForInput);
+	OutputLine(NULL, "…沙都子、……大変なことになっていますね…。",
+		   NULL, "...Seems like it...", Line_WaitForInput);
 	ModPlayVoiceLS(4, 6, "ps3/s06/06/150600773", 128, TRUE);
 	OutputLine(NULL, "……大丈夫なんですか…？」",
 		   NULL, " Is she all right?\"", GetGlobalFlag(GLinemodeSp));

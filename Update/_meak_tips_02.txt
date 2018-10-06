@@ -54,7 +54,8 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#ffdc6f>悟史</color>", NULL, "<color=#ffdc6f>Satoshi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 7, "ps3/s20/07/443300001", 128, TRUE);
 	OutputLine(NULL, "「………終わったよ。",
-		   NULL, "\"......It's over,", Line_WaitForInput);
+		   NULL, "\"......It's over,", Line_Continue);
+	Wait( 1200 );
 	OutputLine(NULL, "…沙都子。」",
 		   NULL, " Satoko.\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }

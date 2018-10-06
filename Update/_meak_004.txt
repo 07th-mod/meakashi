@@ -204,7 +204,7 @@ void main()
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　私たち３人は、自分たちのバイクをあなたに蹴り倒されて大変、憤慨しています。",
-		   NULL, "We are very upset because you knocked down our motorcycles.'", GetGlobalFlag(GLinemodeSp));
+		   NULL, "'We are very upset because you knocked down our motorcycles.'", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -928,7 +928,7 @@ void main()
 		   NULL, " You're being a little harsh, Mion...", Line_WaitForInput);
 	ModPlayVoiceLS(4, 7, "ps3/s06/07/151200008", 128, TRUE);
 	OutputLine(NULL, "助けてくれてありがとうくらい言ってくれよ。",
-		   NULL, " You should at least say 'thank you'.", Line_WaitForInput);
+		   NULL, " You should at least say 'thank you.'", Line_WaitForInput);
 	ModPlayVoiceLS(4, 7, "ps3/s06/07/151200009", 128, TRUE);
 	OutputLine(NULL, "泣いてたじゃないか。」",
 		   NULL, " I saw you crying.\"", GetGlobalFlag(GLinemodeSp));

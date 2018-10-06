@@ -82,11 +82,11 @@ void main()
 		   NULL, "But the police arrested another person for the murder, so this hypothesis must also be considered false.", Line_Normal);
 	ClearMessage();
 
-	if (GetGlobalFlag(GADVMode) == 0) { SetDrawingPointOfMessage( 0, 5 ); }
+	if (GetGlobalFlag(GADVMode) == 0) { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　最後の１つは、雛見沢村連続怪死事件、",
-		   NULL, "The last possibility is that he was involved in the series of mysterious deaths in Hinamizawa.", Line_ContinueAfterTyping);
+		   NULL, "The last possibility is that he was involved in the series of mysterious deaths in Hinamizawa.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
 

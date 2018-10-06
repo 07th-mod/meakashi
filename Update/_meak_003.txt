@@ -492,8 +492,7 @@ void main()
 	ClearMessage();
 	PlayBGM( 0, "higurashi", 120, 0 );
 	DisableWindow();
-	ModDrawCharacterWithFiltering(0, 3, "sprite/normal/me2_sinmyou_a1_", "0", "maskright", 1, 0, 0, FALSE, 0, 0, 0, 0, 0, 9, 300, TRUE );
-	DisplayWindow();
+	ModDrawCharacter(2, 3, "sprite/normal/me2_sinmyou_a1_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 3, "ps3/s06/03/150300067", 128, TRUE);
@@ -510,11 +509,12 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 3, "ps3/s06/03/150300070", 128, TRUE);
 	OutputLine(NULL, "　雛見沢全体が結束しなくちゃならない時に、模範となるべき御三家の人間が、自分から和を乱すのは……、",
-		   NULL, "That was a time when all of Hinamizawa needed to be united, so having one of the families, who are supposed to serve as examples, disturb that harmony was...", Line_WaitForInput);
+		   NULL, "That was a time when all of Hinamizawa needed to be united, so having one of the families, who are supposed to serve as examples, disturb that harmony was...", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 3, "ps3/s06/03/150300071", 128, TRUE);
 	OutputLine(NULL, "それがオトナと呼べるかどうかは、",
-		   NULL, " I don't know if that should be called mature. ", GetGlobalFlag(GLinemodeSp));
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
+		   NULL, " I don't know if that should be called mature. ", Line_Continue);
+	Wait( 1200 );
 	OutputLine(NULL, "…私には難しいなぁ。」",
 		   NULL, "...It's hard for me to tell.\"", Line_Normal);
 	ClearMessage();
@@ -567,7 +567,7 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 6, "ps3/s06/06/150600217", 128, TRUE);
 	OutputLine(NULL, "「お姉の言う協調って言葉が、何だか好きじゃないんですけど。",
-		   NULL, "\"I don't really like that word you used, 'appease'.", Line_WaitForInput);
+		   NULL, "\"I don't really like that word you used, 'appease.'", Line_WaitForInput);
 	ModPlayVoiceLS(4, 6, "ps3/s06/06/150600218", 128, TRUE);
 	OutputLine(NULL, "つまりそれって何？",
 		   NULL, " What are you trying to say?", Line_WaitForInput);
@@ -580,8 +580,7 @@ void main()
 		   NULL, "Meaning people shouldn't assert the self before the whole?\"", Line_Normal);
 	ClearMessage();
 	DisableWindow();
-	ModDrawCharacter(0, 3, "sprite/normal/me2_tohoho_a1_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 9, 200, TRUE );
-	DisplayWindow();
+	ModDrawCharacter(2, 3, "sprite/normal/me2_tohoho_a1_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 3, "ps3/s06/03/150300072", 128, TRUE);
@@ -1043,7 +1042,7 @@ void main()
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　今までの私たちなら、そんな話はしない。",
-		   NULL, "We didn't used to do that.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "We didn't use to do that.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }

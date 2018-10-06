@@ -391,7 +391,7 @@ void main()
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　悟史くんは、そりゃそうさとにっこり笑って答えた。",
-		   NULL, "Satoshi-kun grinned and said 'yes'.", Line_Normal);
+		   NULL, "Satoshi-kun grinned and said \"yes.\"", Line_Normal);
 	ClearMessage();
 	DisableWindow();
 	ModDrawCharacter(2, 7, "sprite/normal/sato1_warai_", "1", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
@@ -1388,7 +1388,7 @@ void main()
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　ピアノ教えます、××まで。",
-		   NULL, "Piano Lessons. Call XX.", Line_WaitForInput);
+		   NULL, "'Piano Lessons. Call XX.", Line_WaitForInput);
 	OutputLine(NULL, "そろばん教室生徒募集…。",
 		   NULL, " Abacus Class......", Line_WaitForInput);
 	OutputLine(NULL, "少年野球チーム、メンバー募集。",
@@ -1430,7 +1430,7 @@ void main()
 		   NULL, " 'I hope you won't come to see me playing baseball,", Line_WaitForInput);
 	ModPlayVoiceLS(4, 6, "ps3/s06/06/150600446", 128, TRUE);
 	OutputLine(NULL, "野球やってるとこまで来ないでくれよ〜〜。",
-		   NULL, " Mion'.", Line_WaitForInput);
+		   NULL, " Mion.'", Line_WaitForInput);
 	ModPlayVoiceLS(4, 6, "ps3/s06/06/150600447", 128, TRUE);
 	OutputLine(NULL, "……図星？！」",
 		   NULL, " ...Am I right?!\"", GetGlobalFlag(GLinemodeSp));
