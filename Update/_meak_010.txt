@@ -17,12 +17,10 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　綿流しの日。",
 		   NULL, "The day of the Watanagashi festival.", Line_ContinueAfterTyping);
-	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
-
-	if (GetGlobalFlag(GADVMode) == 0) { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	FadeOutBGM( 1, 0, FALSE );
 	ModDrawCharacter(19, 0, "transparent", "0", 0, 100, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, TRUE );
+	OutputLineAll(NULL, "\n", Line_Normal);
 	Wait( 2000 );
 	PlayBGM( 1, "taip", 120, 0 );
 	if (GetGlobalFlag(GADVMode) == 0) { SetDrawingPointOfMessage( 1, 7 ); }
@@ -2010,10 +2008,10 @@ void main()
 	ModDrawCharacter(1, 19, "sprite/night/kuma_def_", "0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 200, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#8f6d8f>熊谷</color>", NULL, "<color=#8f6d8f>Kumagai</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 19, "ps3/s06/19/153100012", 128, TRUE);
+	if (GetGlobalFlag(GLanguage) == 1) { ModPlayVoiceLS(4, 19, "ps3/s06/19/153100013", 128, TRUE); } else { ModPlayVoiceLS(4, 19, "ps3/s06/19/153100012", 128, TRUE); }
 	OutputLine(NULL, "「大石さん。",
 		   NULL, "\"Here he is,", Line_WaitForInput);
-	ModPlayVoiceLS(4, 19, "ps3/s06/19/153100013", 128, TRUE);
+	if (GetGlobalFlag(GLanguage) == 1) { ModPlayVoiceLS(4, 19, "ps3/s06/19/153100012", 128, TRUE); } else { ModPlayVoiceLS(4, 19, "ps3/s06/19/153100013", 128, TRUE); }
 	OutputLine(NULL, "連れてきましたー！！」",
 		   NULL, " Ooishi-san!!\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }

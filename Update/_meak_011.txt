@@ -892,7 +892,8 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#ffdc6f>悟史</color>", NULL, "<color=#ffdc6f>Satoshi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 7, "ps3/s06/07/151200295_1", 128, TRUE);
 	OutputLine(NULL, "「だだ、駄目だよ魅音。",
-		   NULL, "\"N-No, Mion.", Line_WaitForInput);
+		   NULL, "\"N-No, Mion.", Line_Continue);
+	Wait( 2000 );
 	OutputLine(NULL, "泥棒はいけないよ…。」",
 		   NULL, " Stealing is bad...\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -2130,7 +2131,7 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 6, "ps3/s06/06/150600906", 128, TRUE);
 	OutputLine(NULL, "「詩を詠むの“詩”に音で詩音です。」",
-		   NULL, "\"With the characters for 'poetry' and 'sound'.\"", GetGlobalFlag(GLinemodeSp));
+		   NULL, "\"With the characters for 'poetry' and 'sound.'\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#ffdc6f>悟史</color>", NULL, "<color=#ffdc6f>Satoshi</color>", NULL, Line_ContinueAfterTyping); }

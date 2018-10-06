@@ -214,7 +214,7 @@ void main()
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　でも、…悟史くんの名を葛西に出すのに、…ためらいがあった。",
-		   NULL, "But... I was hesitant to ask Kasai..", GetGlobalFlag(GLinemodeSp));
+		   NULL, "But... I was hesitant to ask Kasai...", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -1490,6 +1490,7 @@ void main()
 	OutputLine(NULL, "……まぁそんなもんだ。",
 		   NULL, " but whatever.", Line_Normal);
 
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>Ooishi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 11, "ps3/s06/11/150700167", 128, TRUE);
 	OutputLine(NULL, "「署の方が都合がいいと思ったから署にしただけです。",
 		   NULL, "\"I thought it'd be more convenient if we came here...", Line_WaitForInput);
@@ -1533,7 +1534,7 @@ void main()
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　課長席と書かれたちょっと立派な無人席の前に、向かい合ったソファーと大理石風の机が置かれている。",
-		   NULL, "There was a desk with a plate that said 'section manager', and nearby there were couches and a table.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "There was a desk with a plate that said \"section manager,\" and nearby there were couches and a table.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -2983,7 +2984,7 @@ void main()
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　………そして、……店内で、どんなやり取りがされたのか。",
-		   NULL, "...I couldn't guess at exactly what happened next.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "...I couldn't guess exactly what happened next.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -3241,12 +3242,13 @@ void main()
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　昭和５７年６月２４日、北条悟史が失踪した。",
-		   NULL, "On June 24th, 1982, Satoshi Houjou went missing.", Line_Normal);
+		   NULL, "On June 24th, 1982, Satoshi Houjou went missing.", Line_ContinueAfterTyping);
 
 	FadeOutBGM( 1, 0, FALSE );
 	ModDrawCharacter(19, 0, "transparent", "0", 0, 100, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, TRUE );
+	OutputLineAll(NULL, "", Line_WaitForInput);
 	SetValidityOfInput( FALSE );
-	Wait( 2000 );
+	Wait( 1000 );
 	SetValidityOfInput( TRUE );
 	PlayBGM( 1, "type", 120, 0 );
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
@@ -3257,8 +3259,9 @@ void main()
 
 	FadeOutBGM( 1, 0, FALSE );
 	ModDrawCharacter(19, 0, "transparent", "0", 0, 100, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, TRUE );
+	OutputLineAll(NULL, "", Line_WaitForInput);
 	SetValidityOfInput( FALSE );
-	Wait( 2000 );
+	Wait( 1000 );
 	SetValidityOfInput( TRUE );
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
@@ -3269,8 +3272,9 @@ void main()
 		   NULL, "Allegedly, someone resembling him was seen at Nagoya Station embarking on a train heading to Tokyo. But the truth is unknown.", Line_ContinueAfterTyping);
 	FadeOutBGM( 1, 0, FALSE );
 	ModDrawCharacter(19, 0, "transparent", "0", 0, 100, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, TRUE );
+	OutputLineAll(NULL, "", Line_WaitForInput);
 	SetValidityOfInput( FALSE );
-	Wait( 2000 );
+	Wait( 1000 );
 	SetValidityOfInput( TRUE );
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
@@ -3281,8 +3285,9 @@ void main()
 		   NULL, "No one has seen him since.", Line_ContinueAfterTyping);
 	FadeOutBGM( 1, 0, FALSE );
 	ModDrawCharacter(19, 0, "transparent", "0", 0, 100, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, TRUE );
+	OutputLineAll(NULL, "", Line_WaitForInput);
 	SetValidityOfInput( FALSE );
-	Wait( 2000 );
+	Wait( 1000 );
 	SetValidityOfInput( TRUE );
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
@@ -3293,6 +3298,7 @@ void main()
 		   NULL, "As a matter of fact, no one even knows if he's still alive.", Line_ContinueAfterTyping);
 	FadeOutBGM( 1, 0, FALSE );
 	ModDrawCharacter(19, 0, "transparent", "0", 0, 100, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, TRUE );
+	OutputLineAll(NULL, "", Line_WaitForInput);
 	ClearMessage();
 	SetSpeedOfMessage( FALSE, 0 );
 	CallScript( "&eyeCamp" );

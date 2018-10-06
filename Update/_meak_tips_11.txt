@@ -71,13 +71,13 @@ void main()
 	Wait( 1000 );
 	SetValidityOfInput( TRUE );
 	OutputLine(NULL, "という、とんでもない意見がまかり通るようになってくる。",
-		   NULL, " a supernatural phenomenon called 'demoning away'.", Line_Normal);
+		   NULL, " a supernatural phenomenon called 'demoning away.'", Line_Normal);
 	ClearMessage();
 	PlaySE( 0, "s_page", 128, 64 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　雛見沢では、悟史くんの失踪は「転校」と称され、口にすることがはばかられるようになっていた。",
-		   NULL, "In Hinamizawa, they refer to his disappearance as him having 'transferred', and nobody will talk about it otherwise.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "In Hinamizawa, they refer to his disappearance as him having 'transferred,' and nobody will talk about it otherwise.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
 

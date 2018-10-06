@@ -269,7 +269,7 @@ void main()
 	OutputLine(NULL, "　悟史くんは、これが元気な様子に見えるのか？",
 		   NULL, "He gave me a look as if saying", Line_WaitForInput);
 	OutputLine(NULL, "　とでも言わんばかりの…冷たい眼差しを向けた。",
-		   NULL, " 'do I look fine to you?'.", GetGlobalFlag(GLinemodeSp));
+		   NULL, " 'do I look fine to you?'", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
 
@@ -779,12 +779,12 @@ void main()
 	OutputLine(NULL, "「助けて……たすけて……、",
 		   NULL, "\"Help... help...", Line_Continue);
 	// (backup) SetValidityOfInput( FALSE );
-	Wait( 400 );
+	Wait( 3400 );
 	// (backup) SetValidityOfInput( TRUE );
 	OutputLine(NULL, "…にぃにぃ…、",
 		   NULL, " ...Nii-nii...", Line_Continue);
 	// (backup) SetValidityOfInput( FALSE );
-	Wait( 500 );
+	Wait( 1400 );
 	// (backup) SetValidityOfInput( TRUE );
 	OutputLine(NULL, "…にぃにぃ……。」",
 		   NULL, " ...Nii-nii...\"", GetGlobalFlag(GLinemodeSp));
@@ -919,9 +919,11 @@ void main()
 
 	ModPlayVoiceLS(4, 4, "ps3/s06/04/150400006", 128, TRUE);
 	OutputLine(NULL, "　にーにー！！",
-		   NULL, " Nii-nii!!", Line_WaitForInput);
+		   NULL, " Nii-nii!!", Line_Continue);
+	Wait( 2400 );
 	OutputLine(NULL, "　にーにー！！！",
-		   NULL, " Nii-nii!!!", Line_WaitForInput);
+		   NULL, " Nii-nii!!!", Line_Continue);
+	Wait( 1800 );
 	OutputLine(NULL, "　うわああぁああぁああん！！！」",
 		   NULL, " Whaaaaahhhhhh!!!\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -1529,8 +1531,9 @@ void main()
 		   NULL, "\"Here,", Line_WaitForInput);
 	ModPlayVoiceLS(4, 2, "ps3/s06/02/150200145", 128, TRUE);
 	OutputLine(NULL, "悟史くんも魅ぃちゃんも、仲直りの握手。",
-		   NULL, " Satoshi-kun, Mii-chan,", Line_WaitForInput);
-	ModPlayVoiceLS(4, 2, "ps3/s06/02/150200146", 128, TRUE);
+		   NULL, " Satoshi-kun, Mii-chan,", Line_Continue);
+	if (GetGlobalFlag(GLanguage) == 0) { OutputLineAll(NULL, "", Line_WaitForInput); }
+	if (GetGlobalFlag(GLanguage) == 0) { ModPlayVoiceLS(4, 2, "ps3/s06/02/150200146", 128, TRUE); }
 	OutputLine(NULL, "……ほら。」",
 		   NULL, " why don't you guys shake hands as a sign of reconciliation?\"", Line_Normal);
 	ClearMessage();
@@ -1557,7 +1560,7 @@ void main()
 	OutputLine(NULL, "「…………僕も、",
 		   NULL, "\"......I'm sorry,", Line_Continue);
 	// (backup) SetValidityOfInput( FALSE );
-	Wait( 1000 );
+	Wait( 2000 );
 	// (backup) SetValidityOfInput( TRUE );
 	OutputLine(NULL, "………悪かった。",
 		   NULL, " too.", Line_WaitForInput);
@@ -1570,10 +1573,10 @@ void main()
 	ClearMessage();
 	ModDrawCharacter(2, 2, "sprite/normal/re1a_def_a1_", "2", 0, 0, 0, FALSE, 0, 0, 0, 0, 0,  0,  0, 10, 400, TRUE );
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 2, "ps3/s06/02/150200147", 128, TRUE);
+	if (GetGlobalFlag(GLanguage) == 1) { ModPlayVoiceLS(4, 2, "ps3/s06/02/150200148", 128, TRUE); } else { ModPlayVoiceLS(4, 2, "ps3/s06/02/150200147", 128, TRUE); }
 	OutputLine(NULL, "「さ、魅ぃちゃんは次に沙都子ちゃんに謝る。",
 		   NULL, "\"Okay.", Line_WaitForInput);
-	ModPlayVoiceLS(4, 2, "ps3/s06/02/150200148", 128, TRUE);
+	if (GetGlobalFlag(GLanguage) == 1) { ModPlayVoiceLS(4, 2, "ps3/s06/02/150200147", 128, TRUE); } else { ModPlayVoiceLS(4, 2, "ps3/s06/02/150200148", 128, TRUE); }
 	OutputLine(NULL, "……はい。」",
 		   NULL, " Mii-chan, why don't you apologize to Satoko-chan now?\"", Line_Normal);
 	ClearMessage();
