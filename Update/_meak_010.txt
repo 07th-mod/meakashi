@@ -2008,12 +2008,12 @@ void main()
 	ModDrawCharacter(1, 19, "sprite/night/kuma_def_", "0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 200, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#8f6d8f>熊谷</color>", NULL, "<color=#8f6d8f>Kumagai</color>", NULL, Line_ContinueAfterTyping); }
-	if (GetGlobalFlag(GLanguage) == 1) { ModPlayVoiceLS(4, 19, "ps3/s06/19/153100013", 128, TRUE); } else { ModPlayVoiceLS(4, 19, "ps3/s06/19/153100012", 128, TRUE); }
+	ModPlayVoiceLS(4, 19, "ps3/s06/19/153100012", 128, TRUE);
 	OutputLine(NULL, "「大石さん。",
-		   NULL, "\"Here he is,", Line_WaitForInput);
-	if (GetGlobalFlag(GLanguage) == 1) { ModPlayVoiceLS(4, 19, "ps3/s06/19/153100012", 128, TRUE); } else { ModPlayVoiceLS(4, 19, "ps3/s06/19/153100013", 128, TRUE); }
+		   NULL, "\"Ooishi-san,", Line_WaitForInput);
+	ModPlayVoiceLS(4, 19, "ps3/s06/19/153100013", 128, TRUE);
 	OutputLine(NULL, "連れてきましたー！！」",
-		   NULL, " Ooishi-san!!\"", GetGlobalFlag(GLinemodeSp));
+		   NULL, " there you're.\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 	DisableWindow();
 	ModDrawCharacter(3, 11, "sprite/night/oisi1_1_", "0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );

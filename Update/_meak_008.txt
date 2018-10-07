@@ -1532,10 +1532,11 @@ void main()
 	ModPlayVoiceLS(4, 2, "ps3/s06/02/150200145", 128, TRUE);
 	OutputLine(NULL, "悟史くんも魅ぃちゃんも、仲直りの握手。",
 		   NULL, " Satoshi-kun, Mii-chan,", Line_Continue);
-	if (GetGlobalFlag(GLanguage) == 0) { OutputLineAll(NULL, "", Line_WaitForInput); }
-	if (GetGlobalFlag(GLanguage) == 0) { ModPlayVoiceLS(4, 2, "ps3/s06/02/150200146", 128, TRUE); }
 	OutputLine(NULL, "……ほら。」",
-		   NULL, " why don't you guys shake hands as a sign of reconciliation?\"", Line_Normal);
+		   NULL, " why don't you guys shake hands as a sign of reconciliation?\"", Line_Continue);
+	WaitToFinishVoicePlaying(4);
+	ModPlayVoiceLS(4, 2, "ps3/s06/02/150200146", 128, TRUE);
+	OutputLineAll(NULL, "", LineNormal);
 	ClearMessage();
 	DisableWindow();
 	ModDrawCharacter(2, 7, "sprite/normal/sato1_komaru_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
@@ -1573,12 +1574,12 @@ void main()
 	ClearMessage();
 	ModDrawCharacter(2, 2, "sprite/normal/re1a_def_a1_", "2", 0, 0, 0, FALSE, 0, 0, 0, 0, 0,  0,  0, 10, 400, TRUE );
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
-	if (GetGlobalFlag(GLanguage) == 1) { ModPlayVoiceLS(4, 2, "ps3/s06/02/150200148", 128, TRUE); } else { ModPlayVoiceLS(4, 2, "ps3/s06/02/150200147", 128, TRUE); }
+	ModPlayVoiceLS(4, 2, "ps3/s06/02/150200147", 128, TRUE);
 	OutputLine(NULL, "「さ、魅ぃちゃんは次に沙都子ちゃんに謝る。",
-		   NULL, "\"Okay.", Line_WaitForInput);
-	if (GetGlobalFlag(GLanguage) == 1) { ModPlayVoiceLS(4, 2, "ps3/s06/02/150200147", 128, TRUE); } else { ModPlayVoiceLS(4, 2, "ps3/s06/02/150200148", 128, TRUE); }
+		   NULL, "\"Mii-chan, you should apologize to Satoko-chan now.", Line_WaitForInput);
+	ModPlayVoiceLS(4, 2, "ps3/s06/02/150200148", 128, TRUE);
 	OutputLine(NULL, "……はい。」",
-		   NULL, " Mii-chan, why don't you apologize to Satoko-chan now?\"", Line_Normal);
+		   NULL, " Okay?\"", Line_Normal);
 	ClearMessage();
 
 	ModDrawCharacter(2, 4, "sprite/normal/sa1b_hannbeso_b3_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );

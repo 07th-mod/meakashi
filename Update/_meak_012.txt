@@ -2203,12 +2203,12 @@ void main()
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
-	if (GetGlobalFlag(GLanguage) == 1) { ModPlayVoiceLS(4, 3, "ps2/03/150300223", 240, TRUE); } else { ModPlayVoiceLS(4, 3, "ps2/03/150300222", 240, TRUE); }
+	ModPlayVoiceLS(4, 3, "ps2/03/150300222", 240, TRUE);
 	OutputLine(NULL, "「…………詩音。",
-		   NULL, "\"...You can't keep going...?", Line_WaitForInput);
-	if (GetGlobalFlag(GLanguage) == 1) { ModPlayVoiceLS(4, 3, "ps2/03/150300222", 240, TRUE); } else { ModPlayVoiceLS(4, 3, "ps2/03/150300223", 240, TRUE); }
+		   NULL, "\"...Shion.", Line_WaitForInput);
+	ModPlayVoiceLS(4, 3, "ps2/03/150300223", 240, TRUE);
 	OutputLine(NULL, "………もう、……無理？」",
-		   NULL, " Shion?\"", GetGlobalFlag(GLinemodeSp));
+		   NULL, " You can't keep going...?\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
