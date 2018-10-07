@@ -264,7 +264,8 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 6, "ps3/s06/06/150602239", 128, TRUE);
 	OutputLine(NULL, "「ん？",
-		   NULL, "\"Hmm?", Line_WaitForInput);
+		   NULL, "\"Hmm?", Line_Continue);
+	Wait( 600 );
 	OutputLine(NULL, "　あぁあぁ、ごめん…！",
 		   NULL, " Ah, ah, yeah, sorry!", Line_WaitForInput);
 	ModPlayVoiceLS(4, 6, "ps3/s06/06/150602240", 128, TRUE);

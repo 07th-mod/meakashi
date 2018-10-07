@@ -51,7 +51,7 @@ void main()
 		   NULL, " This ol' man will have some, then.", Line_WaitForInput);
 	ModPlayVoiceLS(4, 3, "ps3/s06/03/150300474", 128, TRUE);
 	OutputLine(NULL, "ほら梨花ちゃん、机、机。」",
-		   NULL, " Rika-chan, bring your desk over.", Line_Normal);
+		   NULL, " Rika-chan, bring your desk over.\"", Line_Normal);
 	ClearMessage();
 
 	ModDrawCharacter(2, 5, "sprite/normal/ri1_warai_a1_", "2", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
@@ -239,10 +239,11 @@ void main()
 		   NULL, "\"Of course it isn't.", Line_WaitForInput);
 	ModPlayVoiceLS(4, 6, "ps3/s06/06/150602753", 128, TRUE);
 	OutputLine(NULL, "沙都子がカボチャ嫌いを克服できるように日夜研究してますので。",
-		   NULL, " I've been working hard every day to get you to overcome your dislike of squash. ", GetGlobalFlag(GLinemodeSp));
+		   NULL, " I've been working hard every day to get you to overcome your dislike of squash.", GetGlobalFlag(GLinemodeSp));
 	DrawScene("background/gk1", 400 );
 	ModDrawCharacter(1, 6, "sprite/normal/si3_wink_a1_", "0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 200, TRUE );
 
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 6, "ps3/s06/06/150602754", 128, TRUE);
 	OutputLine(NULL, "さて、この調子で今年中に、ナス、",
 		   NULL, "Okay, now that that's done with, why don't you overcome your fear of eggplants,", Line_Continue);

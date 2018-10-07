@@ -2105,7 +2105,7 @@ void main()
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　詩音が、私を姉と認める言葉を口にする。",
-		   NULL, "Shion called me \"Sis\".", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Shion called me \"Sis.\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
 
@@ -2176,8 +2176,9 @@ void main()
 	// (backup) SetValidityOfInput( TRUE );
 	OutputLine(NULL, "どう殺されるのかに怯えながら過すがいい！！！",
 		   NULL, " what's coming to you!!! ", GetGlobalFlag(GLinemodeSp));
+	
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 6, "ps2/06/150602141", 240, TRUE);
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_Continue); }
 	OutputLine(NULL, "　簡単には殺さない、惨たらしく殺す！！！",
 		   NULL, "I won't just kill you. I'll make sure your death is long and miserable!!!", Line_WaitForInput);
 	ModPlayVoiceLS(4, 6, "ps3/s06/06/150602142", 128, TRUE);
@@ -2259,10 +2260,10 @@ void main()
 		   NULL, "\"Oh...", Line_WaitForInput);
 	ModPlayVoiceLS(4, 6, "ps3/s06/06/150602150", 128, TRUE);
 	OutputLine(NULL, "　沙都子？",
-		   NULL, " What's the matter,", Line_WaitForInput);
+		   NULL, " Satoko?", Line_WaitForInput);
 	ModPlayVoiceLS(4, 6, "ps3/s06/06/150602151", 128, TRUE);
 	OutputLine(NULL, "　どうしたの。」",
-		   NULL, " Satoko?\"", GetGlobalFlag(GLinemodeSp));
+		   NULL, " What's the matter?\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#fcdb77>沙都子</color>", NULL, "<color=#fcdb77>Satoko</color>", NULL, Line_ContinueAfterTyping); }

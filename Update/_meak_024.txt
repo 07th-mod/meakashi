@@ -932,7 +932,7 @@ void main()
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　レナは「魅音」に言った。",
-		   NULL, "Rena spoke to 'Mion'.", Line_Normal);
+		   NULL, "Rena spoke to 'Mion.'", Line_Normal);
 	ClearMessage();
 	ModDrawCharacter(3, 2, "sprite/normal/re1b_def_b1_", "2", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
 
@@ -1229,7 +1229,7 @@ void main()
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　それは彼らの親友の「魅音」に向けるべきもの。",
-		   NULL, "Rena still thinks I'm 'Mion'.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Rena still thinks I'm 'Mion.'", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -1897,7 +1897,10 @@ void main()
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "……圭一は驚きを噛み殺そうとがんばっているのだ。",
-		   NULL, "...So he did everything he could to stifle his surprise.", Line_WaitForInput);
+		   NULL, "...So he did everything he could to stifle his surprise.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+	
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 6, "ps3/s06/06/150602538", 128, TRUE);
 	OutputLine(NULL, "「…大昔の頭首の書き物によるとね。",
 		   NULL, " \"...According to something a family head from a long time ago wrote...", Line_WaitForInput);
@@ -1948,10 +1951,10 @@ void main()
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　………これが、あのばかで軽薄な前原圭一なの…？",
-		   NULL, "Was this really the superficial Keiichi Maebara I knew? ", Line_ContinueAfterTyping);
-	SetValidityOfInput( FALSE );
-	Wait( 1000 );
-	SetValidityOfInput( TRUE );
+		   NULL, "Was this really the superficial Keiichi Maebara I knew? ", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+	
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 6, "ps3/s06/06/150602545", 128, TRUE);
 	OutputLine(NULL, "「みんなここで、………………私が殺した。",
 		   NULL, "\"Right here... .........is where I killed everyone.", Line_WaitForInput);
@@ -3014,7 +3017,7 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 6, "ps3/s06/06/150602593", 128, TRUE);
 	OutputLine(NULL, "　………私の中に鬼が宿ったのはずいぶん前。",
-		   NULL, "\"......A long time ago, the demon came to live inside me.", Line_WaitForInput);
+		   NULL, "......A long time ago, the demon came to live inside me.", Line_WaitForInput);
 	ModPlayVoiceLS(4, 6, "ps3/s06/06/150602594", 128, TRUE);
 	OutputLine(NULL, "…その鬼は私を蝕み凶行に駆り立てようとした。",
 		   NULL, " ...It was gnawing at my heart, trying to spur me to violence, but...", Line_WaitForInput);
@@ -3111,7 +3114,8 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 6, "ps3/s06/06/150602607", 128, TRUE);
 	OutputLine(NULL, "……初めの小さなひとつを倒したあなたに自覚がないのは当然だろうけど、",
-		   NULL, "...It only makes sense that you wouldn't be aware of knocking over the first one, since it was so small......", Line_WaitForInput);
+		   NULL, "...It only makes sense that you wouldn't be aware of knocking over the first one, since it was so small......", Line_Continue);
+	Wait( 2400 );
 	OutputLine(NULL, "………あなたが元凶なの。」",
 		   NULL, " but you're the one who set them up.\"", Line_Normal);
 	ClearMessage();
@@ -3256,16 +3260,18 @@ void main()
 	ModPlayVoiceLS(4, 6, "ps2/06/150602613", 240, TRUE);
 	OutputLine(NULL, "左手の小指の先端の節に釘を打つ。",
 		   NULL, " I'll nail one of these into the first joint of your left pinky finger. ", GetGlobalFlag(GLinemodeSp));
+	
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 6, "ps2/06/150602614", 240, TRUE);
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_Continue); }
 	OutputLine(NULL, "順に親指まで打ったらまた小指に戻って、今度は真ん中の節に釘を打つ。",
 		   NULL, "Then, I'll nail each one in order until I get to your thumb, and then I'll go back to your pinky and nail one into the joint in the middle.", Line_WaitForInput);
 	ModPlayVoiceLS(4, 6, "ps2/06/150602615", 240, TRUE);
 	OutputLine(NULL, "…この調子で１５本の釘で左手を打ちつける。",
 		   NULL, " ...So on and so on, until I hammer fifteen nails into your left hand.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+	
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 6, "ps2/06/150602616", 240, TRUE);
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_Continue); }
 	OutputLine(NULL, "それがおわったら次は右手。",
 		   NULL, " When that's over with, I'll do your right hand next.", Line_WaitForInput);
 	ModPlayVoiceLS(4, 6, "ps2/06/150602617", 240, TRUE);
@@ -3274,8 +3280,9 @@ void main()
 	ModPlayVoiceLS(4, 6, "ps2/06/150602618", 240, TRUE);
 	OutputLine(NULL, "指先って、たくさんの神経が集まってるから、圭ちゃんが想像するよりもはるかに痛いよ。",
 		   NULL, " There are a lot of nerves bundled in your fingertips, so it hurts far more than you could imagine. ", GetGlobalFlag(GLinemodeSp));
+	
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 6, "ps2/06/150602619", 240, TRUE);
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_Continue); }
 	OutputLine(NULL, "…両手３０本を打ち終える前に、失神しちゃう人もいるそうだから…。」",
 		   NULL, "...Some people apparently pass out before you finish hammering thirty nails into their hands, so...\"", Line_Normal);
 	ClearMessage();
@@ -3854,7 +3861,7 @@ void main()
 		   NULL, " He's out cold, because of the stun gun.", Line_WaitForInput);
 	ModPlayVoiceLS(4, 6, "ps3/s06/06/150602666", 128, TRUE);
 	OutputLine(NULL, "もうすぐ警官隊が来るから解放されるよ。」",
-		   NULL, " The police should be here soon, so they'll set him free.", GetGlobalFlag(GLinemodeSp));
+		   NULL, " The police should be here soon, so they'll set him free.\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }

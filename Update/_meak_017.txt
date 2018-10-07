@@ -160,7 +160,7 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 6, "ps3/s06/06/150601447_1", 128, TRUE);
 	OutputLine(NULL, "「ありり〜〜お姉〜〜……ぅ〜〜ん……。」",
-		   NULL, "I was left alone all of a sudden... in this late night.", Line_Normal);
+		   NULL, "\"I was left alone all of a sudden... in this late night.\"", Line_Normal);
 	ClearMessage();
 
 	FadeOutBGM( 0, 0, FALSE );
@@ -246,7 +246,7 @@ void main()
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　静寂の中、いやにうるさく聞こえる時計の針の音。",
-		   NULL, "The ticking of the clock was loud and annoying in this quiet.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "The ticking of the clock was loud and annoying in this silence.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -1874,10 +1874,10 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 6, "ps3/s06/06/150601462", 128, TRUE);
 	OutputLine(NULL, "「富竹さんと鷹野さんが今年の犠牲になるとはね…。",
-		   NULL, "\"I never thought...", Line_WaitForInput);
+		   NULL, "\"Tomitake-san and Takano-san becoming the victims this year.", Line_WaitForInput);
 	ModPlayVoiceLS(4, 6, "ps3/s06/06/150601463", 128, TRUE);
 	OutputLine(NULL, "…思わなかった。」",
-		   NULL, " Tomitake-san and Takano-san would be the victims.\"", GetGlobalFlag(GLinemodeSp));
+		   NULL, " I didn't expect that...\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
@@ -2221,7 +2221,7 @@ void main()
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　祭具殿という言葉を耳にした途端、魅音の顔色が変わった。",
-		   NULL, "As soon as Mion heard the words \"ritual storehouse\", her expression shifted.", Line_Normal);
+		   NULL, "As soon as Mion heard the words \"ritual storehouse,\" her expression shifted.", Line_Normal);
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }

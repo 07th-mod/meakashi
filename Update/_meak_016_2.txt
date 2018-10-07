@@ -910,10 +910,10 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 6, "ps3/s06/06/150601425", 128, TRUE);
 	OutputLine(NULL, "「………悟史くん。",
-		   NULL, "\"...What should I do,", Line_WaitForInput);
+		   NULL, "\"Satoshi-kun... ", Line_WaitForInput);
 	ModPlayVoiceLS(4, 6, "ps3/s06/06/150601426", 128, TRUE);
 	OutputLine(NULL, "…………どうしよう……？」",
-		   NULL, " Satoshi-kun...?\"", GetGlobalFlag(GLinemodeSp));
+		   NULL, " ...What should I do?\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
 
@@ -1390,10 +1390,10 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 6, "ps3/s06/06/150601429", 128, TRUE);
 	OutputLine(NULL, "「……………ね、…悟史くん。",
-		   NULL, "\"...Are you listening...?", Line_WaitForInput);
+		   NULL, "\"Hey, Satoshi-kun...", Line_WaitForInput);
 	ModPlayVoiceLS(4, 6, "ps3/s06/06/150601430", 128, TRUE);
 	OutputLine(NULL, "…………聞いてる…？」",
-		   NULL, " Satoshi-kun...?\"", GetGlobalFlag(GLinemodeSp));
+		   NULL, " ...Are you listening...?\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -1513,7 +1513,7 @@ void main()
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "“人の世で起こることは、全て人が起こしていることだ。”",
-		   NULL, "\"'Everything that happens in this world is done by humans.\"", Line_Normal);
+		   NULL, "\"Everything that happens in this world is done by humans.\"", Line_Normal);
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -1542,7 +1542,7 @@ void main()
 	OutputLine(NULL, "　雛見沢村連続怪死事件は人の起こした事件であって。",
 		   NULL, "The series of mysterious deaths in Hinamizawa is the result of human action...", Line_WaitForInput);
 	OutputLine(NULL, "……オヤシロさまの祟りなんて呼ばれるべきものでは絶対にない。",
-		   NULL, " It shouldn't be called 'Oyashiro-sama's curse'.", GetGlobalFlag(GLinemodeSp));
+		   NULL, " It shouldn't be called 'Oyashiro-sama's curse.'", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
 
@@ -2157,9 +2157,8 @@ void main()
 		   NULL, "\"Takano-san, you're researching whether those customs survived into the present.", Line_WaitForInput);
 	ModPlayVoiceLS(4, 6, "ps3/s06/06/150601441", 128, TRUE);
 	OutputLine(NULL, "…そうでしたよね？」",
-		   NULL, " ...You are, right?\" ", Line_Continue);
-
-	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_Continue); }
+		   NULL, " ...You are, right?\" ", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	SetSpeedOfMessage( TRUE, 128 );
 
@@ -2297,11 +2296,9 @@ void main()
 		   NULL, " It was around the end of the Meiji Era.", Line_WaitForInput);
 	ModPlayVoiceLS(4, 9, "ps3/s06/09/150900151", 128, TRUE);
 	OutputLine(NULL, "…鬼ヶ淵村で身元不明の惨殺死体が発見されたんですって。」",
-		   NULL, " ...They discovered an unknown, mangled corpse, the victim of a murder, in Onigafuchi Village.\"", Line_Continue);
+		   NULL, " ...They discovered an unknown, mangled corpse, the victim of a murder, in Onigafuchi Village.\"", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 	SetSpeedOfMessage( TRUE, 128 );
-	WaitToFinishVoicePlaying( 4 );
-	Wait( 800 );
-	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_Continue); }
 
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_Continue); }
@@ -2322,8 +2319,12 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f6d9a8>鷹野</color>", NULL, "<color=#f6d9a8>Takano</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 9, "ps3/s06/09/150900152", 128, TRUE);
 	OutputLine(NULL, "「…カクモ無惨且ツ残虐非道ヲ………。」",
-		   NULL, "\"...Never before has there been a corpse treated with such cruelty and inhumanity...\"", Line_Continue);
+		   NULL, "\"...Never before has there been a corpse treated with such cruelty and inhumanity...\"", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+	
 	SetSpeedOfMessage( TRUE, 128 );
+	
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_Continue); }
 	OutputLine(NULL, "ダンダンダン！",
 		   NULL, " Thump-thump-thump!", Line_Continue);
 	SetSpeedOfMessage( FALSE, 0 );

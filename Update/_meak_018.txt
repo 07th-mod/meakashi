@@ -679,8 +679,8 @@ void main()
 		   NULL, "I turned the lighter off and went back to the hag with it.", Line_Normal);
 	ClearMessage();
 
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 6, "ps2/06/150601523", 240, TRUE);
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_Continue); }
 	OutputLine(NULL, "「見えてます？",
 		   NULL, "\"Can you see it?", Line_WaitForInput);
 	ModPlayVoiceLS(4, 6, "ps2/06/150601524", 240, TRUE);
@@ -696,8 +696,8 @@ void main()
 		   NULL, "I lit it in front of her eyes.", Line_Normal);
 	ClearMessage();
 
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 6, "ps2/06/150601526", 240, TRUE);
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_Continue); }
 	OutputLine(NULL, "「今からこれであなたの鼻を焼きます。",
 		   NULL, "\"I'm going to burn your nose now.", Line_WaitForInput);
 	ModPlayVoiceLS(4, 6, "ps2/06/150601527", 240, TRUE);
@@ -1591,8 +1591,8 @@ void main()
 		   NULL, " are you going to push Granny down the well?!\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 6, "ps2/06/150601559", 240, TRUE);
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_Continue); }
 	OutputLine(NULL, "「落すんじゃないよ、捨てるんだよ。",
 		   NULL, "\"No, I'm not. I'm just dumping her body.", Line_WaitForInput);
 	ModPlayVoiceLS(4, 6, "ps3/s06/06/150601560", 128, TRUE);
@@ -1606,8 +1606,8 @@ void main()
 		   NULL, "\"............!!\"", Line_Normal);
 	ClearMessage();
 
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 6, "ps2/06/150601561", 240, TRUE);
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_Continue); }
 	OutputLine(NULL, "「さっきの拷問で死んだんじゃないよ。",
 		   NULL, "\"Rest assured, I didn't torture her to death.", Line_WaitForInput);
 	ModPlayVoiceLS(4, 6, "ps3/s06/06/150601562", 128, TRUE);
@@ -1615,7 +1615,7 @@ void main()
 		   NULL, " It was probably the stun gun.", Line_WaitForInput);
 	ModPlayVoiceLS(4, 6, "ps3/s06/06/150601563", 128, TRUE);
 	OutputLine(NULL, "心臓マヒとかで。",
-		   NULL, " Maybe her heart failed.", Line_WaitForInput);
+		   NULL, " Maybe her heart failed.", Line_Continue);
 	OutputLine(NULL, "…放置してもいいけど、虫が湧くと嫌でしょ？」",
 		   NULL, " I could just leave her body here, but I don't want it to rot, you know?\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
