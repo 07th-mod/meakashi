@@ -14,11 +14,10 @@ void main()
 	FadeOutBGM( 1, 0, FALSE );
 	FadeOutBGM( 2, 0, FALSE );
 	FadeOutBGM( 3, 0, FALSE );
-	ModDrawCharacter(19, 0, "transparent", "0", 0, 100, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, TRUE );
 	DrawScene("black", 3000 );
 	SetSpeedOfMessage( FALSE, 0 );
 
-	PlayBGM( 0, "yoru", 120, 0 );
+	PlayBGM( 1, "yoru", 120, 0 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　…キーホルダーに括り付けられたカギは大小７つ。",
@@ -256,6 +255,7 @@ void main()
 	SetValidityOfInput( FALSE );
 	Wait( 1000 );
 	SetValidityOfInput( TRUE );
+	PlayBGM( 1, "kaze", 120, 0 );
 
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -377,11 +377,7 @@ void main()
 	OutputLine(NULL, "床に叩きつけられる時だけ、まるで食器棚を丸ごと床にぶちまけた時のような凄まじい音をたてて見せた。",
 		   NULL, " it made a tremendous metal noise as if somebody pushed over a cupboard.", Line_Normal);
 	ClearMessage();
-	FadeOutBGM( 0, 0, FALSE );
-	FadeOutBGM( 1, 0, FALSE );
-	FadeOutBGM( 2, 0, FALSE );
-	FadeOutBGM( 3, 0, FALSE );
-	ModDrawCharacter(19, 0, "transparent", "0", 0, 100, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, TRUE );
+	FadeOutBGM( 1, 300, FALSE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　ジャリリリーンンッ！！！",
@@ -465,9 +461,8 @@ void main()
 	OutputLine(NULL, "…落ち着けぇえぇえぇ…！！！",
 		   NULL, " Calm the fuck down...!!!", Line_Normal);
 	ClearMessage();
-	DrawScene("black", 400 );
-	FadeOutBGM( 1, 0, FALSE );
-	ModDrawCharacter(19, 0, "transparent", "0", 0, 100, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, TRUE );
+	
+	FadeOutBGM( 1, 500, FALSE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　誤解がないように補記しておくが、",
@@ -552,7 +547,7 @@ void main()
 	OutputLine(NULL, "　…何しろ、聖書を読んでも、その裏の宗教戦略や布教のプロセス、信仰という名の商品の国際貿易機構に感嘆こそすれ、間違っても神様の愛に胸を打たれたりすることはない。",
 		   NULL, "...After all, I was more impressed by the political schemes and international trade behind religious propagation than by the love of God which the Bible teaches.", Line_Normal);
 	ClearMessage();
-	DrawScene("background/sora", 400 );
+	DrawScene("background/sora", 300 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　そういう姿勢だからこそ、私は入学当初から問題児扱いだった。",
@@ -785,7 +780,7 @@ void main()
 	OutputLine(NULL, "　それら全てが揃ったことを確認し、私はゆっくりと温めてきた脱走計画を実行に移すことにした。",
 		   NULL, "I made sure that I had all I needed, and executed the plan.", Line_Normal);
 	ClearMessage();
-	DrawScene("background/hoteru", 400 );
+	DrawScene("background/hoteru", 300 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　私はＸデーを迎える前に、学校側にある種の爆弾を抱えさせることにしていた。",
@@ -802,7 +797,7 @@ void main()
 	OutputLine(NULL, "　わざわざ説明しないが、この手の女子校では、それは致命的な問題になる。",
 		   NULL, "I won't go into the details now, but that can turn into an enormous problem in this school.", Line_Normal);
 	ClearMessage();
-	DrawScene("black", 400 );
+	DrawScene("black", 300 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　……そもそも、そういうトラブルから遠ざけるための女子校だ。",
@@ -881,7 +876,6 @@ void main()
 	OutputLine(NULL, "その頃には私は十二分な時間を得て、すでに彼方へ逃げ去っている……。",
 		   NULL, "I'll be somewhere safe...", Line_Normal);
 	ClearMessage();
-	DrawScene("black", 400 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　私は噂を十分に浸透させ、さらに密会をしている生徒が私である可能性をうっすらと漂わせた。",
@@ -919,16 +913,18 @@ void main()
 	OutputLine(NULL, "　この不信感の芽は、私が蒸発したあと、男性教師との駆け落ちという噂を生むための土壌になるのだ。",
 		   NULL, "Now they'll definitely suspect I ran away with some male teacher.", Line_Normal);
 	ClearMessage();
-	FadeOutBGM( 0, 0, FALSE );
-	FadeOutBGM( 2, 0, FALSE );
-	ModDrawCharacter(19, 0, "transparent", "0", 0, 100, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, TRUE );
-	DrawScene("background/hoteru", 400 );
+	
+	FadeOutBGM( 0, 500, FALSE );
+	DrawScene("black", 300 );
+	PlayBGM( 1, "yoru", 120, 0 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　そして、Ｘデーの夜が訪れた。",
 		   NULL, "Tonight was the night.", Line_Normal);
 	ClearMessage();
 
+	DrawScene("background/hoteru", 300 );
+	
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　私は食後のいくつかの当番のため、姿を消す。",
 		   NULL, "I began my chores after dinner.", Line_Normal);
@@ -1025,8 +1021,7 @@ void main()
 	OutputLine(NULL, "……開いた！",
 		   NULL, " The key worked!", Line_Normal);
 	ClearMessage();
-	FadeOutBGM( 1, 0, FALSE );
-	ModDrawCharacter(19, 0, "transparent", "0", 0, 100, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, TRUE );
+	FadeOutBGM( 1, 500, FALSE );
 	DrawSceneWithMask("background/moon", "maskleft", 1, 0, 300 );
 	PlayBGM( 0, "yoru", 120, 0 );
 
@@ -1088,7 +1083,7 @@ void main()
 	OutputLine(NULL, "　私のように、この環境に適応できない人間が過去にもいたのは頷ける。",
 		   NULL, "It's understandable that there have been people before who couldn't fit in this place.", Line_Normal);
 	ClearMessage();
-	DrawScene("background/ga1", 400 );
+	DrawScene("background/ga1", 300 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　だからこそ学校側は、生徒の脱走を、ありえる事態だとして認識していた。",
@@ -1105,26 +1100,25 @@ void main()
 		   NULL, " ...I don't want to believe any of those stories, though.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
-	DrawFilm( 3, 255, 255, 255, 256, 0, 1000, TRUE );
+	DisableWindow();
+	FadeOutBGM( 0, 500, FALSE );
+	Negative( 1000 , TRUE );
 	PlayBGM( 1, "semi_r", 120, 0 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　…この学校にまつわる怪談には、いつも脱走未遂の生徒が絡むからだ。",
 		   NULL, "...You see, all the school's horror stories involved students who attempted escapes.", Line_Normal);
 	ClearMessage();
-	DrawScene("background/ga1", 400 );
-	FadeFilm( 0, TRUE );
-	FadeOutBGM( 0, 0, FALSE );
-	FadeOutBGM( 1, 0, FALSE );
-	FadeOutBGM( 2, 0, FALSE );
-	FadeOutBGM( 3, 0, FALSE );
-	ModDrawCharacter(19, 0, "transparent", "0", 0, 100, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, TRUE );
+	
+	DisableWindow();
+	FadeOutBGM( 1, 500, FALSE );
+	FadeFilm( 500, TRUE );
+	PlayBGM( 0, "DEADEND", 120, 0 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　……くそったれ…、上等じゃないの…。",
 		   NULL, "...Whatever... Bring it on...", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
-	PlayBGM( 0, "DEADEND", 120, 0 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　私だって、ここでしくじったら、次のチャンスがあるなんて甘えるつもりはない。",
@@ -1144,11 +1138,10 @@ void main()
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　自らを奮起し、…扉を押し開ける。",
-		   NULL, "I psyched myself up and... pushed the door open.", Line_ContinueAfterTyping);
-	PlaySE( 0, "s_M_Door8k", 128, 64 );
-	OutputLineAll(NULL, "", Line_Normal);
-
+		   NULL, "I psyched myself up and... pushed the door open.", Line_Normal);
 	ClearMessage();
+	
+	PlaySE( 0, "s_M_Door8k", 128, 64 );
 	DrawSceneWithMask("black", "maskc", 1, 0, 300 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -1280,7 +1273,7 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode) == 0) { ClearMessage(); }
-	DrawScene("black", 400 );
+	DrawSceneWithMask("black", "maskc", 1, 0, 300 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　……ちぇ、私が今日まで積み重ねてきた努力なんて、そんな程度のもんだとはね。",
@@ -1385,7 +1378,7 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode) == 0) { ClearMessage(); }
-	DrawScene("black", 400 );
+	DrawSceneWithMask("black", "maskc", 1, 0, 300 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　だが、いくら耳を澄ませても、何の気配も感じられなかった。",
@@ -1459,7 +1452,7 @@ void main()
 	OutputLine(NULL, "　ほんの数十メートルの危険地帯を抜けるまで、私はずっと、それらのことで頭をいっぱいにしていた。",
 		   NULL, "My head was filled with those thoughts as I went through this dangerous territory.", Line_Normal);
 	ClearMessage();
-	DrawSceneWithMask("black", "maskright", 1, 0, 300 );
+	DrawSceneWithMask("black", "maskc", 1, 0, 300 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　やがて、誰の気配も感じず、もちろん誰にも出くわすことがなく、抜け切ったことを知った時。",
@@ -1501,7 +1494,7 @@ void main()
 	OutputLine(NULL, "　…私はそれを理性でぐっと抑えこみながら、慎重に最後の関門に臨んだ………。",
 		   NULL, "...I suppressed that desire and carefully tackled the final step......", Line_Normal);
 	ClearMessage();
-	DrawScene("background/moon", 400 );
+	DrawScene("background/moon", 300 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　学園の敷地を囲む洋風な柵は、美観上は優秀だったが、防犯上はそれほど優秀ではないようだった。",
@@ -1549,7 +1542,7 @@ void main()
 	OutputLine(NULL, "　私は臆すことなく、その高さから飛び降りることを選ぶ。",
 		   NULL, "I chose to jump off with no hesitation.", Line_Normal);
 	ClearMessage();
-	PlaySE( 0, "s_Down", 100, 64 );
+	PlaySE( 0, "furu", 100, 64 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　もちろん、自由落下に身を任せてから少しは後悔した。",
@@ -1560,9 +1553,9 @@ void main()
 	OutputLine(NULL, "　落下時特有の、ふわっとした感覚が、自分が予想したよりもずっと長かったので、落下しながら怖くなった。",
 		   NULL, "I got scared because the flight was longer than I expected.", Line_Normal);
 	ClearMessage();
-	DrawScene("white", 10 );
+	DrawScene("white", 50 );
 	DrawScene("background/ga1", 0 );
-	PlaySE( 0, "s_Down", 100, 64 );
+	PlaySE( 0, "wa_003", 100, 64 );
 	StartShakingOfWindow( 248, 30, 0, 2, 12, FALSE );
 	StartShakingOfAllObjects( 248, 30, 0, 2, 12, TRUE );
 
@@ -1660,12 +1653,7 @@ void main()
 	ClearMessage();
 
 	CallScript( "&eye" );
-	DrawScene("black", 1000 );
-	FadeOutBGM( 0, 0, FALSE );
-	FadeOutBGM( 1, 0, FALSE );
-	FadeOutBGM( 2, 0, FALSE );
-	FadeOutBGM( 3, 0, FALSE );
-	ModDrawCharacter(19, 0, "transparent", "0", 0, 100, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, TRUE );
+	FadeOutBGM( 0, 500, TRUE );
 
 	PlayBGM( 0, "yoru", 120, 0 );
 	DrawScene("background/ga1", 1000 );
@@ -1693,7 +1681,7 @@ void main()
 		   NULL, " but it didn't happen.", Line_Normal);
 	ClearMessage();
 	PlayBGM( 0, "Iru", 120, 0 );
-	DrawScene("background/moon", 400 );
+	DrawScene("background/moon", 300 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　そういう時の走馬灯ってのは、いい思い出を振り返るためにあるべきだ。",
@@ -1727,10 +1715,8 @@ void main()
 	OutputLine(NULL, "思わず吹き出してしまう。",
 		   NULL, " I burst into laughter.", Line_Normal);
 	ClearMessage();
-	FadeOutBGM( 0, 0, FALSE );
-	FadeOutBGM( 2, 0, FALSE );
-	ModDrawCharacter(19, 0, "transparent", "0", 0, 100, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, TRUE );
-	DrawScene("black", 400 );
+	FadeOutBGM( 0, 2000, FALSE );
+	DrawScene("black", 2000 );
 	PlayBGM( 0, "yoru", 120, 0 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -1820,6 +1806,8 @@ void main()
 	OutputLine(NULL, "「はいはい。仰せのままに…。」",
 		   NULL, "\"As you wish...\"", Line_Normal);
 	ClearMessage();
+	
+	FadeOutBGM( 0, 300, FALSE );
 	DrawScene("black", 400 );
 	PlayBGM( 0, "Cafe", 120, 0 );
 
@@ -2061,10 +2049,9 @@ void main()
 	OutputLine(NULL, "　魅音が反応を示したものなら、同じ状況になれば、私もまったく同じ反応を示す。",
 		   NULL, "When Mion reacts to something in a certain situation, I'll react the same way.", Line_Normal);
 	ClearMessage();
-	FadeOutBGM( 0, 0, FALSE );
-	FadeOutBGM( 2, 0, FALSE );
-	ModDrawCharacter(19, 0, "transparent", "0", 0, 100, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, TRUE );
+	
 	DrawScene("background/kuruma4", 400 );
+	FadeOutBGM( 0, 300, FALSE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 6, "ps3/s06/06/150600024", 128, TRUE);
@@ -2301,15 +2288,15 @@ void main()
 	OutputLine(NULL, "…くっくっく…！」",
 		   NULL, " Heh heh heh...!\"", Line_Normal);
 	ClearMessage();
-	DrawScene("black", 400 );
+	DrawScene("black", 2000 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　葛西とのどうでもいいお喋りは、私がまだ興宮の町で平凡に暮らしていたころを思い出させる。",
 		   NULL, "This interaction with Kasai reminded me of the old peaceful days in Okinomiya.", Line_Normal);
 	ClearMessage();
-	FadeOutBGM( 1, 0, FALSE );
-	ModDrawCharacter(19, 0, "transparent", "0", 0, 100, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, TRUE );
-	DrawSceneWithMask("background/flashback/mati2", "maskup", 1, 0, 300 );
+	
+	FadeOutBGM( 1, 500, FALSE );
+	DrawScene("background/flashback/mati2", 400 );
 	PlayBGM( 0, "Iru", 120, 0 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -2430,7 +2417,6 @@ void main()
 		   NULL, " but for those of us who were kids at the time, it's a pretty fun memory.", Line_Normal);
 	ClearMessage();
 	DrawScene("black", 400 );
-	PlayBGM( 1, "Mati", 120, 0 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　その楽しいダム戦争は、数年前にひょっこりと終わりを告げた。",
@@ -2512,11 +2498,10 @@ void main()
 	OutputLine(NULL, "…ははん！",
 		   NULL, " Guh!", Line_Normal);
 	ClearMessage();
-	FadeOutBGM( 0, 0, FALSE );
-	FadeOutBGM( 2, 0, FALSE );
-	ModDrawCharacter(19, 0, "transparent", "0", 0, 100, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, TRUE );
-	DrawScene("white", 10 );
+	FadeOutBGM( 0, 300, FALSE );
+	DrawScene("white", 50 );
 	DrawScene("background/kuruma5_02", 0 );
+	PlayBGM( 1, "Mati", 120, 0 );
 	StartShakingOfWindow( 245, 60, 0, 2, 3*2, FALSE );
 	StartShakingOfAllObjects( 245, 60, 0, 2, 3*2, TRUE );
 
@@ -2614,8 +2599,11 @@ void main()
 	OutputLine(NULL, "　しかも、私を園崎本家から遠く離れた学校に幽閉するというのは、……何しろ、私が生まれた時から決まっていたことなのだ。",
 		   NULL, "Worse, the decision to confine me to an academy far away from the Sonozaki family... was made before I was even born.", Line_Normal);
 	ClearMessage();
+	
+	FadeOutBGM( 1, 500, FALSE );
 	DrawScene("black", 400 );
 	DrawScene("background/flashback/ima3", 400 );
+	PlayBGM( 1, "msys27", 128, 0 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　私に与えられた名前は",
@@ -2841,6 +2829,9 @@ void main()
 	OutputLine(NULL, "ぱっとした冴えない町だが、私はそんなに嫌いじゃない。",
 		   NULL, " The town isn't very sophisticated, but I kind of like it there.", Line_Normal);
 	ClearMessage();
+	
+	FadeOutBGM( 1, 300, FALSE );
+	PlayBGM( 0, "Mati", 120, 0 );
 	DrawSceneWithMask("background/kuruma5_02", "maskright", 1, 0, 300 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#76523d>葛西</color>", NULL, "<color=#76523d>Kasai</color>", NULL, Line_ContinueAfterTyping); }
@@ -2938,7 +2929,7 @@ void main()
 	OutputLine(NULL, "　自分がその噂を、被験者として確かめる目に遭わないことを祈っておこう。",
 		   NULL, "I hope I don't end up as a victim of that place.", Line_Normal);
 	ClearMessage();
-	PlayBGM( 0, "Cafe", 120, 0 );
+	PlayBGM( 1, "Cafe", 120, 0 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 6, "ps3/s06/06/150600053", 128, TRUE);
@@ -3057,10 +3048,9 @@ void main()
 	OutputLine(NULL, "　でも、母さんの側を離れられなくて、旧友としていつまでも側にいるのではないか、と。",
 		   NULL, "Kasai couldn't leave my mom entirely, so he stayed around as my dad's friend.", Line_Normal);
 	ClearMessage();
-	DrawSceneWithMask("black", "maskleft", 1, 0, 300 );
+	
 	DisableWindow();
-	ModDrawCharacterWithFiltering(2, 15, "sprite/normal/kasa_1_", "0", "maskright", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 10, 300, TRUE );
-	DisplayWindow();
+	ModDrawCharacter(2, 15, "sprite/night/kasa_1_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 300, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　そういう仮定を持って葛西を見てみると。",
@@ -3241,9 +3231,7 @@ void main()
 	OutputLine(NULL, "　自分から黙れと言っておきながら、ずっと葛西とおしゃべりを続けていた。",
 		   NULL, "Even though I told Kasai to shut up, I kept talking to him.", Line_Normal);
 	ClearMessage();
-	FadeOutBGM( 0, 0, FALSE );
-	FadeOutBGM( 2, 0, FALSE );
-	ModDrawCharacter(19, 0, "transparent", "0", 0, 100, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, TRUE );
+	FadeOutBGM( 1, 300, FALSE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　……やがて、",
@@ -3284,7 +3272,8 @@ void main()
 	OutputLine(NULL, "　…葛西が、ほらと、何を見せたかったのか興味はあったが、そんなに関心はなかった。",
 		   NULL, "...I wondered what he wanted me to look at, but I wasn't that interested.", Line_Normal);
 	ClearMessage();
-	DrawSceneWithMask("background/kuruma5_02", "maskc", 1, 0, 300 );
+	
+	DrawSceneWithMask("background/kuruma5_02", "maskright", 1, 0, 300 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　それでもぼんやりと目蓋を開けると、看板がすごい速度で視界に飛び込み、そして後ろへ消えていった。",
@@ -3312,29 +3301,30 @@ void main()
 		   NULL, "My hometown is coming right up.", Line_Normal);
 	ClearMessage();
 	SetValidityOfInput( FALSE );
+	DisableWindow();
+	FadeOutBGM( 0, 500, FALSE );
 	Wait( 1000 );
 	SetValidityOfInput( TRUE );
-	FadeOutBGM( 1, 0, FALSE );
-	ModDrawCharacter(19, 0, "transparent", "0", 0, 100, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, TRUE );
 	PlayBGM( 0, "T1", 120, 0 );
 	SetValidityOfInput( FALSE );
 	DrawScene("prologue/mea_t1", 1000 );
-	Wait( 11000 );
+	Wait( 7000 );
 	DrawScene("prologue/mea_t2", 1000 );
-	Wait( 11000 );
+	Wait( 7000 );
 	DrawScene("prologue/mea_t3", 1000 );
-	Wait( 11000 );
+	Wait( 7000 );
 	DrawScene("prologue/mea_t4", 1000 );
-	Wait( 11000 );
+	Wait( 7000 );
 	DrawScene("prologue/mea_t5", 1000 );
-	Wait( 11000 );
-	FadeOutBGM( 0, 0, TRUE );
-	Wait( 500 );
+	Wait( 6000 );
+	DrawScene("background/kuruma5_02", 1000 );
+	CallScript( "&eyeCamp" );
+	FadeOutBGM( 0, 500, TRUE );
+	Wait( 1000 );
 	ModPlayMovie("mv05")
-	DrawScene("black", 3000 );
+	DrawScene("black", 1000 );
 	SetValidityOfInput( TRUE );
 
-	CallScript( "&eyeCamp" );
 	SetValidityOfSkipping( FALSE );
 	DrawSceneWithMask("tips/gettip_meak001", "mask1900", 7, 0, 400 );
 	Wait( 5000 );
