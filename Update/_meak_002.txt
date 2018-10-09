@@ -94,8 +94,7 @@ void main()
 	OutputLine(NULL, "　何しろ、ここはこれから私の城なのだから。",
 		   NULL, "After all, this is going to be my castle from now on.", Line_Normal);
 	ClearMessage();
-	FadeOutBGM( 1, 0, FALSE );
-	ModDrawCharacter(19, 0, "transparent", "0", 0, 100, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, TRUE );
+	FadeOutBGM( 1, 300, FALSE );
 	DrawSceneWithMask("black", "maskleft", 1, 0, 300 );
 	PlayBGM( 0, "z2_hig3", 120, 0 );
 
@@ -126,7 +125,7 @@ void main()
 	OutputLine(NULL, "　このマンションから、善良な住民が駆逐される日も、そう遠くないな…。",
 		   NULL, "It probably won't be much longer before the virtuous residents are driven out...", Line_Normal);
 	ClearMessage();
-	DrawScene("background/si_h2", 400 );
+	DrawScene("background/si_h2", 300 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　私の住む事になるこの部屋は、元はオープンルームだったらしく、見かけだけはビジネスホテルの一室みたいに見えた。",
@@ -313,7 +312,6 @@ void main()
 	Wait( 2500 );
 	SetValidityOfInput( TRUE );
 	FadeOutBGM( 1, 0, FALSE );
-	ModDrawCharacter(19, 0, "transparent", "0", 0, 100, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 3, "ps3/s06/03/150300001", 128, TRUE);
@@ -350,10 +348,6 @@ void main()
 		   NULL, "I take the handset.", Line_Normal);
 	ClearMessage();
 	FadeOutBGM( 0, 0, FALSE );
-	FadeOutBGM( 1, 0, FALSE );
-	FadeOutBGM( 2, 0, FALSE );
-	FadeOutBGM( 3, 0, FALSE );
-	ModDrawCharacter(19, 0, "transparent", "0", 0, 100, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 6, "ps3/s06/06/150600087", 128, TRUE);
@@ -445,9 +439,7 @@ void main()
 		   NULL, "\".........\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
-	FadeOutBGM( 0, 0, FALSE );
-	FadeOutBGM( 2, 0, FALSE );
-	ModDrawCharacter(19, 0, "transparent", "0", 0, 100, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, TRUE );
+	FadeOutBGM( 0, 300, FALSE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　私にとってここが限界なら、それは魅音にとっても限界だった。",
@@ -468,14 +460,8 @@ void main()
 	// (backup) SetValidityOfInput( FALSE );
 	Wait( 800 );
 	// (backup) SetValidityOfInput( TRUE );
-	PlaySE( 0, "s_boyoon", 128, 64 );
-
 	OutputLine(NULL, "…わーっはっはっはっはっはっはっは！！！」」",
-		   NULL, " ...Aha ha ha ha ha ha ha ha ha!!!\"", Line_Continue);
-	StartShakingOfWindow( 242, 60, 0, 2, 4*2, FALSE );
-	StartShakingOfAllObjects( 242, 60, 0, 2, 4*2, TRUE );
-	OutputLineAll(NULL, "", Line_Normal);
-
+		   NULL, " ...Aha ha ha ha ha ha ha ha ha!!!\"", Line_Normal);
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -488,7 +474,7 @@ void main()
 	OutputLine(NULL, "　…受話器越しに、姉妹は本当に久しぶりにお腹の底から笑い合った。",
 		   NULL, "...It's been a while since we laughed out loud with each other like this.", Line_Normal);
 	ClearMessage();
-	DrawScene("background/si_h2", 400 );
+	DrawScene("background/si_h2", 300 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 3, "ps3/s06/03/150300010", 128, TRUE);
@@ -550,9 +536,7 @@ void main()
 		   NULL, "Kasai smiled at us in amazement, his face a blend of amusement and exasperation.", Line_Normal);
 	ClearMessage();
 	DrawSceneWithMask("white", "maskleft", 1, 0, 300 );
-	FadeOutBGM( 0, 0, FALSE );
-	FadeOutBGM( 2, 0, FALSE );
-	ModDrawCharacter(19, 0, "transparent", "0", 0, 100, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, TRUE );
+	FadeOutBGM( 0, 300, FALSE );
 	DrawSceneWithMask("background/sora", "maskleft", 1, 0, 300 );
 	PlayBGM( 0, "Cafe", 120, 0 );
 
@@ -792,11 +776,7 @@ void main()
 	OutputLine(NULL, "　かわいいタルト、山ほど食べさせてあげますから〜☆」",
 		   NULL, " I'll throw in tons of pretty tarts too!\"", Line_Normal);
 	ClearMessage();
-	FadeOutBGM( 0, 0, FALSE );
-	FadeOutBGM( 1, 0, FALSE );
-	FadeOutBGM( 2, 0, FALSE );
-	FadeOutBGM( 3, 0, FALSE );
-	ModDrawCharacter(19, 0, "transparent", "0", 0, 100, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, TRUE );
+	FadeOutBGM( 0, 300, FALSE );
 	PlayBGM( 1, "Suzume", 120, 0 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
@@ -1085,9 +1065,8 @@ void main()
 	SetValidityOfInput( FALSE );
 	Wait( 1500 );
 	SetValidityOfInput( TRUE );
+	FadeOutBGM( 1, 1000, FALSE );
 	DrawScene("black", 1000 );
-	FadeOutBGM( 1, 0, FALSE );
-	ModDrawCharacter(19, 0, "transparent", "0", 0, 100, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, TRUE );
 	DrawSceneWithMask("background/res5", "maskdown", 1, 0, 1300 );
 
 	PlayBGM( 0, "Cafe", 120, 0 );
@@ -1411,9 +1390,7 @@ void main()
 	OutputLine(NULL, "　叔父さんは、ダム戦争が大人と子どもでここまで感じ方が違うものかと、感服（呆れ？）しているようだった。",
 		   NULL, "Uncle Yoshiroh seemed exasperated at how differently kids and adults treated the conflict.", Line_Normal);
 	ClearMessage();
-	FadeOutBGM( 0, 0, FALSE );
-	FadeOutBGM( 2, 0, FALSE );
-	ModDrawCharacter(19, 0, "transparent", "0", 0, 100, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, TRUE );
+	FadeOutBGM( 0, 300, FALSE );
 	PlayBGM( 1, "Mati", 120, 0 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
@@ -1490,7 +1467,9 @@ void main()
 		   NULL, " Definitely.\"", Line_Normal);
 	ClearMessage();
 	DrawSceneWithMask("black", "maskdown", 1, 0, 300 );
-	DrawScene("background/ryuuketu1", 400 );
+	FadeOutBGM( 1, 300, FALSE );
+	DrawSceneWithMask("background/ryuuketu1", "maskaa", 1, 0, 400 );
+	PlayBGM( 1, "msys09", 120, 0 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　嫌われ者だったダム現場の現場監督が、綿流しの祭の夜に、殺されて遺体をバラバラにされた。",
@@ -1530,8 +1509,7 @@ void main()
 		   NULL, "...After the dam project was officially frozen, we held Watanagashi purely as a festival.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
-	DrawSceneWithMask("background/ryuuketu1", "masktoketu", 1, 0, 500 );
-
+	DrawSceneWithMask("background/ryuuketu1", "maskaa", 1, 0, 500 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　祟りは再び起こったのだ。",
@@ -1666,7 +1644,10 @@ void main()
 	OutputLine(NULL, "　でも内心は、異郷に送られることで、オヤシロさまの祟りに遭うのでは……と、ちょっぴり怖がっていたことを覚えてる。",
 		   NULL, "But in fact, I was a little scared of the curse.", Line_Normal);
 	ClearMessage();
+	
+	FadeOutBGM( 1, 300, FALSE );
 	DrawSceneWithMask("background/res5", "maskup", 1, 0, 300 );
+	PlayBGM( 0, "mati", 120, 0 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>義郎</color>", NULL, "<color=#f5e6d3>Yoshiroh</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 0, "ps3/s06/00/152900027", 128, TRUE);
@@ -1754,11 +1735,7 @@ void main()
 	if(GetGlobalFlag(GCensor) <= 3){ModCallScriptSection("_zmeak_002_vm00_n01","dialog001");}
 	//VoiceMatchingEnd
 
-	FadeOutBGM( 0, 0, FALSE );
-	FadeOutBGM( 1, 0, FALSE );
-	FadeOutBGM( 2, 0, FALSE );
-	FadeOutBGM( 3, 0, FALSE );
-	ModDrawCharacter(19, 0, "transparent", "0", 0, 100, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, TRUE );
+	FadeOutBGM( 0, 300, FALSE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>義郎</color>", NULL, "<color=#f5e6d3>Yoshiroh</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 0, "ps3/s06/00/152900034", 128, TRUE);
@@ -1781,7 +1758,7 @@ void main()
 		   NULL, " ...What are you talking about?\"", Line_Normal);
 	ClearMessage();
 	DrawScene("black", 1000 );
-	PlayBGM( 0, "higurashi", 120, 0 );
+	PlayBGM( 0, "semi_r", 120, 0 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　ちくり。",
@@ -1835,6 +1812,8 @@ void main()
 	OutputLine(NULL, "……私は何もできず、ぼーっと座しているしかできなかった。",
 		   NULL, " I just sat there.", Line_Normal);
 	ClearMessage();
+	
+	FadeOutBGM( 0, 300, FALSE );
 	DrawScene("background/res4", 400 );
 	PlayBGM( 0, "getting_mad", 120, 0 );
 
@@ -1844,13 +1823,13 @@ void main()
 		   NULL, "\"Hmm...", Line_WaitForInput);
 	ModPlayVoiceLS(4, 0, "ps3/s06/00/152900038", 128, TRUE);
 	OutputLine(NULL, "実は賛成派の北条が転落事故で死んだ次の年にもな。",
-		   NULL, " It happened...", Line_WaitForInput);
+		   NULL, " The year after the death of the Houjous...", Line_WaitForInput);
 	ModPlayVoiceLS(4, 0, "ps3/s06/00/152900039", 128, TRUE);
 	OutputLine(NULL, "…つまりは去年なんだが。",
-		   NULL, " again the year after the death of the Houjous...", Line_WaitForInput);
+		   NULL, " It happened again...", Line_WaitForInput);
 	ModPlayVoiceLS(4, 0, "ps3/s06/00/152900040", 128, TRUE);
 	OutputLine(NULL, "またあったんだよ。」",
-		   NULL, " last year, in other words.\"", GetGlobalFlag(GLinemodeSp));
+		   NULL, " Last year, in other words.\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
@@ -1896,12 +1875,6 @@ void main()
 		   NULL, " The mayor even had to hold an emergency meeting......\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
-	StopSE( 0 );
 	CallScript( "&eye" );
-	DrawScene("black", 1000 );
-	FadeOutBGM( 0, 0, FALSE );
-	FadeOutBGM( 1, 0, FALSE );
-	FadeOutBGM( 2, 0, FALSE );
-	FadeOutBGM( 3, 0, FALSE );
-	ModDrawCharacter(19, 0, "transparent", "0", 0, 100, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, TRUE );
+	FadeOutBGM( 0, 300, TRUE );
 }
