@@ -4510,14 +4510,10 @@ void main()
 		   NULL, "\"You've heard about", Line_ContinueAfterTyping);
 	OutputLine(NULL, "というか建設大臣の孫だな…。",
 		   NULL, " the kidnapping case of", Line_ContinueAfterTyping);
-	SetValidityOfInput( FALSE );
-	Wait( 1000 );
-	SetValidityOfInput( TRUE );
-	OutputLine(NULL, "あれの誘拐事件の話は知ってるだろ…？」",
-		   NULL, " the grandson of the Minister of construction, right?\"", Line_Continue);
 	WaitToFinishVoicePlaying(4);
 	ModPlayVoiceLS(4, 18, "ps3/s06/18/153300133", 128, TRUE);
-	OutputLineAll(NULL, "", GetGlobalFlag(GLinemodeSp));
+	OutputLine(NULL, "あれの誘拐事件の話は知ってるだろ…？」",
+		   NULL, " the grandson of the Minister of construction, right?\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }

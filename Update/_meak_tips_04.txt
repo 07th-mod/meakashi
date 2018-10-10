@@ -7,20 +7,19 @@ void main()
 	FadeOutBGM( 3, 0, FALSE );
 	ClearMessage();
 
-	PlayBGM( 0, "getting_mad", 120, 0 );
 	DrawScene("background/nort", 400 );
+	PlayBGM( 0, "getting_mad", 120, 0 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　ここで、あの奇怪な少女との雨の中の会話を考察してみよう。",
 		   NULL, "Why don't I relate my encounter with that creepy girl in the rain?", Line_Normal);
 	ClearMessage();
-	PlaySE( 0, "s_page", 128, 64 );
-	DrawScene("black", 0 );
-	DrawFilm( 2, 0x88, 0x88, 0x88, 256, 0, 0, TRUE );
-
+	
 	DisableWindow();
+	PlaySE( 0, "s_page", 128, 64 );
+	DrawScene("black", 300 );
+	DrawFilm( 2, 0x88, 0x88, 0x88, 256, 0, 0, TRUE );
 	ModDrawCharacter(2, 2, "sprite/normal/re2a_def_a1_", "2", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
-	DisplayWindow();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　竜宮レナ。",
@@ -214,6 +213,8 @@ void main()
 	OutputLine(NULL, "　…彼女は、私の知らないことを、まだ何か知っているような気がする…。",
 		   NULL, "...I guess she still knows something I don't...", Line_Normal);
 	ClearMessage();
+	
+	DisableWindow();
 	Wait( 1000 );
 	DrawScene("black", 1000 );
 }
