@@ -408,6 +408,7 @@ void main()
 	Wait( 1000 );
 	SetValidityOfInput( TRUE );
 	PlayBGM( 0, "Ame", 120, 0 );
+	PlayBGM( 1, "Ame", 120, 0 );
 	
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　レナの予告通り、途中で私たちはすごい土砂降りに見舞われることになる。",
@@ -474,6 +475,7 @@ void main()
 		   NULL, "...So it wasn't surprising that she knew as well.", Line_Normal);
 	ClearMessage();
 	
+	FadeOutBGM( 1, 400, FALSE );
 	DrawScene("black", 400 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -524,6 +526,7 @@ void main()
 	ClearMessage();
 	
 	DrawSceneWithMask("background/mob1_01", "maskup", 1, 0, 300 );
+	PlayBGM( 1, "Ame", 120, 0 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 2, "ps3/s06/02/150200010", 128, TRUE);
@@ -635,6 +638,7 @@ void main()
 		   NULL, " You know that lies can become true sometimes?\"", Line_Normal);
 	ClearMessage();
 	
+	FadeOutBGM( 1, 400, FALSE );
 	DrawScene("black", 400 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -670,6 +674,7 @@ void main()
 	ClearMessage();
 	
 	DrawSceneWithMask("background/mob1_01", "maskup", 1, 0, 300 );
+	PlayBGM( 1, "Ame", 120, 0 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 2, "ps3/s06/02/150200022", 128, TRUE);
@@ -769,6 +774,7 @@ void main()
 		   NULL, " but he'll finish by Satoko-chan's birthday, at the latest.\"", Line_Normal);
 	ClearMessage();
 	
+	FadeOutBGM( 1, 300, FALSE );
 	DrawSceneWithMask("black", "maskdown", 1, 0, 300 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -857,7 +863,7 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 6, "ps3/s06/06/150600583", 128, TRUE);
 	OutputLine(NULL, "「…………………っ。」",
-		   NULL, "\"............Ttsk.\"", Line_Normal);
+		   NULL, "\"............!\"", Line_Normal);
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -868,6 +874,7 @@ void main()
 	
 	DrawScene("background/mob1_01", 400 );
 	PlayBGM( 0, "ame", 120, 0 );
+	PlayBGM( 1, "Ame", 120, 0 );
 	SetValidityOfInterface(TRUE);
 	SetValidityOfSaving(TRUE);
 	
@@ -1045,6 +1052,7 @@ void main()
 	ClearMessage();
 	
 	FadeOutBGM( 0, 400, FALSE );
+	FadeOutBGM( 1, 400, FALSE );
 	DrawScene("black", 400 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
@@ -1245,6 +1253,7 @@ void main()
 	OutputLine(NULL, "　………私は、……得体の知れない寒さに襲われることになる。",
 		   NULL, "...And got the chills.", Line_Normal);
 	ClearMessage();
+	
 	PlayBGM( 0, "semi_r", 120, 0 );
 	DrawScene("scene/204b", 400 );
 
@@ -1419,6 +1428,7 @@ void main()
 	OutputLine(NULL, "…思いだした。",
 		   NULL, " I remember.", Line_Normal);
 	ClearMessage();
+	
 	DrawScene("black", 400 );
 	DrawScene("background/hi1", 400 );
 
@@ -1462,6 +1472,7 @@ void main()
 	OutputLine(NULL, "　でも、…なら、…私はセーフでもいいはず。",
 		   NULL, "But... I should be okay.", Line_Normal);
 	ClearMessage();
+	
 	DrawScene("black", 400 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -1510,6 +1521,7 @@ void main()
 	OutputLine(NULL, "　…かもしれない。",
 		   NULL, " I'm still afraid of it.", Line_Normal);
 	ClearMessage();
+	
 	DrawScene("background/mob1_01", 400 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
@@ -1550,6 +1562,7 @@ void main()
 	OutputLine(NULL, "……雛見沢を捨てて、どこかへ逃げ出したいと思ってるから。」",
 		   NULL, " even if only unconsciously...\"", Line_Normal);
 	ClearMessage();
+	
 	FadeOutBGM( 0, 300, FALSE );
 	PlayBGM( 2, "kaze", 120, 0 );
 
@@ -1606,6 +1619,7 @@ void main()
 	OutputLine(NULL, "　……私は彼女が何を伝えようとしているのか…耳を傾けるだけで精一杯だった。",
 		   NULL, "...I continued trying to figure out what she was saying.", Line_Normal);
 	ClearMessage();
+	
 	DrawSceneWithMask("black", "maskdown", 1, 0, 300 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
@@ -1710,6 +1724,7 @@ void main()
 	OutputLine(NULL, "　ただ、…耳を傾けることが許されるだけだ。",
 		   NULL, "I could only feel stunned.", Line_Normal);
 	ClearMessage();
+	
 	DrawScene("background/hi1", 400 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
@@ -1742,6 +1757,7 @@ void main()
 	OutputLine(NULL, "……………………。」",
 		   NULL, ".....................\"", Line_Normal);
 	ClearMessage();
+	
 	DrawScene("black", 400 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -1756,6 +1772,7 @@ void main()
 	OutputLine(NULL, "……そもそもレナがしている話の全容がつかめず、私は煙に巻かれたかのような印象を受けるのみだった。",
 		   NULL, " In general, she confused me even more.", Line_Normal);
 	ClearMessage();
+	
 	DrawSceneWithMask("background/hi1", "maskleft", 1, 0, 300 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
@@ -1792,6 +1809,7 @@ void main()
 	OutputLine(NULL, "その心を、オヤシロさまは許さなかったんだね。",
 		   NULL, " Oyashiro-sama won't allow that.", Line_Normal);
 	ClearMessage();
+	
 	DrawScene("black", 400 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
@@ -1922,6 +1940,7 @@ void main()
 
 	FadeOutBGM( 2, 300, FALSE );
 	PlayBGM( 0, "ame", 120, 0 );
+	PlayBGM( 2, "ame", 120, 0 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　……土砂降りは、少しも弱まる気配はない。",
@@ -1970,6 +1989,7 @@ void main()
 	PlaySE( 4, "wa_022", 128, 64 );
 	FadeOutBGM( 0, 300, FALSE );
 	FadeOutBGM( 1, 300, FALSE );
+	FadeOutBGM( 2, 300, FALSE );
 	
 	OutputLine(NULL, "…綿流しのお祭りは。",
 		   NULL, " right around the corner.", Line_Normal);
@@ -1977,6 +1997,7 @@ void main()
 	
 	DisableWindow();
 	PlayBGM( 0, "ame", 120, 0 );
+	PlayBGM( 2, "ame", 120, 0 );
 	SetValidityOfInput( FALSE );
 	Wait( 2000 );
 	SetValidityOfInput( TRUE );
@@ -2000,6 +2021,7 @@ void main()
 	ClearMessage();
 	
 	FadeOutBGM( 0, 400, FALSE );
+	FadeOutBGM( 2, 400, FALSE );
 	DrawScene("black", 400 );
 	PlayBGM( 0, "suzu", 120, 0 );
 
