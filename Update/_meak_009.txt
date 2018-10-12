@@ -5,7 +5,10 @@ void main()
 	FadeOutBGM( 2, 0, FALSE );
 	FadeOutBGM( 3, 0, FALSE );
 	ClearMessage();
+	
+	DrawScene("black", 100 );
 	PlayBGM( 0, "semi", 120, 0 );
+	PlayBGM( 2, "suzume", 120, 0 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　大の字になって、私は天井を見上げているだけだ。",
@@ -44,6 +47,8 @@ void main()
 	OutputLine(NULL, "………綿流しのお祭りは。",
 		   NULL, " The Watanagashi festival, I mean.", Line_Normal);
 	ClearMessage();
+	
+	DisableWindow();
 	PlaySE( 0, "s_interphone", 128, 64 );
 	SetValidityOfInput( FALSE );
 	Wait( 1000 );
@@ -54,12 +59,22 @@ void main()
 		   NULL, "I heard the doorbell ringing.", Line_Normal);
 	ClearMessage();
 
+	DisableWindow();
+	PlaySE( 0, "s_interphone", 128, 64 );
+	SetValidityOfInput( FALSE );
+	Wait( 2000 );
+	SetValidityOfInput( TRUE );
+	PlaySE( 0, "s_interphone", 128, 64 );
+	SetValidityOfInput( FALSE );
+	Wait( 1000 );
+	SetValidityOfInput( TRUE );
+	
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　無視していたが、しつこく鳴る。",
 		   NULL, "I ignored it at first, but it rung persistently.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
-
+	PlaySE( 4, "s_knock", 128, 64 );
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　やがてノックと、葛西の無神経な声が聞こえてきた。",
 		   NULL, "I started hearing knocking, alongside Kasai's rude voice.", Line_Normal);
@@ -87,8 +102,9 @@ void main()
 	OutputLine(NULL, "　だが、最近、私が食事を取らず、元気をなくして横になっているばかりだということは知っていた。",
 		   NULL, "He must've known that I hadn't eaten enough and that I'd been feeling down lately.", Line_Normal);
 	ClearMessage();
-	DrawSceneWithMask("background/si_g1", "maskleft", 1, 0, 300 );
-	ModDrawCharacter(2, 15, "sprite/normal/kasa_2_", "2", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
+	
+	ModDrawCharacter(2, 15, "sprite/normal/kasa_2_", "2", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, FALSE );
+	DrawScene("background/si_g1", 300 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#76523d>葛西</color>", NULL, "<color=#76523d>Kasai</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 15, "ps3/s06/15/151500119", 128, TRUE);
@@ -109,10 +125,12 @@ void main()
 	OutputLine(NULL, "　だが、葛西の買ってきた弁当が机の上に置かれると、私の嗅覚は敏感に反応し、無様にお腹を鳴らして見せるのだった。",
 		   NULL, "But when Kasai put the food on the table, my stomach reacted in a very primitive way by making some noise.", Line_Normal);
 	ClearMessage();
+	
 	DisableWindow();
-	ModDrawCharacter(2, 15, "sprite/normal/kasa_1_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
-	DisplayWindow();
-	PlayBGM( 0, "03_cele", 120, 0 );
+	FadeOutBGM( 0, 300, FALSE );
+	FadeOutBGM( 2, 300, FALSE );
+	ModDrawCharacter(2, 15, "sprite/normal/kasa_1_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );
+	PlayBGM( 1, "msys06", 120, 0 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#76523d>葛西</color>", NULL, "<color=#76523d>Kasai</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 15, "ps3/s06/15/151500120", 128, TRUE);
@@ -171,8 +189,9 @@ void main()
 	OutputLine(NULL, "　私が弁当を突っつく間、葛西は私が放り出していた雑誌類を漁って読んでいた。",
 		   NULL, "While I nibbled on the food, Kasai read through the magazines I bought.", Line_Normal);
 	ClearMessage();
-	DrawSceneWithMask("background/si_h3", "maskright", 1, 0, 300 );
-	ModDrawCharacter(3, 15, "sprite/normal/kasa_2_", "2", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
+	
+	ModDrawCharacter(3, 15, "sprite/normal/kasa_2_", "2", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 0, FALSE );
+	DrawScene("background/si_h3", 300 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 6, "ps3/s06/06/150600718_1", 128, TRUE);
@@ -212,9 +231,9 @@ void main()
 	OutputLine(NULL, "全部知ってる…？！」",
 		   NULL, " about that...?!\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+	
 	DisableWindow();
 	ModDrawCharacter(3, 15, "sprite/normal/kasa_1_", "0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
-	DisplayWindow();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#76523d>葛西</color>", NULL, "<color=#76523d>Kasai</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 15, "ps3/s06/15/151500125", 128, TRUE);
@@ -247,9 +266,9 @@ void main()
 	OutputLine(NULL, "　私は返事をせず、一口分残しておいた最後のクリームコロッケを口に放り込む。",
 		   NULL, "Without responding, I threw the last croquette in my mouth.", Line_Normal);
 	ClearMessage();
+	
 	DisableWindow();
 	ModDrawCharacter(3, 15, "sprite/normal/kasa_2_", "2", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
-	DisplayWindow();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#76523d>葛西</color>", NULL, "<color=#76523d>Kasai</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 15, "ps3/s06/15/151500129", 128, TRUE);
@@ -396,8 +415,9 @@ void main()
 	OutputLine(NULL, "　悟史くんを悩ませる二人が丸ごと消えてくれれば、悟史くんは全ての悩みから解放される！",
 		   NULL, "Satoshi-kun will be freed from every source of his worries all at once!", Line_Normal);
 	ClearMessage();
+	
+	ModDrawCharacter(3, 15, "sprite/normal/kasa_1_", "0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 0, FALSE );
 	DrawSceneWithMask("background/si_h3", "maskup", 1, 0, 300 );
-	ModDrawCharacter(3, 15, "sprite/normal/kasa_1_", "0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 6, "ps3/s06/06/150600734", 128, TRUE);
@@ -407,9 +427,9 @@ void main()
 	OutputLine(NULL, "今年のオヤシロさまの祟りの犠牲者は誰かって、もう決まってるの？」",
 		   NULL, " do you know if this year's victim has been selected already?\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+	
 	DisableWindow();
 	ModDrawCharacter(3, 15, "sprite/normal/kasa_2_", "2", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
-	DisplayWindow();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#76523d>葛西</color>", NULL, "<color=#76523d>Kasai</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 15, "ps3/s06/15/151500138", 128, TRUE);
@@ -493,9 +513,9 @@ void main()
 	OutputLine(NULL, "　気を利かせてくれるとうれしいんですけど。」",
 		   NULL, " Aren't you going to do something about it?\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+	
 	DisableWindow();
 	ModDrawCharacter(3, 15, "sprite/normal/kasa_1_", "0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
-	DisplayWindow();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#76523d>葛西</color>", NULL, "<color=#76523d>Kasai</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 15, "ps3/s06/15/151500145", 128, TRUE);
@@ -565,7 +585,9 @@ void main()
 	OutputLine(NULL, "　…ぱっと考えれば、もっともらしい仇敵がほとんどいなくなった今、次にもっともらしい村の仇敵は、北条の叔父叔母夫婦しか思いつかない。",
 		   NULL, "...Only the Houjou couple was left, since most of the other enemies had already gone.", Line_Normal);
 	ClearMessage();
-	PlayBGM( 1, "semi", 120, 0 );
+
+	PlayBGM( 0, "semi", 120, 0 );
+	PlayBGM( 2, "suzume", 120, 0 );
 	DrawScene("white", 400 );
 	DrawScene("background/sora", 400 );
 
@@ -606,17 +628,16 @@ void main()
 	OutputLine(NULL, "暑い。",
 		   NULL, " It's hot.", Line_Normal);
 	ClearMessage();
+	
 	DrawScene("black", 1000 );
+	FadeOutBGM( 0, 400, FALSE );
+	FadeOutBGM( 1, 400, FALSE );
+	FadeOutBGM( 2, 400, FALSE );
 	SetValidityOfInput( FALSE );
 	Wait( 2000 );
 	SetValidityOfInput( TRUE );
-	FadeOutBGM( 0, 0, FALSE );
-	FadeOutBGM( 1, 0, FALSE );
-	FadeOutBGM( 2, 0, FALSE );
-	FadeOutBGM( 3, 0, FALSE );
-	ModDrawCharacter(19, 0, "transparent", "0", 0, 100, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, TRUE );
-
-	DrawScene("background/si_h2", 400 );
+	DrawScene("white", 1000 );
+	DrawSceneWithMask("background/si_h2", "maskm1", 0, 0, 400 );
 	PlayBGM( 0, "higurashi", 120, 0 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -664,14 +685,14 @@ void main()
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　その時。",
-		   NULL, "At that moment.", Line_WaitForInput);
-	FadeOutBGM( 0, 0, FALSE );
-	FadeOutBGM( 1, 0, FALSE );
-	FadeOutBGM( 2, 0, FALSE );
-	FadeOutBGM( 3, 0, FALSE );
-	ModDrawCharacter(19, 0, "transparent", "0", 0, 100, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, TRUE );
+		   NULL, "At that moment.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
+	
+	DisableWindow();
+	FadeOutBGM( 0, 300, FALSE );
 	PlayBGM( 1, "M_Denwa8k", 120, 0 );
 
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "………電話が鳴った。",
 		   NULL, " ......The phone rang.", Line_Normal);
 	ClearMessage();
@@ -701,8 +722,7 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　だが。",
 		   NULL, "But...", Line_WaitForInput);
-	FadeOutBGM( 1, 0, FALSE );
-	ModDrawCharacter(19, 0, "transparent", "0", 0, 100, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, TRUE );
+	FadeOutBGM( 1, 300, FALSE );
 
 	OutputLine(NULL, "電話の相手は違った。",
 		   NULL, " It wasn't Kasai on the phone.", Line_Normal);
@@ -736,7 +756,9 @@ void main()
 	OutputLine(NULL, "………悟史から電話が来たんだよ。」",
 		   NULL, " Satoshi called me.\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
-	PlayBGM( 0, "hgrs01", 120, 0 );
+	
+	FadeOutBGM( 0, 300, FALSE );
+	PlayBGM( 1, "hgrs01", 120, 0 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 6, "ps3/s06/06/150600751", 128, TRUE);
@@ -787,7 +809,7 @@ void main()
 	OutputLine(NULL, "　私は少し呆けた後、我に返り、雑誌の背表紙の余白部分に電話番号を書き取った。",
 		   NULL, "I was stunned for a second, but then recovered and wrote down the number on the back of a magazine.", Line_Normal);
 	ClearMessage();
-	DrawScene("background/si_h2", 400 );
+	DrawScene("background/si_h2_01", 400 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 6, "ps3/s06/06/150600754", 128, TRUE);
@@ -847,7 +869,10 @@ void main()
 	OutputLine(NULL, "わずかの躊躇の後、呼吸を止めて一気に書きとめた電話番号をダイヤルした。",
 		   NULL, " Then after a second, I dialed the number in a flash.", Line_Normal);
 	ClearMessage();
+	
+	FadeOutBGM( 1, 300, FALSE );
 	DrawScene("black", 400 );
+	PlayBGM( 0, "higurashi", 120, 0 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　やがて、呼び出し音が、",
@@ -918,6 +943,9 @@ void main()
 		   NULL, " Are you okay now?\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
+	FadeOutBGM( 0, 300, FALSE );
+	PlayBGM( 1, "t1", 120, 0 );
+	
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　悟史くんは、…悟史くんでいてくれた。",
 		   NULL, "That was the Satoshi-kun I knew.", GetGlobalFlag(GLinemodeSp));
@@ -1047,10 +1075,10 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 6, "ps3/s06/06/150600764", 128, TRUE);
 	OutputLine(NULL, "「…それより、悟史くん…。",
-		   NULL, "\"...Are you all right,", Line_WaitForInput);
+		   NULL, "\"...Satoshi-kun,", Line_WaitForInput);
 	ModPlayVoiceLS(4, 6, "ps3/s06/06/150600765", 128, TRUE);
 	OutputLine(NULL, "………大丈夫…？",
-		   NULL, " Satoshi-kun...?", Line_WaitForInput);
+		   NULL, " are you all right...?", Line_WaitForInput);
 	ModPlayVoiceLS(4, 6, "ps3/s06/06/150600766", 128, TRUE);
 	OutputLine(NULL, "　いろいろと大変なのに、…沙都子の誕生日プレゼントのためにアルバイトまでして。",
 		   NULL, " You're working, and you're under a lot of stress......", Line_WaitForInput);
@@ -1099,10 +1127,7 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 6, "ps3/s06/06/150600771", 128, TRUE);
 	OutputLine(NULL, "「……………………。",
-		   NULL, "\".....................", GetGlobalFlag(GLinemodeSp));
-	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
-
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
+		   NULL, "\".....................", Line_WaitForInput);
 	ModPlayVoiceLS(4, 6, "ps3/s06/06/150600772", 128, TRUE);
 	OutputLine(NULL, "…沙都子、……大変なことになっていますね…。",
 		   NULL, "...Seems like it...", Line_WaitForInput);
@@ -1111,12 +1136,17 @@ void main()
 		   NULL, " Is she all right?\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
+	FadeOutBGM( 1, 300, FALSE );
+	PlaySE( 4, "wa_025", 128, 64 );
+	
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#ffdc6f>悟史</color>", NULL, "<color=#ffdc6f>Satoshi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 7, "ps3/s06/07/151200202", 128, TRUE);
 	OutputLine(NULL, "「……あれが、…大丈夫なように見えるのかよ……？」",
 		   NULL, "\"...Does she look all right to you...?\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
+	PlayBGM( 1, "msys17", 120, 0 );
+	
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　悟史くんの声色が急にどす黒くなる。",
 		   NULL, "He suddenly sounded upset...", Line_WaitForInput);
@@ -1235,7 +1265,6 @@ void main()
 	OutputLine(NULL, "　あるいは無難な言葉が思いついたのか、それを口にした。",
 		   NULL, "His words sounded hollow.", Line_Normal);
 	ClearMessage();
-	PlaySE( 0, "s_suzu", 128, 64 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#ffdc6f>悟史</color>", NULL, "<color=#ffdc6f>Satoshi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 7, "ps3/s06/07/151200208", 128, TRUE);
@@ -1457,7 +1486,7 @@ void main()
 	OutputLine(NULL, "　…私はそれが嫌で、少し不機嫌に突っ返す。",
 		   NULL, "...I didn't like the sound of that, so I intentionally sounded sulky.", Line_Normal);
 	ClearMessage();
-	DrawSceneWithMask("background/si_h2", "maskup", 1, 0, 300 );
+	DrawSceneWithMask("background/si_h2_01", "maskup", 1, 0, 300 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　それからしばらくの間。",
@@ -1515,12 +1544,10 @@ void main()
 	// (backup) SetValidityOfInput( TRUE );
 	OutputLine(NULL, "………ほら、",
 		   NULL, "...", Line_WaitForInput);
-	FadeOutBGM( 0, 0, FALSE );
-	FadeOutBGM( 1, 0, FALSE );
-	FadeOutBGM( 2, 0, FALSE );
-	FadeOutBGM( 3, 0, FALSE );
-	ModDrawCharacter(19, 0, "transparent", "0", 0, 100, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, TRUE );
 
+	FadeOutBGM( 1, 300, FALSE );
+	PlayBGM( 0, "suzu", 120, 0 );
+	
 	ModPlayVoiceLS(4, 7, "ps3/s06/07/151200230", 128, TRUE);
 	OutputLine(NULL, "………オヤシロさまの、",
 		   NULL, " ...in Oyashiro-sama's", Line_Continue);
@@ -1530,7 +1557,6 @@ void main()
 	OutputLine(NULL, "祟り。」",
 		   NULL, " curse.\"", Line_Normal);
 	ClearMessage();
-	PlayBGM( 1, "suzu", 120, 0 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 6, "ps3/s06/06/150600793", 128, TRUE);
@@ -1811,7 +1837,7 @@ void main()
 	OutputLine(NULL, "　…沙都子にぬいぐるみを買ったら、あとは何の保証もできないというようにしか聞こえなかった。",
 		   NULL, "...He sounded as though he didn't care what would happen after he bought the teddy bear.", Line_Normal);
 	ClearMessage();
-	DrawScene("background/si_h2", 400 );
+	DrawScene("background/si_h2_01", 400 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#ffdc6f>悟史</color>", NULL, "<color=#ffdc6f>Satoshi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 7, "ps3/s06/07/151200249", 128, TRUE);
@@ -1854,11 +1880,7 @@ void main()
 	// (backup) SetValidityOfInput( FALSE );
 	Wait( 1100 );
 	// (backup) SetValidityOfInput( TRUE );
-	FadeOutBGM( 0, 0, FALSE );
-	FadeOutBGM( 1, 0, FALSE );
-	FadeOutBGM( 2, 0, FALSE );
-	FadeOutBGM( 3, 0, FALSE );
-	ModDrawCharacter(19, 0, "transparent", "0", 0, 100, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, TRUE );
+	FadeOutBGM( 0, 300, FALSE );
 
 	OutputLine(NULL, "…………頼むからね。」",
 		   NULL, " Satoko to you.\"", Line_Normal);
@@ -1927,6 +1949,7 @@ void main()
 	ClearMessage();
 
 	CallScript( "&eyeCamp" );
+	FadeOutBGM( 0, 1000, TRUE );
 	SetValidityOfSkipping( FALSE );
 	DrawSceneWithMask("tips/gettip_meak009", "mask1900", 7, 0, 400 );
 	Wait( 5000 );
