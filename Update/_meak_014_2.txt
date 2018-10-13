@@ -6,20 +6,18 @@ void main()
 	FadeOutBGM( 3, 0, FALSE );
 	ClearMessage();
 
-	DrawScene("background/sora", 1000 );
-	SetValidityOfInput( FALSE );
-	Wait( 4000 );
-	SetValidityOfInput( TRUE );
+	DrawScene("black", 0 );
+	PlayBGM( 0, "higurashi", 120, 0 );
 	DrawScene("background/sora2", 1000 );
 	SetValidityOfInput( FALSE );
 	Wait( 2000 );
 	SetValidityOfInput( TRUE );
 	DrawScene("background/sora_01", 1000 );
-	PlayBGM( 0, "yoru", 120, 0 );
+	FadeOutBGM( 0, 1000, FALSE );
 	SetValidityOfInput( FALSE );
 	Wait( 2000 );
 	SetValidityOfInput( TRUE );
-	SetSpeedOfMessage( FALSE, 0 );
+	PlayBGM( 0, "yoru", 120, 0 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　図書館が閉館の時間になったので、私は閉め出された。",
@@ -38,6 +36,7 @@ void main()
 		   NULL, "I shut my door and locked it right away.", Line_Normal);
 	ClearMessage();
 
+	PlaySE( 4, "s_m_door8k", 128, 64 );
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　すると、隣の家の扉が開く音が聞こえた。",
 		   NULL, "Then, I heard the door of the neighboring apartment open.", Line_Normal);
@@ -76,11 +75,7 @@ void main()
 	OutputLine(NULL, "　鍵は開いてますよー。」",
 		   NULL, " I'll leave the door unlocked for you.\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
-	FadeOutBGM( 0, 0, FALSE );
-	FadeOutBGM( 1, 0, FALSE );
-	FadeOutBGM( 2, 0, FALSE );
-	FadeOutBGM( 3, 0, FALSE );
-	ModDrawCharacter(19, 0, "transparent", "0", 0, 100, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, TRUE );
+	FadeOutBGM( 0, 300, FALSE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 3, "ps3/s06/03/150300227", 128, TRUE);
@@ -112,12 +107,13 @@ void main()
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　扉がゆっくりと開き。",
-		   NULL, "The door slowly opened.", Line_WaitForInput);
+		   NULL, "The door slowly opened.", GetGlobalFlag(GLinemodeSp));
 	PlayBGM( 0, "demo_48khz", 120, 0 );
 	DrawScene("black", 400 );
 
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "……私の双子のもう一人、園崎魅音が姿を現した。",
-		   NULL, " ......My alter ego Mion Sonozaki appeared.", Line_Normal);
+		   NULL, "......My alter ego Mion Sonozaki appeared.", Line_Normal);
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -141,8 +137,9 @@ void main()
 	OutputLine(NULL, "全然可愛くない部屋で申し訳ないけどね。」",
 		   NULL, " Sorry this room doesn't look very cute.\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+	
+	ModDrawCharacter(2, 3, "sprite/normal/me2_sinmyou_a1_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, FALSE );
 	DrawScene("background/si_g1", 400 );
-	ModDrawCharacter(2, 3, "sprite/normal/me2_sinmyou_a1_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 3, "ps3/s06/03/150300229", 128, TRUE);
@@ -154,7 +151,7 @@ void main()
 	OutputLine(NULL, "　お姉は初めて上がる私の部屋に、ほんの少し緊張をしているようだった。",
 		   NULL, "Sis looked a bit tense when entering my room. It was her first time here.", Line_Normal);
 	ClearMessage();
-	DrawScene("background/si_h2", 400 );
+	DrawScene("background/si_h2_01", 400 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 3, "ps3/s06/03/150300230", 128, TRUE);
@@ -219,8 +216,9 @@ void main()
 	OutputLine(NULL, "　学園での生活とか、そういうことを色々と。",
 		   NULL, "I talked to her about school and whatnot.", Line_Normal);
 	ClearMessage();
+	
+	ModDrawCharacter(2, 3, "sprite/normal/me2_def_a1_", "2", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, FALSE );
 	DrawSceneWithMask("background/si_g1", "maskleft", 1, 0, 300 );
-	ModDrawCharacter(2, 3, "sprite/normal/me2_def_a1_", "2", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 3, "ps3/s06/03/150300235", 128, TRUE);
@@ -247,7 +245,6 @@ void main()
 	ClearMessage();
 	DisableWindow();
 	ModDrawCharacter(2, 3, "sprite/normal/me2_warai_a1_", "2", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );
-	DisplayWindow();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 3, "ps3/s06/03/150300237", 128, TRUE);
@@ -275,8 +272,9 @@ void main()
 	OutputLine(NULL, "　思えば、園崎詩音として生活することを許されてから、お姉とこうして落ち着いて話をするのは初めてだった。",
 		   NULL, "Come to think of it, this was the first time I'd talked to Sis since I was allowed to live as Shion Sonozaki.", Line_Normal);
 	ClearMessage();
+	
+	ModDrawCharacter(2, 3, "sprite/normal/me2_warai_a1_", "2", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, FALSE );
 	DrawScene("black", 1000 );
-	ModDrawCharacter(2, 3, "sprite/normal/me2_warai_a1_", "2", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　こうして魅音と話していると、……あの園崎本家での冷酷な次期頭首の顔は重ならない。",
@@ -324,10 +322,9 @@ void main()
 	OutputLine(NULL, "………やはり同じになったに違いない。",
 		   NULL, " I'd have done the same.", Line_Normal);
 	ClearMessage();
-	DisableWindow();
-	DrawScene("background/si_g1", 0 );
-	ModDrawCharacter(2, 3, "sprite/normal/me2_yowaki_a1_", "2", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
-	DisplayWindow();
+	
+	ModDrawCharacter(2, 3, "sprite/normal/me2_yowaki_a1_", "2", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 1000, FALSE );
+	DrawScene("background/si_g1", 1000 );
 
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
@@ -401,7 +398,6 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 	DisableWindow();
 	ModDrawCharacter(2, 3, "sprite/normal/me2_hau_a1_", "1", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );
-	DisplayWindow();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 3, "ps3/s06/03/150300243", 128, TRUE);
@@ -422,7 +418,6 @@ void main()
 	ClearMessage();
 	DisableWindow();
 	ModDrawCharacter(2, 3, "sprite/normal/me2_sinmyou_a1_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );
-	DisplayWindow();
 
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
@@ -483,20 +478,17 @@ void main()
 	OutputLine(NULL, "あれだけ痛い思いしたんですから。」",
 		   NULL, " My pain won't go to waste, then.\"", Line_Normal);
 	ClearMessage();
-	FadeOutBGM( 0, 0, FALSE );
-	FadeOutBGM( 1, 0, FALSE );
-	FadeOutBGM( 2, 0, FALSE );
-	FadeOutBGM( 3, 0, FALSE );
-	ModDrawCharacter(19, 0, "transparent", "0", 0, 100, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, TRUE );
+	FadeOutBGM( 0, 300, FALSE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 3, "ps3/s06/03/150300251", 128, TRUE);
 	OutputLine(NULL, "「悟史、………どこに行ったんだろうね。」",
-		   NULL, "\"I wonder where... Satoshi-kun disappeared to, though...\"", Line_Continue);
-	DrawFilm( 3, 255, 255, 255, 256, 0, 1000, TRUE );
-	OutputLineAll(NULL, "", Line_Normal);
-
+		   NULL, "\"I wonder where... Satoshi-kun disappeared to, though...\"", Line_Normal);
 	ClearMessage();
+	
+	DisableWindow();
+	Negative( 200 , TRUE );
+	PlaySE( 4, "s_glass", 128, 64 );
 	PlayBGM( 0, "semi_r", 120, 0 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -555,10 +547,10 @@ void main()
 	OutputLine(NULL, "　喉の奥がヒリヒリと絞り上げるように苦しくなる。",
 		   NULL, "I choked on a burning sensation in my throat.", Line_Normal);
 	ClearMessage();
-	FadeFilm( 0, TRUE );
-	DrawScene("black", 0 );
-	DrawScene("background/si_g1", 400 );
-	ModDrawCharacter(2, 3, "sprite/normal/me2_yowaki_a1_", "2", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
+	
+	DisableWindow();
+	FadeFilm( 300, FALSE );
+	ModDrawCharacter(2, 3, "sprite/normal/me2_yowaki_a1_", "2", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 300, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 3, "ps3/s06/03/150300252", 128, TRUE);
@@ -601,14 +593,12 @@ void main()
 	OutputLine(NULL, "　もう謝らなくていいと釘を刺したはずなのに、魅音は再び謝罪を口にした。",
 		   NULL, "Even though I'd told her not to apologize anymore, Mion apologized.", Line_Normal);
 	ClearMessage();
-	DrawScene("background/aka1", 400 );
+	DrawScene("background/aka1", 1000 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　……こいつの首根っこを締め上げてやる…。",
 		   NULL, "...I felt like strangling her...", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
-
-	PlayBGM( 1, "semi", 120, 0 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　悟史くんをどうしたのか、どこへ隠してしまったのか、白状させてやる…。",
@@ -665,7 +655,7 @@ void main()
 	OutputLine(NULL, "　…だが、それはもはや私の意思で吐き出されているものではなかった。",
 		   NULL, "...I wasn't speaking by my own will anymore.", Line_Normal);
 	ClearMessage();
-	DrawScene("background/aka2", 400 );
+	DrawScene("background/aka2", 1000 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　そう、………鬼だ。",
@@ -713,17 +703,15 @@ void main()
 		   NULL, "...I looked at her fingers.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
-	FadeOutBGM( 0, 0, FALSE );
-	FadeOutBGM( 1, 0, FALSE );
-	FadeOutBGM( 2, 0, FALSE );
-	FadeOutBGM( 3, 0, FALSE );
-	ModDrawCharacter(19, 0, "transparent", "0", 0, 100, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, TRUE );
-
+	FadeOutBGM( 0, 300, FALSE );
+	FadeOutBGM( 1, 300, FALSE );
+	PlaySE( 4, "wa_022", 128, 64 );
+	
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　私と同じように、左手の小指から中指の三本の爪が、私と同じように歪な形をしていた。",
 		   NULL, "Three of the fingernails on her left hand looked as ugly as mine.", Line_Normal);
 	ClearMessage();
-	PlayBGM( 0, "hgrs01", 120, 0 );
+	PlayBGM( 0, "msys17", 120, 0 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 6, "ps3/s06/06/150601288", 128, TRUE);
@@ -787,7 +775,7 @@ void main()
 	OutputLine(NULL, "詩音ばっかり…いつも可哀想で……、私たちは同じ双子なのに、…なんで詩音ばっかり…いつも差別されて………ひっく…！」",
 		   NULL, " it's always only you who has to suffer, even though we're twins... hic...!\"", Line_Normal);
 	ClearMessage();
-	DrawSceneWithMask("background/aka1", "maskup", 1, 0, 300 );
+	DrawScene("background/aka1", 1000 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　私が悟史くんを好きになったように、…魅音が悟史くんを好きだったとしても、何の不思議もない。",
@@ -840,7 +828,7 @@ void main()
 	OutputLine(NULL, "　うっく……ひっく…！」",
 		   NULL, " That's... hic...!\"", Line_Normal);
 	ClearMessage();
-	DrawScene("black", 400 );
+	DrawScene("black", 2000 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　この馬鹿は、…人を騙すために自在に涙腺を緩められるほど器用じゃない。",
@@ -857,7 +845,7 @@ void main()
 	OutputLine(NULL, "　……私の中に宿った乱暴な感情は、まるで水に溶けるように…消えていく。",
 		   NULL, "......Her tears dissolved my demon's anger like how the sun melts ice...", Line_Normal);
 	ClearMessage();
-	ModDrawCharacter(0, 3, "sprite/normal/me2_yowaki_a1_", "2", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 9, 0, FALSE );
+	ModDrawCharacter(1, 3, "sprite/normal/me2_yowaki_a1_", "2", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 0, FALSE );
 	DrawScene("background/si_g1", 400 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
@@ -943,7 +931,11 @@ void main()
 	OutputLine(NULL, "　悟史くんを園崎本家が失踪させたなんてことは絶対にない。",
 		   NULL, "It absolutely wasn't the Sonozaki family that made him disappear.", Line_Normal);
 	ClearMessage();
-	DrawScene("background/aka2", 400 );
+	
+	FadeOutBGM( 0, 1000, FALSE );
+	DrawScene("background/aka2", 2000 );
+	PlaySE( 4, "wa_025", 128, 64 );
+	PlayBGM( 1, "yabaisemi", 128, 0 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　ジャア、…悟史クンハ、オヤシロサマノ祟リデ消エタト、本気デ思ウノカイ？",
@@ -956,7 +948,8 @@ void main()
 	OutputLine(NULL, "　でも、魅音は違う、やってない！",
 		   NULL, " And Mion didn't do it!", Line_Normal);
 	ClearMessage();
-	DrawScene("background/aka1", 400 );
+	DrawScene("background/aka1", 1000 );
+	PlaySE( 4, "wa_025", 128, 64 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　祟リデモナク、園崎本家デモナイナラ、ジャア誰ガ悟史クンヲ「鬼隠シ」ニシタッテ言ウンダイ？",
@@ -974,7 +967,8 @@ void main()
 	OutputLine(NULL, "　魅音が違うと言っているんだから、園崎家じゃない！！",
 		   NULL, "It's not the Sonozaki family because Mion says so!!", Line_Normal);
 	ClearMessage();
-	DrawScene("background/aka2", 400 );
+	DrawScene("background/aka2", 1000 );
+	PlaySE( 4, "wa_025", 128, 64 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　馬鹿詩音。",
@@ -1032,7 +1026,10 @@ void main()
 	OutputLine(NULL, "　そして二度と現われるな…！！",
 		   NULL, " Don't ever show up again...!!", Line_Normal);
 	ClearMessage();
-	DrawScene("black", 1000 );
+	
+	FadeOutBGM( 1, 300, FALSE );
+	PlaySE( 4, "s_glass", 128, 64 );
+	DrawScene("black", 2000 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　私の奥底の、鬼の感情が薄れて消えていく………。",
@@ -1043,8 +1040,12 @@ void main()
 	OutputLine(NULL, "　全身の力が抜け、…私は魅音を抱いたまま、床にへたり込んだ。",
 		   NULL, "My body went limp... and I fell to the floor while holding Mion.", Line_Normal);
 	ClearMessage();
+	
+	DisableWindow();
+	PlaySE( 4, "wa_003", 128, 64 );
+	ModDrawCharacter(2, 3, "sprite/normal/me2_yowaki_a1_", "2", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, FALSE );
 	DrawSceneWithMask("background/si_g1", "maskup", 1, 0, 300 );
-	ModDrawCharacter(2, 3, "sprite/normal/me2_yowaki_a1_", "2", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
+	PlayBGM( 0, "yoru", 128, 0 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 3, "ps3/s06/03/150300267", 128, TRUE);
@@ -1187,6 +1188,7 @@ void main()
 	ClearMessage();
 
 	CallScript( "&eyeCamp" );
+	FadeOutBGM( 0, 1000, TRUE );
 	SetValidityOfSkipping( FALSE );
 	DrawSceneWithMask("tips/gettip_meak014", "mask1900", 7, 0, 400 );
 	Wait( 5000 );

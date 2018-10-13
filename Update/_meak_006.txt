@@ -20,7 +20,7 @@ void main()
 	ClearMessage();
 	
 	DisableWindow();
-	ModDrawCharacterWithFiltering(2, 10, "sprite/normal/iri3_warai_", "2", "maskright", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 10, 300, TRUE );
+	ModDrawCharacter(2, 10, "sprite/normal/iri3_warai_", "2", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 300, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#c89a80>入江</color>", NULL, "<color=#c89a80>Irie</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 10, "ps3/s06/10/151000001", 128, TRUE);
@@ -53,7 +53,7 @@ void main()
 	ClearMessage();
 	
 	DisableWindow();
-	ModDrawCharacterWithFiltering(1, 7, "sprite/normal/sato2_def1_", "0", "maskleft", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 8, 300, TRUE );
+	ModDrawCharacter(1, 7, "sprite/normal/sato2_def1_", "0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 8, 300, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#ffdc6f>悟史</color>", NULL, "<color=#ffdc6f>Satoshi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 7, "ps3/s06/07/151200116", 128, TRUE);

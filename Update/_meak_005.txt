@@ -956,7 +956,7 @@ void main()
 	SetValidityOfInput( TRUE );
 	DrawScene("black", 400 );
 	SetSpeedOfMessage( FALSE, 0 );
-	ModDrawCharacterWithFiltering(2, 7, "sprite/normal/sato1_def1_", "0", "maskright", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 10, 0, FALSE );
+	ModDrawCharacter(2, 7, "sprite/normal/sato1_def1_", "0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, FALSE );
 	DrawScene("background/tennai1", 400 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#ffdc6f>悟史</color>", NULL, "<color=#ffdc6f>Satoshi</color>", NULL, Line_ContinueAfterTyping); }
