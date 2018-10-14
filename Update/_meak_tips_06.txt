@@ -6,8 +6,8 @@ void main()
 	FadeOutBGM( 2, 0, FALSE );
 	FadeOutBGM( 3, 0, FALSE );
 	ClearMessage();
+	
 	DrawScene("background/aka1", 1000 );
-
 	PlayBGM( 0, "hig_sample_kyouki", 120, 0 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -95,6 +95,8 @@ void main()
 	OutputLine(NULL, "僕に。",
 		   NULL, " filled with hatred.", Line_Normal);
 	ClearMessage();
+	
+	DisableWindow();
 	Wait( 1000 );
 	DrawScene("black", 1000 );
 }

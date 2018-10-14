@@ -528,7 +528,8 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 6, "ps3/s06/06/150601997", 128, TRUE);
 	OutputLine(NULL, "「祭具殿を侵した罪が、どれほどの大罪か。",
-		   NULL, "\"Don't you know", Line_WaitForInput);
+		   NULL, "\"Don't you know", Line_Continue);
+	WaitToFinishVoicePlaying(4);
 	ModPlayVoiceLS(4, 6, "ps3/s06/06/150601998", 128, TRUE);
 	OutputLine(NULL, "理解してないわけじゃないんでしょ？！」",
 		   NULL, " how serious a crime trespassing in the ritual storehouse is?!\"", GetGlobalFlag(GLinemodeSp));

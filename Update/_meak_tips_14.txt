@@ -7,8 +7,8 @@ void main()
 	FadeOutBGM( 3, 0, FALSE );
 	ClearMessage();
 
-	PlayBGM( 0, "depressive paranoia", 120, 0 );
 	DrawScene("background/jsa1", 1000 );
+	PlayBGM( 0, "depressive paranoia", 120, 0 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　祭具殿の不可侵性は、オヤシロさま崇拝の中でも群を抜く。",
@@ -82,6 +82,7 @@ void main()
 	OutputLine(NULL, "この村を支配する真の感情の正体なのだ……。",
 		   NULL, " That was the true emotion ruling over this village...", Line_Normal);
 	ClearMessage();
+	DisableWindow();
 	Wait( 1000 );
 	DrawScene("black", 1000 );
 }

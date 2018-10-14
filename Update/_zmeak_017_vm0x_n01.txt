@@ -8,10 +8,9 @@ void dialog000()
 	OutputLine(NULL, "　私は少し騒ぎすぎて疲れたせいか、畳の上でぐったりとしていた。",
 		   NULL, "Maybe I overexerted a little. I was lying on the tatami floor.", Line_Normal);
 	ClearMessage();
-	DisableWindow();
-	DrawSceneWithMask("background/ima1", "maskright", 1, 0, 300 );
-	ModDrawCharacter(1, 15, "sprite/normal/kasa_3_", "0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 200, TRUE );
-	DisplayWindow();
+	
+	ModDrawCharacter(1, 15, "sprite/normal/kasa_2_", "0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 0, FALSE );
+	DrawScene("background/ima1", 400 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　葛西が、車に乗れますか？",

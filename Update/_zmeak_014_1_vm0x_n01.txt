@@ -49,6 +49,7 @@ void dialog002()
 
 void dialog003()
 {
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>Ooishi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 11, "ps3/s06/11/150700299", 128, TRUE);
 	OutputLine(NULL, "…………私ゃ、この大バカタレは何かの間違いだと思ってます。」",
 		   NULL, " ...I believe that this moron is some kind of mistake.\"", GetGlobalFlag(GLinemodeSp));
@@ -83,9 +84,6 @@ void dialog005()
 	ModPlayVoiceLS(4, 11, "ps3/s06/11/150700325", 128, TRUE);
 	OutputLine(NULL, "そうなると、悟史くんの扱いは単なる家出人になります。",
 		   NULL, " If that happens, Satoshi-kun's disappearance will be treated as just another runaway minor. ", GetGlobalFlag(GLinemodeSp));
-	DisableWindow();
-	ModDrawCharacter(2, 11, "sprite/normal/oisi1_4_", "2", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );
-	DisplayWindow();
 }
 
 void dialog006()

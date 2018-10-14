@@ -7,8 +7,8 @@ void main()
 	FadeOutBGM( 3, 0, FALSE );
 	ClearMessage();
 
-	PlayBGM( 0, "getting_mad", 120, 0 );
 	DrawScene("background/nort", 400 );
+	PlayBGM( 0, "getting_mad", 120, 0 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　鬼婆が即死していたのは、本当に計算外だった。",
@@ -36,7 +36,7 @@ void main()
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　縦割りゆえに横の連絡がない。",
-		   NULL, "These ministries don't communicate with one another.", Line_WaitForInput);
+		   NULL, "These ministries don't communicate with one another.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
@@ -86,7 +86,7 @@ void main()
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　現に、最高機密である「オヤシロさまの祟り」については知らなかった。",
-		   NULL, "In fact, she didn't know about 'the curse'.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "In fact, she didn't know about 'the curse.'", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
 
@@ -94,6 +94,7 @@ void main()
 	OutputLine(NULL, "　それを思うと、鬼婆が死して永遠に口を閉ざしたのは、暗部を暴く上で致命的な痛手と言えた……。",
 		   NULL, "Considering that, the fact that the hag died before I could interrogate her is a huge loss...", Line_Normal);
 	ClearMessage();
+	DisableWindow();
 	Wait( 1000 );
 	DrawScene("black", 1000 );
 }

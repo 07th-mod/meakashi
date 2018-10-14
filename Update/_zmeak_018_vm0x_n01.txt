@@ -6,7 +6,7 @@ void dialog000()
 {
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　…私は気持ちよく眠りこけてしまって、……ここに泊まってしまったが、",
-		   NULL, "I got fell comfortably asleep, and ended up staying overnight.", Line_WaitForInput);
+		   NULL, "I fell comfortably asleep, and ended up staying overnight.", Line_WaitForInput);
 	OutputLine(NULL, "それが本当に疲れだけによるものなのか、",
 		   NULL, " Was that just because I was tired,", Line_WaitForInput);
 	OutputLine(NULL, "……何か料理に睡眠薬が混入されていたのか分からない。",
@@ -25,7 +25,7 @@ void dialog000()
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　………それにしたって、話がうますぎだった。",
-		   NULL, "But it feels like more than a conincidence.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "But it feels like more than a coincidence.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 }
 
@@ -57,8 +57,8 @@ void dialog002()
 
 void dialog003()
 {
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 6, "ps2/06/150601550", 240, TRUE);
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_Continue); }
 	OutputLine(NULL, "「さっきの音は聞こえてなかった？",
 		   NULL, "\"Did you hear some noise earlier?", Line_WaitForInput);
 	ModPlayVoiceLS(4, 6, "ps2/06/150601551", 240, TRUE);
@@ -77,8 +77,8 @@ void dialog003()
 		   NULL, "Mion didn't reply, but I saw her bite her lip.", Line_Normal);
 	ClearMessage();
 
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 6, "ps2/06/150601552", 240, TRUE);
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_Continue); }
 	OutputLine(NULL, "「大丈夫。",
 		   NULL, "\"Don't worry,", Line_WaitForInput);
 	ModPlayVoiceLS(4, 6, "ps2/06/150601553", 240, TRUE);

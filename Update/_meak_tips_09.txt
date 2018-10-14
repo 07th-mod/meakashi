@@ -7,8 +7,8 @@ void main()
 	FadeOutBGM( 3, 0, FALSE );
 	ClearMessage();
 
-	PlayBGM( 0, "Nazo", 120, 0 );
 	DrawScene("background/nort", 1000 );
+	PlayBGM( 0, "Nazo", 120, 0 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　大石の言う、沙都子の面倒を見るからと園崎家が言い含め、悟史くんを雛見沢から放逐した……というのは、",
@@ -69,6 +69,8 @@ void main()
 	OutputLine(NULL, "　どうして悟史くんは許してもらえなかったのに、沙都子だけ？",
 		   NULL, "Why was she spared, even though Satoshi-kun wasn't?", Line_Normal);
 	ClearMessage();
+	
+	DisableWindow();
 	Wait( 1000 );
 	DrawScene("black", 1000 );
 }

@@ -7,8 +7,8 @@ void main()
 	FadeOutBGM( 3, 0, FALSE );
 	ClearMessage();
 
-	PlayBGM( 0, "z2_hig1", 120, 0 );
 	DrawScene("background/so_k1", 1000 );
+	PlayBGM( 0, "z2_hig1", 120, 0 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　私が地下拷問室と呼んでいたあの場所は、正しくは地下祭具殿と呼ばれているらしい。",
@@ -76,6 +76,7 @@ void main()
 	OutputLine(NULL, "　この呪われた村で、村ぐるみで今も奇怪な何かが行なわれている事実に備えろ…。",
 		   NULL, "I should remain armed with the knowledge that occult events are still secretly being performed in this cursed village...", Line_Normal);
 	ClearMessage();
+	DisableWindow();
 	Wait( 1000 );
 	DrawScene("black", 1000 );
 }

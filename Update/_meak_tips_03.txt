@@ -7,8 +7,8 @@ void main()
 	FadeOutBGM( 3, 0, FALSE );
 	ClearMessage();
 
-	PlayBGM( 0, "yoru", 120, 0 );
 	DrawScene("background/ho_r1", 400 );
+	PlayBGM( 0, "yoru", 120, 0 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　ようやく叔母のヒステリックな小言が終わった。",
@@ -51,7 +51,8 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#ffdc6f>悟史</color>", NULL, "<color=#ffdc6f>Satoshi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 7, "ps3/s20/07/443300006", 128, TRUE);
 	OutputLine(NULL, "「ほら、沙都子。",
-		   NULL, "\"Here, Satoko.", Line_WaitForInput);
+		   NULL, "\"Here, Satoko.", Line_Continue);
+	Wait( 2500 );
 	OutputLine(NULL, "…布団が敷けたよ？",
 		   NULL, " Your futon is ready,", Line_WaitForInput);
 	ModPlayVoiceLS(4, 7, "ps3/s20/07/443300007", 128, TRUE);
@@ -165,6 +166,8 @@ void main()
 	OutputLine(NULL, "　そう思う自分が、悲しい。",
 		   NULL, "It was pathetic that I felt that way.", Line_Normal);
 	ClearMessage();
+	
+	DisableWindow();
 	Wait( 1000 );
 	DrawScene("black", 1000 );
 }

@@ -7,8 +7,8 @@ void main()
 	FadeOutBGM( 3, 0, FALSE );
 	ClearMessage();
 
-	PlayBGM( 0, "z2_hig1", 120, 0 );
 	DrawScene("background/nort", 1000 );
+	PlayBGM( 0, "z2_hig1", 120, 0 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　悟史くんが東京へ行った、という怪情報の裏付けは全く取れない。",
@@ -65,6 +65,8 @@ void main()
 	OutputLine(NULL, "　その北条を名乗った男の申告する特徴の財布は、遺失物窓口には届いていなかった。",
 		   NULL, "The wallet of the man named Houjou was never reported as found to the lost and found office.", Line_Normal);
 	ClearMessage();
+	
+	DisableWindow();
 	Wait( 1000 );
 	DrawScene("black", 1000 );
 }

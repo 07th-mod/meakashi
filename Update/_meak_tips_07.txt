@@ -7,8 +7,8 @@ void main()
 	FadeOutBGM( 3, 0, FALSE );
 	ClearMessage();
 
-	PlayBGM( 0, "hgrs01", 120, 0 );
 	DrawScene("background/nort", 1000 );
+	PlayBGM( 0, "hgrs01", 120, 0 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　悟史くんがよほど狡猾だったか、幸運に恵まれたか、",
@@ -106,6 +106,7 @@ void main()
 	OutputLine(NULL, "　この時点での私は、園崎本家が暗躍して犯人をでっちあげてくれた他に、何も思いつくことはできなかった。",
 		   NULL, "I can only think of the possibility that the Sonozaki family invented the culprit.", Line_Normal);
 	ClearMessage();
+	DisableWindow();
 	Wait( 1000 );
 	DrawScene("black", 1000 );
 }

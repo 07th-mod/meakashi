@@ -27,7 +27,4 @@ void dialog001()
 	OutputLine(NULL, "お白州に直で正座、くらいは覚悟してたのに。」",
 		   NULL, " I thought you'd get me kneeling on gravel or something.\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
-	DisableWindow();
-	ModDrawCharacter(2, 11, "sprite/normal/oisi1_2_", "1", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
-	DisplayWindow();
 }

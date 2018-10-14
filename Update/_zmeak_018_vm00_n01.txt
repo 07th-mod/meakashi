@@ -57,8 +57,8 @@ void dialog002()
 
 void dialog003()
 {
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 6, "ps2/06/150601550", 240, TRUE);
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_Continue); }
 	OutputLine(NULL, "「さっきの音は聞こえてなかった？",
 		   NULL, "\"Did you hear some noise earlier?", Line_WaitForInput);
 	ModPlayVoiceLS(4, 6, "ps2/06/150601551", 240, TRUE);
@@ -77,8 +77,8 @@ void dialog003()
 		   NULL, "Mion didn't reply, but I saw her bite her lip.", Line_Normal);
 	ClearMessage();
 
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 6, "ps2/06/150601552", 240, TRUE);
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_Continue); }
 	OutputLine(NULL, "「大丈夫。",
 		   NULL, "\"Don't worry,", Line_WaitForInput);
 	ModPlayVoiceLS(4, 6, "ps2/06/150601553", 240, TRUE);

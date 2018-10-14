@@ -88,7 +88,7 @@ void main()
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　私は背中の詩音に向かって吠えたり、怒鳴ったりした。",
-		   NULL, "I shouted at the Shion at my back.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "I shouted at the Shion in my back.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
 
@@ -160,7 +160,7 @@ void main()
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　何がわかってるのお姉、あんたに相応しい死なんか待ってたって訪れるものか。",
-		   NULL, "What exactly do you get, Sis? You won't die in the way you want to.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "What exactly do you think, Sis? You won't die in the way you want to.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -186,8 +186,10 @@ void main()
 		   NULL, "\"Shut up, Shion!!", Line_Continue);
 	StartShakingOfWindow( 241, 40, 0, 2, 4*2, FALSE );
 	StartShakingOfAllObjects( 241, 40, 0, 2, 4*2, TRUE );
-	OutputLineAll(NULL, "", Line_WaitForInput);
-
+	OutputLineAll(NULL, "", Line_ContinueAfterTyping);
+	SetValidityOfInput( FALSE );
+	Wait( 1400 );
+	SetValidityOfInput( TRUE );
 	OutputLine(NULL, "　亡霊のくせに…やかましい、",
 		   NULL, " You're just a ghost... so shut up.", Line_ContinueAfterTyping);
 	SetValidityOfInput( FALSE );
@@ -203,7 +205,7 @@ void main()
 	OutputLineAll(NULL, "", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 3, "ps3/s06/03/150300470", 128, TRUE);
 	OutputLine(NULL, "「お姉ぇお姉えええぇえ！！」",
 		   NULL, " \"Sis.... Siiissss!!\"", Line_Continue);
@@ -690,8 +692,8 @@ void main()
 	// (backup) SetValidityOfInput( FALSE );
 	Wait( 400 );
 	// (backup) SetValidityOfInput( TRUE );
-	OutputLine(NULL, "………はぁ…！」",
-		   NULL, " hah...!\"", Line_Continue);
+	OutputLine(NULL, "………はぁ…！",
+		   NULL, " hah...!", Line_Continue);
 
 	OutputLine(NULL, "　ほぐげぎゃぎゃ…、",
 		   NULL, " Feegheeghagya...", Line_Continue);
@@ -703,8 +705,8 @@ void main()
 	// (backup) SetValidityOfInput( FALSE );
 	Wait( 400 );
 	// (backup) SetValidityOfInput( TRUE );
-	OutputLine(NULL, "……がぎゃ…、",
-		   NULL, " ghaa...", GetGlobalFlag(GLinemodeSp));
+	OutputLine(NULL, "……がぎゃ…、」",
+		   NULL, " ghaa...\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 	DisableWindow();
 	ModDrawCharacter(2, 1, "sprite/night/kei2_majime_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );

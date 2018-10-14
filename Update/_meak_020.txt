@@ -772,7 +772,7 @@ void main()
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　この場にいる全員が結託して、私は今日出席しなかった……待っていたけど来なかったと証言すれば……、「鬼隠し」の出来上がりだ。",
-		   NULL, "Everyone here would act in collusion and say I never attended today... If they all testified that they waited and I didn't show... I'd be 'demoned away'.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Everyone here would act in collusion and say I never attended today... If they all testified that they waited and I didn't show... I'd be 'demoned away.'", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
 
@@ -1177,7 +1177,7 @@ void main()
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　私が、公由のおじいちゃんと呼ばず、公由さんと呼んだので。",
-		   NULL, "I called him 'Kimiyoshi-san', instead of 'Uncle Kimiyoshi'.", Line_WaitForInput);
+		   NULL, "I called him 'Kimiyoshi-san,' instead of 'Uncle Kimiyoshi.'", Line_WaitForInput);
 	OutputLine(NULL, "…おじいちゃんは足を止めた。",
 		   NULL, " He stopped.", Line_Normal);
 	ClearMessage();
@@ -2389,6 +2389,7 @@ void main()
 
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); }
 
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "許",
 		   NULL, "What", Line_Continue);
 	// (backup) SetValidityOfInput( FALSE );
@@ -3188,6 +3189,8 @@ void main()
 	ModPlayVoiceLS(4, 6, "ps3/s06/06/150601868", 128, TRUE);
 	OutputLine(NULL, "……つまりそういうことなんです。",
 		   NULL, " ...That's what I mean. ", GetGlobalFlag(GLinemodeSp));
+	
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 6, "ps3/s06/06/150601869", 128, TRUE);
 	OutputLine(NULL, "…この雛見沢では、毎年、綿流しの夜に、オヤシロさまの祟りということにして誰かを殺してもいい土壌が、",
 		   NULL, "...At some point, a tradition was created here in Hinamizawa...", Line_Continue);
@@ -3350,7 +3353,7 @@ void main()
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　まず最初の要素は「連帯した地域性」",
-		   NULL, "The first element was a 'region of solidarity'.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "The first element was a 'region of solidarity.'", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
 	DrawScene("background/greyscale/hi1", 400 );
@@ -3379,7 +3382,7 @@ void main()
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　次に「価値観の共有」",
-		   NULL, "The next element was 'having the same moral standards'.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "The next element was 'having the same moral standards.'", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
 
@@ -3503,7 +3506,7 @@ void main()
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　そこで必要な最後の要素が「執行日の指定」。",
-		   NULL, "The last necessary element was 'to set a date for execution'.", Line_ContinueAfterTyping);
+		   NULL, "The last necessary element was 'to set a date for execution.'", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
@@ -3960,8 +3963,8 @@ void main()
 		   NULL, "Kimiyoshi could only make noise with the chain. He couldn't even express any emotion other than anguish.", Line_Normal);
 	ClearMessage();
 
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 6, "ps2/06/150601889", 240, TRUE);
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_Continue); }
 	OutputLine(NULL, "「鎖、少し長くしてあげましょうか？",
 		   NULL, "\"Is the chain too short?", Line_WaitForInput);
 	ModPlayVoiceLS(4, 6, "ps2/06/150601890", 240, TRUE);
@@ -4346,8 +4349,8 @@ void main()
 		   NULL, " What do you think about that?\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f3ceb3>喜一郎</color>", NULL, "<color=#f3ceb3>Kiichiro</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 18, "ps2/18/153300121", 240, TRUE);
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_Continue); }
 	OutputLine(NULL, "「…………でも、…それの犯人は確か、麻薬中毒の危ない奴だと聞いたよ。」",
 		   NULL, "\"......Well... I heard that the culprit was some kind of drug addict.\"", Line_Normal);
 	ClearMessage();
@@ -4464,7 +4467,7 @@ void main()
 	OutputLine(NULL, "　ダム戦争の頃、建設重機を壊してやれとか、",
 		   NULL, "During the dam protests, I actually saw them issuing orders to my relatives.", Line_WaitForInput);
 	OutputLine(NULL, "工事車両を妨害するために検問を設けられないかとか、",
-		   NULL, " Like, \"destroy their heavy machinery\".", Line_WaitForInput);
+		   NULL, " Like, \"destroy their heavy machinery.\"", Line_WaitForInput);
 	OutputLine(NULL, "そんな謀略を親類たちに指示してるところは、私も実際に見ている。",
 		   NULL, " or, \"can we set up a checkpoint to blockade their construction vehicles?\"", Line_Normal);
 	ClearMessage();
@@ -4504,12 +4507,10 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f3ceb3>喜一郎</color>", NULL, "<color=#f3ceb3>Kiichiro</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 18, "ps3/s06/18/153300132", 128, TRUE);
 	OutputLine(NULL, "「詩音ちゃんだって、建設省の幹部の息子…、",
-		   NULL, "\"You've heard about", Line_WaitForInput);
+		   NULL, "\"You've heard about", Line_ContinueAfterTyping);
 	OutputLine(NULL, "というか建設大臣の孫だな…。",
 		   NULL, " the kidnapping case of", Line_ContinueAfterTyping);
-	SetValidityOfInput( FALSE );
-	Wait( 1000 );
-	SetValidityOfInput( TRUE );
+	WaitToFinishVoicePlaying(4);
 	ModPlayVoiceLS(4, 18, "ps3/s06/18/153300133", 128, TRUE);
 	OutputLine(NULL, "あれの誘拐事件の話は知ってるだろ…？」",
 		   NULL, " the grandson of the Minister of construction, right?\"", GetGlobalFlag(GLinemodeSp));
@@ -5217,12 +5218,14 @@ void main()
 
 	ModPlayVoiceLS(4, 6, "ps3/s06/06/150601956", 128, TRUE);
 	OutputLine(NULL, "　助けろ！！",
-		   NULL, " Help him!!", Line_WaitForInput);
+		   NULL, " Help him!!", Line_Continue);
+	Wait( 400 );
 	OutputLine(NULL, "　助けろ！！",
 		   NULL, " Help him!!", Line_WaitForInput);
 	ModPlayVoiceLS(4, 6, "ps3/s06/06/150601957", 128, TRUE);
 	OutputLine(NULL, "　何で？！",
-		   NULL, " Why?!", Line_WaitForInput);
+		   NULL, " Why?!", Line_Continue);
+	Wait( 300 );
 	OutputLine(NULL, "　何で助けないのッ！！？",
 		   NULL, " Why didn't you help him?!!", Line_WaitForInput);
 	ModPlayVoiceLS(4, 6, "ps3/s06/06/150601958", 128, TRUE);
@@ -5237,7 +5240,8 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 6, "ps3/s06/06/150601960", 128, TRUE);
 	OutputLine(NULL, "　あんたは同情する素振りを見せるだけで、助けなかった！！",
-		   NULL, "You pretended to sympathize, but you didn't help him!!", Line_WaitForInput);
+		   NULL, "You pretended to sympathize, but you didn't help him!!", Line_Continue);
+	Wait( 2000 );
 	OutputLine(NULL, "　見殺した！！！",
 		   NULL, " You ignored him!!!", Line_WaitForInput);
 	ModPlayVoiceLS(4, 6, "ps3/s06/06/150601961", 128, TRUE);
@@ -5245,7 +5249,8 @@ void main()
 		   NULL, " He was cornered because you didn't help him!!", Line_WaitForInput);
 	ModPlayVoiceLS(4, 6, "ps3/s06/06/150601962", 128, TRUE);
 	OutputLine(NULL, "　私は救おうとがんばったよ？！",
-		   NULL, " I tried!", Line_WaitForInput);
+		   NULL, " I tried!", Line_Continue);
+	Wait( 200 );
 	OutputLine(NULL, "　彼の心の支えになろうとがんばった！！",
 		   NULL, " I tried to support him!! ", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
@@ -5254,7 +5259,8 @@ void main()
 		   NULL, "Even when you didn't protect him from killing his aunt, I did!", Line_WaitForInput);
 	ModPlayVoiceLS(4, 6, "ps3/s06/06/150601964", 128, TRUE);
 	OutputLine(NULL, "　私は彼のアリバイのために自らを投げ打って戦った！！",
-		   NULL, " I sacrificed myself to fight for him!!", Line_WaitForInput);
+		   NULL, " I sacrificed myself to fight for him!!", Line_Continue);
+	Wait( 600 );
 	OutputLine(NULL, "　その結果が爪３枚なんて安いもんでしょ！！",
 		   NULL, " Three nails were nothing!!", Line_Normal);
 	ClearMessage();
@@ -5265,7 +5271,8 @@ void main()
 		   NULL, "But it wasn't enough to rescue Satoshi-kun...", Line_WaitForInput);
 	ModPlayVoiceLS(4, 6, "ps3/s06/06/150601966", 128, TRUE);
 	OutputLine(NULL, "届かなかった……。",
-		   NULL, " I couldn't help him...", Line_WaitForInput);
+		   NULL, " I couldn't help him...", Line_Continue);
+	Wait( 1200 );
 	OutputLine(NULL, "どうしてか？",
 		   NULL, " Do you know why?", Line_WaitForInput);
 	ModPlayVoiceLS(4, 6, "ps3/s06/06/150601967", 128, TRUE);
@@ -5277,7 +5284,8 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 6, "ps3/s06/06/150601969", 128, TRUE);
 	OutputLine(NULL, "…でもあんたは違う。",
-		   NULL, "But you were different.", Line_WaitForInput);
+		   NULL, "But you were different.", Line_Continue);
+	Wait( 1200 );
 	OutputLine(NULL, "あんたは魅音だった。",
 		   NULL, " You were Mion.", Line_WaitForInput);
 	ModPlayVoiceLS(4, 6, "ps3/s06/06/150601970", 128, TRUE);
@@ -5311,6 +5319,7 @@ void main()
 	ModPlayVoiceLS(4, 6, "ps3/s06/06/150601978", 128, TRUE);
 	OutputLine(NULL, "　私があんたに貸してあげるようになっただけで、本当は私のだったじゃないッ！！",
 		   NULL, " I just let you be Mion, remember? It was mine!!", Line_WaitForInput);
+	
 	ModPlayVoiceLS(4, 6, "ps3/s06/06/150601979", 128, TRUE);
 	OutputLine(NULL, "　返せ！！",
 		   NULL, " Give it back to me!!", Line_Continue);
@@ -5323,7 +5332,8 @@ void main()
 		   NULL, "I can't stand that you even look like Mion!!!", Line_WaitForInput);
 	ModPlayVoiceLS(4, 6, "ps3/s06/06/150601981", 128, TRUE);
 	OutputLine(NULL, "　お前じゃなく私が魅音だったら！",
-		   NULL, " If I were Mion then!!", Line_WaitForInput);
+		   NULL, " If I were Mion then!!", Line_Continue);
+	Wait( 1000 );
 	OutputLine(NULL, "　だったらぁあぁあああぁあッ！！！」",
 		   NULL, " Ahhhhhh!!!\"", Line_Normal);
 	ClearMessage();
