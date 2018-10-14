@@ -7,8 +7,8 @@ void main()
 	FadeOutBGM( 3, 0, FALSE );
 	ClearMessage();
 
-	PlayBGM( 0, "yoru", 120, 0 );
 	DrawScene("background/nort", 1000 );
+	PlayBGM( 0, "yoru", 120, 0 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　５年目の祟り以降、もっとも電話が多かったのは、やはり側近の公由家頭首だった。",
@@ -98,6 +98,7 @@ void main()
 	OutputLine(NULL, "　…祟りのシステムを管轄する暗黒部門の存在は、充分に疑える……。",
 		   NULL, "It's possible that a 'curse execution team' exists under the hag's direct control. People just aren't aware of it...", Line_Normal);
 	ClearMessage();
+	DisableWindow();
 	Wait( 1000 );
 	DrawScene("black", 1000 );
 }

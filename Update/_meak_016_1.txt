@@ -1,15 +1,14 @@
 void main()
 {
-
-
-	ModDrawCharacter(19, 0, "transparent", "0", 0, 100, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, TRUE );
+	FadeOutBGM( 0, 0, FALSE );
+	FadeOutBGM( 1, 0, FALSE );
+	FadeOutBGM( 2, 0, FALSE );
+	FadeOutBGM( 3, 0, FALSE );
 	ClearMessage();
 
-	PlayBGM( 0, "Soul_scour", 120, 0 );
-	SetValidityOfInput( FALSE );
-	Wait( 3000 );
-	SetValidityOfInput( TRUE );
+	DrawScene("black", 1000 );
 	DrawSceneWithMask("background/si_h6", "maskc", 1, 0, 3000 );
+	PlayBGM( 0, "Soul_scour", 120, 0 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　…寝るのが怖かった。",
@@ -93,16 +92,14 @@ void main()
 	OutputLine(NULL, "…………こんなに幸せな夜はきっと初めてだった。",
 		   NULL, " It was the happiest night I'd ever had.", Line_Normal);
 	ClearMessage();
+	
+	DisableWindow();
 	SetValidityOfInput( FALSE );
 	Wait( 6000 );
 	SetValidityOfInput( TRUE );
+	FadeOutBGM( 0, 1000, FALSE );
 	DrawScene("white", 1000 );
-	FadeOutBGM( 0, 0, FALSE );
-	FadeOutBGM( 1, 0, FALSE );
-	FadeOutBGM( 2, 0, FALSE );
-	FadeOutBGM( 3, 0, FALSE );
-	ModDrawCharacter(19, 0, "transparent", "0", 0, 100, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, TRUE );
-	PlayBGM( 1, "Suzume", 120, 0 );
+	PlayBGM( 2, "Suzume", 120, 0 );
 	DrawSceneWithMask("background/si_h2", "maskm1", 1, 0, 3000 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -135,8 +132,7 @@ void main()
 	OutputLine(NULL, "　……そう諦めかけた時。",
 		   NULL, "...Just when I'd resigned myself to that...", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
-	FadeOutBGM( 1, 0, FALSE );
-	ModDrawCharacter(19, 0, "transparent", "0", 0, 100, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, TRUE );
+	FadeOutBGM( 2, 300, FALSE );
 	PlayBGM( 0, "T1", 120, 0 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -340,27 +336,16 @@ void main()
 	OutputLine(NULL, "…………もう大丈夫…………。",
 		   NULL, " I'd be all right...", Line_Normal);
 	ClearMessage();
+	
 	DrawScene("black", 400 );
-	SetValidityOfInput( FALSE );
-	Wait( 2000 );
-	SetValidityOfInput( TRUE );
 	DrawScene("text/nort159", 1000 );
 	Wait( 10000 );
+	FadeOutBGM( 0, 1000, FALSE );
 	DrawScene("black", 3000 );
-	DrawScene("black", 6000 );
-	FadeOutBGM( 0, 0, FALSE );
-	FadeOutBGM( 1, 0, FALSE );
-	FadeOutBGM( 2, 0, FALSE );
-	FadeOutBGM( 3, 0, FALSE );
-	ModDrawCharacter(19, 0, "transparent", "0", 0, 100, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, TRUE );
-	SetValidityOfInput( FALSE );
-	Wait( 2000 );
-	SetValidityOfInput( TRUE );
 	DrawScene("white", 1000 );
 	PlayBGM( 0, "Iru", 120, 0 );
-	ModDrawCharacterWithFiltering(2, 15, "sprite/normal/kasa_1_", "0", "maskright", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 10, 0, FALSE );
-	DrawSceneWithMask("background/si_g1", "maskright", 1, 0, 300 );
-	SetSpeedOfMessage( FALSE, 0 );
+	ModDrawCharacter(2, 15, "sprite/normal/kasa_1_", "0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, FALSE );
+	DrawSceneWithMask("background/si_g1", "maskright", 1, 0, 400 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#76523d>葛西</color>", NULL, "<color=#76523d>Kasai</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 15, "ps3/s06/15/151500200", 128, TRUE);
@@ -441,7 +426,6 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 	DisableWindow();
 	ModDrawCharacter(2, 15, "sprite/normal/kasa_1_", "0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );
-	DisplayWindow();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#76523d>葛西</color>", NULL, "<color=#76523d>Kasai</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 15, "ps3/s06/15/151500207", 128, TRUE);
@@ -456,7 +440,6 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 	DisableWindow();
 	FadeBustshotWithFiltering( 2, "maskleft" , 1, FALSE, 0, 0, 300, TRUE );
-	DisplayWindow();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　葛西が出て行くと、…悟史くんが今夜のお祭りが楽しくて楽しくて仕方がない、と言う風に表情をほころばせるのがわかった。",
@@ -490,4 +473,7 @@ void main()
 	OutputLine(NULL, "　私たちは小気味よく笑い合った…。",
 		   NULL, "We laughed together...", Line_Normal);
 	ClearMessage();
+	
+	DrawScene("black", 1000 );
+	FadeOutBGM( 0, 1000, TRUE );
 }

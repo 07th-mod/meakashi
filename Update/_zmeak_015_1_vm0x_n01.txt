@@ -12,7 +12,6 @@ void dialog000()
 	OutputLine(NULL, "　どうじゃこの後…むげへへへへへへ！！」",
 		   NULL, " How 'bout we have some fun later... Yee hee hee hee!!\"", Line_Normal);
 	ClearMessage();
-	DrawScene("black", 400 );
 }
 
 void dialog001()
@@ -26,6 +25,7 @@ void dialog001()
 		   NULL, " Huff, huff!\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>不良</color>", NULL, "<color=#f5e6d3>Delinquent</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 0, "ps3/s06/00/huryob15007", 128, TRUE);
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「どぉどぉ、どうじゃあぁぁあ？　もっと着飾って、スカートもミニで…くおぉぉお！　興奮すっさなぁあぁ…！！」",
@@ -80,19 +80,20 @@ void dialog003()
 		   NULL, " And exposure should be minimal!!", Line_WaitForInput);
 	ModPlayVoiceLS(4, 1, "ps3/s06/01/150100018", 128, TRUE);
 	OutputLine(NULL, "　たとえお天道様が西から昇ることがあろうとも！！",
-		   NULL, " No matter what!!", Line_WaitForInput);
-	SetSpeedOfMessage( TRUE, 128 );
-	ModPlayVoiceLS(4, 1, "ps3/s06/01/150100019", 128, TRUE);
-	OutputLine(NULL, "　絶対絶対これは萌え業界の鉄則だあああぁあああ！！！",
-		   NULL, " That is the ironclad rule!!!", Line_Continue);
-	SetSpeedOfMessage( FALSE, 0 );
+		   NULL, " No matter what!!", GetGlobalFlag(GLinemodeSp));
+	
+	DisableWindow();
 	PlaySE( 0, "s_daidageki", 128, 64 );
-	DrawScene("background/furiker_b", 0 );
+	DrawScene("background/furiker_b", 100 );
 	StartShakingOfWindow( 248, 40, 0, 0, 4*2, FALSE );
 	StartShakingOfAllObjects( 248, 40, 0, 0, 4*2, TRUE );
-	DrawScene("background/mati4", 0 );
-	ModDrawCharacter(2, 1, "sprite/normal/kei2_ikari2_", "1", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
-	OutputLineAll(NULL, "", GetGlobalFlag(GLinemodeSp));
+	ModDrawCharacter(2, 1, "sprite/normal/kei2_ikari2_", "1", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, FALSE );
+	DrawScene("background/mati4", 300 );
+	
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 1, "ps3/s06/01/150100019", 128, TRUE);
+	OutputLine(NULL, "絶対絶対これは萌え業界の鉄則だあああぁあああ！！！",
+		   NULL, "That is the ironclad rule!!!", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	PlaySE( 0, "s_Kyupiin", 128, 64 );
@@ -104,20 +105,15 @@ void dialog003()
 	ModPlayVoiceLS(4, 1, "ps3/s06/01/150100021", 128, TRUE);
 	OutputLine(NULL, "ホモサピエンスと動物の違いは何か。",
 		   NULL, " What's the difference between homo sapiens and other animals?", Line_WaitForInput);
-	PlaySE( 0, "s_Kyupiin", 128, 64 );
-
+	PlaySE( 0, "wa_011", 128, 64 );
 	ModPlayVoiceLS(4, 1, "ps3/s06/01/150100022", 128, TRUE);
 	OutputLine(NULL, "そう、衣服の着用だ。",
 		   NULL, " That's right, humans wear clothes!", Line_WaitForInput);
-	SetSpeedOfMessage( TRUE, 128 );
 	ModPlayVoiceLS(4, 1, "ps3/s06/01/150100023", 128, TRUE);
-	OutputLine(NULL, "つまりヒトは肌以外の衣服の彩があって初めてヒトなのだ！！！",
-		   NULL, " Humans are first distinguished from animals by their clothing!!!", Line_Continue);
-	SetSpeedOfMessage( FALSE, 0 );
-	PlaySE( 0, "s_Kyupiin", 128, 64 );
-	OutputLineAll(NULL, "", GetGlobalFlag(GLinemodeSp));
+	OutputLine(NULL, "つまりヒトは衣服があって初めてヒトなのだ！！！",
+		   NULL, " Human beings without clothes are just animals!!!", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
-
+	PlaySE( 0, "wa_007", 128, 64 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 1, "ps3/s06/01/150100024", 128, TRUE);
@@ -141,7 +137,7 @@ void dialog004()
 	ModPlayVoiceLS(4, 1, "ps3/s06/01/150100028", 128, TRUE);
 	OutputLine(NULL, "「先ほどタイトミニを引き合いに出したな。",
 		   NULL, "\"You mentioned tight miniskirts, didn't you?", Line_WaitForInput);
-	PlaySE( 0, "s_Kyupiin", 128, 64 );
+	PlaySE( 0, "wa_012", 128, 64 );
 
 	ModPlayVoiceLS(4, 1, "ps3/s06/01/150100029", 128, TRUE);
 	OutputLine(NULL, "例えばここに美少女と呼ぶにふさわしい女の子がいたとする。",
@@ -169,27 +165,21 @@ void dialog004()
 	Wait( 400 );
 	// (backup) SetValidityOfInput( TRUE );
 	OutputLine(NULL, "答えてみろ！！",
-		   NULL, " Answer me!!!", Line_WaitForInput);
+		   NULL, " Answer me!!!", GetGlobalFlag(GLinemodeSp));
 }
 
 void dialog005()
 {
 	ModPlayVoiceLS(4, 1, "ps3/s06/01/150100040", 128, TRUE);
 	OutputLine(NULL, "おい不良Ａ！！お前は制服だ！",
-		   NULL, " Hey you, delinquent A!! You take the regular uniform!", Line_Continue);
-	// (backup) SetValidityOfInput( FALSE );
-	Wait( 500 );
-	// (backup) SetValidityOfInput( TRUE );
-	PlaySE( 0, "s_cork", 128, 64 );
-	OutputLineAll(NULL, "", Line_WaitForInput);
+		   NULL, " Hey you, delinquent A!! You take the regular uniform!", Line_WaitForInput);
 
 	ModPlayVoiceLS(4, 1, "ps3/s06/01/150100041", 128, TRUE);
 	OutputLine(NULL, "不良Ｂ！お前は体操服、",
 		   NULL, " Delinquent B! You take the gym uniform.", Line_Continue);
 	// (backup) SetValidityOfInput( FALSE );
-	Wait( 400 );
+	Wait( 1400 );
 	// (backup) SetValidityOfInput( TRUE );
-	PlaySE( 0, "s_cork", 128, 64 );
 
 	OutputLine(NULL, "そして不良Ｃはスク水だ！！！",
 		   NULL, " And, you, delinquent C, you take the school swimsuit!!! ", GetGlobalFlag(GLinemodeSp));
@@ -214,40 +204,31 @@ void dialog006()
 
 	ModPlayVoiceLS(4, 1, "ps3/s06/01/150100045", 128, TRUE);
 	OutputLine(NULL, "返事は押忍かサーイエッサーだ！！！",
-		   NULL, " Say 'yessir' when you got it!!!", Line_Continue);
-	// (backup) SetValidityOfInput( FALSE );
-	Wait( 800 );
-	// (backup) SetValidityOfInput( TRUE );
-	PlaySE( 0, "s_daidageki", 128, 64 );
-	OutputLineAll(NULL, "", Line_WaitForInput);
+		   NULL, " Say 'yessir' when you got it!!!", GetGlobalFlag(GLinemodeSp));
 
-	ModPlayVoiceLS(4, 1, "ps3/s06/01/150100046", 128, TRUE);
-	OutputLine(NULL, "馬鹿者それでも軍人かッ！！！！",
-		   NULL, " Are you really military men, you maggots?!! ", GetGlobalFlag(GLinemodeSp));
-	DrawScene("background/furiker_a", 0 );
+	DisableWindow();
+	PlaySE( 0, "s_daidageki", 128, 64 );
+	DrawScene("background/furiker_a", 100 );
 	StartShakingOfWindow( 248, 40, 0, 2, 3*2, FALSE );
 	StartShakingOfAllObjects( 248, 40, 0, 2, 3*2, TRUE );
-	DrawScene("background/mati4", 0 );
-	ModDrawCharacter(2, 1, "sprite/normal/kei2_ikari2_", "1", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
-
+	ModDrawCharacter(2, 1, "sprite/normal/kei2_ikari2_", "1", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, FALSE );
+	DrawScene("background/mati4", 300 );
+	
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 1, "ps3/s06/01/150100046", 128, TRUE);
+	OutputLine(NULL, "馬鹿者それでも軍人かッ！！！！",
+		   NULL, " Are you really military men, you maggots?!! ", Line_WaitForInput);
+	Wait( 500 );
 	ModPlayVoiceLS(4, 1, "ps3/s06/01/150100047", 128, TRUE);
 	OutputLine(NULL, "　よおし描けたようだな次に進むぞ。",
 		   NULL, "Good, you all seem to have an image in your heads now. Let's move on.", Line_Normal);
-
 	ClearMessage();
-
+	PlaySE( 0, "wa_012", 128, 64 );
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 1, "ps3/s06/01/150100048", 128, TRUE);
 	OutputLine(NULL, "　それらの萌え衣装と、貴様らの馬鹿げた欲情に従いお色気ムンムンなタイトミニスカート姿を見比べてみろ！",
 		   NULL, "Now just imagine and compare your moe-costume with that erotic outfit with the tight miniskirt your stupid desires conjured up!", GetGlobalFlag(GLinemodeSp));
-	PlaySE( 0, "s_Kyupiin", 128, 64 );
-	SetValidityOfInput( FALSE );
-	Wait( 800 );
-	SetValidityOfInput( TRUE );
-	SetSpeedOfMessage( TRUE, 128 );
-	PlaySE( 0, "s_daidageki", 128, 64 );
-
+	PlaySE( 0, "wa_007", 128, 64 );
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 1, "ps3/s06/01/150100049", 128, TRUE);
 	OutputLine(NULL, "どうだ！！　明らかに合わないだろう！！！",
@@ -258,56 +239,30 @@ void dialog006()
 	OutputLine(NULL, "お色気と萌えはベクトルの方向が全く違う、いわば水と油ッ？！？！",
 		   NULL, "Sexy and moe are on completely different vectors - they're like water and oil!!!", GetGlobalFlag(GLinemodeSp));
 
+	DisableWindow();
+	PlaySE( 0, "wa_006", 128, 64 );
+	StartShakingOfWindow( 248, 40, 0, 2, 3*2, FALSE );
+	StartShakingOfAllObjects( 248, 40, 0, 2, 3*2, TRUE );
+	
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 1, "ps3/s06/01/150100051", 128, TRUE);
 	OutputLine(NULL, "最近まだ萌えと色気の違いの分からん未熟者が増えているが、実に嘆かわしい！！",
 		   NULL, "The number of immature folk who don't know the difference has been increasing recently, it's truly lamentable!", GetGlobalFlag(GLinemodeSp));
-	StartShakingOfWindow( 248, 40, 0, 2, 3*2, FALSE );
-	StartShakingOfAllObjects( 248, 40, 0, 2, 3*2, TRUE );
-
-	SetSpeedOfMessage( FALSE, 0 );
+	
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 1, "ps3/s06/01/150100052", 128, TRUE);
 	OutputLine(NULL, "色気は本能だが萌えはわび寂だ、もののあはれの世界だ！！",
 		   NULL, " Sexiness is instinctual, but moe comes from a world of delicate and rustic sensibilities!!", GetGlobalFlag(GLinemodeSp));
-	SetValidityOfInput( FALSE );
-	Wait( 600 );
-	SetValidityOfInput( TRUE );
+	
+	DisableWindow();
+	PlaySE( 0, "wa_005", 128, 64 );
+	StartShakingOfWindow( 248, 40, 0, 2, 3*2, FALSE );
+	StartShakingOfAllObjects( 248, 40, 0, 2, 3*2, TRUE );
+	
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 1, "ps3/s06/01/150100053", 128, TRUE);
-	OutputLine(NULL, "本能でしか女性の魅力を語れない貴様らは",
-		   NULL, " If the only way you can see a ladies charm is through instinct, you're a pack of ", Line_ContinueAfterTyping);
-
-	SetValidityOfInput( FALSE );
-	Wait( 1600 );
-	SetValidityOfInput( TRUE );
-
-	OutputLine(NULL, "犬！！",
-		   NULL, " Dogs.", Line_ContinueAfterTyping);
-	PlaySE( 0, "s_Down", 128, 64 );
-	StartShakingOfWindow( 248, 40, 0, 2, 2*2, FALSE );
-	StartShakingOfAllObjects( 248, 40, 0, 2, 2*2, TRUE );
-
-	SetValidityOfInput( FALSE );
-	Wait( 200 );
-	SetValidityOfInput( TRUE );
-
-	OutputLine(NULL, "猿、",
-		   NULL, " Monkeys.", Line_ContinueAfterTyping);
-	PlaySE( 0, "s_Down", 128, 64 );
-	StartShakingOfWindow( 248, 40, 0, 0, 2*2, FALSE );
-	StartShakingOfAllObjects( 248, 40, 0, 0, 2*2, TRUE );
-
-	SetValidityOfInput( FALSE );
-	Wait( 200 );
-	SetValidityOfInput( TRUE );
-
-	OutputLine(NULL, "雉だ！！",
-		   NULL, " Or pheasants!", Line_ContinueAfterTyping);
-	PlaySE( 0, "s_Down", 128, 64 );
-	StartShakingOfWindow( 248, 40, 0, 2, 2*2, FALSE );
-	StartShakingOfAllObjects( 248, 40, 0, 2, 2*2, TRUE );
-	OutputLineAll(NULL, " ", GetGlobalFlag(GLinemodeSp));
+	OutputLine(NULL, "本能でしか女性の魅力を語れない貴様らは犬、猿、雉だ！！",
+		   NULL, "If the only way you can see a ladies charm is through instinct, you're a pack of dogs, monkeys, or pheasants!", GetGlobalFlag(GLinemodeSp));
 }
 
 void dialog007()
@@ -315,10 +270,9 @@ void dialog007()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 1, "ps3/s06/01/150100056", 128, TRUE);
 	OutputLine(NULL, "　ちなみに最近の東西雪解けに従い『萌え』も色々な類が大量に上陸しているな。",
-		   NULL, "Incidentally, a huge amount of varied 'moe' is going around lately thanks to the recent thawing of East-West relations.", Line_WaitForInput);
-	ModPlayVoiceLS(4, 1, "ps3/s06/01/150100057", 128, TRUE);
-	OutputLine(NULL, "そんなことも知らんのか愚か者！！",
-		   NULL, " You don't know that? Get out of here!!", Line_ContinueAfterTyping);
+		   NULL, "Incidentally, a huge amount of varied 'moe' is going around lately thanks to the recent thawing of East-West relations.", GetGlobalFlag(GLinemodeSp));
+	
+	DisableWindow();
 	PlaySE( 0, "s_furu", 128, 64 );
 	SetValidityOfInput( FALSE );
 	Wait( 200 );
@@ -326,55 +280,43 @@ void dialog007()
 	PlaySE( 0, "s_Down", 128, 64 );
 	StartShakingOfWindow( 248, 40, 0, 0, 3*2, FALSE );
 	StartShakingOfAllObjects( 248, 40, 0, 0, 3*2, TRUE );
-	OutputLineAll(NULL, " ", GetGlobalFlag(GLinemodeSp));
-
+	
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 1, "ps3/s06/01/150100057", 128, TRUE);
+	OutputLine(NULL, "そんなことも知らんのか愚か者！！",
+		   NULL, "You don't know that? Get out of here!!", GetGlobalFlag(GLinemodeSp));
+	
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 1, "ps2/06/150100058", 240, TRUE);
 	OutputLine(NULL, "制服系と金髪を掛け合わせたアニメ系などという、酸素と水素が掛け合わされて（聞き取れず）可愛いよ大爆発！なんて組み合わせが出ているようだが、本官は断じて認めたりはしないぞッ！！！",
-		   NULL, "I heard that there's even a genre combining school uniforms with blond hair, like combining oxygen with hydrogen to get a cute explosion! But I'll never accept that!!!", Line_ContinueAfterTyping);
-	SetValidityOfInput( FALSE );
-	Wait( 800 );
-	SetValidityOfInput( TRUE );
-	PlaySE( 0, "s_furu", 128, 64 );
-	SetValidityOfInput( FALSE );
-	Wait( 150 );
-	SetValidityOfInput( TRUE );
-	PlaySE( 0, "s_furu", 128, 64 );
-	SetValidityOfInput( FALSE );
-	Wait( 150 );
-	SetValidityOfInput( TRUE );
-	PlaySE( 0, "s_furu", 128, 64 );
-	OutputLineAll(NULL, " ", GetGlobalFlag(GLinemodeSp));
+		   NULL, "I heard that there's even a genre combining school uniforms with blond hair, like combining oxygen with hydrogen to get a cute explosion! But I'll never accept that!!!", GetGlobalFlag(GLinemodeSp));
 }
 
 void dialog008()
 {
-	SetSpeedOfMessage( FALSE, 0 );
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 1, "ps3/s06/01/150100060", 128, TRUE);
 	OutputLine(NULL, "和洋折衷はこの世界には存在しない！！！",
-		   NULL, " There's no room in this world for combining Western and Japanese culture!!!", Line_WaitForInput);
+		   NULL, "There's no room in this world for combining Western and Japanese culture!!!", Line_WaitForInput);
 	ModPlayVoiceLS(4, 1, "ps3/s06/01/150100061", 128, TRUE);
 	OutputLine(NULL, "貴様ら聞いているのか、",
 		   NULL, " Are you listening?!", Line_Continue);
 	// (backup) SetValidityOfInput( FALSE );
-	Wait( 800 );
+	Wait( 1400 );
 	// (backup) SetValidityOfInput( TRUE );
 	OutputLine(NULL, "軟弱スルメどもがああぁ！！！",
-		   NULL, " You pathetic squid!!!", Line_Continue);
-	PlaySE( 0, "s_Down", 128, 64 );
+		   NULL, " You pathetic squid!!!", GetGlobalFlag(GLinemodeSp));
+
+	DisableWindow();
+	PlaySE( 0, "wa_005", 128, 64 );
 	StartShakingOfWindow( 248, 40, 0, 0, 2*2, FALSE );
 	StartShakingOfAllObjects( 248, 40, 0, 0, 2*2, TRUE );
-	OutputLineAll(NULL, " ", GetGlobalFlag(GLinemodeSp));
-
+	
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 1, "ps3/s06/01/150100062", 128, TRUE);
 	OutputLine(NULL, "歯を食いしばれ、今日は徹底的にしごく！！！",
 		   NULL, "Clench your teeth, I'll train you 'til you drop!!!", Line_WaitForInput);
 	ModPlayVoiceLS(4, 1, "ps3/s06/01/150100063", 128, TRUE);
 	OutputLine(NULL, "貴様らが真の萌え文化を理解できるまで今日は寝られないと思ええ！！！",
-		   NULL, " I won't let you sleep until you've truly understood moe culture!!!", Line_WaitForInput);
-	ModPlayVoiceLS(4, 1, "ps3/s06/01/150100064", 128, TRUE);
-	OutputLine(NULL, "はいいぃいい指導指導指導ぉおおッ！！！！」",
-		   NULL, " Here comes my whip!!!\" ", Line_Normal);
-	ClearMessage();
+		   NULL, " I won't let you sleep until you've truly understood moe culture!!!", GetGlobalFlag(GLinemodeSp));
 }

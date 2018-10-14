@@ -7,8 +7,8 @@ void main()
 	FadeOutBGM( 3, 0, FALSE );
 	ClearMessage();
 
-	PlayBGM( 0, "hig_sample_kyouki", 120, 0 );
 	DrawScene("background/nort", 400 );
+	PlayBGM( 0, "hig_sample_kyouki", 120, 0 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　この時の祭具殿侵入が、結局、鷹野さんたちの祟られる理由となった。",
@@ -69,6 +69,7 @@ void main()
 	OutputLine(NULL, "　しかし、だとすると、５年目の祟りは、祭具殿侵入がなかったら「本来」誰に下されていたのか、という疑問にぶつかる。",
 		   NULL, "But if so, who would have been the victim if nobody broke into the ritual storehouse?", Line_Normal);
 	ClearMessage();
+	DisableWindow();
 	Wait( 1000 );
 	DrawScene("black", 1000 );
 }
