@@ -9,8 +9,8 @@ void dialog000()
 	OutputLine(NULL, "「って言うか……、だって私、ずっと興宮！",
 		   NULL, "\"But... I've been living in Okinomiya all my life!", Line_WaitForInput);
 	ModPlayVoiceLS(4, 6, "ps3/s06/06/150601660", 128, TRUE);
-	OutputLine(NULL, "　鬼婆に嫌われて以降、雛見沢にはほとんど近付いてもいない！",
-		   NULL, " Since the hag hated me, I've barely been to Hinamizawa!", Line_WaitForInput);
+	OutputLine(NULL, "　バァさんに嫌われて以降、雛見沢にはほとんど近付いてもいない！",
+		   NULL, " Since the old woman hated me, I've barely been to Hinamizawa!", Line_WaitForInput);
 	ModPlayVoiceLS(4, 6, "ps3/s06/06/150601661", 128, TRUE);
 	OutputLine(NULL, "　その上、学園に閉じ込められて過してたんですよ？！",
 		   NULL, " Besides, I was stuck at school.", Line_WaitForInput);
@@ -30,20 +30,20 @@ void dialog001()
 	OutputLine(NULL, "　…あはははは、実は内緒なんだけど…、昨日はお祭りのあとで親族の宴会に巻き込まれちゃってさ。",
 		   NULL, " ...Ahahahaha. Actually, this is a secret, but... after the festival yesterday, I got wrapped up in the party my relatives were having.", Line_WaitForInput);
 	ModPlayVoiceLS(4, 6, "ps3/s06/06/150601695", 128, TRUE);
-	OutputLine(NULL, "それで…チョイっと。」",
-		   NULL, " And, well... I had a bit.\"", GetGlobalFlag(GLinemodeSp));
+	OutputLine(NULL, "それで…エンドレスに。」",
+		   NULL, " And, well... it was a bit endless.\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
-	OutputLine(NULL, "　チョイっと。",
-		   NULL, "Gulp.", Line_WaitForInput);
-	OutputLine(NULL, "コップを傾けるようなジェスチャーをしてやる。",
-		   NULL, " I pretended to drink with an invisible glass.", Line_Normal);
+	OutputLine(NULL, "　エンドレス。",
+		   NULL, "Endless.", Line_WaitForInput);
+	OutputLine(NULL, "日本語に直すと『連続』…つまり、徹夜。",
+		   NULL, " The party quite literally continued to the following morning.", Line_Normal);
 	ClearMessage();
+	
 	DisableWindow();
-	ModDrawCharacter(2, 1, "sprite/normal/kei1_komaru_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
-	DisplayWindow();
-
+	ModDrawCharacter(2, 1, "sprite/normal/kei1_komaru_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );
+	
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 1, "ps3/s06/01/150100115", 128, TRUE);
 	OutputLine(NULL, "「て、徹夜明けかよー？！",
@@ -61,8 +61,8 @@ void dialog002()
 	OutputLine(NULL, "「詩音か。",
 		   NULL, "\"Shion?", Line_WaitForInput);
 	ModPlayVoiceLS(4, 1, "ps3/s06/01/150100129", 128, TRUE);
-	OutputLine(NULL, "魅音と同じで、今日は二日酔いで寝込んでるんじゃないかと思ったぜ。」",
-		   NULL, " I thought you'd be sleeping in today with a hangover, same as Mion.\"", GetGlobalFlag(GLinemodeSp));
+	OutputLine(NULL, "魅音と同じで、今日は寝不足で寝込んでるんじゃないかと思ったぜ。」",
+		   NULL, " I thought you'd be sleeping in today after the all-nighter, same as Mion.\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
@@ -70,8 +70,8 @@ void dialog002()
 	OutputLine(NULL, "「え？",
 		   NULL, "\"What?", Line_WaitForInput);
 	ModPlayVoiceLS(4, 6, "ps3/s06/06/150601731", 128, TRUE);
-	OutputLine(NULL, "　お姉、二日酔いなんですか？",
-		   NULL, " My sis had a hangover?", Line_WaitForInput);
+	OutputLine(NULL, "　ひょっとしてお姉、早退ですか？",
+		   NULL, " My sis left early?", Line_WaitForInput);
 	ModPlayVoiceLS(4, 6, "ps3/s06/06/150601732", 128, TRUE);
 	OutputLine(NULL, "　あっはははははは！",
 		   NULL, " Ah hahahaha!", Line_WaitForInput);

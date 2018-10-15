@@ -7,8 +7,8 @@ void main()
 	FadeOutBGM( 3, 0, FALSE );
 	ClearMessage();
 
-	PlayBGM( 0, "Nazo", 120, 0 );
 	DrawSceneWithMask("background/jy1", "maskup", 1, 0, 1300 );
+	PlayBGM( 0, "Nazo", 120, 0 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　その後、私は公由村長の行方を捜す青年団に合流した。",
@@ -89,7 +89,8 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>村人</color>", NULL, "<color=#f5e6d3>Villager</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 0, "ps3/s20/00/villb44001", 128, TRUE);
 	OutputLine(NULL, "「ん？",
-		   NULL, "\"Hmm?", Line_WaitForInput);
+		   NULL, "\"Hmm?", Line_Continue);
+	Wait( 2000 );
 	OutputLine(NULL, "　北条んとこの悟史ん時かい？",
 		   NULL, " When Satoshi Houjou-kun was missing?", Line_WaitForInput);
 	ModPlayVoiceLS(4, 0, "ps3/s20/00/villb44002", 128, TRUE);
@@ -112,7 +113,7 @@ void main()
 	OutputLine(NULL, "　公由を捜すためにはこれだけの時間を割くのに、…悟史くんにはまったく割かない。",
 		   NULL, "Although they spent this much time searching for Kimiyoshi... they didn't do the same when Satoshi-kun went missing.", Line_Normal);
 	ClearMessage();
-	PlayBGM( 1, "yabaisemi", 120, 0 );
+	PlayBGM( 1, "semi_r", 120, 0 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　そう、絶対見つからないと知っているやつらが、居たからだ。",
@@ -135,6 +136,7 @@ void main()
 	OutputLine(NULL, "　くそ…くそ…、その言ったやつを殺してやりたい……。",
 		   NULL, " Shit... shit... I want to kill the people who said that...", Line_Normal);
 	ClearMessage();
+	DisableWindow();
 	Wait( 1000 );
 	DrawScene("black", 1000 );
 }
