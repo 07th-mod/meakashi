@@ -1710,15 +1710,6 @@ void main()
 	if(GetGlobalFlag(GCensor) <= 2){ModCallScriptSection("_zmeak_019_1_vm00_n01","dialog001");}
 	//VoiceMatchingEnd
 
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 1, "ps3/s06/01/150100115", 128, TRUE);
-	OutputLine(NULL, "「て、徹夜明けかよー？！",
-		   NULL, "\"D-Did you pull an all nighter?!", Line_WaitForInput);
-	ModPlayVoiceLS(4, 1, "ps3/s06/01/150100116", 128, TRUE);
-	OutputLine(NULL, "　心配して損した…」",
-		   NULL, " You worried me...\"", GetGlobalFlag(GLinemodeSp));
-	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
-
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　圭一は大仰に驚いてみせると、悪態を吐きながらも、私の体調を気遣ってくれた。",
 		   NULL, "Keiichi exaggerated his reaction, but he still seemed worried.", Line_Normal);

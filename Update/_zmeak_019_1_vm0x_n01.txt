@@ -43,6 +43,15 @@ void dialog001()
 	DisableWindow();
 	ModDrawCharacter(2, 1, "sprite/normal/kei1_komaru_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
 	DisplayWindow();
+
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 1, "ps3/s06/01/150100115", 128, TRUE);
+	OutputLine(NULL, "「て、徹夜明けかよー？！",
+		   NULL, "\"D-Did you pull an all nighter?!", Line_WaitForInput);
+	ModPlayVoiceLS(4, 1, "ps3/s06/01/150100116", 128, TRUE);
+	OutputLine(NULL, "　心配して損した…」",
+		   NULL, " You worried me...\"", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 }
 
 void dialog002()
