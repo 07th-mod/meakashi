@@ -7,8 +7,8 @@ void main()
 	FadeOutBGM( 3, 0, FALSE );
 	ClearMessage();
 
-	PlayBGM( 0, "z2_hig1", 120, 0 );
 	DrawScene("background/nort", 1000 );
+	PlayBGM( 0, "z2_hig1", 120, 0 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　私の復讐劇は、この時点では、祟りシステムの破壊で成立すると考えられていた。",
@@ -199,7 +199,7 @@ void main()
 		   NULL, "I don't understand who the enemy is, or how Satoshi-kun was made to disappear.", Line_Normal);
 	ClearMessage();
 	PlaySE( 0, "s_page", 128, 64 );
-	DrawScene("background/nort", 200 );
+	DrawScene("background/nort", 300 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　鬼婆は雛見沢の闇をどこまで知っていたのか。",
@@ -256,6 +256,7 @@ void main()
 	OutputLine(NULL, "（このページ全体がぐしゃぐしゃの斜線で消されている）",
 		   NULL, "(The whole page is blacked out with scribbles.)", Line_Normal);
 	ClearMessage();
+	DisableWindow();
 	Wait( 1000 );
 	DrawScene("black", 1000 );
 }

@@ -6,9 +6,6 @@ void main()
 	FadeOutBGM( 3, 0, FALSE );
 	ClearMessage();
 
-	SetValidityOfInput( FALSE );
-	Wait( 2000 );
-	SetValidityOfInput( TRUE );
 	DrawScene("background/moon", 3000 );
 	SetValidityOfInput( FALSE );
 	Wait( 2000 );
@@ -22,7 +19,6 @@ void main()
 	Wait( 2000 );
 	SetValidityOfInput( TRUE );
 	FadeOutBGM( 1, 0, FALSE );
-	ModDrawCharacter(19, 0, "transparent", "0", 0, 100, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>圭一の父</color>", NULL, "<color=#f5e6d3>Keiichi's dad</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 0, "ps3/s06/00/152600001", 128, TRUE);
@@ -65,7 +61,7 @@ void main()
 	OutputLine(NULL, "「………も、",
 		   NULL, "\"H-", Line_Continue);
 	// (backup) SetValidityOfInput( FALSE );
-	Wait( 800 );
+	Wait( 600 );
 	// (backup) SetValidityOfInput( TRUE );
 	OutputLine(NULL, "……もしもし。",
 		   NULL, "Hello...?", Line_WaitForInput);
@@ -99,7 +95,7 @@ void main()
 	OutputLine(NULL, "……その、",
 		   NULL, " Umm...", Line_Continue);
 	// (backup) SetValidityOfInput( FALSE );
-	Wait( 600 );
+	Wait( 800 );
 	// (backup) SetValidityOfInput( TRUE );
 	OutputLine(NULL, "……昨夜は……すまなかった。",
 		   NULL, " ...Sorry about... last night.", Line_WaitForInput);
@@ -192,7 +188,7 @@ void main()
 	OutputLine(NULL, "…互いの持つ小さな断片を合わせていけば、…ひょっとすると、鷹野さんたちを殺した、",
 		   NULL, " ...If we connect all the tiny pieces that we have...", Line_Continue);
 	// (backup) SetValidityOfInput( FALSE );
-	Wait( 1000 );
+	Wait( 6000 );
 	// (backup) SetValidityOfInput( TRUE );
 	OutputLine(NULL, "…いえ、今年の事件に限らない。",
 		   NULL, " then just maybe we'll find out who killed them... ", GetGlobalFlag(GLinemodeSp));
@@ -351,7 +347,7 @@ void main()
 	OutputLine(NULL, "「何も知らないです！",
 		   NULL, "\"I don't know anything!", Line_Continue);
 	// (backup) SetValidityOfInput( FALSE );
-	Wait( 600 );
+	Wait( 1600 );
 	// (backup) SetValidityOfInput( TRUE );
 	OutputLine(NULL, "……お父さんが電話でそう話してるのを、また盗み聞いただけですから。」",
 		   NULL, " ...I just overheard my father talking about it on the phone again.\"", Line_Normal);
@@ -373,14 +369,14 @@ void main()
 		   NULL, "The police should be searching for him as well...\"", Line_Normal);
 	ClearMessage();
 
-	SetSpeedOfMessage( TRUE, 128 );
+	DisableWindow();
+	StartShakingOfWindow( 248, 30, 0, 2, 4*2, FALSE );
+	StartShakingOfAllObjects( 248, 30, 0, 2, 4*2, FALSE );
+	
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 6, "ps3/s06/06/150602184", 128, TRUE);
 	OutputLine(NULL, "「な、なんでそんな大事な話を先にしてくれなかったんですかッ！！！！！」",
-		   NULL, "\"Wh-Why didn't you tell me something that important right away???!!\"", Line_Continue);
-	StartShakingOfWindow( 248, 40, 0, 2, 4*2, FALSE );
-	StartShakingOfAllObjects( 248, 40, 0, 2, 4*2, TRUE );
-	OutputLineAll(NULL, "", Line_Normal);
+		   NULL, "\"Wh-Why didn't you tell me something that important right away???!!\"", Line_Normal);
 
 	ClearMessage();
 
@@ -389,7 +385,7 @@ void main()
 	OutputLine(NULL, "「わ、悪ぃ…、",
 		   NULL, "\"S-Sorry...", Line_Continue);
 	// (backup) SetValidityOfInput( FALSE );
-	Wait( 600 );
+	Wait( 1400 );
 	// (backup) SetValidityOfInput( TRUE );
 	OutputLine(NULL, "…もう知ってると思ってたんだよ…。",
 		   NULL, " I thought you already knew...", Line_WaitForInput);
@@ -403,12 +399,12 @@ void main()
 	OutputLine(NULL, "「…………………………………圭ちゃん、",
 		   NULL, "\"............Kei-chan...", Line_Continue);
 	// (backup) SetValidityOfInput( FALSE );
-	Wait( 1000 );
+	Wait( 1300 );
 	// (backup) SetValidityOfInput( TRUE );
 	OutputLine(NULL, "……私、",
 		   NULL, " ...What...", Line_Continue);
 	// (backup) SetValidityOfInput( FALSE );
-	Wait( 800 );
+	Wait( 1200 );
 	// (backup) SetValidityOfInput( TRUE );
 	OutputLine(NULL, "……………どうしよう……。」",
 		   NULL, " ......What should I do...?\"", GetGlobalFlag(GLinemodeSp));
@@ -455,10 +451,11 @@ void main()
 	OutputLine(NULL, "…………",
 		   NULL, "......", Line_Continue);
 	SetSpeedOfMessage( FALSE, 0 );
+	Wait( 1000 );
 	OutputLine(NULL, "公由のお爺ちゃんに",
 		   NULL, " Uncle Kimiyoshi, I...", Line_Continue);
 	// (backup) SetValidityOfInput( FALSE );
-	Wait( 1000 );
+	Wait( 1600 );
 	// (backup) SetValidityOfInput( TRUE );
 	OutputLine(NULL, "……打ち明けたんです。」",
 		   NULL, " ...I told him everything.\"", GetGlobalFlag(GLinemodeSp));
@@ -579,7 +576,7 @@ void main()
 	OutputLine(NULL, "……笑いながら……任せなさい…って………。",
 		   NULL, " ...smiling... ...and he told me to leave it to... him...", Line_Continue);
 	// (backup) SetValidityOfInput( FALSE );
-	Wait( 1200 );
+	Wait( 3200 );
 	// (backup) SetValidityOfInput( TRUE );
 	OutputLine(NULL, "……ぅぅ…ッ！！」",
 		   NULL, " ...ngh...!!\"", Line_Normal);
@@ -729,7 +726,7 @@ void main()
 		   NULL, "...", Line_Continue);
 	SetSpeedOfMessage( FALSE, 0 );
 	// (backup) SetValidityOfInput( FALSE );
-	Wait( 600 );
+	Wait( 800 );
 	// (backup) SetValidityOfInput( TRUE );
 	SetSpeedOfMessage( TRUE, 128 );
 
@@ -769,11 +766,7 @@ void main()
 	OutputLine(NULL, "　私たちを、一番最後に殺すつもりに違いないんです！！」",
 		   NULL, " They must be planning to kill us last of all!!\"", Line_Normal);
 	ClearMessage();
-	FadeOutBGM( 0, 0, FALSE );
-	FadeOutBGM( 1, 0, FALSE );
-	FadeOutBGM( 2, 0, FALSE );
-	FadeOutBGM( 3, 0, FALSE );
-	ModDrawCharacter(19, 0, "transparent", "0", 0, 100, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, TRUE );
+	FadeOutBGM( 0, 300, FALSE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 1, "ps3/s06/01/150100224", 128, TRUE);
@@ -783,7 +776,7 @@ void main()
 	OutputLine(NULL, "　な、…なんだって？！」",
 		   NULL, " Wha... What!?\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
-	PlayBGM( 0, "hig_sample_kyouki", 120, 0 );
+	PlayBGM( 0, "msys30", 110, 0 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 6, "ps3/s06/06/150602223", 128, TRUE);
@@ -796,7 +789,7 @@ void main()
 	OutputLine(NULL, "　……………自分で口にして、はっとするような、恐ろしいこと。",
 		   NULL, "What I just said scared even me.", Line_Normal);
 	ClearMessage();
-	DrawSceneWithMask("background/negative/re_tel", "mask2", 1, 0, 3000 );
+	DrawSceneWithMask("background/negative/re_tel", "maskc", 1, 0, 800 );
 
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -845,17 +838,10 @@ void main()
 		   NULL, "What a great way to destroy someone's life...!", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
-
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　しかもさ、この方法が何でゾクゾクするかってぇと、",
-		   NULL, "Why was I getting so excited about this?", Line_ContinueAfterTyping);
-	SetValidityOfInput( FALSE );
-	Wait( 1000 );
-	SetValidityOfInput( TRUE );
+		   NULL, "Why was I getting so excited about this?", Line_WaitForInput);
 	PlayBGM( 1, "yabaisemi", 120, 0 );
-
-	OutputLineAll(NULL, "", Line_WaitForInput);
-
 	SetSpeedOfMessage( TRUE, 16 );
 	OutputLine(NULL, "…私ニハ、スグニ実行可能ナンダヨ、コレ！！",
 		   NULL, " ...Because I could get going with that plan right away!!", Line_ContinueAfterTyping);
@@ -901,7 +887,7 @@ void main()
 	OutputLine(NULL, "…う、",
 		   NULL, " ...I...", Line_Continue);
 	// (backup) SetValidityOfInput( FALSE );
-	Wait( 900 );
+	Wait( 300 );
 	// (backup) SetValidityOfInput( TRUE );
 	OutputLine(NULL, "…打ち明けたんだ。",
 		   NULL, " ...I told her about it.", Line_WaitForInput);
@@ -1013,8 +999,9 @@ void main()
 	OutputLine(NULL, "　圭一は乱暴に受話器を置いた。",
 		   NULL, "Keiichi hung up roughly.", Line_Normal);
 	ClearMessage();
+	FadeOutBGM( 1, 400, FALSE );
 	DrawScene("background/moon", 400 );
-	PlayBGM( 1, "yabaisemi", 120, 0 );
+	PlayBGM( 1, "kaze", 120, 0 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 6, "ps3/s06/06/150602233", 128, TRUE);
@@ -1056,10 +1043,7 @@ void main()
 	OutputLine(NULL, "　一通りケタケタ笑った後、思考を冷却化させる。",
 		   NULL, "I laughed for a while and then calmed down.", Line_Normal);
 	ClearMessage();
-	FadeOutBGM( 1, 0, FALSE );
-	ModDrawCharacter(19, 0, "transparent", "0", 0, 100, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, TRUE );
-	FadeOutBGM( 3, 0, FALSE );
-	ModDrawCharacter(19, 0, "transparent", "0", 0, 100, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, TRUE );
+	FadeOutBGM( 1, 300, FALSE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　うちに乗り付けてきた梨花と沙都子の自転車や履物などはもう始末してある。",

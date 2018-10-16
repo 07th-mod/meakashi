@@ -5,11 +5,10 @@ void main()
 	FadeOutBGM( 1, 0, FALSE );
 	FadeOutBGM( 2, 0, FALSE );
 	FadeOutBGM( 3, 0, FALSE );
-	ModDrawCharacter(19, 0, "transparent", "0", 0, 100, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, TRUE );
 	ClearMessage();
 
-	PlayBGM( 1, "suzu", 120, 0 );
 	DrawScene("background/nort", 1000 );
+	PlayBGM( 1, "suzu", 120, 0 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　古手梨花。",
@@ -152,6 +151,7 @@ void main()
 	OutputLine(NULL, "……私の想像を超えて深すぎる。",
 		   NULL, " might run much deeper than I thought.", Line_Normal);
 	ClearMessage();
+	DisableWindow();
 	Wait( 1000 );
 	DrawScene("black", 1000 );
 }
