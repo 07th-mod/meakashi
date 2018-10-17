@@ -7,14 +7,14 @@ void main()
 	FadeOutBGM( 3, 0, FALSE );
 	ClearMessage();
 
-	PlayBGM( 0, "T2", 120, 0 );
 	DrawScene("background/ke_ky1", 1000 );
+	PlayBGM( 0, "T2", 120, 0 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>刑事</color>", NULL, "<color=#f5e6d3>Detective</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 0, "ps3/s20/00/tp1_keijia_10001", 128, TRUE);
 	OutputLine(NULL, "「えぇ、葛西氏が踏み込んだ時には室内は無人でベランダへの窓が開きっぱなし。",
 		   NULL, "\"Yes. When Mr. Kasai broke in, the room was empty, and the window leading to the balcony was open.", Line_Continue);
-	Wait( 4000 );
+	Wait( 5200 );
 	OutputLine(NULL, "その時が飛び降り時刻です。",
 		   NULL, " That was when she fell.", GetGlobalFlag(GLinemodeSp));
 	
@@ -37,7 +37,7 @@ void main()
 	ModPlayVoiceLS(4, 0, "ps3/s20/00/tp1_keijia_10004", 128, TRUE);
 	OutputLine(NULL, "前原圭一が刺されたのは、ほぼ同じ頃。",
 		   NULL, "Keiichi Maebara was stabbed at about the same time.", Line_Continue);
-	Wait( 3000 );
+	Wait( 3800 );
 	OutputLine(NULL, "その頃には園崎詩音はすでに飛び降りていて、屋根の上で脳震盪中…？」",
 		   NULL, " Was Shion Sonozaki unconscious on the roof then...?\"", GetGlobalFlag(GLinemodeSp));
 		   
@@ -45,7 +45,7 @@ void main()
 	ModPlayVoiceLS(4, 11, "ps3/s20/11/440700238", 128, TRUE);
 	OutputLine(NULL, "「…違いますねぇ。",
 		   NULL, "\"I doubt it.", Line_Continue);
-	Wait( 2000 );
+	Wait( 3000 );
 	OutputLine(NULL, "ベランダから抜け出して圭一を刺して。",
 		   NULL, " She must've snuck out of the building, stabbed Keiichi, ", Line_WaitForInput);
 	ModPlayVoiceLS(4, 11, "ps3/s20/11/440700239", 128, TRUE);
@@ -55,8 +55,8 @@ void main()
 	OutputLine(NULL, "　悪いけど、周辺の部屋のベランダとかも調べ直してください。」",
 		   NULL, " Ah, would you look at the neighboring balcony again?\"", Line_Normal);
 	ClearMessage();
+	ModDrawCharacter(2, 19, "sprite/normal/kuma_def_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, FALSE );
 	DrawSceneWithMask("background/ke_ky2", "maskleft", 1, 0, 300 );
-	ModDrawCharacter(2, 19, "sprite/normal/kuma_def_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#8f6d8f>熊谷</color>", NULL, "<color=#8f6d8f>Kumagai</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 19, "ps3/s20/19/443100053", 128, TRUE);
@@ -74,7 +74,7 @@ void main()
 	ModPlayVoiceLS(4, 19, "ps3/s20/19/443100054", 128, TRUE);
 	OutputLine(NULL, "「佐藤と伝えれば分かるとか。",
 		   NULL, "\"Satou, apparently.", Line_Continue);
-	Wait( 2000 );
+	Wait( 2200 );
 	OutputLine(NULL, "合言葉はロンと言えと。」",
 		   NULL, " He says the password is 'ron.'\"", Line_Normal);
 	ClearMessage();
@@ -85,7 +85,7 @@ void main()
 	ModPlayVoiceLS(4, 11, "ps3/s20/11/440700242", 128, TRUE);
 	OutputLine(NULL, "「なっはっは！",
 		   NULL, "\"Na ha ha!", Line_Continue);
-	Wait( 2000 );
+	Wait( 2200 );
 	OutputLine(NULL, "　もしもし！",
 		   NULL, " Hello!", Line_WaitForInput);
 	ModPlayVoiceLS(4, 11, "ps3/s20/11/440700243", 128, TRUE);
@@ -109,14 +109,14 @@ void main()
 	OutputLine(NULL, "　今度フラワーロードで一杯おごりますよ。」",
 		   NULL, " I'll buy you a drink on Flower Road!\"", Line_Normal);
 	ClearMessage();
+	ModDrawCharacter(3, 19, "sprite/normal/kuma_komaru_", "0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 0, FALSE );
 	DrawSceneWithMask("background/ke_s2", "maskright", 1, 0, 300 );
-	ModDrawCharacter(3, 19, "sprite/normal/kuma_komaru_", "0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#8f6d8f>熊谷</color>", NULL, "<color=#8f6d8f>Kumagai</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 19, "ps3/s20/19/443100055", 128, TRUE);
 	OutputLine(NULL, "「何です、今の電話。",
 		   NULL, "\"What was that call about?", Line_Continue);
-	Wait( 1700 );
+	Wait( 1600 );
 	OutputLine(NULL, "麻雀の誘いですか？」",
 		   NULL, " A mahjong invitation?\"", Line_Normal);
 	ClearMessage();
@@ -149,13 +149,14 @@ void main()
 	OutputLine(NULL, "　…の関係が理解できる。」",
 		   NULL, " Anyway, with that, you gain a clearer understanding of their relationship.\"", Line_Normal);
 	ClearMessage();
+	DisableWindow();
 	ModDrawCharacter(3, 19, "sprite/normal/kuma_def_", "0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#8f6d8f>熊谷</color>", NULL, "<color=#8f6d8f>Kumagai</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 19, "ps3/s20/19/443100056", 128, TRUE);
 	OutputLine(NULL, "「ノートって、先日のあの、大石さん宛てと書かれて郵便ポストに投函されてたって言う怪ノートのことですか？",
 		   NULL, "\"Are you talking about the mysterious notebook you received the other day?", Line_Continue);
-	Wait( 6000 );
+	Wait( 7000 );
 	OutputLine(NULL, "　中身はめちゃくちゃで捜査撹乱の恐れありって言いませんでしたっけ？」",
 		   NULL, " Didn't you say it was all mumbo jumbo that could possibly confuse the case?\"", Line_Normal);
 	ClearMessage();
@@ -164,7 +165,7 @@ void main()
 	ModPlayVoiceLS(4, 11, "ps3/s20/11/440700252", 128, TRUE);
 	OutputLine(NULL, "「もちろん、名前の入れ替えがわかったところで、撹乱の域を出ませんがねぇ。",
 		   NULL, "\"Even after switching the names, it's still confusing......", Line_Continue);
-	Wait( 7000 );
+	Wait( 6000 );
 	OutputLine(NULL, "……このノート、どこまで信じていいのやら。",
 		   NULL, " I don't know how much of the content I can trust...", Line_WaitForInput);
 	ModPlayVoiceLS(4, 11, "ps3/s20/11/440700253", 128, TRUE);
@@ -199,7 +200,7 @@ void main()
 	OutputLine(NULL, "「しあわせ、",
 		   NULL, "\"A happy diary", Line_Continue);
 	// (backup) SetValidityOfInput( FALSE );
-	Wait( 1200 );
+	Wait( 1300 );
 	// (backup) SetValidityOfInput( TRUE );
 	OutputLine(NULL, "……ですか？」",
 		   NULL, "......?\"", GetGlobalFlag(GLinemodeSp));
@@ -216,7 +217,7 @@ void main()
 	OutputLine(NULL, "その好きというのがね、若さゆえの勘違いで、ずれちゃって。」",
 		   NULL, " But because she was so young, a few mistakes caused that love to be misdirected.\"", Line_Normal);
 	ClearMessage();
-
+	DisableWindow();
 	SetValidityOfInput( FALSE );
 	Wait( 3000 );
 	SetValidityOfInput( TRUE );

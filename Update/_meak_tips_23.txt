@@ -7,10 +7,10 @@ void main()
 	FadeOutBGM( 3, 0, FALSE );
 	ClearMessage();
 
-	PlayBGM( 0, "T1", 120, 0 );
-	ModDrawCharacterWithFiltering(1, 16, "sprite/normal/aka_def_", "0", "maskright", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 8, 0, FALSE );
-	ModDrawCharacterWithFiltering(2, 15, "sprite/normal/kasa_1_", "0", "maskright", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 10, 0, FALSE );
+	ModDrawCharacter(1, 16, "sprite/normal/aka_def_", "0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 0, FALSE );
+	ModDrawCharacter(2, 15, "sprite/normal/kasa_1_", "0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, FALSE );
 	DrawScene("background/mati4", 400 );
+	PlayBGM( 0, "T1", 120, 0 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 6, "ps3/s20/06/440600033", 128, TRUE);
@@ -48,7 +48,7 @@ void main()
 	ModPlayVoiceLS(4, 16, "ps3/s20/16/442200003", 128, TRUE);
 	OutputLine(NULL, "「私も当時はだいぶ斜な生き方してて呆れられててね。",
 		   NULL, "\"I was living a very unseemly life back then.", Line_Continue);
-	Wait( 4000 );
+	Wait( 3800 );
 	OutputLine(NULL, "その挙句、連れて来た男が任侠者だったわけでしょ。",
 		   NULL, " Then the man I brought home was a yakuza,", Line_WaitForInput);
 	ModPlayVoiceLS(4, 16, "ps3/s20/16/442200004", 128, TRUE);
@@ -92,7 +92,7 @@ void main()
 	ModPlayVoiceLS(4, 6, "ps3/s20/06/440600036", 128, TRUE);
 	OutputLine(NULL, "「ひぇー…！",
 		   NULL, "\"Eeek...!", Line_Continue);
-	Wait( 1500 );
+	Wait( 1600 );
 	OutputLine(NULL, "　鬼婆と殺陣を演じたわけ？！",
 		   NULL, " You fought that hag with a sword?!", Line_WaitForInput);
 	ModPlayVoiceLS(4, 6, "ps3/s20/06/440600037", 128, TRUE);
@@ -200,7 +200,7 @@ void main()
 	ModPlayVoiceLS(4, 16, "ps3/s20/16/442200019", 128, TRUE);
 	OutputLine(NULL, "「実はね、内緒よ？",
 		   NULL, "\"This is just between you and me, okay?", Line_Continue);
-	Wait( 4000 );
+	Wait( 2000 );
 	OutputLine(NULL, "　鬼婆さまもね、その昔、けじめで爪を剥いだことあるんだってよー？",
 		   NULL, " She removed her fingernails in atonement a long time ago herself.", Line_WaitForInput);
 	ModPlayVoiceLS(4, 16, "ps3/s20/16/442200020", 128, TRUE);
@@ -232,10 +232,11 @@ void main()
 	ModPlayVoiceLS(4, 6, "ps3/s20/06/440600043", 128, TRUE);
 	OutputLine(NULL, "「わ、その顔は知ってるなぁ？！",
 		   NULL, "\"Hey, you do so have one! It's all over your face!", Line_Continue);
-	Wait( 4000 );
+	Wait( 2000 );
 	OutputLine(NULL, "　教えてよー！」",
 		   NULL, " Tell meee!\"", Line_Normal);
 	ClearMessage();
+	DisableWindow();
 	Wait( 1000 );
 	DrawScene("black", 1000 );
 }
