@@ -3321,7 +3321,9 @@ void main()
 	CallScript( "&eyeCamp" );
 	FadeOutBGM( 0, 500, TRUE );
 	Wait( 1000 );
-	ModPlayMovie("mv05")
+
+	ModCallScriptSection("&opening", "OpeningStory");
+
 	DrawScene("black", 1000 );
 	SetValidityOfInput( TRUE );
 
