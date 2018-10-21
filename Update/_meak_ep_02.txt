@@ -1327,65 +1327,21 @@ void main()
 		   NULL, "Eh?", Line_Normal);
 	ClearMessage();
 
-	
+
 	DrawSceneWithMask("background/ryuuketu1", "maskaa", 1, 0, 200 );
 
 	FadeOutBGM( 0, 1000 , TRUE );
 	DrawScene("white", 3000 );
 	PlayBGM( 0, "hm05_20", 120, 0 );
-	SetValidityOfInput( FALSE );
+	// SetValidityOfInput( FALSE );
 	Wait( 3000 );
 
-	SetValidityOfSkipping( FALSE );
-	SetValidityOfInput( FALSE );
+	// SetValidityOfSkipping( FALSE );
+	// SetValidityOfInput( FALSE );
 	SetValidityOfUserEffectSpeed( FALSE );
-	DrawScene("text/meaed1", 1000 );
-	ModPlayVoiceLS(4, 6, "ps3/s06/06/meashi91001", 128, TRUE);
-	Wait( 7200 );
-	ModPlayVoiceLS(4, 6, "ps3/s06/06/meashi91002", 128, TRUE);
-	Wait( 6400 );
-	DrawScene("text/meaed2", 1000 );
-	ModPlayVoiceLS(4, 6, "ps3/s06/06/meashi91003", 128, TRUE);
-	Wait( 3600 );
-	ModPlayVoiceLS(4, 6, "ps3/s06/06/meashi91004", 128, TRUE);
-	Wait( 5000 );
-	ModPlayVoiceLS(4, 6, "ps3/s06/06/meashi91005", 128, TRUE);
-	Wait( 8100 );
-	DrawScene("text/meaed3", 1000 );
-	ModPlayVoiceLS(4, 6, "ps3/s06/06/meashi91010", 128, TRUE);
-	Wait( 9700 );
-	DrawScene("text/meaed4", 1000 );
-	ModPlayVoiceLS(4, 6, "ps3/s06/06/meashi91006", 128, TRUE);
-	Wait( 7600 );
-	ModPlayVoiceLS(4, 6, "ps3/s06/06/meashi91007", 128, TRUE);
-	Wait( 5300 );
-	ModPlayVoiceLS(4, 6, "ps3/s06/06/meashi91008", 128, TRUE);
-	Wait( 6000 );
-	ModPlayVoiceLS(4, 6, "ps3/s06/06/meashi91009", 128, TRUE);
-	Wait( 4100 );
-	DrawScene("text/meaed5", 1000 );
-	ModPlayVoiceLS(4, 6, "ps3/s06/06/meashi91011", 128, TRUE);
-	Wait( 6400 );
-	ModPlayVoiceLS(4, 6, "ps3/s06/06/meashi91012", 128, TRUE);
-	Wait( 5800 );
-	ModPlayVoiceLS(4, 6, "ps3/s06/06/meashi91013", 128, TRUE);
-	Wait( 4900 );
-	DrawScene("text/meaed6", 1000 );
-	ModPlayVoiceLS(4, 6, "ps3/s06/06/meashi91014", 128, TRUE);
-	Wait( 2800 );
-	ModPlayVoiceLS(4, 6, "ps3/s06/06/meashi91015", 128, TRUE);
-	Wait( 4400 );
-	DrawScene("white", 3000 );
-	FadeOutBGM( 0, 1000 , FALSE );
-	DrawScene("text/meaed7", 2000 );
-	ModPlayVoiceLS(4, 6, "ps3/s06/06/meashi91016", 128, TRUE);
-	Wait( 4000 );
-	PlayBGM( 0, "song_you", 120, 0 );
-	DrawScene("white", 5000 );
-
+	CallScript( "&endroll_sion" );
 	CallScript( "&endroll_staff5" );
-	SetValidityOfInput( TRUE );
-	SetValidityOfSkipping( TRUE );
+	// SetValidityOfInput( TRUE );
+	// SetValidityOfSkipping( TRUE );
 	SetValidityOfUserEffectSpeed( TRUE );
-
 }
