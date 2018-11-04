@@ -149,7 +149,7 @@ void main()
 		   NULL, "And the year after--", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
-	DrawFilm( 2, 200, 200, 200, 256, 0, 0, TRUE );
+	DrawFilm( 2, 200, 200, 200, 256, 0, 0, FALSE );
 	DrawScene("background/kawa1", 400 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -184,8 +184,9 @@ void main()
 	OutputLine(NULL, "　という、そういうムードだった。",
 		   NULL, " people were far more likely to believe it was a curse.", Line_Normal);
 	ClearMessage();
-	FadeFilm( 0, TRUE );
+
 	DrawScene("black", 400 );
+	FadeFilm( 0, FALSE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　私が知るのはここまで。",

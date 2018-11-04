@@ -789,9 +789,9 @@ void main()
 	OutputLine(NULL, "　……………自分で口にして、はっとするような、恐ろしいこと。",
 		   NULL, "What I just said scared even me.", Line_Normal);
 	ClearMessage();
-	Negative( 100, TRUE );
-	DrawSceneWithMask("background/re_tel", "maskc", 1, 0, 800 );
 
+	DisableWindow();
+	Negative( 800, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　親しい人から順々に殺していって、悲しい思いをさせた後に殺す。",
@@ -853,7 +853,7 @@ void main()
 		   NULL, " Heh hehehehehehe heh heh heh!!!", Line_Normal);
 	ClearMessage();
 
-	FadeFilm( 0, FALSE );
+	FadeFilm( 800, FALSE );
 	DrawScene("black", 400 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }

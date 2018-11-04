@@ -1894,8 +1894,8 @@ void main()
 
 	if (GetGlobalFlag(GADVMode) == 0) { ClearMessage(); }
 	PlaySE( 4, "s_glass", 128, 64 );
-	Negative( 100, TRUE );
-	DrawSceneWithMask("background/jsa7", "maskc", 1, 0, 100 );
+	Negative( 100, FALSE );
+	DrawScene("background/jsa7", 100 );
 	PlayBGM( 1, "kaze", 120, 0 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -2007,7 +2007,7 @@ void main()
 		   NULL, " Huh?", Line_Normal);
 	ClearMessage();
 	FadeOutBGM( 0, 1000, FALSE );
-	FadeFilm( 0, FALSE );
+	FadeFilm( 1300, FALSE );
 	DrawScene("black", 1000 );
 
 
@@ -3195,7 +3195,7 @@ void main()
 	OutputLine(NULL, "……いつの間にか作り上げられているんです。」",
 		   NULL, " where every year, you're allowed to kill someone on the night of Watanagashi.\"", Line_Normal);
 	ClearMessage();
-	DrawFilm( 2, 200, 200, 200, 256, 0, 0, TRUE );
+	DrawFilm( 2, 200, 200, 200, 256, 0, 0, FALSE );
 	DrawScene("background/hi1", 1000 );
 	PlayBGM( 1, "semi_r", 120, 0 );
 
@@ -3498,7 +3498,7 @@ void main()
 	OutputLine(NULL, "　お魎の憂慮は言わば、安全装置のようなもので、安全装置を外しても、引き金を引く力がなければ祟りにはまだまだ至らない。",
 		   NULL, "Oryou's 'concern' was like a safety device, and even when the safety device was off, the curse wouldn't occur unless there was a finger to pull the trigger.", Line_Normal);
 	ClearMessage();
-	FadeFilm( 0, TRUE );
+	FadeFilm( 0, FALSE );
 	DrawScene("background/aka1", 400 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -3596,7 +3596,7 @@ void main()
 	OutputLine(NULL, "　……雑草の根を、途中で千切れないように、深く深く丹念に執念深く掘り起こすようなものだった。",
 		   NULL, "It was like pulling a weed while being very careful not to break its roots.", Line_Normal);
 	ClearMessage();
-	DrawFilm( 2, 200, 200, 200, 256, 0, 0, TRUE );
+	DrawFilm( 2, 200, 200, 200, 256, 0, 0, FALSE );
 	DrawScene("background/js4_01", 400 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -3613,8 +3613,9 @@ void main()
 	OutputLine(NULL, "　それは前原圭一が、オヤシロさまの祟りの対象になったことを示す。",
 		   NULL, "In other words, Keiichi Maebara was an object of the curse of Oyashiro-sama now.", Line_Normal);
 	ClearMessage();
-	FadeFilm( 0, TRUE );
+
 	DrawScene("black", 400 );
+	FadeFilm( 0, FALSE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　鷹野さんたち２人は無惨な死体で発見された。",

@@ -1382,7 +1382,7 @@ void main()
 	OutputLine(NULL, "　ダム戦争時の遺恨というラインからこれらをなぞると、それらは簡単にまとめられた。",
 		   NULL, "If I considered that each case arose from the grudge over the dam conflict, it's quite simple.", Line_Normal);
 	ClearMessage();
-	DrawFilm( 2, 200, 200, 200, 256, 0, 0, TRUE );
+	DrawFilm( 2, 200, 200, 200, 256, 0, 0, FALSE );
 	DrawScene("background/damu2", 200 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -1728,7 +1728,7 @@ void main()
 	OutputLine(NULL, "１年目の事件は、…４年目の悟史くんの事件とあまりに似ているのだ。",
 		   NULL, " The first murder resembles Satoshi-kun's case very much.", Line_Normal);
 	ClearMessage();
-	FadeFilm( 0, TRUE );
+	FadeFilm( 500, FALSE );
 	DrawScene("background/tosyo2", 400 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -2541,7 +2541,7 @@ void main()
 		   NULL, " the man-eating demons, huh?", Line_Normal);
 	ClearMessage();
 	DrawScene("black", 400 );
-	DrawFilm( 2, 200, 200, 200, 256, 0, 0, TRUE );
+	DrawFilm( 2, 200, 200, 200, 256, 0, 0, FALSE );
 	DrawScene("background/oni1", 400 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -2565,8 +2565,9 @@ void main()
 	OutputLine(NULL, "　私の頭の中に、昔どこかで聞かされたおとぎ話が、どんどんと蘇ってくる。",
 		   NULL, "That long-forgotten fairy tale came back to my mind vividly.", Line_Normal);
 	ClearMessage();
-	FadeFilm( 0, TRUE );
+
 	DrawScene("black", 400 );
+	FadeFilm( 0, FALSE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f6d9a8>鷹野</color>", NULL, "<color=#f6d9a8>Takano</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 9, "ps3/s06/09/150900045", 128, TRUE);
