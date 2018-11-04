@@ -3193,7 +3193,8 @@ void main()
 	OutputLine(NULL, "……いつの間にか作り上げられているんです。」",
 		   NULL, " where every year, you're allowed to kill someone on the night of Watanagashi.\"", Line_Normal);
 	ClearMessage();
-	DrawScene("background/greyscale/hi1", 1000 );
+	DrawFilm( 0, 200, 200, 200, 256, 0, 0, TRUE );
+	DrawScene("background/hi1", 1000 );
 	PlayBGM( 1, "semi_r", 120, 0 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -3241,7 +3242,7 @@ void main()
 	OutputLine(NULL, "　そう、それはお魎が作り出した園崎本家の、磨ぎ汁のような霧で隠した命令システムそのもの。",
 		   NULL, "That was the system of vague commands used in the Sonozaki family, created by its head, Oryou.", Line_Normal);
 	ClearMessage();
-	DrawScene("background/greyscale/ima3", 400 );
+	DrawScene("background/ima3", 400 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　園崎本家における命令系統の特筆すべき点は、命令者と執行者の両点が、線で結ばれていないところにある。",
@@ -3292,7 +3293,7 @@ void main()
 	OutputLine(NULL, "　でも、結果的にお魎の思い通りの結果になったことはわかるし、そのために尽力した人間が身内の誰かだということはおぼろげに分かっている。",
 		   NULL, "But they all knew things would conclude just as Oryou wanted, and they could assume it was one of their own who did it for her.", Line_Normal);
 	ClearMessage();
-	DrawScene("background/greyscale/hi1", 400 );
+	DrawScene("background/hi1", 400 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　この消極的な協力システムは綿密で、村ぐるみと呼べるほど広大で、そしてその結束はダム戦争で鍛錬され、この上なく強固だ。",
@@ -3349,7 +3350,7 @@ void main()
 		   NULL, "The first element was a 'region of solidarity.'", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
-	DrawScene("background/greyscale/hi1", 400 );
+	DrawScene("background/hi1", 400 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　それは長い排他的な歴史を持つ雛見沢では自然に生まれた。",
@@ -3404,7 +3405,7 @@ void main()
 	OutputLine(NULL, "　園崎お魎はダム戦争中、結束を容易にするため、常に敵をわかりやすく設定した。",
 		   NULL, "During the dam conflict, Oryou Sonozaki made the identity of the enemy very clear to everyone.", Line_Normal);
 	ClearMessage();
-	DrawSceneWithMask("background/greyscale/damu2", "maskup", 1, 0, 300 );
+	DrawSceneWithMask("background/damu2", "maskup", 1, 0, 300 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　ダム建設反対、政府は敵だ。",
@@ -3495,6 +3496,7 @@ void main()
 	OutputLine(NULL, "　お魎の憂慮は言わば、安全装置のようなもので、安全装置を外しても、引き金を引く力がなければ祟りにはまだまだ至らない。",
 		   NULL, "Oryou's 'concern' was like a safety device, and even when the safety device was off, the curse wouldn't occur unless there was a finger to pull the trigger.", Line_Normal);
 	ClearMessage();
+	FadeFilm( 0, TRUE );
 	DrawScene("background/aka1", 400 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -3592,7 +3594,8 @@ void main()
 	OutputLine(NULL, "　……雑草の根を、途中で千切れないように、深く深く丹念に執念深く掘り起こすようなものだった。",
 		   NULL, "It was like pulling a weed while being very careful not to break its roots.", Line_Normal);
 	ClearMessage();
-	DrawScene("background/greyscale/js4_01", 400 );
+	DrawFilm( 0, 200, 200, 200, 256, 0, 0, TRUE );
+	DrawScene("background/js4_01", 400 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　役員会の席上で私は、前原圭一も祭具殿を侵したひとりと発言した。",
@@ -3608,6 +3611,7 @@ void main()
 	OutputLine(NULL, "　それは前原圭一が、オヤシロさまの祟りの対象になったことを示す。",
 		   NULL, "In other words, Keiichi Maebara was an object of the curse of Oyashiro-sama now.", Line_Normal);
 	ClearMessage();
+	FadeFilm( 0, TRUE );
 	DrawScene("black", 400 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }

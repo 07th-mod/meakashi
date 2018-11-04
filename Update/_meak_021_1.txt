@@ -1091,7 +1091,8 @@ void main()
 		   NULL, " and that's why he was extra nice to me.", Line_Normal);
 	ClearMessage();
 	DrawSceneWithMask("black", "maskdown", 1, 0, 1300 );
-	DrawScene("background/greyscale/jsa7", 400 );
+	DrawFilm( 0, 200, 200, 200, 256, 0, 0, TRUE );
+	DrawScene("background/jsa7", 400 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　昨日、話をした時。",
@@ -1146,7 +1147,7 @@ void main()
 	OutputLine(NULL, "……そういう対比？で言ったはずだ。",
 		   NULL, " That's what he meant.", Line_Normal);
 	ClearMessage();
-	DrawSceneWithMask("background/greyscale/hi1", "maskup", 1, 0, 1300 );
+	DrawSceneWithMask("background/hi1", "maskup", 1, 0, 1300 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　つまり、公由たち村の重鎮にとっては、北条家は人間以下の虫けら。",
@@ -1176,6 +1177,7 @@ void main()
 	OutputLine(NULL, "……そういう土壌を作り上げたこと。",
 		   NULL, " that excused murder in that name.", Line_Normal);
 	ClearMessage();
+	FadeFilm( 0, TRUE );
 	DrawScene("black", 400 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -1262,7 +1264,8 @@ void main()
 	OutputLine(NULL, "　そう、北条家の人間なら、誰が犠牲になってもよかったんだ。",
 		   NULL, "It didn't matter which member of the family died.", Line_Normal);
 	ClearMessage();
-	DrawScene("background/greyscale/ho1", 400 );
+	DrawFilm( 0, 200, 200, 200, 256, 0, 0, TRUE );
+	DrawScene("background/ho1", 400 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　意地悪叔母は近所でもとにかく評判が悪かったそうだ。",
@@ -1289,7 +1292,7 @@ void main()
 	OutputLine(NULL, "　それから、その祟りを鎮めるために北条をもう１人。",
 		   NULL, "There needed to be another Houjou to calm the curse.", Line_Normal);
 	ClearMessage();
-	DrawSceneWithMask("background/greyscale/mati2", "maskleft", 1, 0, 300 );
+	DrawSceneWithMask("background/mati2", "maskleft", 1, 0, 300 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　叔父の方は興宮のどこかで愛人と暮らしているという噂だ。",
@@ -1308,6 +1311,7 @@ void main()
 	OutputLine(NULL, "…往来の真ん中で堂々と「鬼隠し」をしても大丈夫…というほど影響力のある土地じゃない。",
 		   NULL, " but it would have been more difficult in Okinomiya to demon someone away.", Line_Normal);
 	ClearMessage();
+	FadeFilm( 0, TRUE );
 	ModDrawCharacter(1, 7, "sprite/normal/sato1_def1_", "0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 0, FALSE );
 	ModDrawCharacter(3, 4, "sprite/normal/sa1a_muhyou_a1_", "0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 0, FALSE );
 	DrawSceneWithMask("black", "maskdown", 1, 0, 300 );
