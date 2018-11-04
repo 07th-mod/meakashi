@@ -977,7 +977,7 @@ void main()
 	OutputLine(NULL, "　それに対して、どんな悲しみ、あるいは憐れみの表情を浮かべてくれるか、知りたかったから。",
 		   NULL, "I wanted to see how distressed and sad he'd look.", Line_Normal);
 	ClearMessage();
-	
+
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　そして公由のおじいちゃんの表情を見たとき。",
 		   NULL, "And when I saw his face...", GetGlobalFlag(GLinemodeSp));
@@ -985,7 +985,7 @@ void main()
 	ModDrawCharacter(2, 18, "portrait/sunset/ki_komaru_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 100, TRUE );
 	PlaySE( 4, "s_glass", 128, 64 );
 	Negative( 100 , TRUE );
-	
+
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "……乾ききった空気に耐えかねて、私の背中の皮がバリバリとひび割れを起こしていくのを感じた。",
 		   NULL, "I felt a sensation on my back, as if my skin itself was making a cracking noise.", Line_Normal);
@@ -1894,7 +1894,8 @@ void main()
 
 	if (GetGlobalFlag(GADVMode) == 0) { ClearMessage(); }
 	PlaySE( 4, "s_glass", 128, 64 );
-	DrawSceneWithMask("background/negative/jsa7", "maskc", 1, 0, 100 );
+	Negative( 100, TRUE );
+	DrawSceneWithMask("background/jsa7", "maskc", 1, 0, 100 );
 	PlayBGM( 1, "kaze", 120, 0 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -2006,6 +2007,7 @@ void main()
 		   NULL, " Huh?", Line_Normal);
 	ClearMessage();
 	FadeOutBGM( 0, 1000, FALSE );
+	FadeFilm( 0, FALSE );
 	DrawScene("black", 1000 );
 
 
