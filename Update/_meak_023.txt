@@ -1447,7 +1447,7 @@ void main()
 		   NULL, "They looked like she was dreaming about something happy.", Line_Normal);
 	ClearMessage();
 	DrawScene("white", 3000 );
-	ModDrawCharacter(1, 7, "sprite/normal/sato1_warai_", "1", 30, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 0, FALSE );
+	DrawBustshot(1, "sprite/dream/sato1_warai_0", 30, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 0, FALSE );
 	DrawScene("background/sora", 1000 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -1476,14 +1476,14 @@ void main()
 	ClearMessage();
 
 	DisableWindow();
-	ModDrawCharacter(3, 4, "sprite/normal/sa2a_warai_a1_", "0", -120, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 300, TRUE );
+	DrawBustshot(3, "sprite/dream/sa2a_warai_a1_0", -120, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 300, TRUE );
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　悟史くんのところへ、沙都子が駆け寄る。",
 		   NULL, "Satoko ran up to Satoshi-kun.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 	DisableWindow();
-	FadeBustshot( 3, FALSE, 0, 0, 0, 0, 300, FALSE );
-	ModDrawCharacter(2, 4, "sprite/normal/sa2a_warai_a1_", "0", -55, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 300, TRUE );
+	FadeBustshot( 3, FALSE, 0, 0, 0, 0, 200, FALSE );
+	DrawBustshot(2, "sprite/dream/sa2a_warai_a1_0", -55, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 300, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　そして、悟史くんの胸に、飛びついた。",
@@ -1502,14 +1502,14 @@ void main()
 		   NULL, "You can cry now.", Line_Normal);
 	ClearMessage();
 	DisableWindow();
-	ModDrawCharacter(2, 4, "sprite/normal/sa2a_naku_a1_", "2", -55, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );
+	DrawBustshot(2, "sprite/dream/sa2a_naku_a1_0", -55, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　……悟史くんがそっと言うと、沙都子は顔をくしゃくしゃにして…号泣した。",
 		   NULL, "Satoshi-kun told Satoko that, and she cried very hard.", Line_Normal);
 	ClearMessage();
 	DisableWindow();
-	ModDrawCharacter(1, 7, "sprite/normal/sato1_def2_", "0", 30, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 200, TRUE );
+	DrawBustshot(1, "sprite/dream/sato1_def2_0", 30, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 200, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　悟史くんは、泣きじゃくってしがみ付く沙都子の頭を、やさしく…やさしく、撫でていて。",
@@ -1557,7 +1557,7 @@ void main()
 		   NULL, " just because I saw Satoko and Satoshi-kun together again...!", Line_Normal);
 	ClearMessage();
 	DisableWindow();
-	ModDrawCharacter(1, 7, "sprite/normal/sato1_def1_", "0", 30, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 200, TRUE );
+	DrawBustshot(1, "sprite/dream/sato1_def1_0", 30, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 200, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　沙都子を抱き続ける悟史くんと、目が合った。",
@@ -1574,7 +1574,7 @@ void main()
 		   NULL, "Satoshi-kun said.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 	DisableWindow();
-	ModDrawCharacter(1, 7, "sprite/normal/sato1_komaru_", "0", 30, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 200, TRUE );
+	DrawBustshot(1, "sprite/dream/sato1_komaru_0", 30, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 200, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　………僕は、君にお願いしたことがあったはずだよ。",
