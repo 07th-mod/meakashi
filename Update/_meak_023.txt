@@ -1476,14 +1476,13 @@ void main()
 	ClearMessage();
 
 	DisableWindow();
-	DrawBustshot(3, "sprite/dream/sa2a_warai_a1_0", -120, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 300, TRUE );
+	DrawBustshot(2, "sprite/dream/sa2a_warai_a1_0", -120, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 300, TRUE );
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　悟史くんのところへ、沙都子が駆け寄る。",
 		   NULL, "Satoko ran up to Satoshi-kun.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 	DisableWindow();
-	FadeBustshot( 3, FALSE, 0, 0, 0, 0, 200, FALSE );
-	DrawBustshot(2, "sprite/dream/sa2a_warai_a1_0", -55, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 300, TRUE );
+	MoveBustshot(2, "sprite/dream/sa2a_warai_a1_0", -55, 0, 0, 0, 300, TRUE);
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　そして、悟史くんの胸に、飛びついた。",
