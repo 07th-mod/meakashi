@@ -1,5 +1,5 @@
 # PS3 Voice and Graphics Patch
-#### For Higurashi No Naku Koro Ni - Chapter 5 Meakashi
+#### For Higurashi No Naku Koro Ni Kai - Chapter 5 Meakashi
 
 > This repository **only** hosts the script files and a few voice files needed to fix bugs, check our [wiki](https://github.com/07th-mod/guide/wiki/Higurashi-Getting-started) for instructions on how to install the patch!
 
@@ -7,7 +7,7 @@ This patch aims to combine the efforts of the PS3 voice patch and the PS3 sprite
 
 # Installing the patch
 
-> [Check our wiki](https://github.com/07th-mod/guide/wiki/Higurashi-Getting-started).
+> [Check our wiki](https://07th-mod.com/wiki/).
 
 # Releases
 
