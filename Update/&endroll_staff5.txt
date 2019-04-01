@@ -1,0 +1,38 @@
+
+void main()
+{
+
+	PreloadBitmap("meak_staff_01");
+	//PreloadBitmap("meak_staff_02");
+
+	PlayBGM( 0, "you_nonloop", 120, 0 );
+	Wait( 4500 );
+	//InitializeTiming( 0 );
+
+	DrawSprite( 5, "meak_staff_01", NULL, -320, -240, 0, 0, 0, 0, FALSE, FALSE, 0, 0, 32, 100, TRUE );
+	MoveSprite( 5, -320, -2788, 0, 0, 0, 0, 0,107000, TRUE );
+
+	//WaitForTiming( 0 );
+	//ScrollBG("meak_staff_01", 0, 0, 0, 0, 2260, 0, 0, FALSE,107000,FALSE);
+	//WaitForTiming( 60000 );
+
+	//InitializeTiming( 0 );
+	//WaitForTiming( 47000 );
+
+	//InitializeTiming( 0 );
+
+	//ScrollBG("meak_staff_02", 0, 0, 0, 0, 2260, 0, 0, FALSE,107000,FALSE);
+	//WaitForTiming( 60000 );
+
+	//InitializeTiming( 0 );
+	//WaitForTiming( 8000 );
+	//Wait(8000);
+	//PlayBGM( 1, "higurashi", 120, 5000 );
+	//ExecutePlannedControl(TRUE);
+	//WaitForTiming( 57000 );
+
+	FadeOutBGM( 0, 10000, FALSE );
+	FadeSprite( 5, 3000, FALSE );
+	DrawScene( "black" , 10000 );
+
+}
