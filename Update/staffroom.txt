@@ -1,0 +1,278 @@
+﻿void main()
+{
+	//SetStyleOfMessageWindow( 1, 0 );
+	//SetFontOfMessage( 2, 24, 1 );
+	//SetValidityOfSaving( TRUE );
+	//SetValidityOfLoading( TRUE );
+	//SetValidityOfInput( TRUE );
+	//SetValidityOfSkipping( TRUE );
+	//ActivateScreenEffectForcedly( TRUE );
+
+	FadeOutBGM( 0, 0, FALSE );
+	FadeOutBGM( 1, 0, FALSE );
+	FadeOutBGM( 2, 0, FALSE );
+	FadeOutBGM( 3, 0, FALSE );
+	ClearMessage();
+
+	DrawScene( "black", 1000 );
+	SetSpeedOfMessage( FALSE, 0 );
+	DrawScene( "DSC00038", 1000 );
+	PlayBGM( 0, "Iru", 120, 0 );
+
+	OutputLine(NULL, "　皆さんは人殺しが、動機によっては許されるなんて、思いますか？",
+		   NULL, "Do you think that murder can be justified, depending on the motive?", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　こんにちは、竜騎士07です。",
+		   NULL, "Hi, this is Ryuukishi07.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　この度は『ひぐらしのなく頃に解』目明し編をお楽しみいただき、誠にありがとうございます。",
+		   NULL, "Thank you for playing Higurashi When They Cry Kai - Ch.5 Meakashi.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　人の死を多く描く『ひぐらし』ですが、描きながら自問することがあります。",
+		   NULL, "Although I depict many deaths in my work, I often ask myself a question.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　それは、許される殺人はありえるのか、ということです。",
+		   NULL, "That question is: is there such a thing as justifiable murder?", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　私たちの世の中では、殺人は裁かれ、その動機や事情によって罪の軽重が変わります。",
+		   NULL, "In our world, murder is prosecuted, and the degree of punishment varies depending on the motive and circumstances.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　命の対価が罪の重さなら、それは私たちが命の価値に個人差を認めていることになります。",
+		   NULL, "Having different degrees of punishment means that we are putting a value on the dead person's life.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　『ひぐらし』の世界には、殺人を肯定するシーンが描かれる時があります。",
+		   NULL, "Some scenes justify murder in 'Higurashi'.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　そこでは、殺される人間の命の価値が薄められることにより、プレイヤーの皆さんの「同意」を得やすくされています。",
+		   NULL, "By degrading the life of the victim in those scenes, the players can sympathize with the character more easily.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　同意は人によって異なります。",
+		   NULL, "The degree of sympathy would be different from person to person.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　同意した方は一体感とカタルシスを感じ、同意できなかった方は狂気と不快感を感じたと思います。",
+		   NULL, "The people who could sympathize probably felt catharsis, and the people who disagreed with the character might have felt uncomfortable.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "「祟殺し編」における圭一の評価の二極化が、これを如実に物語るかと思います。",
+		   NULL, "That's indicated by how opinions were polarized regarding Keiichi's actions in Tatarigoroshi.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　今回の「目明し編」でも、多くの殺人が描かれています。",
+		   NULL, "In Meakashi, there are also a number of murders.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　今回の主人公、詩音は個々の殺人に、自分の同意を得ようとしていました。",
+		   NULL, "But this time, the main character, Shion, tries to earn sympathy for each one of them.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　皆さんはどうでしたか？",
+		   NULL, "How did you feel?", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　どこまで同意が出来ましたか？",
+		   NULL, "How much were you able to sympathize with her?", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　ひとつも同意できなかった方は、どうか詩音を殺人鬼と罵ってください。",
+		   NULL, "If you couldn't sympathize with her at all, then please berate her as a crazy murderer.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　いくつか同意できた方は、どうか詩音を哀れんでください。",
+		   NULL, "If you sympathized with her at all, then please have mercy on her.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　ほとんど同意できた方も、どうか詩音を哀れんでください。",
+		   NULL, "If you sympathized with her almost entirely, then please have mercy on her.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　全部、同意できた方は、詩音と一緒に殺人鬼と罵られてください（笑）",
+		   NULL, "If you completely sympathized with her, then please let us berate both of you as crazy murders (lol).", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　竜騎士07はですか？",
+		   NULL, "What about me?", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　………さて、それは内緒。",
+		   NULL, "......Well, that's a secret.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　ところで質問の仕方を逆にしますが、",
+		   NULL, "I'd like to reverse my question this time...", Line_WaitForInput);
+	OutputLine(NULL, "…あなたは殺されるならどんな犯人になら納得できますか？",
+		   NULL, " What kind of murderer could you sympathize with, if you were to be killed?", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　人の命など何とも思わない快楽犯？",
+		   NULL, "A murderer who doesn't care about people's lives?", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　これは悔しいですよね。",
+		   NULL, "That'd be quite a regrettable death.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　自分の価値を否定されて殺されるのはとても悲しい。",
+		   NULL, "It's extremely sad to be killed in denial of all your values.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　泣きながら許しを乞う悲劇の犯人？",
+		   NULL, "A murderer who begs for forgiveness in tears?", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　これも悔しいですよね。",
+		   NULL, "That'd be quite regrettable too.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　許しを乞うくらいなら殺したりするな（笑）",
+		   NULL, "They shouldn't kill you at all if they're begging your forgiveness, ha ha.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　じゃあ、どんな犯人になら、殺されても納得できますか…？",
+		   NULL, "So, what kind of murderer could you sympathize with...?", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　結局、「同意」なんて、その殺人劇を、楽しめるか否かでしかないのかも。",
+		   NULL, "In the end, 'sympathy' might be just a method for making the story more interesting.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　同意できれば、楽しい。",
+		   NULL, "If you can sympathize, it's fun.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　同意できなければ、狂ってる。",
+		   NULL, "If you can't sympathize, they're just crazy.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　命に元々重さなんてないんです。",
+		   NULL, "We cannot put value on human life.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　それを測ろうとするのがヒトの罪。",
+		   NULL, "It's a sin to even try doing so.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　殺人は殺人。",
+		   NULL, "A murder is a murder.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　それ以上でも以下でもない。",
+		   NULL, "Nothing more than that.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　だから、みんなで仲良く暮らしていけたらいいな、と。",
+		   NULL, "I just hope everybody can live happily together.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　いかがですか？",
+		   NULL, "How does that sound?", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　あなたはこの話に、同意できますか？",
+		   NULL, "Would you agree to that?", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　できなかったなら、",
+		   NULL, "If you wouldn't", Line_ContinueAfterTyping);
+	SetValidityOfInput( FALSE );
+	Wait( 800 );
+	SetValidityOfInput( TRUE );
+	OutputLine(NULL, "………くすくすくすくす。",
+		   NULL, "............ hee hee hee hee hee.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　この度は『ひぐらしのなく頃に』、「目明し編」をお楽しみくださり、誠にありがとうございました。",
+		   NULL, "Thank you very much for playing Higurashi When They Cry Kai - Ch.5 Meakashi.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　皆さんの応援のお陰で、無事に第５話をお届けすることができました。",
+		   NULL, "I could only bring out this fifth episode thanks to all of your support.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　物語はいよいよ結末に向け加速して参ります。",
+		   NULL, "Higurashi will only get more intense as it approaches the finale.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　どうか今後ともお付き合いいただければこれほど嬉しいことはありません。",
+		   NULL, "Nothing would make me happier than if you continued reading the chapters to come.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　次回シナリオは「罪滅し編」と題しまして、平成１７年夏のコミックマーケット発表を目指しています。",
+		   NULL, "The next chapter will be titled 'Tsumihoroboshi'.", Line_WaitForInput);
+	OutputLine(NULL, "　どうか、ちょっぴりでも楽しみにしていただけたら幸いです。",
+		   NULL, " Really, I'm rather fortunate if you've enjoyed yourself even a little.", Line_Normal);
+
+
+	ClearMessage();
+
+
+	OutputLine(NULL, "　この度は遊んでくださり、本当にありがとうございました。",
+		   NULL, "Thank you again for playing.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　退屈な時間の、ささやかな彩りになりましたら幸いです。",
+		   NULL, "I hope this has brought a little color to your life.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	SetSpeedOfMessage( TRUE, 128 );
+	OutputLine(NULL, "　　　　　　　　０７ｔｈ　Ｅｘｐａｎｓｉｏｎ",
+		   NULL, "                               07th Expansion\n", Line_ContinueAfterTyping);
+	SetSpeedOfMessage( FALSE, 0 );
+	SetSpeedOfMessage( TRUE, 128 );
+	OutputLine(NULL, "　　　　　　　　　　　　　　　　　竜騎士07",
+		   NULL, "                                 Ryuukishi07", Line_Normal);
+	ClearMessage();
+	SetSpeedOfMessage( FALSE, 0 );
+
+	CallScript( "&eye" );
+	DrawScene( "black", 3000 );
+	SetSpeedOfMessage( FALSE, 0 );
+	FadeOutBGM( 1, 0, FALSE );
+	DrawBustshot( 19, "no_data", 0, 100, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, TRUE );
+
+	GetAchievement("HIGURASHI_STORY_EP05_OMAKE");
+}

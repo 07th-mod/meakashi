@@ -1,0 +1,64 @@
+﻿void main()
+{
+	EnableJumpingOfReturnIcon();
+	FadeOutBGM( 0, 0, FALSE );
+	FadeOutBGM( 1, 0, FALSE );
+	FadeOutBGM( 2, 0, FALSE );
+	FadeOutBGM( 3, 0, FALSE );
+	ClearMessage();
+
+	PlayBGM( 0, "z2_hig1", 120, 0 );
+	DrawScene( "Nort", 1000 );
+
+	OutputLine(NULL, "　悟史くんが東京へ行った、という怪情報の裏付けは全く取れない。",
+		   NULL, "The information that Satoshi-kun might've headed to Tokyo hasn't been verified.", Line_Normal);
+	ClearMessage();
+	PlaySE( 0, "s_page", 128, 64 );
+
+	OutputLine(NULL, "　そもそも情報の発端はこうだ。",
+		   NULL, "It started as follows.", Line_Normal);
+	ClearMessage();
+	DrawScene( "black", 1000 );
+	DrawSceneWithMask( "Eki2", "maskup", 1, 0, 1300 );
+
+	OutputLine(NULL, "　名古屋駅の遺失物窓口に若者が訪れて、自分の財布が届けられてないかと騒いだのだ。",
+		   NULL, "A young man came to the lost and found window, looking for his wallet.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　それで駅の職員が、届け出がないか調べてきますからその間にこちらにお名前を書いてください、と用紙を渡した。",
+		   NULL, "The station employee asked him to write down his name on the form.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　そうしたらその若者は、北条と書きかけてからその用紙をくしゃくしゃにして捨て、もう１枚の用紙に全然違う名前を書いた、というのだ。",
+		   NULL, "Then the young man started writing Houjou as his name, but he stopped in the middle, crumpled the form, and wrote a totally different name on another form.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　別の職員は、その遺失物窓口を訪れた若者と、服装が酷似した若者が東京行きの新幹線に駆け込むのを見ていた。",
+		   NULL, "Another station employee witnessed a similar-looking young man rushing into the train heading to Tokyo.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　更衣室で遺失物窓口にいた職員が、不審な人物が来たと特徴を話したら、",
+		   NULL, "The employee from the lost and found", Line_WaitForInput);
+	OutputLine(NULL, "ホームにいた職員が、あぁ見た見た、東京行きの新幹線に飛び乗ったぜ、と。",
+		   NULL, " and the employee who was on the platform", Line_WaitForInput);
+	OutputLine(NULL, "そう言い合ったらしい。",
+		   NULL, " talked about the suspicious young man in the locker room.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　……それだけのこと。",
+		   NULL, "...That was all.", Line_Normal);
+	ClearMessage();
+	DrawScene( "black", 400 );
+
+	OutputLine(NULL, "　その北条を名乗った男の申告する特徴の財布は、遺失物窓口には届いていなかった。",
+		   NULL, "The wallet of the man named Houjou was never reported as found to the lost and found office.", Line_Normal);
+	ClearMessage();
+	Wait( 1000 );
+	DrawScene( "black", 1000 );
+}

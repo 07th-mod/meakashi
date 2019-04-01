@@ -1,0 +1,152 @@
+﻿void main()
+{
+	EnableJumpingOfReturnIcon();
+	FadeOutBGM( 0, 0, FALSE );
+	FadeOutBGM( 1, 0, FALSE );
+	FadeOutBGM( 2, 0, FALSE );
+	FadeOutBGM( 3, 0, FALSE );
+	ClearMessage();
+
+	PlayBGM( 0, "T1", 120, 0 );
+	DrawBustshotWithFiltering( 1, "Aka_Def", "maskright", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 8, 0, FALSE );
+	DrawBustshotWithFiltering( 2, "Kasa1", "maskright", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 10, 0, FALSE );
+	DrawScene( "Mati10", 400 );
+
+	OutputLine(NULL, "「ねぇ、教えてよ母さん。",
+		   NULL, "\"Hey, mom. Tell me.", Line_WaitForInput);
+	OutputLine(NULL, "鬼婆とどういう喧嘩をしたわけ？",
+		   NULL, " Why did you have a fight with the hag?", Line_WaitForInput);
+	OutputLine(NULL, "　勘当されるなんてよっぽどだったわけでしょ？」",
+		   NULL, " It was bad enough that she disowned you, right?\"", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "「お前も下らないことに興味が尽きないね。",
+		   NULL, "\"You're so nosy about everything...", Line_WaitForInput);
+	OutputLine(NULL, "……ま、そろそろ話してもわからない歳じゃないか。",
+		   NULL, " Well, I guess you're old enough to know.", Line_WaitForInput);
+	OutputLine(NULL, "実はね、父さんと結婚したいって言ったらね、駄目だって言われちゃったのよ。」",
+		   NULL, " She objected when I told her I wanted to marry your father.\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "「へ？　何それぇ？！」",
+		   NULL, "\"Eh? What?!\"", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "「私も当時はだいぶ斜な生き方してて呆れられててね。",
+		   NULL, "\"I was living a very unseemly life back then.", Line_WaitForInput);
+	OutputLine(NULL, "その挙句、連れて来た男が任侠者だったわけでしょ。",
+		   NULL, " Then the man I brought home was a yakuza,", Line_WaitForInput);
+	OutputLine(NULL, "そりゃ大喧嘩よ。",
+		   NULL, " so of course she got terribly upset.", Line_WaitForInput);
+	OutputLine(NULL, "許婚は頭首が決める、なんて言われて、",
+		   NULL, " She said, 'the head of the family will choose your fiance,'", Line_ContinueAfterTyping);
+	SetValidityOfInput( FALSE );
+	Wait( 1000 );
+	SetValidityOfInput( TRUE );
+	SetSpeedOfMessage( FALSE, 0 );
+	OutputLine(NULL, "そんなの知ったこっかいこんの糞婆ァ！",
+		   NULL, " and I said, 'screw your decisions, you fucking virago!'", Line_WaitForInput);
+	OutputLine(NULL, "　この場で斬り伏せたらあッて大立ち回りよ。",
+		   NULL, " So then we both tried to cut each other down on the spot.", Line_WaitForInput);
+	OutputLine(NULL, "互いに板の間の日本刀抜いて、チャンチャンバラバラ。",
+		   NULL, " We unsheathed our katanas in the living room and clashed and slashed and sliced.", Line_WaitForInput);
+	OutputLine(NULL, "あっはっはっは。」",
+		   NULL, " Aha ha ha ha!\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "「ひぇー…！",
+		   NULL, "\"Eeek...!", Line_WaitForInput);
+	OutputLine(NULL, "　鬼婆と殺陣を演じたわけ？！",
+		   NULL, " You fought that hag with a sword?!", Line_WaitForInput);
+	OutputLine(NULL, "　母さんやるねぇ…。」",
+		   NULL, " Way to go, Mom...\"", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "「まぁねー。",
+		   NULL, "\"Well,", Line_WaitForInput);
+	OutputLine(NULL, "母さん、こう見えても若い頃は武闘派だしー。",
+		   NULL, " I was into martial arts when I was young.", Line_WaitForInput);
+	OutputLine(NULL, "互いに剣道有段だからそりゃードハデだったわよ。",
+		   NULL, " Both she and I held high ranks in kendo, so yes, it was quite the show.", Line_WaitForInput);
+	OutputLine(NULL, "周りはオロオロ、あー面白かった。」",
+		   NULL, " Everyone nearby was terrified. Ah, that was fun.\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "「なるほどねぇ……。",
+		   NULL, "\"I see......", Line_WaitForInput);
+	OutputLine(NULL, "その騒ぎのせいで勘当されたわけ？」",
+		   NULL, " so is that why you were disowned?\"", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "「そうよ、勘当上等！",
+		   NULL, "\"That's right. I was happy for it!", Line_WaitForInput);
+	OutputLine(NULL, "　遠慮なく勘当もらって父さんと籍を入れたわよ。",
+		   NULL, " I married your father right away.", Line_WaitForInput);
+	OutputLine(NULL, "まぁけじめってことで爪を剥がされたけどねー。",
+		   NULL, " Well, I was forced to remove my fingernails in atonement, though.", Line_WaitForInput);
+	OutputLine(NULL, "ほら、左手の爪だけ歪でしょ。」",
+		   NULL, " See how the fingernails of my left hand look ugly?\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "「うわぁ……。",
+		   NULL, "\"Wow...", Line_WaitForInput);
+	OutputLine(NULL, "それで鬼婆と母さんはずーっと仲が悪いわけだね…。」",
+		   NULL, " So, that's why you and the hag have a bad relationship, huh...?\"", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "「あははは、詩音、本当はね？",
+		   NULL, "\"Ahahaha, you know what, Shion?", Line_WaitForInput);
+	OutputLine(NULL, "　そんなことないの。",
+		   NULL, " That's not actually true.", Line_WaitForInput);
+	OutputLine(NULL, "私と鬼婆さまはちゃんと仲がいいんだよ？」",
+		   NULL, " Our relationship is actually pretty good.\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "「…えーーー！？",
+		   NULL, "\"...What?!", Line_WaitForInput);
+	OutputLine(NULL, "　うっそだぁ！」",
+		   NULL, " That can't be right!\"", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "「鬼婆さまには面倒な世間体があるからね。",
+		   NULL, "\"She has to maintain the family's reputation,", Line_WaitForInput);
+	OutputLine(NULL, "一度でも勘当した以上、甘くすると示しがつかないし。",
+		   NULL, " so she can't treat me normally,", Line_WaitForInput);
+	OutputLine(NULL, "だから私も親類会議とかでは大人しく引っ込んでるけど。",
+		   NULL, " and accordingly, I lay low at the family councils.", Line_WaitForInput);
+	OutputLine(NULL, "たまーに遊びに行ってのんびりお茶とか飲んでるよ。」",
+		   NULL, " But I visit her every now and then, and we have tea together.\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "「うそだーーーー、信じらんないねぇ…！」",
+		   NULL, "\"I can't believe it...!\"", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "「実はね、内緒よ？",
+		   NULL, "\"This is just between you and me, okay?", Line_WaitForInput);
+	OutputLine(NULL, "　鬼婆さまもね、その昔、けじめで爪を剥いだことあるんだってよー？",
+		   NULL, " She removed her fingernails in atonement a long time ago herself.", Line_WaitForInput);
+	OutputLine(NULL, "　今度、会ったら左手の爪をよく見てごらん。」",
+		   NULL, " Look carefully at her hand the next time you see her.\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "「ひぇー……！",
+		   NULL, "\"Whaaat...?!", Line_WaitForInput);
+	OutputLine(NULL, "　鬼婆は何をやったわけ？」",
+		   NULL, " What did she do?\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "「さーーーーねーーーーー！",
+		   NULL, "\"Beats me!", Line_WaitForInput);
+	OutputLine(NULL, "　母さんは知ぃらない☆」",
+		   NULL, " I don't have a clue☆!\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "「わ、その顔は知ってるなぁ？！",
+		   NULL, "\"Hey, you do so have one! It's all over your face!", Line_WaitForInput);
+	OutputLine(NULL, "　教えてよー！」",
+		   NULL, " Tell meee!\"", Line_Normal);
+	ClearMessage();
+	Wait( 1000 );
+	DrawScene( "black", 1000 );
+}

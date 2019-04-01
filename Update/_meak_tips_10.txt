@@ -1,0 +1,96 @@
+﻿void main()
+{
+	EnableJumpingOfReturnIcon();
+	FadeOutBGM( 0, 0, FALSE );
+	FadeOutBGM( 1, 0, FALSE );
+	FadeOutBGM( 2, 0, FALSE );
+	FadeOutBGM( 3, 0, FALSE );
+	ClearMessage();
+
+	PlayBGM( 0, "higurashi", 120, 0 );
+	DrawScene( "Nort", 1000 );
+
+	OutputLine(NULL, "　鷹野三四とは、その後しばらく交流があった。",
+		   NULL, "I saw Miyo Takano a few times after that.", Line_Normal);
+	ClearMessage();
+	PlaySE( 0, "s_page", 128, 64 );
+	DrawSceneWithMask( "black", "maskright", 7, 0, 300 );
+	DrawBustshotWithFiltering( 0, "Ta_Def#", "maskright", 7, 0, 0, FALSE, 0, 0, 0, 0, 0, 9, 0, FALSE );
+	DrawSceneWithMask( "Tosyo7", "maskright", 7, 0, 300 );
+
+	OutputLine(NULL, "　彼女の本質は、猟奇趣味と、それに負けないくらいの偏執的な好奇心だった。",
+		   NULL, "At her core, she was fascinated with the bizzare, and she had an insatiable curiosity that was just as strong.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　だから彼女の話は、常に話半分くらいに聞くよう心掛けなければならない。",
+		   NULL, "I have to remind myself not to take her story too seriously.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　……でないと、",
+		   NULL, "...Otherwise...", Line_ContinueAfterTyping);
+	SetValidityOfInput( FALSE );
+	Wait( 1000 );
+	SetValidityOfInput( TRUE );
+	OutputLine(NULL, "…悟史くんが本当に、祟りで消えてしまったと信じてしまいそうになるから。",
+		   NULL, " I might start believing that Satoshi-kun disappeared because of the curse.", Line_Normal);
+	ClearMessage();
+	PlaySE( 0, "s_page", 128, 64 );
+	DrawSceneWithMask( "black", "maskright", 7, 0, 300 );
+
+	OutputLine(NULL, "　彼女の話す雛見沢村の暗部の話は、興味深い話ばかりだった。",
+		   NULL, "She talks about the dark history of Hinamizawa a lot. It's all very interesting.", Line_Normal);
+	ClearMessage();
+	PlaySE( 0, "s_page", 128, 64 );
+
+	OutputLine(NULL, "　彼女にとっては推測や憶測でしかないはずの中には、",
+		   NULL, "Her theories are based on nothing but conjecture,", Line_WaitForInput);
+	OutputLine(NULL, "園崎家に籍を置く自分だからこそ真実だと分かるものも時に含まれ、その考察の鋭さには舌を巻いた。",
+		   NULL, " but some of her intuition covers facts that only members of the Sonozaki family would know.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　彼女はオヤシロさまの祟りを、古代の宗教的な儀式の延長と捉えていた。",
+		   NULL, "She thinks that Oyashiro-sama's curse is the continuation of these ancient rituals.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　つまり、オヤシロさま崇拝の狂信者による犯行だ。",
+		   NULL, "In other words, she believes that the curse is performed by religious fanatics.", Line_Normal);
+	ClearMessage();
+	PlaySE( 0, "s_page", 128, 64 );
+	DrawSceneWithMask( "Hi2", "maskright", 7, 0, 300 );
+
+	OutputLine(NULL, "　彼女の独自の説によるならば、雛見沢村には信仰を中心とした一派があり、",
+		   NULL, "According to her theory, a religious cult once existed in Hinamizawa,", Line_WaitForInput);
+	OutputLine(NULL, "それを中心に御三家が組み上げられているという。",
+		   NULL, " and the Three Families stemmed from it.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　そして、明治以降に失われたという、鬼ヶ淵村の仙人たちの誇りを取り戻すために暗躍をしている、というのだ。",
+		   NULL, "She believes that they are operating behind the scenes in order to revive the dignity of the Onigafuchi people, which was lost during the Meiji Era.", Line_Normal);
+	ClearMessage();
+	PlaySE( 0, "s_page", 128, 64 );
+	DrawSceneWithMask( "Nort", "maskright", 7, 0, 300 );
+
+	OutputLine(NULL, "　三四さんの話はスケールが大きく、全体で見ると、なるほどなと思う面もある。",
+		   NULL, "Miyo-san's theories are far-reaching, and looking at them on a larger scale, they end up making a lot of sense.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　だけど、悟史くんの失踪した理由に局所的にスポットを当てると、何の説明にもならない。",
+		   NULL, "But they can't offer any explanation for Satoshi-kun's disappearance when using them on a smaller one.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　目の粗い説でしかなかった。",
+		   NULL, "Her theories are just too broad.", Line_Normal);
+	ClearMessage();
+	Wait( 1000 );
+	DrawScene( "black", 1000 );
+}

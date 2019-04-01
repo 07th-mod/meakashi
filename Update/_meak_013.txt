@@ -1,0 +1,2652 @@
+﻿void main()
+{
+	FadeOutBGM( 0, 0, FALSE );
+	FadeOutBGM( 1, 0, FALSE );
+	FadeOutBGM( 2, 0, FALSE );
+	FadeOutBGM( 3, 0, FALSE );
+	ClearMessage();
+
+	DrawScene( "white", 400 );
+	SetValidityOfInput( FALSE );
+	Wait( 3000 );
+	SetValidityOfInput( TRUE );
+	PlayBGM( 0, "T2", 120, 0 );
+	DrawSceneWithMask( "Si_H2", "maskup", 1, 0, 1300 );
+	SetSpeedOfMessage( FALSE, 0 );
+
+	OutputLine(NULL, "　目が覚めた。",
+		   NULL, "I woke up.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　………あの後の記憶はぐちゃぐちゃで、あれから何があって、",
+		   NULL, "...My memories were missing. I couldn't remember how I got back to my room...", Line_WaitForInput);
+	OutputLine(NULL, "どうやってこの部屋に戻って来たのか、…思い出すためには頭を両肘で抱え込む必要があった。",
+		   NULL, " I held my head with both hands.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　左手には包帯。",
+		   NULL, "My left hand was bandaged.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　爪を剥いだ左手の指三本は、ぶっくりとチクワくらいに膨れ上がったように感じられる。",
+		   NULL, "The fingers that had their nails removed had swollen like hotdogs.", Line_Normal);
+	ClearMessage();
+	DrawScene( "black", 400 );
+
+	OutputLine(NULL, "　……あの後、私は爪３枚を剥ぎ取られ、…一応のけじめをつけた。",
+		   NULL, "...I'd paid with those three fingernails for what I did.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　それを見届けてから、鬼婆が偉そうに何か長々と能書きを垂れていたようだったが、何も耳に残っていない。",
+		   NULL, "The hag had said something after the punishment, but I didn't remember any of it.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　それから、すぐに興宮の整形外科に車で連れて行かれた。",
+		   NULL, "I was taken to a hospital in Okinomiya.", Line_Normal);
+	ClearMessage();
+	DrawSceneWithMask( "Kuruma5", "maskleft", 1, 0, 300 );
+
+	OutputLine(NULL, "　病院までの道中の揺れがとにかく辛かった。",
+		   NULL, "The car shook on the way, adding extra pain on top of what I already felt.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　……頭痛薬が痛み止めになると言われ、誰かに頭痛薬１２錠のシートを渡され、……それを飲んで痛みを紛らわした。",
+		   NULL, "...Somebody gave me some aspirin.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　頭痛薬は、テレビなどで宣伝するように本当にすぐ効いた。",
+		   NULL, "They worked just like they said on TV...", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　しかし１０分程度ですぐに切れた。",
+		   NULL, "but they didn't last more than ten minutes...", Line_WaitForInput);
+	OutputLine(NULL, "…水も飲まずに、痛みがぶり返す度に頭痛薬を唾で飲み込んで耐えた。",
+		   NULL, " I swallowed the pills without water.", Line_Normal);
+	ClearMessage();
+	DrawSceneWithMask( "Sinryo_matiai2", "maskleft", 1, 0, 300 );
+
+	OutputLine(NULL, "　…病院で治療を受け、待合室で呆然としていた時。",
+		   NULL, "...While I was spacing out in the waiting lounge...", Line_WaitForInput);
+	DisableWindow();
+	DrawBustshot( 2, "Kasa2", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
+	DisplayWindow();
+
+	OutputLine(NULL, "………葛西が来たのだった。",
+		   NULL, " ......Kasai showed up.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　葛西はきっと、ご無事でしたか、と言いたかったのだろう。",
+		   NULL, "He probably came to check if I was all right.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　だけど全然無事でないことは、包帯でくるまれて三角巾で吊られた私の左手を見れば歴然としていた。",
+		   NULL, "I obviously wasn't. He must've understood that from my bandaged left arm dangling from my shoulder.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　葛西は五体満足なように見えた。",
+		   NULL, "Kasai, on the other hand, looked just fine.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　…少なくとも、私に見える範囲内では、あざひとつないように見えた。",
+		   NULL, "...At least on the outside.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　…………それを見て、私は自分の犠牲に意味があったことを知る。",
+		   NULL, "...I was relieved that my sacrifice had meant something.", Line_Normal);
+	ClearMessage();
+	DisableWindow();
+	ChangeBustshot( 2, "Kasa3", 200, TRUE );
+	DisplayWindow();
+
+	OutputLine(NULL, "　葛西は何も言わなかった。",
+		   NULL, "Kasai didn't say anything.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　……無表情で、だけれども、私のすぐ側に控える彼の様子からは、…私に何か言いたいことがあるのかないのか、それすらもわからなかった。",
+		   NULL, "......I couldn't tell if he wanted to tell me something or not, because he looked so emotionless.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "「……………………………葛西。」",
+		   NULL, "\".....................Kasai.\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "「……………なんでしょう。」",
+		   NULL, "\".........Yes?\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "「………………………。」",
+		   NULL, "\".....................\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　葛西の返事の前のちょっとした間に、…葛西はきっと怒っているんだろうなと思った。",
+		   NULL, "He paused shortly before answering. I could tell he was upset.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　……あの時、あの場で悟史くんを庇うために、自分の正体を明かしたことは…後悔はしていない。",
+		   NULL, "...I didn't regret revealing my true identity in order to protect Satoshi-kun.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　でも、……葛西や義郎叔父さんにかけた迷惑を考えると、……胸中はぐちゃぐちゃだった。",
+		   NULL, "But... I hadn't wanted Kasai or Uncle Yoshiroh to be hurt...... I had been contradicting myself.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "「………義郎叔父さんはどうなったか知ってます…？」",
+		   NULL, "\"......Do you know how Uncle Yoshiroh is doing...?\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "「いえ。」",
+		   NULL, "\"No.\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "「………………………………。」",
+		   NULL, "\".....................\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+	DisableWindow();
+	ChangeBustshot( 2, "Kasa2", 200, TRUE );
+	DisplayWindow();
+
+	OutputLine(NULL, "「………したたかな方です。",
+		   NULL, "\"...I'm sure he's all right,", Line_WaitForInput);
+	OutputLine(NULL, "ご無事と思います。",
+		   NULL, " because he's strong.", Line_WaitForInput);
+	OutputLine(NULL, "後で謝られた方がいいでしょう。」",
+		   NULL, " Even so, you should apologize to him.\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "「……………………………………うん……。」",
+		   NULL, "\"..............................Okay...\"", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　……本当は、さらに続けて悟史くんのことも聞きたかった。",
+		   NULL, "...I wanted to ask him about Satoshi-kun, too.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　彼が、私のとばっちりを受けて、本家に拘束されたり、よもや何か酷い目に遭わされてないかが気になった。",
+		   NULL, "I wondered if he was captured or harassed by the Sonozaki family because of me.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　でも、…悟史くんの名を葛西に出すのに、…ためらいがあった。",
+		   NULL, "But... I was hesitant to ask Kasai..", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　とどのつまり、私は悟史くんと彼らを天秤に掛け、…彼らを蔑ろにしてしまったわけだから。",
+		   NULL, "After all, I'd chosen Satoshi-kun over them...", Line_Normal);
+	ClearMessage();
+	DrawScene( "black", 1000 );
+
+	OutputLine(NULL, "　……悟史くんは無事だろうか。",
+		   NULL, "...Was Satoshi-kun all right?", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　たとえ直接危害を加えられなかったとしても、…捕まえられてどこかに監禁なんてことがなければいいのだが…。",
+		   NULL, "I hoped he wouldn't get caught or incarcerated somewhere...", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　…………その後、勘定を済ませ、私は葛西の車で自分の部屋に送り届けられたのだった……。",
+		   NULL, "...I paid the hospital bill, and Kasai gave me a ride home...", Line_Normal);
+	ClearMessage();
+	PlayBGM( 1, "semi", 120, 0 );
+
+	OutputLine(NULL, "　…ぼーっとする頭が、ようやくこの部屋がノックされていることに気付く。",
+		   NULL, "...I finally realized that somebody was knocking on my door.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "「詩音さん、……そろそろ体を起こしてください。",
+		   NULL, "\"Shion-san...", Line_WaitForInput);
+	OutputLine(NULL, "横になり続けるのも、やはり体に毒です。」",
+		   NULL, " it's not healthy to sleep so much.\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　葛西だった。",
+		   NULL, "It was Kasai.", Line_Normal);
+	ClearMessage();
+	DrawSceneWithMask( "Si_H3", "maskup", 1, 0, 300 );
+
+	OutputLine(NULL, "　葛西が買ってきてくれた弁当とお惣菜を机の上に広げ、…ふたりで適当に摘まみあった。",
+		   NULL, "He put some side dishes on the table, and we started nibbling at them...", Line_Normal);
+	ClearMessage();
+	DisableWindow();
+	DrawBustshotWithFiltering( 2, "Kasa2", "maskright", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 10, 300, TRUE );
+	DisplayWindow();
+	FadeOutBGM( 1, 0, FALSE );
+	DrawBustshot( 19, "no_data", 0, 100, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, TRUE );
+
+	OutputLine(NULL, "「………気分は落ち着かれましたか？」",
+		   NULL, "\"....How do you feel?\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "「…………………落ち着いたと言うか、落ち込んだというか。",
+		   NULL, "\"...Depressed...", Line_WaitForInput);
+	OutputLine(NULL, "……はー。」",
+		   NULL, " Hah...\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "「この数日間はずっと伏せっていたんですか？",
+		   NULL, "\"Have you been resting?", Line_WaitForInput);
+	OutputLine(NULL, "　食事はされていましたか？」",
+		   NULL, " Have you been eating?\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "「……冷蔵庫の中の残り物を適当に食べてました。",
+		   NULL, "\"...I've been eating the stuff left in the fridge.", Line_WaitForInput);
+	OutputLine(NULL, "あとは天井を見てるか、眠っているかのどっちか。」",
+		   NULL, " Otherwise, I've been either sleeping or staring at the ceiling.\"", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　あれから３日間。",
+		   NULL, "It had been three days...", Line_WaitForInput);
+	OutputLine(NULL, "…私はほとんど伏せったままで過した。",
+		   NULL, " I'd just been lying down since then.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　眠りが浅くなり、目を覚ましかけたことは何度かあったが、起きようとする気力もなく、……何も考えなくていい浅い眠りの世界をずっと漂っていた。",
+		   NULL, "I woke up every now and then in my shallow sleep, but I didn't feel like getting up or thinking. I felt like I'd just been floating the whole time.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　空腹感は今まで忘れていたが、この弁当の匂いを嗅いで、思い出させられたのだった。",
+		   NULL, "My appetite was gone, but it came back with the smell of the food Kasai brought.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　何も交わす言葉がなく、……私は黙々と箸を口に運ぶだけだった。",
+		   NULL, "I wasn't able to think of anything to talk to Kasai about... so I just ate silently.", Line_Normal);
+	ClearMessage();
+	DrawScene( "black", 400 );
+	DrawScene( "Si_H2", 400 );
+
+	OutputLine(NULL, "「昨日、………魅音さんから連絡がありました。",
+		   NULL, "\"I got a call from Mion-san yesterday......", Line_WaitForInput);
+	OutputLine(NULL, "詩音さんの部屋に何度か電話したけど、出なかったからということで。」",
+		   NULL, " She was saying she called you a few times, but never got through.\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　魅音の名が出て、……胸の奥で、かさぶたが剥げるような感触がした。",
+		   NULL, "The moment I heard Mion's name... I felt my wounds throb.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　でも、水をささず葛西に続けさせた。",
+		   NULL, "But I didn't stop Kasai, who continued.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "「………園崎本家としては、…詩音さんがご自分でけじめを付けられたので、これで決着とするそうです。",
+		   NULL, "\"......Because you paid up, the family decided to close the matter...", Line_WaitForInput);
+	OutputLine(NULL, "……聖ルチーア学園には退学届が出されます。",
+		   NULL, " You will officially withdraw from St. Lucia's", Line_WaitForInput);
+	OutputLine(NULL, "詩音さんは興宮の学校に編入になるそうです。」",
+		   NULL, " and transfer to a school in Okinomiya.\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "「………………園崎詩音の人権が、認められたってことか…。」",
+		   NULL, "\".........They're finally acknowledging my right to make my own decisions, huh...?\"", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "「…そうですね。",
+		   NULL, "\"...Indeed.", Line_WaitForInput);
+	OutputLine(NULL, "今後は園崎詩音として生活して下さって構わないそうです。",
+		   NULL, " They said you could live as yourself now... under a few conditions.", Line_WaitForInput);
+	OutputLine(NULL, "…ですが、みだりに雛見沢には近付かないこと。",
+		   NULL, " You will stay away from Hinamizawa,", Line_WaitForInput);
+	OutputLine(NULL, "園崎魅音を騙らないこと。",
+		   NULL, " you won't pretend to be Mion Sonozaki,", Line_WaitForInput);
+	OutputLine(NULL, "人前にみだりに姿を表さないこと、…他にも細々とありますが、つまるところ…、」",
+		   NULL, " you won't show up in public places... and so on. This means...\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "「存在を認めてやるから、……本家に目立つようなことは二度とするなってわけか。」",
+		   NULL, "\"In exchange for acknowledging me, they don't want me to hang around.\"", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "「そういうことになります。",
+		   NULL, "\"That's correct...", Line_WaitForInput);
+	OutputLine(NULL, "……もちろん永続的なわけじゃありません。",
+		   NULL, " Of course, it is only temporary", Line_WaitForInput);
+	OutputLine(NULL, "ほとぼりが冷めるまで当分、ということです。",
+		   NULL, " until things cool down.", Line_WaitForInput);
+	OutputLine(NULL, "具体的にいつまで、という期限があるわけではありませんが、……今年いっぱいくらいはこれまで通り、目立たない生活を送られた方がよろしいかと思います。」",
+		   NULL, " There is no set duration, but I think you should stay inconspicuous at least until the end of the year.\"", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "「…私は興宮でひっそり暮らすだけで充分です。",
+		   NULL, "\"...It'd be good enough just to live in Okinomiya quietly...", Line_WaitForInput);
+	OutputLine(NULL, "……元々、これまでだってそうして暮らしてきたわけだし。」",
+		   NULL, " the way it was before.\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　葛西は苦笑いをして見せる。",
+		   NULL, "Kasai put on a sad smile.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　私も同じように苦笑いを返して見せた。",
+		   NULL, "I smiled back at him likewise.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　そして…会話の流れを断ち切らず、…ずっと聞きたかったことを口にした。",
+		   NULL, "Before the conversation ended... I should ask him what I wanted to know.", Line_Normal);
+	ClearMessage();
+	DrawBustshotWithFiltering( 0, "Kasa1", "maskup", 1, 0, 0, FALSE, 0, 0, 0, 0, 0, 9, 0, FALSE );
+	DrawSceneWithMask( "Si_H3", "maskup", 1, 0, 300 );
+
+	OutputLine(NULL, "「…………………悟史くんは、",
+		   NULL, "\".........How's Satoshi-kun", Line_ContinueAfterTyping);
+	SetValidityOfInput( FALSE );
+	Wait( 1000 );
+	SetValidityOfInput( TRUE );
+	OutputLine(NULL, "……どうなったの……？」",
+		   NULL, " doing......?\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "「………………………。」",
+		   NULL, "\".....................\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　無事ですと一言、葛西に言って欲しかった。",
+		   NULL, "I wished that Kasai would assure me of his safety right away.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　だが、葛西は返事をしてくれなかった。",
+		   NULL, "But he didn't answer like that.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "「……葛西。",
+		   NULL, "\"...Kasai.", Line_WaitForInput);
+	OutputLine(NULL, "……悟史くんは、無事なの…？」",
+		   NULL, " ...Is he all right...?\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "「…………詩音さん。」",
+		   NULL, "\"...Shion-san.\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　葛西は箸を置く。",
+		   NULL, "Kasai put his chopsticks down.", Line_Normal);
+	ClearMessage();
+	DisableWindow();
+	ChangeBustshot( 0, "Kasa3", 200, TRUE );
+	DisplayWindow();
+
+	OutputLine(NULL, "「本家から、……北条悟史くんのことは忘れろと託かっています。」",
+		   NULL, "\"The family wants you to forget about him.\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	SetSpeedOfMessage( TRUE, 16 );
+	OutputLine(NULL, "「……………………………",
+		   NULL, "\".....................", Line_ContinueAfterTyping);
+	SetSpeedOfMessage( FALSE, 0 );
+	SetValidityOfInput( FALSE );
+	Wait( 800 );
+	SetValidityOfInput( TRUE );
+	OutputLine(NULL, "何それ。」",
+		   NULL, "What?\"", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "「詩音さん。",
+		   NULL, "\"Shion-san.", Line_WaitForInput);
+	OutputLine(NULL, "……あなたと喧嘩はしたくないんで、これ以上この話はしたくありません。",
+		   NULL, " I don't want to get in an argument with you, so I will not get into the details...", Line_WaitForInput);
+	OutputLine(NULL, "…本家からの言葉を伝えるのみに留めさせてもらいます。」",
+		   NULL, " I'm only relaying to you what the family wants.\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "「な、…何、その話をしたくないってのは…！",
+		   NULL, "\"Wh-What are you talking about...?", Line_WaitForInput);
+	OutputLine(NULL, "　葛西！」",
+		   NULL, " What details, Kasai?!\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "「………………。」",
+		   NULL, "\".....................\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　葛西は聞こえないかのように振る舞い、食事を再開する。",
+		   NULL, "Kasai pretended as though he didn't hear me and started eating again.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　…こんな頑固で意地悪な葛西は初めて見た。",
+		   NULL, "...I'd never seen him get so stubborn like this.", Line_Normal);
+	ClearMessage();
+	DrawScene( "Si_H2", 400 );
+
+	OutputLine(NULL, "　……園崎家は、北条家をスケープゴートにして今日までやって来た。",
+		   NULL, "...The Sonozaki family had been using the Houjou family as a scapegoat.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　…その北条家と、仮にも園崎の姓を持つ私が恋仲になんかなったら、…示しがつかないってわけで。",
+		   NULL, "...They must have concluded that a Sonozaki shouldn't be in love with a Houjou.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　…何だか面白くない。",
+		   NULL, "...I didn't like that.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　……あの沙都子は学校で魅音と友達関係じゃないか。",
+		   NULL, "...Satoko is a friend of Mion's at school.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　同性のお友達はよくっても、…私と悟史くんじゃ駄目だってわけだ。",
+		   NULL, "Would it be okay if Satoshi-kun and I were the same gender?", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　………でも、…私がまた何か目立つことをすれば、…今度こそ悟史くんに迷惑が及ぶかもしれないのだ。",
+		   NULL, ".........Anyway, if I did something conspicuous again, they might do something to him for real.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　私に、爪を剥ぐことを強要したように。",
+		   NULL, "Just like they forced me to remove my own fingernails.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　…園崎本家はいざとなったら本当にやる。",
+		   NULL, "...The Sonozaki family wouldn't hesitate...", Line_WaitForInput);
+	OutputLine(NULL, "…どんな残酷なことを悟史くんに強いるか、……想像できないこともない。",
+		   NULL, " They'd torture him if need be.", Line_Normal);
+	ClearMessage();
+	DrawScene( "black", 400 );
+
+	OutputLine(NULL, "　……悟史くんが本当に好きなら、…………私は、悟史くんにもう近付かない方がいいのだろうか。",
+		   NULL, "...Maybe, if I really loved him, I should stay away...", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　悟史くんが、また雛見沢ファイターズに戻って来てくれない限り。",
+		   NULL, "Satoshi-kun won't show up in Okinomiya", Line_WaitForInput);
+	OutputLine(NULL, "…悟史くんはもう興宮にはそうそう簡単には姿を現さないだろう。",
+		   NULL, " unless he rejoins the Hinamizawa Fighters.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　私が雛見沢に行くには、また魅音に成り済まさなくてはならない。",
+		   NULL, "I'd have to pretend to be Mion if I wanted to go to Hinamizawa.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　でも、魅音だって、…もう二度と私には協力してくれないだろう。",
+		   NULL, "But... I didn't think she'd cooperate with me.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　あるいは……その内、機嫌を直してくれたとしても、それはほとぼりが冷めるくらいに、…ずっと未来の話だ。",
+		   NULL, "Even if she did, it'd be some time down the road.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　………直接的に、悟史くんと会うなと言われなかったにしたって。",
+		   NULL, "...Even if they told me not to see him...", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　もう、…私は悟史くんと再会する手段を失っていたのだ。",
+		   NULL, "I already had no means of doing that again.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　あ、……そうだ。",
+		   NULL, "Oh... wait.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　……前に、魅音から悟史くんの家の電話番号を聞いたじゃないか。",
+		   NULL, "...Mion gave me his number a little while ago...", Line_WaitForInput);
+	OutputLine(NULL, "…私から電話を掛けることはできる。",
+		   NULL, " I could call him...", Line_WaitForInput);
+	OutputLine(NULL, "……こっそり会ってくれないかって、頼むこともできるかも。",
+		   NULL, " and maybe ask to meet with him secretly.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　…………………でも、……一度、こういう形でけじめを取らされた私には、もう二度と執行猶予はないだろう。",
+		   NULL, ".........But if I got caught again, they wouldn't cut me any slack......", Line_WaitForInput);
+	OutputLine(NULL, "……そんな危険を冒してまで、悟史くんに、私は何をしようと言うんだろう……？",
+		   NULL, " Should I risk it? What the hell did I even want from Satoshi-kun...?", Line_Normal);
+	ClearMessage();
+	DrawBustshot( 2, "Kasa2", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, FALSE );
+	DrawScene( "Si_H2", 400 );
+
+	OutputLine(NULL, "「…………………………葛西。",
+		   NULL, "\".....................Kasai.", Line_WaitForInput);
+	OutputLine(NULL, "ちょっと、………ひとりになりたい。」",
+		   NULL, " Can I be alone for a moment?\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　葛西は、出て行って欲しいという意味なのかと思い、慌てて弁当の後片付けをしだす。",
+		   NULL, "Kasai started putting away his food in a rush, assuming that I wanted him to leave.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "「あ、いいの。",
+		   NULL, "\"Oh, no, that's not what I meant.", Line_WaitForInput);
+	OutputLine(NULL, "葛西はのんびり食べてて。",
+		   NULL, " Take your time and finish your food.", Line_WaitForInput);
+	OutputLine(NULL, "私がちょっとひとりで散歩がしたいだけなの。」",
+		   NULL, " I just want to take a walk.\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+	DisableWindow();
+	ChangeBustshot( 2, "Kasa1", 200, TRUE );
+	DisplayWindow();
+
+	OutputLine(NULL, "「……………私も詩音さんと一緒に出ないと、この部屋に鍵が掛けられません。」",
+		   NULL, "\"...You can't lock this place up if I don't step out with you.\"", Line_Normal);
+	ClearMessage();
+	DrawScene( "black", 400 );
+
+	OutputLine(NULL, "　葛西は手早く片付けると、私と一緒に玄関を出た。",
+		   NULL, "Kasai quickly put away his meal and followed me out.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "「……あ、先に断っとくけど、…別に悟史くんに会いに行くわけじゃないからね。」",
+		   NULL, "\"...Uh, just to be clear, I'm not going out to see Satoshi-kun, all right?\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "「わかりました。」",
+		   NULL, "\"I see.\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　私は葛西に背中を向けて歩き出すのだった。",
+		   NULL, "I turned around and started walking.", Line_Normal);
+	ClearMessage();
+
+	DrawSceneWithMask( "Mati3", "maskright", 1, 0, 300 );
+	SetValidityOfInput( FALSE );
+	Wait( 2000 );
+	SetValidityOfInput( TRUE );
+	DrawSceneWithMask( "Mati1", "maskright", 1, 0, 300 );
+	SetValidityOfInput( FALSE );
+	Wait( 2000 );
+	SetValidityOfInput( TRUE );
+	DrawSceneWithMask( "mati_O1", "maskright", 1, 0, 300 );
+	SetSpeedOfMessage( FALSE, 0 );
+	PlayBGM( 0, "demo_48khz", 120, 0 );
+
+	OutputLine(NULL, "　孤独を求めた私の行く先は、……未練がましい場所だった。",
+		   NULL, "My destination was... rather pathetic.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　そう、…悟史くんが沙都子のために買う、あのぬいぐるみを売っているおもちゃ屋だった。",
+		   NULL, "It was the toy store that sold that giant teddy bear.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　悟史くんとすれ違わないかな…という淡い期待があったことは否定しない。",
+		   NULL, "I couldn't deny that I was somewhat expecting Satoshi-kun to pass by there.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　悟史くんに似た雰囲気の人とすれ違う度に、顔をしげしげと覗き込んでしまうのだから。",
+		   NULL, "I couldn't stop myself from looking at the faces of passersby who resembled him.", Line_Normal);
+	ClearMessage();
+	DrawScene( "Sora", 400 );
+
+	OutputLine(NULL, "　おもちゃ屋のショーケースを見る。",
+		   NULL, "I looked into the store's window.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　……あの巨大なぬいぐるみはなくなっていた。",
+		   NULL, "...The teddy bear was gone.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "「悟史くん、……………おめでと。",
+		   NULL, "\"Congrats, Satoshi-kun......", Line_WaitForInput);
+	OutputLine(NULL, "…買えたんだね。」",
+		   NULL, " Looks like you were able to buy it.\"", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　意地悪な叔母は死に、意地悪な叔父は愛人のところへ消えたまま。",
+		   NULL, "His evil aunt had died and his wicked uncle was living with his mistress.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　悟史くんは、愛する妹の欲しがるぬいぐるみを見事にプレゼントでき、兄としての責務を果たした。",
+		   NULL, "Satoshi-kun succeeded in fulfilling his duty as a big brother by buying his little sister that huge teddy bear.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　悟史くんを苛めるやつらはもういない。",
+		   NULL, "There was nobody left to hurt him.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　そして悟史くんを縛って来たアルバイトももう必要ない。",
+		   NULL, "He was free from his tiresome efforts.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　……悟史くんは辛かった日々の全てから、解放されたのだ。",
+		   NULL, "...He was completely free from pain.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　悟史くんは時間と共に笑顔を取り戻すだろう。",
+		   NULL, "Over time, he'd retrieve his smile...", Line_WaitForInput);
+	OutputLine(NULL, "…そして、私の大好きだった悟史くんに戻っていくだろう。",
+		   NULL, " and he'd go back to being the Satoshi-kun I love.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　…………………でも、もう。",
+		   NULL, "...............But,", Line_WaitForInput);
+	OutputLine(NULL, "…………そこに私はいないんだ。",
+		   NULL, " I wouldn't be there with him.", Line_Normal);
+	ClearMessage();
+	DrawScene( "black", 400 );
+
+	OutputLine(NULL, "　パッパーーー。",
+		   NULL, "Honk, honk.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　車のクラクションが聞こえた。",
+		   NULL, "I heard a car honking.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　だが、私に対してのものだとは思わず、無視を続けていたが、しつこく続くので顔を上げた。",
+		   NULL, "I didn't think it was honking at me at first, but it was so persistent that I had to look up.", Line_Normal);
+	ClearMessage();
+	DrawSceneWithMask( "mati_O1", "maskleft", 1, 0, 300 );
+
+	OutputLine(NULL, "　車から誰かが手を振っている。",
+		   NULL, "The person waving at me from their car...", Line_WaitForInput);
+	OutputLine(NULL, "………監督だった。",
+		   NULL, " was Irie.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　人の気も知らないで、能天気そうな笑顔で手をぶんぶんと振っている。",
+		   NULL, "He was waving at me all carefree, oblivious to my feelings.", Line_Normal);
+	ClearMessage();
+	DisableWindow();
+	DrawBustshotWithFiltering( 2, "Iri_Def2#", "maskright", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 10, 300, TRUE );
+	DisplayWindow();
+
+	OutputLine(NULL, "「園崎さん〜。",
+		   NULL, "\"Sonozaki-san.", Line_WaitForInput);
+	OutputLine(NULL, "ご無沙汰していますねー。",
+		   NULL, " Long time no see.", Line_WaitForInput);
+	OutputLine(NULL, "あ、ひょっとして、北条さんと待ち合わせでしたか？」",
+		   NULL, " Oh, are you meeting up with Houjou-san?\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "「……いえ、そういうわけじゃないです。」",
+		   NULL, "\"......No, I'm not.\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+	DisableWindow();
+	ChangeBustshot( 2, "Iri_Def1#", 200, TRUE );
+	DisplayWindow();
+
+	OutputLine(NULL, "「そのおもちゃ屋さんのショーウィンドゥは、北条さんもよく覗いていましたからね。",
+		   NULL, "\"I know he looks into that store's windows all the time...", Line_WaitForInput);
+	OutputLine(NULL, "…それでてっきり北条さんとの待ち合わせか何かかなって思っちゃいまして。」",
+		   NULL, " So I assumed you were expecting him here, or something...\"", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "「…いえ、たまたまここを通りかかっただけです。",
+		   NULL, "\"...No, I'm just passing by.........", Line_WaitForInput);
+	OutputLine(NULL, "………………買えたみたいですね、悟史くん。」",
+		   NULL, " Looks like he was able to buy that teddy bear.\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　監督も、あのぬいぐるみのことは知っているようだった。",
+		   NULL, "Irie seemed to know about the teddy bear as well.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　あのぬいぐるみのいなくなってできた大きなスペースを見て微笑む。",
+		   NULL, "He smiled upon seeing its empty display space.", Line_Normal);
+	ClearMessage();
+	DisableWindow();
+	ChangeBustshot( 2, "Iri_Warai#", 200, TRUE );
+	DisplayWindow();
+
+	OutputLine(NULL, "「……昨日が沙都子ちゃんの誕生日でした。",
+		   NULL, "\"......Yesterday was Satoko-chan's birthday.", Line_WaitForInput);
+	OutputLine(NULL, "きっと、あのぬいぐるみでそれをお祝いできたと思います。」",
+		   NULL, " He must've celebrated it with that teddy bear.\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "「じゃあもう、悟史くんは無茶なアルバイトに精を出さなくてもいいわけですね。」",
+		   NULL, "\"He doesn't have to work so hard anymore, huh?\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "「そうですね。」",
+		   NULL, "\"Indeed.\"", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "「………悟史くんって、……その、…雛見沢ファイターズ、退部届けとか出しちゃったんですか？」",
+		   NULL, "\"...Did he... turn in his resignation to the Hinamizawa Fighters?\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+	DisableWindow();
+	ChangeBustshot( 2, "Iri_Def2#", 200, TRUE );
+	DisplayWindow();
+
+	OutputLine(NULL, "「そんなもの出てたんですか？",
+		   NULL, "\"Oh, does that even exist?", Line_WaitForInput);
+	OutputLine(NULL, "　私は受け取ってませんよ？",
+		   NULL, " I never received one.", Line_WaitForInput);
+	OutputLine(NULL, "　マネージャーの園崎さんは？」",
+		   NULL, " Did you, Sonozaki-san?\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "「…あははは、受け取ってないです。」",
+		   NULL, "\"...Ahahaha. No, I didn't.\"", Line_Normal);
+	ClearMessage();
+	DisableWindow();
+	ChangeBustshot( 2, "Iri_Warai#", 200, TRUE );
+	DisplayWindow();
+
+	OutputLine(NULL, "「誰も退部届けを受け取ってないなら、ははは、まだうちの部員ってことですね。",
+		   NULL, "\"So, that means he still belongs to the team.", Line_WaitForInput);
+	OutputLine(NULL, "しばらくして、生活が落ち着いたらまた戻って来てくれるんじゃないかなって思ってます。",
+		   NULL, " I think he'll be back after things have settled down.", Line_WaitForInput);
+	OutputLine(NULL, "でも、その時に園崎さんがいなかったら…きっと悲しむだろうなぁ〜。」",
+		   NULL, " But I know he'll be sad if he doesn't see you there.\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　監督が茶化すように言う。",
+		   NULL, "Irie teased me...", Line_WaitForInput);
+	OutputLine(NULL, "……監督は大人だ。",
+		   NULL, " He's a grownup, after all.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　私の気分が沈みがちなのを見抜いて、わざと能天気を装ってくれているように感じた。",
+		   NULL, "He must have been trying to sound optimistic because he knew I was feeling a bit down.", Line_Normal);
+	ClearMessage();
+	DisableWindow();
+	ChangeBustshot( 2, "Iri_Def1#", 200, TRUE );
+	DisplayWindow();
+
+	OutputLine(NULL, "「………園崎さんも、落ち着いたらいつでもチームに帰って来てください。",
+		   NULL, "\"...You can come back to the team anytime you want.", Line_WaitForInput);
+	OutputLine(NULL, "あなたがいないと、やっぱり寂しいですよ。",
+		   NULL, " It might as well be empty without you.", Line_WaitForInput);
+	DisableWindow();
+	ChangeBustshot( 2, "Iri_warai#", 200, TRUE );
+	DisplayWindow();
+
+	OutputLine(NULL, "…園崎さんが帰ってきてくれたら、ぜひ女子マネージャーの制服をメイドさんな格好にしようと思ってまして。」",
+		   NULL, " ...I'm thinking of providing you with a maid costume once you come back.\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　思わず吹き出さずにはいられなかった。",
+		   NULL, "I burst into laughter.", Line_WaitForInput);
+	OutputLine(NULL, "監督って人は相変わらずだ。",
+		   NULL, " Irie sure hadn't changed.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "「…………あ、そうだ。",
+		   NULL, "\"...Oh, I almost forgot.", Line_WaitForInput);
+	OutputLine(NULL, "もう名乗ってもいいんだった。",
+		   NULL, " I can tell you my name now.", Line_WaitForInput);
+	OutputLine(NULL, "監督、今まで騙しててすみません。",
+		   NULL, " Sorry. Coach. I was lying about my identity...", Line_WaitForInput);
+	OutputLine(NULL, "…私、魅音じゃないんです。",
+		   NULL, " I'm not Mion.", Line_WaitForInput);
+	OutputLine(NULL, "詩音っていう双子の妹なんです。",
+		   NULL, " I'm her twin sister, Shion.", Line_WaitForInput);
+	OutputLine(NULL, "訳ありで今までずっと魅音のふりしてきました。」",
+		   NULL, " I've been pretending to be her for a few reasons.\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+	DisableWindow();
+	ChangeBustshot( 2, "Iri_Def2#", 200, TRUE );
+	DisplayWindow();
+
+	OutputLine(NULL, "「え、……え？",
+		   NULL, "\"Eh... what?", Line_WaitForInput);
+	OutputLine(NULL, "　双子の、妹さん…ですか？！」",
+		   NULL, " You're Mion-san's twin... sister?!\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　監督のうろたえ方が面白くて、私はもう一度吹き出してしまう。",
+		   NULL, "He was totally taken aback. I burst into laughter again.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "「そうです。",
+		   NULL, "\"Yes,", Line_WaitForInput);
+	OutputLine(NULL, "園崎詩音と言います。",
+		   NULL, " I am Shion Sonozaki.", Line_WaitForInput);
+	OutputLine(NULL, "園崎本家に嫌われてるんで、あまり堂々と暮らせる立場じゃないんですけどね。」",
+		   NULL, " I'm forced to live quietly because my grandmother hates me, though.\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "「…知らなかったですよ……。",
+		   NULL, "\"...I never realized...", Line_WaitForInput);
+	OutputLine(NULL, "まさか…魅音さんに双子の妹さんがいたなんて………。」",
+		   NULL, " that Mion-san had a twin sister...\"", Line_Normal);
+	ClearMessage();
+	FadeOutBGM( 0, 0, FALSE );
+	FadeOutBGM( 1, 0, FALSE );
+	FadeOutBGM( 2, 0, FALSE );
+	FadeOutBGM( 3, 0, FALSE );
+	DrawBustshot( 19, "no_data", 0, 100, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, TRUE );
+	DisableWindow();
+	DrawBustshotWithFiltering( 1, "Oisi2", "maskleft", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 8, 300, TRUE );
+	DisplayWindow();
+
+	OutputLine(NULL, "「なっはっはっは。そりゃまったく同感です。」",
+		   NULL, "\"Na ha ha ha. Same here.\"", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　突然、野太い声が割り込んでくる。",
+		   NULL, "Suddenly, a loud voice interrupted us.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　監督のからっとした笑い声とは全然違う、脂ぎった嫌な品のない笑い。",
+		   NULL, "The voice sounded mean and greasy, unlike Irie's.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	PlayBGM( 1, "semi", 120, 0 );
+
+	OutputLine(NULL, "　………あいつだ。",
+		   NULL, "...It was him.", Line_WaitForInput);
+	OutputLine(NULL, "大石だった。",
+		   NULL, " Ooishi.", Line_Normal);
+	ClearMessage();
+	DisableWindow();
+	ChangeBustshot( 1, "Oisi1", 200, TRUE );
+	DisplayWindow();
+
+	OutputLine(NULL, "「入江先生もこんにちは。",
+		   NULL, "\"Hello, Dr. Irie.", Line_WaitForInput);
+	OutputLine(NULL, "先日は遅くまでありがとうございました。」",
+		   NULL, " Thank you for your cooperation last night.\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+	DisableWindow();
+	ChangeBustshot( 2, "Iri_Def1#", 200, TRUE );
+	DisplayWindow();
+
+	OutputLine(NULL, "「いえ、何もお役に立てませんで、申し訳ないです。」",
+		   NULL, "\"Don't mention it. I wasn't of much help.\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　…いかにもな、大人同士の社交儀礼。",
+		   NULL, "...They were just going through the motions.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　互いに良く思いあっていないことは一目瞭然だった。",
+		   NULL, "It was obvious that they hated each other.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　監督が小声で話しかけてくる。",
+		   NULL, "Irie whispered to me.", Line_Normal);
+	ClearMessage();
+
+	DrawBustshot( 0, "Iri_majime#", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 9, 0, FALSE );
+	DrawScene( "mati_O1", 400 );
+
+	OutputLine(NULL, "「……私はもうここを離れますが、一緒に車に乗りますか？",
+		   NULL, "\"......I'm leaving now. Do you want to get in my car?", Line_WaitForInput);
+	OutputLine(NULL, "　お家まで送りますよ。」",
+		   NULL, " I can drive you home.\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　監督は、大石の狙いが私にあるものと思い、さり気なく助け舟を出してくれたのだった。",
+		   NULL, "Irie figured that Ooishi was after me, so he was giving me a chance to slip away.", Line_Normal);
+	ClearMessage();
+	DisableWindow();
+	FadeBustshotWithFiltering( 0, "mask00" , 0, FALSE, 0, 0, 300, TRUE );
+	DrawBustshotWithFiltering( 1, "Oisi1", "maskleft", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 8, 300, TRUE );
+	DisplayWindow();
+
+	OutputLine(NULL, "　確かに大石の顔を見ると、明らかに関心が私に向けられていることは明白だ。",
+		   NULL, "Looking at Ooishi's face, it was clear that his focus was on me, not Irie.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　…事件当日の祭りの日に、悟史くんと一緒にいたと証言する私を問い詰めて、ボロを出そうというつもりに違いない。",
+		   NULL, "...He probably intended to interrogate me until my testimony broke.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　……のらりくらりと逃げられる自信はあるが、そんなことに時間を割くのは不快なだけだ。",
+		   NULL, "...I was sure I could talk my way out of it, but it'd just be a waste of time.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "「そうですね。",
+		   NULL, "\"All right,", Line_WaitForInput);
+	OutputLine(NULL, "じゃ監督。",
+		   NULL, " Coach.", Line_WaitForInput);
+	OutputLine(NULL, "そろそろ行きましょうか。」",
+		   NULL, " Let's get going.\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+	DisableWindow();
+	ChangeBustshot( 1, "Oisi4", 200, TRUE );
+	DisplayWindow();
+
+	OutputLine(NULL, "「…ありゃあ、お二人でどちらかにお出掛けの途中でしたか？」",
+		   NULL, "\"...Oh, are you two going somewhere together?\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+	DisableWindow();
+	DrawBustshotWithFiltering( 2, "Iri_Def2#", "maskright", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 10, 300, TRUE );
+	DisplayWindow();
+
+	OutputLine(NULL, "「えぇ。",
+		   NULL, "\"Yes.", Line_WaitForInput);
+	OutputLine(NULL, "チームの夕涼み会用に景品を探しているところだったんです。",
+		   NULL, " We're on our way to get some stuff for the team.", Line_WaitForInput);
+	OutputLine(NULL, "他にも行くお店がたくさんありますので、この辺で私たちは失礼します。」",
+		   NULL, " We have to drop by a few places, so will you excuse us?\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　監督がお辞儀したので、私も一緒にお辞儀する。",
+		   NULL, "Irie bowed. I followed suit.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　……さすがに監督も大人だ。",
+		   NULL, "...I had to admire how good he was at lying.", Line_WaitForInput);
+	OutputLine(NULL, "涼やかに、淀みなく嘘を並べてみせる。",
+		   NULL, " He's a grownup, after all.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　大石もそれがこの場を逃げるための嘘であることはわかっているようだった。",
+		   NULL, "Ooishi seemed to know it was a lie.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　だが、令状があるわけじゃないから、無理に引き止めることもできない。",
+		   NULL, "But he didn't have a warrant, so he couldn't stop us. I moved to get into Irie's car.", Line_Normal);
+	ClearMessage();
+	DisableWindow();
+	ChangeBustshot( 1, "Oisi2", 200, TRUE );
+	DisplayWindow();
+
+	OutputLine(NULL, "「………お怪我は大丈夫なんですか？",
+		   NULL, "\"...How are your wounds,", Line_WaitForInput);
+	OutputLine(NULL, "　園崎詩音さん。」",
+		   NULL, " Shion Sonozaki-san?\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　監督の車へ乗り込もうとした私は、その大石の言葉にはっとする。",
+		   NULL, "I gasped when I heard that.", Line_Normal);
+	ClearMessage();
+	DrawScene( "black", 400 );
+
+	OutputLine(NULL, "　…私の左手は包帯でぐるぐる巻きだ。",
+		   NULL, "...My left hand was bandaged.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　…見っとも無いから、ポケットに突っ込んで隠していた。",
+		   NULL, "...It was unsightly, so I'd kept it in my pocket.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　だから大石は、私の左手の包帯を見ていないはず。",
+		   NULL, "There was no way Ooishi could have been able to see it.", Line_Normal);
+	ClearMessage();
+	DrawBustshot( 0, "Oisi4", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 9, 0, FALSE );
+	DrawScene( "mati_O1", 400 );
+
+	OutputLine(NULL, "「化膿さえしなきゃ、綺麗に治りますよ",
+		   NULL, "\"They'll heal with no problems if they don't get infected.", Line_WaitForInput);
+	OutputLine(NULL, "。私も子どもの頃は何度か爪を剥いちゃったことがありましたがね、ほら、綺麗なもんでしょ。",
+		   NULL, " I tore my fingernails off a couple of times myself when I was a kid. But look, they look beautiful now, don't they?", Line_WaitForInput);
+	OutputLine(NULL, "んっふっふっふ。」",
+		   NULL, " Nfu fu fu.\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "「…………男の爪が綺麗でも気色悪いだけです。」",
+		   NULL, "\"......Men's fingernails shouldn't look beautiful. That gives me the creeps.\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　大石は、違いない違いないと言いながら頭を掻いて笑った。",
+		   NULL, "Ooishi scratched his head and chuckled.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　……大石は、興宮署で一番のキレ者で、雛見沢も含めこの地域の裏事情にも詳しい。",
+		   NULL, "...He's supposed to be one of the best cops at the Okinomiya PD, and he knows about all the underground activities in the region.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　なるほど、…どこかで私のけじめのことを聞きつけたわけか…。",
+		   NULL, "He must've heard about my payment from somewhere...", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　…しかし、あの日の出来事は、園崎本家の深奥で行なわれたことだ。",
+		   NULL, "...Still, that happened in the secret basement of the Sonozaki main house...", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　どういうルートで聞きつけたにせよ、この男の情報網は侮れない。",
+		   NULL, "I couldn't underestimate this guy's sources.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "「お見舞い、感謝感激です。",
+		   NULL, "\"Thank you for your kind words...", Line_WaitForInput);
+	OutputLine(NULL, "…じゃ、もう行きますね？",
+		   NULL, " We'll be going now.", Line_WaitForInput);
+	OutputLine(NULL, "　失礼します。」",
+		   NULL, " Excuse us.\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+	DisableWindow();
+	ChangeBustshot( 0, "Oisi1", 200, TRUE );
+	DisplayWindow();
+
+	OutputLine(NULL, "「園崎詩音さん。",
+		   NULL, "\"Shion Sonozaki-san.", Line_WaitForInput);
+	OutputLine(NULL, "私とコーヒーでも飲みに行きません？」",
+		   NULL, " Why don't we get coffee together sometime?\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "「……はぁ？",
+		   NULL, "\"...What?", Line_WaitForInput);
+	OutputLine(NULL, "　何それ、私を口説いてんですか？」",
+		   NULL, " Are you hitting on me?\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+	DisableWindow();
+	ChangeBustshot( 0, "Oisi2", 200, TRUE );
+	DisplayWindow();
+
+	OutputLine(NULL, "「そういうことでもいいですよ？",
+		   NULL, "\"If you like.", Line_WaitForInput);
+	OutputLine(NULL, "　んっふっふっふ。」",
+		   NULL, " Nfu fu fu.\"", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "「遠慮します。",
+		   NULL, "\"Sorry.", Line_WaitForInput);
+	OutputLine(NULL, "一日は有限、２４時間。",
+		   NULL, " Time flies.", Line_WaitForInput);
+	OutputLine(NULL, "わざわざ退屈なことに費やすなんて馬鹿げてますから。」",
+		   NULL, " I can't waste any of that precious time on things that don't interest me.\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+	DisableWindow();
+	ChangeBustshot( 0, "Oisi4", 200, TRUE );
+	DisplayWindow();
+
+	OutputLine(NULL, "「あーあー…もう、参ったなぁ…。",
+		   NULL, "\"Ah... you got me there...", Line_WaitForInput);
+	OutputLine(NULL, "…じゃあこうしましょう。",
+		   NULL, " How about this, then?", Line_WaitForInput);
+	OutputLine(NULL, "私とのお喋りが退屈になったら、いつでも途中で帰っていいです。",
+		   NULL, " You can leave anytime if you get bored of talking to me.", Line_WaitForInput);
+	OutputLine(NULL, "引き止めません。",
+		   NULL, " I won't stop you.", Line_WaitForInput);
+	OutputLine(NULL, "そういう約束でどうです？」",
+		   NULL, " How does that sound?\"", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "「……あんたが喋るのは勝手ですが、私は喋りませんよ？",
+		   NULL, "\"...I don't mind you talking, but I won't talk back.", Line_WaitForInput);
+	OutputLine(NULL, "　それをお喋りと呼べるかは怪しいですが。」",
+		   NULL, " I doubt you could call it a conversation.\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+	DisableWindow();
+	ChangeBustshot( 0, "Oisi2", 200, TRUE );
+	DisplayWindow();
+
+	OutputLine(NULL, "「えぇえぇ、それで結構です。",
+		   NULL, "\"Yes, that'd be fine.", Line_WaitForInput);
+	OutputLine(NULL, "詩音さんは聞き役で結構です。",
+		   NULL, " You can just listen", Line_WaitForInput);
+	OutputLine(NULL, "私が勝手に一方的に喋るだけ。",
+		   NULL, " and I'll talk...", Line_WaitForInput);
+	OutputLine(NULL, "…あなたはコーヒーでも飲みながら、中年親父の独り言を聞き流して下さればそれで結構です。」",
+		   NULL, " You can just listen to an old man ramble while sipping on a cup of coffee.\"", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　…………いやに積極的なアプローチ。",
+		   NULL, "...He was being strangely persistent.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　私の口を割ろうという風にはなぜか見えなかった。",
+		   NULL, "It didn't look like he was trying to poke a hole in my statement.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　私の爪のことも知っている大石が、私を退屈させないどんなお喋りをするというのか。",
+		   NULL, "What would he even talk about?", Line_WaitForInput);
+	OutputLine(NULL, "……………怪訝さは隠せないが、わずかな興味が芽生えたのも事実だった。",
+		   NULL, " I got a bit curious, even though I was still skeptical.", Line_Normal);
+	ClearMessage();
+	DisableWindow();
+	FadeBustshotWithFiltering( 0, "maskleft" , 1, FALSE, 0, 0, 300, TRUE );
+	DisplayWindow();
+
+	OutputLine(NULL, "「……監督。",
+		   NULL, "\"...Coach.", Line_WaitForInput);
+	OutputLine(NULL, "すみません、私、ちょっと大石のおじさまとデートに行こうと思います。」",
+		   NULL, " I think I'll go with the old man instead.\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+	DisableWindow();
+	DrawBustshotWithFiltering( 2, "Iri_Majime#", "maskright", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 10, 300, TRUE );
+	DisplayWindow();
+
+	OutputLine(NULL, "「魅ぉ、……じゃない、詩音さん…。」",
+		   NULL, "\"Mio... I mean, Shion-san......?\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　大丈夫だから心配しないで、とウィンクを送る。",
+		   NULL, "I winked at him and told him not to worry.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+	DisableWindow();
+	FadeBustshotWithFiltering( 2, "maskleft" , 1, FALSE, 0, 0, 300, TRUE );
+	DisplayWindow();
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　…監督はそれ以上はしつこくせず、車に乗り込むと走り去って行った。",
+		   NULL, "...Irie didn't insist. He got in his car and drove off.", Line_Normal);
+	ClearMessage();
+	DrawScene( "black", 400 );
+
+	OutputLine(NULL, "　向こうでは、大石が自分の車をバックでこっちに寄せてくるところだった。",
+		   NULL, "Ooishi backed his car up so I could get in.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　私は助手席なんかいやだったので、後ろの座席に乗り込む。",
+		   NULL, "I hopped in the back seat, since I didn't want to sit next to him.", Line_Normal);
+	ClearMessage();
+	PlayBGM( 1, "Mati", 120, 0 );
+	DrawSceneWithMask( "Kuruma6", "maskleft", 1, 0, 300 );
+
+	OutputLine(NULL, "「……本当に喫茶店に行くの？」",
+		   NULL, "\"...Are we really going to a cafe?\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "「ん〜〜…、あなたの親類の目がない喫茶店があるなら、紹介してもらえると助かるんですがねぇ。」",
+		   NULL, "\"Hmm... if you could direct me to one with no connection to your family, that'd be great.\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "「ちぇ。",
+		   NULL, "\"Tssk...", Line_WaitForInput);
+	OutputLine(NULL, "…それなら勝手に連行でも何でもすればいい。」",
+		   NULL, " Why don't you just take me to the station, then?\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　大石は見掛けによらず、几帳面に往来を確認すると、方向指示器を出してから車を滑り出させた。",
+		   NULL, "Ooishi carefully checked for oncoming traffic, and then started driving.", Line_Normal);
+	ClearMessage();
+	DrawSceneWithMask( "black", "maskleft", 1, 0, 300 );
+	DrawSceneWithMask( "ke1", "maskleft", 1, 0, 300 );
+
+	OutputLine(NULL, "　大石の車は予想を裏切らず、本当に興宮署にやって来た。",
+		   NULL, "Ooishi took me to the police station, as I thought he might.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　…これで、本当の本当に瀟洒な喫茶店にでも連れて来たら、個人評価をちょっと高めてやろうと思っていたのだが。",
+		   NULL, "...If he had taken me to a nice cafe, he would've scored some points...", Line_WaitForInput);
+	OutputLine(NULL, "……まぁそんなもんだ。",
+		   NULL, " but whatever.", Line_Normal);
+	ClearMessage();
+	DisableWindow();
+	DrawBustshotWithFiltering( 2, "Oisi1", "maskright", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 10, 300, TRUE );
+	DisplayWindow();
+
+	OutputLine(NULL, "「署の方が都合がいいと思ったから署にしただけです。",
+		   NULL, "\"I thought it'd be more convenient if we came here...", Line_WaitForInput);
+	OutputLine(NULL, "…私の話が退屈になったら帰っていいという約束は、もちろん守りますから安心してください。」",
+		   NULL, " you can still go home if you get bored.\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "「………ま、私を退屈させないようにがんばって下さいな。",
+		   NULL, "\"......Humph, try your best not to bore me, then...", Line_WaitForInput);
+	OutputLine(NULL, "……署内には腕組んで入ってあげましょうか、おじさま？」",
+		   NULL, " Do you want me to go into the station hand in hand with you?\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　大石はカラカラと笑いながら車を降りると、私を先導して歩き出す…。",
+		   NULL, "Ooishi chuckled and got out of the car. He escorted me inside the station...", Line_Normal);
+	ClearMessage();
+	FadeOutBGM( 1, 0, FALSE );
+	DrawBustshot( 19, "no_data", 0, 100, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, TRUE );
+	DrawSceneWithMask( "black", "maskleft", 1, 0, 300 );
+	PlayBGM( 0, "semi", 120, 0 );
+	DrawSceneWithMask( "Ke_S2", "maskleft", 1, 0, 300 );
+
+	OutputLine(NULL, "　連れて来られたのは取調室のような狭い部屋ではなく、捜査一課と書かれた職場だった。",
+		   NULL, "I thought he'd take me to an interrogation room, but instead he took me to an office of the investigation division.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　…制服、私服の警官や刑事たちが各々に自分の仕事をしたり、電話をしたり、あるいは寛いでいたりした。",
+		   NULL, "...Officers in both suits and uniforms were working at their desks, answering phones.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　課長席と書かれたちょっと立派な無人席の前に、向かい合ったソファーと大理石風の机が置かれている。",
+		   NULL, "There was a desk with a plate that said 'section manager', and nearby there were couches and a table.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　大石はそこに座るように言うと、近くの食器棚に行き、インスタントコーヒーの準備を始めた。",
+		   NULL, "Ooishi told me to sit on the couch, and started making some instant coffee.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　警察署のこんなところに入るのは初めてだったので、私は落ち着きなく、きょろきょろと周りを見回していた。",
+		   NULL, "I'd never been to this part of the police station. I looked around in curiosity.", Line_Normal);
+	ClearMessage();
+	DisableWindow();
+	DrawBustshotWithFiltering( 1, "Oisi4", "maskleft", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 8, 300, TRUE );
+	DisplayWindow();
+
+	OutputLine(NULL, "「まさか、取調室でカツ丼でも食わされると思いました？」",
+		   NULL, "\"Did you think I'd take you to an interrogation room?\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　大石が、鈍い銀色のお盆で来客用っぽいコーヒーカップに入れたコーヒーを持ってきてくれた。",
+		   NULL, "Ooishi brought over a tray with coffee cups on it.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "「……想像してたより待遇がよくて驚いてます。",
+		   NULL, "\"...You're treating me better than I expected.", Line_WaitForInput);
+	OutputLine(NULL, "三角木馬くらいは覚悟してたのに。」",
+		   NULL, " I thought you'd whip me or something.\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+	DisableWindow();
+	ChangeBustshot( 1, "Oisi2", 200, TRUE );
+	DisplayWindow();
+
+	OutputLine(NULL, "「そういうのは私の趣味じゃないなぁ。",
+		   NULL, "\"My tastes don't run that way.", Line_WaitForInput);
+	OutputLine(NULL, "なっはっはっはっは。」",
+		   NULL, " Na ha ha ha ha.\"", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "「で？",
+		   NULL, "\"So?", Line_WaitForInput);
+	OutputLine(NULL, "　……お喋りを聞かせてくれるんじゃなかったでしたっけ？」",
+		   NULL, " I thought you wanted to talk.\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+	DisableWindow();
+	ChangeBustshot( 1, "Oisi1", 200, TRUE );
+	DisplayWindow();
+
+	OutputLine(NULL, "「じゃあ最初からいきなり単刀直入に。",
+		   NULL, "\"All right. I'll cut to the chase.", Line_WaitForInput);
+	OutputLine(NULL, "詩音さんって、北条悟史さんのこと、好き？」",
+		   NULL, " Are you in love with Satoshi Houjou-san?\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "「……………はぁ？",
+		   NULL, "\"...What?", Line_WaitForInput);
+	OutputLine(NULL, "　……速攻、退屈なんで、即帰りますよ？」",
+		   NULL, " It's getting boring already. I'm going home.\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+	DisableWindow();
+	ChangeBustshot( 1, "Oisi2", 200, TRUE );
+	DisplayWindow();
+
+	OutputLine(NULL, "「なはははははは…、じゃあ今のはナシということで。」",
+		   NULL, "\"Na ha ha ha ha... okay, please forget that.\"", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　…私が爪を剥がしたことを知るこの男なら、私がどうして爪を剥がすことになったか、その経緯だって知っている。",
+		   NULL, "...Ooishi must have known why I had to remove my fingernails.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　今のは、私が悟史くんのことを好きか確認したのではなく、私が悟史くんのことを好きだったのを知っていると言ったのと同じだ。",
+		   NULL, "He wasn't trying to confirm that I liked Satoshi-kun. What he was really saying was that he knew aready.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "「……悟史くんの事件当日のアリバイなら、先日、熊谷刑事さんに全部お話ししたつもりです。」",
+		   NULL, "\"...I already talked to Detective Kumagai about Satoshi-kun's alibi that day.\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+	DisableWindow();
+	ChangeBustshot( 1, "Oisi1", 200, TRUE );
+	DisplayWindow();
+
+	OutputLine(NULL, "「もちろん私も熊ちゃ、…いや、熊谷くんの調書は読んでます。",
+		   NULL, "\"Of course, I read Kuma-cha... I mean, Kumagai-kun's report.", Line_WaitForInput);
+	OutputLine(NULL, "あなたが悟史くんと一緒にいたことは知ってます。」",
+		   NULL, " I know you were with him.\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "「何度聞かれたって、同じ話しかしませんよ私。",
+		   NULL, "\"I'll just repeat the same statement no matter how many times you ask.", Line_WaitForInput);
+	OutputLine(NULL, "しつこく反復して聞いたらその内にボロを出すとか考えてるなら、大甘もいいとこです。」",
+		   NULL, " Don't think you can poke holes in it.\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+	DisableWindow();
+	ChangeBustshot( 1, "Oisi4", 200, TRUE );
+	DisplayWindow();
+
+	OutputLine(NULL, "「まさかまさか、そんなこと考えてません。",
+		   NULL, "\"No, no. That's not what I want.", Line_WaitForInput);
+	OutputLine(NULL, "あなたは頭のいい人です。",
+		   NULL, " You're a smart person.", Line_WaitForInput);
+	OutputLine(NULL, "そんな手に引っ掛かるなんて思っちゃいません。」",
+		   NULL, " I know that wouldn't work for you.\"", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "「ならどういう手を考えてるやら。",
+		   NULL, "\"I wonder what you're after.", Line_WaitForInput);
+	OutputLine(NULL, "どちらにせよ、私から悟史くんのことを何か聞きだそうとしてもそれは無駄なことです。",
+		   NULL, " You're wasting your time if you want information on Satoshi-kun.", Line_WaitForInput);
+	OutputLine(NULL, "先日お話しした以上のことは何もありません。",
+		   NULL, " There's nothing more to talk about.", Line_WaitForInput);
+	OutputLine(NULL, "あぁ残念、やっぱり退屈な話でしたね。",
+		   NULL, " Ah, this is boring me after all.", Line_WaitForInput);
+	OutputLine(NULL, "私、帰らせてもらいます。",
+		   NULL, " I'm going home,", Line_WaitForInput);
+	OutputLine(NULL, "そういう約束でしたからね。",
+		   NULL, " since that was our agreement.", Line_WaitForInput);
+	OutputLine(NULL, "失礼します。」",
+		   NULL, " Excuse me.\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　それだけを一方的に言い捨てると、私はソファーから立ち上がった。",
+		   NULL, "I got up off the couch.", Line_Normal);
+	ClearMessage();
+	DisableWindow();
+	ChangeBustshot( 1, "Oisi1", 200, TRUE );
+	DisplayWindow();
+
+	OutputLine(NULL, "「詩音さん。",
+		   NULL, "\"Shion-san.", Line_WaitForInput);
+	OutputLine(NULL, "確かに私はあなたから悟史さんのアリバイを聞こうと思っていました。",
+		   NULL, " I did want to get Satoshi-san's alibi from you.", Line_WaitForInput);
+	OutputLine(NULL, "それは認めますよ？」",
+		   NULL, " I admit it.\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "「……なら決まりです。",
+		   NULL, "\"...That's it, then.", Line_WaitForInput);
+	OutputLine(NULL, "やっぱり退屈でした。",
+		   NULL, " It's boring.", Line_WaitForInput);
+	OutputLine(NULL, "帰ります。」",
+		   NULL, " I'm going home.\"", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　私は踵を鳴らしながら、その部屋を出て行こうとした。",
+		   NULL, "I turned around and started walking.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　大石は慌てはしなかったが、少し声を大きくして言った。",
+		   NULL, "Ooishi didn't get anxious, but instead spoke a little louder.", Line_Normal);
+	ClearMessage();
+	DisableWindow();
+	ChangeBustshot( 1, "Oisi4", 200, TRUE );
+	DisplayWindow();
+
+	OutputLine(NULL, "「でもね詩音さん。",
+		   NULL, "\"But Shion-san,", Line_WaitForInput);
+	OutputLine(NULL, "私が聞きたいのは悟史さんの事件当日のアリバイじゃない。",
+		   NULL, " what I want to ask you about is his alibi for yesterday,", Line_WaitForInput);
+	OutputLine(NULL, "昨日のアリバイなんです。」",
+		   NULL, " not the day of the murder.\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "「昨日？……なんで昨日のアリバイなんかが聞かれるんですか。",
+		   NULL, "\"His alibi for yesterday...? Why?", Line_WaitForInput);
+	OutputLine(NULL, "昨日の悟史くんのアリバイが、叔母さんが殺された事件とどう関係があるってんです？」",
+		   NULL, " What does that have to do with his aunt's death?\"", Line_Normal);
+	ClearMessage();
+	DrawScene( "black", 400 );
+	FadeOutBGM( 0, 0, FALSE );
+	FadeOutBGM( 1, 0, FALSE );
+	FadeOutBGM( 2, 0, FALSE );
+	FadeOutBGM( 3, 0, FALSE );
+	DrawBustshot( 19, "no_data", 0, 100, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, TRUE );
+	PlaySE( 0, "s_suzu", 128, 64 );
+
+	OutputLine(NULL, "「昨日、悟史くんが出掛けたまま失踪されたからです。」",
+		   NULL, "\"It's because Satoshi-kun has been missing since then.\"", Line_Normal);
+	ClearMessage();
+	PlayBGM( 0, "getting_mad", 120, 0 );
+
+	OutputLine(NULL, "　…え？",
+		   NULL, "...What?", Line_Normal);
+	ClearMessage();
+	DrawBustshot( 0, "Oisi4", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 9, 0, FALSE );
+	DrawScene( "Ke_S1", 400 );
+
+	OutputLine(NULL, "「……悟史くんが失踪されたことは、ご存知なかった？」",
+		   NULL, "\"...Didn't you know that he went missing?\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "「……………………………。」",
+		   NULL, "\".....................\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　私は口に出して答えずとも、その表情で充分に答えているに違いなかった。",
+		   NULL, "I couldn't say anything, but my expression answered Ooishi's question anyway.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "「どういうことですか……。",
+		   NULL, "\"What's going on...?", Line_WaitForInput);
+	OutputLine(NULL, "失踪って、……何。」",
+		   NULL, " Missing...? What?\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "「やっぱり座ったらどうです？」",
+		   NULL, "\"Why don't you take a seat?\"", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "「悟史くんが失踪したって、……何？！",
+		   NULL, "\"What do you mean, Satoshi-kun has gone missing...?!", Line_WaitForInput);
+	OutputLine(NULL, "　何！！」",
+		   NULL, " What the hell?!\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+	DisableWindow();
+	ChangeBustshot( 0, "Oisi1", 200, TRUE );
+	DisplayWindow();
+
+	OutputLine(NULL, "「ひとつ確実に分かっていることは、彼が三時前に、興宮の郵便局で貯金を全額下ろしているということだけです。",
+		   NULL, "\"We only know one thing for sure. He withdrew all of his savings at an ATM in the Okinomiya post office before 3 PM yesterday.", Line_WaitForInput);
+	OutputLine(NULL, "その後の足取りは掴めません。」",
+		   NULL, " We don't know his whereabouts after that.\"", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　悟史くんがお金を全額下ろすのはわかる。",
+		   NULL, "I knew why he withdrew that money.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　沙都子のプレゼントにあのぬいぐるみを買うためだ。",
+		   NULL, "He wanted to buy Satoko's birthday present.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　……そうか、悟史くんは昨日、ぬいぐるみを買いに行ったのか。",
+		   NULL, "...Yes, he definitely bought that teddy bear yesterday.", Line_Normal);
+	ClearMessage();
+	DisableWindow();
+	ChangeBustshot( 0, "Oisi2", 200, TRUE );
+	DisplayWindow();
+
+	OutputLine(NULL, "「…こりゃ私の想像ですよ？",
+		   NULL, "\"...This is just my guess,", Line_WaitForInput);
+	OutputLine(NULL, "　彼はひょっとして、…そのお金で、どっか遠くに蒸発したんじゃないかなぁって。」",
+		   NULL, " but... I think he skipped town with that money.\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "「逃走資金だってんですか？",
+		   NULL, "\"You mean he used the money to run away?", Line_WaitForInput);
+	OutputLine(NULL, "　ばっかばかしい。",
+		   NULL, " That's stupid.", Line_WaitForInput);
+	OutputLine(NULL, "あのお金はね、沙都子の誕生日プレゼントを買うために悟史くんが貯めていたんです。",
+		   NULL, " He was saving to buy Satoko a birthday present.", Line_WaitForInput);
+	OutputLine(NULL, "それで、あのおもちゃ屋にあったでかくて高いぬいぐるみを買ったんです。",
+		   NULL, " He bought a big expensive teddy bear from that toy store.", Line_WaitForInput);
+	OutputLine(NULL, "逃走に使うお金になんかなるわけないです。」",
+		   NULL, " He'd never use that money to skip town.\"", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "「確かにあのおもちゃ屋から、一番高いぬいぐるみが売れていました。",
+		   NULL, "\"Yes, the most expensive teddy bear in that toy store was sold.", Line_WaitForInput);
+	DisableWindow();
+	ChangeBustshot( 0, "Oisi4", 200, TRUE );
+	DisplayWindow();
+
+	OutputLine(NULL, "でもね、それを悟史くんが買った確証が取れないんです。」",
+		   NULL, " But we can't confirm that it was Satoshi-kun who bought it.\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "「店の人に聞けばそんなのわかりますって！",
+		   NULL, "\"Why don't you ask the clerk?!", Line_WaitForInput);
+	OutputLine(NULL, "　私と悟史くんで、買う予約までしてるんですから！",
+		   NULL, " Satoshi-kun and I reserved that teddy bear together!", Line_WaitForInput);
+	OutputLine(NULL, "　………ぁ…。」",
+		   NULL, " ...Oh...\"", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　脳裏に嫌な想像が浮かぶ。",
+		   NULL, "I had a bad feeling.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　………あの時、店番を任せられていた老人だ。",
+		   NULL, "......That old man who was watching that store was sleeping when we were there.", Line_WaitForInput);
+	OutputLine(NULL, "かなりボケてるようだった。",
+		   NULL, " He'd looked very senile.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　…ひょっとして、…あの日にもまた店番をやっていて、",
+		   NULL, "...Maybe he was also watching that store on that day and...", Line_WaitForInput);
+	OutputLine(NULL, "悟史くんが買って行ったにもかかわらず、",
+		   NULL, " even though Satoshi-kun bought the teddy bear,", Line_ContinueAfterTyping);
+	SetValidityOfInput( FALSE );
+	Wait( 1000 );
+	SetValidityOfInput( TRUE );
+	OutputLine(NULL, "“売れたことさえ覚えていなかったんじゃ…！”",
+		   NULL, " he didn't remember...", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　大石も苦笑いをした。",
+		   NULL, "Ooishi put on a wry smile.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　…どうもその様子から、彼もあの老人に尋問を試みたらしいことがうかがえた。",
+		   NULL, "...It looked like he'd already tried to question that old man.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "「と、とにかく！！",
+		   NULL, "\"A-Anyway!!", Line_WaitForInput);
+	OutputLine(NULL, "　あれを買ったのは悟史くんなんです！",
+		   NULL, " It's Satoshi-kun who bought that teddy bear!", Line_WaitForInput);
+	OutputLine(NULL, "　悟史くんはぬいぐるみの金額ぎりぎりしかお金がなかったはずだから、",
+		   NULL, " He must've saved just enough to buy it,", Line_WaitForInput);
+	OutputLine(NULL, "ぬいぐるみ代を支払って、さらに逃亡資金を用意できたなんて思えません。",
+		   NULL, " so he shouldn't have been able to run away after!", Line_WaitForInput);
+	OutputLine(NULL, "めちゃめちゃもいいとこです！」",
+		   NULL, " That's nonsense!\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+	DisableWindow();
+	ChangeBustshot( 0, "Oisi2", 200, TRUE );
+	DisplayWindow();
+
+	OutputLine(NULL, "「いいですよ？",
+		   NULL, "\"All right.", Line_WaitForInput);
+	OutputLine(NULL, "　じゃあ悟史くんがぬいぐるみを買ったことでもいいです。",
+		   NULL, " Let's say he really did buy the teddy bear,", Line_WaitForInput);
+	OutputLine(NULL, "じゃあそのぬいぐるみを持ってどうして帰らなかったんですか？」",
+		   NULL, " then why didn't he come home with it?\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+	PlayBGM( 1, "kaze", 120, 0 ); //should be kaze sound
+
+	DrawSceneWithMask( "Ke_S1_nega1", "maskc", 0, 0, 300 );
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　その時。",
+		   NULL, "At that point...", Line_WaitForInput);
+	OutputLine(NULL, "…………私の心の奥底に、霜柱がびっしり生えたような感触を感じた。",
+		   NULL, " I felt as though my heart had turned to ice.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　悟史くんは、ぬいぐるみを買うために、心も体も追い詰めて、ぼろぼろになりながらもバイトでお金を貯めたんだ。",
+		   NULL, "Satoshi-kun had been working hard to buy that teddy bear even though he was under extreme mental and physical stress.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　そして、念願のぬいぐるみを買った。",
+		   NULL, "After all that, he finally managed to buy it.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　そこに、たまたま偶然、悟史くん以外の何者かが訪れて、あの人形を何かの気まぐれで買って行ってしまったなんて紛れがあろうはずはない！",
+		   NULL, "It's unthinkable that somebody else just showed up and bought the same teddy bear!", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　人形が売れていたのは、悟史くんが買ったからだ。",
+		   NULL, "The teddy bear was gone because Satoshi-kun bought it!", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　それだけは絶対に間違いない！",
+		   NULL, "Nobody else!", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　でも、だとしたら。",
+		   NULL, "But if so...", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　…悟史くんは、身を削って得たぬいぐるみを、絶対に沙都子に渡すはずだ。",
+		   NULL, "...Satoshi-kun should've given it to Satoko.", Line_Normal);
+	ClearMessage();
+	DrawScene( "white", 400 );
+
+
+	OutputLine(NULL, "　だが、悟史くんはぬいぐるみを買ったのに、",
+		   NULL, "But...... though he bought a present for her...", Line_ContinueAfterTyping);
+	SetValidityOfInput( FALSE );
+	Wait( 1000 );
+	SetValidityOfInput( TRUE );
+	OutputLine(NULL, "…………家に戻らなかった。",
+		   NULL, " he didn't come home.", Line_Normal);
+	ClearMessage();
+	PlayBGM( 1, "semi_r", 120, 0 );
+
+	DrawScene( "Aka2", 400 );
+
+	OutputLine(NULL, "　戻らなかった？",
+		   NULL, "He didn't come home?", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　ありえない。",
+		   NULL, "That wasn't possible.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　ぬいぐるみを買ったんだから、脇目も振らずに家に帰るはずだ。",
+		   NULL, "He would've gone straight home with that teddy bear.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　ぬいぐるみを買っておきながら、やっぱりどこかへ逃げようなんて思うはずがない。",
+		   NULL, "He wouldn't think of running away after buying the teddy bear.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　仮に悟史くんが、警察に捕まりたくなくて逃げ出すにしても。",
+		   NULL, "Even though Satoshi-kun wanted to run away from the police......", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　ぬいぐるみを買うだけ買っておいて、沙都子に渡しもせずに逃げ出すなんて、絶対に絶対にありえない。",
+		   NULL, "He'd never leave without giving Satoko her present.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　とにかく、ぬいぐるみを買ったのは悟史くん！",
+		   NULL, "Anyway, it must have been Satoshi-kun who bought that teddy bear!", Line_WaitForInput);
+	OutputLine(NULL, "　それだけは絶対に間違いない。",
+		   NULL, " I can say that with one-hundred-percent certainty.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　問題なのは、どうしてそれを家に持ち帰られなかったのかということ！",
+		   NULL, "The question was--why didn't he bring it home?", Line_Normal);
+	ClearMessage();
+	DrawScene( "Aka1", 400 );
+
+	OutputLine(NULL, "　あのぬいぐるみは、かなり大きい。",
+		   NULL, "That teddy bear was huge.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　自転車の前カゴになど納まるはずもない。",
+		   NULL, "It wouldn't fit into the basket of a bicycle.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　だとしたら、…ビニール紐でも持参して、自転車の荷台に縛り、よろよろと走るのがせいぜいだ。",
+		   NULL, "He might've brought some straps to tie it to his bike.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　そんな状態で、ついでにどこかに買い物に行こうとか、どっか寄り道しようなんて絶対に思うわけがない。",
+		   NULL, "He wouldn't have thought of running away on a wobbly bicycle like that.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　だから絶対に、悟史くんは「郵便局でお金を下ろす」→「おもちゃ屋でぬいぐるみを買う」→「家に帰る」を連続して行なうはずなのだ！",
+		   NULL, "He necessarily had to go home after buying the teddy bear from the store after withdrawing the money.", Line_Normal);
+	ClearMessage();
+	DrawScene( "Aka2", 400 );
+
+	OutputLine(NULL, "「郵便局」から「おもちゃ屋」まで間違いない。",
+		   NULL, "Nothing could have happened when he was going between the ATM and the toy store!", Line_WaitForInput);
+	OutputLine(NULL, "間違いないはず！！",
+		   NULL, " It was impossible!!", Line_WaitForInput);
+	OutputLine(NULL, "　悟史くん以外の人間がぬいぐるみを買ってしまったなんてありえるものか！！！",
+		   NULL, " Nobody else could possibly have bought that teddy bear!!!", Line_WaitForInput);
+	OutputLine(NULL, "　ありえないありえない、絶対にありえない！",
+		   NULL, " Never!", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　あの当日まで、ずーーーーっとあのぬいぐるみはショーケースの中に鎮座していたんだ。",
+		   NULL, "That teddy bear had been sitting in the showcase up until that day.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　あそこを通りかかる誰の眼にも触れていた。",
+		   NULL, "Everybody could see it when they passed by.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　にもかかわらず、あの日まで誰にも売れずにずーーーっと残っていたんじゃないか！",
+		   NULL, "But nobody wanted it!", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　だから悟史くん以外が偶然買ったなんて迷いはありえない！！！",
+		   NULL, "It's impossible that it could've been somebody else!!!", Line_Normal);
+	ClearMessage();
+	DrawScene( "black", 400 );
+
+	OutputLine(NULL, "　だから「郵便局」から「おもちゃ屋」までは絶対に間違っていないのだ。",
+		   NULL, "There should be no question that he went to the toy store after he withdrew the money.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　むしろ問題なのは、「おもちゃ屋」から「家」の方。",
+		   NULL, "What about the route between the toy store and his home?", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　この間にも紛れはありえない。",
+		   NULL, "There shouldn't be any question there either.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　あんなでかいぬいぐるみと一緒では何もできないのだ。",
+		   NULL, "He shouldn't have been able to do anything with that huge toy.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　道草を食う気も起きないはず！",
+		   NULL, "He shouldn't even have thought of making a stop on the way!", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　だから、買ったら即！",
+		   NULL, "So he must've headed home", Line_WaitForInput);
+	OutputLine(NULL, "　自宅を目指したはずなのだ！！",
+		   NULL, " right after he bought the teddy bear!!", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　でも、…悟史くんの姿はその後、目撃されない。",
+		   NULL, "But... nobody saw him after that.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　じゃあ簡単だ。",
+		   NULL, "It was simple, then.", Line_WaitForInput);
+	OutputLine(NULL, "悟史くんは「おもちゃ屋」から「家」の途中で、いなくなってしまったんじゃないか。",
+		   NULL, " Satoshi-kun went missing on his way home from the toy store.", Line_Normal);
+	ClearMessage();
+	DrawScene( "Aka1", 400 );
+
+	OutputLine(NULL, "　いなくなる？",
+		   NULL, "He went missing?", Line_WaitForInput);
+	OutputLine(NULL, "　いなくなるって何…？",
+		   NULL, " What did that mean...?", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　叔母殺しの犯人は、多分間違いなく悟史くんだ。",
+		   NULL, "I was sure he killed his aunt.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　そして悟史くんは私のようなずる賢さはない。",
+		   NULL, "He's not that shrewd.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　だから、警察の包囲がじわじわと縮まってくる緊張に耐えかねたのだろうか？",
+		   NULL, "Maybe he couldn't bear the pressure from the police?", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　私にあの場を助けられたとは言え、…警察が自分に接触して来たことで、もう自分が犯人だと見破られていると観念した？",
+		   NULL, "Was he resigned to the idea that the police were going to arrest him soon, regardless of my help?", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　それで悟史くんは逃げ出すことにした。",
+		   NULL, "Did he decide to run away?", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　警察に捕まるよりは、ほとぼりが冷めるまで姿を隠す方がマシと判断した？？",
+		   NULL, "Did he think that he should disappear until things cooled down, rather than get arrested?", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　ありえないありえない！！！",
+		   NULL, "That was, definitely, absolutely impossible!!!", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　その思考に、「ぬいぐるみを買って、家に帰る途中で」至ることが絶対にありえない！！！",
+		   NULL, "It was impossible that he came to that conclusion on his way home from the toy store!!!", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　仮にそういう考えに至ったとしても、それは「ぬいぐるみを沙都子に渡し、兄としての務めを果たしてから」行なうことだ。",
+		   NULL, "Even if he did, he would've waited until he gave Satoko her birthday present.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　悟史くんは沙都子を大事にしていた。",
+		   NULL, "Satoshi-kun loved Satoko.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　あんな甘えん坊、甘えさせるから駄目になるんだと思ったが、とにかくとにかく、悟史くんは沙都子には常に最高の兄であろうとしていた。",
+		   NULL, "He shouldn't have spoiled her like that, but anyway, he always tried to be a good brother to her.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　だから、家に帰らずに姿をくらましてしまうなんてことが、絶対にあるわけがない！！",
+		   NULL, "So he'd never disappear before going home!!", Line_Normal);
+	ClearMessage();
+	DrawFilm( 3, 255, 255, 255, 256, 0, 400, TRUE );
+
+	OutputLine(NULL, "　心の奥の霜柱が、…心臓の内側の皮を、バリ…バリっと破いてめくりながら、一面に広がっていく。",
+		   NULL, "I felt as though the ice was cutting through my heart, expanding the frost.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　悟史くんが自分の意思で蒸発することが“絶対にありえない”なら。",
+		   NULL, "If Satoshi-kun didn't disappear by his own will...", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　対になる答えは簡単だ。",
+		   NULL, "The answer was simple.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　悟史くんは、自分の意思でなく蒸発した。",
+		   NULL, "Satoshi-kun disappeared by somebody else's will.", Line_Normal);
+	ClearMessage();
+	FadeFilm( 0, TRUE );
+
+	DrawScene( "white", 400 );
+	FadeOutBGM( 0, 0, FALSE );
+	FadeOutBGM( 1, 0, FALSE );
+	FadeOutBGM( 2, 0, FALSE );
+	FadeOutBGM( 3, 0, FALSE );
+	DrawBustshot( 19, "no_data", 0, 100, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, TRUE );
+	DrawScene( "Ke_S1", 400 );
+	PlayBGM( 1, "suzu", 120, 0 );
+
+	OutputLine(NULL, "「悟史くんが、……………消された………………？",
+		   NULL, "\"Was Satoshi-kun...... eliminated......?", Line_WaitForInput);
+	OutputLine(NULL, "　…あは、………あはははははははあははははははははは！！",
+		   NULL, " Aha...... ahahahahahaahahahahaha!!", Line_WaitForInput);
+	OutputLine(NULL, "　ば、馬鹿馬鹿しいです、やっぱり退屈な話ですよおじさま。",
+		   NULL, " Th-That's really stupid, old man.", Line_WaitForInput);
+	OutputLine(NULL, "あはははははははあはははははははははは！！」",
+		   NULL, " Ahahahahahahahahahaha!!\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　笑えば、胸の内側にはびこった霜柱をなぎ払えると思った。",
+		   NULL, "I thought I could shake off the frost in my heart if I laughed loudly enough.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　そう信じて、馬鹿笑いをした。",
+		   NULL, "I kept laughing until it happened.", Line_WaitForInput);
+	OutputLine(NULL, "ずっと。",
+		   NULL, " I kept laughing.", Line_WaitForInput);
+	OutputLine(NULL, "ずっと。",
+		   NULL, " And laughing.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　室内の刑事たちが何事かと私を凝視していた。",
+		   NULL, "All the cops in the room stared at me.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　正気を疑うような顔をしていた。",
+		   NULL, "They thought I'd gone crazy.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　でも私は知ったことじゃない。",
+		   NULL, "I didn't care what they thought...", Line_WaitForInput);
+	OutputLine(NULL, "…咳き込むまで、ずっとずっと笑い続けていた…。",
+		   NULL, " I kept laughing until it turned into a cough...", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "「あははははあはははは、……あはははは、はほ！",
+		   NULL, "\"Ahahahahaha...... ahahahaha, huff!", Line_WaitForInput);
+	OutputLine(NULL, "　げほげほッ！",
+		   NULL, " Cough, cough!", Line_WaitForInput);
+	OutputLine(NULL, "　ごほ！！」",
+		   NULL, " Coff!!\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　……私はそこでようやく冷め切ったコーヒーを口にし、馬鹿笑いを終える。",
+		   NULL, "...I finished laughing, and took a sip of lukewarm coffee.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　もう霜柱は心臓の薄皮を破り、ねじれた腸を覆い尽くし、今や背中の皮すら破ろうとしていた。",
+		   NULL, "I felt as though the frost in my heart had spread all throughout my guts. I was chilled to the bone.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　あまりの寒さに、……コーヒーカップを包む自分の指がカチカチと震えた。",
+		   NULL, "I was freezing...... my fingers shook as I held the coffee cup.", Line_Normal);
+	ClearMessage();
+	FadeOutBGM( 1, 0, FALSE );
+	DrawBustshot( 19, "no_data", 0, 100, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, TRUE );
+	DisableWindow();
+	DrawBustshotWithFiltering( 2, "Oisi1", "maskright", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 10, 300, TRUE );
+	DisplayWindow();
+
+	OutputLine(NULL, "「詩音さん。",
+		   NULL, "\"Shion-san.", Line_WaitForInput);
+	OutputLine(NULL, "ちょっと口を挟まずに聞いててほしいんです。",
+		   NULL, " Please listen to me without interrupting.", Line_WaitForInput);
+	OutputLine(NULL, "これから私がちょいと想像した話を申し上げます。",
+		   NULL, " What I'm about to tell you is only a hypothesis.", Line_WaitForInput);
+	OutputLine(NULL, "全部全部でっち上げです。",
+		   NULL, " It's all just a theory.", Line_WaitForInput);
+	OutputLine(NULL, "だからきっと詩音さんは、あまりのいい加減な内容に吹き出しちゃいそうになるかもしれません。",
+		   NULL, " You might start laughing in the middle, because it may sound ridiculous.", Line_WaitForInput);
+	OutputLine(NULL, "それでも、最後まで黙って聞いていてほしいんです。",
+		   NULL, " But I want you to hear me out.", Line_WaitForInput);
+	OutputLine(NULL, "…約束してもらえます？」",
+		   NULL, " ...Can you do that?\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "「や、………約束なんて何でもするから…、は、……早く言いなさいよ…。」",
+		   NULL, "\"Wh-Whatever... Just talk...\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　全身を包む寒さは、私の上下の歯さえガチガチと鳴らすようになっていた。",
+		   NULL, "I was feeling far too cold... My teeth were chattering.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　私の脳は、すでに霜柱でぎっしりで…思考を失っている。",
+		   NULL, "I felt as though my brain had frozen as well... I lost my ability to think.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　…だから、…私は自分で考えることができない。",
+		   NULL, "...I couldn't do anything by myself.", Line_WaitForInput);
+	OutputLine(NULL, "…大石の口からそれを知ることしかできないのだ。",
+		   NULL, " I could only do as Ooishi told me...", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　自分で考えたくない最低の想像。",
+		   NULL, "What he was going to tell me might be the worst possible theory.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　だけれども、私が聞かなければならない真実。",
+		   NULL, "But I had to listen to it.", Line_Normal);
+	ClearMessage();
+	PlayBGM( 0, "z2_hig1", 120, 0 );
+	DisableWindow();
+	ChangeBustshot( 2, "Oisi4", 200, TRUE );
+	DisplayWindow();
+
+	OutputLine(NULL, "「………死んだ叔母が、悟史くんと沙都子さんを虐めていたことは、よーく聞いています。",
+		   NULL, "\"...I know that Satoshi-kun's and Satoko-san's aunt was abusing them,", Line_WaitForInput);
+	OutputLine(NULL, "中でも沙都子さんを執拗に虐めていたこともね。",
+		   NULL, " especially Satoko-san......", Line_WaitForInput);
+	OutputLine(NULL, "……その中で、悟史くんが妹を庇うために、叔母に殺意を募らせていったとしても。",
+		   NULL, " In my opinion, it's normal that Satoshi-kun started thinking about murdering his aunt,", Line_WaitForInput);
+	OutputLine(NULL, "私ゃ人として自然な流れだと思います。」",
+		   NULL, " because he was just a human being...\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　私は悟史くんが叔母殺しではないと否定しなければならない。",
+		   NULL, "I had to deny that Satoshi-kun murdered her.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　…だけど、大石の言っていることは実際本当で、…事実に違いなかった。",
+		   NULL, "...But what Ooishi was saying was true...", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　だから、大石のそれを否定できず、…結果的に私は約束通り、沈黙を守った。",
+		   NULL, "I couldn't deny his hypothesis right away... I just kept silent.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "「………ここからは空想ですよ？！",
+		   NULL, "\"...This is only a hypothesis, all right?!", Line_WaitForInput);
+	OutputLine(NULL, "　絶対に怒らないで下さい！",
+		   NULL, " Please don't be upset!", Line_WaitForInput);
+	OutputLine(NULL, "　口を挟むのもなし！",
+		   NULL, " And no interruptions!", Line_WaitForInput);
+	OutputLine(NULL, "　いいですね？！」",
+		   NULL, " Agreed?!\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "「わ……わかってるから…！",
+		   NULL, "\"I-I know...!", Line_WaitForInput);
+	OutputLine(NULL, "　早く続けなさいよ！！」",
+		   NULL, " Just go on!!\"", Line_Normal);
+	ClearMessage();
+	DisableWindow();
+	ChangeBustshot( 2, "Oisi1", 200, TRUE );
+	DisplayWindow();
+
+	OutputLine(NULL, "「北条悟史は、叔母殺しを計画し、実行した。",
+		   NULL, "\"Satoshi Houjou planned the murder of his aunt and executed it.", Line_WaitForInput);
+	OutputLine(NULL, "えぇもちろん証拠なんてありませんよ？！",
+		   NULL, " We have no proof, okay?!", Line_WaitForInput);
+	OutputLine(NULL, "　ぜーんぶ私の妄想です。」",
+		   NULL, " It's all theoretical.\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "「わかってるって！",
+		   NULL, "\"All right!", Line_WaitForInput);
+	OutputLine(NULL, "　あんたの妄想なのは百も承知！",
+		   NULL, " I heard!", Line_WaitForInput);
+	OutputLine(NULL, "　だから早く続けて…！！」",
+		   NULL, " Just keep talking...!!\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+	DisableWindow();
+	ChangeBustshot( 2, "Oisi4", 200, TRUE );
+	DisplayWindow();
+
+	OutputLine(NULL, "「ここで話は変わります。",
+		   NULL, "\"I'll switch the subject now...", Line_WaitForInput);
+	OutputLine(NULL, "…詩音さん。",
+		   NULL, " Shion-san,", Line_WaitForInput);
+	OutputLine(NULL, "あなたは悟史くんとの交際を禁じられたんですよね？",
+		   NULL, " you were forbidden from having a relationship with Satoshi-kun, weren't you?", Line_WaitForInput);
+	OutputLine(NULL, "　もう忘れろ、二度と関わるなと念を押されたんですよね？",
+		   NULL, " They told you to stay away from him, correct?", Line_WaitForInput);
+	OutputLine(NULL, "　それは実は、不仲な両家の関係を忌み嫌ったからでなく、……殺人犯と園崎家の令嬢が恋仲であることに問題があったんじゃないかって思ったんです。」",
+		   NULL, " I believe the reason behind that is... not that your family hated the Houjous, but... that they didn't like the fact that you were involved with a murder suspect.\"", Line_Normal);
+	ClearMessage();
+	DrawScene( "black", 400 );
+
+	OutputLine(NULL, "　………それは……考えられない話ではなかった。",
+		   NULL, "...That is... actually possible.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　なぜなら、…私が詩音だとバレる以前。",
+		   NULL, "After all, when I was pretending to be Mion, I already had a connection with Satoshi-kun...", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　魅音である内からも、悟史くんとの交流はあったのにお咎めがなかったからだ。",
+		   NULL, "...before anyone knew it was Shion who was spending time around him.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　敵対する北条家と園崎家が恋仲になるのが問題がある…というのなら、私たちが雛見沢ファイターズにいた頃に、咎められていてもおかしくない。",
+		   NULL, "I could've been accused when I was helping out the Hinamizawa Fighters if the relationship between the Houjous and the Sonozakis was the problem.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　園崎本家が、悟史くんが殺人の実行犯だと知るのは、雛見沢の内側にあってはあまりに容易だ。",
+		   NULL, "It wouldn't be difficult for the Sonozaki family to know that Satoshi-kun murdered his aunt, if it happened in Hinamizawa.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　ひょっとすると、殺害する現場の目撃くらいはしているかもしれない。",
+		   NULL, "Maybe one of them even saw the murder.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　だからその時点で、園崎本家は殺人犯と恋仲にある私の存在が、急に疎ましくなり………放置できなくなったのだ。",
+		   NULL, "The Sonozaki family didn't like that I was in love with a murderer. They decided to step in...", Line_Normal);
+	ClearMessage();
+	DrawBustshot( 0, "Oisi4", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 9, 0, FALSE );
+	DrawScene( "Ke_S1", 400 );
+
+	OutputLine(NULL, "「あと、…あなた、諦めが悪いことでも知られてるんじゃないですか？",
+		   NULL, "\"Also... you're known to not give up easily, aren't you?", Line_WaitForInput);
+	OutputLine(NULL, "　つまり、園崎本家に悟史くんとの縁を切れと脅されて、爪を剥がされても。",
+		   NULL, " Which means, even if the Sonozaki family threatened you or ripped off your nails,", Line_WaitForInput);
+	OutputLine(NULL, "悟史くんとの縁を切りかねていましたよね？」",
+		   NULL, " you still wouldn't cut ties with Satoshi-kun, would you?\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　否定できない。",
+		   NULL, "I couldn't deny that.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　確かに、雛見沢にアクセスする方法のほとんどを失ったから、事実上、悟史くんとの縁が切れたと言ってもいい。",
+		   NULL, "I lost most of my means to access Hinamizawa, so my ties to Satoshi-kun were essentially cut, true.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　だけど、私は悟史くんの電話番号を知っていたし、その内、雛見沢ファイターズに帰ってきてくれることを期待していた。",
+		   NULL, "But I still knew Satoshi-kun's phone number, and I expected him to rejoin the Hinamizawa Fighters eventually.", Line_Normal);
+	ClearMessage();
+	DisableWindow();
+	ChangeBustshot( 0, "Oisi1", 200, TRUE );
+	DisplayWindow();
+
+	OutputLine(NULL, "「園崎本家は、悟史くんとあなたの縁は、ちょっと脅しただけじゃ絶対に切れないとわかっていたと思います。",
+		   NULL, "\"I believe your family knew that a few threats would never be enough for you to break ties with Satoshi-kun.", Line_WaitForInput);
+	OutputLine(NULL, "あなたをいくら脅してもどうにもならない。",
+		   NULL, " They could threaten you all they liked to no avail.", Line_WaitForInput);
+	DisableWindow();
+	ChangeBustshot( 0, "Oisi2", 200, TRUE );
+	DisplayWindow();
+
+	OutputLine(NULL, "じゃあ、……もうひとりの方をどうにかするしかないですよね…？」",
+		   NULL, " So... their only option would be to do something about the other person, wouldn't it...?\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "「どど、どうにかって何ッ？！？！",
+		   NULL, "\"Wh-Wh-What do you mean, 'do something'?!?!", Line_WaitForInput);
+	OutputLine(NULL, "　どうにかって何よ！！！",
+		   NULL, " What would they do?!!!", Line_WaitForInput);
+	OutputLine(NULL, "　何！！",
+		   NULL, " What?!!", Line_WaitForInput);
+	OutputLine(NULL, "なに！！！！」",
+		   NULL, " What?!!!!!\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　私を脅してもどうにもならないなら。",
+		   NULL, "If threatening me was useless, then...", Line_WaitForInput);
+	OutputLine(NULL, "…悟史くんの方をどうにかする。",
+		   NULL, " ...they'd do something about Satoshi-kun.", Line_Normal);
+	ClearMessage();
+	DrawScene( "Aka2", 1000 );
+
+	OutputLine(NULL, "　どうにかって何？！？！",
+		   NULL, "What would they have done?!?!", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　どうにかしたら、「おもちゃ屋」→「家」の間が千切れるわけ？！",
+		   NULL, "If they pulled something, then wouldn't that interrupt his path from the toy store to home?!", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　「おもちゃ屋」→「家」！！",
+		   NULL, "Toy store to home!!", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　「おもちゃ屋」→×→「家」ッ！！！",
+		   NULL, "Toy store to X to home!!!", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　×って何？！　×って何よ？！",
+		   NULL, "What's X?! What is X?!", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　×は矢印を途切るもの。",
+		   NULL, "X marks the spot where his path was interrupted.", Line_WaitForInput);
+	OutputLine(NULL, "途切ったって何ッ？！",
+		   NULL, " But what interrupted it?!", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　何が途切れると、どうして悟史くんが「おもちゃ屋」から「家」へ辿りつけないの？！？！",
+		   NULL, "Why couldn't Satoshi-kun make it home from the toy store if something interrupted him?!?!", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　どうしてどうしてどうしてッ？！？！",
+		   NULL, "Why why why?!?!", Line_WaitForInput);
+	OutputLine(NULL, "　×って何！！",
+		   NULL, " What's X?!!", Line_WaitForInput);
+	OutputLine(NULL, "　×！！！",
+		   NULL, " X!!!", Line_Normal);
+	ClearMessage();
+	DrawSceneWithMask( "black", "maskdown", 1, 0, 1300 );
+
+	OutputLine(NULL, "　私は酸欠と眩暈を起こし、ストンと後に倒れる。",
+		   NULL, "I ran out of air, became dizzy, and then collapsed.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　…床は硬くて冷たいフロアタイル。",
+		   NULL, "...The floor felt cold.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　……なのに何の痛みもなく、私はふわりと、ストンと、自分がセルロイドの人形にでもなったように倒れた。",
+		   NULL, "...I felt no pain. I had fallen to the floor like a plastic doll.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　大石たちが慌てた顔をして何人か駆け寄ってきて、私を起こしてくれた。",
+		   NULL, "Ooishi and some others rushed over to me and helped me up.", Line_Normal);
+	ClearMessage();
+	DrawBustshotWithFiltering( 2, "Oisi1", "maskup", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 10, 0, FALSE );
+	DrawSceneWithMask( "Ke_S1", "maskup", 1, 0, 300 );
+
+	OutputLine(NULL, "「落ち着いて、詩音さん。",
+		   NULL, "\"Calm down, Shion-san...", Line_WaitForInput);
+	OutputLine(NULL, "…悟史くんが殺されたとはまだ限りません。」",
+		   NULL, " We're not certain that Satoshi-kun was killed yet.\"", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　殺されたとは限らない？！",
+		   NULL, "You're not certain he was killed?!", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　何を寝惚けたことを言ってるんだこいつは！！",
+		   NULL, "What the fuck are you talking about?!", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　私が爪を剥がされたあの地下拷問室を知らないのか！",
+		   NULL, "Don't you know about that torture room where they forced me to rip off my fingernails?!", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　あそこの奥には岩牢があり、さらに奥には死体を捨てる井戸まであるという噂じゃないか！！！",
+		   NULL, "Don't you know that they say there are prison cells and a well for disposing of corpses in the back?!!", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　園崎本家が、悟史くんをより安全に確実に消そうと思ったなら、あの拷問室で殺して死体を処理するに決まってるッ！！！",
+		   NULL, "If the Sonozaki family wants to eliminate somebody, they'd definitely kill them in that torture room and dump the body down there!!!", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　それを殺されたとは限らない？！",
+		   NULL, "You're not certain?!", Line_WaitForInput);
+	OutputLine(NULL, "　馬鹿かこいつは、頭が豆腐なのか！！",
+		   NULL, " Are you dumb?", Line_WaitForInput);
+	OutputLine(NULL, "　私が鬼婆だったら絶対に殺す！！！",
+		   NULL, " Is your brain made of tofu?!", Line_WaitForInput);
+	OutputLine(NULL, "　逃走資金を貸してやって雲隠れを促すようないい加減なことなど絶対しないッ！！",
+		   NULL, " If I were in the hag's position, I'd kill him for sure!!!", Line_WaitForInput);
+	OutputLine(NULL, "　私だって殺そうと思うのに、鬼婆が殺さないわけなどあるものかああぁッ！！！",
+		   NULL, " I wouldn't let him get away!! If I would kill him, then the hag would definitely kill him!!!", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "「詩音さん落ち着いて。",
+		   NULL, "\"Shion-san, please calm down.", Line_WaitForInput);
+	OutputLine(NULL, "これはまだ未確認情報ですが、名古屋駅で家出人風の若者を見たという情報が入っています。",
+		   NULL, " This is unconfirmed, but I have information that somebody witnessed a young runaway male at Nagoya Station,", Line_WaitForInput);
+	OutputLine(NULL, "東京行きの新幹線に乗ったそうです。",
+		   NULL, " who took a train from there to Tokyo.", Line_WaitForInput);
+	OutputLine(NULL, "服装の特徴などが一致しませんでしたが、警察の追跡等を意識して衣替えをしている可能性もあります。",
+		   NULL, " The clothes didn't match, but it is possible that he changed what he was wearing to hide from the police.", Line_WaitForInput);
+	OutputLine(NULL, "服装が違うから、悟史くんでないとは言い切れませんよ。」",
+		   NULL, " It's still possible that it was him.\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "「…い、…生きてるの？！",
+		   NULL, "\"...I-Is he... alive?!", Line_WaitForInput);
+	OutputLine(NULL, "　悟史くん……、生きてる……？！」",
+		   NULL, " Is he...?!\"", Line_Normal);
+	ClearMessage();
+	DisableWindow();
+	ChangeBustshot( 2, "Oisi4", 200, TRUE );
+	DisplayWindow();
+
+	OutputLine(NULL, "「ここからもまた私の想像になりますがね。",
+		   NULL, "\"This is also a theory, but let me go on.", Line_WaitForInput);
+	OutputLine(NULL, "あなたの双子のお姉さんの魅音さん。",
+		   NULL, " Your twin sister Mion-san...", Line_WaitForInput);
+	OutputLine(NULL, "次期頭首ということで、園崎お魎の身近にいますよね？",
+		   NULL, " is the closest person to Oryou Sonozaki, correct?", Line_WaitForInput);
+	OutputLine(NULL, "　園崎お魎はおそらく最初は、悟史くんをこっそり殺してしまおうと提案したと思います。",
+		   NULL, " I'm assuming that Mion-san stopped Oryou", Line_WaitForInput);
+	OutputLine(NULL, "それを、あなたのお姉さんが止めたんじゃないかと思うんです。」",
+		   NULL, " when she suggested murdering Satoshi-kun furtively.\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　……魅音が？",
+		   NULL, "...Mion?", Line_WaitForInput);
+	OutputLine(NULL, "　…………それは、ありありと思い描ける想像だった。",
+		   NULL, " ...That was possible.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　魅音が、下手な情けを掛けてくれた可能性は確かに高い。",
+		   NULL, "She could've tried to calm things down out of pity for me.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　あの馬鹿は時々曖昧だ。",
+		   NULL, "That idiot was always so indecisive.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　救うなら救う、情けをかけるなら情けをかける！！",
+		   NULL, "She should have been clear on if she wanted to save him or not!!", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　そこがきっちりとしない。",
+		   NULL, "But she probably seemed vague about that.", Line_WaitForInput);
+	OutputLine(NULL, "どうせ、悟史くんを殺すという罪に耐えられなくて、追放という形にして自分のための言い訳にしたんだろう。",
+		   NULL, " She must've persuaded the hag to reduce the punishment to banishment instead of death, just to avoid feeling guilty.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "「おそらく園崎本家は、悟史くんと接触したでしょう。",
+		   NULL, "\"I believe that the Sonozaki family contacted Satoshi-kun.", Line_WaitForInput);
+	OutputLine(NULL, "今回の事件は庇いきれない、だから自分の身は自分で守るために、どこかへ姿を隠せと忠告したはずです。",
+		   NULL, " They probably told him that they couldn't cover up the murder, and told him to disappear somewhere far away...", Line_WaitForInput);
+	OutputLine(NULL, "…いや、強要したと言った方が似合うでしょうね。」",
+		   NULL, " They forced him to, to be more accurate.\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "「悟史くんは絶対拒否すると思います。",
+		   NULL, "\"Satoshi-kun would've rejected that.", Line_WaitForInput);
+	OutputLine(NULL, "だって、あの悟史くんが妹をひとり残して雛見沢を離れられるわけがない！！」",
+		   NULL, " He would never leave Satoko behind!!\"", Line_Normal);
+	ClearMessage();
+	DisableWindow();
+	ChangeBustshot( 2, "Oisi1", 200, TRUE );
+	DisplayWindow();
+
+	OutputLine(NULL, "「私もそう思います。",
+		   NULL, "\"I agree with you...", Line_WaitForInput);
+	OutputLine(NULL, "…確か、悟史くんは園崎魅音さんの紹介でバイトをしてましたよね？",
+		   NULL, " Satoshi-kun was working at the places Mion-san referred him to, wasn't he?", Line_WaitForInput);
+	OutputLine(NULL, "　だから、悟史くんに逃走資金になるまとまったお金があることを知っていたと思います。」",
+		   NULL, " So, the family knew that he had enough money for a getaway.\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "「でも、悟史くんはそのお金をぬいぐるみを買う以外には絶対に使わないはずです。」",
+		   NULL, "\"But he'd never use it for anything other than buying that teddy bear.\"", Line_Normal);
+	ClearMessage();
+	DisableWindow();
+	ChangeBustshot( 2, "Oisi2", 200, TRUE );
+	DisplayWindow();
+
+	OutputLine(NULL, "「でしょうねぇ。",
+		   NULL, "\"You're right.", Line_WaitForInput);
+	OutputLine(NULL, "悟史くんは貯金を下ろしたら、迷うことなくおもちゃ屋に向かうでしょう。",
+		   NULL, " He must've gone straight to the toy store after he withdrew the money.", Line_WaitForInput);
+	FadeOutBGM( 0, 0, FALSE );
+	FadeOutBGM( 1, 0, FALSE );
+	FadeOutBGM( 2, 0, FALSE );
+	FadeOutBGM( 3, 0, FALSE );
+	DrawBustshot( 19, "no_data", 0, 100, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, TRUE );
+
+	OutputLine(NULL, "でももしですよ？",
+		   NULL, " But...", Line_WaitForInput);
+	OutputLine(NULL, "　悟史くんがおもちゃ屋にたどりつくと、…もうぬいぐるみが売れてしまっていて、なくなっていたら。」",
+		   NULL, " what if the teddy bear was already sold when he got there...?\"", Line_Normal);
+	ClearMessage();
+	DrawScene( "black", 1000 );
+	DrawFilm( 2, 0x88, 0x88, 0x88, 256, 0, 0, TRUE );
+
+	PlayBGM( 0, "hgrs01", 120, 0 );
+
+	OutputLine(NULL, "　それは……………………信じられないくらいに寒々しい、荒涼とした光景だった。",
+		   NULL, "That would've been...... a very desolate situation.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　長く、辛い日々だった。",
+		   NULL, "He'd been working hard.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　…叔母に苛まれて心をすり減らし、…バイトをいくつも掛け持ちして体をすり減らし。",
+		   NULL, "...While his aunt abused him, he worked at many different jobs...", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　……その末に掴んだお金。",
+		   NULL, "...The money was worth all that pain.", Line_Normal);
+	ClearMessage();
+	DrawScene( "mati_O1", 400 );
+
+	OutputLine(NULL, "　それを握り締め…彼は唯一の目的だった、妹への誕生日プレゼントを求めて、おもちゃ屋へ駆け込んだのだ。",
+		   NULL, "He went to the toy store with that money in order to buy his beloved sister a present. That was the only purpose for that money.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　そして、今までもそうしてきたように、ショーケースにその姿を探したはず。",
+		   NULL, "He must've looked for the teddy bear as he'd always done.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　しかし、…そこにあるはずの大きな姿はなかった。",
+		   NULL, "But... it was gone.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　でも、悟史くんは楽天的だから。",
+		   NULL, "He wouldn't have gone into a panic right away.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　…それを見ただけでは焦らなかったろう。",
+		   NULL, "...Because he was always so optimistic.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　…自分が今日買いに来ると伝えてあるから、ひょっとするともう包装してくれているのかもしれない。",
+		   NULL, "...He might've thought the store was wrapping the gift for him, because he told them that he'd pick it up that day.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　…そう思い、うきうきとしながら、お店ののれんをくぐったに違いない。",
+		   NULL, "...He must've gone into the store joyously.", Line_Normal);
+	ClearMessage();
+	DrawSceneWithMask( "mati_O2", "maskleft", 1, 0, 300 );
+
+	OutputLine(NULL, "　………そして、……店内で、どんなやり取りがされたのか。",
+		   NULL, "...I couldn't guess at exactly what happened next.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　想像するだけでも、……胸が張り裂けそうになる。",
+		   NULL, "My heart would tear up if I tried to imagine it, anyway.", Line_Normal);
+	ClearMessage();
+	DrawSceneWithMask( "mati_O2", "maskleft", 1, 0, 300 );
+
+	OutputLine(NULL, "　予約をしたはずなのに。",
+		   NULL, "Why didn't they have it,", Line_WaitForInput);
+	OutputLine(NULL, "何でないのか。",
+		   NULL, " even though he had it reserved?", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　あのボケた老人はその抗議すら、理解できずに呆けていたのだろうか…？",
+		   NULL, "Did that old man understand the situation, or was he just zoning out...?", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　……いや、あの老人でなくても結果は同じだったかもしれない。",
+		   NULL, "......Maybe it would have been the same even if it wasn't that old man who was at the store at that time.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　園崎本家の強面が徒党を組んでやって来て、現金をレジに叩き付けたなら、予約だから売れませんなんて言えたはずもない。",
+		   NULL, "If a bunch of fierce-looking subordinates from the Sonozaki family went in and showed them the money, nobody could've rejected it.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　悟史くんはその内、抗議の言葉を失っただろう。",
+		   NULL, "Satoshi-kun must've sunk into silence.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　……いくら叫んだって、…ないものはないのだから。",
+		   NULL, "...No matter how hard he complained, the teddy bear was gone.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　………夢にまで見た日が、",
+		   NULL, "......He probably", Line_ContinueAfterTyping);
+	SetValidityOfInput( FALSE );
+	Wait( 1000 );
+	SetValidityOfInput( TRUE );
+	OutputLine(NULL, "…絶望に塗りつぶされるなんて、想像できたはずもない。",
+		   NULL, " never even considered that his dream might be taken away.", Line_Normal);
+	ClearMessage();
+	DrawScene( "black", 400 );
+	DrawSceneWithMask( "Sora", "maskleft", 1, 0, 300 );
+
+	OutputLine(NULL, "　ふらつきながら…時に電柱に身を寄りかけながら。",
+		   NULL, "He must've been wobbling his way home in sorrow,", Line_WaitForInput);
+	OutputLine(NULL, "…悟史くんは苦悶しただろう。",
+		   NULL, " leaning on the telephone poles every now and then...", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　沙都子を一番喜ばせてあげたい日に。",
+		   NULL, "It was the day he wanted Satoko to be happy the most.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　沙都子が一番期待していたぬいぐるみが用意できなかったのだから。",
+		   NULL, "He couldn't get the present she wanted the most.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　悟史くんは……他のものを代わりに買うなんてことはきっと思いつかなかった。",
+		   NULL, "He probably didn't think of getting another gift...", Line_WaitForInput);
+	OutputLine(NULL, "…だって、買えないことなんて、想像しなかったのだから。",
+		   NULL, " because it was unimaginable that he couldn't get that teddy bear.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　悟史くんが…空虚な、………信じられないくらいに…寂しい笑顔を浮かべて。",
+		   NULL, "He might've imagined how Satoko would react when she found out he had no present for her.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　……最高のプレゼントを買って帰ってきてくれる自分を待つ沙都子の笑顔が、……失望に変わるところを想像している。",
+		   NULL, "......He must've looked unbelievably sad...... and empty.", Line_Normal);
+	ClearMessage();
+	DrawScene( "black", 400 );
+
+	OutputLine(NULL, "　今日までに貯めた十何万かのお金なんて、",
+		   NULL, "The money he'd been saving", Line_ContinueAfterTyping);
+	SetValidityOfInput( FALSE );
+	Wait( 800 );
+	SetValidityOfInput( TRUE );
+	OutputLine(NULL, "………もう紙切れでしかない。",
+		   NULL, " meant nothing anymore.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　悟史くんって、……辛くても泣かない人だった。",
+		   NULL, "Satoshi-kun never cried, even at his toughest moments.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　あの人、……涙の流し方、………知らないんじゃないかな。",
+		   NULL, "Did he even know how to cry......?", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　だって、…いつも泣くのは妹の沙都子だったから。",
+		   NULL, "It was always Satoko who was crying.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　…だから、悟史くんは…涙を流すにはどうすればいいか、知らないまま大きくなって。",
+		   NULL, "...So, Satoshi-kun never learned how to cry, and he grew up that way.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　涙ってね…？",
+		   NULL, "Did you know...?", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　……流すことで、…心の中の悲しみを、少しでも外へ洗い流すために流れるんだよ……？",
+		   NULL, "...People shed sadness from their hearts with tears...", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　悟史くんは、それすらできなかったんだ。",
+		   NULL, "Satoshi-kun wasn't even allowed to do that.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　張り裂けそうな悲しみで、胸をいっぱいにして。",
+		   NULL, "Even though his heart was filled with sorrow,", Line_WaitForInput);
+	OutputLine(NULL, "…それを吐き出すこともできなくて。",
+		   NULL, " he couldn't let it out.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "「…………妹をひとり残して雛見沢を離れられない、と言いましたね。",
+		   NULL, "\"...You insisted he wouldn't leave Satoko-san behind, didn't you?", Line_WaitForInput);
+	OutputLine(NULL, "……でも、もしも。",
+		   NULL, " But think...", Line_WaitForInput);
+	OutputLine(NULL, "…園崎本家が、…残った沙都子さんの面倒は見るって言ってあったとしたらどう思います。」",
+		   NULL, " What if the Sonozaki family told him that they'd look after her after his disappearance?\"", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　……買うはずだったぬいぐるみはもうなく。",
+		   NULL, "...After Satoshi-kun found out the teddy bear was gone...", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　…手元には十万ちょっとのクシャクシャの現金が残るだけ。",
+		   NULL, "...All he had left were some crumpled bills.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　………園崎本家は、警察が逮捕に来るのは時間の問題だから、どこか遠方に逃げろと言う。",
+		   NULL, "...The family told him it was just a matter of time before the police got to him. They told him to run away.", Line_WaitForInput);
+	OutputLine(NULL, "…そして、……沙都子の面倒は見てくれるとも。",
+		   NULL, " They said they'd take care of Satoko.", Line_Normal);
+	ClearMessage();
+	DrawSceneWithMask( "Mati1", "maskright", 1, 0, 300 );
+
+	OutputLine(NULL, "　悟史くんは沙都子に合わせる顔がなかった。",
+		   NULL, "Satoshi-kun didn't feel like seeing his sister.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　………そのまま、……ふらふらと……、興宮の駅前に………。",
+		   NULL, "...He wandered... and found himself at Okinomiya Station......", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	DrawSceneWithMask( "Eki2", "maskright", 1, 0, 300 );
+
+	OutputLine(NULL, "　心の中で何度も何度も。最愛の妹に謝りながら。",
+		   NULL, "He must've been apologizing to Satoko so many times in his mind.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　……いつかきっと帰ってこれることを信じて。",
+		   NULL, "......He swore to come back someday.", Line_WaitForInput);
+	OutputLine(NULL, "そして名古屋へ。",
+		   NULL, " He headed to Nagoya,", Line_WaitForInput);
+	OutputLine(NULL, "…そして東京へ。",
+		   NULL, " and then to Tokyo...", Line_Normal);
+	ClearMessage();
+	DrawScene( "black", 400 );
+	FadeFilm( 0, TRUE );
+
+	OutputLine(NULL, "　でも、……なら生きてる。",
+		   NULL, "But that meant... he's alive.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　……生きてるんだ。",
+		   NULL, "......He's alive.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　…生きてるならきっと会える。",
+		   NULL, "...I should be able to see him again someday.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　…悟史くんは帰ってくるつもりなんだから、絶対に会える…！",
+		   NULL, "...He must be coming back, so I'll definitely see him again...!", Line_Normal);
+	ClearMessage();
+	DrawBustshotWithFiltering( 0, "Oisi1", "maskup", 1, 0, 0, FALSE, 0, 0, 0, 0, 0, 9, 0, FALSE );
+	DrawSceneWithMask( "Ke_S1", "maskup", 1, 0, 300 );
+
+	OutputLine(NULL, "「そうして、ずっと遠方に隠れ家か受け入れ先を用意してくれたんじゃないかと思います。",
+		   NULL, "\"I assume that the Sonozaki family set up some place for him to stay.", Line_WaitForInput);
+	OutputLine(NULL, "悟史くんは、そこを目指したのでしょう。」",
+		   NULL, " Satoshi-kun must've gone there.\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "「じゃあ……無事なんだ。",
+		   NULL, "\"So... he's safe......", Line_WaitForInput);
+	OutputLine(NULL, "……いつか、帰ってくるんですよね……？」",
+		   NULL, " He's coming back someday, right...?\"", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　大石は伸びをしながら天井を仰ぐ。",
+		   NULL, "Ooishi looked up at the ceiling, and stretched.", Line_WaitForInput);
+
+	OutputLine(NULL, "　返事はしなかった。",
+		   NULL, " He didn't answer me.", Line_Normal);
+	ClearMessage();
+	DrawSceneWithMask( "black", "maskdown", 1, 0, 1300 );
+	SetStyleOfMessageSwinging( 2 );
+	SetSpeedOfMessage( TRUE, 0 );
+	PlayBGM( 1, "type", 120, 0 );
+
+	OutputLine(NULL, "　昭和５７年６月２４日、北条悟史が失踪した。",
+		   NULL, "On June 24th, 1982, Satoshi Houjou went missing.", Line_Normal);
+
+	FadeOutBGM( 1, 0, FALSE );
+	DrawBustshot( 19, "no_data", 0, 100, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, TRUE );
+	SetValidityOfInput( FALSE );
+	Wait( 2000 );
+	SetValidityOfInput( TRUE );
+	PlayBGM( 1, "type", 120, 0 );
+	OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　北条悟史は同月２０日に発生した、撲殺事件の容疑者の可能性が高いとして、警察は逃亡を図ったものと見て、その行方を追っている。",
+		   NULL, "There is a possibility that he ran away, as he was the prime suspect of the murder that happened on the 20th of the same month.", Line_ContinueAfterTyping);
+
+	FadeOutBGM( 1, 0, FALSE );
+	DrawBustshot( 19, "no_data", 0, 100, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, TRUE );
+	SetValidityOfInput( FALSE );
+	Wait( 2000 );
+	SetValidityOfInput( TRUE );
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	PlayBGM( 1, "type", 120, 0 );
+
+	OutputLine(NULL, "　当初、名古屋駅で彼と思しき少年が、東京行きの新幹線に乗車したという情報があったが、真偽のほどはわからない。",
+		   NULL, "Allegedly, someone resembling him was seen at Nagoya Station embarking on a train heading \nto Tokyo. But the truth is unknown.", Line_ContinueAfterTyping);
+	FadeOutBGM( 1, 0, FALSE );
+	DrawBustshot( 19, "no_data", 0, 100, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, TRUE );
+	SetValidityOfInput( FALSE );
+	Wait( 2000 );
+	SetValidityOfInput( TRUE );
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	PlayBGM( 1, "type", 120, 0 );
+
+	OutputLine(NULL, "その後の足取りは不明。",
+		   NULL, "No one has seen him since.", Line_ContinueAfterTyping);
+	FadeOutBGM( 1, 0, FALSE );
+	DrawBustshot( 19, "no_data", 0, 100, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, TRUE );
+	SetValidityOfInput( FALSE );
+	Wait( 2000 );
+	SetValidityOfInput( TRUE );
+	OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping);
+
+	PlayBGM( 1, "type", 120, 0 );
+
+	OutputLine(NULL, "　実際のところ、行方はおろか、生死すらもわかっていない。",
+		   NULL, "As a matter of fact, no one even knows if he's still alive.", Line_ContinueAfterTyping);
+	FadeOutBGM( 1, 0, FALSE );
+	DrawBustshot( 19, "no_data", 0, 100, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, TRUE );
+	ClearMessage();
+	SetSpeedOfMessage( FALSE, 0 );
+	CallScript( "&eyeCamp" );
+	SetValidityOfSkipping( FALSE );
+	DrawSceneWithMask( "GetTIP_meak013", "mask1900", 7, 0, 400 );
+	Wait( 5000 );
+	DrawSceneWithMask( "black", "mask1900", 7, 0, 400 );
+	SetValidityOfSkipping( TRUE );
+}

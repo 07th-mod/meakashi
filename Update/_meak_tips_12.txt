@@ -1,0 +1,98 @@
+﻿void main()
+{
+	EnableJumpingOfReturnIcon();
+	FadeOutBGM( 0, 0, FALSE );
+	FadeOutBGM( 1, 0, FALSE );
+	FadeOutBGM( 2, 0, FALSE );
+	FadeOutBGM( 3, 0, FALSE );
+	ClearMessage();
+
+	PlayBGM( 0, "03_cele", 120, 0 );
+	DrawScene( "Nort", 1000 );
+
+	OutputLine(NULL, "　昭和５７年のオヤシロさまの祟りの渦中にある時は、私は新しい情報に一喜一憂し、その度に自分の頭の中の仮説をひっくり返した。",
+		   NULL, "During the upheaval surrounding Oyashiro-sama's curse in 1982, I was pulled this way and that by new leads on Satoshi-kun's disappearance. Every time I found information that looked promising, I kept changing my theories.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	DrawBustshot( 9, "Nort_mono1", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
+
+	OutputLine(NULL, "　でもそれはものすごく自分に負担になることで。",
+		   NULL, "But that also became an incredible burden on me.", Line_WaitForInput);
+	OutputLine(NULL, "……それだけのことでも私を十分に疲弊させていった。",
+		   NULL, " ...It wore me down plenty on its own.", Line_Normal);
+	ClearMessage();
+	DrawBustshot( 9, "Nort_mono2", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
+
+	OutputLine(NULL, "　疲労というのは残酷だけど、とてもやさしい包容力があって。",
+		   NULL, "The fatigue was harsh, but it also provided a very kind acceptance.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+	DrawBustshot( 9, "Nort_mono3", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
+
+	OutputLine(NULL, "　怒りや悲しみ、疑いなどの、抱くだけでも私を衰えさせていく感情を、少しずつ少しずつ、眠らせていく。",
+		   NULL, "Bit by bit it soothed away the anger, sadness, and doubt that wore me down.", Line_Normal);
+	ClearMessage();
+	DrawBustshot( 9, "Nort_mono4", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
+
+	OutputLine(NULL, "　悟史くんのことを絶対に忘れない。",
+		   NULL, "\"I'll never forget Satoshi-kun.\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+	DrawBustshot( 9, "Nort_mono5", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　忘れて生きていこうなんて思わない。",
+		   NULL, "\"I'll never try to forget him and move on.\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	DrawBustshot( 9, "Nort_mono6", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　そう常に心の中で念じ続けている。",
+		   NULL, "I constantly repeated those to myself in my head.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+	DrawBustshot( 9, "black", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
+
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　念じ続けることで、…悟史くんの思い出を眠らせないように、",
+		   NULL, "I repeated them... to keep my memories of Satoshi-kun from fading too.", Line_ContinueAfterTyping);
+	SetValidityOfInput( FALSE );
+	Wait( 700 );
+	SetValidityOfInput( TRUE );
+	OutputLine(NULL, "ずっと、",
+		   NULL, " Over,", Line_ContinueAfterTyping);
+	SetValidityOfInput( FALSE );
+	Wait( 700 );
+	SetValidityOfInput( TRUE );
+	OutputLine(NULL, "ずっと。",
+		   NULL, " and over.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+	DrawScene( "black", 0 );
+
+	OutputLine(NULL, "　悟史くんとの楽しい思い出と一緒に、",
+		   NULL, "For the sake of my fun memories of Satoshi-kun...", Line_ContinueAfterTyping);
+	SetValidityOfInput( FALSE );
+	Wait( 800 );
+	SetValidityOfInput( TRUE );
+	OutputLine(NULL, "……恐ろしい感情も、",
+		   NULL, " ...together with my fear,", Line_ContinueAfterTyping);
+	SetValidityOfInput( FALSE );
+	Wait( 500 );
+	SetValidityOfInput( TRUE );
+	OutputLine(NULL, "悲しい感情も、",
+		   NULL, " and my sadness,", Line_ContinueAfterTyping);
+	SetValidityOfInput( FALSE );
+	Wait( 500 );
+	SetValidityOfInput( TRUE );
+	OutputLine(NULL, "ずっと、ずっと。",
+		   NULL, " I repeated them forever and ever.", Line_Normal);
+	ClearMessage();
+	Wait( 1000 );
+	DrawScene( "black", 1000 );
+}

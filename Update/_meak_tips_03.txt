@@ -1,0 +1,149 @@
+﻿void main()
+{
+	EnableJumpingOfReturnIcon();
+	FadeOutBGM( 0, 0, FALSE );
+	FadeOutBGM( 1, 0, FALSE );
+	FadeOutBGM( 2, 0, FALSE );
+	FadeOutBGM( 3, 0, FALSE );
+	ClearMessage();
+
+	PlayBGM( 0, "yoru", 120, 0 );
+	DrawScene( "Ho_R1", 400 );
+
+	OutputLine(NULL, "　ようやく叔母のヒステリックな小言が終わった。",
+		   NULL, "My aunt finally stopped her hysterical screaming.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　今日のそれもいつもと同じ。",
+		   NULL, "Today was just like any other day.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　きっかけがなんだったかは思い出せないし、どんなきっかけだったにせよ、内容は途中で二転三転する。どうだっていい。",
+		   NULL, "I can't remember what set her off. Whatever it was, she changed subjects constantly anyway. It didn't matter.", Line_Normal);
+	ClearMessage();
+	DrawSceneWithMask( "black", "maskdown", 1, 0, 300 );
+	DrawScene( "Moon", 400 );
+
+	OutputLine(NULL, "　またしても、２４時を過ぎていた。",
+		   NULL, "She went on past midnight again.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　後頭部を殴りつけるような睡魔が襲い掛かる。",
+		   NULL, "The urge to sleep was pounding the back of my head.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　沙都子は緊張の糸が途切れると、……ストンと崩れ落ち、僕の裾をつかんだまま、眠りに落ちてしまったようだった。",
+		   NULL, "Once Satoko had been able to relax... she fell down on the spot and started sleeping, still clinging to my sleeve.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　僕は沙都子を背負って寝室に行き、…布団を敷く。",
+		   NULL, "I carried Satoko to the bedroom and laid out our futons.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "「ほら、沙都子。",
+		   NULL, "\"Here, Satoko.", Line_WaitForInput);
+	OutputLine(NULL, "…布団が敷けたよ？",
+		   NULL, " Your futon is ready,", Line_WaitForInput);
+	OutputLine(NULL, "　布団に入りな。」",
+		   NULL, " so get in, okay?\"", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　沙都子はもごもごと、芋虫みたいに這って布団に潜り込むと、そのまま動かなくなった。",
+		   NULL, "Satoko crawled in like a worm. She stopped moving once she was inside.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　それを見て、僕も同じように布団に潜り込みたい欲求に駆られる。",
+		   NULL, "I wished I could go to bed, too.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　でも、…まだ寝るわけには行かない。",
+		   NULL, "But... I couldn't.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　叔母さんにさっき頼まれた買い物。",
+		   NULL, "My aunt asked me to do some chores.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　歯磨き粉のチューブを、明日の帰りに忘れないように買って来ないと。",
+		   NULL, "I had to get toothpaste after school tomorrow.", Line_WaitForInput);
+	OutputLine(NULL, "多分、メモして置いておかないと忘れてしまう…。",
+		   NULL, " I had to write it down somewhere...", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　それから、電気釜に明日のお弁当用のお米をセットする。",
+		   NULL, "I had to make rice for lunch tomorrow...", Line_WaitForInput);
+	OutputLine(NULL, "…タイマーも忘れずに。",
+		   NULL, " I set the timer.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　そうだ、あと小言のきっかけになった洗濯場のタオルの山をちゃんと積み直しておかないと…。",
+		   NULL, "Right, I also had to repile the towels in the bathroom. That was the reason for today's scolding...", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　叔母は指摘事項がすぐに直っていないととても怒る。",
+		   NULL, "My aunt will get mad if everything isn't done the way she wants.", Line_Normal);
+	ClearMessage();
+	DrawScene( "black", 400 );
+
+	OutputLine(NULL, "　あぁ、あと何だっけ。",
+		   NULL, "Oh, and there was something else.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　…そうだ、明日は八百屋さんの手伝いのバイトを入れてもらったんだっけ。",
+		   NULL, "...I was working at the grocery store the next day.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　そうだ、エプロン持参って言われてる。",
+		   NULL, "They wanted me to bring an apron.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　……うちにエプロンなんて…あったっけ……。",
+		   NULL, "...Did we even have an apron in this house...?", Line_WaitForInput);
+	OutputLine(NULL, "見たことないや…。",
+		   NULL, " I'd never seen one...", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　叔母さんは登校の時間には寝ているから、もう聞く間がない。",
+		   NULL, "My aunt will be sleeping when I go to school, so I won't have time to ask her.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　どうしようどうしよう、せっかく魅音に紹介してもらったバイトなんだから先方を怒らせちゃいけないや。",
+		   NULL, "What should I do? Since Mion helped me get that job, I don't want to screw it up.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　エプロンはそうだ、明日登校したら魅音辺りに相談してみよう。",
+		   NULL, "In that case, why don't I ask Mion about it at school?", Line_WaitForInput);
+	OutputLine(NULL, "きっと貸してくれる。",
+		   NULL, " She might lend me one.", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "　まだ他にもあったっけ…？",
+		   NULL, "Was there anything else...?", Line_WaitForInput);
+	OutputLine(NULL, "　んんんんんん…………。",
+		   NULL, " Hmmmmm......", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　寝床の沙都子が、…羨ましい。",
+		   NULL, "I was envious of Satoko, because she got to go to bed.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　そう思う自分が、悲しい。",
+		   NULL, "It was pathetic that I felt that way.", Line_Normal);
+	ClearMessage();
+	Wait( 1000 );
+	DrawScene( "black", 1000 );
+}

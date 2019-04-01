@@ -1,0 +1,77 @@
+﻿void main()
+{
+	EnableJumpingOfReturnIcon();
+	FadeOutBGM( 0, 0, FALSE );
+	FadeOutBGM( 1, 0, FALSE );
+	FadeOutBGM( 2, 0, FALSE );
+	FadeOutBGM( 3, 0, FALSE );
+	ClearMessage();
+
+	PlayBGM( 0, "z2_hig1", 120, 0 );
+	DrawScene( "So_K1", 1000 );
+
+	OutputLine(NULL, "　私が地下拷問室と呼んでいたあの場所は、正しくは地下祭具殿と呼ばれているらしい。",
+		   NULL, "That underground torture room is officially called the underground ritual storehouse.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　ということは、拷問室と祭具殿は同義語だということなのか。",
+		   NULL, "So, do \"torture room\" and \"ritual storehouse\" mean the same thing?", Line_Normal);
+	ClearMessage();
+	PlaySE( 0, "s_page", 128, 64 );
+
+	OutputLine(NULL, "　鷹野さんの説では、明治以降も綿流しを始めとする血生臭い風習は、御三家に密かに引き継がれているという。",
+		   NULL, "According to Takano-san's theory, bloody rituals, including Watanagashi, have been passed down among the Three Families even after the Meiji Era.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+	OutputLine(NULL, "　そして、許されるならばいつでもその儀式を執り行える準備があるのだとか。",
+		   NULL, "The rituals are always ready to be performed.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　祭具、つまり祭る（祀る）という言葉の対に拷問がある以上、",
+		   NULL, "Their form of worship always revolved around torture,", Line_WaitForInput);
+	OutputLine(NULL, "雛見沢の源流に、人間を虐め殺す文化があることは否定できない。",
+		   NULL, " so Hinamizawa's history involved a great deal of human slaughter.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　鷹野さんの説は正しい。",
+		   NULL, "Takano-san's theory is correct.", Line_Normal);
+	ClearMessage();
+	PlaySE( 0, "s_page", 128, 64 );
+	DrawSceneWithMask( "black", "maskright", 7, 0, 300 );
+	DrawSceneWithMask( "JSA3", "maskright", 7, 0, 300 );
+
+	OutputLine(NULL, "　そして象徴的な祭具殿と違い、園崎本家の地下祭具殿は確かに常時使用可能な状態で維持されていた。",
+		   NULL, "The underground storehouse at the Sonozaki house looked well maintained.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　ここにおいても鷹野さんの説は正しい。",
+		   NULL, "Takano-san is right about that, too.", Line_Normal);
+	ClearMessage();
+	PlaySE( 0, "s_page", 128, 64 );
+
+	OutputLine(NULL, "　公由家の倉は知らないが、園崎家、古手家がこうして「祭具」を祀るのだから、近い規模の物を秘蔵しているに違いない。",
+		   NULL, "Since the Sonozaki family and the Furude family both have ritual storehouses, the Kimiyoshi family must have one, too.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　そう、現代の御三家にも脈々と、残酷な風習が受け継がれているのだ。",
+		   NULL, "After all, these ancient and brutal customs are still handed down through the generations.", Line_WaitForInput);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
+
+
+	OutputLine(NULL, "　この呪われた村で、村ぐるみで今も奇怪な何かが行なわれている事実に備えろ…。",
+		   NULL, "I should remain armed with the knowledge that occult events are still secretly being performed in this cursed village...", Line_Normal);
+	ClearMessage();
+	Wait( 1000 );
+	DrawScene( "black", 1000 );
+}
