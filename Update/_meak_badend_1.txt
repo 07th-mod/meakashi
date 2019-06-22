@@ -1,0 +1,920 @@
+﻿void main()
+{
+
+
+//*Meakashi after making wrong choice
+//＜＞＜＞＜＞＜＞＜＞＜＞＜＞＜＞
+//＜＞＜＞＜＞＜＞＜＞＜＞＜＞＜＞
+
+//圭一rvS06/01/150100389.「………………いい加減にしろ…」
+	PlaySE(4, "ps3/s06/01/150100389", 256, 64);
+	OutputLine(NULL, "「………………いい加減にしろ…」",
+			NULL, "............Give it a fucking rest...\", Line_Normal); 
+	ClearMessage();
+
+//r圭一が腹の底から唸る。
+	OutputLine(NULL, "圭一が腹の底から唸る。",
+			NULL, "Keiichi's growl resounded from the pits of his stomach.", Line_Normal); 
+	ClearMessage();
+
+//r…いい声。噛み殺されそうな気迫。
+	OutputLine(NULL, "…いい声。噛み殺されそうな気迫。",
+			NULL, "...what a delightful sound. It was like he wanted to rip me apart.", Line_Normal); 
+	ClearMessage();
+
+//詩音rvS06/06/150602568.「ようやくお目覚め？kvS06/06/150602569.　私、さっき嘘をついたね。kvS06/06/150602570.…詩音を、一番惨たらしく殺してやろうと思って閉じ込めておいたけど、まだ思いつかないって言ったヤツ。kvS06/06/150602571.あれが嘘」
+	PlaySE(4, "ps3/s06/06/150602568", 256, 64);
+	OutputLine(NULL, "「ようやくお目覚め？",
+			NULL, "Awake at last, are we?", Line_WaitForInput); 
+	PlaySE(4, "ps3/s06/06/150602569", 256, 64);
+	OutputLine(NULL, "　私、さっき嘘をついたね。",
+			NULL, "I lied to you before, you know.", Line_WaitForInput); 
+	PlaySE(4, "ps3/s06/06/150602570", 256, 64);
+	OutputLine(NULL, "…詩音を、一番惨たらしく殺してやろうと思って閉じ込めておいたけど、まだ思いつかないって言ったヤツ。",
+			NULL, "...About having wanted to give Shion the most miserable death of all, but locking her up because I hadn't thought of a good way yet.", Line_WaitForInput); 
+	PlaySE(4, "ps3/s06/06/150602571", 256, 64);
+	OutputLine(NULL, "あれが嘘」",
+			NULL, "That was a lie.", Line_Normal); 
+	ClearMessage();
+
+//r私はこの拷問専用に作られたと思われる、物騒な形をした釘と大金槌を並べながら、不敵に笑った。
+	OutputLine(NULL, "私はこの拷問専用に作られたと思われる、物騒な形をした釘と大金槌を並べながら、不敵に笑った。",
+			NULL, "I smiled menacingly as I laid out the huge nails and hammer specially made for the nail table.", Line_Normal); 
+	ClearMessage();
+
+//詩音rvS06/06/150602572.「あの子に、自分のせいで死ぬ大勢の人の悲鳴をたっぷりと聞かせて、体の芯まで染み透らせてから殺すの。kvS06/06/150602573.…なかなかセンスいいでしょ。kvS06/06/150602574.くっくっくっく！！」
+	PlaySE(4, "ps3/s06/06/150602572", 256, 64);
+	OutputLine(NULL, "「あの子に、自分のせいで死ぬ大勢の人の悲鳴をたっぷりと聞かせて、体の芯まで染み透らせてから殺すの。",
+			NULL, "I'll kill her, but only after her soul drowns in the screams of the many people who died because of her.", Line_WaitForInput); 
+	PlaySE(4, "ps3/s06/06/150602573", 256, 64);
+	OutputLine(NULL, "…なかなかセンスいいでしょ。",
+			NULL, "...Wouldn't that be poetic?", Line_WaitForInput); 
+	PlaySE(4, "ps3/s06/06/150602574", 256, 64);
+	OutputLine(NULL, "くっくっくっく！！」",
+			NULL, "Heh heh heh heh!!", Line_Normal); 
+	ClearMessage();
+
+	PlaySE(3, "sinzouappaku", 256, 64);
+
+//圭一rvS06/01/150100390.「……………お前は。…誰だ」
+	PlaySE(4, "ps3/s06/01/150100390", 256, 64);
+	OutputLine(NULL, "「……………お前は。…誰だ」",
+			NULL, "............Who......are you?", Line_Normal); 
+	ClearMessage();
+
+//詩音rvS06/06/150602575.「はぁ？kvS06/06/150602576.　魅音でしょ。kvS06/06/150602577.園崎魅音。kvS06/06/150602578.…恐怖で頭が変になっちゃった？kvS06/06/150602579.　くっくっく！」
+	PlaySE(4, "ps3/s06/06/150602575", 256, 64);
+	OutputLine(NULL, "「はぁ？",
+			NULL, "Hah?", Line_WaitForInput); 
+	PlaySE(4, "ps3/s06/06/150602576", 256, 64);
+	OutputLine(NULL, "　魅音でしょ。",
+			NULL, " I'm Mion.", Line_WaitForInput); 
+	PlaySE(4, "ps3/s06/06/150602577", 256, 64);
+	OutputLine(NULL, "園崎魅音。",
+			NULL, " Mion Sonozaki.", Line_WaitForInput); 
+	PlaySE(4, "ps3/s06/06/150602578", 256, 64);
+	OutputLine(NULL, "…恐怖で頭が変になっちゃった？",
+			NULL, "Did the fear drive you out of your mind?", Line_WaitForInput); 
+	PlaySE(4, "ps3/s06/06/150602579", 256, 64);
+	OutputLine(NULL, "　くっくっく！」",
+			NULL, " Heh heh heh!\", Line_Normal); 
+	ClearMessage();
+
+//圭一rvS06/01/150100391.「………違うな。kvS06/01/150100392.…お前が、…園崎魅音であるはずがない…！」
+	PlaySE(4, "ps3/s06/01/150100391", 256, 64);
+	OutputLine(NULL, "「………違うな。",
+			NULL, ".........No, you're not.", Line_WaitForInput); 
+	PlaySE(4, "ps3/s06/01/150100392", 256, 64);
+	OutputLine(NULL, "…お前が、…園崎魅音であるはずがない…！」",
+			NULL, "...There's... no way you can be Mion Sonozaki...!\", Line_Normal); 
+	ClearMessage();
+
+	PlayBGM( 1, "suzu", 128, 0 );
+
+//r私の手が一瞬止まる。
+	OutputLine(NULL, "私の手が一瞬止まる。",
+			NULL, "My hand stopped dead in its tracks.", Line_Normal); 
+	ClearMessage();
+
+//r………圭ちゃん…？
+	OutputLine(NULL, "………圭ちゃん…？",
+			NULL, ".........Kei-chan...?", Line_Normal); 
+	ClearMessage();
+
+//r…どうしよう。詩音の岩牢まで行ったらゲームオーバーってさっき決めた。
+	OutputLine(NULL, "…どうしよう。詩音の岩牢まで行ったらゲームオーバーってさっき決めた。",
+			NULL, "Shit. I'd decided it would be too late once we reached Shion's cell.", Line_Normal); 
+	ClearMessage();
+
+//rだからもう名前当てゲームは終了している。
+	OutputLine(NULL, "だからもう名前当てゲームは終了している。",
+			NULL, "So the name-guessing game is already over.", Line_Normal); 
+	ClearMessage();
+
+//r……いや、うん。…いいよ。…聞いてあげる。ラストチャンス。
+	OutputLine(NULL, "……いや、うん。…いいよ。…聞いてあげる。ラストチャンス。",
+			NULL, "...Oh well, whatever. Bring it on. I'll listen to you. This is your last chance.", Line_Normal); 
+	ClearMessage();
+
+//詩音rvS06/06/150602580.「……へぇ。kvS06/06/150602581.じゃあ私が魅音じゃなかったら、私ゃ誰なわけぇ？」
+	PlaySE(4, "ps3/s06/06/150602580", 256, 64);
+	OutputLine(NULL, "「……へぇ。",
+			NULL, "...Oh yeah?", Line_WaitForInput); 
+	PlaySE(4, "ps3/s06/06/150602581", 256, 64);
+	OutputLine(NULL, "じゃあ私が魅音じゃなかったら、私ゃ誰なわけぇ？」",
+			NULL, " Then if I'm not Mion, who am I?\", Line_Normal); 
+	ClearMessage();
+
+//rさぁ圭ちゃん。…当ててごらん。君に恋した魅音を、救ってごらん。
+	OutputLine(NULL, "さぁ圭ちゃん。…当ててごらん。君に恋した魅音を、救ってごらん。",
+			NULL, "Come on, Kei-chan. ...Guess who I am. Try and save Mion, the girl who fell in love with you.", Line_Normal); 
+	ClearMessage();
+
+//rその時、…聞こえた。確かに、聞こえた。
+	OutputLine(NULL, "その時、…聞こえた。確かに、聞こえた。",
+			NULL, "And then, I heard it. I most definitely heard it.", Line_Normal); 
+	ClearMessage();
+
+//r圭ちゃんの口が、震える声をつむぎだして、それでも目だけは確信に満ちた強い輝きを宿らせて。
+	OutputLine(NULL, "圭ちゃんの口が、震える声をつむぎだして、それでも目だけは確信に満ちた強い輝きを宿らせて。",
+			NULL, "Keiichi's mouth trembled as he spoke the words, yet his eyes shone with a strong conviction.", Line_Normal); 
+	ClearMessage();
+
+//rその、正解の言葉を……。
+	OutputLine(NULL, "その、正解の言葉を……。",
+			NULL, "And he spoke the truth.", Line_Normal); 
+	ClearMessage();
+
+//圭一rvS06/01/VX_keiichi_0002.「…………詩音、だな…？」
+	PlaySE(4, "ps3/s06/01/vx_keiichi_0002", 256, 64);
+	OutputLine(NULL, "「…………詩音、だな…？」",
+			NULL, ".........You're Shion, aren't you? ", Line_Normal); 
+	ClearMessage();
+
+//詩音rvS06/06/150602581_1.「――――――」
+	PlaySE(4, "ps3/s06/06/150602581_1", 256, 64);
+	OutputLine(NULL, "「——————」",
+			NULL, "——————", Line_Normal); 
+	ClearMessage();
+
+	PlayBGM(2, "hm10_53", 128, 0);
+
+//r………………へぇ……。
+	OutputLine(NULL, "………………へぇ……。",
+			NULL, "........Wow.....", Line_Normal); 
+	ClearMessage();
+
+//r当てたよ。ホントに、当てたよ。……すごいよ、圭ちゃん…！
+	OutputLine(NULL, "当てたよ。ホントに、当てたよ。……すごいよ、圭ちゃん…！",
+			NULL, "You're right. You actually won.....You're amazing Kei-chan...", Line_Normal); 
+	ClearMessage();
+
+//rふふふ、…ふふふふふふふ……！
+	OutputLine(NULL, "ふふふ、…ふふふふふふふ……！",
+			NULL, "Heh heh.....heheheheheh.....!", Line_Normal); 
+	ClearMessage();
+
+//rおかしさがこみ上げて、脇骨のあたりに震えが走る。
+	OutputLine(NULL, "おかしさがこみ上げて、脇骨のあたりに震えが走る。",
+			NULL, "A strange feeling fills my chest as I shiver.", Line_Normal); 
+	ClearMessage();
+
+//r一応もしかしたら、…なんて、心積もりはしていた。
+	OutputLine(NULL, "一応もしかしたら、…なんて、心積もりはしていた。",
+			NULL, "I had convinced myself there was no way he could guess.", Line_Normal); 
+	ClearMessage();
+
+//rそれでも、……やっぱり少しだけ、驚いた。
+	OutputLine(NULL, "それでも、……やっぱり少しだけ、驚いた。",
+			NULL, "But he did, ......and I couldn't help feeling a bit surprised.", Line_Normal); 
+	ClearMessage();
+
+//r本当に、この圭一は……私の正体を、また見破ってみせたのだ。
+	OutputLine(NULL, "本当に、この圭一は……私の正体を、また見破ってみせたのだ。",
+			NULL, "This Keiichi had yet again pierced through my disguise.", Line_Normal); 
+	ClearMessage();
+
+//圭一rvS06/01/150100394.「…………お前は魅音じゃない。kvS06/01/150100395.…さっきまで一緒だった魅音を返せ」
+	PlaySE(4, "ps3/s06/01/150100394", 256, 64);
+	OutputLine(NULL, "「…………お前は魅音じゃない。",
+			NULL, "You aren't Mion.", Line_WaitForInput); 
+	PlaySE(4, "ps3/s06/01/150100395", 256, 64);
+	OutputLine(NULL, "…さっきまで一緒だった魅音を返せ」",
+			NULL, "...Give me back the Mion whom I with until just now!", Line_Normal); 
+	ClearMessage();
+
+//詩音rvS06/06/150602581_2.「……………」
+	PlaySE(4, "ps3/s06/06/150602581_2", 256, 64);
+	OutputLine(NULL, "「……………」",
+			NULL, "............", Line_Normal); 
+	ClearMessage();
+
+	DrawScene("black", 1000 );
+
+	DrawScene("background/a/waku_b", 1000 );
+
+	DrawScene("background/mati_o6", 1000 );
+
+	DrawBustshot( 4, "sprite/night/kei2_ikari1_0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 19, 200, TRUE );
+
+//rお前……誰だ？
+	OutputLine(NULL, "お前……誰だ？",
+			NULL, "Who...... are you?", Line_Normal); 
+	ClearMessage();
+
+//詩音rvS06/06/150602581_3.「えっ…？」
+	PlaySE(4, "ps3/s06/06/150602581_3", 256, 64);
+	OutputLine(NULL, "「えっ…？」",
+			NULL, "Huh....?", Line_Normal); 
+	ClearMessage();
+
+//r………魅音じゃないだろ？
+	OutputLine(NULL, "………魅音じゃないだろ？",
+			NULL, "..........You aren't Mion, right?", Line_Normal); 
+	ClearMessage();
+
+//詩音rvS06/06/150602581_4.「…え？kvS06/06/150602581_5.　だから、私、魅音…」
+	PlaySE(4, "ps3/s06/06/150602581_4", 256, 64);
+	OutputLine(NULL, "「…え？",
+			NULL, "...huh?", Line_WaitForInput); 
+	PlaySE(4, "ps3/s06/06/150602581_5", 256, 64);
+	OutputLine(NULL, "　だから、私、魅音…」",
+			NULL, " Like I said, I'm Mion...", Line_Normal); 
+	ClearMessage();
+
+//rいや、違う…。そうじゃない――。kお前は、魅音じゃない…
+	OutputLine(NULL, "いや、違う…。そうじゃない——。",
+			NULL, "No, that's not it. That wasn't what I meant.", Line_WaitForInput); 
+	OutputLine(NULL, "お前は、魅音じゃない…",
+			NULL, " You aren't Mion...", Line_Normal); 
+	ClearMessage();
+
+//詩音rvS06/06/150602581_6.「くっくっくっく…。kvS06/06/150602581_7.どうして私が、お姉じゃないって思うんですか？」
+	PlaySE(4, "ps3/s06/06/150602581_6", 256, 64);
+	OutputLine(NULL, "「くっくっくっく…。",
+			NULL, "Hehehehe...", Line_WaitForInput); 
+	PlaySE(4, "ps3/s06/06/150602581_7", 256, 64);
+	OutputLine(NULL, "どうして私が、お姉じゃないって思うんですか？」",
+			NULL, "Why do you think I'm not the older sister?", Line_Normal); 
+	ClearMessage();
+
+	DrawBustshot( 4, "sprite/night/kei2_majime_0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 19, 200, TRUE );
+
+//rわからない。……勘だ。
+	OutputLine(NULL, "わからない。……勘だ。",
+			NULL, "I don't know. ......Just a feeling.", Line_Normal); 
+	ClearMessage();
+
+	FadeBustshot(4, FALSE, 0, 0, 0, 0, 200, TRUE);
+
+	DrawScene("black", 1000 );
+
+//r私の脳裏に、少し前におもちゃ屋で圭一に見破られたときの思い出がよみがえる。
+	OutputLine(NULL, "私の脳裏に、少し前におもちゃ屋で圭一に見破られたときの思い出がよみがえる。",
+			NULL, "In my mind, memories of the time Keiichi recognized me at the toy store had been revived.", Line_Normal); 
+	ClearMessage();
+
+//rそうだ。
+	OutputLine(NULL, "そうだ。",
+			NULL, "Yes.", Line_Normal); 
+	ClearMessage();
+
+//rあの時も、圭一は私を詩音じゃないと、言い当ててみせた。
+	OutputLine(NULL, "あの時も、圭一は私を詩音じゃないと、言い当ててみせた。",
+			NULL, "Even back then, Keiichi could tell that I wasn't my sister Shion.", Line_Normal); 
+	ClearMessage();
+
+//rせめてもの強がりで、冷静を装いながら涼しい顔で受け答えしてやったが、…内心は、かなり衝撃だった。
+	OutputLine(NULL, "せめてもの強がりで、冷静を装いながら涼しい顔で受け答えしてやったが、…内心は、かなり衝撃だった。",
+			NULL, "I had feigned composure and offered a comeback with a straight face, but on the inside I was shook.", Line_Normal); 
+	ClearMessage();
+
+//r私たちは、お互いに魅音にも、そして詩音にもなることができる。…だって、元々は『魅音』だった私が名目上で『詩音』を演じてきたのだから、逆はさらに簡単だった。
+	OutputLine(NULL, "私たちは、お互いに魅音にも、そして詩音にもなることができる。…だって、元々は『魅音』だった私が名目上で『詩音』を演じてきたのだから、逆はさらに簡単だった。",
+			NULL, "We were both capable of becoming Mion or Shion... But because I was the real "Mion", and was only Shion legally on paper, reversing the roles was even more easier for me.", Line_Normal); 
+	ClearMessage();
+
+//r口調も、しぐさも、雰囲気すら、…親でさえ見抜けないほど私たちはお互いの『癖』を、完璧にマスターしていた。
+	OutputLine(NULL, "口調も、しぐさも、雰囲気すら、…親でさえ見抜けないほど私たちはお互いの『癖』を、完璧にマスターしていた。",
+			NULL, "Our tones of speech, quirks and even our auras...We had both mastered each others' habits so perfectly, even our own parents were unable to tell us apart.", Line_Normal); 
+	ClearMessage();
+
+//r現にあの勘のいいレナでさえ、あんなに近くにいたのに結局、私が自分の親友じゃないとは気づかなかったじゃないか。
+	OutputLine(NULL, "現にあの勘のいいレナでさえ、あんなに近くにいたのに結局、私が自分の親友じゃないとは気づかなかったじゃないか。",
+			NULL, "In fact, wasn't that exceptionally sharp Rena not able to figure out I wasn't her best friend Mion after all, despite being so close?", Line_Normal); 
+	ClearMessage();
+
+//rなのに、なんで。
+	OutputLine(NULL, "なのに、なんで。",
+			NULL, "So why?", Line_Normal); 
+	ClearMessage();
+
+//rこの圭一は、…もう２度も、私の正体を見破ることができたんだろう…？
+	OutputLine(NULL, "この圭一は、…もう２度も、私の正体を見破ることができたんだろう…？",
+			NULL, "Has this Keiichi actually seen through my disguise twice?", Line_Normal); 
+	ClearMessage();
+
+	DrawScene("background/jsa7", 1000 );
+
+//詩音rvS06/06/150602581_6.「くっくっくっく…。kvS06/06/150602581_7.どうして私が、お姉じゃないって思うんですか？」
+	PlaySE(4, "ps3/s06/06/150602581_6", 256, 64);
+	OutputLine(NULL, "「くっくっくっく…。",
+			NULL, "Hehehehe....", Line_WaitForInput); 
+	PlaySE(4, "ps3/s06/06/150602581_7", 256, 64);
+	OutputLine(NULL, "どうして私が、お姉じゃないって思うんですか？」",
+			NULL, "Why do you think I'm not the older sister?", Line_Normal); 
+	ClearMessage();
+
+//rその答えを聞いておきたくて、私は耳をそばだてる。圭一はひゅうひゅうと苦しそうにあえぎながら、虫の囁くような小さな声でことばを口にする。
+	OutputLine(NULL, "その答えを聞いておきたくて、私は耳をそばだてる。圭一はひゅうひゅうと苦しそうにあえぎながら、虫の囁くような小さな声でことばを口にする。",
+			NULL, "My ears perked up, eager to hear the answer. Keiichi's reply was a soft murmur like an insect's whisper, as he gasped for breath in pain.", Line_Normal); 
+	ClearMessage();
+
+//r…その声は、あまりにも小さすぎて音は届かなかったが、…その唇の動きが、あの時と同じだった。
+	OutputLine(NULL, "…その声は、あまりにも小さすぎて音は届かなかったが、…その唇の動きが、あの時と同じだった。",
+			NULL, "His voice was so quiet, it was nearly inaudible. But I could almost recognize the words on his lips.", Line_Normal); 
+	ClearMessage();
+
+//rそう、……『勘だ』って……！
+	OutputLine(NULL, "そう、……『勘だ』って……！",
+			NULL, "Yes....... "Just a feeling", he says......!", Line_Normal); 
+	ClearMessage();
+
+//詩音rvS06/06/150602581_8.「へぇ～…」
+	PlaySE(4, "ps3/s06/06/150602581_8", 256, 64);
+	OutputLine(NULL, "「へぇ～…」",
+			NULL, "Wow...", Line_Normal); 
+	ClearMessage();
+
+//r………ふ、ふふふ、ふふふふふふふふふふ…！！
+	OutputLine(NULL, "………ふ、ふふふ、ふふふふふふふふふふ…！！",
+			NULL, ".........Heh, heheheh, hehehehehehehehehehe...!!", Line_Normal); 
+	ClearMessage();
+
+//rまただよ。また、『勘』だよ。
+	OutputLine(NULL, "まただよ。また、『勘』だよ。",
+			NULL, "Yet again. It was "just a feeling".", Line_Normal); 
+	ClearMessage();
+
+//rおもちゃ屋のときも、同じことを言ったっけなぁ？
+	OutputLine(NULL, "おもちゃ屋のときも、同じことを言ったっけなぁ？",
+			NULL, "Didn't he say the exact same thing to me, that time at the toy store?", Line_Normal); 
+	ClearMessage();
+
+//rはははははははははは。いいね、いいねぇ！　すごいよ、大正解じゃん？
+	OutputLine(NULL, "はははははははははは。いいね、いいねぇ！　すごいよ、大正解じゃん？",
+			NULL, "Hahahahahahahahahaha. How nice, how nice! What a splendid andswer!", Line_Normal); 
+	ClearMessage();
+
+//r確かに、あのお姉が惚れるだけのことはあるよ？！
+	OutputLine(NULL, "確かに、あのお姉が惚れるだけのことはあるよ？！",
+			NULL, "You'd think why my sister of all people fell in love with him?!", Line_Normal); 
+	ClearMessage();
+
+//rあはははははは、あはははははははははははは！！
+	OutputLine(NULL, "あはははははは、あはははははははははははは！！",
+			NULL, "Ahahahahahaha, ahahahahahahahahahahahaha!!", Line_Normal); 
+	ClearMessage();
+
+//詩音rvS06/06/150602581_2.「……………」
+	PlaySE(4, "ps3/s06/06/150602581_2", 256, 64);
+	OutputLine(NULL, "「……………」",
+			NULL, "..............", Line_Normal); 
+	ClearMessage();
+
+	DrawScene("background/aka1", 1000 );
+
+	FadeOutBGM(2, 200, FALSE);
+
+//r…………………だけど。
+	OutputLine(NULL, "…………………だけど。",
+			NULL, "...............However.", Line_Normal); 
+	ClearMessage();
+
+//rいいや、…だからこそ、なのかな。
+	OutputLine(NULL, "いいや、…だからこそ、なのかな。",
+			NULL, "No...... rather, it was exactly because of this.", Line_Normal); 
+	ClearMessage();
+
+//r私は、こみ上げるおかしさとともに、さっきまで熱く煮えたぎるくらいだった血の気が、すぅっ、と急速に冷えていくのを感じる。…そう、まるで泥水が排水溝に流れ込んでゆくような感覚とでもいうのだろうか。
+	OutputLine(NULL, "私は、こみ上げるおかしさとともに、さっきまで熱く煮えたぎるくらいだった血の気が、すぅっ、と急速に冷えていくのを感じる。…そう、まるで泥水が排水溝に流れ込んでゆくような感覚とでもいうのだろうか。",
+			NULL, "Along with my raving madness, the blood that was simmering in my veins until just now rapidly began to turn chill and coagulate. If I were to describe it, it felt like stagnant muddy water flowing through a gutter.", Line_Normal); 
+	ClearMessage();
+
+//r今も、腹を抱えたいほどにおかしいけど、笑みは浮かばない。それどころか自分の顔から感情が消えて、固く、冷たい氷の能面が表面に広がってゆく。
+	OutputLine(NULL, "今も、腹を抱えたいほどにおかしいけど、笑みは浮かばない。それどころか自分の顔から感情が消えて、固く、冷たい氷の能面が表面に広がってゆく。",
+			NULL, "Even now, it was all so hilarious I could fall over laughing, but I didn't smile. On the contrary, my face was vacant and austere, like a Noh-mask of frigid ice.", Line_Normal); 
+	ClearMessage();
+
+//rそして、私は。
+	OutputLine(NULL, "そして、私は。",
+			NULL, "And then.", Line_Normal); 
+	ClearMessage();
+
+	PlayBGM( 1, "semi_r", 128, 0 );
+
+//r心の中奥深くまでに闇が染み渡り、もはや人としての自制を手放しつつあった。
+	OutputLine(NULL, "心の中奥深くまでに闇が染み渡り、もはや人としての自制を手放しつつあった。",
+			NULL, "The darkness seeped into the innermost depths of my mind, and I was already parting with my self-restraint as a human being.", Line_Normal); 
+	ClearMessage();
+
+	DrawScene("background/jsa7", 1000 );
+
+//詩音rvS06/06/150602581_2.「……………」
+	PlaySE(4, "ps3/s06/06/150602581_2", 256, 64);
+	OutputLine(NULL, "「……………」",
+			NULL, "...............", Line_Normal); 
+	ClearMessage();
+
+//rふと手を伸ばし、圭一の汗と血にまみれべっとりとなった髪に触れる。その途端、圭一は虫でも払うように嫌悪感あらわな表情で首を振ると、きっ、と鋭い眼光で睨み返してきた。
+	OutputLine(NULL, "ふと手を伸ばし、圭一の汗と血にまみれべっとりとなった髪に触れる。その途端、圭一は虫でも払うように嫌悪感あらわな表情で首を振ると、きっ、と鋭い眼光で睨み返してきた。",
+			NULL, "I reach out and touch Keiichi's hair, matted with sweat and caked with blood. Keiichi whips his head away at once in disgust, as if he were staving off a housefly — and glares at me defiantly.", Line_Normal); 
+	ClearMessage();
+
+//圭一rvS06/01/150100396.「触るなっ！kvS06/01/150100397.　…この鬼め…！！！kvS06/01/150100398.　返せッ！！kvS06/01/150100399.　魅音を返せよ！！！kvS06/01/150100400.　俺の最高の友人だった…魅音を返せぇえぇえええッ！！！」
+	PlaySE(4, "ps3/s06/01/150100396", 256, 64);
+	OutputLine(NULL, "「触るなっ！",
+			NULL, "Don't touch me! ", Line_WaitForInput); 
+	PlaySE(4, "ps3/s06/01/150100397", 256, 64);
+	OutputLine(NULL, "　…この鬼め…！！！",
+			NULL, "...You damn demon...!!!", Line_WaitForInput); 
+	PlaySE(4, "ps3/s06/01/150100398", 256, 64);
+	OutputLine(NULL, "　返せッ！！",
+			NULL, "Give her back!!", Line_WaitForInput); 
+	PlaySE(4, "ps3/s06/01/150100399", 256, 64);
+	OutputLine(NULL, "　魅音を返せよ！！！",
+			NULL, "Give Mion back!!!", Line_WaitForInput); 
+	PlaySE(4, "ps3/s06/01/150100400", 256, 64);
+	OutputLine(NULL, "　俺の最高の友人だった…魅音を返せぇえぇえええッ！！！」",
+			NULL, "Give me back my best friend Mion!!!", Line_Normal); 
+	ClearMessage();
+
+//r全身の自由を奪われながら、血を吐くような咆哮で叫び続けている。
+	OutputLine(NULL, "全身の自由を奪われながら、血を吐くような咆哮で叫び続けている。",
+			NULL, "Having lost liberty over his whole body, he continued to howl and cry as if he were spewing blood.", Line_Normal); 
+	ClearMessage();
+
+//r…すでに悪魔に魂を売って鬼と化したはずの私だったが、こうも悪し様に拒絶されると、少しだけカケラのように残った感情がざわめくのを覚えた。
+	OutputLine(NULL, "…すでに悪魔に魂を売って鬼と化したはずの私だったが、こうも悪し様に拒絶されると、少しだけカケラのように残った感情がざわめくのを覚えた。",
+			NULL, "...I was supposed to have sold my soul to the devil and become a demon, but faced with such a bitter rejection, I felt the crumbled remanants of my emotions stir within me.", Line_Normal); 
+	ClearMessage();
+
+	DrawScene("background/aka2", 1000 );
+
+//rぼりぼりッ、がりがりッ、ぼりぼりッ、がりがりッ、ぼりぼりッ、がりがりッ……！！
+	OutputLine(NULL, "ぼりぼりッ、がりがりッ、ぼりぼりッ、がりがりッ、ぼりぼりッ、がりがりッ……！！",
+			NULL, "Munch, crunch, munch, crunch, munch, crunch......!!", Line_Normal); 
+	ClearMessage();
+
+//r喉が痒い。ひじの裏も、手首も、身体の節々全てが痒くて、ざわざわして…わけもなく、いらいらする。
+	OutputLine(NULL, "喉が痒い。ひじの裏も、手首も、身体の節々全てが痒くて、ざわざわして…わけもなく、いらいらする。",
+			NULL, "My throat begins to itch. The crooks of my elbows, my wrists, and every other joint in my body begins to tingle and prickle...and I feel irrationally restless.", Line_Normal); 
+	ClearMessage();
+
+//rそして、そのいらいらとむかつきが大きくなればなるほど、…この、ぎゃあぎゃあと私のそばでわめきたてる存在がわずらわしく、疎ましく、…今すぐにでも殺したいほどに憎たらしく思えてきた。
+	OutputLine(NULL, "そして、そのいらいらとむかつきが大きくなればなるほど、…この、ぎゃあぎゃあと私のそばでわめきたてる存在がわずらわしく、疎ましく、…今すぐにでも殺したいほどに憎たらしく思えてきた。",
+			NULL, "The more the restlessness and irritation piled up, the more this squalling, whimpering person beside me felt bothersome, revolting...so awful I could slaughter him right away.", Line_Normal); 
+	ClearMessage();
+
+//rさっきまでは、…本当のところ圭一を殺すつもりなんかなかった。
+	OutputLine(NULL, "さっきまでは、…本当のところ圭一を殺すつもりなんかなかった。",
+			NULL, "To be frank... until just now, I had no intention of killing Keiichi.", Line_Normal); 
+	ClearMessage();
+
+//rだからもしも、言い当てることができたら、…命だけは、助けてやってもいい。
+	OutputLine(NULL, "だからもしも、言い当てることができたら、…命だけは、助けてやってもいい。",
+			NULL, "I was truly ready to spare at least his life, if he guessed the right answer.", Line_Normal); 
+	ClearMessage();
+
+//rそれが、さっき決めたルールだ。
+	OutputLine(NULL, "それが、さっき決めたルールだ。",
+			NULL, "That was the rule I had decided upon.", Line_Normal); 
+	ClearMessage();
+
+//rいいさ、…認めよう。詩音と同じく、私もこの圭一が、…好きだった。
+	OutputLine(NULL, "いいさ、…認めよう。詩音と同じく、私もこの圭一が、…好きだった。",
+			NULL, "Okay... I'll admit it. Just like Shion, I had also...fallen in love with Keiichi.", Line_Normal); 
+	ClearMessage();
+
+//rどこまでも馬鹿で、お人よしで。あきれるほどあったかくて、優しくて、…話していると、心が満たされた。
+	OutputLine(NULL, "どこまでも馬鹿で、お人よしで。あきれるほどあったかくて、優しくて、…話していると、心が満たされた。",
+			NULL, "He was incredibly silly and good-natured—unbelievably warm-hearted and gentle...talking to him made me feel contented.", Line_Normal); 
+	ClearMessage();
+
+//rそれに、同情だってある。
+	OutputLine(NULL, "それに、同情だってある。",
+			NULL, "Besides, I even sympathized with him.", Line_Normal); 
+	ClearMessage();
+
+//r私が手にかけてきた連中と違って圭一は確かに、私の自分勝手な復讐劇に巻き込まれた、単なる被害者だ。だから、園崎への復讐が完遂されそうになっている今なら、助けてあげてもいい。
+	OutputLine(NULL, "私が手にかけてきた連中と違って圭一は確かに、私の自分勝手な復讐劇に巻き込まれた、単なる被害者だ。だから、園崎への復讐が完遂されそうになっている今なら、助けてあげてもいい。",
+			NULL, "Unlike the lot I'd dealt with so far—Keiichi was indeed just a victim—caught up in my selfish revenge drama. Now that my revenge against the Sonozaki family was almost complete, I didn't mind saving him.", Line_Normal); 
+	ClearMessage();
+
+//r…虫のいい話だけど、ひょっとしたら人間らしい、圭一を気に入っていた『私』の心が自分の行いに対して、免罪を求める気持ちがそう思わせたのかもしれない。
+	OutputLine(NULL, "…虫のいい話だけど、ひょっとしたら人間らしい、圭一を気に入っていた『私』の心が自分の行いに対して、免罪を求める気持ちがそう思わせたのかもしれない。",
+			NULL, "...That may sound too convenient, but perhaps the human side of "me" that was fond of Keiichi wanted to save him—in order to seek his forgiveness for my actions.", Line_Normal); 
+	ClearMessage();
+
+	DrawScene("black", 1000 );
+
+//rでも、…気が変わった。
+	OutputLine(NULL, "でも、…気が変わった。",
+			NULL, "But... I've changed my mind.", Line_Normal); 
+	ClearMessage();
+
+//r現実に正解を口にした圭一を目の当たりにした私の心は、冴え渡るように鋭く、深く、そして重い、…どす黒い闇で満ちている。
+	OutputLine(NULL, "現実に正解を口にした圭一を目の当たりにした私の心は、冴え渡るように鋭く、深く、そして重い、…どす黒い闇で満ちている。",
+			NULL, "Having witnessed Keiichi guess the right answer before my very eyes, my heart was suffused with a stinging, gaping, overpowering darkness, as if it were freezing over.", Line_Normal); 
+	ClearMessage();
+
+//rなんでだ。
+	OutputLine(NULL, "なんでだ。",
+			NULL, "Why.", Line_Normal); 
+	ClearMessage();
+
+//rなんで、詩音だけこんなにも、素敵な相手とめぐり合うことができたんだ。
+	OutputLine(NULL, "なんで、詩音だけこんなにも、素敵な相手とめぐり合うことができたんだ。",
+			NULL, "Why was Shion alone able to meet such a wonderful person?", Line_Normal); 
+	ClearMessage();
+
+//r悟史くんは、私と詩音を曖昧にしか区別できなかった。
+	OutputLine(NULL, "悟史くんは、私と詩音を曖昧にしか区別できなかった。",
+			NULL, "Satoshi-kun could only make a vague distinction between me and Shion.", Line_Normal); 
+	ClearMessage();
+
+//r悟史くんは、…私を置いてどこかに行ってしまった。
+	OutputLine(NULL, "悟史くんは、…私を置いてどこかに行ってしまった。",
+			NULL, "Satoshi-kun...abandoned me and ran away.", Line_Normal); 
+	ClearMessage();
+
+//rそれなのに、この圭一は詩音を信じて、私の嘘を見破り、…仲間としての詩音の存在を守ろうとしている。
+	OutputLine(NULL, "それなのに、この圭一は詩音を信じて、私の嘘を見破り、…仲間としての詩音の存在を守ろうとしている。",
+			NULL, "However, this Keiichi trusts Shion. He is defending Shion whom he values as his best friend, by seeing through my lies.", Line_Normal); 
+	ClearMessage();
+
+//rそして、その結果。………この私を、否定した。
+	OutputLine(NULL, "そして、その結果。………この私を、否定した。",
+			NULL, "And as a result.......he gave up on me.", Line_Normal); 
+	ClearMessage();
+
+//r憎い。腹立たしい。疎ましい。妬ましい。……だから、殺してやりたい。
+	OutputLine(NULL, "憎い。腹立たしい。疎ましい。妬ましい。……だから、殺してやりたい。",
+			NULL, "Destestable. Maddening. Despicable. Enviable...... So much so that I want to kill them.", Line_Normal); 
+	ClearMessage();
+
+//rそうだ。詩音をかばった時点で、こいつも同類。そして、同罪だ。この、身の程知らずの憎い憎い憎い憎い憎い、ただ憎いこのクズ野郎がッッ…！！！
+	OutputLine(NULL, "そうだ。詩音をかばった時点で、こいつも同類。そして、同罪だ。この、身の程知らずの憎い憎い憎い憎い憎い、ただ憎いこのクズ野郎がッッ…！！！",
+			NULL, "That's right. The moment he defended Shion, he became one of them. He's equally guilty. You lowlife scum, I despise you, I despise you, I despise you, I despise you, I despise you, you fucking piece of shit...!!!", Line_Normal); 
+	ClearMessage();
+
+//魅音rvS06/03/150300429.「もうやめてぇえぇえぇえッ！！！kvS06/03/150300430.　圭ちゃんを殺さないでぇええぇえ！！kvS06/03/150300435.　圭ちゃん、逃げてええぇぇえぇええええッ！！！」
+	PlaySE(4, "ps3/s06/03/150300429", 256, 64);
+	OutputLine(NULL, "「もうやめてぇえぇえぇえッ！！！",
+			NULL, "Please stoooooop!!!", Line_WaitForInput); 
+	PlaySE(4, "ps3/s06/03/150300430", 256, 64);
+	OutputLine(NULL, "　圭ちゃんを殺さないでぇええぇえ！！",
+			NULL, " Don't kill him!!!", Line_WaitForInput); 
+	PlaySE(4, "ps3/s06/03/150300435", 256, 64);
+	OutputLine(NULL, "　圭ちゃん、逃げてええぇぇえぇええええッ！！！」",
+			NULL, "Kei-chan, get out of hereeeeeee!!!", Line_Normal); 
+	ClearMessage();
+
+//rぼりぼりッ、がりがりッ、ぼりぼりッ、がりがりッ、ぼりぼりッ、がりがりッ……！！
+	OutputLine(NULL, "ぼりぼりッ、がりがりッ、ぼりぼりッ、がりがりッ、ぼりぼりッ、がりがりッ……！！",
+			NULL, "Munch, crunch, munch, crunch, munch, crunch......!!", Line_Normal); 
+	ClearMessage();
+
+//r……ああ、鬱陶しい。
+	OutputLine(NULL, "……ああ、鬱陶しい。",
+			NULL, "......Ah, what a nuisance.", Line_Normal); 
+	ClearMessage();
+
+//rさっきから部屋の隅から聞こえてくる詩音の叫びも、ちょっと前まではいい気味だと心地よかったが、…今はただ、やかましくてうざったくて仕方がない。
+	OutputLine(NULL, "さっきから部屋の隅から聞こえてくる詩音の叫びも、ちょっと前まではいい気味だと心地よかったが、…今はただ、やかましくてうざったくて仕方がない。",
+			NULL, "Shion's screams coming from the corner of the chamber were enjoyable before; but now they felt unbearably noisy and pissed me off.", Line_Normal); 
+	ClearMessage();
+
+//rいっそのこと、…先に詩音から、始末してやろうか？
+	OutputLine(NULL, "いっそのこと、…先に詩音から、始末してやろうか？",
+			NULL, "How about I just get rid of Shion first?", Line_Normal); 
+	ClearMessage();
+
+//rむごたらしく惨めに、この世で味わう最高の絶望と恐怖を与えてから殺してやろうと思っていたけど、今は無性にこみ上げる、無差別な殺意を抑えるだけでも一苦労だった。
+	OutputLine(NULL, "むごたらしく惨めに、この世で味わう最高の絶望と恐怖を与えてから殺してやろうと思っていたけど、今は無性にこみ上げる、無差別な殺意を抑えるだけでも一苦労だった。",
+			NULL, "I wanted to kill her after she had the most exquisite taste of anguish and terror, but now I could barely suppress the indiscriminate urge to slaughter welling up within me.", Line_Normal); 
+	ClearMessage();
+
+	DrawScene("background/jsa7", 1000 );
+
+//r圭一はひたすら、私への敵意をあらわに叫び続けている。
+	OutputLine(NULL, "圭一はひたすら、私への敵意をあらわに叫び続けている。",
+			NULL, "Keiichi was relentlessly yelling his protests towards me.", Line_Normal); 
+	ClearMessage();
+
+//rやがて、最後は…喉を嗄らして、ひゅうひゅうと苦しそうにあえぎながらも、魅音を返せ、と声を絞り出すようにうめいた。
+	OutputLine(NULL, "やがて、最後は…喉を嗄らして、ひゅうひゅうと苦しそうにあえぎながらも、魅音を返せ、と声を絞り出すようにうめいた。",
+			NULL, "His throat closed up eventually and he gasped for breath, hoarsely continuing to demand Mion's return.", Line_Normal); 
+	ClearMessage();
+
+//詩音rvS06/06/150602590.「………圭ちゃん。kvS06/06/150602591.…冥土の土産、…なんて気の利いたものじゃないけれど。kvS06/06/150602592.……どうしても知りたがっているようだから、ひとつだけ教えてあげるよ」
+	PlaySE(4, "ps3/s06/06/150602590", 256, 64);
+	OutputLine(NULL, "「………圭ちゃん。",
+			NULL, "\".........Kei-chan.", Line_WaitForInput); 
+	PlaySE(4, "ps3/s06/06/150602591", 256, 64);
+	OutputLine(NULL, "…冥土の土産、…なんて気の利いたものじゃないけれど。",
+			NULL, " ...This may not be... something pleasant to take to the grave with you.", Line_WaitForInput); 
+	PlaySE(4, "ps3/s06/06/150602592", 256, 64);
+	OutputLine(NULL, "……どうしても知りたがっているようだから、ひとつだけ教えてあげるよ」",
+			NULL, " .........But you really seem to want to know, so I'll tell you just one thing.", Line_Normal); 
+	ClearMessage();
+
+//詩音rvS06/06/150602593.「……私の中に鬼が宿ったのはずいぶん前。kvS06/06/150602594.…その鬼は私を蝕み凶行に駆り立てようとした。kvS06/06/150602595.…だけれど、私はそれを理性で抑えつけた」
+	PlaySE(4, "ps3/s06/06/150602593", 256, 64);
+	OutputLine(NULL, "「……私の中に鬼が宿ったのはずいぶん前。",
+			NULL, "......The demon had already been dwelling inside me for a long time.", Line_WaitForInput); 
+	PlaySE(4, "ps3/s06/06/150602594", 256, 64);
+	OutputLine(NULL, "…その鬼は私を蝕み凶行に駆り立てようとした。",
+			NULL, " ...It had been gnawing at my heart, trying to spur me to violence, but...", Line_WaitForInput); 
+	PlaySE(4, "ps3/s06/06/150602595", 256, 64);
+	OutputLine(NULL, "…だけれど、私はそれを理性で抑えつけた」",
+			NULL, " I suppressed it with reasoning. ", Line_Normal); 
+	ClearMessage();
+
+//詩音rvS06/06/150602596.「…鬼はそれで治まり、…私は、その鬼はどこかへ行ってしまったんだと思い込んでいた。kvS06/06/150602597.…でも、本当は違った。kvS06/06/150602598.……私の中から出て行ったんじゃなく、…私の中で眠っていただけだったの」
+	PlaySE(4, "ps3/s06/06/150602596", 256, 64);
+	OutputLine(NULL, "「…鬼はそれで治まり、…私は、その鬼はどこかへ行ってしまったんだと思い込んでいた。",
+			NULL, "...The demon calmed down... and I convinced myself that it had disappeared.", Line_WaitForInput); 
+	PlaySE(4, "ps3/s06/06/150602597", 256, 64);
+	OutputLine(NULL, "…でも、本当は違った。",
+			NULL, " ...As it turns out, I was wrong.", Line_WaitForInput); 
+	PlaySE(4, "ps3/s06/06/150602598", 256, 64);
+	OutputLine(NULL, "……私の中から出て行ったんじゃなく、…私の中で眠っていただけだったの」",
+			NULL, " ......The demon never left me... it had just been asleep inside me.\", Line_Normal); 
+	ClearMessage();
+
+//rそう。
+	OutputLine(NULL, "そう。",
+			NULL, "Yes.", Line_Normal); 
+	ClearMessage();
+
+//r悟史くんが失踪したのを知った時、私の弱い心は悲しみに耐えるために、怒りで満たされたのだ。
+	OutputLine(NULL, "悟史くんが失踪したのを知った時、私の弱い心は悲しみに耐えるために、怒りで満たされたのだ。",
+			NULL, "When I learned about Satoshi-kun's disappearance, my ailing heart had crammed itself with rage to compensate for the despair.", Line_Normal); 
+	ClearMessage();
+
+//rでも、その狂気はそこまでで、噴出までには至らなかった。
+	OutputLine(NULL, "でも、その狂気はそこまでで、噴出までには至らなかった。",
+			NULL, "But that was the limit of my insanity. I would never have snapped.", Line_Normal); 
+	ClearMessage();
+
+//r時間が私を癒し、……悟史くんの思い出を、やわらかく包んで、胸の内にそっと、しまってくれたんだ。
+	OutputLine(NULL, "時間が私を癒し、……悟史くんの思い出を、やわらかく包んで、胸の内にそっと、しまってくれたんだ。",
+			NULL, ""Time had healed me... and my memories of Satoshi-kun were neatly wrapped up and pushed into the back of my mind. ", Line_Normal); 
+	ClearMessage();
+
+//詩音rvS06/06/150602599.「…その鬼は、…ある小さなことをきっかけにまた目覚めてしまった。kvS06/06/150602600.……それは…何に原因があったと思う…？」
+	PlaySE(4, "ps3/s06/06/150602599", 256, 64);
+	OutputLine(NULL, "「…その鬼は、…ある小さなことをきっかけにまた目覚めてしまった。",
+			NULL, "\"...That demon... had awoken again thanks to a certain, small opportunity.", Line_WaitForInput); 
+	PlaySE(4, "ps3/s06/06/150602600", 256, 64);
+	OutputLine(NULL, "……それは…何に原因があったと思う…？」",
+			NULL, " ......What do you think... that opportunity was...?\", Line_Normal); 
+	ClearMessage();
+
+//rそれは本当に小さな小さなこと。
+	OutputLine(NULL, "それは本当に小さな小さなこと。",
+			NULL, "It really was the smallest of the smallest things.", Line_Normal); 
+	ClearMessage();
+
+//圭一rvS06/01/150100413.「…………………」
+	PlaySE(4, "ps3/s06/01/150100413", 256, 64);
+	OutputLine(NULL, "「…………………」",
+			NULL, ".........", Line_Normal); 
+	ClearMessage();
+
+//詩音rvS06/06/150602601.「鬼の私が教えるのも変だけれど。kvS06/06/150602602.…あんたが全てをおかしくしてしまった元凶」
+	PlaySE(4, "ps3/s06/06/150602601", 256, 64);
+	OutputLine(NULL, "「鬼の私が教えるのも変だけれど。",
+			NULL, "This might be a strange thing to hear from a demon, but...", Line_WaitForInput); 
+	PlaySE(4, "ps3/s06/06/150602602", 256, 64);
+	OutputLine(NULL, "…あんたが全てをおかしくしてしまった元凶」",
+			NULL, " ...You're the reason everything got so messed up.\", Line_Normal); 
+	ClearMessage();
+
+//r…私の目元に溜まった涙がすーっと、…こぼれる。
+	OutputLine(NULL, "…私の目元に溜まった涙がすーっと、…こぼれる。",
+			NULL, "A tear rolled down my cheek.", Line_Normal); 
+	ClearMessage();
+
+//rそう。
+	OutputLine(NULL, "そう。",
+			NULL, "That's right.", Line_Normal); 
+	ClearMessage();
+
+//rあの時、魅音に人形を渡したりしなかったら、…全ての異常は起こらなかった。
+	OutputLine(NULL, "あの時、魅音に人形を渡したりしなかったら、…全ての異常は起こらなかった。",
+			NULL, "\"............Back then... if you hadn't given that doll to Mion, none of this would have happened.........", Line_Normal); 
+	ClearMessage();
+
+//詩音rvS06/06/150602604.「……圭ちゃんには理解できないだろうね。kvS06/06/150602605.理解できなくて当然」
+	PlaySE(4, "ps3/s06/06/150602604", 256, 64);
+	OutputLine(NULL, "「……圭ちゃんには理解できないだろうね。",
+			NULL, " ...You probably can't understand.", Line_WaitForInput); 
+	PlaySE(4, "ps3/s06/06/150602605", 256, 64);
+	OutputLine(NULL, "理解できなくて当然」",
+			NULL, " I don't expect you to. ", Line_Normal); 
+	ClearMessage();
+
+//詩音rvS06/06/150602606.「……だけどね、そこからドミノ倒しみたいにパタパタパタといろんなものが倒れ始めて、…収拾がつかなくなってしまった」
+	PlaySE(4, "ps3/s06/06/150602606", 256, 64);
+	OutputLine(NULL, "「……だけどね、そこからドミノ倒しみたいにパタパタパタといろんなものが倒れ始めて、…収拾がつかなくなってしまった」",
+			NULL, "...But, you see, after that, everything began to topple over one by one, like clattering dominoes... and it all got out of hand. ", Line_Normal); 
+	ClearMessage();
+
+//詩音rvS06/06/150602607.「…初めの小さなひとつを倒したあなたに自覚がないのは当然だろうけど、……あなたが元凶なの」
+	PlaySE(4, "ps3/s06/06/150602607", 256, 64);
+	OutputLine(NULL, "「…初めの小さなひとつを倒したあなたに自覚がないのは当然だろうけど、……あなたが元凶なの」",
+			NULL, "...It's normal you didn't realize because it was so small, but as the person to knock over the very first one......you were the cause of this tragedy.", Line_Normal); 
+	ClearMessage();
+
+	DrawScene("black", 1000 );
+
+//rあの時、圭ちゃんが優しさを見せたりしなかったら、…詩音は浮かれたりしなかった。
+	OutputLine(NULL, "あの時、圭ちゃんが優しさを見せたりしなかったら、…詩音は浮かれたりしなかった。",
+			NULL, "Back then, if Keiichi hadn't shown any affection, Shion wouldn't have been overjoyed.", Line_Normal); 
+	ClearMessage();
+
+//r浮かれて、幸せいっぱいに喜んで、…私にのろけたりもしなかった。
+	OutputLine(NULL, "浮かれて、幸せいっぱいに喜んで、…私にのろけたりもしなかった。",
+			NULL, "She wouldn't been overjoyed, and cheerfully boasted about him to me.", Line_Normal); 
+	ClearMessage();
+
+//r私はそれを聞いている内に、悟史くんのことを思い出して。
+	OutputLine(NULL, "私はそれを聞いている内に、悟史くんのことを思い出して。",
+			NULL, "As, I was listening to her, I was reminded of Satoshi-kun. ", Line_Normal); 
+	ClearMessage();
+
+	DrawScene("background/aka1", 1000 );
+
+//r…恋をした人が、生きてすぐ近くにいてくれることへの妬ましさを抱いた。
+	OutputLine(NULL, "…恋をした人が、生きてすぐ近くにいてくれることへの妬ましさを抱いた。",
+			NULL, "I became jealous of her for having someone she loved so close to her.", Line_Normal); 
+	ClearMessage();
+
+//rこれは小さな嫉妬心。
+	OutputLine(NULL, "これは小さな嫉妬心。",
+			NULL, "It was a very small jealousy. ", Line_Normal); 
+	ClearMessage();
+
+//r…でも、この小さな邪心が、私の心の奥で眠っていた鬼を、呼び起こしてしまった。
+	OutputLine(NULL, "…でも、この小さな邪心が、私の心の奥で眠っていた鬼を、呼び起こしてしまった。",
+			NULL, "But it had awoken the demon who was sleeping deep inside of me.", Line_Normal); 
+	ClearMessage();
+
+//rあとはもう、鬼に心を許すままだった。
+	OutputLine(NULL, "あとはもう、鬼に心を許すままだった。",
+			NULL, "After that, I just let the demon take over.", Line_Normal); 
+	ClearMessage();
+
+//r私の胸にいっぱいあった悟史くんの悲しみを、鬼は全部食べ尽くし、替わりに悟史くんの名を借りて復讐をするという、悟史くんが喜ぶはずもない恐ろしい提案で満たしていったのだ。
+	OutputLine(NULL, "私の胸にいっぱいあった悟史くんの悲しみを、鬼は全部食べ尽くし、替わりに悟史くんの名を借りて復讐をするという、悟史くんが喜ぶはずもない恐ろしい提案で満たしていったのだ。",
+			NULL, "The demon fed upon the copious amount of sadness I held for Satoshi-kun, and in return it committed heinous acts that Satoshi-kun himself would never be happy with, all in the name of avenging him.", Line_Normal); 
+	ClearMessage();
+
+//rそして、…その後に続いたいくつかの恐ろしい出来事が、私を後戻りできない鬼の世界へ誘っていくのだ。
+	OutputLine(NULL, "そして、…その後に続いたいくつかの恐ろしい出来事が、私を後戻りできない鬼の世界へ誘っていくのだ。",
+			NULL, "And now, the horrific events that had followed were inviting me to the realm of demons that had no return.", Line_Normal); 
+	ClearMessage();
+
+	DrawScene("background/jsa7", 1000 );
+
+//圭一rvS06/01/150100414.「…そんな、…うそ…だろ…？」
+	PlaySE(4, "ps3/s06/01/150100414", 256, 64);
+	OutputLine(NULL, "「…そんな、…うそ…だろ…？」",
+			NULL, "\"...That... that can't... be, can it...?\", Line_Normal); 
+	ClearMessage();
+
+//詩音rvS06/06/150602608.「………自覚がないのは当然。kvS06/06/150602609.でも、紛れもなく元凶なのは圭ちゃん」
+	PlaySE(4, "ps3/s06/06/150602608", 256, 64);
+	OutputLine(NULL, "「………自覚がないのは当然。",
+			NULL, "\".........I'm not surprised you weren't aware.", Line_WaitForInput); 
+	PlaySE(4, "ps3/s06/06/150602609", 256, 64);
+	OutputLine(NULL, "でも、紛れもなく元凶なのは圭ちゃん」",
+			NULL, "Even so you are without doubt the cause of this, Kei-chan.", Line_Normal); 
+	ClearMessage();
+
+//rあの時、人形を詩音に渡さず別の選択を選んでいたら、…きっと別の未来があっただろう。
+	OutputLine(NULL, "あの時、人形を詩音に渡さず別の選択を選んでいたら、…きっと別の未来があっただろう。",
+			NULL, "Back then, if you hadn't chosen to give the doll to Mion... we could've arrived at a different future.", Line_Normal); 
+	ClearMessage();
+
+//r………いや、違うな。
+	OutputLine(NULL, "………いや、違うな。",
+			NULL, ".........No, that wasn't right.", Line_Normal); 
+	ClearMessage();
+
+//r発端を、圭一のささいな事に求めるのは責任転嫁の極み、か。
+	OutputLine(NULL, "発端を、圭一のささいな事に求めるのは責任転嫁の極み、か。",
+			NULL, "Wouldn't pinpointing Keiichi's small action as the beginning, be the height of transferring blame?", Line_Normal); 
+	ClearMessage();
+
+//r…あの程度のことで、私の中の鬼が目を覚ますんだ。
+	OutputLine(NULL, "…あの程度のことで、私の中の鬼が目を覚ますんだ。",
+			NULL, "...i was implying such a silly thing had awoken the demon inside me.", Line_Normal); 
+	ClearMessage();
+
+//r圭一が発端にならなくても、いつか目覚めた。
+	OutputLine(NULL, "圭一が発端にならなくても、いつか目覚めた。",
+			NULL, "Even without Keiichi's act, it would've have awoken anyway.", Line_Normal); 
+	ClearMessage();
+
+//r…結局、私が悪い。
+	OutputLine(NULL, "…結局、私が悪い。",
+			NULL, "...at the end of the day, it was all my fault. ", Line_Normal); 
+	ClearMessage();
+
+//r鬼と戦わなかった。鬼を心に住まわせた。そしてあっさりと心を譲り渡した。
+	OutputLine(NULL, "鬼と戦わなかった。鬼を心に住まわせた。そしてあっさりと心を譲り渡した。",
+			NULL, "I didn't fight the demon. I allowed it to reside in my soul. And I readily offered it my heart.", Line_Normal); 
+	ClearMessage();
+
+//圭一rvS06/01/150100415.「………ぅぅぅ……ぅぅ…！！」
+	PlaySE(4, "ps3/s06/01/150100415", 256, 64);
+	OutputLine(NULL, "「………ぅぅぅ……ぅぅ…！！」",
+			NULL, "\"......gh...... ugh...!!\", Line_Normal); 
+	ClearMessage();
+
+//r圭一は涙を隠さなかった。ぼろぼろとこぼした。
+	OutputLine(NULL, "圭一は涙を隠さなかった。ぼろぼろとこぼした。",
+			NULL, "Keiichi didn't hide his tears. They were pouring down his cheeks.", Line_Normal); 
+	ClearMessage();
+
+//r…それは、鬼になり、自分の意思では自由に泣けなくなった、私の代わりにだったのかもしれない。
+	OutputLine(NULL, "…それは、鬼になり、自分の意思では自由に泣けなくなった、私の代わりにだったのかもしれない。",
+			NULL, "...Maybe he was crying in my place, as I was not free to do so, having chosen to become a tearless demon. ", Line_Normal); 
+	ClearMessage();
+
+	DrawScene("black", 1000 );
+
+//rだから、私は鬼として、生きる。
+	OutputLine(NULL, "だから、私は鬼として、生きる。",
+			NULL, "That is why I must go on, as the demon. ", Line_Normal); 
+	ClearMessage();
+
+//rいまさら人間らしい感傷も、ためらいも必要ない。
+	OutputLine(NULL, "いまさら人間らしい感傷も、ためらいも必要ない。",
+			NULL, "There was no room for human emotions or hesitation anymore.", Line_Normal); 
+	ClearMessage();
+
+//rそして――――。
+	OutputLine(NULL, "そして————。",
+			NULL, "And then————", Line_Normal); 
+	ClearMessage();
+
+//rぼりぼりッ、がりがりッ、ぼりぼりッ、がりがりッ、ぼりぼりッ、がりがりッ………ぷち……ッ！
+	OutputLine(NULL, "ぼりぼりッ、がりがりッ、ぼりぼりッ、がりがりッ、ぼりぼりッ、がりがりッ………ぷち……ッ！",
+			NULL, "Munch, crunch, munch, crunch, munch, crunch......snap......!!", Line_Normal); 
+	ClearMessage();
+
+	FadeOutBGM(1, 200, TRUE);
+
+	PlaySE(3, "thisikuki", 256, 64);
+
+	DrawScene("background/ryuuketu1_01", 1000 );
+
+//魅音rvS06/03/150300435_1.「…………………ぃ、…嫌ァああぁぁあああぁあああああああぁぁあぁああッ！！」
+	PlaySE(4, "ps3/s06/03/150300435_1", 256, 64);
+	OutputLine(NULL, "「…………………ぃ、…嫌ァああぁぁあああぁあああああああぁぁあぁああッ！！」",
+			NULL, ".........n... NOOOOOOOOOOOOOOOOOOO.....!!", Line_Normal); 
+	ClearMessage();
+
+//詩音rvS06/06/150602740.「くけけけけけけけけけけけけけけけけけけけけけけけけけけけけけけけけけけけけけけけけけけけけけけけけけけけけけけけけけけけけけけけけけけけけけけけけけけけけけけけけけけけけけけけけッッ！！！」
+	PlaySE(4, "ps3/s06/06/150602740", 256, 64);
+	OutputLine(NULL, "「くけけけけけけけけけけけけけけけけけけけけけけけけけけけけけけけけけけけけけけけけけけけけけけけけけけけけけけけけけけけけけけけけけけけけけけけけけけけけけけけけけけけけけけけけッッ！！！」",
+			NULL, "Ahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahaha...!!!", Line_Normal); 
+	ClearMessage();
+
+//r詩音の絹を引き裂くようなbどうこく.<慟哭>と、私のbゆえつ.<愉悦>の声。
+	OutputLine(NULL, "詩音の絹を引き裂くような慟哭(どうこく)と、私の愉悦(ゆえつ)の声。",
+			NULL, "Shion's wails rasping like silk tearing apart, along with my screams of ecstasy.", Line_Normal); 
+	ClearMessage();
+
+//rそれが、私が最後に聞いた、……bとこよ.<常世>の音色だった。
+	OutputLine(NULL, "それが、私が最後に聞いた、……常世(とこよ)の音色だった。",
+			NULL, "The last thing I heard... were those everlasting reverberations.", Line_Normal); 
+	ClearMessage();
+
+	DisableWindow();
+	SetValidityOfInput( FALSE );
+	Wait( 3000 );
+	DrawBustshotWithFiltering(6, "cinema", "x", 1, 0, 0, FALSE, 0, 0, 0, 0, 0, 25, 1300, TRUE );
+	DrawBustshot(7, "title02", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 26, 3000, TRUE );
+	Wait( 2000 );
+	DrawBustshot(6, "black", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 25, 3000, TRUE );
+	Wait( 1000 );
+	FadeBustshotWithFiltering( 7, "x", 1, FALSE, 0, 0, 1000, TRUE );
+	DrawScene( "black", 3000 );
+	SetValidityOfInput( TRUE );
+
+}
