@@ -6,9 +6,9 @@ void main()
 	FadeOutBGM( 2, 0, FALSE );
 	FadeOutBGM( 3, 0, FALSE );
 	ClearMessage();
-	
+
 	DrawScene("background/aka1", 1000 );
-	PlayBGM( 0, "hig_sample_kyouki", 120, 0 );
+	PlayBGM( 0, "hig_sample_kyouki", 56, 0 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　僕は、背中の人に囁かれる。",
@@ -32,7 +32,7 @@ void main()
 	OutputLine(NULL, "　そしたら、沙都子を誰も守ってくれなくなることに。",
 		   NULL, "There'll be nobody left to take care of Satoko.", Line_Normal);
 	ClearMessage();
-	PlaySE( 0, "s_page", 128, 64 );
+	PlaySE( 0, "s_page", 56, 64 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　僕は、背中の人に囁かれる。",
@@ -56,7 +56,7 @@ void main()
 	OutputLine(NULL, "　だから、残された時間を大切にしなくてはならないことに。",
 		   NULL, "So I had to make the best of the days I had left.", Line_Normal);
 	ClearMessage();
-	PlaySE( 0, "s_page", 128, 64 );
+	PlaySE( 0, "s_page", 56, 64 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　沙都子のために僕が残せるもの。",
@@ -74,7 +74,7 @@ void main()
 	OutputLine(NULL, "　誰にも虐められない平穏な生活。",
 		   NULL, "She wanted a peaceful life in which nobody would bully her.", Line_Normal);
 	ClearMessage();
-	PlaySE( 0, "s_page", 128, 64 );
+	PlaySE( 0, "s_page", 56, 64 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　僕は、背中の人に囁きかける。",
@@ -95,7 +95,7 @@ void main()
 	OutputLine(NULL, "僕に。",
 		   NULL, " filled with hatred.", Line_Normal);
 	ClearMessage();
-	
+
 	DisableWindow();
 	Wait( 1000 );
 	DrawScene("black", 1000 );

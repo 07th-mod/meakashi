@@ -8,7 +8,7 @@ void main()
 	ClearMessage();
 
 	DrawScene("background/nort", 400 );
-	PlayBGM( 0, "hig_sample_kyouki", 120, 0 );
+	PlayBGM( 0, "hig_sample_kyouki", 56, 0 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　この時の祭具殿侵入が、結局、鷹野さんたちの祟られる理由となった。",
@@ -20,7 +20,7 @@ void main()
 	OutputLine(NULL, "　祭具殿侵入がどういう形で発覚したのかは分からない。",
 		   NULL, "I don't know how the villagers found out about it.", Line_Normal);
 	ClearMessage();
-	PlaySE( 0, "s_page", 128, 64 );
+	PlaySE( 0, "s_page", 56, 64 );
 	DrawSceneWithMask("black", "maskright", 7, 0, 300 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -38,7 +38,7 @@ void main()
 	OutputLine(NULL, "　何れにせよ、この祭具殿侵入はおそらくリアルタイムで祟りのシステムの上位者に通報されていた。",
 		   NULL, "Either way, our intrusion must've been reported to the highest level of the curse system.", Line_Normal);
 	ClearMessage();
-	PlaySE( 0, "s_page", 128, 64 );
+	PlaySE( 0, "s_page", 56, 64 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　なぜなら、もっとも遠い地で遺体が見つかることになる鷹野さんの殺された時間などを考えると、",
@@ -57,7 +57,7 @@ void main()
 	OutputLine(NULL, "　相当高度な暗殺部隊が組織されているのか、さもなければ「５年目の祟りの準備」がすでにされていたからなのか。",
 		   NULL, "It's possible that a special assassination team exists for this purpose, or that the plan had been set up a long time ago.", Line_Normal);
 	ClearMessage();
-	PlaySE( 0, "s_page", 128, 64 );
+	PlaySE( 0, "s_page", 56, 64 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　園崎家の暗部を担当する秘密の集団の存在も否定できないが、後者の説の方が信憑性がある。",

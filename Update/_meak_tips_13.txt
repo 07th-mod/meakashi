@@ -8,7 +8,7 @@ void main()
 	ClearMessage();
 
 	DrawScene("background/so_k1", 1000 );
-	PlayBGM( 0, "z2_hig1", 120, 0 );
+	PlayBGM( 0, "z2_hig1", 56, 0 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　私が地下拷問室と呼んでいたあの場所は、正しくは地下祭具殿と呼ばれているらしい。",
@@ -20,7 +20,7 @@ void main()
 	OutputLine(NULL, "　ということは、拷問室と祭具殿は同義語だということなのか。",
 		   NULL, "So, do \"torture room\" and \"ritual storehouse\" mean the same thing?", Line_Normal);
 	ClearMessage();
-	PlaySE( 0, "s_page", 128, 64 );
+	PlaySE( 0, "s_page", 56, 64 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　鷹野さんの説では、明治以降も綿流しを始めとする血生臭い風習は、御三家に密かに引き継がれているという。",
@@ -45,7 +45,7 @@ void main()
 	OutputLine(NULL, "　鷹野さんの説は正しい。",
 		   NULL, "Takano-san's theory is correct.", Line_Normal);
 	ClearMessage();
-	PlaySE( 0, "s_page", 128, 64 );
+	PlaySE( 0, "s_page", 56, 64 );
 	DrawSceneWithMask("black", "maskright", 7, 0, 300 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -58,7 +58,7 @@ void main()
 	OutputLine(NULL, "　ここにおいても鷹野さんの説は正しい。",
 		   NULL, "Takano-san is right about that, too.", Line_Normal);
 	ClearMessage();
-	PlaySE( 0, "s_page", 128, 64 );
+	PlaySE( 0, "s_page", 56, 64 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　公由家の倉は知らないが、園崎家、古手家がこうして「祭具」を祀るのだから、近い規模の物を秘蔵しているに違いない。",

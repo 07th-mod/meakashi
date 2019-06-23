@@ -5,13 +5,13 @@ void main()
 	FadeOutBGM( 2, 0, FALSE );
 	FadeOutBGM( 3, 0, FALSE );
 	ClearMessage();
-	
+
 	DrawScene("black", 300 );
-	PlayBGM( 0, "demo_48khz", 120, 0 );
+	PlayBGM( 0, "demo_48khz", 56, 0 );
 	SetSpeedOfMessage( TRUE, 0 );
 	if (GetGlobalFlag(GADVMode) == 0) { SetDrawingPointOfMessage( 0, 4 ); }
 
-	PlayBGM( 1, "type", 120, 0 );
+	PlayBGM( 1, "type", 56, 0 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　昭和５８年６月。",
@@ -20,7 +20,7 @@ void main()
 	OutputLineAll(NULL, "", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
-	PlayBGM( 1, "type", 120, 0 );
+	PlayBGM( 1, "type", 56, 0 );
 
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -30,7 +30,7 @@ void main()
 	OutputLineAll(NULL, "", Line_Normal);
 	ClearMessage();
 
-	PlayBGM( 1, "type", 120, 0 );
+	PlayBGM( 1, "type", 56, 0 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　容疑者は、園崎魅音（１Ｘ歳）",
@@ -39,7 +39,7 @@ void main()
 	OutputLineAll(NULL, "", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
-	PlayBGM( 1, "type", 120, 0 );
+	PlayBGM( 1, "type", 56, 0 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　容疑者は６月１９日から２１日までの間に雛見沢村住民５人（園崎お魎・園崎詩音・公由喜一郎・古手梨花・北条沙都子）を拉致、監禁して殺害した疑い。",
@@ -48,7 +48,7 @@ void main()
 	OutputLineAll(NULL, "", Line_Normal);
 	ClearMessage();
 
-	PlayBGM( 1, "type", 120, 0 );
+	PlayBGM( 1, "type", 56, 0 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　事件は当初、情報不足のため初動捜査で遅れをとったが、偶然的、電撃的に解決した。",
@@ -59,7 +59,7 @@ void main()
 
 	DrawFilm( 2, 200, 200, 200, 256, 0, 0, FALSE );
 	DrawScene("background/so1", 400 );
-	PlayBGM( 1, "type", 120, 0 );
+	PlayBGM( 1, "type", 56, 0 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "２２日午前中、園崎邸前を巡回していた警邏車両は邸内よりの悲鳴を聞き、緊急措置として邸内へ突入。",
@@ -69,7 +69,7 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
 	DrawScene("background/so2", 400 );
-	PlayBGM( 1, "type", 120, 0 );
+	PlayBGM( 1, "type", 56, 0 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　失踪中の容疑者の妹（園崎詩音）とクラスメート２名（前原圭一・竜宮礼奈）を保護した。",
@@ -79,7 +79,7 @@ void main()
 	OutputLineAll(NULL, "", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
-	PlayBGM( 1, "type", 120, 0 );
+	PlayBGM( 1, "type", 56, 0 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　容疑者は現場より逃走する。",
@@ -89,7 +89,7 @@ void main()
 	ClearMessage();
 
 	DrawScene("black", 1000 );
-	PlayBGM( 1, "type", 120, 0 );
+	PlayBGM( 1, "type", 56, 0 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	if (GetGlobalFlag(GADVMode)) { OutputLine(NULL, "", NULL, "<size=-2>", Line_Continue); }
@@ -99,7 +99,7 @@ void main()
 	OutputLineAll(NULL, "", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
-	PlayBGM( 1, "type", 120, 0 );
+	PlayBGM( 1, "type", 56, 0 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　拷問室内で失踪者たちが拷問を受けたものと断定した。",
@@ -107,8 +107,8 @@ void main()
 	FadeOutBGM( 1, 0, FALSE );
 	OutputLineAll(NULL, "", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
-	
-	PlayBGM( 1, "type", 120, 0 );
+
+	PlayBGM( 1, "type", 56, 0 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　ただし、その遺体は依然、発見されていない。",
@@ -117,7 +117,7 @@ void main()
 	OutputLineAll(NULL, "", Line_Normal);
 	ClearMessage();
 
-	PlayBGM( 1, "type", 120, 0 );
+	PlayBGM( 1, "type", 56, 0 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	if (GetGlobalFlag(GADVMode)) { OutputLine(NULL, "", NULL, "<size=-2>", Line_Continue); }
@@ -127,7 +127,7 @@ void main()
 	OutputLineAll(NULL, "", Line_Normal);
 	ClearMessage();
 
-	PlayBGM( 1, "type", 120, 0 );
+	PlayBGM( 1, "type", 56, 0 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　また、ほのめかしたとされる近年の連続怪死事件への関与も捜査が続けられているが、",
@@ -135,8 +135,8 @@ void main()
 	FadeOutBGM( 1, 0, FALSE );
 	OutputLineAll(NULL, "", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
-	
-	PlayBGM( 1, "type", 120, 0 );
+
+	PlayBGM( 1, "type", 56, 0 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　園崎魅音が直接、または間接的に関わったという証拠は発見されていない。",
@@ -145,7 +145,7 @@ void main()
 	OutputLineAll(NULL, "", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
-	PlayBGM( 1, "type", 120, 0 );
+	PlayBGM( 1, "type", 56, 0 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	if (GetGlobalFlag(GADVMode)) { OutputLine(NULL, "", NULL, "<size=-2>", Line_Continue); }
@@ -156,7 +156,7 @@ void main()
 	ClearMessage();
 
 	DrawScene("background/ke1", 1000 );
-	PlayBGM( 1, "type", 120, 0 );
+	PlayBGM( 1, "type", 56, 0 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　地域に詳しい地元警察の見解では、雛見沢村内の信仰に対する冒涜行為を巡る、内部懲罰、リンチ事件ではないかと見ている。",
@@ -165,7 +165,7 @@ void main()
 	OutputLineAll(NULL, "", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
-	PlayBGM( 1, "type", 120, 0 );
+	PlayBGM( 1, "type", 56, 0 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　地域性に根ざした特殊な事件であることは間違いなく、県警本部は慎重な捜査を命じた。",
@@ -175,7 +175,7 @@ void main()
 	ClearMessage();
 
 	DrawScene("background/sinryou_sinsatu4", 1000 );
-	PlayBGM( 1, "type", 120, 0 );
+	PlayBGM( 1, "type", 56, 0 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　容疑者の妹で、もっとも監禁期間の長いと思われる失踪者（園崎詩音）から重要な手掛かりを得られるのではないかと期待したが、",
@@ -184,7 +184,7 @@ void main()
 	OutputLineAll(NULL, "", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
-	PlayBGM( 1, "type", 120, 0 );
+	PlayBGM( 1, "type", 56, 0 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　事件後、精神に重度の後遺症を患い、今日まで正常な事情聴取に応じられる精神状態にない。",
@@ -193,7 +193,7 @@ void main()
 	OutputLineAll(NULL, "", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
-	PlayBGM( 1, "type", 120, 0 );
+	PlayBGM( 1, "type", 56, 0 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　精神科医は、ショックによる一過性のものと診断したが、その回復の目処は今日でも立っていない。",

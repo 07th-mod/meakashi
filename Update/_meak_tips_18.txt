@@ -8,7 +8,7 @@ void main()
 	ClearMessage();
 
 	DrawSceneWithMask("background/jy1", "maskup", 1, 0, 1300 );
-	PlayBGM( 0, "Nazo", 120, 0 );
+	PlayBGM( 0, "Nazo", 56, 0 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　その後、私は公由村長の行方を捜す青年団に合流した。",
@@ -81,25 +81,25 @@ void main()
 	DrawSceneWithMask("background/m_y4", "maskleft", 1, 0, 300 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>村人</color>", NULL, "<color=#f5e6d3>Villager</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 0, "ps3/s20/00/villa44001", 128, TRUE);
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/villa44001", 256, TRUE);
 	OutputLine(NULL, "「……去年の捜索って、何時に終わりにしましたっけ？」",
 		   NULL, "\"......When did we stop searching last year, do you remember?\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>村人</color>", NULL, "<color=#f5e6d3>Villager</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 0, "ps3/s20/00/villb44001", 128, TRUE);
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/villb44001", 256, TRUE);
 	OutputLine(NULL, "「ん？",
 		   NULL, "\"Hmm?", Line_Continue);
 	Wait( 2000 );
 	OutputLine(NULL, "　北条んとこの悟史ん時かい？",
 		   NULL, " When Satoshi Houjou-kun was missing?", Line_WaitForInput);
-	ModPlayVoiceLS(4, 0, "ps3/s20/00/villb44002", 128, TRUE);
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/villb44002", 256, TRUE);
 	OutputLine(NULL, "　ありゃあ何時だったっけ？」",
 		   NULL, " Oh, what time was it?\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>長老</color>", NULL, "<color=#f5e6d3>Elder</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 0, "ps3/s20/00/elda44001", 128, TRUE);
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/elda44001", 256, TRUE);
 	OutputLine(NULL, "「午前の０時過ぎくらいには解散したような気がするなぁ。」",
 		   NULL, "\"I guess that was around midnight.\"", Line_Normal);
 	ClearMessage();
@@ -113,7 +113,7 @@ void main()
 	OutputLine(NULL, "　公由を捜すためにはこれだけの時間を割くのに、…悟史くんにはまったく割かない。",
 		   NULL, "Although they spent this much time searching for Kimiyoshi... they didn't do the same when Satoshi-kun went missing.", Line_Normal);
 	ClearMessage();
-	PlayBGM( 1, "semi_r", 120, 0 );
+	PlayBGM( 1, "semi_r", 56, 0 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　そう、絶対見つからないと知っているやつらが、居たからだ。",

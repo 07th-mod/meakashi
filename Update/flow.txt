@@ -52,7 +52,7 @@ void Title()
 
 	DrawScene("white", 1000);
 
-	PlayBGM( 2, "higurashi", 128, 0 );
+	PlayBGM( 2, "higurashi", 56, 0 );
 
 	DrawScene("background/so2", 1500);
 
@@ -87,7 +87,7 @@ void ChapterPreview()
 	FadeOutBGM( 2, 300, FALSE );
 	DisableWindow();
 
-	PlayBGM( 0, "lsys13", 128, 0 );
+	PlayBGM( 0, "lsys13", 56, 0 );
 	DrawSceneWithMask("black", "mask2", 1, 0, 1200 );
 	Wait( 1500 );
 
@@ -109,7 +109,7 @@ void ChapterPreview()
 
 	if (LoadValueFromLocalWork( LOCALWORK_NO_RESULT ) == 1) {
 		StopBGM( 0 );
-		PlaySE( 1, "wa_037", 128, 64 );
+		PlaySE( 1, "wa_037", 56, 64 );
 		FadeSprite( 9, 1000, TRUE );
 		DrawSprite( 9, "scenario/shortcuts", NULL, 0, 0, 0, 0, 0, 0, FALSE, FALSE, 0, 0, 20, 1000, TRUE );
 		Wait(10000);
