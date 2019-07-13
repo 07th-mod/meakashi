@@ -8,13 +8,13 @@ void main()
 	ClearMessage();
 
 	DrawScene("background/nort", 400 );
-	PlayBGM( 0, "demo_48khz", 120, 0 );
+	PlayBGM( 0, "demo_48khz", 56, 0 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　この時点での悟史くんの様子は本当に気の毒なものだった。",
 		   NULL, "Satoshi-kun looked terrible.", Line_Normal);
 	ClearMessage();
-	PlaySE( 0, "s_page", 128, 64 );
+	PlaySE( 0, "s_page", 56, 64 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　家に帰れば叔母と沙都子の喧嘩・苛めに割って入って精神をすり切らせ。",
@@ -34,7 +34,7 @@ void main()
 	OutputLine(NULL, "どこかに姿をくらましているかのどっちかだったらしい。",
 		   NULL, " or was gone somewhere during lunch break.", Line_Normal);
 	ClearMessage();
-	PlaySE( 0, "s_page", 128, 64 );
+	PlaySE( 0, "s_page", 56, 64 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　おっとりとしていた、在りし日の悟史くんを思うと、あまりに痛々しい。",
@@ -52,7 +52,7 @@ void main()
 	OutputLine(NULL, "　オヤシロさまの祟りとは、つまり、悟史くんを今年の犠牲者にしようという連中の「監視」のことに他ならない。",
 		   NULL, "That curse was a form of surveillance by those planning to victimize Satoshi-kun that year.", Line_Normal);
 	ClearMessage();
-	PlaySE( 0, "s_page", 128, 64 );
+	PlaySE( 0, "s_page", 56, 64 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　ならば。",
@@ -83,7 +83,7 @@ void main()
 	OutputLine(NULL, "　過去の犠牲者たちは皆、そういう監視の目があったのだろうか？",
 		   NULL, "Did the victims of the previous incidents also experience it?", Line_Normal);
 	ClearMessage();
-	PlaySE( 0, "s_page", 128, 64 );
+	PlaySE( 0, "s_page", 56, 64 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　悟史くんの「祟り」が「監視」であったことを立証するためにも、調べた方がいい。",
@@ -110,9 +110,9 @@ void main()
 	OutputLine(NULL, "なのか。",
 		   NULL, "...?", Line_Normal);
 	ClearMessage();
-	
+
 	DisableWindow();
-	PlaySE( 0, "s_page", 128, 64 );
+	PlaySE( 0, "s_page", 56, 64 );
 	Wait( 1000 );
 	DrawScene("black", 1000 );
 }

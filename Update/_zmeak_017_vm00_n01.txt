@@ -8,7 +8,7 @@ void dialog000()
 	OutputLine(NULL, "　私は少し急いで飲みすぎたせいか、畳の上でぐったりとしていた。",
 		   NULL, "Maybe I drank too much. I was lying on the tatami floor.", Line_Normal);
 	ClearMessage();
-	
+
 	ModDrawCharacter(1, 15, "sprite/normal/kasa_2_", "0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 0, FALSE );
 	DrawScene("background/ima1", 400 );
 
@@ -40,13 +40,13 @@ void dialog002()
 void dialog003()
 {
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 6, "ps3/s06/06/150601468", 128, TRUE);
+	ModPlayVoiceLS(4, 6, "ps3/s06/06/150601468", 256, TRUE);
 	OutputLine(NULL, "「富竹さんの、自分で自分の喉を引き裂いたってのは何？",
 		   NULL, "\"What about the way Tomitake-san died? He clawed out his own throat, right?", Line_WaitForInput);
-	ModPlayVoiceLS(4, 6, "ps3/s06/06/150601469", 128, TRUE);
+	ModPlayVoiceLS(4, 6, "ps3/s06/06/150601469", 256, TRUE);
 	OutputLine(NULL, "　狂気に駆り立てるような怪しいお薬でも注射したの？",
 		   NULL, " Did you give him a shot of some kind?", Line_WaitForInput);
-	ModPlayVoiceLS(4, 6, "ps3/s06/06/150601470", 128, TRUE);
+	ModPlayVoiceLS(4, 6, "ps3/s06/06/150601470", 256, TRUE);
 	OutputLine(NULL, "　それとも、そういう死に方に見せるような拷問道具でもあるわけ？」",
 		   NULL, " Or is there a torture device that did that to him?\"", Line_Normal);
 	ClearMessage();
@@ -55,13 +55,13 @@ void dialog003()
 void dialog004()
 {
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 6, "ps3/s06/06/150601490", 128, TRUE);
+	ModPlayVoiceLS(4, 6, "ps3/s06/06/150601490", 256, TRUE);
 	OutputLine(NULL, "「でも、鬼婆の独断だとしたって。",
 		   NULL, "\"But even if she decides by herself,", Line_WaitForInput);
-	ModPlayVoiceLS(4, 6, "ps3/s06/06/150601491", 128, TRUE);
+	ModPlayVoiceLS(4, 6, "ps3/s06/06/150601491", 256, TRUE);
 	OutputLine(NULL, "鬼婆はあんたを介してやり取りしてるわけでしょ？",
 		   NULL, " the hag uses you to take care of various things, doesn't she?", Line_WaitForInput);
-	ModPlayVoiceLS(4, 6, "ps3/s06/06/150601492", 128, TRUE);
+	ModPlayVoiceLS(4, 6, "ps3/s06/06/150601492", 256, TRUE);
 	OutputLine(NULL, "　そのあんたが何も知らないなんてあるはず、」",
 		   NULL, " And you're telling me you don't know anything?\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
