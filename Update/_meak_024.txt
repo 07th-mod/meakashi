@@ -2542,20 +2542,16 @@ void main()
 
 	char Item[2];
 
-	if(GetGlobalFlag(GLanguage) == 1)
-	{
+	if (GetGlobalFlag(GLanguage) == 1) {
 		Item[0] = "At that time, I became aware of Keiichi's gaze";
 		Item[1] = "And then, I turned around to face Keiichi";
-	}
-	else
-	{
+	} else {
 		Item[0] = "その時、私は圭一の視線に気がついた";
 		Item[1] = "そして私は、圭一に振り返った ";
 	}
 
 	Select( 2, Item );
-	if(LoadValueFromLocalWork( SelectResult ) == 0)
-	{
+	if (LoadValueFromLocalWork(SelectResult) == 0) {
 		CallScript( "_meak_badend_1" );
 	}
 
