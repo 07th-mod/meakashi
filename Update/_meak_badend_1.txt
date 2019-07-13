@@ -181,7 +181,7 @@ void main()
 	OutputLine(NULL, "その、正解の言葉を……。",
 			NULL, "And he spoke the truth.", Line_Normal);
 	ClearMessage();
-	
+
 	FadeOutBGM( 1, 400, FALSE );
 
 //圭一rvS06/01/VX_keiichi_0002.「…………詩音、だな…？」
@@ -198,7 +198,7 @@ void main()
 			NULL, "\"........\"", Line_Normal);
 	ClearMessage();
 
-	PlayBGM(2, "t2", 56, 0);
+	PlayBGM( 2, "t2", 56, 0 );
 
 //r………………へぇ……。
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -1032,7 +1032,7 @@ void main()
 
 	DisableWindow();
 	FadeOutBGM(1, 100, FALSE);
-	PlaySE(3, "thisikuki", 56, 64);
+	PlaySE( 3, "thisikuki", 56, 64 );
 	DrawSceneWithMask("background/ryuuketu1", "maskaa", 1, 0, 100 );
 
 //魅音rvS06/03/150300435_1.「…………………ぃ、…嫌ァああぁぁあああぁあああああああぁぁあぁああッ！！」

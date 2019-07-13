@@ -8,7 +8,7 @@ void main()
 
 //BADEND
 
-	PlayBGM(2, "demo_48khz", 56, 0);
+	PlayBGM( 2, "demo_48khz", 56, 0 );
 
 	PlayBGM( 1, "type", 56, 0 );
 
@@ -232,7 +232,7 @@ void main()
 
 	FadeOutBGM( 2, 1000, FALSE );
 	DrawScene("black", 1000 );
-	PlayBGM(2, "t2", 56, 0);
+	PlayBGM( 2, "t2", 56, 0 );
 
 //r…あれから、数週間が過ぎた。
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -637,7 +637,7 @@ void main()
 			NULL, "...wanted to devote even a little bit of my remaining time here, for her.", Line_Normal);
 	ClearMessage();
 
-	PlayBGM(2, "msys06", 56, 0);
+	PlayBGM( 2, "msys06", 56, 0 );
 
 //圭一rvS06/01/330100421.「……。kvS06/01/330100422.そうだな、魅音。kvS06/01/330100423.一緒にどこか、…行くか？」
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
@@ -933,7 +933,7 @@ void main()
 
 	FadeOutBGM(1, 1000, FALSE);
 	DrawScene("black", 1000 );
-	PlayBGM(2, "msys06", 56, 0);
+	PlayBGM( 2, "msys06", 56, 0 );
 	PlayBGM( 1, "semi", 56, 0 );
 	DrawScene("background/k_kouen1", 1000 );
 
@@ -1308,7 +1308,7 @@ void main()
 	ClearMessage();
 
 	DisableWindow();
-	PlaySE(3, "s_down", 56, 64);
+	PlaySE( 3, "s_down", 56, 64 );
 	DrawScene("scene/206c", 100 );
 	PlayBGM( 0, "yabaisemi", 56, 0 );
 
