@@ -453,6 +453,15 @@ void Game()
 	{
 		CallScript( "_meak_024");
 
+		if (LoadValueFromLocalWork( SelectResult ) == 0) {
+			CallScript( "_meak_024a" );
+			CallScript( "_meak_badend" );
+
+			JumpSection("Title");
+		}
+
+		CallScript( "_meak_024b" );
+
 		GetAchievement("HIGURASHI_STORY_EP05_13");
 
 		StoreValueToLocalWork(NewTipsStart, 20);
