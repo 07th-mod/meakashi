@@ -1337,7 +1337,14 @@ void main()
 			NULL, "\"N-Nooooooooooooo!!\"", Line_Normal);
 	ClearMessage();
 
+	SetValidityOfInput( FALSE );
 	FadeOutBGM(0, 2000, FALSE);
 	DrawScene("black", 2000 );
+	PlaySE( 3, "s_z03_haikyo", 56, 64 );
+	DrawScene("bad_end", 3000 );
+	Wait( 2000 );
+	DrawScene("black", 3000 );
+	Wait( 1000 );
+	SetValidityOfInput( TRUE );
 
 }
