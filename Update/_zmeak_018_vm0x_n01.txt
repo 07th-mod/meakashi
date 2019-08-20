@@ -58,10 +58,10 @@ void dialog002()
 void dialog003()
 {
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 6, "ps2/06/150601550", 256, TRUE);
+	ModPlayVoiceLS(4, 6, "ps2/06/150601550", 540, TRUE);
 	OutputLine(NULL, "「さっきの音は聞こえてなかった？",
 		   NULL, "\"Did you hear some noise earlier?", Line_WaitForInput);
-	ModPlayVoiceLS(4, 6, "ps2/06/150601551", 256, TRUE);
+	ModPlayVoiceLS(4, 6, "ps2/06/150601551", 540, TRUE);
 	OutputLine(NULL, "　バァさんを鞭で叩く音。」",
 		   NULL, " That was me whipping the old lady.\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -78,16 +78,16 @@ void dialog003()
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 6, "ps2/06/150601552", 256, TRUE);
+	ModPlayVoiceLS(4, 6, "ps2/06/150601552", 540, TRUE);
 	OutputLine(NULL, "「大丈夫。",
 		   NULL, "\"Don't worry,", Line_WaitForInput);
-	ModPlayVoiceLS(4, 6, "ps2/06/150601553", 256, TRUE);
+	ModPlayVoiceLS(4, 6, "ps2/06/150601553", 540, TRUE);
 	OutputLine(NULL, "あんたは叩かない。",
 		   NULL, " I won't whip you.", Line_WaitForInput);
-	ModPlayVoiceLS(4, 6, "ps2/06/150601554", 256, TRUE);
+	ModPlayVoiceLS(4, 6, "ps2/06/150601554", 540, TRUE);
 	OutputLine(NULL, "でもね、あんたが不愉快だと、バァさんをもっと叩くかもしれない。",
 		   NULL, " But if you don't cooperate, I might punish her some more.", Line_WaitForInput);
-	ModPlayVoiceLS(4, 6, "ps2/06/150601555", 256, TRUE);
+	ModPlayVoiceLS(4, 6, "ps2/06/150601555", 540, TRUE);
 	OutputLine(NULL, "今度は鞭なんかじゃなくて、」",
 		   NULL, " Next time I won't use a whip.\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -99,7 +99,7 @@ void dialog004()
 	ModPlayVoiceLS(4, 6, "ps3/s06/06/150601557", 256, TRUE);
 	OutputLine(NULL, "「あはは、それに関しては著しく同感。",
 		   NULL, "\"Ahaha, I feel the same way.", Line_WaitForInput);
-	ModPlayVoiceLS(4, 6, "ps2/06/150601558", 256, TRUE);
+	ModPlayVoiceLS(4, 6, "ps2/06/150601558", 540, TRUE);
 	OutputLine(NULL, "この秘密部屋の犠牲者たちが放り込まれた井戸になんか、好きこのんで降りたくはないもんね。」",
 		   NULL, " Why would I go down the well where they tossed the victims of this secret room?\"", Line_Normal);
 	ClearMessage();
