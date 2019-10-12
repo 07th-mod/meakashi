@@ -390,6 +390,7 @@ void main()
 			NULL, "But, my parents had discussed amongst themselves for two nights straight without consulting me... and decided we would move away from Hinamizawa.", Line_Normal);
 	ClearMessage();
 
+	ModSetLayerFilter(1, 256, "none");
 	ModDrawCharacter(1, 2, "sprite/normal/re2b_komaru_b2_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 0, FALSE );
 	DrawScene("background/ma3", 1000 );
 
@@ -466,6 +467,7 @@ void main()
 	ClearMessage();
 
 	DrawScene("black", 1000 );
+	ModSetLayerFilter(2, 256, "none");
 	ModDrawCharacter(2, 3, "sprite/normal/me1a_sinmyou_a1_", "0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, FALSE );
 	ModDrawCharacter(1, 2, "sprite/normal/re2b_def_b1_", "0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 0, FALSE );
 	DrawScene("background/byo_01", 1000 );
@@ -836,8 +838,10 @@ void main()
 	ClearMessage();
 
 	DrawScene("black", 1000 );
-	ModDrawCharacter(3, 3, "sprite/sunset/me1a_def_a1_", "0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 0, FALSE );
-	ModDrawCharacter(1, 2, "sprite/sunset/re2b_warai_b1_", "0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 0, FALSE );
+	ModSetLayerFilter(3, 256, "sunset");
+	ModDrawCharacter(3, 3, "sprite/normal/me1a_def_a1_", "0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 0, FALSE );
+	ModSetLayerFilter(1, 256, "sunset");
+	ModDrawCharacter(1, 2, "sprite/normal/re2b_warai_b1_", "0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 0, FALSE );
 	DrawScene("background/byo_02", 1000 );
 
 //r……。

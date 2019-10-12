@@ -19,6 +19,7 @@ void main()
 	OutputLine(NULL, "　悟史くんが、…何事もなかったように日々の生活に戻っている夢。",
 		   NULL, "Satoshi-kun was in the dream. He was leading his normal everyday life.", Line_Normal);
 	ClearMessage();
+	ModSetLayerFilter(2, 256, "none");
 	ModDrawCharacter(2, 7, "sprite/normal/sato2_warai_", "1", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, FALSE );
 	DrawScene("background/oki_g3", 1300 );
 
@@ -33,6 +34,7 @@ void main()
 	OutputLine(NULL, "　私と監督は、何事もなかったように接するのが大人の対応だとばかりに、これまでの空白時間を全て忘れて、彼を迎えてあげるのだ。",
 		   NULL, "Irie and I acted normally around him because we knew that's how mature people should act. We welcomed him back, as if he had been here with us the whole time.", Line_Normal);
 	ClearMessage();
+	ModSetLayerFilter(1, 256, "none");
 	ModDrawCharacter(1, 7, "sprite/normal/sato2_def2_", "0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 0, FALSE );
 	DrawScene("background/oki_g3", 400 );
 
@@ -1236,6 +1238,7 @@ void main()
 	DrawScene("background/sora", 1000 );
 	Wait( 2000 );
 	DrawSceneWithMask("white", "maskright", 1, 0, 300 );
+	ModSetLayerFilter(2, 256, "none");
 	ModDrawCharacter(2, 2, "sprite/normal/re1a_warai_a1_", "2", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, FALSE );
 	DrawSceneWithMask("background/ie1", "maskright", 1, 0, 400 );
 
@@ -1263,6 +1266,7 @@ void main()
 		   NULL, " Y-You should have just gone on ahead...\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 	DisableWindow();
+	ModSetLayerFilter(1, 256, "none");
 	ModDrawCharacter(1, 1, "sprite/normal/kei1_def1_", "0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 300, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
@@ -1426,6 +1430,7 @@ void main()
 	SetValidityOfInput( FALSE );
 	Wait( 700 );
 	SetValidityOfInput( TRUE );
+	ModSetLayerFilter(3, 256, "none");
 	ModDrawCharacter(3, 22, "sprite/normal/tie_1_", "0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 0, FALSE );
 	DrawSceneWithMask("background/gk3", "maskup", 1, 0, 300 );
 
@@ -1705,6 +1710,7 @@ void main()
 		   NULL, "Keiichi exaggerated his reaction, but he still seemed worried.", Line_Normal);
 	ClearMessage();
 	DisableWindow();
+	ModSetLayerFilter(2, 256, "none");
 	ModDrawCharacter(2, 1, "sprite/normal/kei1_def2_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
@@ -1739,6 +1745,7 @@ void main()
 		   NULL, " He, in response, turned around.", Line_Normal);
 	ClearMessage();
 	DisableWindow();
+	ModSetLayerFilter(1, 256, "none");
 	ModDrawCharacter(1, 1, "sprite/normal/kei1_def1_", "0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 300, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }

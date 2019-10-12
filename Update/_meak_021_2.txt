@@ -4,7 +4,8 @@ void main()
 	ClearMessage();
 
 	DrawSceneWithMask("white", "maskleft", 1, 0, 300 );
-	ModDrawCharacter(3, 5, "sprite/sunset/ri2_warai_a1_", "2", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 0, FALSE );
+	ModSetLayerFilter(3, 256, "sunset");
+	ModDrawCharacter(3, 5, "sprite/normal/ri2_warai_a1_", "2", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 0, FALSE );
 	DrawScene("background/so1_02", 400 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#6972c1>梨花</color>", NULL, "<color=#6972c1>Rika</color>", NULL, Line_ContinueAfterTyping); }
@@ -51,6 +52,7 @@ void main()
 		   NULL, "\"Don't worry, I'll get it for you. Why don't you wait there?\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 	DisableWindow();
+	ModSetLayerFilter(1, 256, "none");
 	ModDrawCharacter(1, 5, "sprite/normal/ri2_komaru_a1_", "0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 300, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#6972c1>梨花</color>", NULL, "<color=#6972c1>Rika</color>", NULL, Line_ContinueAfterTyping); }
@@ -110,6 +112,7 @@ void main()
 		   NULL, "Rika bumped into me.", Line_Normal);
 	ClearMessage();
 	DisableWindow();
+	ModSetLayerFilter(2, 256, "none");
 	ModDrawCharacter(2, 5, "portrait/normal/ri2_komaru_a1_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 300, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#6972c1>梨花</color>", NULL, "<color=#6972c1>Rika</color>", NULL, Line_ContinueAfterTyping); }
@@ -268,7 +271,8 @@ void main()
 		   NULL, " Take as much as you want.\"", Line_Normal);
 	ClearMessage();
 	FadeOutBGM( 0, 300, FALSE );
-	ModDrawCharacter(2, 5, "portrait/sunset/ri2_niyari_a1_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, FALSE );
+	ModSetLayerFilter(2, 256, "sunset");
+	ModDrawCharacter(2, 5, "portrait/normal/ri2_niyari_a1_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, FALSE );
 	DrawScene("background/so_d1_01", 300 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -342,7 +346,7 @@ void main()
 	OutputLine(NULL, "　私は自分が、悪意を持った攻撃を受けたことを認識するまで数秒間、無防備に顔を覆って転げまわっていた。",
 		   NULL, "As I stumbled around, covering my face, I then realized I was attacked.", Line_Normal);
 	ClearMessage();
-	ModDrawCharacter(2, 5, "portrait/sunset/ri2_niyari_a1_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, FALSE );
+	ModDrawCharacter(2, 5, "portrait/normal/ri2_niyari_a1_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, FALSE );
 	DrawScene("background/so_d1_01", 300 );
 	PlayBGM( 1, "kaze", 56, 0 );
 
@@ -515,7 +519,7 @@ void main()
 		   NULL, "Shit, I'm too much of a mess to even think!", Line_Normal);
 	ClearMessage();
 
-	ModDrawCharacter(2, 5, "portrait/sunset/ri2_niyari_a1_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, FALSE );
+	ModDrawCharacter(2, 5, "portrait/normal/ri2_niyari_a1_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, FALSE );
 	DrawScene("background/so_d1_01", 400 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -1060,7 +1064,7 @@ void main()
 		   NULL, "Well, actually, even if you do, you'll go through the same misery anyway, heh heh heh!\"", Line_Normal);
 	ClearMessage();
 
-	ModDrawCharacter(2, 5, "sprite/sunset/ri2_niyari_a1_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, FALSE );
+	ModDrawCharacter(2, 5, "sprite/normal/ri2_niyari_a1_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, FALSE );
 	DrawScene("background/so_d1_01", 400 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#6972c1>梨花</color>", NULL, "<color=#6972c1>Rika</color>", NULL, Line_ContinueAfterTyping); }

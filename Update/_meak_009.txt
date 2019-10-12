@@ -103,6 +103,7 @@ void main()
 		   NULL, "He must've known that I hadn't eaten enough and that I'd been feeling down lately.", Line_Normal);
 	ClearMessage();
 
+	ModSetLayerFilter(2, 256, "none");
 	ModDrawCharacter(2, 15, "sprite/normal/kasa_2_", "2", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, FALSE );
 	DrawScene("background/si_g1", 300 );
 
@@ -190,6 +191,7 @@ void main()
 		   NULL, "While I nibbled on the food, Kasai read through the magazines I bought.", Line_Normal);
 	ClearMessage();
 
+	ModSetLayerFilter(3, 256, "none");
 	ModDrawCharacter(3, 15, "sprite/normal/kasa_2_", "2", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 0, FALSE );
 	DrawScene("background/si_h3", 300 );
 
@@ -416,6 +418,7 @@ void main()
 		   NULL, "Satoshi-kun will be freed from every source of his worries all at once!", Line_Normal);
 	ClearMessage();
 
+	ModSetLayerFilter(3, 256, "none");
 	ModDrawCharacter(3, 15, "sprite/normal/kasa_1_", "0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 0, FALSE );
 	DrawSceneWithMask("background/si_h3", "maskup", 1, 0, 300 );
 
@@ -515,6 +518,7 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	DisableWindow();
+	ModSetLayerFilter(3, 256, "none");
 	ModDrawCharacter(3, 15, "sprite/normal/kasa_1_", "0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#76523d>葛西</color>", NULL, "<color=#76523d>Kasai</color>", NULL, Line_ContinueAfterTyping); }

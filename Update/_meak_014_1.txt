@@ -17,6 +17,7 @@ void main()
 	OutputLine(NULL, "　今、何て？」",
 		   NULL, " What did you just say?\"", Line_Normal);
 	ClearMessage();
+	ModSetLayerFilter(1, 256, "none");
 	ModDrawCharacter(1, 15, "sprite/normal/kasa_1_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 0, FALSE );
 	DrawSceneWithMask("background/si_g1", "maskleft", 1, 0, 300 );
 	PlayBGM( 0, "Nazo", 56, 0 );
@@ -305,6 +306,7 @@ void main()
 	SetValidityOfInput( FALSE );
 	Wait( 2000 );
 	SetValidityOfInput( TRUE );
+	ModSetLayerFilter(2, 256, "none");
 	ModDrawCharacter(2, 11, "sprite/normal/oisi1_1_", "0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, FALSE );
 	DrawSceneWithMask("background/ke_ky1", "maskleft", 1, 0, 300 );
 
@@ -585,6 +587,7 @@ void main()
 	OutputLine(NULL, "　その顔は、ほんの少し真剣だった。",
 		   NULL, "He looked serious.", Line_Normal);
 	ClearMessage();
+	ModSetLayerFilter(2, 256, "none");
 	ModDrawCharacter(2, 11, "sprite/normal/oisi1_1_", "0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, FALSE );
 	DrawSceneWithMask("background/ke_ky1", "maskdown", 1, 0, 300 );
 
@@ -619,6 +622,7 @@ void main()
 	OutputLine(NULL, "…………………ねぇ？",
 		   NULL, " ...you know?", GetGlobalFlag(GLinemodeSp));
 	DisableWindow();
+	ModSetLayerFilter(2, 256, "none");
 	ModDrawCharacter(2, 11, "sprite/normal/oisi1_2_", "1", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>Ooishi</color>", NULL, Line_ContinueAfterTyping); }
@@ -739,6 +743,7 @@ void main()
 
 	DrawScene("black", 2000 );
 	FadeOutBGM( 1, 400, FALSE );
+	ModSetLayerFilter(2, 256, "none");
 	ModDrawCharacter(2, 11, "sprite/normal/oisi1_1_", "0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, FALSE );
 	DrawScene("background/ke_ky1", 400 );
 	PlayBGM( 0, "semi", 56, 0 );
@@ -843,6 +848,7 @@ void main()
 	//VoiceMatchingEnd
 
 	DisableWindow();
+	ModSetLayerFilter(2, 256, "none");
 	ModDrawCharacter(2, 11, "sprite/normal/oisi1_4_", "2", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>Ooishi</color>", NULL, Line_ContinueAfterTyping); }
@@ -1896,6 +1902,7 @@ void main()
 		   NULL, " I couldn't stop myself from gasping when I realized that.", Line_Normal);
 	ClearMessage();
 
+	ModSetLayerFilter(1, 256, "none");
 	ModDrawCharacter(1, 9, "sprite/normal/ta1_warai_", "2", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 0, FALSE );
 	DrawSceneWithMask("background/tosyo2", "maskright", 7, 0, 300 );
 	PlaySE( 4, "wa_027", 56, 64 );
@@ -1935,6 +1942,7 @@ void main()
 		   NULL, "But she just stared at my face instead...", Line_Normal);
 	ClearMessage();
 	DisableWindow();
+	ModSetLayerFilter(1, 256, "none");
 	ModDrawCharacter(1, 9, "sprite/normal/ta1_def_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 200, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>女性</color>", NULL, "<color=#f5e6d3>Woman</color>", NULL, Line_ContinueAfterTyping); }
@@ -2639,6 +2647,7 @@ void main()
 	OutputLine(NULL, "　そんな私でさえ避ける禁句をあっさりと口にする三四さんは、そんなことはまるで気にしない風だった。",
 		   NULL, "Miyo-san, however, seemed to have no qualms with saying it out loud.", Line_Normal);
 	ClearMessage();
+	ModSetLayerFilter(2, 256, "none");
 	ModDrawCharacter(2, 9, "sprite/normal/ta1_def_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, FALSE );
 	DrawSceneWithMask("background/tosyo2", "maskup", 1, 0, 300 );
 

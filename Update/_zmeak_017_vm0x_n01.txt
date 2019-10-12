@@ -9,6 +9,7 @@ void dialog000()
 		   NULL, "Maybe I overexerted a little. I was lying on the tatami floor.", Line_Normal);
 	ClearMessage();
 
+	ModSetLayerFilter(1, 256, "none");
 	ModDrawCharacter(1, 15, "sprite/normal/kasa_2_", "0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 0, FALSE );
 	DrawScene("background/ima1", 400 );
 

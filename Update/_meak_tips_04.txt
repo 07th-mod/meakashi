@@ -19,6 +19,7 @@ void main()
 	PlaySE( 0, "s_page", 56, 64 );
 	DrawScene("black", 300 );
 	DrawFilm( 2, 0x88, 0x88, 0x88, 256, 0, 0, TRUE );
+	ModSetLayerFilter(2, 256, "none");
 	ModDrawCharacter(2, 2, "sprite/normal/re2a_def_a1_", "2", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }

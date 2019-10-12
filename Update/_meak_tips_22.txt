@@ -55,6 +55,7 @@ void main()
 	OutputLine(NULL, "　悪いけど、周辺の部屋のベランダとかも調べ直してください。」",
 		   NULL, " Ah, would you look at the neighboring balcony again?\"", Line_Normal);
 	ClearMessage();
+	ModSetLayerFilter(2, 256, "none");
 	ModDrawCharacter(2, 19, "sprite/normal/kuma_def_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, FALSE );
 	DrawSceneWithMask("background/ke_ky2", "maskleft", 1, 0, 300 );
 
@@ -109,6 +110,7 @@ void main()
 	OutputLine(NULL, "　今度フラワーロードで一杯おごりますよ。」",
 		   NULL, " I'll buy you a drink on Flower Road!\"", Line_Normal);
 	ClearMessage();
+	ModSetLayerFilter(3, 256, "none");
 	ModDrawCharacter(3, 19, "sprite/normal/kuma_komaru_", "0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 0, FALSE );
 	DrawSceneWithMask("background/ke_s2", "maskright", 1, 0, 300 );
 

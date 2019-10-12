@@ -618,6 +618,7 @@ void main()
 	ClearMessage();
 	DrawScene("white", 1000 );
 	FadeOutBGM( 0, 1000, FALSE );
+	ModSetLayerFilter(2, 256, "none");
 	ModDrawCharacter(2, 7, "sprite/normal/sato1_komaru_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, FALSE );
 	DrawScene("background/mati4", 1000 );
 
