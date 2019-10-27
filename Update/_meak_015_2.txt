@@ -21,11 +21,11 @@ void main()
 	SetValidityOfInput( TRUE );
 	DrawSceneWithMask("white", "maskc", 1, 0, 300 );
 	ModSetLayerFilter(1, 256, "none");
-	ModDrawCharacter(1, 2, "sprite/normal/re2a_komaru_a1_", "0", -240, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 0, FALSE );
+	ModDrawCharacter(1, 2, "sprite/re2a_komaru_a1_", "0", -240, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 0, FALSE );
 	ModSetLayerFilter(2, 256, "none");
-	ModDrawCharacter(2, 5, "sprite/normal/ri2_warai_a1_", "2", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, FALSE );
+	ModDrawCharacter(2, 5, "sprite/ri2_warai_a1_", "2", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, FALSE );
 	ModSetLayerFilter(3, 256, "none");
-	ModDrawCharacter(3, 4, "sprite/normal/sa2a_akireru_a1_", "0", 240, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 0, FALSE );
+	ModDrawCharacter(3, 4, "sprite/sa2a_akireru_a1_", "0", 240, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 0, FALSE );
 	DrawScene("background/ji1", 1000 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#fcdb77>沙都子</color>", NULL, "<color=#fcdb77>Satoko</color>", NULL, Line_ContinueAfterTyping); }
@@ -34,7 +34,7 @@ void main()
 		   NULL, "\"Humph! I'm quite amazed by your dirty deeds, Keiichi-san!!\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 	DisableWindow();
-	ModDrawCharacter(2, 5, "sprite/normal/ri2_def_a1_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );
+	ModDrawCharacter(2, 5, "sprite/ri2_def_a1_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#6972c1>梨花</color>", NULL, "<color=#6972c1>Rika</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 5, "ps3/s06/05/150500023", 256, TRUE);
@@ -42,7 +42,7 @@ void main()
 		   NULL, "\"......He is a boy, after all.\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 	DisableWindow();
-	ModDrawCharacter(1, 2, "sprite/normal/re2b_hau_b1_", "2", -240, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 200, TRUE );
+	ModDrawCharacter(1, 2, "sprite/re2b_hau_b1_", "2", -240, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 200, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 2, "ps3/s06/02/150200160", 256, TRUE);
@@ -50,8 +50,8 @@ void main()
 		   NULL, "\"Mii-chan, Shii-chan... Keiichi-kun looks confused...... hau...\"", Line_Normal);
 	ClearMessage();
 	DrawSceneWithMask("black", "maskleft", 1, 0, 300 );
-	ModDrawCharacter(2, 1, "portrait/normal/kei2_nayamu_", "2", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, FALSE );
-	ModDrawCharacter(1, 3, "portrait/normal/me2_odoroki_a1_", "1", -200, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 0, FALSE );
+	ModDrawCharacter(2, 1, "portrait/kei2_nayamu_", "2", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, FALSE );
+	ModDrawCharacter(1, 3, "portrait/me2_odoroki_a1_", "1", -200, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 0, FALSE );
 	DrawScene("background/ji2", 1000 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
@@ -68,7 +68,7 @@ void main()
 	OutputLine(NULL, "「引っ張りっこなんかしてないよ、詩音が引っ張らなければ済むことでしょー？！",
 		   NULL, "\"I'm not playing tug of war! You're the one who's stretching him.", GetGlobalFlag(GLinemodeSp));
 	DisableWindow();
-	ModDrawCharacter(1, 3, "portrait/normal/me2_ikari_a1_", "2", -200, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 200, TRUE );
+	ModDrawCharacter(1, 3, "portrait/me2_ikari_a1_", "2", -200, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 200, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 3, "ps3/s06/03/150300306", 256, TRUE);
@@ -90,8 +90,8 @@ void main()
 
 	DisableWindow();
 	PlaySE( 0, "s_furu", 56, 64 );
-	ModDrawCharacter(2, 1, "sprite/normal/kei2_komaru_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, FALSE );
-	ModDrawCharacter(1, 3, "sprite/normal/me2_odoroki_a1_", "1", -200, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 200, TRUE );
+	ModDrawCharacter(2, 1, "sprite/kei2_komaru_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, FALSE );
+	ModDrawCharacter(1, 3, "sprite/me2_odoroki_a1_", "1", -200, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 200, TRUE );
 	Wait( 100 );
 	FadeAllBustshots( 400, TRUE );
 	PlaySE( 0, "s_Down", 56, 64 );
@@ -119,7 +119,7 @@ void main()
 		   NULL, " Sis might assault me if I stick around any longer, so I'll get going.\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 	DisableWindow();
-	ModDrawCharacter(2, 1, "portrait/normal/kei2_def2_", "0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 300, TRUE );
+	ModDrawCharacter(2, 1, "portrait/kei2_def2_", "0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 300, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 1, "ps3/s06/01/150100080", 256, TRUE);
@@ -139,7 +139,7 @@ void main()
 		   NULL, " I didn't do much.\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 	DisableWindow();
-	ModDrawCharacter(2, 1, "portrait/normal/kei2_warai_", "2", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );
+	ModDrawCharacter(2, 1, "portrait/kei2_warai_", "2", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 1, "ps3/s06/01/150100081_1", 256, TRUE);
@@ -238,7 +238,7 @@ void main()
 	ClearMessage();
 	if (GetGlobalFlag(GADVMode) == 0) { ClearMessage(); }
 
-	ModDrawCharacter(2, 1, "portrait/normal/kei2_warai_", "2", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, FALSE );
+	ModDrawCharacter(2, 1, "portrait/kei2_warai_", "2", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, FALSE );
 	DrawScene("black", 800 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }

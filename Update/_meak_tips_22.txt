@@ -56,7 +56,7 @@ void main()
 		   NULL, " Ah, would you look at the neighboring balcony again?\"", Line_Normal);
 	ClearMessage();
 	ModSetLayerFilter(2, 256, "none");
-	ModDrawCharacter(2, 19, "sprite/normal/kuma_def_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, FALSE );
+	ModDrawCharacter(2, 19, "sprite/kuma_def_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, FALSE );
 	DrawSceneWithMask("background/ke_ky2", "maskleft", 1, 0, 300 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#8f6d8f>熊谷</color>", NULL, "<color=#8f6d8f>Kumagai</color>", NULL, Line_ContinueAfterTyping); }
@@ -111,7 +111,7 @@ void main()
 		   NULL, " I'll buy you a drink on Flower Road!\"", Line_Normal);
 	ClearMessage();
 	ModSetLayerFilter(3, 256, "none");
-	ModDrawCharacter(3, 19, "sprite/normal/kuma_komaru_", "0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 0, FALSE );
+	ModDrawCharacter(3, 19, "sprite/kuma_komaru_", "0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 0, FALSE );
 	DrawSceneWithMask("background/ke_s2", "maskright", 1, 0, 300 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#8f6d8f>熊谷</color>", NULL, "<color=#8f6d8f>Kumagai</color>", NULL, Line_ContinueAfterTyping); }
@@ -152,7 +152,7 @@ void main()
 		   NULL, " Anyway, with that, you gain a clearer understanding of their relationship.\"", Line_Normal);
 	ClearMessage();
 	DisableWindow();
-	ModDrawCharacter(3, 19, "sprite/normal/kuma_def_", "0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
+	ModDrawCharacter(3, 19, "sprite/kuma_def_", "0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#8f6d8f>熊谷</color>", NULL, "<color=#8f6d8f>Kumagai</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 19, "ps3/s20/19/443100056", 256, TRUE);

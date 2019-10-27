@@ -14,7 +14,7 @@ void main()
 	Wait( 1200 );
 	SetValidityOfInput( TRUE );
 	ModSetLayerFilter(3, 256, "none");
-	ModDrawCharacter(3, 22, "sprite/normal/tie_1_", "0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 0, FALSE );
+	ModDrawCharacter(3, 22, "sprite/tie_1_", "0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 0, FALSE );
 	DrawScene("background/gk3", 400 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#68aee5>知恵</color>", NULL, "<color=#68aee5>Chie</color>", NULL, Line_ContinueAfterTyping); }
@@ -83,7 +83,7 @@ void main()
 
 	FadeOutBGM( 0, 300, FALSE );
 	FadeOutBGM( 2, 300, FALSE );
-	ModDrawCharacter(3, 7, "sprite/normal/sato1_komaru_", "0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 0, FALSE );
+	ModDrawCharacter(3, 7, "sprite/sato1_komaru_", "0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 0, FALSE );
 	DrawSceneWithMask("background/gk1", "maskright", 1, 0, 300 );
 	PlayBGM( 1, "msys17", 56, 0 );
 
@@ -118,7 +118,7 @@ void main()
 
 	DisableWindow();
 	ModSetLayerFilter(1, 256, "none");
-	ModDrawCharacter(1, 4, "sprite/normal/sa1a_muhyou_a1_", "0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 300, TRUE );
+	ModDrawCharacter(1, 4, "sprite/sa1a_muhyou_a1_", "0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 300, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　悟史くんに負けず劣らず……、ぼろぼろの、まるで感情を失った人形みたいだった。",
@@ -230,7 +230,7 @@ void main()
 
 	DisableWindow();
 	ModSetLayerFilter(2, 256, "none");
-	ModDrawCharacter(2, 7, "sprite/normal/sato1_komaru_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
+	ModDrawCharacter(2, 7, "sprite/sato1_komaru_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　悟史くんは私の声に過敏に反応して振り返った。",
@@ -576,7 +576,7 @@ void main()
 		   NULL, "Streaks of tears ran down my cheeks.", Line_Normal);
 	ClearMessage();
 
-	ModDrawCharacter(2, 7, "sprite/normal/sato1_ikari_", "1", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, FALSE );
+	ModDrawCharacter(2, 7, "sprite/sato1_ikari_", "1", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, FALSE );
 	DrawScene("background/g2", 400 );
 	Wait( 1000 );
 	FadeAllBustshots( 400, TRUE );
@@ -621,7 +621,7 @@ void main()
 	DrawScene("white", 200 );
 	PlaySE( 0, "wa_020", 56, 64 );
 	FadeOutBGM( 1, 300, FALSE );
-	ModDrawCharacter(3, 4, "sprite/normal/sa1a_sakebu_a1_", "1", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 0, FALSE );
+	ModDrawCharacter(3, 4, "sprite/sa1a_sakebu_a1_", "1", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 0, FALSE );
 	DrawSceneWithMask("background/gk3", "maskleft", 7, 0, 300 );
 	PlayBGM( 0, "semi", 56, 0 );
 	PlayBGM( 2, "suzume", 56, 0 );
@@ -676,7 +676,7 @@ void main()
 		   NULL, "Yet Satoko... started begging through her tears.", Line_Normal);
 	ClearMessage();
 	DisableWindow();
-	ModDrawCharacter(3, 4, "sprite/normal/sa1b_sakebu_b1_", "1", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
+	ModDrawCharacter(3, 4, "sprite/sa1b_sakebu_b1_", "1", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#fcdb77>沙都子</color>", NULL, "<color=#fcdb77>Satoko</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 4, "ps3/s06/04/150400001", 256, TRUE);
@@ -736,7 +736,7 @@ void main()
 		   NULL, " She must be wondering why I did that.", Line_Normal);
 	ClearMessage();
 
-	ModDrawCharacter(1, 4, "portrait/normal/sa1b_naku_b1_", "2", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 0, FALSE );
+	ModDrawCharacter(1, 4, "portrait/sa1b_naku_b1_", "2", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 0, FALSE );
 	DrawScene("background/gk3", 400 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
@@ -784,7 +784,7 @@ void main()
 		   NULL, " She just crouched and trembled while looking up at me.", Line_Normal);
 	ClearMessage();
 
-	ModDrawCharacter(2, 4, "sprite/normal/sa1b_sakebu_b1_", "1", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, FALSE );
+	ModDrawCharacter(2, 4, "sprite/sa1b_sakebu_b1_", "1", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, FALSE );
 	DrawSceneWithMask("background/gk3", "maskleft", 1, 0, 300 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#fcdb77>沙都子</color>", NULL, "<color=#fcdb77>Satoko</color>", NULL, Line_ContinueAfterTyping); }
@@ -1002,8 +1002,8 @@ void main()
 	ClearMessage();
 
 	DisableWindow();
-	ModDrawCharacter(2, 5, "sprite/normal/ri1_majime_a1_", "1", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, FALSE );
-	ModDrawCharacter(1, 4, "sprite/normal/sa1b_sakebu_b1_", "1", -50, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 0, FALSE );
+	ModDrawCharacter(2, 5, "sprite/ri1_majime_a1_", "1", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, FALSE );
+	ModDrawCharacter(1, 4, "sprite/sa1b_sakebu_b1_", "1", -50, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 0, FALSE );
 	DrawScene("background/gk3", 400 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -1106,7 +1106,7 @@ void main()
 	DisableWindow();
 	FadeOutBGM( 2, 300, FALSE );
 	PlaySE( 0, "s_door", 56, 64 );
-	ModDrawCharacter(3, 2, "sprite/normal/re1a_okoru_a1_", "0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 0, FALSE );
+	ModDrawCharacter(3, 2, "sprite/re1a_okoru_a1_", "0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 0, FALSE );
 	DrawSceneWithMask("background/gk3", "maskleft", 7, 0, 300 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
@@ -1124,7 +1124,7 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
 	DisableWindow();
-	ModDrawCharacter(3, 7, "sprite/normal/sato1_ikari_", "1", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 300, TRUE );
+	ModDrawCharacter(3, 7, "sprite/sato1_ikari_", "1", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 300, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　そのレナを押しのけ、駆け込んできたのは、………悟史くんだった。",
@@ -1160,9 +1160,9 @@ void main()
 		   NULL, " I crouched there in pain.", Line_Normal);
 	ClearMessage();
 
-	ModDrawCharacter(3, 5, "sprite/normal/ri1_majime_a1_", "1", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 0, FALSE );
-	ModDrawCharacter(2, 4, "sprite/normal/sa1b_sakebu_b1_", "1", -50, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, FALSE );
-	ModDrawCharacter(1, 7, "sprite/normal/sato1_komaru_", "0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 0, FALSE );
+	ModDrawCharacter(3, 5, "sprite/ri1_majime_a1_", "1", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 0, FALSE );
+	ModDrawCharacter(2, 4, "sprite/sa1b_sakebu_b1_", "1", -50, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, FALSE );
+	ModDrawCharacter(1, 7, "sprite/sato1_komaru_", "0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 0, FALSE );
 	DrawScene("background/gk3", 400 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#ffdc6f>悟史</color>", NULL, "<color=#ffdc6f>Satoshi</color>", NULL, Line_ContinueAfterTyping); }
@@ -1190,7 +1190,7 @@ void main()
 	DisableWindow();
 	FadeBustshot( 3, FALSE, 0, 0, 0, 0, 200, TRUE );
 	FadeBustshot( 2, FALSE, 0, 0, 0, 0, 200, TRUE );
-	ModDrawCharacter(2, 4, "sprite/normal/sa1b_sakebu_b1_", "1", 100, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );
+	ModDrawCharacter(2, 4, "sprite/sa1b_sakebu_b1_", "1", 100, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　沙都子は、たった今まで身を挺して庇ってくれていた梨花を押しのけると、悟史くんに飛びついて、…泣いた。",
@@ -1198,7 +1198,7 @@ void main()
 	ClearMessage();
 
 	DisableWindow();
-	ModDrawCharacter(1, 7, "sprite/normal/sato1_ikari_", "1", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 200, TRUE );
+	ModDrawCharacter(1, 7, "sprite/sato1_ikari_", "1", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 200, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#ffdc6f>悟史</color>", NULL, "<color=#ffdc6f>Satoshi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 7, "ps3/s06/07/151200159", 256, TRUE);
@@ -1229,7 +1229,7 @@ void main()
 
 	DisableWindow();
 	FadeBustshot( 1, FALSE, 0, 0, 0, 0, 200, TRUE );
-	ModDrawCharacter(1, 7, "sprite/normal/sato1_ikari_", "1", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 200, TRUE );
+	ModDrawCharacter(1, 7, "sprite/sato1_ikari_", "1", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 200, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#ffdc6f>悟史</color>", NULL, "<color=#ffdc6f>Satoshi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 7, "ps3/s06/07/151200166", 256, TRUE);
@@ -1270,7 +1270,7 @@ void main()
 
 	DisableWindow();
 	FadeAllBustshots( 100, TRUE );
-	ModDrawCharacter(2, 7, "portrait/normal/sato1_ikari_", "1", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 300, TRUE );
+	ModDrawCharacter(2, 7, "portrait/sato1_ikari_", "1", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 300, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　沙都子を解放し、悟史くんは私に迫り、…襟首を掴み上げた。",
@@ -1361,7 +1361,7 @@ void main()
 		   NULL, "...I no longer had any control over my emotions at all.", Line_Normal);
 	ClearMessage();
 
-	ModDrawCharacter(2, 7, "sprite/normal/sato1_ikari_", "1", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, FALSE );
+	ModDrawCharacter(2, 7, "sprite/sato1_ikari_", "1", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, FALSE );
 	DrawScene("background/gk1", 400 );
 	PlayBGM( 1, "msys30", 56, 0 );
 
@@ -1427,8 +1427,8 @@ void main()
 		   NULL, "She stepped in, looking as fierce as a demon.", Line_Normal);
 	ClearMessage();
 
-	ModDrawCharacter(3, 2, "sprite/normal/re1b_okoru_b1_", "0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 0, FALSE );
-	ModDrawCharacter(2, 7, "sprite/normal/sato1_ikari_", "1", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, FALSE );
+	ModDrawCharacter(3, 2, "sprite/re1b_okoru_b1_", "0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 0, FALSE );
+	ModDrawCharacter(2, 7, "sprite/sato1_ikari_", "1", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, FALSE );
 	DrawScene("background/gk1", 400 );
 	PlayBGM( 1, "msys17", 56, 0 );
 
@@ -1442,7 +1442,7 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	DisableWindow();
-	ModDrawCharacter(3, 2, "sprite/normal/re1b_def_b1_", "2", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
+	ModDrawCharacter(3, 2, "sprite/re1b_def_b1_", "2", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 2, "ps3/s06/02/150200130", 256, TRUE);
@@ -1454,7 +1454,7 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	DisableWindow();
-	ModDrawCharacter(2, 7, "sprite/normal/sato1_komaru_", "0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );
+	ModDrawCharacter(2, 7, "sprite/sato1_komaru_", "0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#ffdc6f>悟史</color>", NULL, "<color=#ffdc6f>Satoshi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 7, "ps3/s06/07/151200184", 256, TRUE);
@@ -1468,7 +1468,7 @@ void main()
 	ClearMessage();
 
 	DisableWindow();
-	ModDrawCharacter(3, 2, "sprite/normal/re1a_okoru_a1_", "0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
+	ModDrawCharacter(3, 2, "sprite/re1a_okoru_a1_", "0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 2, "ps3/s06/02/150200132", 256, TRUE);
@@ -1492,8 +1492,8 @@ void main()
 	ClearMessage();
 
 	DisableWindow();
-	ModDrawCharacter(3, 2, "sprite/normal/re1b_warai_b1_", "2", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 300, FALSE );
-	ModDrawCharacter(1, 4, "sprite/normal/sa1a_sakebu_a1_", "1", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 300, TRUE );
+	ModDrawCharacter(3, 2, "sprite/re1b_warai_b1_", "2", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 300, FALSE );
+	ModDrawCharacter(1, 4, "sprite/sa1a_sakebu_a1_", "1", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 300, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 2, "ps3/s06/02/150200136", 256, TRUE);
@@ -1512,7 +1512,7 @@ void main()
 
 	DisableWindow();
 	FadeBustshot( 2, FALSE, 0, 0, 0, 0, 200, TRUE );
-	ModDrawCharacter(2, 5, "sprite/normal/ri1_komaru_a1_", "0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );
+	ModDrawCharacter(2, 5, "sprite/ri1_komaru_a1_", "0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#6972c1>梨花</color>", NULL, "<color=#6972c1>Rika</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 5, "ps3/s06/05/150500006", 256, TRUE);
@@ -1533,7 +1533,7 @@ void main()
 
 	DisableWindow();
 	FadeAllBustshots( 600, TRUE );
-	ModDrawCharacter(2, 2, "sprite/normal/re1a_def_a1_", "2", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 300, TRUE );
+	ModDrawCharacter(2, 2, "sprite/re1a_def_a1_", "2", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 300, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 2, "ps3/s06/02/150200140", 256, TRUE);
@@ -1558,7 +1558,7 @@ void main()
 
 	DrawScene("black", 400 );
 	Wait( 2000 );
-	ModDrawCharacter(2, 2, "sprite/normal/re1a_def_a1_", "2", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, FALSE );
+	ModDrawCharacter(2, 2, "sprite/re1a_def_a1_", "2", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, FALSE );
 	DrawScene("background/gk1", 400 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
@@ -1575,7 +1575,7 @@ void main()
 
 	DisableWindow();
 	FadeBustshot( 2, FALSE, 0, 0, 0, 0, 200, TRUE );
-	ModDrawCharacter(2, 7, "sprite/normal/sato1_komaru_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );
+	ModDrawCharacter(2, 7, "sprite/sato1_komaru_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 6, "ps3/s06/06/150600676", 256, TRUE);
@@ -1610,7 +1610,7 @@ void main()
 
 	DisableWindow();
 	FadeBustshot( 2, FALSE, 0, 0, 0, 0, 200, TRUE );
-	ModDrawCharacter(2, 2, "sprite/normal/re1a_def_a1_", "2", 0, 0, 0, FALSE, 0, 0, 0, 0, 0,  0,  0, 10, 200, TRUE );
+	ModDrawCharacter(2, 2, "sprite/re1a_def_a1_", "2", 0, 0, 0, FALSE, 0, 0, 0, 0, 0,  0,  0, 10, 200, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 2, "ps3/s06/02/150200147", 256, TRUE);
@@ -1623,7 +1623,7 @@ void main()
 
 	DisableWindow();
 	FadeBustshot( 2, FALSE, 0, 0, 0, 0, 200, TRUE );
-	ModDrawCharacter(2, 4, "sprite/normal/sa1b_hannbeso_b3_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );
+	ModDrawCharacter(2, 4, "sprite/sa1b_hannbeso_b3_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　……悟史くんには謝れても、…沙都子に謝る気はさらさらなかった。",
@@ -1637,7 +1637,7 @@ void main()
 	ClearMessage();
 
 	DisableWindow();
-	ModDrawCharacter(2, 4, "sprite/normal/sa1a_hannbeso_a3_", "2", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );
+	ModDrawCharacter(2, 4, "sprite/sa1a_hannbeso_a3_", "2", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　沙都子は憮然とした表情のまま、…謝罪を受け入れたことを示す意味で頷いてみせる…。",

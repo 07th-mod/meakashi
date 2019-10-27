@@ -1622,7 +1622,7 @@ void main()
 		   NULL, "What she said was something hard to believe.", Line_Normal);
 	ClearMessage();
 	ModSetLayerFilter(2, 256, "flashback");
-	ModDrawCharacter(2, 17, "sprite/normal/oryou_shinken_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, FALSE );
+	ModDrawCharacter(2, 17, "sprite/oryou_shinken_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, FALSE );
 	DrawScene("background/flashback/ima3", 1000 );
 	PlayBGM( 0, "msys27", 56, 0 );
 
@@ -1708,7 +1708,7 @@ void main()
 		   NULL, "When the relatives saw that, they became fearful of Oryou's power.", Line_Normal);
 	ClearMessage();
 	DrawScene("black", 400 );
-	ModDrawCharacter(2, 17, "sprite/normal/oryou_shinken_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, FALSE );
+	ModDrawCharacter(2, 17, "sprite/oryou_shinken_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, FALSE );
 	DrawScene("background/flashback/ima3", 1000 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -1716,7 +1716,7 @@ void main()
 		   NULL, "When the dam construction site manager was killed...", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 	DisableWindow();
-	ModDrawCharacter(2, 17, "sprite/normal/oryou_warai_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );
+	ModDrawCharacter(2, 17, "sprite/oryou_warai_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　お魎は意味深に笑って見せた。",

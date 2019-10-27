@@ -318,7 +318,7 @@ void main()
 
 	DisableWindow();
 	ModSetLayerFilter(1, 256, "none");
-	ModDrawCharacter(1, 10, "sprite/normal/iri2_def1_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 400, TRUE );
+	ModDrawCharacter(1, 10, "sprite/iri2_def1_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 400, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　…………入江診療所の所長。",
@@ -338,7 +338,7 @@ void main()
 		   NULL, "The villagers liked his mature personality, and really respected him.", Line_Normal);
 	ClearMessage();
 	DisableWindow();
-	ModDrawCharacter(1, 10, "sprite/normal/iri2_majime_", "2", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 200, TRUE );
+	ModDrawCharacter(1, 10, "sprite/iri2_majime_", "2", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 200, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　何しろ、医者の殺人鬼ほど怖いものはない。",
@@ -406,9 +406,9 @@ void main()
 	ClearMessage();
 
 	DisableWindow();
-	ModDrawCharacter(1, 18, "sprite/normal/ki_def_", "0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 400, FALSE );
+	ModDrawCharacter(1, 18, "sprite/ki_def_", "0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 400, FALSE );
 	ModSetLayerFilter(3, 256, "none");
-	ModDrawCharacter(3, 5, "sprite/normal/ri5_def_a1_", "0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 400, TRUE );
+	ModDrawCharacter(3, 5, "sprite/ri5_def_a1_", "0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 400, TRUE );
 
 	PlayBGM( 1, "semi_r", 56, 0 );
 

@@ -139,7 +139,7 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	ModSetLayerFilter(2, 256, "none");
-	ModDrawCharacter(2, 3, "sprite/normal/me2_sinmyou_a1_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, FALSE );
+	ModDrawCharacter(2, 3, "sprite/me2_sinmyou_a1_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, FALSE );
 	DrawScene("background/si_g1", 400 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
@@ -218,7 +218,7 @@ void main()
 		   NULL, "I talked to her about school and whatnot.", Line_Normal);
 	ClearMessage();
 
-	ModDrawCharacter(2, 3, "sprite/normal/me2_def_a1_", "2", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, FALSE );
+	ModDrawCharacter(2, 3, "sprite/me2_def_a1_", "2", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, FALSE );
 	DrawSceneWithMask("background/si_g1", "maskleft", 1, 0, 300 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
@@ -245,7 +245,7 @@ void main()
 		   NULL, " I don't want to live with him, but he sounds desperate.\"", Line_Normal);
 	ClearMessage();
 	DisableWindow();
-	ModDrawCharacter(2, 3, "sprite/normal/me2_warai_a1_", "2", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );
+	ModDrawCharacter(2, 3, "sprite/me2_warai_a1_", "2", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 3, "ps3/s06/03/150300237", 256, TRUE);
@@ -274,7 +274,7 @@ void main()
 		   NULL, "Come to think of it, this was the first time I'd talked to Sis since I was allowed to live as Shion Sonozaki.", Line_Normal);
 	ClearMessage();
 
-	ModDrawCharacter(2, 3, "sprite/normal/me2_warai_a1_", "2", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, FALSE );
+	ModDrawCharacter(2, 3, "sprite/me2_warai_a1_", "2", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, FALSE );
 	DrawScene("black", 1000 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -324,7 +324,7 @@ void main()
 		   NULL, " I'd have done the same.", Line_Normal);
 	ClearMessage();
 
-	ModDrawCharacter(2, 3, "sprite/normal/me2_yowaki_a1_", "2", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 1000, FALSE );
+	ModDrawCharacter(2, 3, "sprite/me2_yowaki_a1_", "2", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 1000, FALSE );
 	DrawScene("background/si_g1", 1000 );
 
 
@@ -398,7 +398,7 @@ void main()
 		   NULL, " I won't forgive you for the rest of my life!\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 	DisableWindow();
-	ModDrawCharacter(2, 3, "sprite/normal/me2_hau_a1_", "1", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );
+	ModDrawCharacter(2, 3, "sprite/me2_hau_a1_", "1", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 3, "ps3/s06/03/150300243", 256, TRUE);
@@ -418,7 +418,7 @@ void main()
 		   NULL, " so I'm cutting you off.\"", Line_Normal);
 	ClearMessage();
 	DisableWindow();
-	ModDrawCharacter(2, 3, "sprite/normal/me2_sinmyou_a1_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );
+	ModDrawCharacter(2, 3, "sprite/me2_sinmyou_a1_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );
 
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
@@ -551,7 +551,7 @@ void main()
 
 	DisableWindow();
 	FadeFilm( 300, FALSE );
-	ModDrawCharacter(2, 3, "sprite/normal/me2_yowaki_a1_", "2", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 300, TRUE );
+	ModDrawCharacter(2, 3, "sprite/me2_yowaki_a1_", "2", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 300, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 3, "ps3/s06/03/150300252", 256, TRUE);
@@ -847,7 +847,7 @@ void main()
 		   NULL, "......Her tears dissolved my demon's anger like how the sun melts ice...", Line_Normal);
 	ClearMessage();
 	ModSetLayerFilter(1, 256, "none");
-	ModDrawCharacter(1, 3, "sprite/normal/me2_yowaki_a1_", "2", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 0, FALSE );
+	ModDrawCharacter(1, 3, "sprite/me2_yowaki_a1_", "2", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 0, FALSE );
 	DrawScene("background/si_g1", 400 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
@@ -1045,7 +1045,7 @@ void main()
 
 	DisableWindow();
 	PlaySE( 4, "wa_003", 56, 64 );
-	ModDrawCharacter(2, 3, "sprite/normal/me2_yowaki_a1_", "2", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, FALSE );
+	ModDrawCharacter(2, 3, "sprite/me2_yowaki_a1_", "2", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, FALSE );
 	DrawSceneWithMask("background/si_g1", "maskup", 1, 0, 300 );
 	PlayBGM( 0, "yoru", 56, 0 );
 

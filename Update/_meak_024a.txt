@@ -260,7 +260,7 @@ void main()
 	ClearMessage();
 
 	ModSetLayerFilter(1, 256, "flashback");
-	ModDrawCharacter(1, 1, "sprite/normal/kei2_ikari1_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 0, FALSE );
+	ModDrawCharacter(1, 1, "sprite/kei2_ikari1_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 0, FALSE );
 	DrawSceneWithMask("background/flashback/mati_o1", "maskc", 0, 0, 1000 );
 
 //rお前……誰だ？
@@ -311,7 +311,7 @@ void main()
 	ClearMessage();
 
 	DisableWindow();
-	ModDrawCharacter(1, 1, "sprite/normal/kei2_majime_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 200, TRUE );
+	ModDrawCharacter(1, 1, "sprite/kei2_majime_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 200, TRUE );
 
 //rわからない。……勘だ。
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }

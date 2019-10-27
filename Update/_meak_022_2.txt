@@ -9,7 +9,7 @@ void main()
 	SetValidityOfInput( TRUE );
 	PlayBGM( 0, "yoru", 56, 0 );
 	ModSetLayerFilter(1, 256, "night");
-	ModDrawCharacter(1, 1, "sprite/normal/kei2_komaru_", "0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 0, FALSE );
+	ModDrawCharacter(1, 1, "sprite/kei2_komaru_", "0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 0, FALSE );
 	DrawScene("background/y_ie1", 2000 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
@@ -27,7 +27,7 @@ void main()
 	ClearMessage();
 	DisableWindow();
 	ModSetLayerFilter(3, 256, "night");
-	ModDrawCharacter(3, 2, "sprite/normal/re2b_def_b1_", "2", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 300, TRUE );
+	ModDrawCharacter(3, 2, "sprite/re2b_def_b1_", "2", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 300, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 2, "ps3/s06/02/150200195", 256, TRUE);
@@ -40,7 +40,7 @@ void main()
 	OutputLine(NULL, "だって冗談なんだから。",
 		   NULL, " It would be a joke, after all.", GetGlobalFlag(GLinemodeSp));
 	DisableWindow();
-	ModDrawCharacter(3, 2, "sprite/normal/re2a_komaru_a2_", "0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
+	ModDrawCharacter(3, 2, "sprite/re2a_komaru_a2_", "0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 2, "ps3/s06/02/150200198", 256, TRUE);
@@ -191,7 +191,7 @@ void main()
 
 	DisableWindow();
 	ModSetLayerFilter(2, 256, "none");
-	ModDrawCharacter(2, 2, "sprite/normal/re2a_def_a1_", "2", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 800, TRUE );
+	ModDrawCharacter(2, 2, "sprite/re2a_def_a1_", "2", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 800, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　なのに、…この竜宮レナという娘と目が合うと、",
@@ -241,7 +241,7 @@ void main()
 	ClearMessage();
 	FadeOutBGM( 0, 300, FALSE );
 	ModSetLayerFilter(2, 256, "night");
-	ModDrawCharacter(2, 2, "sprite/normal/re2a_nande_a1_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, FALSE );
+	ModDrawCharacter(2, 2, "sprite/re2a_nande_a1_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, FALSE );
 	DrawSceneWithMask("background/yhu2", "maskdown", 1, 0, 300 );
 	PlayBGM( 0, "yoru", 56, 0 );
 
@@ -276,7 +276,7 @@ void main()
 		   NULL, " Rena cautioned me to hold onto it tightly.", Line_Normal);
 	ClearMessage();
 	DisableWindow();
-	ModDrawCharacter(2, 2, "sprite/normal/re2b_nande_b1_", "1", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );
+	ModDrawCharacter(2, 2, "sprite/re2b_nande_b1_", "1", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 2, "ps3/s06/02/150200201", 256, TRUE);
@@ -1156,8 +1156,8 @@ void main()
 		   NULL, " Can someone go get him?\"", Line_Normal);
 	ClearMessage();
 	DisableWindow();
-	ModDrawCharacter(1, 2, "sprite/normal/re2a_komaru_a1_", "0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 300, FALSE );
-	ModDrawCharacter(3, 1, "sprite/normal/kei2_komaru_", "0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 300, TRUE );
+	ModDrawCharacter(1, 2, "sprite/re2a_komaru_a1_", "0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 300, FALSE );
+	ModDrawCharacter(3, 1, "sprite/kei2_komaru_", "0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 300, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　そんなやり取りをしていると、松林の方から圭一とレナが戻ってくるのが見えた。",
@@ -1174,7 +1174,7 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 	DisableWindow();
 	FadeAllBustshots( 200, TRUE );
-	ModDrawCharacter(2, 1, "sprite/normal/kei2_komaru_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );
+	ModDrawCharacter(2, 1, "sprite/kei2_komaru_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 1, "ps3/s06/01/150100255", 256, TRUE);
@@ -1199,7 +1199,7 @@ void main()
 	ClearMessage();
 	DisableWindow();
 	FadeAllBustshots( 400, TRUE );
-	ModDrawCharacter(3, 11, "sprite/normal/oisi1_2_", "1", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 300, TRUE );
+	ModDrawCharacter(3, 11, "sprite/oisi1_2_", "1", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 300, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>Ooishi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 11, "ps3/s06/11/150700358", 256, TRUE);
@@ -1223,7 +1223,7 @@ void main()
 		   NULL, "It was Ooishi.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 	DisableWindow();
-	ModDrawCharacter(3, 11, "sprite/normal/oisi1_4_", "2", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
+	ModDrawCharacter(3, 11, "sprite/oisi1_4_", "2", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　…大石め、さすがに今年の事件は困惑しているに違いない。",
@@ -1287,7 +1287,7 @@ void main()
 	OutputLine(NULL, "　大石には、その最期を看取る大任を与えることになるだろう…。",
 		   NULL, "More than likely, I'll have Ooishi witness my final moments.", Line_Normal);
 	ClearMessage();
-	ModDrawCharacter(2, 11, "sprite/normal/oisi1_2_", "1", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, FALSE );
+	ModDrawCharacter(2, 11, "sprite/oisi1_2_", "1", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, FALSE );
 	DrawScene("background/jy1", 400 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }

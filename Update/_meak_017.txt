@@ -27,7 +27,7 @@ void main()
 	ClearMessage();
 	DrawSceneWithMask("black", "maskright", 1, 0, 300 );
 	ModSetLayerFilter(1, 256, "none");
-	ModDrawCharacter(1, 3, "sprite/normal/me2_sinmyou_a1_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 0, FALSE );
+	ModDrawCharacter(1, 3, "sprite/me2_sinmyou_a1_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 0, FALSE );
 	DrawSceneWithMask("background/ima1", "maskright", 1, 0, 300 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -65,7 +65,7 @@ void main()
 	ClearMessage();
 
 	ModSetLayerFilter(3, 256, "none");
-	ModDrawCharacter(3, 3, "sprite/normal/me2_wink_a1_", "1", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 0, FALSE );
+	ModDrawCharacter(3, 3, "sprite/me2_wink_a1_", "1", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 0, FALSE );
 	DrawScene("background/ima1", 400 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -89,14 +89,14 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 	DisableWindow();
 	ModSetLayerFilter(3, 256, "none");
-	ModDrawCharacter(3, 3, "sprite/normal/me2_akuwarai_a1_", "2", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 300, TRUE );
+	ModDrawCharacter(3, 3, "sprite/me2_akuwarai_a1_", "2", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 300, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 3, "ps3/s06/03/150300321", 256, TRUE);
 	OutputLine(NULL, "「婆っちゃに見つかると怒られるよ…？",
 		   NULL, "\"Granny will get mad if she finds you...", GetGlobalFlag(GLinemodeSp));
 	DisableWindow();
-	ModDrawCharacter(3, 3, "sprite/normal/me2_tohoho_a1_", "0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
+	ModDrawCharacter(3, 3, "sprite/me2_tohoho_a1_", "0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
 
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
@@ -119,7 +119,7 @@ void main()
 	OutputLine(NULL, "「あんたの学校、開校記念日って年に何回あるわけ？",
 		   NULL, "\"How many times a year does your school have its anniversary?", GetGlobalFlag(GLinemodeSp));
 	DisableWindow();
-	ModDrawCharacter(3, 3, "sprite/normal/me2_wink_a1_", "1", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
+	ModDrawCharacter(3, 3, "sprite/me2_wink_a1_", "1", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 3, "ps3/s06/03/150300324", 256, TRUE);
@@ -134,7 +134,7 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 	DisableWindow();
 	ModSetLayerFilter(1, 256, "none");
-	ModDrawCharacter(1, 15, "sprite/normal/kasa_1_", "0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 200, TRUE );
+	ModDrawCharacter(1, 15, "sprite/kasa_1_", "0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 200, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#76523d>葛西</color>", NULL, "<color=#76523d>Kasai</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 15, "ps3/s06/15/151500210", 256, TRUE);
@@ -147,7 +147,7 @@ void main()
 
 	DisableWindow();
 	FadeBustshot( 1, FALSE, 0, 0, 0, 0, 300, TRUE );
-	ModDrawCharacter(3, 3, "sprite/normal/me2_warai_a1_", "2", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
+	ModDrawCharacter(3, 3, "sprite/me2_warai_a1_", "2", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 3, "ps3/s06/03/150300327", 256, TRUE);
@@ -784,7 +784,7 @@ void main()
 
 	DisableWindow();
 	ModSetLayerFilter(1, 256, "night");
-	ModDrawCharacter(1, 3, "portrait/normal/me2_hig_maji_a1_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 300, TRUE );
+	ModDrawCharacter(1, 3, "portrait/me2_hig_maji_a1_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 300, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　それは……魅音だった。",
