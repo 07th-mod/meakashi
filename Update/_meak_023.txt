@@ -1447,7 +1447,7 @@ void main()
 		   NULL, "They looked like she was dreaming about something happy.", Line_Normal);
 	ClearMessage();
 	DrawScene("white", 3000 );
-	ModSetLayerFilter(1, 128, "none");
+	ModSetLayerFilter(1, 179, "none");
 	ModDrawCharacter(1, 7, "sprite/normal/sato1_warai_", "0", 30, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 0, FALSE );
 	DrawScene("background/sora", 1000 );
 
@@ -1477,14 +1477,14 @@ void main()
 	ClearMessage();
 
 	DisableWindow();
-	ModSetLayerFilter(2, 128, "none");
+	ModSetLayerFilter(2, 179, "none");
 	ModDrawCharacter(2, 4, "sprite/normal/sa2a_warai_a1_", "0", -120, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 300, TRUE );
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　悟史くんのところへ、沙都子が駆け寄る。",
 		   NULL, "Satoko ran up to Satoshi-kun.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 	DisableWindow();
-	MoveBustshot(2, "sprite/dream/sa2a_warai_a1_0", -55, 0, 0, 0, 300, TRUE);
+	MoveBustshot(2, NULL, -55, 0, 0, 0, 300, TRUE);
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　そして、悟史くんの胸に、飛びついた。",
