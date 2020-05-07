@@ -478,11 +478,13 @@ void Game()
 	{
 		CallScript( "_meak_024");
 
-		if (LoadValueFromLocalWork( SelectResult ) == 0) {
-			CallScript( "_meak_024a" );
-			CallScript( "_meak_badend" );
+		if (GetGlobalFlag(GChoiceMode) > 0) {
+			if (LoadValueFromLocalWork( SelectResult ) == 0) {
+				CallScript( "_meak_024a" );
+				CallScript( "_meak_badend" );
 
-			JumpSection("Title");
+				JumpSection("Title");
+			}
 		}
 
 		CallScript( "_meak_024b" );

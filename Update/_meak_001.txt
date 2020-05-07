@@ -4,6 +4,9 @@ void main()
 	FadeOutBGM( 1, 0, FALSE );
 	FadeOutBGM( 2, 0, FALSE );
 	FadeOutBGM( 3, 0, FALSE );
+
+	CallScript( "&choicesdialog" );
+
 	ClearMessage();
 	DrawScene("black", 3000 );
 	DrawScene("text/si_meakasi", 1000 );

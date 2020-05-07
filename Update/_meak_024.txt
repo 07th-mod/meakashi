@@ -2544,17 +2544,23 @@ void main()
 		   NULL, " Savor Kei-chan's fresh screams to your heart's content!!\"", Line_Normal);
 	ClearMessage();
 
-	DrawBustshot(5, "2choices", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 300, FALSE );
-	char Item[2];
+	if (GetGlobalFlag(GChoiceMode) > 0) {
+		if (GetGlobalFlag(GChoiceMode) == 2) {
+			DrawBustshot(5, "2choices_2", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 300, TRUE );
+		} else {
+			DrawBustshot(5, "2choices", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 300, TRUE );
+		}
+		char Item[2];
 
-	if (GetGlobalFlag(GLanguage) == 1) {
-		Item[0] = "At that time, I became aware of Keiichi's gaze";
-		Item[1] = "And then, I turned around to face Keiichi";
-	} else {
-		Item[0] = "その時、私は圭一の視線に気がついた";
-		Item[1] = "そして私は、圭一に振り返った ";
+		if (GetGlobalFlag(GLanguage) == 1) {
+			Item[0] = "At that time, I became aware of Keiichi's gaze";
+			Item[1] = "And then, I turned around to face Keiichi";
+		} else {
+			Item[0] = "その時、私は圭一の視線に気がついた";
+			Item[1] = "そして私は、圭一に振り返った ";
+		}
+
+		Select( 2, Item );
+		FadeBustshot( 5, FALSE, 0, 0, 0, 0, 300, TRUE );
 	}
-
-	Select( 2, Item );
-	FadeBustshot( 5, FALSE, 0, 0, 0, 0, 300, TRUE );
 }
