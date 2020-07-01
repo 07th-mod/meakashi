@@ -1574,7 +1574,7 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#ffdc6f>悟史</color>", NULL, "<color=#ffdc6f>Satoshi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 7, "ps3/s06/07/151200231", 256, TRUE);
 	OutputLine(NULL, "「オヤシロさまは確かほら、…村を捨てて逃げ出そうとすると祟るでしょ。」",
-		   NULL, "\"Oyashiro-sama curses those who leave the village, right?\"", GetGlobalFlag(GLinemodeSp));
+		   NULL, "\"Those who abandon the village and try to run away get cursed by Oyashiro-sama, right?\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -1769,9 +1769,9 @@ void main()
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　……私の答えを喜んでいるのか、悲しんでいるか。",
-		   NULL, "...I couldn't tell", Line_WaitForInput);
+		   NULL, "...Would my answer make him happy? Or maybe sad?", Line_WaitForInput);
 	OutputLine(NULL, "それだけでは分からない。",
-		   NULL, " if he was happy with my answer or not.", GetGlobalFlag(GLinemodeSp));
+		   NULL, " I couldn't tell.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
