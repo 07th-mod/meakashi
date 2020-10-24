@@ -7,13 +7,11 @@ void main()
 	ClearMessage();
 
 	DrawScene("black", 0 );
-	PlayBGM( 0, "higurashi", 56, 0 );
 	DrawScene("background/sora2", 1000 );
 	SetValidityOfInput( FALSE );
 	Wait( 2000 );
 	SetValidityOfInput( TRUE );
 	DrawScene("background/sora_01", 1000 );
-	FadeOutBGM( 0, 1000, FALSE );
 	SetValidityOfInput( FALSE );
 	Wait( 2000 );
 	SetValidityOfInput( TRUE );
@@ -595,6 +593,7 @@ void main()
 		   NULL, "Even though I'd told her not to apologize anymore, Mion apologized.", Line_Normal);
 	ClearMessage();
 	DrawScene("background/aka1", 1000 );
+	PlayBGM( 2, "semi", 56, 0 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　……こいつの首根っこを締め上げてやる…。",
@@ -706,13 +705,14 @@ void main()
 
 	FadeOutBGM( 0, 300, FALSE );
 	FadeOutBGM( 1, 300, FALSE );
+	FadeOutBGM( 2, 300, FALSE );
 	PlaySE( 4, "wa_022", 56, 64 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　私と同じように、左手の小指から中指の三本の爪が、私と同じように歪な形をしていた。",
 		   NULL, "Three of the fingernails on her left hand looked as ugly as mine.", Line_Normal);
 	ClearMessage();
-	PlayBGM( 0, "msys17", 56, 0 );
+	PlayBGM( 0, "hgrs01", 56, 0 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 6, "ps3/s06/06/150601288", 256, TRUE);
@@ -934,10 +934,8 @@ void main()
 		   NULL, "It absolutely wasn't the Sonozaki family that made him disappear.", Line_Normal);
 	ClearMessage();
 
-	FadeOutBGM( 0, 1000, FALSE );
 	DrawScene("background/aka2", 2000 );
 	PlaySE( 4, "wa_025", 56, 64 );
-	PlayBGM( 1, "yabaisemi", 56, 0 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　ジャア、…悟史クンハ、オヤシロサマノ祟リデ消エタト、本気デ思ウノカイ？",
@@ -1029,7 +1027,6 @@ void main()
 		   NULL, " Don't ever show up again...!!", Line_Normal);
 	ClearMessage();
 
-	FadeOutBGM( 1, 300, FALSE );
 	PlaySE( 4, "s_glass", 56, 64 );
 	DrawScene("black", 2000 );
 
@@ -1047,7 +1044,6 @@ void main()
 	PlaySE( 4, "wa_003", 56, 64 );
 	ModDrawCharacter(2, 3, "sprite/me2_yowaki_a1_", "2", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, FALSE );
 	DrawSceneWithMask("background/si_g1", "maskup", 1, 0, 300 );
-	PlayBGM( 0, "yoru", 56, 0 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 3, "ps3/s06/03/150300267", 256, TRUE);

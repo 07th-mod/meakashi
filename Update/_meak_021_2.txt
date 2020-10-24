@@ -315,13 +315,12 @@ void main()
 		   NULL, "That was when Rika sprayed something from a small bottle into my eyes.", Line_Normal);
 	ClearMessage();
 
-	FadeOutBGM( 1, 300, FALSE );
 	DrawScene("white", 100 );
 	DrawScene("black", 50 );
 	DrawScene("white", 100 );
 	DrawScene("black", 50 );
 	Wait( 100 );
-	PlayBGM( 0, "msys23", 56, 0 );
+	PlayBGM( 0, "hig_sample_kyouki", 56, 0 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 6, "ps3/s06/06/150602059", 256, TRUE);
@@ -348,7 +347,7 @@ void main()
 	ClearMessage();
 	ModDrawCharacter(2, 5, "portrait/ri2_niyari_a1_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, FALSE );
 	DrawScene("background/so_d1_01", 300 );
-	PlayBGM( 1, "kaze", 56, 0 );
+	PlayBGM( 2, "kaze", 56, 0 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　思い切り強く目蓋を閉じ、涙を絞りつくすようにして目を開いた時、",
@@ -533,8 +532,8 @@ void main()
 	OutputLine(NULL, "だがもう片手が異様だった。",
 		   NULL, " What I didn't expect was the thing in her other hand.", Line_Normal);
 	ClearMessage();
-	FadeOutBGM( 1, 300, FALSE );
-	PlayBGM( 2, "yabaisemi", 56, 0 );
+	FadeOutBGM( 2, 300, FALSE );
+	PlayBGM( 3, "semi_r", 56, 0 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　目を疑ったが、他の何に見間違えようというのか！",
@@ -603,7 +602,6 @@ void main()
 		   NULL, " When I felt Rika's weight shift, I escaped.", Line_Normal);
 	ClearMessage();
 	PlaySE( 0, "wa_003", 56, 64 );
-	FadeOutBGM( 2, 1000, FALSE );
 	DrawScene("scene/015", 1000 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -1223,6 +1221,9 @@ void main()
 	ClearMessage();
 
 	FadeOutBGM( 0, 400, FALSE );
+	FadeOutBGM( 1, 400, FALSE );
+	FadeOutBGM( 2, 400, FALSE );
+	FadeOutBGM( 3, 400, FALSE );
 	DrawScene("black", 400 );
 	PlayBGM( 0, "higurashi_soundscape", 56, 0 );
 
@@ -1502,7 +1503,6 @@ void main()
 	OutputLine(NULL, "……笑ったように見えた。",
 		   NULL, " and smiled.", Line_Normal);
 	ClearMessage();
-	FadeOutBGM( 0, 300, FALSE );
 	PlaySE( 0, "wa_003", 56, 64 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -1532,7 +1532,6 @@ void main()
 		   NULL, "I'd never seen anything like it.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
-	PlayBGM( 0, "yabaisemi", 56, 0 );
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　こんな動きは初めて見た。",
 		   NULL, "I'd never seen anybody do this before.", GetGlobalFlag(GLinemodeSp));
@@ -1574,6 +1573,7 @@ void main()
 	OutputLine(NULL, "　…そして、裂け目を両手で、思い切り、………がぱあ、と。",
 		   NULL, "She ripped open the tear in one tug.", Line_Normal);
 	ClearMessage();
+	PlayBGM( 1, "semi", 56, 0 );
 
 	DrawScene("red", 400 );
 	DrawScene("black", 400 );
@@ -1593,7 +1593,6 @@ void main()
 		   NULL, " into the pool of blood.", Line_Normal);
 	ClearMessage();
 
-	FadeOutBGM( 0, 300, FALSE );
 	PlaySE( 4, "wa_003", 56, 64 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -1611,7 +1610,6 @@ void main()
 		   NULL, "I stepped back from Rika Furude's body and bumped into the wall in the hallway.", Line_Normal);
 	ClearMessage();
 
-	PlayBGM( 0, "kaze", 56, 0 );
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　をおおおおわああおああぁあああぁあぁああぁッ！！",
 		   NULL, "Raaaaaaaaaaaaaaahhhhhh!!", Line_Normal);
@@ -1843,9 +1841,7 @@ void main()
 	OutputLine(NULL, "　私が魅音なの、私が魅音なのおおぉおぉ！！！",
 		   NULL, " I'm Mion, I am!!!", Line_Normal);
 	ClearMessage();
-	FadeOutBGM( 0, 1000, FALSE );
 	DrawScene("black", 2000 );
-	PlayBGM( 0, "yoru", 56, 0 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 6, "ps3/s06/06/150602101", 256, TRUE);
@@ -1916,8 +1912,6 @@ void main()
 		   NULL, " And that night, you knew what was going on, and took Mion from me.", GetGlobalFlag(GLinemodeSp));
 	DrawScene("background/aka1", 100 );
 	PlaySE( 0, "s_Down", 56, 64 );
-	FadeOutBGM( 0, 300, FALSE );
-	PlayBGM( 1, "yabaisemi", 56, 0 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 6, "ps3/s06/06/150602113", 256, TRUE);
@@ -1991,9 +1985,7 @@ void main()
 	OutputLine(NULL, "　私は髪をがばっとまとめると、ポケットから、魅音の髪形の時に使う黄色いゴムバンドで髪を纏め上げる。",
 		   NULL, "I gathered my hair and put it in a ponytail with the yellow band that Mion used all the time.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
-	FadeOutBGM( 1, 1000, FALSE );
 	DrawScene("black", 1000 );
-	PlayBGM( 0, "yoru", 56, 0 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　うなじに髪がかかる感触がなくなり、",
@@ -2035,8 +2027,6 @@ void main()
 	ModPlayVoiceLS(4, 6, "ps3/s06/06/150602122", 256, TRUE);
 	OutputLine(NULL, "　だから騙るな二度と私を騙るな、聞いているのか詩音ッ！！",
 		   NULL, " So don't pretend to be me ever again, do you hear?", Line_WaitForInput);
-	FadeOutBGM( 0, 300, FALSE );
-	PlayBGM( 1, "kaze", 56, 0 );
 	ModPlayVoiceLS(4, 6, "ps3/s06/06/150602123", 256, TRUE);
 	OutputLine(NULL, "　聞こえているのか、聞こえているなら返事をしろ、私に返事を届かせろ、詩音んんんんんんんんッ！！！」",
 		   NULL, " I said, do you hear? If you do, answer me! ANSWER ME, Shion!!!\"", Line_Normal);
@@ -2049,9 +2039,8 @@ void main()
 	OutputLine(NULL, "私は本当の自分を取り戻し、詩音は自分が詩音であったことを認めた。",
 		   NULL, " Shion admitted she was Shion.", Line_Normal);
 	ClearMessage();
-	FadeOutBGM( 1, 400, FALSE );
 	DrawScene("background/jsa7", 400 );
-	PlayBGM( 0, "semi_r", 56, 0 );
+	PlayBGM( 2, "jikuu_a", 56, 0 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 6, "ps3/s06/06/150602124", 256, TRUE);
@@ -2187,6 +2176,8 @@ void main()
 	ClearMessage();
 
 	FadeOutBGM( 0, 2000, FALSE );
+	FadeOutBGM( 1, 2000, FALSE );
+	FadeOutBGM( 2, 2000, FALSE );
 	DrawScene("black", 3000 );
 	SetValidityOfInput( FALSE );
 	Wait( 4000 );
@@ -2213,7 +2204,6 @@ void main()
 	ClearMessage();
 	FadeOutBGM( 1, 0, FALSE );
 	DrawSceneWithMask("black", "maskdown", 1, 0, 300 );
-	PlayBGM( 0, "yoru", 56, 0 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 6, "ps3/s06/06/150602148", 256, TRUE);
@@ -2255,6 +2245,8 @@ void main()
 	OutputLine(NULL, "ウチの梨花がお邪魔してませんこと？」",
 		   NULL, " Is Rika not there with you?\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
+	
+	PlayBGM( 0, "yoru", 56, 0 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　そうだ。",

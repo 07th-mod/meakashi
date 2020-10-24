@@ -1469,7 +1469,6 @@ void main()
 	DrawSceneWithMask("black", "maskdown", 1, 0, 300 );
 	FadeOutBGM( 1, 300, FALSE );
 	DrawSceneWithMask("background/ryuuketu1", "maskaa", 1, 0, 400 );
-	PlayBGM( 1, "msys09", 56, 0 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　嫌われ者だったダム現場の現場監督が、綿流しの祭の夜に、殺されて遺体をバラバラにされた。",
@@ -1650,7 +1649,6 @@ void main()
 		   NULL, "But in fact, I was a little scared of the curse.", Line_Normal);
 	ClearMessage();
 
-	FadeOutBGM( 1, 300, FALSE );
 	DrawSceneWithMask("background/res5", "maskup", 1, 0, 300 );
 	PlayBGM( 0, "mati", 56, 0 );
 
@@ -1763,7 +1761,7 @@ void main()
 		   NULL, " ...What are you talking about?\"", Line_Normal);
 	ClearMessage();
 	DrawScene("black", 1000 );
-	PlayBGM( 0, "semi_r", 56, 0 );
+	PlayBGM( 0, "higurashi", 56, 0 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　ちくり。",
