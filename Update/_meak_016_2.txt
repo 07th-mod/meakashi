@@ -1613,13 +1613,13 @@ void main()
 	StartShakingOfAllObjects( 248, 40, 0, 2, 2*2, TRUE );
 
 	OutputLine(NULL, "ダン、",
-		   NULL, "Thump.", Line_ContinueAfterTyping);
+		   NULL, " Thump.", Line_ContinueAfterTyping);
 	PlaySE( 4, "wa_003", 56, 64 );
 	StartShakingOfWindow( 248, 40, 0, 2, 2*2, FALSE );
 	StartShakingOfAllObjects( 248, 40, 0, 2, 2*2, TRUE );
 
 	OutputLine(NULL, "ダン。",
-		   NULL, "Thump.", Line_ContinueAfterTyping);
+		   NULL, " Thump.", Line_ContinueAfterTyping);
 	SetSpeedOfMessage( FALSE, 0 );
 	PlaySE( 4, "wa_003", 56, 64 );
 	StartShakingOfWindow( 248, 40, 0, 2, 2*2, FALSE );
@@ -1659,13 +1659,13 @@ void main()
 	StartShakingOfAllObjects( 248, 40, 0, 2, 2*2, TRUE );
 
 	OutputLine(NULL, "ダン、",
-		   NULL, "Thump.", Line_ContinueAfterTyping);
+		   NULL, " Thump.", Line_ContinueAfterTyping);
 	PlaySE( 4, "wa_003", 56, 64 );
 	StartShakingOfWindow( 248, 40, 0, 2, 2*2, FALSE );
 	StartShakingOfAllObjects( 248, 40, 0, 2, 2*2, TRUE );
 
 	OutputLine(NULL, "ダン。",
-		   NULL, "Thump.", Line_ContinueAfterTyping);
+		   NULL, " Thump.", Line_ContinueAfterTyping);
 	SetSpeedOfMessage( FALSE, 0 );
 	PlaySE( 4, "wa_003", 56, 64 );
 	StartShakingOfWindow( 248, 40, 0, 2, 2*2, FALSE );
@@ -1724,13 +1724,13 @@ void main()
 	StartShakingOfAllObjects( 248, 40, 0, 2, 2*2, TRUE );
 
 	OutputLine(NULL, "ダン、",
-		   NULL, "Thump.", Line_ContinueAfterTyping);
+		   NULL, " Thump.", Line_ContinueAfterTyping);
 	PlaySE( 4, "wa_003", 56, 64 );
 	StartShakingOfWindow( 248, 40, 0, 2, 2*2, FALSE );
 	StartShakingOfAllObjects( 248, 40, 0, 2, 2*2, TRUE );
 
 	OutputLine(NULL, "ダン。",
-		   NULL, "Thump.", Line_ContinueAfterTyping);
+		   NULL, " Thump.", Line_ContinueAfterTyping);
 	SetSpeedOfMessage( FALSE, 0 );
 	PlaySE( 4, "wa_003", 56, 64 );
 	StartShakingOfWindow( 248, 40, 0, 2, 2*2, FALSE );
@@ -2225,7 +2225,7 @@ void main()
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　そう言って、背徳感を面白がる魔性の笑みで笑って見せた。",
-		   NULL, "She smiled at me like a witch.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "She smiled at me like a witch. ", GetGlobalFlag(GLinemodeSp));
 	SetSpeedOfMessage( TRUE, 128 );
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "ダン、",
@@ -2250,7 +2250,7 @@ void main()
 		   NULL, "\"Maebara-kun, you keep it a secret too, okay?", Line_WaitForInput);
 	ModPlayVoiceLS(4, 9, "ps3/s06/09/150900144", 256, TRUE);
 	OutputLine(NULL, "　知られたら私、オヤシロさまの祟りにあうか、生贄にされちゃうかするかもしれない。",
-		   NULL, " If this gets out, I could suffer Oyashiro-sama's curse, or be made into a sacrifice.", GetGlobalFlag(GLinemodeSp));
+		   NULL, " If this gets out, I could suffer Oyashiro-sama's curse, or be made into a sacrifice. ", GetGlobalFlag(GLinemodeSp));
 	DisableWindow();
 	ModDrawCharacter(1, 9, "sprite/ta1_warai_", "2", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 200, TRUE );
 
@@ -2274,7 +2274,7 @@ void main()
 	OutputLine(NULL, "　………そう。",
 		   NULL, "...It certainly is....", Line_WaitForInput);
 	OutputLine(NULL, "…もしも５年目にも起こるなら、それは今夜起こる。",
-		   NULL, " If the curse strikes for a fifth time, it'll happen tonight.", GetGlobalFlag(GLinemodeSp));
+		   NULL, " If the curse strikes for a fifth time, it'll happen tonight. ", GetGlobalFlag(GLinemodeSp));
 	SetSpeedOfMessage( TRUE, 128 );
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "ダン、",
@@ -2367,14 +2367,14 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f6d9a8>鷹野</color>", NULL, "<color=#f6d9a8>Takano</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 9, "ps3/s06/09/150900152", 256, TRUE);
 	OutputLine(NULL, "「…カクモ無惨且ツ残虐非道ヲ………。」",
-		   NULL, "\"...Never before has there been a corpse treated with such cruelty and inhumanity...\"", GetGlobalFlag(GLinemodeSp));
+		   NULL, "\"...Never before has there been a corpse treated with such cruelty and inhumanity...\" ", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	SetSpeedOfMessage( TRUE, 128 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_Continue); }
 	OutputLine(NULL, "ダンダンダン！",
-		   NULL, " Thump-thump-thump!", Line_Continue);
+		   NULL, "Thump-thump-thump!", Line_Continue);
 	SetSpeedOfMessage( FALSE, 0 );
 	PlaySE( 4, "wa_003", 56, 64 );
 	Wait( 200 );

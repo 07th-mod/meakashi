@@ -2491,7 +2491,7 @@ void main()
 		   NULL, "\"I'll answer your questions one by one......", Line_WaitForInput);
 	ModPlayVoiceLS(4, 9, "ps3/s06/09/150900039", 256, TRUE);
 	OutputLine(NULL, "……私が研究しているのは祟りじゃなく、もっと広義。",
-		   NULL, " I'm not just researching the curse, as my subject is much broader than that.", GetGlobalFlag(GLinemodeSp));
+		   NULL, " I'm not just researching the curse, as my subject is much broader than that. ", GetGlobalFlag(GLinemodeSp));
 	DisableWindow();
 	ModDrawCharacter(1, 9, "sprite/ta1_warai_", "2", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 200, TRUE );
 
@@ -2524,7 +2524,7 @@ void main()
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　その内容は三四さんにとって、どれも聞かれたい内容らしく、とても嬉しそうに笑っていた。",
-		   NULL, "Miyo-san,  however, looked pleased to hear them.", Line_Normal);
+		   NULL, "Miyo-san, however, looked pleased to hear them.", Line_Normal);
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f6d9a8>鷹野</color>", NULL, "<color=#f6d9a8>Takano</color>", NULL, Line_ContinueAfterTyping); }

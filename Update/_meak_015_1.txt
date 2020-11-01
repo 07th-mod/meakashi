@@ -547,9 +547,9 @@ void main()
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　そのワキワキした手がいやらしいったらありゃしない…。",
-		   NULL, "Your gross hands are groping the air...", Line_WaitForInput);
+		   NULL, "Your gross hands are groping the air... ", Line_WaitForInput);
 	OutputLine(NULL, "…私の貞操の危機なのだろうか？",
-		   NULL, "...Are you gonna try and violate me?", Line_Normal);
+		   NULL, "Are you gonna try and violate me?", Line_Normal);
 	ClearMessage();
 
 	//VoiceMatching
@@ -611,7 +611,7 @@ void main()
 		   NULL, "\"What da hell...?!!", Line_WaitForInput);
 	ModPlayVoiceLS(4, 0, "ps3/s06/00/huryoa15023", 256, TRUE);
 	OutputLine(NULL, "　いてこまされたいンかあぁあ！！！",
-		   NULL, " Ye want sum?!!!", GetGlobalFlag(GLinemodeSp));
+		   NULL, " Ye want sum?!!! ", GetGlobalFlag(GLinemodeSp));
 	DisableWindow();
 	PlaySE( 0, "s_daidageki", 56, 64 );
 	StartShakingOfWindow( 248, 40, 0, 2, 3*2, FALSE );
@@ -756,7 +756,7 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 1, "ps3/s06/01/150100054", 256, TRUE);
 	OutputLine(NULL, "キビダンゴでももらって鬼ヶ島へでも失せろ！！！",
-		   NULL, "Pack your bags and get out!!!", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Pack your bags and get out!!! ", GetGlobalFlag(GLinemodeSp));
 
 	DisableWindow();
 	PlaySE( 0, "wa_007", 56, 64 );
@@ -790,7 +790,7 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 1, "ps3/s06/01/150100059", 256, TRUE);
 	OutputLine(NULL, "制服は日本の文化だ芸術だ！！！",
-		   NULL, "School uniforms are part of Japanese culture and art!!!", GetGlobalFlag(GLinemodeSp));
+		   NULL, "School uniforms are part of Japanese culture and art!!! ", GetGlobalFlag(GLinemodeSp));
 
 	PlaySE( 0, "wa_007", 56, 64 );
 	DrawScene("background/furiker_a", 100 );
