@@ -55,7 +55,7 @@ void main()
 		   NULL, " Then the man I brought home was a yakuza,", Line_WaitForInput);
 	ModPlayVoiceLS(4, 16, "ps3/s20/16/442200004", 256, TRUE);
 	OutputLine(NULL, "そりゃ大喧嘩よ。",
-		   NULL, " so of course she got terribly upset.", GetGlobalFlag(GLinemodeSp));
+		   NULL, " so of course she got terribly upset. ", GetGlobalFlag(GLinemodeSp));
 
 	DisableWindow();
 	ModDrawCharacter(1, 16, "sprite/aka_sakebi_", "0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 200, TRUE );
@@ -63,7 +63,7 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#6bd09f>茜</color>", NULL, "<color=#6bd09f>Akane</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 16, "ps3/s20/16/442200005", 256, TRUE);
 	OutputLine(NULL, "許婚は頭首が決める、なんて言われて、",
-		   NULL, " She said, 'the head of the family will choose your fiance,'", Line_Continue);
+		   NULL, "She said, 'the head of the family will choose your fiance,'", Line_Continue);
 	// (backup) SetValidityOfInput( FALSE );
 	Wait( 1000 );
 	// (backup) SetValidityOfInput( TRUE );
@@ -71,7 +71,7 @@ void main()
 	OutputLine(NULL, "そんなの知ったこっかいこんの糞婆ァ！",
 		   NULL, " and I said, 'screw your decisions, you fucking virago!'", Line_Continue);
 	OutputLine(NULL, "　この場で斬り伏せたらあッて大立ち回りよ。",
-		   NULL, " So then we both tried to cut each other down on the spot.", GetGlobalFlag(GLinemodeSp));
+		   NULL, " So then we both tried to cut each other down on the spot. ", GetGlobalFlag(GLinemodeSp));
 
 	DisableWindow();
 	ModDrawCharacter(1, 16, "sprite/aka_def_", "0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 200, TRUE );
@@ -79,7 +79,7 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#6bd09f>茜</color>", NULL, "<color=#6bd09f>Akane</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 16, "ps3/s20/16/442200006", 256, TRUE);
 	OutputLine(NULL, "互いに板の間の日本刀抜いて、チャンチャンバラバラ。",
-		   NULL, " We unsheathed our katanas in the living room and clashed and slashed and sliced.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "We unsheathed our katanas in the living room and clashed and slashed and sliced. ", GetGlobalFlag(GLinemodeSp));
 
 	DisableWindow();
 	ModDrawCharacter(1, 16, "sprite/aka_warai_", "0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 200, TRUE );
@@ -87,7 +87,7 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#6bd09f>茜</color>", NULL, "<color=#6bd09f>Akane</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 16, "ps3/s20/16/442200007", 256, TRUE);
 	OutputLine(NULL, "あっはっはっは。」",
-		   NULL, " Aha ha ha ha!\"", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Aha ha ha ha!\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }

@@ -16,12 +16,12 @@ void main()
 		   NULL, "\"Yes. When Mr. Kasai broke in, the room was empty, and the window leading to the balcony was open.", Line_Continue);
 	Wait( 5200 );
 	OutputLine(NULL, "その時が飛び降り時刻です。",
-		   NULL, " That was when she fell.", GetGlobalFlag(GLinemodeSp));
+		   NULL, " That was when she fell. ", GetGlobalFlag(GLinemodeSp));
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>刑事</color>", NULL, "<color=#f5e6d3>Detective</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 0, "ps3/s20/00/tp1_keijia_10002", 256, TRUE);
 	OutputLine(NULL, "それでその真下の５階エレベーターフロアの屋根に一度落ちて脳震盪。",
-		   NULL, " She hit the elevator housing right beneath, which gave her a concussion. ", Line_Continue);
+		   NULL, "She hit the elevator housing right beneath, which gave her a concussion. ", Line_Continue);
 	Wait( 5000 );
 	OutputLine(NULL, "そのしばらく後に横に転がって再落下、死亡。",
 		   NULL, "Then she rolled off the roof and hit the ground, killing her.", GetGlobalFlag(GLinemodeSp));
@@ -40,6 +40,7 @@ void main()
 	Wait( 3800 );
 	OutputLine(NULL, "その頃には園崎詩音はすでに飛び降りていて、屋根の上で脳震盪中…？」",
 		   NULL, " Was Shion Sonozaki unconscious on the roof then...?\"", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>Ooishi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 11, "ps3/s20/11/440700238", 256, TRUE);
@@ -135,12 +136,12 @@ void main()
 		   NULL, " Mion is Shion, and Shion is Mion.", Line_WaitForInput);
 	ModPlayVoiceLS(4, 11, "ps3/s20/11/440700248", 256, TRUE);
 	OutputLine(NULL, "刺青入れる時に間違って逆にやっちゃって、取り返しがつかなくなったらしい。",
-		   NULL, " They made a mistake when they were supposed to tattoo the successor.", GetGlobalFlag(GLinemodeSp));
+		   NULL, " They made a mistake when they were supposed to tattoo the successor. ", GetGlobalFlag(GLinemodeSp));
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>Ooishi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 11, "ps3/s20/11/440700249", 256, TRUE);
 	OutputLine(NULL, "だからこのノートの魅音と詩音は逆に読むんです。",
-		   NULL, " So, Mion and Shion are swapped around in this notebook. ", Line_Continue);
+		   NULL, "So, Mion and Shion are swapped around in this notebook. ", Line_Continue);
 	Wait( 3000 );
 	OutputLine(NULL, "それでなら、悟史くんと詩音さん、…いや魅音さん？",
 		   NULL, "So then Satoshi-kun and Shion-san... No, Mion-san?", Line_WaitForInput);
