@@ -817,11 +817,9 @@ void main()
 	OutputLine(NULL, "　それを決める資格は、……今や私にある！",
 		   NULL, "I'm the one who has to deliver it now!", Line_Normal);
 	ClearMessage();
-	FadeOutBGM( 0, 400, FALSE );
-	FadeOutBGM( 1, 400, FALSE );
 	DrawScene("background/aka1", 400 );
 
-	PlayBGM( 1, "Suzu", 56, 0 );
+	PlayBGM( 2, "Suzu", 56, 0 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　我こそは鬼ヶ淵村御三家のひとつ、園崎家の頭首、園崎魅音！！",
@@ -880,7 +878,9 @@ void main()
 		   NULL, " Calm down, calm down.", Line_Normal);
 	ClearMessage();
 
+	FadeOutBGM( 0, 400, FALSE );
 	FadeOutBGM( 1, 400, FALSE );
+	FadeOutBGM( 2, 400, FALSE );
 	DrawScene("background/yhu2", 400 );
 	PlayBGM( 0, "yoru", 56, 0 );
 

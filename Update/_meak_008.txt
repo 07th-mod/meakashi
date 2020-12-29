@@ -8,7 +8,6 @@ void main()
 
 	DrawScene("black", 300 );
 	PlayBGM( 0, "semi", 56, 0 );
-	PlayBGM( 2, "suzume", 56, 0 );
 	PlaySE( 0, "wa_001", 56, 64 );
 	SetValidityOfInput( FALSE );
 	Wait( 1200 );
@@ -85,7 +84,6 @@ void main()
 	FadeOutBGM( 2, 300, FALSE );
 	ModDrawCharacter(3, 7, "sprite/sato1_komaru_", "0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 0, FALSE );
 	DrawSceneWithMask("background/gk1", "maskright", 1, 0, 300 );
-	PlayBGM( 1, "msys17", 56, 0 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　悟史くんは、………お姉から聞いた通り、…すっかりやつれていた。",
@@ -208,14 +206,12 @@ void main()
 	DisableWindow();
 	SetValidityOfInput( FALSE );
 	Wait( 1500 );
-	FadeOutBGM( 1, 300, FALSE );
 	PlaySE( 1, "wa_001", 56, 64 );
 	Wait( 2500 );
 	SetValidityOfInput( TRUE );
 	PlaySE( 0, "wa_020", 56, 64 );
 	DrawSceneWithMask("background/g2", "maskleft", 1, 0, 300 );
 	PlayBGM( 0, "semi", 56, 0 );
-	PlayBGM( 2, "suzume", 56, 0 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　私は昼休みに、席を外し、どこか一人になれるところを探すかのような悟史くんを追い、廊下で声をかけた。",
@@ -260,7 +256,7 @@ void main()
 
 	FadeOutBGM( 0, 300, FALSE );
 	FadeOutBGM( 2, 300, FALSE );
-	PlayBGM( 1, "msys06", 56, 0 );
+	PlayBGM( 0, "hgrs01", 56, 0 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 6, "ps3/s06/06/150600616", 256, TRUE);
@@ -620,11 +616,9 @@ void main()
 	ClearMessage();
 	DrawScene("white", 200 );
 	PlaySE( 0, "wa_020", 56, 64 );
-	FadeOutBGM( 1, 300, FALSE );
 	ModDrawCharacter(3, 4, "sprite/sa1a_sakebu_a1_", "1", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 0, FALSE );
 	DrawSceneWithMask("background/gk3", "maskleft", 7, 0, 300 );
-	PlayBGM( 0, "semi", 56, 0 );
-	PlayBGM( 2, "suzume", 56, 0 );
+	PlayBGM( 1, "semi", 56, 0 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　…………泣き声の主は、",
@@ -687,10 +681,7 @@ void main()
 		   NULL, " Waaaaahhhhhhh!!!\"", Line_Normal);
 	ClearMessage();
 
-	FadeOutBGM( 0, 1000, FALSE );
-	FadeOutBGM( 2, 1000, FALSE );
 	DrawScene("background/aka1", 1000 );
-	PlayBGM( 1, "msys23", 56, 0 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　感情のたがが外れかけていた私は、心の中に灯った怒りの火が、全身を火だるまにしてしまうのを感じた。",
@@ -802,7 +793,6 @@ void main()
 	OutputLine(NULL, "…にぃにぃ……。」",
 		   NULL, " ...Nii-nii...\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
-	PlayBGM( 2, "kaze", 56, 0 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 6, "ps3/s06/06/150600641", 256, TRUE);
@@ -1104,7 +1094,6 @@ void main()
 	ClearMessage();
 
 	DisableWindow();
-	FadeOutBGM( 2, 300, FALSE );
 	PlaySE( 0, "s_door", 56, 64 );
 	ModDrawCharacter(3, 2, "sprite/re1a_okoru_a1_", "0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 0, FALSE );
 	DrawSceneWithMask("background/gk3", "maskleft", 7, 0, 300 );
@@ -1349,7 +1338,6 @@ void main()
 		   NULL, "Satoshi-kun grabbed my hair and threw me to the wall, just like I did to Satoko.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
-	PlayBGM( 2, "kaze", 56, 0 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　だが今度は私も怯まなかった。",
@@ -1363,7 +1351,6 @@ void main()
 
 	ModDrawCharacter(2, 7, "sprite/sato1_ikari_", "1", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, FALSE );
 	DrawScene("background/gk1", 400 );
-	PlayBGM( 1, "msys30", 56, 0 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 6, "ps3/s06/06/150600674", 256, TRUE);
@@ -1407,8 +1394,6 @@ void main()
 
 	DrawScene("white", 10 );
 	DrawScene("black", 400 );
-	FadeOutBGM( 2, 300, FALSE );
-	FadeOutBGM( 1, 300, FALSE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 2, "ps3/s06/02/150200127", 256, TRUE);
@@ -1426,11 +1411,12 @@ void main()
 	OutputLine(NULL, "　鬼のような形相で、私と悟史くんを交互に睨みつけながら、私たちの間に割って入る。",
 		   NULL, "She stepped in, looking as fierce as a demon.", Line_Normal);
 	ClearMessage();
+	FadeOutBGM( 0, 300, FALSE );
 
 	ModDrawCharacter(3, 2, "sprite/re1b_okoru_b1_", "0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 0, FALSE );
 	ModDrawCharacter(2, 7, "sprite/sato1_ikari_", "1", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, FALSE );
 	DrawScene("background/gk1", 400 );
-	PlayBGM( 1, "msys17", 56, 0 );
+	PlayBGM( 0, "semi", 56, 0 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 2, "ps3/s06/02/150200128", 256, TRUE);
@@ -1725,11 +1711,9 @@ void main()
 
 	DisableWindow();
 	Wait( 1000 );
-	FadeOutBGM( 1, 1000, TRUE );
+	FadeOutBGM( 0, 1000, TRUE );
 	PlaySE( 0, "wa_001", 56, 64 );
 	Wait( 3000 );
-	PlayBGM( 0, "semi", 56, 0 );
-	PlayBGM( 2, "suzume", 56, 0 );
 	DrawScene("background/sora", 1300 );
 	SetValidityOfInput( FALSE );
 	Wait( 4000 );

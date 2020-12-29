@@ -7,14 +7,11 @@ void main()
 	ClearMessage();
 
 	DrawScene("black", 300 );
-	PlayBGM( 1, "higurashi", 56, 0 );
 	DrawScene("background/sora2", 400 );
 	SetValidityOfInput( FALSE );
 	Wait( 2000 );
 	SetValidityOfInput( TRUE );
-	FadeOutBGM( 1, 1000, FALSE );
 	DrawScene("background/sora_01", 1000 );
-	PlayBGM( 1, "yoru", 56, 0 );
 	SetValidityOfInput( FALSE );
 	Wait( 3000 );
 	SetValidityOfInput( TRUE );
@@ -24,7 +21,7 @@ void main()
 	ModSetLayerFilter(1, 256, "none");
 	ModDrawCharacter(1, 3, "sprite/me2_def_a1_", "2", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 0, FALSE );
 	DrawSceneWithMask("background/je1", "maskm1", 1, 0, 300 );
-	PlayBGM( 0, "4", 56, 0 );
+	PlayBGM( 0, "cafe", 56, 0 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>屋台</color>", NULL, "<color=#f5e6d3>Festival Stall</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 0, "ps3/s06/00/yataia15011", 256, TRUE);
@@ -71,10 +68,7 @@ void main()
 	DisableWindow();
 	StartShakingOfWindow( 248, 20, 0, 2, 2*1, FALSE );
 	StartShakingOfAllObjects( 248, 20, 0, 2, 2*1, TRUE );
-	FadeOutBGM( 0, 300, FALSE );
 	ModDrawCharacter(2, 3, "portrait/me2_odoroki_a1_", "1", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );
-	PlayBGM( 0, "semi", 56, 0 );
-	PlayBGM( 2, "suzume", 56, 0 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　ざわ…ッ？！",
@@ -155,11 +149,8 @@ void main()
 	ClearMessage();
 
 	DrawSceneWithMask("black", "maskright", 1, 0, 300 );
-	FadeOutBGM( 0, 300, FALSE );
-	FadeOutBGM( 2, 300, FALSE );
 	ModDrawCharacter(1, 1, "sprite/kei2_def1_", "0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 0, FALSE );
 	DrawSceneWithMask("background/je1", "maskright", 1, 0, 300 );
-	PlayBGM( 0, "cafe", 56, 0 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 1, "ps3/s06/01/150100084", 256, TRUE);
@@ -318,7 +309,6 @@ void main()
 		   NULL, " It made me sad that I couldn't do that.", Line_Normal);
 	ClearMessage();
 
-	FadeOutBGM( 0, 1000, FALSE );
 	DrawScene("black", 2000 );
 	PlaySE( 4, "wa_003", 56, 64 );
 
@@ -340,7 +330,6 @@ void main()
 	ModDrawCharacter(1, 9, "sprite/ta1_def_", "0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 0, FALSE );
 	ModDrawCharacter(2, 8, "sprite/tomi1_def_", "0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, FALSE );
 	DrawScene("background/jd4", 400 );
-	PlayBGM( 1, "mion", 56, 0 );
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f6d9a8>鷹野</color>", NULL, "<color=#f6d9a8>Takano</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 9, "ps3/s06/09/150900096", 256, TRUE);
 	OutputLine(NULL, "「あら。",
@@ -1027,11 +1016,9 @@ void main()
 		   NULL, "That must've been the demon inside me. I shook the thought out of my head...", Line_Normal);
 	ClearMessage();
 
-	FadeOutBGM( 0, 400, FALSE );
 	ModSetLayerFilter(2, 256, "night");
 	ModDrawCharacter(2, 1, "sprite/kei2_def1_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, FALSE );
 	DrawScene("background/jyt2", 400 );
-	PlayBGM( 0, "yoru", 56, 0 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 1, "ps3/s06/01/150100087", 256, TRUE);
@@ -1781,8 +1768,7 @@ void main()
 		   NULL, "I'd been thinking that it was Satoshi-kun stomping on the floor.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
-	FadeOutBGM( 0, 300, FALSE );
-	PlayBGM( 1, "yabaisemi", 56, 0 );
+	PlayBGM( 1, "semi_r", 56, 0 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　…………………ね、",
@@ -1892,7 +1878,6 @@ void main()
 
 	ModDrawCharacter(1, 1, "sprite/kei2_warai_", "2", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 0, FALSE );
 	DrawScene("background/saiguden_01", 400 );
-	PlayBGM( 1, "yoru", 56, 0 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 1, "ps3/s06/01/150100091", 256, TRUE);
@@ -1935,7 +1920,6 @@ void main()
 		   NULL, "I pretended to be fine, but I wasn't sure if I was able to hide my fear entirely.", Line_Normal);
 	ClearMessage();
 
-	FadeOutBGM( 1, 400, FALSE );
 	DrawScene("black", 400 );
 	PlayBGM( 1, "kaze", 56, 0 );
 
@@ -2326,7 +2310,6 @@ void main()
 		   NULL, "It was the article about the brutal murder of a Watanagashi victim. It happened in the Meiji Era.", Line_Normal);
 	ClearMessage();
 	PlaySE( 0, "s_page", 56, 64 );
-	PlayBGM( 1, "msys07", 56, 0 );
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f6d9a8>鷹野</color>", NULL, "<color=#f6d9a8>Takano</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 9, "ps3/s06/09/150900149", 256, TRUE);
 	OutputLine(NULL, "「これは実際にあったお話よ。",
@@ -2386,7 +2369,6 @@ void main()
 	OutputLineAll(NULL, "", Line_Normal);
 
 	ClearMessage();
-	FadeOutBGM( 1, 2000, FALSE );
 	DrawScene("black", 2000 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -2406,6 +2388,7 @@ void main()
 	OutputLine(NULL, "　あぁ…くそ……うるさいよ……さっきからドタンバタン…。",
 		   NULL, "Ah... hell... it's freaking noisy... Cut it out already...", Line_Normal);
 	ClearMessage();
+	FadeOutBGM( 0, 1000, FALSE );
 
 	PlaySE( 0, "wa_025", 56, 64 );
 

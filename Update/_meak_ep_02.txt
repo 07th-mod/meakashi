@@ -8,7 +8,7 @@ void main()
 
 	Negative( 400 , TRUE );
 	DrawSceneWithMask("background/si_h2", "maskm1", 1, 0, 1300 );
-	PlayBGM( 0, "yabaisemi", 56, 0 );
+	PlayBGM( 0, "semi_r", 56, 0 );
 	SetSpeedOfMessage( FALSE, 0 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -1331,9 +1331,7 @@ void main()
 
 	DrawSceneWithMask("background/ryuuketu1", "maskaa", 1, 0, 200 );
 
-	FadeOutBGM( 0, 1000 , TRUE );
 	DrawScene("white", 3000 );
-	PlayBGM( 0, "hm05_20", 56, 0 );
 	// SetValidityOfInput( FALSE );
 	Wait( 3000 );
 

@@ -297,8 +297,6 @@ void main()
 	DrawSceneWithMask("white", "maskc", 1, 0, 300 );
 	FadeOutBGM( 0, 300, FALSE );
 	DrawSceneWithMask("background/sora", "maskm1", 1, 0, 300 );
-	PlayBGM( 0, "semi", 56, 0 );
-	PlayBGM( 2, "suzume", 56, 0 );
 	SetValidityOfInput( FALSE );
 	Wait( 1500 );
 	SetValidityOfInput( TRUE );
@@ -309,6 +307,7 @@ void main()
 	ModSetLayerFilter(2, 256, "none");
 	ModDrawCharacter(2, 11, "sprite/oisi1_1_", "0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, FALSE );
 	DrawSceneWithMask("background/ke_ky1", "maskleft", 1, 0, 300 );
+	PlayBGM( 0, "higurashi", 56, 0 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>Ooishi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 11, "ps3/s06/11/150700254", 256, TRUE);
@@ -455,10 +454,9 @@ void main()
 		   NULL, "Ooishi threw himself on the sofa and crossed his hands behind his head. He looked up at the ceiling and smiled wryly.", Line_Normal);
 	ClearMessage();
 
-	FadeOutBGM( 0, 300, FALSE );
-	FadeOutBGM( 2, 300, FALSE );
 	DrawSceneWithMask("background/ke5", "maskdown", 1, 0, 300 );
-	PlayBGM( 1, "z2_hig1", 56, 0 );
+	FadeOutBGM( 0, 300, FALSE );
+	PlayBGM( 0, "getting_mad", 56, 0 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>Ooishi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 11, "ps3/s06/11/150700273", 256, TRUE);
@@ -539,6 +537,8 @@ void main()
 	OutputLine(NULL, "　大石は天井を見上げたまま、足を組み、しばらく沈黙していた。",
 		   NULL, "Ooishi, still looking up at the ceiling, went quiet.", Line_Normal);
 	ClearMessage();
+	FadeOutBGM( 0, 400, FALSE );
+	PlayBGM( 0, "iwakannnohatuga", 56, 0 );
 
 	//VoiceMatching
 	if(GetGlobalFlag(GCensor) >= 2){ModCallScriptSection("_zmeak_014_1_vm0x_n01","dialog001");}
@@ -707,6 +707,8 @@ void main()
 		   NULL, "Ooishi smiled in satisfaction, but I didn't feel relieved.", Line_Normal);
 	ClearMessage();
 	DrawSceneWithMask("background/ke5", "maskup", 1, 0, 300 );
+	FadeOutBGM( 0, 400, FALSE );
+	PlayBGM( 0, "higurashi", 56, 0 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 6, "ps3/s06/06/150601161", 256, TRUE);
@@ -742,12 +744,9 @@ void main()
 	ClearMessage();
 
 	DrawScene("black", 2000 );
-	FadeOutBGM( 1, 400, FALSE );
 	ModSetLayerFilter(2, 256, "none");
 	ModDrawCharacter(2, 11, "sprite/oisi1_1_", "0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, FALSE );
 	DrawScene("background/ke_ky1", 400 );
-	PlayBGM( 0, "semi", 56, 0 );
-	PlayBGM( 2, "suzume", 56, 0 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>Ooishi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 11, "ps3/s06/11/150700311", 256, TRUE);
@@ -1039,8 +1038,6 @@ void main()
 		   NULL, "\"Huh?\"", Line_Normal);
 	ClearMessage();
 
-	FadeOutBGM( 0, 400, FALSE );
-	FadeOutBGM( 2, 400, FALSE );
 	DrawScene("black", 400 );
 	PlaySE( 0, "s_suzu", 56, 64 );
 
@@ -1050,7 +1047,6 @@ void main()
 		   NULL, "\"...They say that he was demoned away...\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
-	PlayBGM( 1, "msys15", 56, 0 );
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　鬼隠しというのは、神隠しと同じ意味だ。",
 		   NULL, "To be demoned away means the same thing as being spirited away.", Line_WaitForInput);
@@ -1149,7 +1145,7 @@ void main()
 		   NULL, " Oyashiro-sama's curse has nothing to do with it.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
-	FadeOutBGM( 1, 300, FALSE );
+	FadeOutBGM( 0, 300, FALSE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　でも、",
@@ -1157,7 +1153,7 @@ void main()
 	SetValidityOfInput( FALSE );
 	Wait( 1000 );
 	SetValidityOfInput( TRUE );
-	PlayBGM( 0, "semi_r", 56, 0 );
+	PlayBGM( 0, "suzu", 56, 0 );
 	OutputLine(NULL, "……………あれ？",
 		   NULL, " ......Hmm?", Line_WaitForInput);
 	OutputLine(NULL, "　不快な違和感。",
@@ -1198,7 +1194,6 @@ void main()
 		   NULL, " when we were taking shelter in that shack.", Line_Normal);
 	ClearMessage();
 
-	FadeOutBGM( 0, 300, FALSE );
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 6, "ps3/s06/06/150601182", 256, TRUE);
 	OutputLine(NULL, "「あ、」",
@@ -1281,6 +1276,7 @@ void main()
 	ClearMessage();
 
 	DisableWindow();
+	FadeOutBGM( 0, 1000, FALSE );
 	FadeOutBGM( 1, 1000, FALSE );
 	SetValidityOfInput( FALSE );
 	Wait( 2000 );
@@ -1290,8 +1286,7 @@ void main()
 	DrawScene("black", 3000 );
 
 	DrawScene("white", 1400 );
-	PlayBGM( 0, "semi", 56, 0 );
-	PlayBGM( 2, "suzume", 56, 0 );
+	PlayBGM( 1, "Mati", 24, 0 );
 	DrawScene("background/sora", 1000 );
 	SetValidityOfInput( FALSE );
 	Wait( 3500 );
@@ -1305,8 +1300,6 @@ void main()
 	Wait( 2300 );
 	SetValidityOfInput( TRUE );
 	DrawScene("black", 4000 );
-	FadeOutBGM( 0, 400, FALSE );
-	FadeOutBGM( 2, 400, FALSE );
 	DrawSceneWithMask("background/tosyo2", "maskleft", 1, 0, 300 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -1328,6 +1321,7 @@ void main()
 	OutputLine(NULL, "　私は腰を下ろすと再びノートを広げ、自分の考えを書き出しながら、沈思黙考の世界に戻った。",
 		   NULL, "I sat down in a new chair, then opened my notebook again. I scribbled my thoughts and sank into silence.", Line_Normal);
 	ClearMessage();
+	FadeOutBGM( 1, 400, FALSE );
 	PlayBGM( 0, "z2_hig1", 56, 0 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -1882,7 +1876,6 @@ void main()
 		   NULL, " I scribbled these things down...", Line_Normal);
 	ClearMessage();
 	DrawScene("black", 300 );
-	FadeOutBGM( 0, 300, FALSE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　だから。",
@@ -1908,6 +1901,7 @@ void main()
 	PlaySE( 4, "wa_027", 56, 64 );
 	StartShakingOfWindow( 248, 30, 0, 2, 3*2, FALSE );
 	StartShakingOfAllObjects( 248, 30, 0, 2, 3*2, TRUE );
+	FadeOutBGM( 0, 300, FALSE );
 	PlayBGM( 1, "higurashi", 56, 0 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>女性</color>", NULL, "<color=#f5e6d3>Woman</color>", NULL, Line_ContinueAfterTyping); }

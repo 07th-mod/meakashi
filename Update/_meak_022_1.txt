@@ -776,7 +776,7 @@ void main()
 	OutputLine(NULL, "　な、…なんだって？！」",
 		   NULL, " Wha... What!?\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
-	PlayBGM( 0, "msys30", 56, 0 );
+	PlayBGM( 0, "hig_sample_kyouki", 56, 0 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 6, "ps3/s06/06/150602223", 256, TRUE);
@@ -842,7 +842,7 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　しかもさ、この方法が何でゾクゾクするかってぇと、",
 		   NULL, "Why was I getting so excited about this?", Line_WaitForInput);
-	PlayBGM( 1, "yabaisemi", 56, 0 );
+	PlayBGM( 1, "semi_r", 56, 0 );
 	SetSpeedOfMessage( TRUE, 16 );
 	OutputLine(NULL, "…私ニハ、スグニ実行可能ナンダヨ、コレ！！",
 		   NULL, " ...Because I could get going with that plan right away!!", Line_ContinueAfterTyping);
@@ -1001,9 +1001,8 @@ void main()
 	OutputLine(NULL, "　圭一は乱暴に受話器を置いた。",
 		   NULL, "Keiichi hung up roughly.", Line_Normal);
 	ClearMessage();
-	FadeOutBGM( 1, 400, FALSE );
 	DrawScene("background/moon", 400 );
-	PlayBGM( 1, "kaze", 56, 0 );
+	PlayBGM( 2, "kaze", 56, 0 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 6, "ps3/s06/06/150602233", 256, TRUE);
@@ -1046,6 +1045,7 @@ void main()
 		   NULL, "I laughed for a while and then calmed down.", Line_Normal);
 	ClearMessage();
 	FadeOutBGM( 1, 300, FALSE );
+	FadeOutBGM( 2, 300, FALSE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　うちに乗り付けてきた梨花と沙都子の自転車や履物などはもう始末してある。",

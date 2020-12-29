@@ -7,8 +7,7 @@ void main()
 	FadeOutBGM( 3, 0, FALSE );
 	ClearMessage();
 	DrawScene("white", 400 );
-	PlayBGM( 1, "semi", 56, 0 );
-	PlayBGM( 2, "suzume", 56, 0 );
+	PlayBGM( 1, "Mati", 24, 0 );
 	DrawSceneWithMask("background/sora", "maskup", 1, 0, 300 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -27,8 +26,6 @@ void main()
 		   NULL, "I'd thought my life would improve after escaping from the school, but in reality, it wasn't that easy.", Line_Normal);
 	ClearMessage();
 
-	FadeOutBGM( 1, 300, FALSE );
-	FadeOutBGM( 2, 300, FALSE );
 	DrawSceneWithMask("background/mati2", "maskleft", 1, 0, 300 );
 	PlayBGM( 0, "z2_hig3", 56, 0 );
 
@@ -102,8 +99,6 @@ void main()
 
 
 	FadeOutBGM( 0, 300, FALSE );
-	PlayBGM( 1, "semi", 56, 0 );
-	PlayBGM( 2, "suzume", 56, 0 );
 	DrawScene("background/sora", 400 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
@@ -134,7 +129,6 @@ void main()
 
 	PlayBGM( 0, "Iru", 56, 0 );
 	FadeOutBGM( 1, 300, FALSE );
-	FadeOutBGM( 2, 300, FALSE );
 	DrawScene("background/k_kouen1", 400 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
@@ -517,8 +511,7 @@ void main()
 		   NULL, " ...Whoa... ooh...\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
-	FadeOutBGM( 0, 300, FALSE );
-	PlayBGM( 1, "t1", 56, 0 );
+	PlayBGM( 1, "higurashi", 56, 0 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　前に撫でられた時もそうだったんだけど……。",
@@ -574,8 +567,6 @@ void main()
 	ClearMessage();
 
 	DisableWindow();
-	FadeOutBGM( 1, 300, FALSE );
-	PlayBGM( 0, "higurashi", 56, 0 );
 	ModSetLayerFilter(2, 256, "sunset");
 	ModDrawCharacter(2, 7, "portrait/sato1_def1_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, FALSE );
 	DrawScene("background/k_kouen1_01", 300 );
@@ -721,8 +712,7 @@ void main()
 		   NULL, " He didn't seem to really care about the details...", Line_Normal);
 	ClearMessage();
 	DrawSceneWithMask("white", "maskleft", 1, 0, 300 );
-	FadeOutBGM( 0, 300, FALSE );
-	PlayBGM( 1, "z2_hig2", 56, 0 );
+	FadeOutBGM( 1, 300, FALSE );
 	DrawSceneWithMask("background/mati3_01", "maskleft", 1, 0, 300 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -815,11 +805,11 @@ void main()
 		   NULL, "I could simply spend some fun time with Satoshi-kun without having to think too much.", Line_Normal);
 	ClearMessage();
 	DrawScene("black", 400 );
-	FadeOutBGM( 1, 300, FALSE );
+	FadeOutBGM( 0, 300, FALSE );
 	ModSetLayerFilter(3, 256, "none");
 	ModDrawCharacter(3, 7, "sprite/sato1_komaru_", "0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 0, FALSE );
 	DrawSceneWithMask("background/tennai1", "maskleft", 1, 0, 300 );
-	PlayBGM( 0, "msys03", 56, 0 );
+	PlayBGM( 0, "z2_hig2", 56, 0 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#ffdc6f>悟史</color>", NULL, "<color=#ffdc6f>Satoshi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 7, "ps3/s06/07/151200066", 256, TRUE);
@@ -1499,9 +1489,7 @@ void main()
 		   NULL, " Well, that might have just been the way innocent people like him would react in a situation like that.", Line_Normal);
 	ClearMessage();
 
-	FadeOutBGM( 1, 400, FALSE );
 	DrawScene("black", 400 );
-	PlayBGM( 0, "higurashi", 56, 0 );
 	DrawScene("background/mati2_01", 400 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
@@ -1610,8 +1598,6 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	PlaySE( 0, "s_boyoon", 56, 64 );
-	FadeOutBGM( 0, 300, FALSE );
-	PlayBGM( 1, "t1", 56, 0 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 6, "ps3/s06/06/150600459", 256, TRUE);
@@ -1744,7 +1730,7 @@ void main()
 	ClearMessage();
 
 	CallScript( "&eyeCamp" );
-	FadeOutBGM( 1, 1000, TRUE );
+	FadeOutBGM( 0, 1000, TRUE );
 	SetValidityOfSkipping( FALSE );
 	DrawSceneWithMask("tips/gettip_meak005", "mask1900", 7, 0, 400 );
 	Wait( 5000 );

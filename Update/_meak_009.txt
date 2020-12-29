@@ -8,7 +8,6 @@ void main()
 
 	DrawScene("black", 100 );
 	PlayBGM( 0, "semi", 56, 0 );
-	PlayBGM( 2, "suzume", 56, 0 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　大の字になって、私は天井を見上げているだけだ。",
@@ -131,7 +130,7 @@ void main()
 	FadeOutBGM( 0, 300, FALSE );
 	FadeOutBGM( 2, 300, FALSE );
 	ModDrawCharacter(2, 15, "sprite/kasa_1_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );
-	PlayBGM( 1, "msys06", 56, 0 );
+	PlayBGM( 0, "03_cele", 56, 0 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#76523d>葛西</color>", NULL, "<color=#76523d>Kasai</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 15, "ps3/s06/15/151500120", 256, TRUE);
@@ -590,8 +589,7 @@ void main()
 		   NULL, "...Only the Houjou couple was left, since most of the other enemies had already gone.", Line_Normal);
 	ClearMessage();
 
-	PlayBGM( 0, "semi", 56, 0 );
-	PlayBGM( 2, "suzume", 56, 0 );
+	PlayBGM( 1, "semi", 56, 0 );
 	DrawScene("white", 400 );
 	DrawScene("background/sora", 400 );
 
@@ -874,9 +872,7 @@ void main()
 		   NULL, " Then after a second, I dialed the number in a flash.", Line_Normal);
 	ClearMessage();
 
-	FadeOutBGM( 1, 300, FALSE );
 	DrawScene("black", 400 );
-	PlayBGM( 0, "higurashi", 56, 0 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　やがて、呼び出し音が、",
@@ -947,8 +943,6 @@ void main()
 		   NULL, " Are you okay now?\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
-	FadeOutBGM( 0, 300, FALSE );
-	PlayBGM( 1, "t1", 56, 0 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　悟史くんは、…悟史くんでいてくれた。",
@@ -1140,7 +1134,6 @@ void main()
 		   NULL, " Is she all right?\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
-	FadeOutBGM( 1, 300, FALSE );
 	PlaySE( 4, "wa_025", 56, 64 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#ffdc6f>悟史</color>", NULL, "<color=#ffdc6f>Satoshi</color>", NULL, Line_ContinueAfterTyping); }
@@ -1149,7 +1142,6 @@ void main()
 		   NULL, "\"...Does she look all right to you...?\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
-	PlayBGM( 1, "msys17", 56, 0 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　悟史くんの声色が急にどす黒くなる。",

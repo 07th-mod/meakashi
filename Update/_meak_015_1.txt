@@ -39,7 +39,7 @@ void main()
 
 
 	DrawScene("white", 1000 );
-	PlayBGM( 1, "Iru", 56, 0 );
+	PlayBGM( 0, "Iru", 56, 0 );
 	DrawScene("background/sora", 1000 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -172,9 +172,8 @@ void main()
 		   NULL, "My arm hit a motorcycle parked on the sidewalk. It obviously wasn't where it was supposed to be.", Line_Normal);
 	ClearMessage();
 
-	FadeOutBGM( 1, 300, FALSE );
-	PlayBGM( 0, "semi", 56, 0 );
-	PlayBGM( 2, "suzume", 56, 0 );
+	FadeOutBGM( 0, 300, FALSE );
+	PlayBGM( 1, "semi", 56, 0 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 6, "ps3/s06/06/150601321", 256, TRUE);
@@ -230,10 +229,7 @@ void main()
 		   NULL, " I felt like I'd gone through the exact same experience before. ", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
-	FadeOutBGM( 0, 300, FALSE );
-	FadeOutBGM( 2, 300, FALSE );
 	DrawSceneWithMask("black", "maskright", 1, 0, 300 );
-	PlayBGM( 1, "msys23", 56, 0 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　目をぱちくりさせながらその光景を思い出そうとする私の襟首が引っ張られ、私は薄暗い路地裏に引きずり込まれた。",
@@ -421,8 +417,7 @@ void main()
 	DisableWindow();
 	FadeOutBGM( 0, 300, FALSE );
 	ModDrawCharacter(2, 1, "sprite/kei2_komaru_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );
-	PlayBGM( 0, "semi", 56, 0 );
-	PlayBGM( 2, "suzume", 56, 0 );
+	PlayBGM( 1, "semi", 56, 0 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 1, "ps3/s06/01/150100003", 256, TRUE);
@@ -443,6 +438,7 @@ void main()
 	OutputLine(NULL, "　んなこと、おんめえにッしズされんとおんじゃあかぁあ！！」",
 		   NULL, " Dafuq ye think ye, tellin' us whatcha do?!\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+	PlayBGM( 0, "rika", 56, 0 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 1, "ps3/s06/01/150100004", 256, TRUE);
@@ -558,7 +554,7 @@ void main()
 	//VoiceMatchingEnd
 
 	FadeOutBGM( 0, 500, FALSE );
-	FadeOutBGM( 2, 500, FALSE );
+	FadeOutBGM( 1, 500, FALSE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　その時、閃光が瞬く…。",
@@ -579,7 +575,7 @@ void main()
 	ModSetLayerFilter(2, 256, "none");
 	ModDrawCharacter(2, 1, "sprite/kei2_ikari2_", "1", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, FALSE );
 	DrawScene("background/mati4", 300 );
-	PlayBGM( 1, "4", 56, 0 );
+	PlayBGM( 0, "4", 56, 0 );
 	PlaySE( 0, "s_daidageki", 56, 64 );
 	StartShakingOfWindow( 248, 40, 0, 2, 5*2, FALSE );
 	StartShakingOfAllObjects( 248, 40, 0, 2, 5*2, TRUE );
@@ -860,7 +856,7 @@ void main()
 		   NULL, " Seemed like our backup had arrived.", Line_Normal);
 	ClearMessage();
 
-	FadeOutBGM( 1, 300, FALSE );
+	FadeOutBGM( 0, 300, FALSE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>不良</color>", NULL, "<color=#f5e6d3>Delinquent</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 0, "ps3/s06/00/huryoa15026", 256, TRUE);
@@ -1167,9 +1163,7 @@ void main()
 		   NULL, " Hee hee hee hee!\"", Line_Normal);
 	ClearMessage();
 	DrawScene("white", 2000 );
-	FadeOutBGM( 0, 1000, FALSE );
 	DrawScene("background/si_h2_01", 1000 );
-	PlayBGM( 1, "z2_hig2", 56, 0 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　前原圭一は本当に面白い人だった。",
@@ -1252,8 +1246,9 @@ void main()
 	OutputLine(NULL, "　悟史くんと比べたら、圭ちゃんはガキンチョでお子様で、包容力がまるでない。",
 		   NULL, "Kei-chan was just too childish compared to Satoshi-kun.", Line_Normal);
 	ClearMessage();
+	FadeOutBGM( 0, 300, FALSE );
+	PlayBGM( 1, "demo_48khz", 56, 0 );
 
-	FadeOutBGM( 1, 400, FALSE );
 	DrawScene("black", 400 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -1276,7 +1271,6 @@ void main()
 		   NULL, "There was no reason for him to wait anymore...", Line_Normal);
 	ClearMessage();
 
-	PlayBGM( 0, "demo_48khz", 56, 0 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　私は軽く頭を振る。",
@@ -1366,7 +1360,7 @@ void main()
 	ClearMessage();
 	DrawScene("background/si_h2_01", 400 );
 
-	FadeOutBGM( 0, 300, FALSE );
+	FadeOutBGM( 1, 300, FALSE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 6, "ps3/s06/06/150601333", 256, TRUE);
@@ -1443,6 +1437,7 @@ void main()
 	OutputLine(NULL, "　とも聞けず、私は魅音が何の話をしているのか、今頃になって集中した。",
 		   NULL, " So instead, I concentrated on her story instead.", Line_Normal);
 	ClearMessage();
+	FadeOutBGM( 0, 300, FALSE );
 	PlayBGM( 0, "hgrs01", 56, 0 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
