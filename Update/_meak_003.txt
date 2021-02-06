@@ -1020,7 +1020,7 @@ void main()
 	SetValidityOfInput( FALSE );
 	Wait( 2000 );
 	SetValidityOfInput( TRUE );
-	PlayBGM( 0, "z2_hig2", 56, 0 );
+	PlayBGM( 1, "z2_hig2", 56, 0 );
 	DrawScene("white", 1000 );
 	DrawScene("background/mati3", 1000 );
 
@@ -1483,7 +1483,7 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
-	FadeOutBGM( 0, 300, FALSE );
+	FadeOutBGM( 1, 300, FALSE );
 	PlayBGM( 0, "yoru", 56, 0 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
