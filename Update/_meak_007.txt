@@ -1931,7 +1931,7 @@ void main()
 
 	FadeOutBGM( 1, 300, FALSE );
 	FadeOutBGM( 2, 300, FALSE );
-	PlayBGM( 1, "ame", 56, 0 );
+	PlayBGM( 0, "ame", 56, 0 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　……土砂降りは、少しも弱まる気配はない。",
@@ -1978,7 +1978,7 @@ void main()
 		   NULL, "The Watanagashi festival was...", Line_WaitForInput);
 
 	PlaySE( 4, "wa_022", 56, 64 );
-	FadeOutBGM( 0, 300, FALSE );
+	FadeOutBGM( 1, 300, FALSE );
 	FadeOutBGM( 2, 300, FALSE );
 
 	OutputLine(NULL, "…綿流しのお祭りは。",
@@ -2043,7 +2043,8 @@ void main()
 		   NULL, " End?", Line_Normal);
 	ClearMessage();
 
-	PlayBGM( 0, "semi_r", 56, 0 );
+	FadeOutBGM( 0, 300, FALSE );
+	PlayBGM( 1, "semi_r", 56, 0 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　…………胸の中を、あまりに具体的になった不安がぐるぐると駆け巡る。",
