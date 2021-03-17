@@ -41,7 +41,8 @@ void main()
 		   NULL, "Surely, she must be an important icon in the cult of Oyashiro-sama. The true believers are devoted to her.", Line_Normal);
 	ClearMessage();
 	PlaySE( 0, "s_page", 56, 64 );
-	PlayBGM( 0, "kaze", 56, 0 );
+	ModPlayBGM( 0, "semi_r", 56, 0, 0 );
+	ModPlayBGM( 0, "kaze", 56, 0, 1 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　そんな宗教的象徴で、アイドル的な古手梨花が刺客だった事実は、あまりに衝撃的だ。",

@@ -76,6 +76,7 @@ void main()
 
 	FadeOutBGM( 0, 300, FALSE );
 	PlayBGM( 1, "semi", 56, 0 );
+	ModPlayBGM( 2, "suzume", 56, 0, 0 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 6, "ps3/s06/06/150600309", 256, TRUE);
@@ -130,6 +131,8 @@ void main()
 		   NULL, "I didn't realize that the owners of the motorcycles were right nearby. They looked pretty scary.", Line_Normal);
 	ClearMessage();
 
+	ModFadeOutBGM( 1, 300, FALSE, 0 );
+	ModFadeOutBGM( 2, 300, FALSE, 0 );
 	DrawSceneWithMask("black", "maskright", 1, 0, 300 );
 	PlayBGM( 0, "deadend", 56, 0 );
 
@@ -632,8 +635,9 @@ void main()
 	OutputLine(NULL, "　私と同い年くらいの、男の子だった。",
 		   NULL, "A boy around my age appeared.", Line_Normal);
 	ClearMessage();
-	
-	FadeOutBGM( 1, 300, FALSE );
+
+
+	ModFadeOutBGM( 1, 300, FALSE, 1 );
 	PlayBGM( 0, "T1", 56, 0 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -823,6 +827,7 @@ void main()
 	Wait( 2000 );
 	SetValidityOfInput( TRUE );
 	PlayBGM( 1, "semi", 56, 0 );
+	ModPlayBGM( 2, "suzume", 56, 0, 0 );
 	DrawScene("background/mati4", 3000 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }

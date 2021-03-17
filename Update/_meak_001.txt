@@ -20,7 +20,8 @@ void main()
 	DrawScene("black", 3000 );
 	SetSpeedOfMessage( FALSE, 0 );
 
-	PlayBGM( 0, "yoru", 56, 0 );
+	ModPlayBGM( 1, "yoru", 56, 0, 0 );
+	ModPlayBGM( 0, "yoru", 56, 0, 1 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　…キーホルダーに括り付けられたカギは大小７つ。",
@@ -258,7 +259,8 @@ void main()
 	SetValidityOfInput( FALSE );
 	Wait( 1000 );
 	SetValidityOfInput( TRUE );
-	PlayBGM( 2, "kaze", 56, 0 );
+	ModPlayBGM( 1, "kaze", 56, 0, 0 );
+	ModPlayBGM( 2, "kaze", 56, 0, 1 );
 
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -380,9 +382,9 @@ void main()
 	OutputLine(NULL, "床に叩きつけられる時だけ、まるで食器棚を丸ごと床にぶちまけた時のような凄まじい音をたてて見せた。",
 		   NULL, " it made a tremendous metal noise as if somebody pushed over a cupboard.", Line_Normal);
 	ClearMessage();
-	FadeOutBGM( 0, 300, FALSE );
+	ModFadeOutBGM( 0, 300, FALSE, 1 );
 	FadeOutBGM( 1, 300, FALSE );
-	FadeOutBGM( 2, 300, FALSE );
+	ModFadeOutBGM( 2, 300, FALSE, 1 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　ジャリリリーンンッ！！！",
@@ -1106,6 +1108,7 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
 	DisableWindow();
+	ModFadeOutBGM( 0, 500, FALSE, 0 );
 	Negative( 1000 , TRUE );
 	PlayBGM( 1, "semi_r", 56, 0 );
 
@@ -1115,7 +1118,7 @@ void main()
 	ClearMessage();
 
 	DisableWindow();
-	FadeOutBGM( 0, 500, FALSE );
+	ModFadeOutBGM( 0, 500, FALSE, 1 );
 	FadeOutBGM( 1, 500, FALSE );
 	FadeFilm( 500, TRUE );
 	PlayBGM( 0, "DEADEND", 56, 0 );
@@ -2605,8 +2608,10 @@ void main()
 		   NULL, "Worse, the decision to confine me to an academy far away from the Sonozaki family... was made before I was even born.", Line_Normal);
 	ClearMessage();
 
+	ModFadeOutBGM( 1, 500, FALSE, 0 );
 	DrawScene("black", 400 );
 	DrawScene("background/flashback/ima3", 400 );
+	ModPlayBGM( 1, "msys27", 56, 0, 0 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　私に与えられた名前は",
@@ -2833,6 +2838,8 @@ void main()
 		   NULL, " The town isn't very sophisticated, but I kind of like it there.", Line_Normal);
 	ClearMessage();
 
+	ModFadeOutBGM( 1, 300, FALSE, 0 );
+	ModPlayBGM( 0, "Mati", 56, 0, 0 );
 	DrawSceneWithMask("background/kuruma5_02", "maskright", 1, 0, 300 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#76523d>葛西</color>", NULL, "<color=#76523d>Kasai</color>", NULL, Line_ContinueAfterTyping); }
@@ -2930,7 +2937,8 @@ void main()
 	OutputLine(NULL, "　自分がその噂を、被験者として確かめる目に遭わないことを祈っておこう。",
 		   NULL, "I hope I don't end up as a victim of that place.", Line_Normal);
 	ClearMessage();
-	PlayBGM( 0, "Cafe", 56, 0 );
+	ModPlayBGM( 1, "Cafe", 56, 0, 0 );
+	ModPlayBGM( 0, "Cafe", 56, 0, 1 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 6, "ps3/s06/06/150600053", 256, TRUE);
@@ -3233,7 +3241,8 @@ void main()
 	OutputLine(NULL, "　自分から黙れと言っておきながら、ずっと葛西とおしゃべりを続けていた。",
 		   NULL, "Even though I told Kasai to shut up, I kept talking to him.", Line_Normal);
 	ClearMessage();
-	FadeOutBGM( 0, 300, FALSE );
+	ModFadeOutBGM( 1, 300, FALSE, 0 );
+	ModFadeOutBGM( 0, 300, FALSE, 1 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　……やがて、",
@@ -3304,7 +3313,8 @@ void main()
 	ClearMessage();
 	SetValidityOfInput( FALSE );
 	DisableWindow();
-	FadeOutBGM( 1, 500, FALSE );
+	ModFadeOutBGM( 0, 500, FALSE, 0 );
+	ModFadeOutBGM( 1, 500, FALSE, 1 );
 	Wait( 1000 );
 	SetValidityOfInput( TRUE );
 	PlayBGM( 0, "T1", 56, 0 );

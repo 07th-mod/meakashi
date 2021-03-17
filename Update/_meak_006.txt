@@ -429,6 +429,8 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	DisableWindow();
+	ModFadeOutBGM( 0, 300, FALSE, 0 );
+	ModPlayBGM( 1, "t1", 56, 0, 0 );
 	ModDrawCharacter(1, 7, "portrait/sato2_def2_", "0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 21, 200, TRUE );
 	PlaySE( 0, "s_boyoon", 56, 64 );
 
@@ -553,7 +555,9 @@ void main()
 		   NULL, "The Okinomiya Titans use this field too, but they practice on a different day of the week. They always train hard using dumbbells and stuff.", Line_Normal);
 	ClearMessage();
 	DrawSceneWithMask("black", "maskdown", 1, 0, 300 );
-	PlayBGM( 1, "semi", 56, 0 );
+	ModPlayBGM( 0, "semi", 56, 0, 0 );
+	ModPlayBGM( 2, "suzume", 56, 0, 0 );
+	ModPlayBGM( 1, "semi", 56, 0, 1 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　ジャンケンと学年でチームが分けられ、すごくいい加減なムードでプレイボールになった。",
@@ -914,7 +918,8 @@ void main()
 	OutputLine(NULL, "　監督は麦茶がおいしい…なんて言いながら聞き流している風だったが、私が折れないことに気付き、ちょっぴり肩をすくめて答えてくれた。",
 		   NULL, "Irie pretended he didn't hear me, but I pressed him on it. In response, he shrugged, and began answering the question.", Line_Normal);
 	ClearMessage();
-	FadeOutBGM( 0, 300, FALSE );
+	ModFadeOutBGM( 1, 300, FALSE, 0 );
+	ModFadeOutBGM( 0, 300, FALSE, 1 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#c89a80>入江</color>", NULL, "<color=#c89a80>Irie</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 10, "ps3/s06/10/151000038", 256, TRUE);
@@ -994,8 +999,11 @@ void main()
 	ClearMessage();
 
 	DisableWindow();
-	FadeOutBGM( 1, 300, FALSE );
-	PlayBGM( 0, "demo_48khz", 56, 0 );
+	ModFadeOutBGM( 0, 300, FALSE, 0 );
+	ModFadeOutBGM( 2, 300, FALSE, 0 );
+	ModPlayBGM( 1, "demo_48khz", 56, 0, 0 );
+	ModFadeOutBGM( 1, 300, FALSE, 1 );
+	ModPlayBGM( 0, "demo_48khz", 56, 0, 1 );
 	ModDrawCharacter(2, 10, "sprite/iri3_def1_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#c89a80>入江</color>", NULL, "<color=#c89a80>Irie</color>", NULL, Line_ContinueAfterTyping); }
@@ -1195,6 +1203,9 @@ void main()
 		   NULL, " I eased him into it...\"", Line_Normal);
 	ClearMessage();
 	DrawScene("white", 1000 );
+	ModFadeOutBGM( 1, 300, FALSE, 0 );
+	ModPlayBGM( 0, "semi", 56, 0, 0 );
+	ModPlayBGM( 2, "suzume", 56, 0, 0 );
 	DrawScene("background/sora", 400 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -1215,6 +1226,7 @@ void main()
 		   NULL, " he learned how to see the trajectory of the ball.", Line_Normal);
 	ClearMessage();
 
+	ModPlayBGM( 1, "Cafe", 56, 0, 0 );
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 6, "ps3/s06/06/150600526", 256, TRUE);
 	OutputLine(NULL, "「…あー、なんかわかるなぁ。",
@@ -1337,6 +1349,9 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	PlaySE( 4, "wa_022", 56, 64 );
+	ModFadeOutBGM( 0, 1000, FALSE, 0 );
+	ModFadeOutBGM( 1, 1000, FALSE, 0 );
+	ModFadeOutBGM( 2, 1000, FALSE, 0 );
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 6, "ps3/s06/06/150600538", 256, TRUE);
 	OutputLine(NULL, "「……………え？」",
@@ -1345,6 +1360,8 @@ void main()
 
 
 	DrawScene("white", 400 );
+	ModPlayBGM( 1, "semi", 56, 0, 0 );
+	ModPlayBGM( 2, "suzume", 56, 0, 0 );
 	PlaySE( 4, "wa_019", 56, 64 );
 	DrawScene("scene/109d", 300 );
 
@@ -1365,6 +1382,9 @@ void main()
 		   NULL, "...But the left fielder managed to catch it.", Line_Normal);
 	ClearMessage();
 
+	ModFadeOutBGM( 1, 300, FALSE, 0 );
+	ModFadeOutBGM( 2, 300, FALSE, 0 );
+	ModPlayBGM( 0, "demo_48khz", 56, 0, 0 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　沙都子と叔母の仲が最近、非常に険悪になっているらしい。",
@@ -1565,7 +1585,9 @@ void main()
 
 	DisableWindow();
 	FadeOutBGM( 0, 300, FALSE );
-	PlayBGM( 1, "semi", 56, 0 );
+	ModPlayBGM( 1, "semi", 56, 0, 0 );
+	ModPlayBGM( 2, "suzume", 56, 0, 0 );
+	ModPlayBGM( 1, "semi", 56, 0, 1 );
 	ModDrawCharacter(2, 10, "sprite/iri3_def1_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );
 
 
@@ -1614,7 +1636,8 @@ void main()
 		   NULL, " I think he's concerned about that.\"", Line_Normal);
 	ClearMessage();
 
-	FadeOutBGM( 1, 400, FALSE );
+	ModFadeOutBGM( 1, 400, FALSE, 0 );
+	ModFadeOutBGM( 1, 400, FALSE, 1 );
 	FadeOutBGM( 2, 400, FALSE );
 	DrawScene("black", 400 );
 
@@ -1624,6 +1647,7 @@ void main()
 		   NULL, "\".....................\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
+	ModPlayBGM( 0, "semi_r", 56, 0, 0 );
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　私はしばしの間、言葉を失っていた。",
 		   NULL, "I was left speechless for a while.", GetGlobalFlag(GLinemodeSp));
@@ -1751,7 +1775,9 @@ void main()
 	ClearMessage();
 
 	DisableWindow();
-	PlayBGM( 0, "hgrs01", 56, 0 );
+	ModFadeOutBGM( 0, 300, FALSE, 0 );
+	ModPlayBGM( 1, "hgrs01", 56, 0, 0 );
+	ModPlayBGM( 0, "hgrs01", 56, 0, 1 );
 	ModDrawCharacter(2, 10, "sprite/iri3_def1_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#c89a80>入江</color>", NULL, "<color=#c89a80>Irie</color>", NULL, Line_ContinueAfterTyping); }
@@ -1879,7 +1905,7 @@ void main()
 
 	ModDrawCharacter(2, 10, "sprite/iri3_majime_", "2", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, FALSE );
 	DrawScene("background/oki_g3", 400 );
-	PlayBGM( 1, "semi", 56, 0 );
+	ModPlayBGM( 1, "semi", 56, 0, 1 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#c89a80>入江</color>", NULL, "<color=#c89a80>Irie</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 10, "ps3/s06/10/151000085", 256, TRUE);
@@ -1919,7 +1945,9 @@ void main()
 		   NULL, "...I'd said too much.", Line_Normal);
 	ClearMessage();
 
+	ModFadeOutBGM( 1, 400, FALSE, 0 );
 	DrawScene("black", 400 );
+	ModPlayBGM( 0, "msys17", 56, 0, 0 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　園崎魅音は北条沙都子の友人だ。",
@@ -1963,7 +1991,7 @@ void main()
 	OutputLine(NULL, "　…………………本当に、…しくじった。",
 		   NULL, "..................I'd totally messed up.", Line_Normal);
 	ClearMessage();
-	FadeOutBGM( 1, 400, FALSE );
+	ModFadeOutBGM( 1, 400, FALSE, 1 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　だが、………私はおかしいことを言ったつもりはない。",
@@ -1996,6 +2024,8 @@ void main()
 		   NULL, "I could even say that he was my reason for living.", Line_Normal);
 	ClearMessage();
 	DrawScene("background/sora", 400 );
+	ModPlayBGM( 1, "semi", 56, 0, 0 );
+	ModPlayBGM( 2, "suzume", 56, 0, 0 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　……そうさ、私はもう悟史くんが好きだ。",

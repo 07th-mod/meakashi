@@ -8,6 +8,7 @@ void main()
 
 	DrawScene("black", 100 );
 	PlayBGM( 0, "semi", 56, 0 );
+	ModPlayBGM( 2, "suzume", 56, 0, 0 );
 	DrawScene("text/nort19", 1000 );
 	Wait( 10000 );
 	DrawScene("black", 3000 );
@@ -169,6 +170,7 @@ void main()
 	FadeOutBGM( 0, 400, FALSE );
 	FadeOutBGM( 2, 400, FALSE );
 	DrawScene("black", 400 );
+	ModPlayBGM( 1, "msys27", 56, 0, 0 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　最近は、野球の練習日に合わせて「魅音」の時間をもらえるようになっていたので、お姉と打ち合わせることはほとんどなくなっていた。",
@@ -221,8 +223,10 @@ void main()
 		   NULL, " But something surprised me out of the blue.", Line_Normal);
 	ClearMessage();
 
+	ModFadeOutBGM( 1, 300, FALSE, 0 );
 	DrawSceneWithMask("background/oki_g3", "maskleft", 1, 0, 300 );
 	PlayBGM( 0, "semi", 56, 0 );
+	ModPlayBGM( 2, "suzume", 56, 0, 0 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　自転車を引っ張り出し、グラウンドを後にしようとした時、…突然声をかけられたのだ。",
@@ -405,6 +409,7 @@ void main()
 	SetValidityOfInput( FALSE );
 	Wait( 1000 );
 	SetValidityOfInput( TRUE );
+	ModPlayBGM( 0, "Ame", 56, 0, 0 );
 	PlayBGM( 1, "Ame", 56, 0 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -472,6 +477,7 @@ void main()
 		   NULL, "...So it wasn't surprising that she knew as well.", Line_Normal);
 	ClearMessage();
 
+	ModFadeOutBGM( 1, 400, FALSE, 0 );
 	DrawScene("black", 400 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -522,6 +528,7 @@ void main()
 	ClearMessage();
 
 	DrawSceneWithMask("background/mob1_01", "maskup", 1, 0, 300 );
+	ModPlayBGM( 1, "Ame", 56, 0, 0 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 2, "ps3/s06/02/150200010", 256, TRUE);
@@ -633,6 +640,7 @@ void main()
 		   NULL, " You know that lies can become true sometimes?\"", Line_Normal);
 	ClearMessage();
 
+	ModFadeOutBGM( 1, 400, FALSE, 0 );
 	DrawScene("black", 400 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -668,6 +676,7 @@ void main()
 	ClearMessage();
 
 	DrawSceneWithMask("background/mob1_01", "maskup", 1, 0, 300 );
+	ModPlayBGM( 1, "Ame", 56, 0, 0 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 2, "ps3/s06/02/150200022", 256, TRUE);
@@ -767,6 +776,7 @@ void main()
 		   NULL, " but he'll finish by Satoko-chan's birthday, at the latest.\"", Line_Normal);
 	ClearMessage();
 
+	ModFadeOutBGM( 1, 300, FALSE, 0 );
 	DrawSceneWithMask("black", "maskdown", 1, 0, 300 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -840,7 +850,7 @@ void main()
 	OutputLine(NULL, "………沙都子のことなんか、忘れてしまえば…悟史くんはもっともっと…心に負担をかけずに過せるのに。",
 		   NULL, " ...It would be easier for him to just forget about Satoko.", Line_Normal);
 	ClearMessage();
-	FadeOutBGM( 1, 400, FALSE );
+	ModFadeOutBGM( 1, 400, FALSE, 1 );
 
 	DisableWindow();
 	SetValidityOfInterface(FALSE);
@@ -858,7 +868,7 @@ void main()
 	OutputLine(NULL, "「…………………っ。」",
 		   NULL, "\"............!\"", Line_Normal);
 	ClearMessage();
-	PlayBGM( 1, "Ame", 56, 0 );
+	ModPlayBGM( 1, "Ame", 56, 0, 1 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　その時、…私の瞳を覗きこんでいるレナに、…ぎょっとする。",
@@ -867,6 +877,8 @@ void main()
 	if (GetGlobalFlag(GADVMode) == 0) { ClearMessage(); }
 
 	DrawScene("background/mob1_01", 400 );
+	ModPlayBGM( 0, "ame", 56, 0, 0 );
+	ModPlayBGM( 1, "Ame", 56, 0, 0 );
 	SetValidityOfInterface(TRUE);
 	SetValidityOfSaving(TRUE);
 
@@ -1213,7 +1225,8 @@ void main()
 	ClearMessage();
 
 	FadeOutBGM( 0, 300, FALSE );
-	PlayBGM( 0, "getting_mad", 56, 0 );
+	ModPlayBGM( 1, "msys07", 56, 0, 0 );
+	ModPlayBGM( 0, "getting_mad", 56, 0, 1 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 2, "ps3/s06/02/150200045", 256, TRUE);
@@ -1246,7 +1259,8 @@ void main()
 		   NULL, "...And got the chills.", Line_Normal);
 	ClearMessage();
 
-	PlayBGM( 1, "semi_r", 56, 0 );
+	ModPlayBGM( 0, "semi_r", 56, 0, 0 );
+	ModPlayBGM( 1, "semi_r", 56, 0, 1 );
 	DrawScene("scene/204b", 400 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -1555,6 +1569,7 @@ void main()
 		   NULL, " even if only unconsciously...\"", Line_Normal);
 	ClearMessage();
 
+	ModFadeOutBGM( 0, 300, FALSE, 0 );
 	PlayBGM( 2, "kaze", 56, 0 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -1929,9 +1944,11 @@ void main()
 		   NULL, "while he tries to figure out whether he should leave or continue protecting her.\"", Line_Normal);
 	ClearMessage();
 
-	FadeOutBGM( 1, 300, FALSE );
+	ModFadeOutBGM( 1, 300, FALSE, 1 );
 	FadeOutBGM( 2, 300, FALSE );
-	PlayBGM( 0, "ame", 56, 0 );
+	ModPlayBGM( 0, "ame", 56, 0, 0 );
+	ModPlayBGM( 2, "ame", 56, 0, 0 );
+	ModPlayBGM( 0, "ame", 56, 0, 1 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　……土砂降りは、少しも弱まる気配はない。",
@@ -1986,6 +2003,8 @@ void main()
 	ClearMessage();
 
 	DisableWindow();
+	ModPlayBGM( 0, "ame", 56, 0, 0 );
+	ModPlayBGM( 2, "ame", 56, 0, 0 );
 	SetValidityOfInput( FALSE );
 	Wait( 2000 );
 	SetValidityOfInput( TRUE );
@@ -2008,7 +2027,10 @@ void main()
 		   NULL, " subject to Oyashiro-sama's curse, even now?", Line_Normal);
 	ClearMessage();
 
+	ModFadeOutBGM( 0, 400, FALSE, 0 );
+	ModFadeOutBGM( 2, 400, FALSE, 0 );
 	DrawScene("black", 400 );
+	ModPlayBGM( 0, "suzu", 56, 0, 0 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　悟史くんが家出してしまう？",
@@ -2075,6 +2097,7 @@ void main()
 	ClearMessage();
 
 	DisableWindow();
+	ModPlayBGM( 0, "ame", 56, 0, 0 );
 	SetValidityOfInput( FALSE );
 	Wait( 2000 );
 	SetValidityOfInput( TRUE );
@@ -2088,7 +2111,7 @@ void main()
 	OutputLine(NULL, "　……その連絡の無神経ぶりに初め魅音は怒り、…そして私の話を聞いて驚くことになる。",
 		   NULL, "...Mion got upset at first, but she had to listen to me.", Line_Normal);
 	ClearMessage();
-	PlayBGM( 1, "yoru", 56, 0 );
+	ModPlayBGM( 1, "yoru", 56, 0, 1 );
 
 	DrawScene("background/si_h2_01", 1000 );
 
