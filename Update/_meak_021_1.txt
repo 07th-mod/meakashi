@@ -8,6 +8,7 @@ void main()
 
 	DrawScene("white", 1000 );
 	PlayBGM( 0, "semi", 56, 0 );
+	ModPlayBGM( 2, "suzume", 56, 0, 0 );
 	DrawSceneWithMask("background/sora", "maskm1", 1, 0, 1300 );
 	SetValidityOfInput( FALSE );
 	Wait( 2000 );
@@ -287,6 +288,7 @@ void main()
 	Wait( 3000 );
 	SetValidityOfInput( TRUE );
 	PlayBGM( 0, "semi", 56, 0 );
+	ModPlayBGM( 2, "suzume", 56, 0, 0 );
 	ModDrawCharacter(2, 5, "sprite/ri1_def_a1_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, FALSE );
 	DrawSceneWithMask("background/gr3", "maskup", 1, 0, 300 );
 
@@ -1036,9 +1038,9 @@ void main()
 	SetValidityOfInput( FALSE );
 	Wait( 1000 );
 	SetValidityOfInput( TRUE );
-	FadeOutBGM( 0, 300, FALSE );
+	ModFadeOutBGM( 0, 300, FALSE, 1 );
 	DrawScene("black", 400 );
-	PlayBGM( 0, "higurashi", 56, 0 );
+	ModPlayBGM( 0, "higurashi", 56, 0, 1 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　そうだ、昨日から吊るしっぱなしの公由はどうしてるだろう。",
@@ -1069,7 +1071,8 @@ void main()
 
 	FadeOutBGM( 0, 300, FALSE );
 	FadeOutBGM( 2, 300, FALSE );
-	PlayBGM( 1, "hgrs01", 56, 0 );
+	ModPlayBGM( 1, "msys17", 56, 0, 0 );
+	ModPlayBGM( 1, "hgrs01", 56, 0, 1 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　……公由のおじいちゃん、",

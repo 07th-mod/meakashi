@@ -255,7 +255,8 @@ void main()
 	OutputLine(NULL, "　……………それはありえる話だった。",
 		   NULL, "It was very possible.", Line_Normal);
 	ClearMessage();
-	PlayBGM( 0, "iwakannnohatuga", 56, 0 );
+	ModPlayBGM( 0, "z2_hig1", 56, 0, 0 );
+	ModPlayBGM( 0, "iwakannnohatuga", 56, 0, 1 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　その陰の面を取り次ぐ人物、Ｘが、…オヤシロさまの祟りを真の意味で司る人物なのだろうか。",
@@ -593,7 +594,8 @@ void main()
 
 	DrawSceneWithMask("black", "maskleft", 1, 0, 300 );
 	DrawSceneWithMask("background/so_chikafuroa", "maskleft", 1, 0, 300 );
-	PlayBGM( 0, "depressive paranoia", 56, 0 );
+	ModPlayBGM( 0, "msys30", 56, 0, 0 );
+	ModPlayBGM( 0, "depressive paranoia", 56, 0, 1 );
 
 	//VoiceMatching
 	if(GetGlobalFlag(GCensor) >= 2){ModCallScriptSection("_zmeak_018_vm0x_n01","dialog001");}
@@ -711,7 +713,8 @@ void main()
 	OutputLine(NULL, "　私は躊躇なく、火の点いたジッポを鬼婆の鼻先に突き出した。",
 		   NULL, "I put the flame right under her nose without hesitation.", Line_Normal);
 	ClearMessage();
-	PlayBGM( 1, "semi_r", 56, 0 );
+	ModPlayBGM( 1, "yabaisemi", 56, 0, 0 );
+	ModPlayBGM( 1, "semi_r", 56, 0, 1 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　……炎の先端が鼻を炙る。",
@@ -1149,7 +1152,8 @@ void main()
 	OutputLine(NULL, "　でも、居るだけがどんなに不快なことか……。",
 		   NULL, "It was extremely uncomfortable to have it just be there...", Line_Normal);
 	ClearMessage();
-	PlayBGM( 0, "getting_mad", 56, 0 );
+	ModPlayBGM( 0, "z2_hig1", 56, 0, 0 );
+	ModPlayBGM( 0, "getting_mad", 56, 0, 1 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 6, "ps3/s06/06/150601535", 256, TRUE);
@@ -1762,7 +1766,8 @@ void main()
 	OutputLine(NULL, "「……うん…………言っ、」",
 		   NULL, "\"...Yeah... I...\"", Line_Normal);
 	ClearMessage();
-	PlayBGM( 2, "kaze", 56, 0 );
+	ModPlayBGM( 0, "kaze", 56, 0, 0 );
+	ModPlayBGM( 2, "kaze", 56, 0, 1 );
 	PlaySE( 0, "wa_027", 56, 64 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
@@ -1831,8 +1836,8 @@ void main()
 	if(GetGlobalFlag(GCensor) >= 2){ModCallScriptSection("_zmeak_018_vm0x_n01","dialog007");}
 	if(GetGlobalFlag(GCensor) <= 1){ModCallScriptSection("_zmeak_018_vm00_n01","dialog007");}
 	//VoiceMatchingEnd
-	
-	PlayBGM( 3, "semi", 56, 0 );
+
+	ModPlayBGM( 3, "semi", 56, 0, 1 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　鬼婆は守らなかった。",
@@ -1956,9 +1961,10 @@ void main()
 
 	CallScript( "&eyeCamp" );
 	FadeOutBGM( 0, 1000, FALSE );
-	FadeOutBGM( 1, 1000, FALSE );
-	FadeOutBGM( 2, 1000, FALSE );
-	FadeOutBGM( 3, 1000, TRUE );
+	ModFadeOutBGM( 1, 1000, TRUE, 0 );
+	ModFadeOutBGM( 1, 1000, FALSE, 1 );
+	ModFadeOutBGM( 2, 1000, FALSE, 1 );
+	ModFadeOutBGM( 3, 1000, TRUE, 1 );
 	SetValidityOfSkipping( FALSE );
 	DrawSceneWithMask("tips/gettip_meak018", "mask1900", 7, 0, 400 );
 	Wait( 5000 );

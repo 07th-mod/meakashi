@@ -1,6 +1,7 @@
 void main()
 {
-	PlayBGM( 0, "you_nonloop", 56, 0 );
+	ModPlayBGM( 0, "song_you", 56, 0, 0 );
+	ModPlayBGM( 0, "you_nonloop", 56, 0, 1 );
 	DrawScene("white", 5000 );
 	DrawScene("black", 2000 );
 	Wait( 2000 );

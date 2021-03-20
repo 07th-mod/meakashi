@@ -8,7 +8,8 @@ void main()
 	ClearMessage();
 
 	DrawScene("black", 400 );
-	PlayBGM( 1, "Mati", 24, 0 );
+	ModPlayBGM( 1, "msys06", 56, 0, 0 );
+	ModPlayBGM( 1, "Mati", 24, 0, 1 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 3, "ps3/s06/03/150300056", 256, TRUE);
@@ -490,7 +491,8 @@ void main()
 	ClearMessage();
 
 	DisableWindow();
-	PlayBGM( 0, "higurashi", 56, 0 );
+	ModPlayBGM( 0, "msys07", 56, 0, 0 );
+	ModPlayBGM( 0, "higurashi", 56, 0, 1 );
 	ModDrawCharacter(2, 3, "sprite/me2_sinmyou_a1_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
@@ -1020,7 +1022,9 @@ void main()
 	SetValidityOfInput( FALSE );
 	Wait( 2000 );
 	SetValidityOfInput( TRUE );
-	PlayBGM( 1, "z2_hig2", 56, 0 );
+	ModPlayBGM( 0, "semi", 56, 0, 0 );
+	ModPlayBGM( 1, "suzume", 56, 0, 0 );
+	ModPlayBGM( 1, "z2_hig2", 56, 0, 1 );
 	DrawScene("white", 1000 );
 	DrawScene("background/mati3", 1000 );
 
@@ -1159,6 +1163,8 @@ void main()
 	ClearMessage();
 
 	DrawScene("black", 1000 );
+	ModFadeOutBGM( 0, 1000, FALSE, 0 );
+	ModFadeOutBGM( 1, 1000, FALSE, 0 );
 	SetValidityOfInput( FALSE );
 	Wait( 2000 );
 	SetValidityOfInput( TRUE );
@@ -1188,6 +1194,7 @@ void main()
 	SetValidityOfInput( TRUE );
 	ModDrawCharacter(2, 15, "sprite/kasa_1_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, FALSE );
 	DrawScene("background/si_g1", 400 );
+	ModPlayBGM( 1, "z2_hig2", 56, 0, 0 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#76523d>葛西</color>", NULL, "<color=#76523d>Kasai</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 15, "ps3/s06/15/151500090", 256, TRUE);
@@ -1483,7 +1490,8 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
-	FadeOutBGM( 1, 300, FALSE );
+	ModFadeOutBGM( 1, 300, FALSE, 0 );
+	ModFadeOutBGM( 1, 300, FALSE, 1 );
 	PlayBGM( 0, "yoru", 56, 0 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }

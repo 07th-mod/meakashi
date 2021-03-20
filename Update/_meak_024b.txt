@@ -50,7 +50,8 @@ void main()
 		   NULL, " Heh heh heh heh!!\"", Line_Normal);
 	ClearMessage();
 
-	FadeOutBGM( 0, 400, TRUE );
+	ModFadeOutBGM( 1, 400, TRUE, 0 );
+	ModFadeOutBGM( 0, 400, TRUE, 1 );
 	PlaySE( 0, "s_jikuu", 56, 64 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
@@ -92,7 +93,8 @@ void main()
 		   NULL, " ...There's... no way you can be Mion Sonozaki...!\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
-	PlayBGM( 0, "T2", 56, 0 );
+	ModPlayBGM( 0, "suzu", 56, 0, 0 );
+	ModPlayBGM( 0, "T2", 56, 0, 1 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　私の手が一瞬止まる。",
@@ -129,6 +131,7 @@ void main()
 	ClearMessage();
 
 	DrawSceneWithMask("black", "maskup", 1, 0, 300 );
+	ModPlayBGM( 1, "T2", 56, 0, 0 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 6, "ps3/s06/06/150602580", 256, TRUE);
@@ -150,6 +153,7 @@ void main()
 	ClearMessage();
 
 
+	ModFadeOutBGM( 0, 300, FALSE, 0 );
 	SetSpeedOfMessage( TRUE, 16 );
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 1, "ps3/s06/01/150100393", 256, TRUE);
@@ -222,6 +226,7 @@ void main()
 		   NULL, " I can't accept that...!!\"", Line_Normal);
 	ClearMessage();
 	DrawScene("black", 400 );
+	ModPlayBGM( 0, "semi_r", 56, 0, 0 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　あは、あはははははははははは…。",
@@ -448,6 +453,7 @@ void main()
 		   NULL, " Mion...", Line_Normal);
 	ClearMessage();
 
+	ModFadeOutBGM( 0, 300, FALSE, 0 );
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 6, "ps3/s06/06/150602590", 256, TRUE);
 	OutputLine(NULL, "「……………圭ちゃん。",
@@ -460,7 +466,9 @@ void main()
 		   NULL, " .........But you really seem to want to know, so I'll tell you just one thing.", Line_Normal);
 	ClearMessage();
 	DrawScene("black", 400 );
+	ModFadeOutBGM( 1, 300, FALSE, 0 );
 	DrawSceneWithMask("background/jsa7", "maskdown", 1, 0, 300 );
+	ModPlayBGM( 1, "msys17", 56, 0, 0 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 6, "ps3/s06/06/150602593", 256, TRUE);
@@ -1254,7 +1262,8 @@ void main()
 		   NULL, " ...By then, it will be the demon... that inherited my corpse.\"", Line_Normal);
 	ClearMessage();
 
-	FadeOutBGM( 0, 300, FALSE );
+	ModFadeOutBGM( 1, 300, FALSE, 0 );
+	ModFadeOutBGM( 0, 300, FALSE, 1 );
 	DrawScene("white", 100 );
 	DrawScene("black", 50 );
 
@@ -1421,7 +1430,7 @@ void main()
 	OutputLine(NULL, "　詩音はその意味に気付く。",
 		   NULL, "Shion understood the meaning of that.", Line_Normal);
 	ClearMessage();
-	PlayBGM( 0, "hgrs01", 56, 0 );
+	ModPlayBGM( 0, "hgrs01", 56, 0, 1 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 3, "ps3/s06/03/150300438", 256, TRUE);
@@ -1452,6 +1461,7 @@ void main()
 		   NULL, "She was in a critical situation.", Line_Normal);
 	ClearMessage();
 
+	ModPlayBGM( 0, "kaze", 56, 0, 0 );
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 6, "ps3/s06/06/150602679", 256, TRUE);
 	OutputLine(NULL, "「魅音の格好をしたあんたはここから落ちてお陀仏。",
@@ -1501,6 +1511,7 @@ void main()
 	OutputLine(NULL, "底まで落ちて悟史くんに謝っといで。」",
 		   NULL, " Go apologize to Satoshi-kun at the bottom of the well.\"", Line_Normal);
 	ClearMessage();
+	ModFadeOutBGM( 0, 300, FALSE, 0 );
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 3, "ps3/s06/03/150300440", 256, TRUE);
 	OutputLine(NULL, "「……お姉、………この底にはね、",
@@ -1617,6 +1628,7 @@ void main()
 	ModSetLayerFilter(2, 256, "flashback");
 	ModDrawCharacter(2, 17, "sprite/oryou_shinken_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, FALSE );
 	DrawScene("background/flashback/ima3", 1000 );
+	ModPlayBGM( 0, "msys27", 56, 0, 0 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　鬼婆は詩音に言った。",

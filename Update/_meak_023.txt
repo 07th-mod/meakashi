@@ -549,7 +549,8 @@ void main()
 	OutputLine(NULL, "　沙都子は絶叫した…。",
 		   NULL, "Satoko screamed...", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
-	PlayBGM( 1, "semi_r", 56, 0 );
+	ModPlayBGM( 1, "yabaisemi", 56, 0, 0 );
+	ModPlayBGM( 1, "semi_r", 56, 0, 1 );
 
 	SetSpeedOfMessage( TRUE, 128 );
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#fcdb77>沙都子</color>", NULL, "<color=#fcdb77>Satoko</color>", NULL, Line_ContinueAfterTyping); }
@@ -1717,6 +1718,7 @@ void main()
 	ClearMessage();
 	DrawScene("black", 200 );
 	if (GetGlobalFlag(GADVMode) == 0) { SetDrawingPointOfMessage( 0, 6 ); }
+	ModFadeOutBGM( 0, 300, FALSE, 0 );
 	ModPlayVoiceLS(4, 7, "ps3/s06/07/151200251", 256, TRUE);
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　沙都子のこと、",
@@ -1731,6 +1733,7 @@ void main()
 	SetSpeedOfMessage( FALSE, 0 );
 
 	DrawSceneWithMask("background/jsa7", "maskup", 1, 0, 1300 );
+	ModPlayBGM( 1, "hgrs01", 56, 0, 0 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　膝や肘が、がくがくとする。",
@@ -2212,7 +2215,9 @@ void main()
 	SetValidityOfInput( FALSE );
 	Wait( 4000 );
 	SetValidityOfInput( TRUE );
+	ModFadeOutBGM( 1, 1000, TRUE, 0 );
 	DrawScene("background/re_tel", 400 );
+	ModPlayBGM( 0, "yoru", 56, 0, 0 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 6, "ps3/s06/06/150602375", 256, TRUE);
@@ -2491,6 +2496,8 @@ void main()
 		   NULL, "He fought so hard because he didn't want to kill his friends within him.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
+	ModFadeOutBGM( 0, 300, FALSE, 0 );
+	ModPlayBGM( 1, "kaze", 56, 0, 0 );
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　……私は戦わなかった。",
 		   NULL, "...I wasn't like that.", GetGlobalFlag(GLinemodeSp));
@@ -2735,6 +2742,7 @@ void main()
 	OutputLine(NULL, "どうしてなんだぁああぁあぁあぁあ？！？！」",
 		   NULL, " Whyyyyyyyyyyyyy?!?!\"", Line_Normal);
 	ClearMessage();
+	ModPlayBGM( 0, "semi_r", 56, 0, 0 );
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　それは、圭一の口を借りた、悟史くんの叫びだった。",
 		   NULL, "Satoshi-kun was speaking through Keiichi's mouth.", GetGlobalFlag(GLinemodeSp));
@@ -2922,6 +2930,8 @@ void main()
 		   NULL, "\"............Eh...\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
+	ModFadeOutBGM( 0, 300, FALSE, 0 );
+	ModFadeOutBGM( 1, 300, FALSE, 0 );
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　圭一の口調が、いつの間にか鋭利になっていた。",
 		   NULL, "Keiichi's tone was becoming sharper.", GetGlobalFlag(GLinemodeSp));
@@ -2939,6 +2949,7 @@ void main()
 	OutputLine(NULL, "…すっぱりと心地よい、そんな鋭さ。",
 		   NULL, " ...It had a clean, pleasant sharpness to it.", Line_Normal);
 	ClearMessage();
+	ModPlayBGM( 0, "hig_sample_kyouki", 56, 0, 0 );
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 1, "ps3/s06/01/150100305", 256, TRUE);
 	OutputLine(NULL, "「…村長さんは重い痔を患ってて、病院にかかっていたという話は知ってるか…？」",
@@ -3166,6 +3177,7 @@ void main()
 	OutputLine(NULL, "………あの、………、」",
 		   NULL, " I, well...\"", Line_Normal);
 	ClearMessage();
+	ModFadeOutBGM( 0, 300, FALSE, 0 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 1, "ps3/s06/01/150100331", 256, TRUE);
@@ -3194,6 +3206,7 @@ void main()
 	OutputLine(NULL, "…少し、見直したよ。",
 		   NULL, " I'm impressed.", Line_Normal);
 	ClearMessage();
+	ModPlayBGM( 1, "semi_r", 56, 0, 0 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 1, "ps3/s06/01/150100333", 256, TRUE);
@@ -3293,6 +3306,7 @@ void main()
 	ModPlayVoiceLS(4, 6, "ps3/s06/06/150602444", 256, TRUE);
 	OutputLine(NULL, "「……っく、……っく、……。",
 		   NULL, "\"......Hic...... hic......", Line_WaitForInput);
+	ModFadeOutBGM( 1, 300, FALSE, 0 );
 	OutputLine(NULL, "…",
 		   NULL, " ...", Line_ContinueAfterTyping);
 
@@ -3499,6 +3513,7 @@ void main()
 
 	SetSpeedOfMessage( FALSE, 0 );
 	DrawScene("background/re_tel", 400 );
+	ModPlayBGM( 0, "yoru", 56, 0, 0 );
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "」ガシャン！！",
 		   NULL, " Click!", Line_Normal);

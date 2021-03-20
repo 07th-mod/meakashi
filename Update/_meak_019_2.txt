@@ -6,7 +6,8 @@ void main()
 	ClearMessage();
 
 
-	PlayBGM( 1, "semi", 56, 0 );
+	ModPlayBGM( 1, "msys01", 56, 0, 0 );
+	ModPlayBGM( 1, "semi", 56, 0, 1 );
 	DisableWindow();
 	ModSetLayerFilter(2, 256, "none");
 	ModDrawCharacter(2, 1, "sprite/kei2_def1_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 300, TRUE );
@@ -383,7 +384,8 @@ void main()
 	OutputLine(NULL, "　突然、タバコをくわえた太ったおっさんが話に割り込んできた。",
 		   NULL, "A fat man with a cigarette suddenly cut into our conversation.", Line_Normal);
 	ClearMessage();
-	PlayBGM( 0, "higurashi", 56, 0 );
+	ModPlayBGM( 0, "msys07", 56, 0, 0 );
+	ModPlayBGM( 0, "higurashi", 56, 0, 1 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　………大石？！",

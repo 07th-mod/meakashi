@@ -327,7 +327,8 @@ void main()
 		   NULL, "Since it was the middle of the night, I could hear their words very clearly.", Line_Normal);
 	ClearMessage();
 	DrawSceneWithMask("background/jsa7", "maskleft", 1, 0, 300 );
-	PlayBGM( 0, "getting_mad", 56, 0 );
+	ModPlayBGM( 0, "msys07", 56, 0, 0 );
+	ModPlayBGM( 0, "getting_mad", 56, 0, 1 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#d7e6de>お魎</color>", NULL, "<color=#d7e6de>Oryou</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 17, "ps3/s06/17/152300019", 256, TRUE);
@@ -347,7 +348,8 @@ void main()
 		   NULL, " They made Oyashiro-sama angry, so I guess they got what they deserved.\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
-	PlayBGM( 1, "semi_r", 56, 0 );
+	ModPlayBGM( 1, "yabaisemi", 56, 0, 0 );
+	ModPlayBGM( 1, "semi_r", 56, 0, 1 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　魅音の声が、あの地下拷問室で聞いた時と同じ、ぞっとするような冷たさを伴っていることに気付き、私は一層、息を殺した…。",
@@ -381,7 +383,8 @@ void main()
 	OutputLine(NULL, "　心臓が止まりそうになる。",
 		   NULL, "My heart almost stopped.", Line_Normal);
 
-	PlayBGM( 0, "hig_sample_kyouki", 56, 0 );
+	ModPlayBGM( 0, "msys08", 56, 0, 0 );
+	ModPlayBGM( 0, "hig_sample_kyouki", 56, 0, 1 );
 
 	OutputLine(NULL, "　オヤシロさまの祟りに触れた。",
 		   NULL, "Oyashiro-sama got angry.", GetGlobalFlag(GLinemodeSp));
@@ -409,6 +412,7 @@ void main()
 		   NULL, "My teeth started to chatter. I desperately tried to stop them.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
+	ModPlayBGM( 1, "yabaisemi", 56, 0, 0 );
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　…全身がぶわっと膨張したみたいに感じて、耳が遠くなったような錯覚が起こる。",
 		   NULL, "I felt like my body was swelling up suddenly. I could no longer hear as well.", GetGlobalFlag(GLinemodeSp));
@@ -485,6 +489,8 @@ void main()
 	ClearMessage();
 
 	DisableWindow();
+	ModFadeOutBGM( 0, 300, FALSE, 0 );
+	ModFadeOutBGM( 1, 300, FALSE, 0 );
 	FadeFilm( 300 , TRUE );
 	PlayBGM( 1, "M_Denwa8k", 56, 0 );
 
@@ -507,7 +513,9 @@ void main()
 	OutputLine(NULL, "　長い廊下の途中で、たくさんの壁にぶつかって残響しながら響く電話の音は、この世からの電話とは思えない不気味さがあった……。",
 		   NULL, "The ringing echoed throughout the long hallway. It sounded so eerie, almost like it was coming from Hell...", Line_Normal);
 	ClearMessage();
-	PlayBGM( 2, "kaze", 56, 0 );
+	ModPlayBGM( 0, "kaze", 56, 0, 0 );
+	ModFadeOutBGM( 1, 300, FALSE, 0 );
+	ModPlayBGM( 2, "kaze", 56, 0, 1 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　その時、",
@@ -745,7 +753,7 @@ void main()
 		   NULL, "The curse of Oyashiro-sama... What is the curse of Oyashiro-sama?", Line_Normal);
 	ClearMessage();
 	FadeOutBGM( 0, 300, FALSE );
-	FadeOutBGM( 2, 300, FALSE );
+	ModFadeOutBGM( 2, 300, FALSE, 1 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　その時、気配でも音でもなく本当に。",
@@ -753,6 +761,7 @@ void main()
 	DrawScene("white", 800 );
 	DrawScene("background/rouka1_02", 100 );
 	PlaySE( 4, "s_jikuu", 56, 64 );
+	ModPlayBGM( 1, "M_Denwa8k", 56, 0, 0 );
 	StartShakingOfWindow( 248, 30, 0, 2, 4*2, FALSE );
 	StartShakingOfAllObjects( 248, 30, 0, 2, 4*2, TRUE );
 
@@ -776,7 +785,8 @@ void main()
 	OutputLine(NULL, "　出したかったけど、喉の奥が詰まったようになって、口をぱくぱくさせるのがやっと……。",
 		   NULL, "I wanted to scream, but all I could do was to open and close my mouth, as if something was stuck in my throat...", Line_Normal);
 	ClearMessage();
-	PlayBGM( 0, "iwakannnohatuga", 56, 0 );
+	ModPlayBGM( 0, "yoru", 56, 0, 0 );
+	ModPlayBGM( 0, "iwakannnohatuga", 56, 0, 1 );
 
 	DisableWindow();
 	ModSetLayerFilter(1, 256, "night");
@@ -909,7 +919,7 @@ void main()
 	OutputLine(NULL, "　今の電話の相手は……誰？！…………………ッ！！！",
 		   NULL, "Who called any... way?! ............!!!", Line_Normal);
 	ClearMessage();
-	PlayBGM( 0, "hig_sample_kyouki", 56, 0 );
+	ModPlayBGM( 0, "hig_sample_kyouki", 56, 0, 1 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　魅音は襟首を掴んだまま、私に額を寄せて……言った。",
@@ -971,7 +981,8 @@ void main()
 	OutputLine(NULL, "　魅音は襟首をぐっと引き絞ると、私に鼻をぶつけながら言った。",
 		   NULL, "Mion pulled my collar, pressed her nose on mine, and continued to speak.", Line_Normal);
 	ClearMessage();
-	PlayBGM( 1, "semi_r", 56, 0 );
+	ModPlayBGM( 1, "yabaisemi", 56, 0, 0 );
+	ModPlayBGM( 1, "semi_r", 56, 0, 1 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 3, "ps3/s06/03/150300344", 256, TRUE);
@@ -1015,7 +1026,7 @@ void main()
 	OutputLine(NULL, "…何です……？」",
 		   NULL, " the curse of Oyashiro-sama?\"", Line_Normal);
 	ClearMessage();
-	PlayBGM( 2, "kaze", 56, 0 );
+	ModPlayBGM( 2, "kaze", 56, 0, 1 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 3, "ps3/s06/03/150300347", 256, TRUE);
@@ -1125,7 +1136,7 @@ void main()
 
 	FadeOutBGM( 0, 1000, FALSE );
 	FadeOutBGM( 1, 1000, FALSE );
-	FadeOutBGM( 2, 1000, FALSE );
+	ModFadeOutBGM( 2, 1000, FALSE, 1 );
 	DrawScene("black", 1000 );
 	PlayBGM( 1, "suzu", 56, 0 );
 
@@ -1158,7 +1169,7 @@ void main()
 	OutputLine(NULL, "　ダム戦争に縁がある人間だけが犠牲になると、心のどこかで決め付けていた。",
 		   NULL, "I'd always thought the victims were people who had something to do with the dam conflict.", Line_Normal);
 	ClearMessage();
-	PlayBGM( 2, "kaze", 56, 0 );
+	ModPlayBGM( 2, "kaze", 56, 0, 1 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　自分はダム戦争の時、何も嫌われることをしていないからセーフティー。",
@@ -1193,7 +1204,9 @@ void main()
 	OutputLine(NULL, "　でも、それでも、自分はダム戦争の戦犯じゃないから、犠牲者になるなんてことは絶対にないと思ってた。",
 		   NULL, "But since I wasn't held responsible in any way for the dam conflict, I never thought I would be a victim of the curse.", Line_Normal);
 	ClearMessage();
-	PlayBGM( 0, "hig_sample_kyouki", 56, 0 );
+	ModPlayBGM( 0, "kaze", 56, 0, 0 );
+	ModFadeOutBGM( 1, 300, FALSE, 0 );
+	ModPlayBGM( 0, "hig_sample_kyouki", 56, 0, 1 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　そもそも私は５年目も事件が起こるなんて思ってた…？",
@@ -1249,8 +1262,8 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
 	FadeOutBGM( 0, 300, FALSE );
-	FadeOutBGM( 1, 300, FALSE );
-	FadeOutBGM( 2, 300, FALSE );
+	ModFadeOutBGM( 1, 300, FALSE, 1 );
+	ModFadeOutBGM( 2, 300, FALSE, 1 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　……悟史くんを、いなかったことにしてしまえる園崎本家なら、できるだろうな、",
@@ -1270,7 +1283,8 @@ void main()
 	SetValidityOfInput( FALSE );
 	Wait( 3000 );
 	SetValidityOfInput( TRUE );
-	PlayBGM( 0, "higurashi_soundscape", 56, 0 );
+	ModPlayBGM( 0, "msys30", 56, 0, 0 );
+	ModPlayBGM( 0, "higurashi_soundscape", 56, 0, 1 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　魅音は私にしな垂れかかって、",
@@ -1766,7 +1780,8 @@ void main()
 		   NULL, "I left the hag there and headed for the cell.", Line_Normal);
 	ClearMessage();
 	DrawSceneWithMask("black", "maskleft", 1, 0, 300 );
-	PlayBGM( 0, "depressive paranoia", 56, 0 );
+	ModPlayBGM( 0, "hig_sample_kyouki", 56, 0, 0 );
+	ModPlayBGM( 0, "depressive paranoia", 56, 0, 1 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 3, "ps3/s06/03/150300353", 256, TRUE);
@@ -2454,7 +2469,8 @@ void main()
 		   NULL, "\"Actually, four people snuck into the shrine storage... so maybe...\"", Line_Normal);
 	ClearMessage();
 	PlaySE( 0, "s_suzu", 56, 64 );
-	PlayBGM( 1, "semi_r", 56, 0 );
+	ModPlayBGM( 1, "yabaisemi", 56, 0, 0 );
+	ModPlayBGM( 1, "semi_r", 56, 0, 1 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 6, "ps3/s06/06/150601519", 256, TRUE);
