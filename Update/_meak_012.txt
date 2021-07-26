@@ -2477,6 +2477,8 @@ void main()
 	OutputLine(NULL, "　視界を奪われた次は、後ろから誰かに羽交い締めにされて、自由をも奪われた。",
 		   NULL, "One of them pinned me in a nelson hold, restricting my movement.", Line_Normal);
 	ClearMessage();
+	
+	ModPlayBGM( 2, "kaze", 56, 0, 1 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 6, "ps2/06/150601004", 540, TRUE);
