@@ -2532,8 +2532,8 @@ void main()
 		   NULL, "...But even that left hand was pressed down by his rough palms until it hurt, robbing it of the freedom even to tremble.", Line_Normal);
 	ClearMessage();
 
-	FadeOutBGM( 0, 300, FALSE );
-	FadeOutBGM( 1, 300, FALSE );
+	ModFadeOutBGM( 0, 300, FALSE, 0 );
+	ModFadeOutBGM( 1, 300, FALSE, 0 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　…あと、間髪なんかなかった。",
