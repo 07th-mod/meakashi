@@ -273,7 +273,7 @@ void main()
 //r聞いた話では、…詩音は警察が突入した時には出血多量でもう、息をしていなかったらしい。
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "聞いた話では、…詩音は警察が突入した時には出血多量でもう、息をしていなかったらしい。",
-			NULL, "From what I had heard, Shion had already lost too much blood by the time the had police arrived... and she had stopped breathing.", GetGlobalFlag(GLinemodeSp));
+			NULL, "From what I had heard, Shion had already lost too much blood by the time the police had arrived... and she had stopped breathing.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 //r急いで救急車を呼びつけて診療所に運び込んだが、手当てをする間もなく息を引き取ったそうだ…。
@@ -661,10 +661,10 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 3, "ps3/s06/03/330300198", 256, TRUE);
 	OutputLine(NULL, "「……へ？",
-			NULL, "\"......huh?", Line_WaitForInput);
+			NULL, "\"......Huh?", Line_WaitForInput);
 	ModPlayVoiceLS(4, 3, "ps3/s06/03/330300199", 256, TRUE);
 	OutputLine(NULL, "　ど、どこへ…？」",
-			NULL, " ...w...where?\"", GetGlobalFlag(GLinemodeSp));
+			NULL, " ...W...where?\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 //圭一rvS06/01/330100424.「決まってるだろ、旅行だよ。kvS06/01/330100425.俺がここにいられる期間はもうあまりないけど、…だったらせめて、少しでもいい思い出を取り返しておかないとな」
@@ -818,7 +818,7 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 3, "ps3/s06/03/330300204", 256, TRUE);
 	OutputLine(NULL, "「…え、えっと。",
-			NULL, "\"...uh... ummm.", Line_WaitForInput);
+			NULL, "\"...Uh... ummm.", Line_WaitForInput);
 	ModPlayVoiceLS(4, 3, "ps3/s06/03/330300205", 256, TRUE);
 	OutputLine(NULL, "う、うん…わ、わかった…。",
 			NULL, " O-okay... I-I gotcha....", Line_WaitForInput);
@@ -916,7 +916,7 @@ void main()
 			NULL, "\"Hey, hey, Kei-chan?", Line_WaitForInput);
 	ModPlayVoiceLS(4, 3, "ps3/s06/03/330300210", 256, TRUE);
 	OutputLine(NULL, "　これからどこに行くの？」",
-			NULL, " ...where are we going after this?\"", GetGlobalFlag(GLinemodeSp));
+			NULL, " ...Where are we going after this?\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 //圭一rvS06/01/330100432.「そうだなぁ。kvS06/01/330100433.魅音の好みから考えて、…あそこはどうだ？」
