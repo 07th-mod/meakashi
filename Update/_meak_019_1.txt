@@ -1641,7 +1641,7 @@ void main()
 	ModDrawCharacter(2, 1, "sprite/kei1_nayamu_", "2", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, FALSE );
 	DrawScene("background/gr1", 400 );
 	PlayBGM( 0, "semi", 56, 0 );
-	ModPlayBGM( 2, "semi", 56, 0, 0 );
+
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　昇降口から出ると、圭一は表の流しでザブザブと、律儀に顔を洗っていた。",
@@ -2029,7 +2029,7 @@ void main()
 	FadeOutBGM( 1, 400, FALSE );
 	DrawScene("background/sora", 400 );
 	PlayBGM( 0, "semi", 56, 0 );
-	ModPlayBGM( 2, "semi", 56, 0, 0 );
+
 	SetValidityOfInput( FALSE );
 	Wait( 2000 );
 	SetValidityOfInput( TRUE );

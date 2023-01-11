@@ -409,7 +409,7 @@ void main()
 	SetValidityOfInput( FALSE );
 	Wait( 1000 );
 	SetValidityOfInput( TRUE );
-	ModPlayBGM( 0, "Ame", 56, 0, 0 );
+
 	PlayBGM( 1, "Ame", 56, 0 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -1947,7 +1947,7 @@ void main()
 	ModFadeOutBGM( 1, 300, FALSE, 1 );
 	FadeOutBGM( 2, 300, FALSE );
 	ModPlayBGM( 0, "ame", 56, 0, 0 );
-	ModPlayBGM( 2, "ame", 56, 0, 0 );
+
 	ModPlayBGM( 0, "ame", 56, 0, 1 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -2004,7 +2004,7 @@ void main()
 
 	DisableWindow();
 	ModPlayBGM( 0, "ame", 56, 0, 0 );
-	ModPlayBGM( 2, "ame", 56, 0, 0 );
+
 	SetValidityOfInput( FALSE );
 	Wait( 2000 );
 	SetValidityOfInput( TRUE );
