@@ -320,19 +320,19 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 6, "ps3/s06/06/150600565", 256, TRUE);
+	ModPlayVoiceLS(4, 6, "org/shion4028", 256, TRUE);
 	OutputLine(NULL, "「うん。」",
 		   NULL, "\"Yeah...\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 2, "ps3/s06/02/150200003", 256, TRUE);
+	ModPlayVoiceLS(4, 2, "org/shion4029", 256, TRUE);
 	OutputLine(NULL, "「………気分が優れないの？」",
 		   NULL, "\"Are you not feeling well?\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 6, "ps3/s06/06/150600566", 256, TRUE);
+	ModPlayVoiceLS(4, 6, "org/shion4030", 256, TRUE);
 	OutputLine(NULL, "「悪いね。」",
 		   NULL, "\"Sorry.\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -1636,15 +1636,16 @@ void main()
 
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 2, "ps3/s06/02/150200070", 256, TRUE);
+	ModPlayVoiceLS(4, 2, "org/s06/02/150200070a_org", 256, TRUE);
 	OutputLine(NULL, "　………誰かが遠くからじっとうかがっている。…誰かがずっとつけて来る。……誰かがいつも、自分のすぐ後ろから見ている。",
 		   NULL, "...You feel like someone is watching you from a distance... and it follows you... Then it watches from right behind you...", Line_Normal);
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 2, "ps3/s06/02/150200071", 256, TRUE);
+	ModPlayVoiceLS(4, 2, "org/s06/02/150200070b_org", 256, TRUE);
 	OutputLine(NULL, "　……やがて足音は常に、自分とずれてひとつ余計に聞こえるようになるの。",
-		   NULL, "...After that, you start hearing an extra footstep.", Line_Continue);
+		   NULL, "...After that, you start hearing an extra footstep.", Line_WaitForInput);
+	ModPlayVoiceLS(4, 2, "ps3/s06/02/150200071", 256, TRUE);
 	OutputLine(NULL, "それらは初めの内は、お外でだけだけど。",
 		   NULL, " It only happens outside at first...", Line_WaitForInput);
 	ModPlayVoiceLS(4, 2, "ps3/s06/02/150200072", 256, TRUE);
@@ -1737,8 +1738,8 @@ void main()
 	ModPlayVoiceLS(4, 2, "ps3/s06/02/150200086", 256, TRUE);
 	OutputLine(NULL, "「私はね、もともと雛見沢に住んでいたの。",
 		   NULL, "\"I'm from Hinamizawa originally,", Line_WaitForInput);
-	ModPlayVoiceLS(4, 2, "ps3/s06/02/150200087", 256, TRUE);
-	OutputLine(NULL, "小学校に上がる直前でここから引越した。",
+	ModPlayVoiceLS(4, 2, "org/rena4001", 256, TRUE);
+	OutputLine(NULL, "小学校に上がる直前で茨城に引越した。",
 		   NULL, " but I moved to Ibaraki Prefecture right before I went to elementary school...", Line_WaitForInput);
 	ModPlayVoiceLS(4, 2, "ps3/s06/02/150200088", 256, TRUE);
 	OutputLine(NULL, "…………新しい環境に馴染めなくてね。",

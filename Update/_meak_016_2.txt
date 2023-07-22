@@ -727,10 +727,11 @@ void main()
 		   NULL, "\"Jirou-san is very skilled.\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
-	//VoiceMatching
-	if(GetGlobalFlag(GCensor) >= 3){ModCallScriptSection("_zmeak_016_2_vm0x_n01","dialog000");}
-	if(GetGlobalFlag(GCensor) <= 2){ModCallScriptSection("_zmeak_016_2_vm00_n01","dialog000");}
-	//VoiceMatchingEnd
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 6, "org/shion4091", 256, TRUE);
+	OutputLine(NULL, "「……え、……ピッキング、…ですか。」",
+		   NULL, "\"......Oh, are you... good at lock-picking...?\"", Line_Normal);
+	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f6d9a8>鷹野</color>", NULL, "<color=#f6d9a8>Takano</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 9, "ps3/s06/09/150900117", 256, TRUE);
@@ -785,13 +786,13 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f6d9a8>鷹野</color>", NULL, "<color=#f6d9a8>Takano</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 9, "ps3/s06/09/150900125", 256, TRUE);
+	ModPlayVoiceLS(4, 9, "org/takano4024", 256, TRUE);
 	OutputLine(NULL, "「女同士の内緒話よ。",
 		   NULL, "\"Just girl talk.", Line_WaitForInput);
-	ModPlayVoiceLS(4, 9, "ps2/09/150900126", 540, TRUE);
+	ModPlayVoiceLS(4, 9, "org/takano4025", 256, TRUE);
 	OutputLine(NULL, "行きましょ、暗くてひと気のないところへ逢引に。",
 		   NULL, " Let's go to some dark place for a quick date.", Line_WaitForInput);
-	ModPlayVoiceLS(4, 9, "ps3/s06/09/150900127", 256, TRUE);
+	ModPlayVoiceLS(4, 9, "org/takano4026", 256, TRUE);
 	OutputLine(NULL, "くすくす…。」",
 		   NULL, " Hee hee hee...\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -2257,17 +2258,17 @@ void main()
 	ModDrawCharacter(1, 9, "sprite/ta1_warai_", "2", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 200, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f6d9a8>鷹野</color>", NULL, "<color=#f6d9a8>Takano</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 9, "ps3/s06/09/150900145", 256, TRUE);
+	ModPlayVoiceLS(4, 9, "org/takano4029", 256, TRUE);
 	OutputLine(NULL, "祟りなら、今年はどんな死に方をさせられちゃうのかしら。",
 		   NULL, "If it's the curse, then I wonder what kind of death it'll be this year? ", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f6d9a8>鷹野</color>", NULL, "<color=#f6d9a8>Takano</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 9, "ps2/09/150900146", 540, TRUE);
+	ModPlayVoiceLS(4, 9, "org/takano4030", 256, TRUE);
 	OutputLine(NULL, "生贄なら…鬼ヶ淵の沼に生きたまま沈められちゃうのかしら？",
 		   NULL, "If it's the sacrifice... then will I be thrown into the Onigafuchi Swamp while still alive?", Line_WaitForInput);
-	ModPlayVoiceLS(4, 9, "ps3/s06/09/150900147", 256, TRUE);
+	ModPlayVoiceLS(4, 9, "org/takano4031", 256, TRUE);
 	OutputLine(NULL, "……そう言えば今夜よね。",
 		   NULL, " ...And it is tonight, you know.", Line_WaitForInput);
-	ModPlayVoiceLS(4, 9, "ps3/s06/09/150900148", 256, TRUE);
+	ModPlayVoiceLS(4, 9, "org/takano4032", 256, TRUE);
 	OutputLine(NULL, "オヤシロさまの祟りがある夜は。」",
 		   NULL, " The night of Oyashiro-sama's curse.\"", Line_Normal);
 	ClearMessage();
@@ -2445,10 +2446,10 @@ void main()
 	ModDrawCharacter(1, 9, "sprite/ta1_warai_", "2", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 300, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f6d9a8>鷹野</color>", NULL, "<color=#f6d9a8>Takano</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 9, "ps3/s06/09/150900153", 256, TRUE);
+	ModPlayVoiceLS(4, 9, "org/takano4033", 256, TRUE);
 	OutputLine(NULL, "「あら、ジロウさんも見たくて我慢できなくなったかしら？",
 		   NULL, "\"Oh, Jirou-san, could you not resist seeing inside?", Line_WaitForInput);
-	ModPlayVoiceLS(4, 9, "ps2/09/150900154", 540, TRUE);
+	ModPlayVoiceLS(4, 9, "org/takano4034", 256, TRUE);
 	OutputLine(NULL, "　……ここ、素敵な拷問道具の宝庫よ。」",
 		   NULL, " ...This is a splendid treasure trove of torture devices.\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }

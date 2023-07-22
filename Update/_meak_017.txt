@@ -1901,10 +1901,17 @@ void main()
 		   NULL, "Mion didn't say anything. She just stared at me to see how I'd proceed.", Line_Normal);
 	ClearMessage();
 
-	//VoiceMatching
-	if(GetGlobalFlag(GCensor) >= 2){ModCallScriptSection("_zmeak_017_vm0x_n01","dialog003");}
-	if(GetGlobalFlag(GCensor) <= 1){ModCallScriptSection("_zmeak_017_vm00_n01","dialog003");}
-	//VoiceMatchingEnd
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 6, "org/shion4092", 256, TRUE);
+	OutputLine(NULL, "「富竹さんの、自分で自分の喉を引き裂いたってのは何？",
+		   NULL, "\"What about the way Tomitake-san died? He clawed out his own throat, right?", Line_WaitForInput);
+	ModPlayVoiceLS(4, 6, "org/shion4093", 256, TRUE);
+	OutputLine(NULL, "　狂気に駆り立てるような怪しいお薬でも注射したの？",
+		   NULL, " Did you give him a shot of some kind?", Line_WaitForInput);
+	ModPlayVoiceLS(4, 6, "org/shion4094", 256, TRUE);
+	OutputLine(NULL, "　それとも、そういう死に方に見せるような拷問道具でもあるわけ？」",
+		   NULL, " Or is there a torture device that did that to him?\"", Line_Normal);
+	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　魅音は答えなかった。",

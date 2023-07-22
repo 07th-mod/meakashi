@@ -19,12 +19,4 @@ void dialog000()
 
 void dialog001()
 {
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 6, "ps3/s06/06/150601069", 256, TRUE);
-	OutputLine(NULL, "「……想像してたより待遇がよくて驚いてます。",
-		   NULL, "\"...You're treating me better than I expected.", Line_WaitForInput);
-	ModPlayVoiceLS(4, 6, "ps3/s06/06/150601070", 256, TRUE);
-	OutputLine(NULL, "三角木馬くらいは覚悟してたのに。」",
-		   NULL, " I thought you'd whip me or something.\"", GetGlobalFlag(GLinemodeSp));
-	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 }

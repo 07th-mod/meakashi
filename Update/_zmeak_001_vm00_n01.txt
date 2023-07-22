@@ -4,14 +4,6 @@ void main()
 
 void dialog000()
 {
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 6, "ps3/s06/06/150600025", 256, TRUE);
-	OutputLine(NULL, "「そっか、お姉はもう実家じゃないんだったね。",
-		   NULL, "\"That's right, she doesn't live in our parents' home anymore.", Line_WaitForInput);
-	ModPlayVoiceLS(4, 6, "ps3/s06/06/150600026", 256, TRUE);
-	OutputLine(NULL, "雛見沢の鬼婆のとこだっけ？」",
-		   NULL, " She's living with the hag in Hinamizawa now, isn't she?\"", GetGlobalFlag(GLinemodeSp));
-	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 }
 
 void dialog001()
@@ -73,12 +65,4 @@ void dialog004()
 
 void dialog005()
 {
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 6, "ps3/s06/06/150600068", 256, TRUE);
-	OutputLine(NULL, "「鬼婆はとっくに更年期障害で、正常な思考なんか出来なくなってんの！",
-		   NULL, "\"She couldn't make the right decision because she was suffering from menopause!", Line_WaitForInput);
-	ModPlayVoiceLS(4, 6, "ps3/s06/06/150600069", 256, TRUE);
-	OutputLine(NULL, "　あのダム戦争の興奮で、頭がイカれちゃって、まだその時の興奮が抜け切ってないんじゃないかな。ったく！」",
-		   NULL, " All the fuss surrounding the dam protest drove her nuts!\"", GetGlobalFlag(GLinemodeSp));
-	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 }
