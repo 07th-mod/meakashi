@@ -969,6 +969,7 @@ void main()
 		   NULL, "That incredible pain finally cleared the fog away from my nightmare...", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 	DrawScene("scene/017", 1000 );
+	if (GetGlobalFlag(GHideCG)) {DrawScene("background/moon", 1000 );}
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　…私は非常階段から自分の部屋のベランダに戻ろうとして足を滑らせて、",

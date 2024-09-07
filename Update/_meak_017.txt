@@ -928,6 +928,8 @@ void main()
 		   NULL, "Mion put her forehead to mine and spoke to me.", Line_Normal);
 	ClearMessage();
 	DrawScene("scene/205", 1000 );
+	if (GetGlobalFlag(GHideCG)) {ModDrawCharacter(1, 3, "portrait/me2_hig_maji_a1_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 0, FALSE );}
+	if (GetGlobalFlag(GHideCG)) {DrawScene("background/rouka1_02", 1000 );}
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 3, "ps3/s06/03/150300343", 256, TRUE);

@@ -609,6 +609,8 @@ void main()
 	PlaySE( 0, "wa_003", 56, 64 );
 	ModFadeOutBGM( 2, 1000, FALSE, 0 );
 	DrawScene("scene/015", 1000 );
+	if (GetGlobalFlag(GHideCG)) {ModDrawCharacter(2, 5, "sprite/ri2_fuman_a1_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, FALSE );}
+	if (GetGlobalFlag(GHideCG)) {DrawScene("background/so_d1_01", 400 );}
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　素早く間合いを取り、私はスタンガンを構える。",

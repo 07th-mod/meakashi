@@ -302,9 +302,12 @@ void main()
 	DisableWindow();
 	DrawScene("white", 2000 );
 	DrawScene("scene/041", 1000 );
+	if (GetGlobalFlag(GHideCG)) {ModDrawCharacter(1, 6, "sprite/si3_warai_a1_", "1", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 1000, FALSE );}
+	if (GetGlobalFlag(GHideCG)) {ModDrawCharacter(3, 4, "sprite/sa1b_warai_b1_", "0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 1000, TRUE );}
 	SetValidityOfInput( FALSE );
 	Wait( 5000 );
 	SetValidityOfInput( TRUE );
+	DrawBustshot( 8, "white", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 21, 800, TRUE );
 	ChangeBustshot( 8, "end_1", 800, TRUE );
 	ChangeBustshot( 8, "end_2", 800, TRUE );
 	ChangeBustshot( 8, "end_3", 3000, TRUE );

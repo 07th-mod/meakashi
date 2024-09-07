@@ -1214,6 +1214,7 @@ void main()
 
 	if (GetGlobalFlag(GADVMode) == 0) { ClearMessage(); }
 	DrawScene("scene/216", 1000 );
+	if (GetGlobalFlag(GHideCG)) {DrawSceneWithMask("background/ga1", "maskc", 1, 0, 1000 );}
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　……落ち着け、自分。",
@@ -1342,6 +1343,7 @@ void main()
 		   NULL, " ...The loudest sound wasn't the bugs--it was my own heartbeat.", Line_Normal);
 	ClearMessage();
 	DrawScene("scene/216", 1000 );
+	if (GetGlobalFlag(GHideCG)) {DrawSceneWithMask("background/ga1", "maskc", 1, 0, 1000 );}
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　じゃり。",
@@ -1420,6 +1422,7 @@ void main()
 		   NULL, "...It's like I'm constantly fidgeting...", Line_Normal);
 	ClearMessage();
 	DrawScene("scene/216", 1000 );
+	if (GetGlobalFlag(GHideCG)) {DrawSceneWithMask("background/ga1", "maskc", 1, 0, 1000 );}
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　立ち止まるか、走り出すか。",
@@ -1479,6 +1482,7 @@ void main()
 
 	if (GetGlobalFlag(GADVMode) == 0) { ClearMessage(); }
 	DrawScene("scene/216", 1000 );
+	if (GetGlobalFlag(GHideCG)) {DrawSceneWithMask("background/ga1", "maskc", 1, 0, 1000 );}
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　……もう一息だ。",
