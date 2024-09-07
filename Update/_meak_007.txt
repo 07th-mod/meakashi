@@ -325,10 +325,10 @@ void main()
 		   NULL, "\"Yeah...", Line_WaitForInput);
 	ModPlayVoiceLS(4, 2, "org/shion4029", 256, TRUE);
 	OutputLine(NULL, "………気分が優れないの？",
-		   NULL, " I'm not feeling well,", Line_WaitForInput);
+		   NULL, " ...I guess I'm not feeling well?", Line_WaitForInput);
 	ModPlayVoiceLS(4, 6, "org/shion4030", 256, TRUE);
 	OutputLine(NULL, "悪いね。」",
-		   NULL, " sorry.\"", GetGlobalFlag(GLinemodeSp));
+		   NULL, " Sorry.\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	DisableWindow();
