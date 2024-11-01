@@ -1752,7 +1752,7 @@ void main()
 		   NULL, "And, even though not many people take this road, the body is right in the middle of it.", Line_WaitForInput);
 	ModPlayVoiceLS(4, 11, "ps3/s06/11/150700020", 256, TRUE);
 	OutputLine(NULL, "ここで、頭部がひしゃげるまで殴り続けたってのは、ちょいとまともな話じゃないですからねぇ。",
-		   NULL, " It's very unusual to see a culprit who would bludgeon their victim until their face was completely destroyed.", GetGlobalFlag(GLinemodeSp));
+		   NULL, " It's very unusual to see a culprit who would bludgeon their victim until their face was completely destroyed. ", GetGlobalFlag(GLinemodeSp));
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>Ooishi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 11, "ps3/s06/11/150700021", 256, TRUE);
@@ -2140,7 +2140,7 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>Ooishi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 11, "ps3/s06/11/150700059", 256, TRUE);
 	OutputLine(NULL, "「キャバレーの人と同居してるって言いましたよね。",
-		   NULL, "\"He's living with a woman who works at a club?", GetGlobalFlag(GLinemodeSp));
+		   NULL, "\"He's living with a woman who works at a club? ", GetGlobalFlag(GLinemodeSp));
 
 	DisableWindow();
 	ModDrawCharacter(3, 11, "sprite/oisi1_2_", "1", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
