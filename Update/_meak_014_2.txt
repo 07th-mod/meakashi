@@ -107,7 +107,7 @@ void main()
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　扉がゆっくりと開き。",
-		   NULL, "The door slowly opened.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "The door slowly opened. ", GetGlobalFlag(GLinemodeSp));
 	PlayBGM( 0, "demo_48khz", 56, 0 );
 	DrawScene("black", 400 );
 
