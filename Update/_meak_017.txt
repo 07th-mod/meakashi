@@ -117,7 +117,7 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 3, "ps3/s06/03/150300323", 256, TRUE);
 	OutputLine(NULL, "「あんたの学校、開校記念日って年に何回あるわけ？",
-		   NULL, "\"How many times a year does your school have its anniversary?", GetGlobalFlag(GLinemodeSp));
+		   NULL, "\"How many times a year does your school have its anniversary? ", GetGlobalFlag(GLinemodeSp));
 	DisableWindow();
 	ModDrawCharacter(3, 3, "sprite/me2_wink_a1_", "1", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
 
@@ -759,7 +759,7 @@ void main()
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　その時、気配でも音でもなく本当に。",
-		   NULL, "That was when I actually felt something for real.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "That was when I actually felt something for real. ", GetGlobalFlag(GLinemodeSp));
 	DrawScene("white", 800 );
 	DrawScene("background/rouka1_02", 100 );
 	PlaySE( 4, "s_jikuu", 56, 64 );
@@ -2398,7 +2398,7 @@ void main()
 		   NULL, "\"I see...", Line_WaitForInput);
 	ModPlayVoiceLS(4, 6, "ps3/s06/06/150601510", 256, TRUE);
 	OutputLine(NULL, "でもさ魅音。",
-		   NULL, " But Mion...", GetGlobalFlag(GLinemodeSp));
+		   NULL, " But Mion... ", GetGlobalFlag(GLinemodeSp));
 	DrawScene("background/ryuuketu1", 400 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }

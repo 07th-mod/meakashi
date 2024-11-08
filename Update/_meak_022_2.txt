@@ -38,7 +38,7 @@ void main()
 		   NULL, " If it really is a joke, don't get mad, smile.", Line_WaitForInput);
 	ModPlayVoiceLS(4, 2, "ps3/s06/02/150200197", 256, TRUE);
 	OutputLine(NULL, "だって冗談なんだから。",
-		   NULL, " It would be a joke, after all.", GetGlobalFlag(GLinemodeSp));
+		   NULL, " It would be a joke, after all. ", GetGlobalFlag(GLinemodeSp));
 	DisableWindow();
 	ModDrawCharacter(3, 2, "sprite/re2a_komaru_a2_", "0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
 
@@ -281,7 +281,7 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 2, "ps3/s06/02/150200201", 256, TRUE);
 	OutputLine(NULL, "「魅ぃちゃん、私、念のため、本宅の方も見てくるね！",
-		   NULL, "\"Mii-chan, I'm going to go check the main house just to be sure, okay?", GetGlobalFlag(GLinemodeSp));
+		   NULL, "\"Mii-chan, I'm going to go check the main house just to be sure, okay? ", GetGlobalFlag(GLinemodeSp));
 	DisableWindow();
 	FadeAllBustshots( 400, TRUE );
 

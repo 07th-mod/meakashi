@@ -1515,7 +1515,7 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#6972c1>梨花</color>", NULL, "<color=#6972c1>Rika</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 5, "ps3/s06/05/150500025", 256, TRUE);
 	OutputLine(NULL, "「……ボクにはそんな日はないのですよ？",
-		   NULL, "\"...I don't have those days.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "\"...I don't have those days. ", GetGlobalFlag(GLinemodeSp));
 	DisableWindow();
 	ModDrawCharacter(3, 5, "sprite/ri1_warai_a1_", "2", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
 
@@ -1662,7 +1662,7 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 1, "ps3/s06/01/150100110", 256, TRUE);
 	OutputLine(NULL, "「ん、…魅音か。",
-		   NULL, "\"Hm... Mion?", GetGlobalFlag(GLinemodeSp));
+		   NULL, "\"Hm... Mion? ", GetGlobalFlag(GLinemodeSp));
 	DisableWindow();
 	ModDrawCharacter(2, 1, "sprite/kei1_nayamu_", "2", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );
 
@@ -2236,7 +2236,7 @@ void main()
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　私は目覚まし時計の針をもう一度確認すると、",
-		   NULL, "I checked the alarm once more...", GetGlobalFlag(GLinemodeSp));
+		   NULL, "I checked the alarm once more... ", GetGlobalFlag(GLinemodeSp));
 	FadeOutBGM( 0, 1000, FALSE );
 	FadeOutBGM( 2, 1000, FALSE );
 	DrawScene("white", 1000 );

@@ -88,7 +88,7 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 6, "ps3/s06/06/150602745", 256, TRUE);
 	OutputLine(NULL, "「ざぁんねん、そうは行かないです沙都子。",
-		   NULL, "\"Unfortunately, I won't let you do that either, Satoko.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "\"Unfortunately, I won't let you do that either, Satoko. ", GetGlobalFlag(GLinemodeSp));
 	DisableWindow();
 	ModDrawCharacter(2, 6, "sprite/si3_warai_a1_", "1", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );
 
@@ -123,7 +123,7 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 6, "ps3/s06/06/150602747", 256, TRUE);
 	OutputLine(NULL, "「ほら、そのカボチャ嫌いは駄目です！",
-		   NULL, "\"Don't be so picky about your food!", GetGlobalFlag(GLinemodeSp));
+		   NULL, "\"Don't be so picky about your food! ", GetGlobalFlag(GLinemodeSp));
 	DisableWindow();
 	ModDrawCharacter(2, 6, "sprite/si3_wink_a1_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );
 
@@ -133,7 +133,7 @@ void main()
 		   NULL, "Squash is very nutritious.", Line_WaitForInput);
 	ModPlayVoiceLS(4, 6, "ps3/s06/06/150602749", 256, TRUE);
 	OutputLine(NULL, "育ち盛りの沙都子は特に栄養に気を遣わないといけないんですよ？",
-		   NULL, " You're still growing, so you need to think about things like that.", GetGlobalFlag(GLinemodeSp));
+		   NULL, " You're still growing, so you need to think about things like that. ", GetGlobalFlag(GLinemodeSp));
 	DisableWindow();
 	ModDrawCharacter(2, 6, "sprite/si3_tokui_a1_", "1", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );
 
@@ -240,7 +240,7 @@ void main()
 		   NULL, "\"Of course it isn't.", Line_WaitForInput);
 	ModPlayVoiceLS(4, 6, "ps3/s06/06/150602753", 256, TRUE);
 	OutputLine(NULL, "沙都子がカボチャ嫌いを克服できるように日夜研究してますので。",
-		   NULL, " I've been working hard every day to get you to overcome your dislike of squash.", GetGlobalFlag(GLinemodeSp));
+		   NULL, " I've been working hard every day to get you to overcome your dislike of squash. ", GetGlobalFlag(GLinemodeSp));
 	DrawScene("white", 800 );
 	ModDrawCharacter(1, 6, "sprite/si3_wink_a1_", "0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 0, FALSE );
 	DrawScene("background/gk1", 400 );

@@ -219,7 +219,7 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 6, "ps3/s06/06/150602723", 256, TRUE);
 	OutputLine(NULL, "「くそったれがぁあぁ！！",
-		   NULL, "\"You lousy shit!", GetGlobalFlag(GLinemodeSp));
+		   NULL, "\"You lousy shit! ", GetGlobalFlag(GLinemodeSp));
 	DisableWindow();
 	PlaySE( 0, "s_furu", 56, 64 );
 
@@ -720,7 +720,7 @@ void main()
 		   NULL, "\"Are you okay...?!", Line_WaitForInput);
 	ModPlayVoiceLS(4, 1, "ps3/s06/01/150100448", 256, TRUE);
 	OutputLine(NULL, "　もう無理するな…。",
-		   NULL, " Don't force yourself...", GetGlobalFlag(GLinemodeSp));
+		   NULL, " Don't force yourself... ", GetGlobalFlag(GLinemodeSp));
 	DisableWindow();
 	ModDrawCharacter(2, 1, "sprite/kei2_def1_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );
 
