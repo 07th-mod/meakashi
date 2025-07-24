@@ -1792,7 +1792,7 @@ void main()
 		   NULL, "\"Right you are...", Line_WaitForInput);
 	ModPlayVoiceLS(4, 11, "ps3/s06/11/150700026", 256, TRUE);
 	OutputLine(NULL, "…ホトケさんは、恐らく最初の一撃で脳震盪かなんかで気絶したんじゃないかと思うんです。",
-		   NULL, " I think the victim lost consciousness with the first blow.", GetGlobalFlag(GLinemodeSp));
+		   NULL, " I think the victim lost consciousness with the first blow. ", GetGlobalFlag(GLinemodeSp));
 
 	DisableWindow();
 	ModDrawCharacter(1, 11, "sprite/oisi1_1_", "0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 200, TRUE );
@@ -1916,7 +1916,7 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>Ooishi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 11, "ps3/s06/11/150700040", 256, TRUE);
 	OutputLine(NULL, "「…えーー……。",
-		   NULL, "\"...Ehh......", GetGlobalFlag(GLinemodeSp));
+		   NULL, "\"...Ehh...... ", GetGlobalFlag(GLinemodeSp));
 
 	DisableWindow();
 	ModDrawCharacter(1, 11, "sprite/oisi1_5_", "2", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 200, TRUE );
