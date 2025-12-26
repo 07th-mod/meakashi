@@ -2478,6 +2478,8 @@ void main()
 	OutputLine(NULL, "　視界を奪われた次は、後ろから誰かに羽交い締めにされて、自由をも奪われた。",
 		   NULL, "One of them pinned me in a nelson hold, restricting my movement.", Line_Normal);
 	ClearMessage();
+	
+	ModPlayBGM( 2, "kaze", 56, 0, 1 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 6, "org/shion4078", 256, TRUE);
@@ -2531,8 +2533,8 @@ void main()
 		   NULL, "...But even that left hand was pressed down by his rough palms until it hurt, robbing it of the freedom even to tremble.", Line_Normal);
 	ClearMessage();
 
-	FadeOutBGM( 0, 300, FALSE );
-	FadeOutBGM( 1, 300, FALSE );
+	ModFadeOutBGM( 0, 300, FALSE, 0 );
+	ModFadeOutBGM( 1, 300, FALSE, 0 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　…あと、間髪なんかなかった。",
